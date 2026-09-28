@@ -1,2 +1,2 @@
-KIND := plant
+KIND := desk
 include ../kicad.mk
