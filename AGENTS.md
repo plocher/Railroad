@@ -17,6 +17,7 @@ SPCoast/
 - **Desk projects** draw the cTc machine: columns, levers, lamps, code buttons and the I/O expander bit each one lands on. Pins are typed in/out. Connections are made by pins touching; there are no wires.
 - **Naming: interlocking vs controlled point.** An interlocking (`Luchessa`) contains one or more controlled points, each a MAIN HOUSE whose Value is `CP <Name>` (`CP Luchessa`, `CP Gilroy`, `CP Carnadero`). One desk column is one CP. The interlocking and one of its CPs may share a base name; keep the `CP ` prefix on CPs and never on interlockings. Names are case-preserved when produced; consumers compare them case-insensitively.
 - Desk and plant are linked **only by name**: a panel appliance's Value must equal the plant appliance's Value.
+- **Value is the name; Reference is not.** KiCad re-annotates References freely (`SW784` may hold switch `783`). Tools must never derive or check names from References.
 
 ## External dependencies (outside this repo)
 
