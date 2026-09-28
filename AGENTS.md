@@ -9,12 +9,13 @@ railroad signalling, not as PCBs. They are schematics that tools parse into data
 
 ```
 SPCoast/
-  CP_Luchessa/   plant drawing  (Railroad symbols)       → plant JSON, board SVG
+  Luchessa/      interlocking plant drawing (Railroad symbols) → plant JSON, board SVG
   South-cTc/     dispatcher desk (RailroadPanel symbols) → desk I/O binding (tooling TBD)
 ```
 
-- **Plant projects** (`CP_<Station>`) draw track topology: switches, derails, track circuits, masts and heads, MAIN HOUSEs, rule markers. Pins are passive; wires form the topology.
+- **Plant projects** (`<Interlocking>`, e.g. `Luchessa`) draw one interlocking's track topology: switches, derails, track circuits, masts and heads, MAIN HOUSEs, rule markers. Pins are passive; wires form the topology.
 - **Desk projects** draw the cTc machine: columns, levers, lamps, code buttons and the I/O expander bit each one lands on. Pins are typed in/out. Connections are made by pins touching; there are no wires.
+- **Naming: interlocking vs controlled point.** An interlocking (`Luchessa`) contains one or more controlled points, each a MAIN HOUSE whose Value is `CP <Name>` (`CP Luchessa`, `CP Gilroy`, `CP Carnadero`). One desk column is one CP. The interlocking and one of its CPs may share a base name; keep the `CP ` prefix on CPs and never on interlockings. Names are case-preserved when produced; consumers compare them case-insensitively.
 - Desk and plant are linked **only by name**: a panel appliance's Value must equal the plant appliance's Value.
 
 ## External dependencies (outside this repo)
