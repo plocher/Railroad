@@ -1,0 +1,783 @@
+{
+  "name": "CP_Luchessa",
+  "trackCircuits": [
+    {
+      "name": "1NA"
+    },
+    {
+      "name": "1SA"
+    },
+    {
+      "name": "2NA"
+    },
+    {
+      "name": "2NAA"
+    },
+    {
+      "name": "2SA"
+    },
+    {
+      "name": "3NA"
+    },
+    {
+      "name": "783T1"
+    },
+    {
+      "name": "795T1"
+    },
+    {
+      "name": "799T1"
+    }
+  ],
+  "switches": [
+    {
+      "name": "783"
+    },
+    {
+      "name": "795"
+    },
+    {
+      "name": "799"
+    },
+    {
+      "name": "795D"
+    }
+  ],
+  "crossovers": [],
+  "signalControls": [
+    {
+      "name": "784"
+    }
+  ],
+  "signalMasts": [
+    {
+      "name": "784WA",
+      "type": "ONE_HEAD"
+    },
+    {
+      "name": "784WBC",
+      "type": "TWO_HEAD"
+    },
+    {
+      "name": "784WD",
+      "type": "ONE_HEAD"
+    },
+    {
+      "name": "784EAB",
+      "type": "TWO_HEAD"
+    },
+    {
+      "name": "784EC",
+      "type": "DWARF"
+    }
+  ],
+  "routes": [
+    {
+      "name": "2SA-Branch",
+      "governedBy": {
+        "signal": "784",
+        "direction": "RIGHT"
+      },
+      "displays": {
+        "mast": "784EC",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "795",
+          "position": "REVERSE"
+        },
+        {
+          "switch": "795D",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "2SA",
+      "approaching": "3NA"
+    },
+    {
+      "name": "2SA-MT1",
+      "governedBy": {
+        "signal": "784",
+        "direction": "RIGHT"
+      },
+      "displays": {
+        "mast": "784EC",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "795",
+          "position": "REVERSE"
+        },
+        {
+          "switch": "795D",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "NORMAL"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "2SA",
+      "approaching": "2NA"
+    },
+    {
+      "name": "Branch-Industry",
+      "governedBy": {
+        "signal": "784",
+        "direction": "LEFT"
+      },
+      "displays": {
+        "mast": "784WD",
+        "maxIndication": "DIVERGING_RESTRICTING"
+      },
+      "aligns": [
+        {
+          "switch": "795",
+          "position": "REVERSE"
+        },
+        {
+          "switch": "795D",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "2SA",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "3NA"
+    },
+    {
+      "name": "Branch-MT",
+      "governedBy": {
+        "signal": "784",
+        "direction": "LEFT"
+      },
+      "displays": {
+        "mast": "784WD",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "795",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "783T1",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "3NA",
+      "approaching": "1SA"
+    },
+    {
+      "name": "MT-Branch",
+      "governedBy": {
+        "signal": "784",
+        "direction": "RIGHT"
+      },
+      "displays": {
+        "mast": "784EAB",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "795",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "783T1",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "1SA",
+      "approaching": "3NA"
+    },
+    {
+      "name": "MT-MT1",
+      "governedBy": {
+        "signal": "784",
+        "direction": "RIGHT"
+      },
+      "displays": {
+        "mast": "784EAB",
+        "maxIndication": "CLEAR"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "795",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "NORMAL"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "783T1",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "1SA",
+      "approaching": "2NA"
+    },
+    {
+      "name": "MT-MT2",
+      "governedBy": {
+        "signal": "784",
+        "direction": "RIGHT"
+      },
+      "displays": {
+        "mast": "784EAB",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "783T1"
+      ],
+      "entrance": "1SA",
+      "approaching": "1NA"
+    },
+    {
+      "name": "MT1-Industry",
+      "governedBy": {
+        "signal": "784",
+        "direction": "LEFT"
+      },
+      "displays": {
+        "mast": "784WBC",
+        "maxIndication": "DIVERGING_RESTRICTING"
+      },
+      "aligns": [
+        {
+          "switch": "795",
+          "position": "REVERSE"
+        },
+        {
+          "switch": "795D",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "NORMAL"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "2SA",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "2NA"
+    },
+    {
+      "name": "MT1-MT",
+      "governedBy": {
+        "signal": "784",
+        "direction": "LEFT"
+      },
+      "displays": {
+        "mast": "784WBC",
+        "maxIndication": "CLEAR"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "795",
+          "position": "NORMAL"
+        },
+        {
+          "switch": "799",
+          "position": "NORMAL"
+        }
+      ],
+      "clears": [
+        "2NAA",
+        "783T1",
+        "795T1",
+        "799T1"
+      ],
+      "entrance": "2NA",
+      "approaching": "1SA"
+    },
+    {
+      "name": "MT2-MT",
+      "governedBy": {
+        "signal": "784",
+        "direction": "LEFT"
+      },
+      "displays": {
+        "mast": "784WA",
+        "maxIndication": "APPROACH"
+      },
+      "aligns": [
+        {
+          "switch": "783",
+          "position": "REVERSE"
+        }
+      ],
+      "clears": [
+        "783T1"
+      ],
+      "entrance": "1NA",
+      "approaching": "1SA"
+    }
+  ],
+  "projectionDeferred": {
+    "document": {
+      "title": "CP Luchessa",
+      "revision": "1.0",
+      "date": "2026.09",
+      "company": "SPCoast",
+      "status": "active"
+    },
+    "profile": {
+      "railroad": "Southern Pacific Railroad",
+      "division": "Coast Division",
+      "era": "1942 until 1985",
+      "ctc": "US&S 506"
+    },
+    "controlledPoints": [
+      {
+        "id": "CP Carnadero",
+        "members": [
+          {
+            "kind": "mast",
+            "id": "784WBC"
+          },
+          {
+            "kind": "mast",
+            "id": "784WD"
+          },
+          {
+            "kind": "switch",
+            "id": "799"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "1NA"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "2NA"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "3NA"
+          }
+        ]
+      },
+      {
+        "id": "CP Gilroy",
+        "members": [
+          {
+            "kind": "derail",
+            "id": "795D"
+          },
+          {
+            "kind": "mast",
+            "id": "784EC"
+          },
+          {
+            "kind": "mast",
+            "id": "784WA"
+          },
+          {
+            "kind": "switch",
+            "id": "795"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "2NAA"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "2SA"
+          }
+        ]
+      },
+      {
+        "id": "CP Luchessa",
+        "members": [
+          {
+            "kind": "mast",
+            "id": "784EAB"
+          },
+          {
+            "kind": "switch",
+            "id": "783"
+          },
+          {
+            "kind": "trackCircuit",
+            "id": "1SA"
+          }
+        ]
+      }
+    ],
+    "derails": [
+      {
+        "id": "795D",
+        "controlMode": "dependent",
+        "controllingSwitch": "795",
+        "trackCircuit": null
+      }
+    ],
+    "topology": {
+      "segments": [
+        {
+          "id": "segment:1",
+          "kind": "track",
+          "trackCircuit": "1NA",
+          "endpoints": [
+            "signal_irj:4",
+            "terminal:mt2:next_cp:1"
+          ]
+        },
+        {
+          "id": "segment:2",
+          "kind": "track",
+          "trackCircuit": "1SA",
+          "endpoints": [
+            "signal_irj:1",
+            "terminal:mt:next_cp:1"
+          ]
+        },
+        {
+          "id": "segment:3",
+          "kind": "track",
+          "trackCircuit": "2NA",
+          "endpoints": [
+            "signal_irj:9",
+            "terminal:mt1:next_cp:1"
+          ]
+        },
+        {
+          "id": "segment:4",
+          "kind": "track",
+          "trackCircuit": "2NAA",
+          "endpoints": [
+            "irj:6",
+            "irj:7"
+          ]
+        },
+        {
+          "id": "segment:5",
+          "kind": "track",
+          "trackCircuit": "2SA",
+          "endpoints": [
+            "irj:2",
+            "signal_irj:5"
+          ]
+        },
+        {
+          "id": "segment:6",
+          "kind": "track",
+          "trackCircuit": "3NA",
+          "endpoints": [
+            "signal_irj:10",
+            "terminal:branch:next_cp:1"
+          ]
+        },
+        {
+          "id": "segment:7",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "signal_irj:1",
+            "switch:783:C"
+          ]
+        },
+        {
+          "id": "segment:8",
+          "kind": "dark_track",
+          "trackCircuit": null,
+          "endpoints": [
+            "irj:2",
+            "terminal:industry:bumper:1"
+          ]
+        },
+        {
+          "id": "segment:9",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "irj:3",
+            "switch:783:N"
+          ]
+        },
+        {
+          "id": "segment:10",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "irj:3",
+            "switch:795:N"
+          ]
+        },
+        {
+          "id": "segment:11",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "signal_irj:4",
+            "switch:783:R"
+          ]
+        },
+        {
+          "id": "segment:12",
+          "kind": "track",
+          "trackCircuit": null,
+          "endpoints": [
+            "derail:795D:C",
+            "signal_irj:5"
+          ]
+        },
+        {
+          "id": "segment:13",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "irj:6",
+            "switch:795:C"
+          ]
+        },
+        {
+          "id": "segment:14",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "irj:7",
+            "switch:799:C"
+          ]
+        },
+        {
+          "id": "segment:15",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "signal_irj:9",
+            "switch:799:N"
+          ]
+        },
+        {
+          "id": "segment:16",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "signal_irj:10",
+            "switch:799:R"
+          ]
+        },
+        {
+          "id": "segment:17",
+          "kind": "switch_os",
+          "trackCircuit": null,
+          "endpoints": [
+            "derail:795D:N",
+            "switch:795:R"
+          ]
+        }
+      ],
+      "internalNodes": [
+        {
+          "id": "signal_irj:1",
+          "kind": "signal_irj"
+        },
+        {
+          "id": "irj:2",
+          "kind": "irj"
+        },
+        {
+          "id": "irj:3",
+          "kind": "irj"
+        },
+        {
+          "id": "signal_irj:4",
+          "kind": "signal_irj"
+        },
+        {
+          "id": "signal_irj:5",
+          "kind": "signal_irj"
+        },
+        {
+          "id": "irj:6",
+          "kind": "irj"
+        },
+        {
+          "id": "irj:7",
+          "kind": "irj"
+        },
+        {
+          "id": "bumper:8",
+          "kind": "bumper"
+        },
+        {
+          "id": "signal_irj:9",
+          "kind": "signal_irj"
+        },
+        {
+          "id": "signal_irj:10",
+          "kind": "signal_irj"
+        }
+      ]
+    },
+    "terminals": [
+      {
+        "id": "terminal:branch:next_cp:1",
+        "designation": "Branch",
+        "kind": "next_cp",
+        "rulebook": "261"
+      },
+      {
+        "id": "terminal:industry:bumper:1",
+        "designation": "Industry",
+        "kind": "bumper",
+        "rulebook": "Rule 6.28"
+      },
+      {
+        "id": "terminal:mt:next_cp:1",
+        "designation": "MT",
+        "kind": "next_cp",
+        "rulebook": "261"
+      },
+      {
+        "id": "terminal:mt1:next_cp:1",
+        "designation": "MT1",
+        "kind": "next_cp",
+        "rulebook": "251"
+      },
+      {
+        "id": "terminal:mt2:next_cp:1",
+        "designation": "MT2",
+        "kind": "next_cp",
+        "rulebook": "251"
+      }
+    ],
+    "routeTopology": [
+      {
+        "route": "2sa-branch",
+        "entryTerminal": null,
+        "exitTerminal": "terminal:branch:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "2sa-mt1",
+        "entryTerminal": null,
+        "exitTerminal": "terminal:mt1:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "branch-industry",
+        "entryTerminal": "terminal:branch:next_cp:1",
+        "exitTerminal": null,
+        "endKind": "dark_exit",
+        "exitFace": null
+      },
+      {
+        "route": "branch-mt",
+        "entryTerminal": "terminal:branch:next_cp:1",
+        "exitTerminal": "terminal:mt:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "mt-branch",
+        "entryTerminal": "terminal:mt:next_cp:1",
+        "exitTerminal": "terminal:branch:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "mt-mt1",
+        "entryTerminal": "terminal:mt:next_cp:1",
+        "exitTerminal": "terminal:mt1:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "mt-mt2",
+        "entryTerminal": "terminal:mt:next_cp:1",
+        "exitTerminal": "terminal:mt2:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "mt1-industry",
+        "entryTerminal": "terminal:mt1:next_cp:1",
+        "exitTerminal": null,
+        "endKind": "dark_exit",
+        "exitFace": null
+      },
+      {
+        "route": "mt1-mt",
+        "entryTerminal": "terminal:mt1:next_cp:1",
+        "exitTerminal": "terminal:mt:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      },
+      {
+        "route": "mt2-mt",
+        "entryTerminal": "terminal:mt2:next_cp:1",
+        "exitTerminal": "terminal:mt:next_cp:1",
+        "endKind": "cp_limit",
+        "exitFace": null
+      }
+    ]
+  }
+}
