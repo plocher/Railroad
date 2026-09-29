@@ -117,206 +117,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelAuxiliary"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "AUX"
-				(at -6.35 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MC1"
-				(at 0 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Generic 1-bit dispatcher-facing appliance (Maintainer Call, switch heater, bungalow door, etc).  ControlToken must be declared explicitly."
-				(at 0 -6.985 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "APPLIANCE"
-				(at 6.35 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "Vital" "NO"
-				(at 6.35 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "ControlToken" "MC1S"
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Kind" "MAINTAINER_CALL"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PanelAuxiliary_0_1"
-				(circle
-					(center 0 0)
-					(radius 1.4199)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 1.6722)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "PanelAuxiliary_1_1"
-				(polyline
-					(pts
-						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
-					)
-					(stroke
-						(width 0.0762)
-						(type default)
-					)
-					(fill
-						(type color)
-						(color 0 0 0 0)
-					)
-				)
-				(arc
-					(start 0 -0.635)
-					(mid -0.263 0)
-					(end 0 0.635)
-					(stroke
-						(width 0.0762)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 0 0 0 0)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "Column"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 5.08)
-					(name "SW"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "RailroadPanel:PanelCode"
 			(pin_numbers
 				(hide yes)
@@ -478,7 +278,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "COL"
-				(at 0 -36.83 0)
+				(at -5.08 -22.86 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -489,7 +289,7 @@
 				)
 			)
 			(property "Value" "COLUMN#"
-				(at 3.175 -34.29 0)
+				(at 1.27 -36.83 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -534,7 +334,7 @@
 			)
 			(property "Interlocking" "Luchessa"
 				(at 0 -31.75 0)
-				(show_name no)
+				(show_name yes)
 				(do_not_autoplace yes)
 				(effects
 					(font
@@ -564,10 +364,20 @@
 				)
 			)
 			(property "Column" "${VALUE}"
-				(at 7.62 -36.83 0)
+				(at 2.54 -22.86 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0.635 -34.29 0)
+				(show_name yes)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -732,7 +542,7 @@
 					)
 				)
 				(text "Column"
-					(at 2.54 -34.29 0)
+					(at 0.635 -36.83 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1502,7 +1312,7 @@
 					)
 				)
 			)
-			(property "IndicationToken" ""
+			(property "IndicationToken" "S"
 				(at -1.905 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1662,7 +1472,7 @@
 					)
 				)
 			)
-			(property "IndicationToken" ""
+			(property "IndicationToken" "S"
 				(at -1.905 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1748,6 +1558,206 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "RailroadPanel:PanelMCall"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MC"
+				(at -6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MC1"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Maintainer Call Lever"
+				(at 0 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Vital" "NO"
+				(at 6.35 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "ControlToken" "${VALUE}S"
+				(at -3.175 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Kind" "MAINTAINER_CALL"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelMCall_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.4199)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.6722)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelMCall_1_1"
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+					)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(arc
+					(start 0 -0.635)
+					(mid -0.263 0)
+					(end 0 0.635)
+					(stroke
+						(width 0.0762)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "RailroadPanel:PanelSignal"
 			(pin_numbers
 				(hide yes)
@@ -1768,13 +1778,13 @@
 					)
 				)
 			)
-			(property "Value" "784"
+			(property "Value" ""
 				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -2289,7 +2299,7 @@
 					)
 				)
 			)
-			(property "Value" "783"
+			(property "Value" ""
 				(at 0 1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3297,7 +3307,7 @@
 			)
 		)
 		(property "Value" "6"
-			(at 133.985 132.08 0)
+			(at 132.842 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3342,7 +3352,7 @@
 		)
 		(property "Interlocking" "Luchessa"
 			(at 130.81 129.54 0)
-			(show_name no)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3372,9 +3382,19 @@
 			)
 		)
 		(property "Column" "${VALUE}"
-			(at 138.43 134.62 0)
+			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "CP Gilroy"
+			(at 131.445 132.08 0)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3664,7 +3684,7 @@
 			)
 		)
 		(property "Value" "7"
-			(at 184.785 132.08 0)
+			(at 183.896 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3709,7 +3729,7 @@
 		)
 		(property "Interlocking" "Luchessa"
 			(at 181.61 129.54 0)
-			(show_name no)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3739,9 +3759,19 @@
 			)
 		)
 		(property "Column" "${VALUE}"
-			(at 189.23 134.62 0)
+			(at 184.15 120.65 0)
 			(hide yes)
 			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "CP Carnadero"
+			(at 182.245 132.08 0)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3894,7 +3924,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelAuxiliary")
+		(lib_id "RailroadPanel:PanelMCall")
 		(at 130.81 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -4317,7 +4347,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -4429,7 +4459,7 @@
 			)
 		)
 		(property "Value" "5"
-			(at 83.185 132.08 0)
+			(at 82.042 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4474,7 +4504,7 @@
 		)
 		(property "Interlocking" "Luchessa"
 			(at 80.01 129.54 0)
-			(show_name no)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4504,9 +4534,19 @@
 			)
 		)
 		(property "Column" "${VALUE}"
-			(at 87.63 134.62 0)
+			(at 82.55 120.65 0)
 			(hide yes)
 			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "CP Luchessa"
+			(at 80.645 132.08 0)
+			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
