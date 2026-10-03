@@ -2,10 +2,10 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "87b90fc6-5e27-4e06-8416-fb28e674fdea")
+	(uuid "c4fcbe05-44d0-4e90-8003-c2ec16e00151")
 	(paper "USLetter")
 	(title_block
-		(title "Luchessa")
+		(title "GilroyInterchange")
 		(date "2026.09")
 		(rev "1.0")
 		(company "SPCoast")
@@ -1522,6 +1522,7 @@
 				(at 0.635 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -3102,701 +3103,132 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Industry"
+	(text "LEGACY DIAGRAM AND NOTES\n\n   \n       Gilroy Interchange\n   \n       < Railroad West/North                             Railroad East/South >\n   \n              MC1 2Nc O-|                 MC2\n                      /=== ==INTER== ===\\\n                     /               |-O \\ 2Sc\n                1T1 /                 3T1 \\  oo--| 2Nab\n       MT  =1SA= ==+==== =====TK1===== ====+=== =CP_Luchessa:1SA=   MT\n                |--oo 2Sab\n   \n       Single track  north of Luchessa to Michael\n   \n       1T - MT to north interchange - LOCK, local control\n       3T - MT to south interchange - LOCK, local control\n   \n        EastBound Approach from Michael EA\n        West Approach from Luchessa WA"
 		(exclude_from_sim no)
-		(at 50.8 67.564 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "190af2f5-c1b3-4ead-a625-f2854766ea25")
-	)
-	(text "Rule 261 (Track Signaled in Both Directions): \nGoverns bi-directional signal territory (often controlled by \nCentralized Traffic Control, or CTC).  Under Rule 261, block signal \nindications supersede train superiority for both opposing and\nfollowing movements on the same track, allowing the dispatcher to\ndynamically change the direction of traffic by clearing signals."
-		(exclude_from_sim no)
-		(at 18.796 179.07 0)
+		(at 98.298 127.508 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2848dfa1-d736-4bf4-9d84-5010f4d76aba")
+		(uuid "dfa733f8-aba3-44c0-a2f0-b7a72841b689")
 	)
-	(text "Rule 251 (Track Signaled in One Direction):\nGoverns movements on tracks where signals are only configured for \none direction.  Under this rule, signal indications supersede the\nsuperiority of trains for movements operating with the current of\ntraffic.  Moving against this traffic direction requires explicit\nauthority (such as a train order or track warrant)."
+	(text "As a modeler simplification, the signals here are tied to their locked switches; there are NO signal levers.\nif the dispatcher unlocks them and they are aligned for transit, \nthe siding's signals change from STOP / RED to RESTRICTING / (RED)\nand the mainline from CLEAR|STOP/GREEN|RED to STOP|RESTRICTING/RED|(RED)"
 		(exclude_from_sim no)
-		(at 18.796 146.812 0)
+		(at 122.936 28.194 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
 		)
-		(uuid "2957594c-4eb2-4a8b-a14b-bc54d49ec884")
-	)
-	(text "Track and Movement Definitions Rule D-151 & D-152 (Current of Traffic):\nThe \"D\" prefix denotes rules specifically for two or more tracks.  \nThese rules establish that on double tracks, trains must run with \nthe current of traffic (the designated normal direction for that\ntrack, such as keeping to the right) unless otherwise authorized."
-		(exclude_from_sim no)
-		(at 18.796 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "35eeb7bb-f330-47a0-95f8-3c670394d503")
-	)
-	(text "Luchessa\nMP 78.3"
-		(exclude_from_sim no)
-		(at 33.02 23.368 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-		)
-		(uuid "4a455492-465c-42f8-92cd-14084424a118")
-	)
-	(text "Yellow circle on a switch denotes the OS track circuit\nIt indicates when the turnout is occupued\nIt is usually denoted as <SWITCHNUMBER>T1"
-		(exclude_from_sim no)
-		(at 19.05 129.032 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "584a86df-8fc7-48da-9c20-61cf76b1e39d")
-	)
-	(text "Rule 262 (Reversing Direction):\nMandates that once a direction of traffic has been established for \na train in bi-directional territory, the train must not move in the\nopposite direction without proper interlocking signal indications\nor direct permission from the train dispatcher."
-		(exclude_from_sim no)
-		(at 18.796 194.564 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "58ebab91-c42b-4b3e-bd6b-4a9b33ac52c4")
+		(uuid "e3457844-df0c-4834-8686-3d432ab66977")
 	)
 	(junction
-		(at 229.87 69.85)
+		(at 120.65 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "09c71851-60c9-4534-9029-566c6ebd3d86")
+		(uuid "0903ee85-2e95-4d31-b4d7-4574f78ca086")
 	)
 	(junction
-		(at 50.8 69.85)
+		(at 184.15 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2f58a1b6-82c1-4e91-92aa-20a2ecf7ddfa")
+		(uuid "127426f7-4a2b-436d-9384-848b60b3c7c5")
 	)
 	(junction
-		(at 72.39 69.85)
+		(at 53.34 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "47d48170-9948-4dd7-87a4-643812c2577a")
+		(uuid "143ba005-0312-4b57-b475-ecd2b17b2d6f")
 	)
 	(junction
-		(at 229.87 86.36)
+		(at 120.65 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4cef1afa-5942-475c-841e-e148d787b870")
+		(uuid "91fc5c94-f882-4397-acf7-4e3111fe413b")
 	)
 	(junction
-		(at 214.63 69.85)
+		(at 63.5 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "51060535-f626-4602-8470-7a11d0f7dd91")
-	)
-	(junction
-		(at 214.63 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "58c25a4f-273e-4c06-8794-651c341bfe7d")
-	)
-	(junction
-		(at 50.8 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c81eb41-133b-4039-ba3d-29d759b34129")
-	)
-	(junction
-		(at 214.63 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6155b88e-edf7-4085-a785-b88cc78ccfbf")
-	)
-	(junction
-		(at 36.83 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "84f9ee6c-b08e-4d87-8240-8cbae5ead789")
-	)
-	(junction
-		(at 229.87 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bfe834a5-c9ba-4787-bd76-f4448cacb586")
-	)
-	(junction
-		(at 137.16 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed8aa877-94c7-4096-95f5-44ba3f356a29")
+		(uuid "babde274-b3a2-4ca3-8ccd-32713867f344")
 	)
 	(wire
 		(pts
-			(xy 214.63 102.87) (xy 229.87 102.87)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "0120dfc3-c197-4e1e-907b-40cdb4135b91")
-	)
-	(wire
-		(pts
-			(xy 214.63 69.85) (xy 229.87 69.85)
+			(xy 107.95 60.96) (xy 120.65 60.96)
 		)
 		(stroke
 			(width 0.4064)
-			(type default)
-		)
-		(uuid "271d0a2e-ce77-4245-8840-c2d754e4b2eb")
-	)
-	(wire
-		(pts
-			(xy 214.63 86.36) (xy 229.87 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "594324b8-4a30-4a3f-af97-0077202496ef")
-	)
-	(wire
-		(pts
-			(xy 123.19 86.36) (xy 137.16 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "7431b994-648f-4878-af81-9508ac34e565")
-	)
-	(wire
-		(pts
-			(xy 190.5 69.85) (xy 203.2 69.85)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "7d07c28a-5ad1-4b11-a4ae-8634662f42c7")
-	)
-	(wire
-		(pts
-			(xy 229.87 86.36) (xy 245.11 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "9061a03b-8246-427a-9856-cc99daccee61")
-	)
-	(wire
-		(pts
-			(xy 229.87 69.85) (xy 245.11 69.85)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "95b192ec-0071-4f02-aa11-943a7b6453d9")
-	)
-	(wire
-		(pts
-			(xy 38.1 69.85) (xy 50.8 69.85)
-		)
-		(stroke
-			(width 0.254)
 			(type dash)
 			(color 72 72 72 1)
 		)
-		(uuid "97f3a3a6-1906-4032-a742-100b22051071")
+		(uuid "305fc06f-569f-4733-ac11-f022149bcd88")
 	)
 	(wire
 		(pts
-			(xy 229.87 102.87) (xy 245.11 102.87)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "a670d9a3-d264-4520-b3a6-1293a178829d")
-	)
-	(wire
-		(pts
-			(xy 120.65 102.87) (xy 88.9 102.87)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "ab82fc80-2f89-415f-b6c2-40c872945be9")
-	)
-	(wire
-		(pts
-			(xy 36.83 86.36) (xy 50.8 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "abd3d86c-e763-4f43-be94-18c541d8e327")
-	)
-	(wire
-		(pts
-			(xy 72.39 69.85) (xy 76.2 69.85)
-		)
-		(stroke
-			(width 0.3048)
-			(type default)
-		)
-		(uuid "b1a98094-619f-465b-a07d-daa1aaf4e777")
-	)
-	(wire
-		(pts
-			(xy 50.8 86.36) (xy 57.15 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "b2698830-6fc5-4b9d-8b89-600dbf01b5ef")
-	)
-	(wire
-		(pts
-			(xy 137.16 86.36) (xy 158.75 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "d057ed6e-6b32-4bdf-979d-df9561e7cd29")
-	)
-	(wire
-		(pts
-			(xy 50.8 69.85) (xy 66.04 69.85)
-		)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(uuid "d0705f23-226a-4095-97d5-9297e36214b4")
-	)
-	(wire
-		(pts
-			(xy 123.19 102.87) (xy 214.63 102.87)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "d138fc9b-8b68-4e04-882f-4326f1b8060e")
-	)
-	(wire
-		(pts
-			(xy 205.74 69.85) (xy 214.63 69.85)
+			(xy 63.5 77.47) (xy 73.66 77.47)
 		)
 		(stroke
 			(width 0.4064)
 			(type default)
 		)
-		(uuid "e7410c0f-62e4-4849-bfa1-aaf22d10d700")
+		(uuid "3c4ec66b-89f8-4add-836d-34ea00f05430")
 	)
 	(wire
 		(pts
-			(xy 27.94 86.36) (xy 36.83 86.36)
+			(xy 120.65 77.47) (xy 135.89 77.47)
 		)
 		(stroke
-			(width 0.8128)
+			(width 0.4064)
 			(type default)
 		)
-		(uuid "e9f7aeee-871b-47d7-a1fb-0ef52e136870")
+		(uuid "3fce9e7d-8e18-490b-9762-d748e85cb7b4")
 	)
 	(wire
 		(pts
-			(xy 205.74 86.36) (xy 214.63 86.36)
+			(xy 53.34 77.47) (xy 63.5 77.47)
 		)
 		(stroke
-			(width 0.8128)
+			(width 0.4064)
 			(type default)
 		)
-		(uuid "efcb75ef-1ffd-4a9e-af39-e367fca8f255")
+		(uuid "5bad92a9-cf43-4578-9661-d64a840882ed")
 	)
 	(wire
 		(pts
-			(xy 190.5 86.36) (xy 203.2 86.36)
+			(xy 107.95 77.47) (xy 120.65 77.47)
 		)
 		(stroke
-			(width 0.8128)
+			(width 0.4064)
 			(type default)
 		)
-		(uuid "f1060773-cdff-47ce-a0c0-abda8e92cf0e")
+		(uuid "654d0113-cc72-4bb3-9626-9c3a1194f15d")
 	)
 	(wire
 		(pts
-			(xy 68.58 69.85) (xy 72.39 69.85)
+			(xy 170.18 77.47) (xy 184.15 77.47)
 		)
 		(stroke
-			(width 0.3048)
+			(width 0.4064)
 			(type default)
 		)
-		(uuid "f391ef12-8ac8-4d90-be44-89bcdb1a12a2")
+		(uuid "f466fdff-207f-46ba-b337-7b22e0024c3d")
 	)
-	(symbol
-		(lib_id "Railroad:Bumper")
-		(at 36.83 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0630b9b9-131d-4b50-8059-f641a58f9d74")
-		(property "Reference" "B7"
-			(at 36.83 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+	(wire
+		(pts
+			(xy 120.65 60.96) (xy 135.89 60.96)
 		)
-		(property "Value" ""
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
+		(stroke
+			(width 0.4064)
+			(type dash)
+			(color 72 72 72 1)
 		)
-		(property "Footprint" ""
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "BUMPER"
-			(at 36.83 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e70c340d-93f5-4d95-b90b-2b6133e81141")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 200.66 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "06ee3a7a-105f-4489-b798-5bc07f6baeed")
-		(property "Reference" "H4"
-			(at 196.85 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 196.596 60.706 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 200.66 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d9125de-fe19-4637-8843-4ebbeb5a6a6e")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule251-DoT-Left")
-		(at 229.87 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0c90cb2d-c2e9-4191-9ccd-2368ed3033ab")
-		(property "Reference" "DOT1"
-			(at 229.87 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MT1"
-			(at 226.06 89.662 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 2.54 2.54)
-					(thickness 0.508)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 251"
-			(at 229.87 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rulebook" "251"
-			(at 229.87 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "LEFT"
-			(at 223.52 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Track Signaled in One Direction"
-			(at 230.505 79.375 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 229.87 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 229.87 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3d0d11d0-b3a6-41fa-a0f4-df4ce00a02ae")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT1")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "f804af87-46f7-43aa-9ad8-fb5029ae3aad")
 	)
 	(symbol
 		(lib_id "Railroad:IRJ-Signal")
-		(at 77.47 69.85 180)
+		(at 74.93 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3805,9 +3237,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "17c5a311-d65e-4609-956b-0172ec9c98a1")
-		(property "Reference" "B4"
-			(at 77.47 67.31 0)
+		(uuid "0249d114-5932-4beb-90a3-c46d0bf4b9a5")
+		(property "Reference" "B7"
+			(at 74.93 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3818,7 +3250,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 77.47 69.85 0)
+			(at 74.93 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3828,7 +3260,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 69.85 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3839,7 +3271,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 69.85 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3849,8 +3281,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 77.47 69.85 0)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3860,8 +3292,8 @@
 				)
 			)
 		)
-		(property "CP" "CP Gilroy"
-			(at 77.47 67.31 0)
+		(property "CP" ""
+			(at 76.835 79.375 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3869,10 +3301,11 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
+				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
-			(at 77.47 69.85 0)
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3883,7 +3316,29 @@
 			)
 		)
 		(property "Kind" "IRJ_SIGNAL"
-			(at 77.47 69.85 0)
+			(at 74.93 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 74.93 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 74.93 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3894,1408 +3349,26 @@
 			)
 		)
 		(pin "1"
-			(uuid "17b446cb-0f51-45b1-b75c-77072d4e6e93")
+			(uuid "190f187a-5f71-4045-9e57-7fbca1f7e084")
 		)
 		(pin "2"
-			(uuid "104ad0ee-79ea-4960-a1d7-f2518791ab18")
+			(uuid "56700e32-5d22-47f3-b48c-8630abccae0a")
 		)
 		(pin "3"
-			(uuid "7bd782b4-8fde-4111-a876-6ed90cf94c96")
+			(uuid "0f12b20f-c8b1-4b8c-978f-04aaa3ace9e0")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B4")
+					(reference "B7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Single")
-		(at 121.92 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1c4151a0-5813-4efa-b7dd-c117bae36742")
-		(property "Reference" "S784W1"
-			(at 120.396 99.314 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "784WA"
-			(at 119.888 100.076 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 121.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_SINGLE"
-			(at 121.92 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "680e03d6-642c-4673-a335-f1da96bd1c65")
-		)
-		(pin "2"
-			(uuid "6ea16701-692a-4587-902f-f35c84c4e3be")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "S784W1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 214.63 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1fcb8c05-8fb4-47db-9b89-b77ff1af30b4")
-		(property "Reference" "TC2"
-			(at 214.63 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2NAT"
-			(at 212.598 83.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 214.63 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Carnadero"
-			(at 214.63 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 214.63 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 214.63 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "502f6186-d898-4bdb-b1ef-363a9aba7aa2")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 214.63 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2eb87ce3-f9f6-458a-b0a4-0c3aa4583412")
-		(property "Reference" "TC3"
-			(at 214.63 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1NAT"
-			(at 212.598 100.076 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Carnadero"
-			(at 214.63 104.775 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 214.63 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bbd06ccb-aea5-4390-b1ec-c61778cd46e3")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Milepost")
-		(at 58.42 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "359f187d-c522-4922-a055-df16d72588b8")
-		(property "Reference" "MP2"
-			(at 54.61 52.705 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "78.3"
-			(at 58.42 49.276 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "ANNOTATION"
-			(at 58.42 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "MP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 203.2 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3b71421c-59d2-402d-96d4-2596c1ef4988")
-		(property "Reference" "H8"
-			(at 199.39 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 199.39 77.724 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 203.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 203.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 203.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b1fd0eb-bd29-42c8-9f65-c7c80f3471a2")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Double")
-		(at 204.47 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4291eb79-c160-40e2-a828-0d07b422b874")
-		(property "Reference" "S784W2"
-			(at 203.2 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "784WBC"
-			(at 203.708 82.804 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 204.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_DOUBLE"
-			(at 204.47 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d505b8aa-e785-4c0e-8d85-62d1f42768fb")
-		)
-		(pin "2"
-			(uuid "74a712ce-e776-4942-8605-485a4044153c")
-		)
-		(pin "3"
-			(uuid "b2484d22-293f-45a6-a842-6d6023b80e88")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "S784W2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
-		(at 77.47 73.66 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "440b5745-5b49-4cf5-a6d0-144db3b7f6cf")
-		(property "Reference" "S784E2"
-			(at 78.74 74.295 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "784EC"
-			(at 77.724 78.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 77.47 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 77.47 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 77.47 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 77.47 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_DWARF"
-			(at 77.47 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "818f6207-fbac-470f-8188-1476580fbde8")
-		)
-		(pin "2"
-			(uuid "5ef67a65-f98c-4b16-9261-523d7eba4ae7")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "S784E2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
-		(at 109.22 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "476f6078-a82c-467f-ad82-b6a99f74585c")
-		(property "Reference" "HOUSE3"
-			(at 109.22 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CP Gilroy"
-			(at 103.378 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Maintainer Bungalow"
-			(at 109.22 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" "79.5"
-			(at 109.22 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CONTROLLED_POINT"
-			(at 109.22 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0cc9c062-8a16-4831-9fc6-2f70cec633f8")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "HOUSE3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Powered")
-		(at 172.72 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4cc80912-4acf-49bf-99ba-417fc531e5de")
-		(property "Reference" "SW799"
-			(at 172.72 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "799"
-			(at 172.72 89.408 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Carnadero"
-			(at 172.72 90.805 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "TC" "${VALUE}T1"
-			(at 180.34 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "SWITCH_POWERED"
-			(at 172.72 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3af4b17c-0ca9-4839-a529-ed7a0e68e059")
-		)
-		(pin "3"
-			(uuid "66b6c538-c29d-46b5-b94f-a09afb44e61a")
-		)
-		(pin "1"
-			(uuid "19052f75-487b-4fcb-b4b7-100c344782b2")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "SW799")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:NextCP")
-		(at 245.11 102.87 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "539168b6-fc96-4232-9d09-b9d628ca8894")
-		(property "Reference" "CP4"
-			(at 241.935 100.965 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CP Christopher"
-			(at 248.158 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 95.885 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 245.11 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 245.11 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c71bae7-2a10-42dd-82c0-20e2ade9f668")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "CP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule251-DoT-Right")
-		(at 229.87 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "552574d4-abc0-4dd6-9502-dc1cc89e7b5d")
-		(property "Reference" "DOT2"
-			(at 229.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MT2"
-			(at 229.87 105.918 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 2.54 2.54)
-					(thickness 0.508)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 226.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 251"
-			(at 229.87 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rulebook" "251"
-			(at 229.87 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "RIGHT"
-			(at 236.22 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 229.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 229.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ac06c528-2d1e-4558-bc80-997805a09b70")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 62.23 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "563a5f07-f660-49bd-b4cc-91fbfa8ea419")
-		(property "Reference" "H1"
-			(at 66.04 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A"
-			(at 65.786 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 62.23 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 62.23 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a7906339-902a-4ced-9a42-3807ba1d98a4")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 137.16 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "66f9aa12-4575-4e64-9d4e-0ce9a53659e0")
-		(property "Reference" "TC4"
-			(at 137.16 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2NAAT"
-			(at 135.128 83.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 137.16 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 137.16 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Gilroy"
-			(at 137.16 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 137.16 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 137.16 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0774a60e-ebf2-4c3d-a01c-fe506a61a847")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 121.92 86.36 0)
+		(lib_id "Railroad:IRJ-Signal")
+		(at 106.68 60.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5304,9 +3377,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "75b7e5b2-f04b-468c-810c-f067630cbed1")
-		(property "Reference" "B5"
-			(at 121.92 82.55 0)
+		(uuid "04db8699-b4ad-46b8-8fcd-64608fde1ed0")
+		(property "Reference" "B1"
+			(at 106.68 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5317,7 +3390,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 121.92 86.36 0)
+			(at 106.68 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5327,7 +3400,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 86.36 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5338,7 +3411,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 121.92 86.36 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5348,8 +3421,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 121.92 86.36 0)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5357,10 +3430,22 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "CP" ""
+			(at 104.775 59.055 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
-			(at 121.92 86.36 0)
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5370,8 +3455,30 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
-			(at 121.92 86.36 0)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 106.68 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 106.68 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 106.68 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5382,15 +3489,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "6835e843-1339-4021-9f67-b138e75dc532")
+			(uuid "50af9717-1002-4747-b5c4-fbe16c1668cb")
 		)
 		(pin "2"
-			(uuid "0f697946-3e15-4f4a-9f74-fb13eac2ac5b")
+			(uuid "07b01112-bc7c-4dde-8e0e-9b80193910b4")
+		)
+		(pin "3"
+			(uuid "170ca7c6-864e-4bd5-9993-8f53e6767c19")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B5")
+					(reference "B1")
 					(unit 1)
 				)
 			)
@@ -5398,7 +3508,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Signal Head - CL")
-		(at 118.11 99.06 0)
+		(at 76.2 81.28 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5406,9 +3516,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "7c3024cd-1b9c-45d4-9025-70c58d6b4a58")
-		(property "Reference" "H6"
-			(at 114.3 96.52 0)
+		(fields_autoplaced yes)
+		(uuid "19d08d4c-a9ca-4bc7-9db1-2c06636b4164")
+		(property "Reference" "H4"
+			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5418,10 +3529,10 @@
 				)
 			)
 		)
-		(property "Value" "A"
-			(at 114.046 94.234 0)
+		(property "Value" "B"
+			(at 80.01 81.28 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5429,7 +3540,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 118.11 99.06 0)
+			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5440,7 +3551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 118.11 99.06 0)
+			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5451,7 +3562,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 118.11 99.06 0)
+			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5462,7 +3573,7 @@
 			)
 		)
 		(property "Role" "COMPONENT"
-			(at 118.11 99.06 0)
+			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5473,7 +3584,29 @@
 			)
 		)
 		(property "Kind" "HEAD"
-			(at 118.11 99.06 0)
+			(at 76.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 76.2 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5484,21 +3617,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "27cfb995-b86c-489e-862a-cc5f051b8f15")
+			(uuid "f0747abf-31bb-4f24-8e1d-ae19b20e3088")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H6")
+					(reference "H4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Lock")
-		(at 109.22 86.36 0)
-		(mirror y)
+		(lib_id "Railroad:Track Circuit")
+		(at 63.5 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5506,9 +3638,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8415156f-cfa6-4584-bccd-84d51895623f")
-		(property "Reference" "SW795"
-			(at 109.22 88.9 0)
+		(uuid "1ef66a45-abde-44fe-95fc-4abf32a7b7fa")
+		(property "Reference" "TC1"
+			(at 63.5 73.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5518,18 +3650,19 @@
 				)
 			)
 		)
-		(property "Value" "795"
-			(at 109.22 89.154 0)
+		(property "Value" "1SA"
+			(at 61.47 74.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 86.36 0)
+			(at 63.5 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5540,7 +3673,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 86.36 0)
+			(at 63.5 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5551,7 +3684,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 86.36 0)
+			(at 63.5 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5561,8 +3694,8 @@
 				)
 			)
 		)
-		(property "CP" "CP Gilroy"
-			(at 109.22 90.805 0)
+		(property "CP" "Gilroy North"
+			(at 63.5 79.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5572,18 +3705,8 @@
 				)
 			)
 		)
-		(property "TC" "${VALUE}T1"
-			(at 102.87 84.455 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "APPLIANCE"
-			(at 109.22 86.36 0)
+			(at 63.5 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5593,8 +3716,8 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LOCK"
-			(at 109.22 86.36 0)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 63.5 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5604,19 +3727,35 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "9699cae6-eaca-4377-bb60-c63155eb75ac")
+		(property "Direction" ""
+			(at 63.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 63.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "a9519d8f-bed0-4659-b832-f53d50aa2328")
-		)
-		(pin "2"
-			(uuid "241ecf1d-09c4-408a-8929-14b9d6fe4459")
+			(uuid "bf14f479-14d4-4302-a48a-a80aa6d809ec")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "SW795")
+					(reference "TC1")
 					(unit 1)
 				)
 			)
@@ -5624,7 +3763,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 50.8 67.31 0)
+		(at 120.65 63.5 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5632,9 +3771,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8b82f424-4adc-4956-b1ad-0cfcbb1e089f")
-		(property "Reference" "DOT5"
-			(at 45.085 66.675 0)
+		(uuid "2a6c2ffa-9cd3-4151-a9f5-c7de5891a06a")
+		(property "Reference" "DOT3"
+			(at 126.365 64.135 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5645,7 +3784,7 @@
 			)
 		)
 		(property "Value" "Restricted Speed"
-			(at 50.8 71.374 0)
+			(at 120.142 64.008 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5656,7 +3795,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 47.625 67.31 0)
+			(at 123.825 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5667,7 +3806,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 47.625 67.31 0)
+			(at 123.825 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5678,7 +3817,7 @@
 			)
 		)
 		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 47.625 71.755 0)
+			(at 123.825 59.055 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5689,7 +3828,7 @@
 			)
 		)
 		(property "Kind" "RULE_105"
-			(at 50.8 69.85 0)
+			(at 120.65 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5700,7 +3839,7 @@
 			)
 		)
 		(property "Direction" "BOTH"
-			(at 45.085 68.58 0)
+			(at 126.365 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5711,7 +3850,7 @@
 			)
 		)
 		(property "Name" "Movement on Other Than Main Track"
-			(at 52.07 62.865 0)
+			(at 119.38 67.945 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5722,7 +3861,7 @@
 			)
 		)
 		(property "Role" "POLICY"
-			(at 50.8 67.31 0)
+			(at 120.65 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5733,21 +3872,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "0dcd5e10-103c-4ef8-aae0-09a17b66e2d2")
+			(uuid "5543b659-283e-452d-a780-c3ccde5aec12")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT5")
+					(reference "DOT3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered")
-		(at 71.12 86.36 0)
-		(mirror x)
+		(lib_id "Railroad:Mast_Double")
+		(at 74.93 81.28 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5755,9 +3893,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "900afa13-d69c-493d-b00e-f627a6953450")
-		(property "Reference" "SW783"
-			(at 71.12 83.82 0)
+		(uuid "2e50f52c-9df3-45c9-bc13-e1dd96da7894")
+		(property "Reference" "S3"
+			(at 76.2 81.915 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5765,20 +3903,22 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "783"
-			(at 71.12 83.566 0)
+		(property "Value" "778SAB"
+			(at 73.66 83.82 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 86.36 0)
+			(at 74.93 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5789,7 +3929,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 86.36 0)
+			(at 74.93 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5800,7 +3940,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 86.36 0)
+			(at 74.93 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5810,8 +3950,272 @@
 				)
 			)
 		)
-		(property "CP" "CP Luchessa"
-			(at 71.12 81.915 0)
+		(property "Role" "APPLIANCE"
+			(at 74.93 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DWARF"
+			(at 74.93 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 74.93 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 74.93 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 74.93 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b89096f5-b2b4-44f2-a175-f91a0a228b85")
+		)
+		(pin "1"
+			(uuid "ea13949b-9cfa-4b0c-966c-41590990364b")
+		)
+		(pin "3"
+			(uuid "ab373a59-cf6e-4b74-887c-973fb8255148")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ")
+		(at 106.68 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3f4ee916-b216-4aa9-9e4e-40f6741fcab9")
+		(property "Reference" "B3"
+			(at 106.68 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 106.68 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint"
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ"
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 106.68 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ec9fab1-e107-4c12-b39b-d0f1ea2aea5f")
+		)
+		(pin "1"
+			(uuid "f8487c95-4472-4459-896b-74d2d4223f3f")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "B3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Switch_Lock")
+		(at 156.21 77.47 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4cd54d7d-b7e8-4c04-a8d5-f4a102a05a70")
+		(property "Reference" "SW781"
+			(at 156.21 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "781"
+			(at 156.21 80.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy South"
+			(at 156.21 81.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5822,7 +4226,7 @@
 			)
 		)
 		(property "TC" "${VALUE}T1"
-			(at 78.74 88.9 0)
+			(at 149.86 75.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5832,7 +4236,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 71.12 86.36 0)
+			(at 156.21 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5842,8 +4246,440 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_POWERED"
-			(at 71.12 86.36 0)
+		(property "Kind" "SWITCH_LOCK"
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "9423d505-0374-4c53-a0d3-53b49997ce7d")
+		)
+		(pin "1"
+			(uuid "ffcbfacc-2c97-42cb-9e04-5e2a38fdb101")
+		)
+		(pin "2"
+			(uuid "de77c6fd-4552-44fe-bea1-c3b73bafdbb7")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "SW781")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Switch_Lock")
+		(at 87.63 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ed1762d-66c9-4529-85cc-0e7c192fee59")
+		(property "Reference" "SW777"
+			(at 87.63 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "777"
+			(at 87.63 80.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 87.63 81.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" "${VALUE}T1"
+			(at 93.98 75.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_LOCK"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c4680405-30f0-4efe-9bfe-9c1dbb8fc700")
+		)
+		(pin "1"
+			(uuid "c6de0e3f-28ac-4924-9354-08feb52bfa35")
+		)
+		(pin "2"
+			(uuid "eefe40e1-2556-4e15-a7fa-75038f299434")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "SW777")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 120.65 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "54f0e2b0-241b-419e-b04f-89d938738a93")
+		(property "Reference" "TC3"
+			(at 120.65 56.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Interchange"
+			(at 109.982 57.658 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 2.54 2.54)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 120.65 62.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "908e146a-cd96-4c7f-b6dd-6e84e8f0d20f")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "TC3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Double")
+		(at 168.91 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6204bb42-c398-479f-aa43-e7b8b225c677")
+		(property "Reference" "S4"
+			(at 167.64 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "778NAB"
+			(at 170.18 71.12 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DWARF"
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 168.91 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 168.91 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5854,26 +4690,26 @@
 			)
 		)
 		(pin "2"
-			(uuid "37e4d6d2-e141-43c6-a108-aa74c9f85d75")
+			(uuid "395e5c8a-8bf5-433a-8cf2-f5d1c2877b71")
+		)
+		(pin "1"
+			(uuid "b9e7b25c-661c-4fdc-bd93-078ab4eac722")
 		)
 		(pin "3"
-			(uuid "fe3b0114-9cfa-433b-9257-68bcadae9d3a")
-		)
-		(pin "1"
-			(uuid "5018f026-2984-4f6b-b2d3-4cb12dea1c02")
+			(uuid "ab0c0eba-d632-4724-ba3c-af7bfcaaa58f")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "SW783")
+					(reference "S4")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 214.63 69.85 0)
+		(lib_id "Railroad:MAIN HOUSE")
+		(at 168.91 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5881,9 +4717,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "974d1ade-b0a2-43b5-a42f-9eb0aae259da")
-		(property "Reference" "TC1"
-			(at 214.63 65.405 0)
+		(uuid "6885b4c0-53f6-420e-9fd0-9abccaab2fe4")
+		(property "Reference" "HOUSE2"
+			(at 168.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5893,8 +4729,8 @@
 				)
 			)
 		)
-		(property "Value" "3NAT"
-			(at 212.598 67.056 0)
+		(property "Value" "Gilroy South"
+			(at 163.07 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5905,7 +4741,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 214.63 69.85 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +4752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 214.63 69.85 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5926,8 +4762,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 214.63 69.85 0)
+		(property "Description" "Maintainer Bungalow"
+			(at 168.91 46.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5937,19 +4773,8 @@
 				)
 			)
 		)
-		(property "CP" "CP Carnadero"
-			(at 214.63 71.755 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 214.63 69.85 0)
+		(property "Milepost" "78.1"
+			(at 168.91 46.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5959,8 +4784,8 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 214.63 69.85 0)
+		(property "Role" "CONTROLLED_POINT"
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5970,31 +4795,8 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "cca469f1-2f01-47c6-b8ed-cd95e038cca6")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 59.69 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9f486a76-50de-421f-a0bb-cd990ef163c7")
-		(property "Reference" "H2"
-			(at 63.5 92.71 0)
+		(property "Direction" ""
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6004,62 +4806,8 @@
 				)
 			)
 		)
-		(property "Value" "B"
-			(at 63.5 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 59.69 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 59.69 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 59.69 90.17 0)
+		(property "Name" ""
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6070,369 +4818,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "72aa6e2f-acb6-491c-85fc-8a4fb67de6a2")
+			(uuid "d12c75be-c776-4030-a355-b6b77cf23bf1")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule261-DoT-BiDirectional")
-		(at 36.83 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a9e48b9d-7fc5-4040-a218-7a55b8340d84")
-		(property "Reference" "DOT3"
-			(at 36.83 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MT"
-			(at 36.83 89.408 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 2.54 2.54)
-					(thickness 0.508)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 261"
-			(at 37.084 81.534 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rulebook" "261"
-			(at 36.83 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 27.305 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_261"
-			(at 36.83 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 36.83 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cafa7fb0-f50c-45e2-a437-d8e801f4b21a")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 50.8 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5303d44-d787-41e7-8115-b98d6dcbf8e9")
-		(property "Reference" "TC6"
-			(at 50.8 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1SAT"
-			(at 48.768 83.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Luchessa"
-			(at 50.8 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a300ce6c-c96a-40c6-87ff-b8ec8d62241b")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule261-DoT-BiDirectional")
-		(at 229.87 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bfefc599-5ed0-4eba-b8f4-3de20df94399")
-		(property "Reference" "DOT4"
-			(at 229.87 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Branch"
-			(at 230.124 72.136 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 2.54 2.54)
-					(thickness 0.508)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 229.87 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 229.87 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 261"
-			(at 230.124 64.516 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Rulebook" "261"
-			(at 229.87 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 220.345 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_261"
-			(at 229.87 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 229.87 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8bbe3a15-f419-42bb-9d69-c806a59f0c8d")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT4")
+					(reference "HOUSE2")
 					(unit 1)
 				)
 			)
@@ -6440,7 +4831,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:MaintainerCall")
-		(at 109.22 30.48 0)
+		(at 168.91 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6448,9 +4839,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c05778f3-345e-4e9e-91f9-ee3af491a13d")
-		(property "Reference" "MC1"
-			(at 107.188 32.766 0)
+		(uuid "6de41628-b029-40e6-8032-0878322ca54e")
+		(property "Reference" "MC2"
+			(at 166.88 42.93 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6460,8 +4852,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
-			(at 109.22 30.48 0)
+		(property "Value" "MC2"
+			(at 168.91 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6471,7 +4863,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 30.48 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6482,7 +4874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 30.48 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6493,7 +4885,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 109.22 30.48 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6504,7 +4896,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 109.22 30.48 0)
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6515,7 +4907,40 @@
 			)
 		)
 		(property "Kind" "MAINTAINER_CALL"
-			(at 109.22 30.48 0)
+			(at 168.91 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy South"
+			(at 168.91 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 168.91 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6526,12 +4951,135 @@
 			)
 		)
 		(pin "1"
-			(uuid "2c48e2be-9da8-456b-83ed-6e6450c9e1aa")
+			(uuid "8e4e0147-de43-4af0-8ae9-b947059631bc")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "MC1")
+					(reference "MC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:NextCP")
+		(at 184.15 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "72f8e310-52ab-4aff-bbca-2616e18ede56")
+		(property "Reference" "CP2"
+			(at 187.325 79.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Luchessa"
+			(at 195.834 77.216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Identifies the next control point on this track"
+			(at 180.975 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "NEXT_CP"
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 184.15 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0104193-001a-497b-a33b-9ff15da7bc85")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "CP2")
 					(unit 1)
 				)
 			)
@@ -6539,106 +5087,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Signal Head - CL")
-		(at 76.2 73.66 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c107d4c0-59a1-4fb8-afc8-4fc4ebe7a56e")
-		(property "Reference" "H3"
-			(at 80.01 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 80.01 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 76.2 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 76.2 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5bea6653-013c-4a7f-b5d5-548e7eae581e")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 204.47 86.36 0)
+		(at 167.64 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6647,880 +5096,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c35e8a7a-e9e8-447d-8058-8cf109209602")
-		(property "Reference" "B8"
-			(at 204.47 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 204.47 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Carnadero"
-			(at 204.47 88.9 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 204.47 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 204.47 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1bc52bde-d098-4346-9711-c6ae225c7985")
-		)
-		(pin "2"
-			(uuid "56ca05ad-6628-4c72-9655-22254300eee6")
-		)
-		(pin "3"
-			(uuid "c69e232c-36d1-4f3c-a7ca-8535a7a67c29")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
-		(at 172.72 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c5886f4a-a81c-42fa-88cc-013c240e84f8")
-		(property "Reference" "HOUSE2"
-			(at 172.72 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CP Carnadero"
-			(at 166.878 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Maintainer Bungalow"
-			(at 172.72 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" "79.9"
-			(at 172.72 36.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CONTROLLED_POINT"
-			(at 172.72 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e8021239-5a2f-492b-9125-69e6f574fec0")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "HOUSE2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 204.47 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb046a4f-2e58-425f-9c49-990eefbebe82")
-		(property "Reference" "B9"
-			(at 204.47 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 204.47 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Carnadero"
-			(at 204.47 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 204.47 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 204.47 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "26aa360c-c216-4ad2-a1ba-157e2220443d")
-		)
-		(pin "2"
-			(uuid "bc80a0b4-ac42-43ca-a80d-98a1e68c58ef")
-		)
-		(pin "3"
-			(uuid "66ea58d6-7900-40e6-848f-b726174e02ea")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Milepost")
-		(at 160.02 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cd600799-0865-40f1-a243-4c177237b710")
-		(property "Reference" "MP1"
-			(at 156.21 52.705 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "79.3"
-			(at 160.02 49.276 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "ANNOTATION"
-			(at 160.02 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "MP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 58.42 86.36 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd861a0b-1933-4346-957b-e6e72a3469af")
-		(property "Reference" "B1"
-			(at 58.42 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 58.42 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Luchessa"
-			(at 58.42 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 58.42 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 58.42 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ee0e410d-482b-4e5f-9ce9-07f0241ca068")
-		)
-		(pin "2"
-			(uuid "dcec2d98-b754-4001-aafc-55a5948f7a22")
-		)
-		(pin "3"
-			(uuid "a98cab40-d408-4234-8a47-1ec328ea2f01")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Double")
-		(at 58.42 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cd98a2d2-bba0-4c01-860b-aed6650c1ead")
-		(property "Reference" "S784E1"
-			(at 59.69 90.805 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "784EAB"
-			(at 59.69 90.17 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 58.42 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_DOUBLE"
-			(at 58.42 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ee8b3c1d-df6d-423b-94ec-fce2379cb4da")
-		)
-		(pin "1"
-			(uuid "91950a8f-4b17-4308-a086-5b38679c3820")
-		)
-		(pin "3"
-			(uuid "8ab11a7c-ecad-47a7-b578-56e26f9206b6")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "S784E1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 121.92 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cecdcc5b-72f0-4088-bd8c-d8923a6541ea")
-		(property "Reference" "B3"
-			(at 121.92 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 121.92 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Gilroy"
-			(at 121.92 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 121.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 121.92 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5de88838-bea3-4049-a8c6-38083d806191")
-		)
-		(pin "2"
-			(uuid "57c44146-ce8c-437b-8537-3074fcf31165")
-		)
-		(pin "3"
-			(uuid "e5acf919-abe9-4404-a6f0-ae5a25e92435")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 72.39 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0e26c48-7550-494a-bd01-a1fb70eda2b2")
-		(property "Reference" "TC5"
-			(at 72.39 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2SAT"
-			(at 70.358 67.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Gilroy"
-			(at 72.39 71.755 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "593c93cb-056a-4866-a794-e4d8b470a9ef")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 200.66 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d5d51b42-8aec-4f57-8db7-5c72af7adf0d")
-		(property "Reference" "H7"
-			(at 196.85 80.01 0)
+		(uuid "7ad8b9bd-6e08-4274-8c1d-a2d6f7f0873a")
+		(property "Reference" "H5"
+			(at 163.83 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7531,9 +5109,9 @@
 			)
 		)
 		(property "Value" "B"
-			(at 196.596 77.724 0)
+			(at 163.83 73.66 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7541,7 +5119,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 82.55 0)
+			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7552,7 +5130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 82.55 0)
+			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7563,7 +5141,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 82.55 0)
+			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7574,7 +5152,7 @@
 			)
 		)
 		(property "Role" "COMPONENT"
-			(at 200.66 82.55 0)
+			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7585,7 +5163,29 @@
 			)
 		)
 		(property "Kind" "HEAD"
-			(at 200.66 82.55 0)
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7596,20 +5196,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "89880717-c14e-4df2-ac25-f7e2dd2567af")
+			(uuid "ba413e27-ea6b-4afe-a25c-77cbb21c3934")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "H7")
+					(reference "H5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:NextCP")
-		(at 245.11 86.36 180)
+		(lib_id "Railroad:IRJ-Signal")
+		(at 168.91 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7617,9 +5217,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d634bff1-5c9c-44a1-87ee-d531375d1943")
-		(property "Reference" "CP3"
-			(at 241.935 84.455 0)
+		(fields_autoplaced yes)
+		(uuid "80312d76-4212-441b-8f6c-e68bc04d67f9")
+		(property "Reference" "B8"
+			(at 168.91 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7629,20 +5230,18 @@
 				)
 			)
 		)
-		(property "Value" "CP Christopher"
-			(at 248.158 86.36 0)
+		(property "Value" ""
+			(at 168.91 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(color 0 0 0 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 86.36 0)
+			(at 168.91 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7653,7 +5252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 86.36 0)
+			(at 168.91 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7663,8 +5262,8 @@
 				)
 			)
 		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 79.375 0)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 168.91 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7674,109 +5273,20 @@
 				)
 			)
 		)
-		(property "Role" "TRACK"
-			(at 245.11 86.36 0)
-			(hide yes)
+		(property "CP" ""
+			(at 167.005 75.565 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 245.11 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f61a7e0e-40fe-433f-9de5-43bc89531599")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "CP3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:NextCP")
-		(at 245.11 69.85 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e357578d-2a68-400f-a47d-cd3318b74070")
-		(property "Reference" "CP2"
-			(at 241.935 67.945 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CP Hollister"
-			(at 248.158 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
+					(size 0.508 0.508)
+					(color 72 72 72 1)
 				)
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 248.92 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 248.92 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 62.865 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "TRACK"
-			(at 245.11 69.85 0)
+			(at 168.91 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7786,8 +5296,30 @@
 				)
 			)
 		)
-		(property "Kind" "NEXT_CP"
-			(at 245.11 69.85 0)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 168.91 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 168.91 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 168.91 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7798,12 +5330,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "7cf57ece-ecc6-4aa8-938b-4fc4153d9c89")
+			(uuid "23e0f7da-f1fe-4b0a-a802-fd1129fb87da")
+		)
+		(pin "2"
+			(uuid "67f52912-c6ec-487c-9a87-a0cc6157c0fa")
+		)
+		(pin "3"
+			(uuid "18f76d72-0bb6-4430-957b-b77edbbbb8e6")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "CP2")
+					(reference "B8")
 					(unit 1)
 				)
 			)
@@ -7811,7 +5349,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:NextCP")
-		(at 27.94 86.36 0)
+		(at 53.34 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7819,9 +5357,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e6b22427-20b5-467d-9a20-baee55bc577d")
+		(uuid "8df20930-74d7-4da1-b515-79aa607fb2e1")
 		(property "Reference" "CP1"
-			(at 31.115 88.265 0)
+			(at 56.515 79.375 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7831,8 +5369,8 @@
 				)
 			)
 		)
-		(property "Value" "CP Lick"
-			(at 22.098 86.36 0)
+		(property "Value" "Gilroy Caltrain"
+			(at 43.942 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7843,7 +5381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 24.13 86.36 0)
+			(at 49.53 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7854,7 +5392,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 24.13 86.36 0)
+			(at 49.53 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7865,7 +5403,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 24.765 93.345 0)
+			(at 50.165 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7876,7 +5414,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 27.94 86.36 0)
+			(at 53.34 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7887,7 +5425,29 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 27.94 86.36 0)
+			(at 53.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 53.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 53.34 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7898,10 +5458,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "7e2d161d-2b93-4e61-ab8c-8dd30a269649")
+			(uuid "76402b81-537a-4328-80fb-ad8c653cacdf")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "CP1")
 					(unit 1)
@@ -7910,8 +5470,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 67.31 69.85 0)
+		(lib_id "Railroad:Rule261-DoT-BiDirectional")
+		(at 53.34 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7920,9 +5480,132 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee38eb60-e6d5-4ea1-bf3e-35b646157737")
-		(property "Reference" "B10"
-			(at 67.31 66.04 0)
+		(uuid "9cdbf8a5-965f-4bb0-80ac-128c2624047f")
+		(property "Reference" "DOT2"
+			(at 43.815 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Rule 261"
+			(at 53.34 72.39 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
+			(at 53.34 79.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_261"
+			(at 53.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 43.815 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 53.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 53.34 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "474ee03f-f744-4569-a93f-206ae72d3001")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "DOT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-Signal")
+		(at 137.16 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "abde960c-453c-4d28-81ac-0a4634488adf")
+		(property "Reference" "B2"
+			(at 137.16 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7933,7 +5616,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 69.85 0)
+			(at 137.16 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7943,7 +5626,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 69.85 0)
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7954,7 +5637,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 69.85 0)
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7964,8 +5647,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 67.31 69.85 0)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7975,317 +5658,8 @@
 				)
 			)
 		)
-		(property "Role" "TRACK"
-			(at 67.31 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 67.31 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "870c2332-2ba9-48cd-92cc-e06b63bdf11a")
-		)
-		(pin "2"
-			(uuid "6d26a608-db08-4972-aa8f-ddc995bdb803")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Single")
-		(at 204.47 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ef533c5a-3af3-4b71-95e4-4216c5859680")
-		(property "Reference" "S784W3"
-			(at 203.2 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "784WD"
-			(at 202.946 66.548 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 204.47 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_SINGLE"
-			(at 204.47 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "74d94787-546c-482c-8cb6-a3f7121b2733")
-		)
-		(pin "2"
-			(uuid "1aaf1c2e-de50-449a-b412-9853a79ef50f")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "S784W3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 160.02 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f533292c-3f78-4418-9c96-7c298d5d122d")
-		(property "Reference" "B6"
-			(at 160.02 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 160.02 86.36 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 160.02 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 160.02 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 160.02 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5a508a74-6c85-4ce4-867f-b44e4f604e59")
-		)
-		(pin "2"
-			(uuid "5c004d37-eb6c-446c-aaf3-57548cd66395")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Powered_Derail")
-		(at 85.09 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fc97e1c5-dc31-4200-817b-c1b396014457")
-		(property "Reference" "DERAIL795"
-			(at 82.55 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "795D"
-			(at 85.09 72.644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Protective DERAIL for sidings. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
-			(at 85.09 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Gilroy"
-			(at 85.09 74.295 0)
+		(property "CP" ""
+			(at 139.065 62.865 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8293,20 +5667,11 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
+				(justify right)
 			)
 		)
-		(property "TC" ""
-			(at 92.71 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 85.09 69.85 0)
+		(property "Role" "TRACK"
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8316,8 +5681,8 @@
 				)
 			)
 		)
-		(property "Kind" "DERAIL"
-			(at 85.09 69.85 0)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 137.16 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8327,24 +5692,49 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "a81689e4-a176-4a14-91a0-5fe449b24365")
+		(property "Direction" ""
+			(at 137.16 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 137.16 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "05f3beb2-7f01-46ed-a48f-dd9fd36e3db1")
+			(uuid "2d369a06-dcb9-4f73-b222-854fa7924626")
+		)
+		(pin "2"
+			(uuid "025e2af2-1594-4679-bc4b-7b7b618b499c")
+		)
+		(pin "3"
+			(uuid "d7df7d8e-8e92-4ffb-96a3-041a3769485f")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DERAIL795")
+					(reference "B2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
-		(at 71.12 30.48 0)
+		(lib_id "Railroad:Signal Head - CL")
+		(at 135.89 64.77 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8352,9 +5742,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "fd01610b-be59-4abe-8147-b069b96ffe59")
-		(property "Reference" "HOUSE1"
-			(at 71.12 31.75 0)
+		(fields_autoplaced yes)
+		(uuid "bdfe0249-20b9-45e4-b02c-b9b16b515477")
+		(property "Reference" "H2"
+			(at 139.7 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8364,8 +5755,376 @@
 				)
 			)
 		)
-		(property "Value" "CP Luchessa"
-			(at 65.278 35.56 0)
+		(property "Value" "C"
+			(at 139.7 64.77 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 135.89 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e6d76f64-8898-4dfe-917d-315687dfbbcd")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ")
+		(at 137.16 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3295ac0-3355-4bdd-a2c3-a2cbefe38c42")
+		(property "Reference" "B4"
+			(at 137.16 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 137.16 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint"
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ"
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 137.16 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa890741-e592-4339-9542-6dbc551245ed")
+		)
+		(pin "2"
+			(uuid "eaa35dfd-af2d-4bfd-919e-923f0a7b983b")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "B4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 107.95 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cffb885f-fe4d-4804-b238-ad2fc39e6dbe")
+		(property "Reference" "H1"
+			(at 104.14 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "C"
+			(at 104.14 57.15 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2699360b-7ea4-4611-9776-852ecbf08c21")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:MAIN HOUSE")
+		(at 74.93 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dde30d59-4393-472f-a35d-04e3a81c4e5f")
+		(property "Reference" "HOUSE1"
+			(at 74.93 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Gilroy North"
+			(at 69.09 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8376,7 +6135,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 30.48 0)
+			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8387,7 +6146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 30.48 0)
+			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8398,7 +6157,7 @@
 			)
 		)
 		(property "Description" "Maintainer Bungalow"
-			(at 71.12 36.195 0)
+			(at 74.93 46.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8408,8 +6167,8 @@
 				)
 			)
 		)
-		(property "Milepost" "78.3"
-			(at 71.12 36.195 0)
+		(property "Milepost" "77.7"
+			(at 74.93 46.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8420,7 +6179,29 @@
 			)
 		)
 		(property "Role" "CONTROLLED_POINT"
-			(at 71.12 30.48 0)
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8431,10 +6212,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "52f147d1-ccb3-4b7b-afe5-6c688bcee363")
+			(uuid "fa3e6de2-7163-460c-a64d-1e209f9de2f3")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "HOUSE1")
 					(unit 1)
@@ -8443,8 +6224,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 90.17 86.36 0)
+		(lib_id "Railroad:Signal Head - CL")
+		(at 78.74 81.28 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8453,9 +6234,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ff74880c-bb95-40c3-845f-3ab94dee7156")
-		(property "Reference" "B2"
-			(at 90.17 82.55 0)
+		(uuid "e551d125-a87e-41e9-8078-b95a98a0d437")
+		(property "Reference" "H3"
+			(at 82.55 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8465,10 +6246,10 @@
 				)
 			)
 		)
-		(property "Value" ""
-			(at 90.17 86.36 0)
+		(property "Value" "A"
+			(at 82.55 81.28 90)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8476,7 +6257,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 86.36 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8487,7 +6268,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 86.36 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8498,7 +6279,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 90.17 86.36 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8508,8 +6289,8 @@
 				)
 			)
 		)
-		(property "Role" "TRACK"
-			(at 90.17 86.36 0)
+		(property "Role" "COMPONENT"
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8519,8 +6300,30 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
-			(at 90.17 86.36 0)
+		(property "Kind" "HEAD"
+			(at 78.74 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 78.74 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8531,15 +6334,786 @@
 			)
 		)
 		(pin "1"
-			(uuid "d03ed121-e6b4-435f-8b19-106dd829060a")
-		)
-		(pin "2"
-			(uuid "ce766f7c-a2d4-42c4-b4d9-1a2e1be97709")
+			(uuid "9aaf4dd3-38e2-4466-98fa-14d127cbf6f5")
 		)
 		(instances
-			(project "Luchessa"
+			(project "GilroyInterchange"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "B2")
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Dwarf")
+		(at 137.16 64.77 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e79216d0-c35b-465c-9635-adb44632f9a9")
+		(property "Reference" "S2"
+			(at 138.43 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "778SC"
+			(at 135.128 67.31 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DWARF"
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 137.16 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fb7ec654-ba73-4c50-9207-3d4fd5cdc3d0")
+		)
+		(pin "1"
+			(uuid "0bd0a6cd-d82d-4431-8d09-5868caaca736")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 165.1 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2c39ebe-f7aa-4785-932d-3656cb8259a4")
+		(property "Reference" "H6"
+			(at 161.29 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A"
+			(at 161.29 73.66 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 165.1 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "353559f0-b9b4-45d8-9b87-f7f656948537")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule261-DoT-BiDirectional")
+		(at 184.15 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3925ced-b75d-49d3-a0df-6e939bf00ded")
+		(property "Reference" "DOT1"
+			(at 174.625 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Rule 261"
+			(at 184.15 72.39 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 184.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 184.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
+			(at 184.15 79.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_261"
+			(at 184.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 174.625 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 184.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 184.15 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f15c4744-a46a-4b81-8049-b95caa318f32")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "DOT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:MaintainerCall")
+		(at 74.93 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f401a6e5-15f0-4814-9e49-9472b74397be")
+		(property "Reference" "MC1"
+			(at 72.9 42.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MC1"
+			(at 74.93 42.926 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAINTAINER_CALL"
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 74.93 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "971fa51a-bc96-4899-897a-225bdab44beb")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "MC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Dwarf")
+		(at 106.68 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8d9b8ef-bbd3-4866-8353-49d5f6e9b8dd")
+		(property "Reference" "S1"
+			(at 105.41 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "778NC"
+			(at 108.712 54.61 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DWARF"
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 106.68 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e0114c10-6b6b-4581-ac2d-9909e7ece096")
+		)
+		(pin "1"
+			(uuid "779d89ef-8e31-4fff-9b36-0168ccbf216c")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 120.65 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fa76e095-5ab7-4120-a24f-923e42fefb99")
+		(property "Reference" "TC2"
+			(at 120.65 73.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TK1"
+			(at 118.62 74.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 120.65 79.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d3e7fdf-f58a-4e33-b299-96abd0497720")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "TC2")
 					(unit 1)
 				)
 			)
