@@ -18,6 +18,125 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "Railroad:AUXILIARY"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AUX"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "AUXILIARY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AUXILIARY_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 194 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name "MC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad:Bumper"
 			(pin_numbers
 				(hide yes)
@@ -3181,6 +3300,16 @@
 		)
 		(uuid "58ebab91-c42b-4b3e-bd6b-4a9b33ac52c4")
 	)
+	(text "TRAFFIC"
+		(exclude_from_sim no)
+		(at 39.878 37.846 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7f4503c4-5eac-4cb3-a458-eba9f97a722a")
+	)
 	(junction
 		(at 229.87 69.85)
 		(diameter 0)
@@ -3257,6 +3386,16 @@
 		)
 		(uuid "0120dfc3-c197-4e1e-907b-40cdb4135b91")
 	)
+	(polyline
+		(pts
+			(xy 30.48 40.64) (xy 49.53 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10ee0565-a179-4859-bfa8-2c9339eddec5")
+	)
 	(wire
 		(pts
 			(xy 214.63 69.85) (xy 229.87 69.85)
@@ -3266,6 +3405,26 @@
 			(type default)
 		)
 		(uuid "271d0a2e-ce77-4245-8840-c2d754e4b2eb")
+	)
+	(polyline
+		(pts
+			(xy 48.26 39.37) (xy 49.53 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c338610-ff0f-43b6-82b9-a8457c742cd0")
+	)
+	(polyline
+		(pts
+			(xy 30.48 40.64) (xy 31.75 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff6a098-2960-469c-bdfe-f1f7633ccf5e")
 	)
 	(wire
 		(pts
@@ -3297,6 +3456,16 @@
 		)
 		(uuid "7d07c28a-5ad1-4b11-a4ae-8634662f42c7")
 	)
+	(polyline
+		(pts
+			(xy 30.48 40.64) (xy 31.75 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86c33a76-6a89-4758-9fd3-5a22032b311e")
+	)
 	(wire
 		(pts
 			(xy 229.87 86.36) (xy 245.11 86.36)
@@ -3327,6 +3496,16 @@
 			(color 72 72 72 1)
 		)
 		(uuid "97f3a3a6-1906-4032-a742-100b22051071")
+	)
+	(polyline
+		(pts
+			(xy 48.26 41.91) (xy 49.53 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a332760d-79c3-4197-b5e4-bff59160d2cb")
 	)
 	(wire
 		(pts
@@ -4121,6 +4300,105 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "TC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY")
+		(at 43.18 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a7f8201-35a2-4891-9627-6f48b96741a5")
+		(property "Reference" "FLK2"
+			(at 43.18 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFLK"
+			(at 43.18 42.926 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY"
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "49751749-fb47-4305-b373-2fd9d1128c9b")
+		)
+		(instances
+			(project "Luchessa"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "FLK2")
 					(unit 1)
 				)
 			)
@@ -5617,6 +5895,105 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "SW795")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY")
+		(at 36.83 40.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8775b15a-cd41-4476-8af4-23bca5c64310")
+		(property "Reference" "FLK1"
+			(at 36.83 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NFLK"
+			(at 36.83 42.926 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY"
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0eaa2ea0-66d0-45ce-906e-98b8c53687e0")
+		)
+		(instances
+			(project "Luchessa"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "FLK1")
 					(unit 1)
 				)
 			)

@@ -601,7 +601,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
+			(property "Reference" "I2C"
 				(at -7.62 49.53 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -612,8 +612,8 @@
 					)
 				)
 			)
-			(property "Value" "8"
-				(at 0 -40.005 0)
+			(property "Value" "${Address}"
+				(at 4.445 49.53 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -656,7 +656,7 @@
 					)
 				)
 			)
-			(property "BusKind" "I2C-MAX7313"
+			(property "Kind" "I2C-MAX7313"
 				(at -5.715 -37.465 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -668,10 +668,20 @@
 				)
 			)
 			(property "Role" "IODRIVER"
-				(at 0 0 0)
+				(at -1.27 -34.925 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 1.5681 -39.9209 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4147,8 +4157,9 @@
 				)
 			)
 		)
-		(property "Value" "0x20"
-			(at 99.06 112.395 0)
+		(property "Value" "${ADDRESS}"
+			(at 102.362 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4191,7 +4202,18 @@
 				)
 			)
 		)
-		(property "BusKind" "I2C-MAX7313"
+		(property "Role" "IODRIVER"
+			(at 97.79 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
 			(at 93.345 109.855 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -4202,9 +4224,8 @@
 				(justify left)
 			)
 		)
-		(property "Role" "IODRIVER"
-			(at 99.06 72.39 0)
-			(hide yes)
+		(property "Address" "0x20"
+			(at 100.6281 112.3109 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4416,8 +4437,9 @@
 				)
 			)
 		)
-		(property "Value" "0x21"
+		(property "Value" "${ADDRESS}"
 			(at 149.86 112.395 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4460,10 +4482,21 @@
 				)
 			)
 		)
-		(property "BusKind" "I2C-MAX7313"
+		(property "Role" "IODRIVER"
+			(at 148.59 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
 			(at 144.145 109.855 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4471,9 +4504,8 @@
 				(justify left)
 			)
 		)
-		(property "Role" "IODRIVER"
-			(at 149.86 72.39 0)
-			(hide yes)
+		(property "Address" "0x21"
+			(at 152.146 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

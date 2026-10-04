@@ -18,6 +18,125 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "Railroad:AUXILIARY"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AUX"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "AUXILIARY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AUXILIARY_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 194 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name "MC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad:Bumper"
 			(pin_numbers
 				(hide yes)
@@ -3592,6 +3711,16 @@
 		)
 		(uuid "437e4dca-d9cb-4f56-a187-bf52d1f478d7")
 	)
+	(text "TRAFFIC"
+		(exclude_from_sim no)
+		(at 41.148 39.116 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7a4f3d6c-1d5d-4d55-9383-281948d6438b")
+	)
 	(junction
 		(at 158.75 116.84)
 		(diameter 0)
@@ -4338,6 +4467,26 @@
 		)
 		(uuid "8ecc4436-4fce-464c-9942-af0b247f7b3d")
 	)
+	(polyline
+		(pts
+			(xy 31.75 41.91) (xy 33.02 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f559924-65b1-4a13-80d8-ceae4ea3e130")
+	)
+	(polyline
+		(pts
+			(xy 31.75 41.91) (xy 33.02 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94d9eb15-d8b3-4613-91f6-c844e630f49c")
+	)
 	(wire
 		(pts
 			(xy 158.75 116.84) (xy 162.56 116.84)
@@ -4357,6 +4506,16 @@
 			(type default)
 		)
 		(uuid "96c230ea-3688-49e1-bcf2-952744709fdb")
+	)
+	(polyline
+		(pts
+			(xy 31.75 41.91) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "981daffd-82cf-4d5c-b4a3-7da30bec46c0")
 	)
 	(wire
 		(pts
@@ -4477,6 +4636,16 @@
 			(type default)
 		)
 		(uuid "bf0c7000-e3ea-41f2-a28c-216c4a6e2a4d")
+	)
+	(polyline
+		(pts
+			(xy 49.53 40.64) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d64880-6072-4746-b7c4-96ee914c610d")
 	)
 	(wire
 		(pts
@@ -4707,6 +4876,16 @@
 			(type default)
 		)
 		(uuid "f6a8ef4a-99d8-4702-810e-1bd82726bafc")
+	)
+	(polyline
+		(pts
+			(xy 49.53 43.18) (xy 50.8 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74ed504-dfa9-41fb-9f00-b938eca474b5")
 	)
 	(wire
 		(pts
@@ -5773,6 +5952,105 @@
 			(project "Watsonville"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "TC25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY")
+		(at 38.1 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "214d2f23-951a-4138-b1d3-9bc557f94f35")
+		(property "Reference" "FLK"
+			(at 38.1 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NFLK"
+			(at 38.1 44.196 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "368e0606-2f25-4d0f-a95c-18a20a1c3e05")
+		)
+		(instances
+			(project "Watsonville"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "FLK")
 					(unit 1)
 				)
 			)
@@ -15557,6 +15835,105 @@
 			(project "Watsonville"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "B9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY")
+		(at 44.45 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd16efa7-5043-471c-a374-4746ae33f5a4")
+		(property "Reference" "FLK1"
+			(at 44.45 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SFLK"
+			(at 44.45 44.196 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY"
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3932e1c2-66db-4f3b-a87f-3e69fca29e4b")
+		)
+		(instances
+			(project "Watsonville"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "FLK1")
 					(unit 1)
 				)
 			)
