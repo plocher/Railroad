@@ -371,7 +371,7 @@
 					)
 				)
 			)
-			(property "Kind" "TRACK"
+			(property "Kind" "END_CTC"
 				(at 0 -10.795 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -382,7 +382,7 @@
 					)
 				)
 			)
-			(property "Role" "END_CTC"
+			(property "Role" "TRACK"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5875,109 +5875,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-END_CTC")
-		(at 110.49 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aedfc48b-e499-476c-bc6a-f601babb789a")
-		(property "Reference" "B2"
-			(at 110.49 84.455 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "END CTC"
-			(at 110.8075 71.12 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK"
-			(at 110.49 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "END_CTC"
-			(at 110.49 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2ee2e68b-0130-43ff-83f3-1febc731b1fd")
-		)
-		(pin "2"
-			(uuid "5d2160c3-8cd0-4796-9305-0b1b8f2937ab")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "B2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad:Rule105-RestrictedSpeed")
 		(at 119.38 80.01 180)
 		(unit 1)
@@ -6530,6 +6427,109 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "TC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-END_CTC")
+		(at 110.49 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de274dbe-41d8-4795-9866-fbb0950c5f2c")
+		(property "Reference" "B2"
+			(at 110.49 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "END CTC"
+			(at 110.8075 71.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "END_CTC"
+			(at 110.49 88.265 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 110.49 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3fc8bfb1-d865-44ba-81e3-ab1037c65ae4")
+		)
+		(pin "1"
+			(uuid "5c813941-c182-40fe-b117-a6df6a099dbd")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "B2")
 					(unit 1)
 				)
 			)
