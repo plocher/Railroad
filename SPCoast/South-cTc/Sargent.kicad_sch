@@ -3221,17 +3221,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "FIXME recipe for this generated sheet\n\nGenerated from the historical ArduinoPoint desk definition\n(ArduinoPoint/definitions/SouthCTC.xml). It is scaffolding, not truth:\nfinish it to the same fidelity as the hand-drawn Luchessa sheet.\n\n1. CP Name on every column is FIXME. One column IS one controlled point;\n   give each the geographic name it has on the railroad (Luchessa's three\n   columns are CP Luchessa, CP Gilroy, CP Carnadero). Nothing in the\n   legacy sources records these.\n2. IndicationToken values starting with FIXME could not be resolved:\n   - FIXME <n>T1 : the OS circuit of a switch with no lever on this desk\n     (a crossover slave, e.g. 3B); name it once the plant is drawn.\n   - FIXME TL / TR : traffic lamps, not track circuits. Expect these to\n     become PanelAuxiliary appliances or a new indication kind.\n   - FIXME CP_Other:token : this lamp shows another interlocking's\n     indication. The model resolves lamp tokens per interlocking today,\n     so this needs a schema and compiler addition.\n3. Lever kinds came from the legacy XML and are suggestions: it called\n   Luchessa's 795 a switch when it is a lock. Check each against the plant.\n4. Expander addresses are computed as 0x20 + column - 1, which is the\n   legacy convention baked into the hand-written IO-I2C.h. Verify each\n   against the built hardware; the model takes the address from here.\n5. Lamp Values are descriptive labels only (OS, TRACK, MC, TRAFFIC) and\n   nothing reads them. Rename freely.\n"
-		(exclude_from_sim no)
-		(at 20.32 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "8419dbc4-5fd0-4523-a3ff-92e28f488970")
-	)
 	(no_connect
 		(at 87.63 82.55)
 		(uuid "2f40fe15-554d-4b79-8e1e-de6ee86a68ad")

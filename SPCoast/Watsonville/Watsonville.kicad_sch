@@ -3743,6 +3743,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad:Virtual Indication"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TC"
+				(at -25.4 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IndicationToken" ""
+				(at -5.842 -4.064 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "CP" "Watsonville"
+				(at 0 -1.905 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(color 72 72 72 1)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at -21.463 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "VIRTUAL_INDICATION"
+				(at -17.145 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Display" "${Value}: [${IndicationToken}]"
+				(at 2.286 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(symbol "Virtual Indication_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 255 0 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name "TC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "LEGACY DIAGRAM AND NOTES\n\n   \n           Watsonville is the staging \"yard\" at the south end of layout.\n           The staging yard is served by a single track with a switch for Arrival or Departure\n           traffic to/from CP Sargent; the Arrival/Departure switch determines the flow of traffic.\n   \n           One arrives into the yard by way of the arrival lead and a reverse loop\n           that takes the train to the southernmost point of the layout into the arrival ladder.\n   \n           Except for Yard Tracks 1 and 2, the yard leads are all approximately 16' long.  Y1 is about 8', and it\n           merges with Y2 about midway along Y2's length.  (Y1, Y2 'A' and Y2 'B' are intended to hold short\n           locals in a serial staged manner.\n   \n           All yard tracks contain entry, midway and end section detectors, with optical detection near the end of\n           the end section.  There are isolation sections before each departure ladder switch that are de-energized\n           when the ladder is not aligned for that yard track.\n   \n           There are no Maintainer Call devices.\n   \n           There is one set of Signals controlling yard entry/exit\n              2sBA - Mainline before Sargent industry turnout\n              2sDC - Beet Loader Industry spur\n   \n              2nC - .\n   \n   \n   		     < Railroad West/North                                          Railroad East/South >\n   	   |-2sDC \n   		------\\       Departure            CP Watsonville\n   	   |-2sBA \\         2nCD-|       DLT           Y1e/d    Y1c     Y1b\n   		======== ==1===out==== =======@==3======== ==@=R= ===@=== ===@=== =\\                        Y1\n   		            \\                     \\                                 \\       Y2a\n   		             \\==in==== ==\\         5====== ==@=R= ===@=== ===@=== ===25== ==@== ==\\         Y2\n   		                 2nAB-|   \\         7===== ==@=R= ===@=== ===@================= ===23       Y3\n   		             Arrival       \\         9==== ==@=R= ===@=== ===@================= ====21      Y4\n   		                            \\        11=== ==@=R= ===@=== ===@================= =====19     Y5\n   		                             \\        13== ==@=R= ===@=== ===@================= ======17    Y6\n   		                              \\         \\= ==@=R= ===@=== ===@================= =======15=\\ Y7\n   		                               \\     2nAB-|                                                |\n   		                                \\=============@================================ ===@======/\n   		                                             AT (auto rev)                        ALT"
 		(exclude_from_sim no)
@@ -5414,6 +5569,139 @@
 			(project "Watsonville"
 				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
 					(reference "SW23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Virtual Indication")
+		(at 30.48 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0b5b4987-93df-4b68-a076-ead4c67ef4b6")
+		(property "Reference" "TC32"
+			(at 5.08 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0100T"
+			(at 30.48 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Arrival Ladder"
+			(at 30.48 112.776 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationToken" "15T1,17T1.19T1,21T1,23T1"
+			(at 24.638 119.634 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "CP" "Watsonville"
+			(at 30.48 117.475 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 9.017 111.506 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "VIRTUAL_INDICATION"
+			(at 13.335 113.665 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Display" "${Value}: [${IndicationToken}]"
+			(at 32.766 115.57 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6afa8757-003a-4c4f-a5a7-27146417a68b")
+		)
+		(instances
+			(project "Watsonville"
+				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
+					(reference "TC32")
 					(unit 1)
 				)
 			)
@@ -7655,7 +7943,7 @@
 				)
 			)
 		)
-		(property "Value" "0DT"
+		(property "Value" "03T"
 			(at 51.31 70.87 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9723,6 +10011,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad:Virtual Indication")
+		(at 30.48 124.46 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5732260c-71e6-41d4-bdac-8c9c7d352cf6")
+		(property "Reference" "TC34"
+			(at 5.08 118.364 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0101T"
+			(at 30.48 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Departure Ladder"
+			(at 31.496 121.412 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationToken" "03T,3T1,5T1,7T1.9T1,11T1,13T1"
+			(at 24.638 128.524 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "CP" "Watsonville"
+			(at 30.48 126.365 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 9.017 120.396 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "VIRTUAL_INDICATION"
+			(at 13.335 122.555 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Display" "${Value}: [${IndicationToken}]"
+			(at 33.274 124.46 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "32ddaf2e-c006-484d-b576-5d2f83d33a56")
+		)
+		(instances
+			(project "Watsonville"
+				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
+					(reference "TC34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad:Track Circuit_Yellow")
 		(at 68.58 104.14 0)
 		(unit 1)
@@ -9744,7 +10165,7 @@
 				)
 			)
 		)
-		(property "Value" "0AT"
+		(property "Value" "02T"
 			(at 66.55 101.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14270,7 +14691,7 @@
 				)
 			)
 		)
-		(property "Value" "AT"
+		(property "Value" "01T"
 			(at 166.88 134.37 0)
 			(show_name no)
 			(do_not_autoplace no)
