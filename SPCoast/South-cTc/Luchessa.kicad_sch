@@ -13,7 +13,7 @@
 		(comment 2 "Luchessa Interlocking")
 	)
 	(lib_symbols
-		(symbol "RailroadPanel:Codeline-Virtual"
+		(symbol "RailroadPanel:Codeline-Encoding-Bits"
 			(pin_numbers
 				(hide yes)
 			)
@@ -26,10 +26,10 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CODELINE"
-				(at -12.7 3.175 0)
+			(property "Reference" "Encoding"
+				(at 5.08 -9.525 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
@@ -37,8 +37,8 @@
 					)
 				)
 			)
-			(property "Value" "VIRTUAL"
-				(at -3.175 0 0)
+			(property "Value" "Bit Packing"
+				(at 1.905 -1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -70,7 +70,217 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Bit (array of bytes) encoding"
+				(at 15.24 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CODELINE_ENCODING"
+				(at 10.795 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "BITS"
+				(at 10.795 -9.525 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Chart" ""
+				(at 3.81 -5.08 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Station" "${SHEETNAME}"
+				(at 17.78 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Address" ""
+				(at 19.05 -5.08 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ControlBytes" "8"
+				(at 33.02 -4.445 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IndicationBytes" "8"
+				(at 33.02 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Codeline-Encoding-Bits_0_1"
+				(rectangle
+					(start 1.27 0)
+					(end 35.56 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Codeline-Encoding-Bits_1_1"
+				(text "Station:"
+					(at 17.145 -2.54 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(text "Address:"
+					(at 17.145 -4.445 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(text "IB["
+					(at 31.75 -2.54 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(text "OB["
+					(at 31.75 -4.445 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(text "]"
+					(at 34.29 -2.54 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(text "]"
+					(at 34.29 -4.445 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(pin free line
+					(at 0 0 0)
+					(length 1.27)
+					(name "Encoding"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:Codeline-Encoding-US&S-506"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Encoding"
+				(at 5.08 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "US&S 506"
+				(at 1.905 -1.905 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -81,10 +291,44 @@
 					)
 				)
 			)
-			(property "Role" "CODELINE"
-				(at -13.97 0 0)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "US&S 506 time-coded pulses"
+				(at 15.24 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CODELINE_ENCODING"
+				(at 10.795 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "USS506"
+				(at 10.795 -9.525 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -93,25 +337,85 @@
 				)
 			)
 			(property "Station" "${SHEETNAME}"
-				(at 10.16 0.635 0)
+				(at 21.59 -1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(property "Address" ""
+				(at 29.21 -4.445 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Chart" ""
+				(at 1.905 -5.08 0)
 				(show_name yes)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.635 0.635)
 					)
+					(justify left)
 				)
 			)
-			(symbol "Codeline-Virtual_0_1"
+			(symbol "Codeline-Encoding-US&S-506_0_1"
 				(rectangle
-					(start -17.145 1.905)
-					(end 17.145 -6.985)
+					(start 1.27 0)
+					(end 35.56 -6.35)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(symbol "Codeline-Encoding-US&S-506_1_1"
+				(text "Station:"
+					(at 17.145 -1.27 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(text "Address:"
+					(at 17.145 -3.81 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(pin free line
+					(at 0 0 0)
+					(length 1.27)
+					(name "Encoding"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -706,7 +1010,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
+			(property "Reference" "I2C"
 				(at -7.62 49.53 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -717,8 +1021,8 @@
 					)
 				)
 			)
-			(property "Value" "8"
-				(at 0 -40.005 0)
+			(property "Value" "${Address}"
+				(at 4.445 49.53 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -761,7 +1065,7 @@
 					)
 				)
 			)
-			(property "BusKind" "I2C-MAX7313"
+			(property "Kind" "I2C-MAX7313"
 				(at -5.715 -37.465 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -773,10 +1077,20 @@
 				)
 			)
 			(property "Role" "IODRIVER"
-				(at 0 0 0)
+				(at -1.27 -34.925 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 1.5681 -39.9209 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1290,7 +1604,7 @@
 					)
 				)
 			)
-			(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 				(at -0.635 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1450,7 +1764,7 @@
 					)
 				)
 			)
-			(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1548,6 +1862,444 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelLock"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+				(at 2.54 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LOCK_LEVER"
+				(at 0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLock_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 6.35 -6.35) (xy -3.175 -6.35) (xy -3.81 -5.715) (xy -3.81 -2.54) (xy -3.175 -1.905)
+						(xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelLock_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(text "N"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "LOCK"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -5.08 180)
+					(length 0)
+					(name "NWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "RWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 0)
+					(name "RWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 0)
+					(name "NWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 0 0)
@@ -2718,6 +3470,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 29.21 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58a47f91-dbfd-42b4-a54d-1a3953b7cd54")
+	)
 	(no_connect
 		(at 87.63 48.26)
 		(uuid "0830999e-65b5-42ec-84dc-d1bb4474fc3a")
@@ -2814,6 +3572,231 @@
 		(at 189.23 74.93)
 		(uuid "ffaf4a72-b61c-42ca-b4eb-8310e1458b2e")
 	)
+	(wire
+		(pts
+			(xy 29.21 176.53) (xy 29.21 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bdd2911-03d8-4a50-a651-cb1e0034b56c")
+	)
+	(wire
+		(pts
+			(xy 29.21 185.42) (xy 29.21 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46c8e62a-af51-4dbe-abdd-2edbb6ed5ff3")
+	)
+	(global_label "CMRInet"
+		(shape input)
+		(at 29.21 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5a3cf69c-dcd9-41c1-a938-b71156b8e6aa")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.6653 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "Loconet"
+		(shape input)
+		(at 29.21 153.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "79553166-e9ec-4929-a05f-15142fdcc4d1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 18.8468 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "TIMECODE"
+		(shape input)
+		(at 29.21 176.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b154827b-a0c6-4415-aa95-db1ccbd370a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 17.0325 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(at 29.21 185.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e6e04dd-30f6-493a-b68e-9bfc2c40ca38")
+		(property "Reference" "Encoding3"
+			(at 23.495 187.325 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US&S 506"
+			(at 31.115 187.325 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "US&S 506 time-coded pulses"
+			(at 44.45 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 40.005 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "USS506"
+			(at 40.005 194.945 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Station" "Gilroy"
+			(at 50.8 186.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "6"
+			(at 58.42 189.865 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Chart" ""
+			(at 31.115 190.5 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "01347484-9da3-48d3-b4bd-027a7b6f611e")
+		)
+		(instances
+			(project "South-cTc"
+				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
+					(reference "Encoding3")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(symbol
 		(lib_id "RailroadPanel:PanelLamp-YELLOW")
 		(at 130.81 104.14 0)
@@ -2868,7 +3851,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 			(at 130.81 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -2939,7 +3922,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelSwitch")
+		(lib_id "RailroadPanel:PanelLock")
 		(at 130.81 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -2993,7 +3976,7 @@
 			)
 		)
 		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
-			(at 133.35 73.025 0)
+			(at 133.35 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3004,7 +3987,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 131.445 76.2 0)
+			(at 131.445 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,8 +3997,8 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LEVER"
-			(at 131.445 74.93 0)
+		(property "Kind" "LOCK_LEVER"
+			(at 131.445 73.025 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3103,7 +4086,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 			(at 79.375 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -3285,6 +4268,292 @@
 		)
 	)
 	(symbol
+		(lib_id "RailroadPanel:Codeline-Encoding-Bits")
+		(at 29.21 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5fcecce4-343d-4268-be86-22bb458ab3ad")
+		(property "Reference" "Encoding5"
+			(at 34.29 174.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bit Packing"
+			(at 31.115 167.005 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bit (array of bytes) encoding"
+			(at 44.45 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 40.005 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "BITS"
+			(at 40.005 174.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Chart" ""
+			(at 33.02 170.18 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Station" "Luchessa"
+			(at 46.99 167.64 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "30"
+			(at 48.26 170.18 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ControlBytes" "8"
+			(at 62.23 169.545 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationBytes" "8"
+			(at 62.23 167.64 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b310c1fe-6f8b-4823-abf2-796267e969da")
+		)
+		(instances
+			(project "South-cTc"
+				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
+					(reference "Encoding5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(at 29.21 176.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "67ac6b2b-1b3e-43f7-ad6c-d07a0883df39")
+		(property "Reference" "Encoding2"
+			(at 23.495 178.435 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US&S 506"
+			(at 31.115 178.435 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "US&S 506 time-coded pulses"
+			(at 44.45 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 40.005 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "USS506"
+			(at 40.005 186.055 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Station" "Luchessa"
+			(at 50.8 177.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "5"
+			(at 58.42 180.975 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Chart" ""
+			(at 31.115 181.61 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "45adad9b-8db7-406b-aaf8-05a6463bba4a")
+		)
+		(instances
+			(project "South-cTc"
+				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
+					(reference "Encoding2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "RailroadPanel:PanelColumn")
 		(at 130.81 97.79 0)
 		(unit 1)
@@ -3392,7 +4661,7 @@
 				)
 			)
 		)
-		(property "CP Name" "CP Gilroy"
+		(property "CP Name" "Gilroy"
 			(at 131.445 132.08 0)
 			(show_name yes)
 			(do_not_autoplace yes)
@@ -3489,7 +4758,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -3511,7 +4780,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "1NA"
+		(property "IndicationToken" "1NAT"
 			(at 128.905 26.67 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -3769,7 +5038,7 @@
 				)
 			)
 		)
-		(property "CP Name" "CP Carnadero"
+		(property "CP Name" "Carnadero"
 			(at 182.245 132.08 0)
 			(show_name yes)
 			(do_not_autoplace yes)
@@ -3978,7 +5247,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic 1-bit dispatcher-facing appliance (Maintainer Call, switch heater, bungalow door, etc).  ControlToken must be declared explicitly."
+		(property "Description" "Maintainer Call Lever"
 			(at 130.81 55.245 0)
 			(hide yes)
 			(show_name no)
@@ -4074,6 +5343,7 @@
 		)
 		(property "Value" "0x24"
 			(at 99.06 112.395 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4116,10 +5386,21 @@
 				)
 			)
 		)
-		(property "BusKind" "I2C-MAX7313"
+		(property "Role" "IODRIVER"
+			(at 97.79 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
 			(at 93.345 109.855 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4127,9 +5408,8 @@
 				(justify left)
 			)
 		)
-		(property "Role" "IODRIVER"
-			(at 99.06 72.39 0)
-			(hide yes)
+		(property "Address" "0x24"
+			(at 101.092 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4249,7 +5529,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical desk lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
 			(at 130.175 41.275 0)
 			(hide yes)
 			(show_name no)
@@ -4271,7 +5551,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "795T1,2NAA,799T1"
+		(property "IndicationToken" "795T1,01T,799T1"
 			(at 128.905 31.75 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -4544,7 +5824,7 @@
 				)
 			)
 		)
-		(property "CP Name" "CP Luchessa"
+		(property "CP Name" "Luchessa"
 			(at 80.645 132.08 0)
 			(show_name yes)
 			(do_not_autoplace yes)
@@ -4611,6 +5891,7 @@
 		)
 		(property "Value" "0x26"
 			(at 200.66 112.395 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4653,10 +5934,21 @@
 				)
 			)
 		)
-		(property "BusKind" "I2C-MAX7313"
+		(property "Role" "IODRIVER"
+			(at 199.39 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
 			(at 194.945 109.855 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4664,9 +5956,8 @@
 				(justify left)
 			)
 		)
-		(property "Role" "IODRIVER"
-			(at 200.66 72.39 0)
-			(hide yes)
+		(property "Address" "0x26"
+			(at 202.692 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4733,8 +6024,8 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Virtual")
-		(at 139.7 193.04 0)
+		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(at 29.21 194.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4742,21 +6033,20 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a21de85f-3217-4fc2-971c-501c4af1d478")
-		(property "Reference" "CODELINE3"
-			(at 127 189.865 0)
+		(uuid "a12e2c50-9ff8-4471-9271-40b5c89fd653")
+		(property "Reference" "Encoding4"
+			(at 23.495 196.215 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "VIRTUAL"
-			(at 136.525 193.04 0)
+		(property "Value" "US&S 506"
+			(at 31.115 196.215 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4767,7 +6057,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 193.04 0)
+			(at 29.21 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4778,7 +6068,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 193.04 0)
+			(at 29.21 194.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4788,8 +6078,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 193.04 0)
+		(property "Description" "US&S 506 time-coded pulses"
+			(at 44.45 201.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4799,8 +6089,20 @@
 				)
 			)
 		)
-		(property "Role" "CODELINE"
-			(at 125.73 193.04 0)
+		(property "Role" "CODELINE_ENCODING"
+			(at 40.005 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "USS506"
+			(at 40.005 203.835 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4810,20 +6112,45 @@
 				(justify left)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at 149.86 192.405 0)
+		(property "Station" "Carnadero"
+			(at 50.8 195.58 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "7"
+			(at 58.42 198.755 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Chart" ""
+			(at 31.115 199.39 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
+		)
+		(pin "1"
+			(uuid "caa2f722-9138-46c5-bfa2-6f5c2d0ae902")
 		)
 		(instances
 			(project "South-cTc"
 				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "CODELINE3")
+					(reference "Encoding4")
 					(unit 1)
 				)
 			)
@@ -4853,6 +6180,7 @@
 		)
 		(property "Value" "0x25"
 			(at 149.86 112.395 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4895,10 +6223,21 @@
 				)
 			)
 		)
-		(property "BusKind" "I2C-MAX7313"
+		(property "Role" "IODRIVER"
+			(at 148.59 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
 			(at 144.145 109.855 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4906,9 +6245,8 @@
 				(justify left)
 			)
 		)
-		(property "Role" "IODRIVER"
-			(at 149.86 72.39 0)
-			(hide yes)
+		(property "Address" "0x25"
+			(at 151.892 112.268 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4969,6 +6307,159 @@
 			(project "South-cTc"
 				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:Codeline-Encoding-Bits")
+		(at 29.21 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4e73c49-5f83-4de5-9fe4-0e2386668c91")
+		(property "Reference" "Encoding6"
+			(at 34.29 163.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Bit Packing"
+			(at 31.115 155.575 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bit (array of bytes) encoding"
+			(at 44.45 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 40.005 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "BITS"
+			(at 40.005 163.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Chart" ""
+			(at 33.02 158.75 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Station" "Luchessa"
+			(at 46.99 156.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "7D:30"
+			(at 48.26 158.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ControlBytes" "8"
+			(at 62.23 158.115 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationBytes" "8"
+			(at 62.23 156.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4c69b658-e8a9-4d52-b97e-b68f95b63b12")
+		)
+		(instances
+			(project "South-cTc"
+				(path "/d15068c3-eb5a-40a6-a7e1-dd0ed26bb9d0/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
+					(reference "Encoding6")
 					(unit 1)
 				)
 			)
