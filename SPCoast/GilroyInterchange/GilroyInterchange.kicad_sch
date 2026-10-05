@@ -3131,7 +3131,7 @@
 		(uuid "0903ee85-2e95-4d31-b4d7-4574f78ca086")
 	)
 	(junction
-		(at 184.15 77.47)
+		(at 196.85 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "127426f7-4a2b-436d-9384-848b60b3c7c5")
@@ -3141,6 +3141,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "143ba005-0312-4b57-b475-ecd2b17b2d6f")
+	)
+	(junction
+		(at 182.88 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85714832-9c09-48fd-ba4d-a2148215b735")
 	)
 	(junction
 		(at 120.65 77.47)
@@ -3187,6 +3193,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 77.47) (xy 196.85 77.47)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "57f842e3-6378-4c4c-894e-7d8e2ee8486f")
+	)
+	(wire
+		(pts
 			(xy 53.34 77.47) (xy 63.5 77.47)
 		)
 		(stroke
@@ -3207,13 +3223,13 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 77.47) (xy 184.15 77.47)
+			(xy 170.18 77.47) (xy 182.88 77.47)
 		)
 		(stroke
 			(width 0.4064)
 			(type default)
 		)
-		(uuid "f466fdff-207f-46ba-b337-7b22e0024c3d")
+		(uuid "78b0ac15-c054-460f-ad63-b79f493af03b")
 	)
 	(wire
 		(pts
@@ -4964,7 +4980,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:NextCP")
-		(at 184.15 77.47 0)
+		(at 196.85 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4974,7 +4990,7 @@
 		(dnp no)
 		(uuid "72f8e310-52ab-4aff-bbca-2616e18ede56")
 		(property "Reference" "CP2"
-			(at 187.325 79.375 0)
+			(at 200.025 79.375 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4985,7 +5001,7 @@
 			)
 		)
 		(property "Value" "Luchessa"
-			(at 195.834 77.216 0)
+			(at 208.534 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4997,7 +5013,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 77.47 0)
+			(at 193.04 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5008,7 +5024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 77.47 0)
+			(at 193.04 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5019,7 +5035,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 180.975 84.455 0)
+			(at 193.675 84.455 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5030,7 +5046,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 184.15 77.47 0)
+			(at 196.85 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5041,7 +5057,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 184.15 77.47 0)
+			(at 196.85 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5052,7 +5068,7 @@
 			)
 		)
 		(property "Direction" ""
-			(at 184.15 77.47 0)
+			(at 196.85 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5063,7 +5079,7 @@
 			)
 		)
 		(property "Name" ""
-			(at 184.15 77.47 0)
+			(at 196.85 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5342,6 +5358,139 @@
 			(project "GilroyInterchange"
 				(path "/c4fcbe05-44d0-4e90-8003-c2ec16e00151"
 					(reference "B8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 182.88 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8679ab78-f2fd-4a43-8f2a-a16a017e1e9a")
+		(property "Reference" "TC4"
+			(at 182.88 73.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1NAT"
+			(at 180.85 74.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Gilroy North"
+			(at 182.88 79.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" ""
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" ""
+			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e0e5587-9494-469a-b1d2-16610912c1e6")
+		)
+		(instances
+			(project "GilroyInterchange"
+				(path "/c4fcbe05-44d0-4e90-8003-c2ec16e00151"
+					(reference "TC4")
 					(unit 1)
 				)
 			)
@@ -6595,7 +6744,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Rule261-DoT-BiDirectional")
-		(at 184.15 74.93 0)
+		(at 196.85 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6606,7 +6755,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3925ced-b75d-49d3-a0df-6e939bf00ded")
 		(property "Reference" "DOT1"
-			(at 174.625 73.025 0)
+			(at 187.325 73.025 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6617,7 +6766,7 @@
 			)
 		)
 		(property "Value" "Rule 261"
-			(at 184.15 72.39 0)
+			(at 196.85 72.39 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6628,7 +6777,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 74.93 0)
+			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6639,7 +6788,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 74.93 0)
+			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6650,7 +6799,7 @@
 			)
 		)
 		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
-			(at 184.15 79.375 0)
+			(at 196.85 79.375 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6661,7 +6810,7 @@
 			)
 		)
 		(property "Kind" "RULE_261"
-			(at 184.15 74.93 0)
+			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6672,7 +6821,7 @@
 			)
 		)
 		(property "Direction" "BOTH"
-			(at 174.625 74.93 0)
+			(at 187.325 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6683,7 +6832,7 @@
 			)
 		)
 		(property "Role" "POLICY"
-			(at 184.15 74.93 0)
+			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6694,7 +6843,7 @@
 			)
 		)
 		(property "Name" ""
-			(at 184.15 74.93 0)
+			(at 196.85 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
