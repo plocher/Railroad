@@ -165,6 +165,7 @@
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -175,6 +176,7 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -550,7 +552,7 @@
 					)
 				)
 			)
-			(property "Milepost" "79.0"
+			(property "Milepost" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -561,7 +563,18 @@
 					)
 				)
 			)
-			(property "Role" "CONTROLLED_POINT"
+			(property "Role" "CONTROL_POINT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAIN_HOUSE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1518,8 +1531,8 @@
 					)
 				)
 			)
-			(property "Value" "Restricted Speed"
-				(at 0.635 0 0)
+			(property "Value" ""
+				(at 0.635 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1551,7 +1564,7 @@
 					)
 				)
 			)
-			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
 				(at -3.175 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1584,17 +1597,6 @@
 					)
 				)
 			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Role" "POLICY"
 				(at 0 0 0)
 				(show_name no)
@@ -1606,7 +1608,40 @@
 					)
 				)
 			)
+			(symbol "Rule105-RestrictedSpeed_0_1"
+				(rectangle
+					(start -0.635 0)
+					(end 0.635 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "Rule105-RestrictedSpeed_1_1"
+				(text "R"
+					(at 0 -0.635 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
@@ -1653,12 +1688,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at 3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -1685,7 +1720,7 @@
 					)
 				)
 			)
-			(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 				(at -3.175 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1698,17 +1733,6 @@
 			)
 			(property "Direction" "LEFT"
 				(at -6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Track Signaled in One Direction"
-				(at 0.635 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1815,12 +1839,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at -3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2485,6 +2509,16 @@
 					)
 				)
 			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -2790,6 +2824,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
 					)
 				)
 			)
@@ -3226,7 +3270,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -3721,8 +3765,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
-			(at 195.58 47.63 0)
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 195.58 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3832,7 +3876,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 55.88 102.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3965,7 +4009,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 72.39 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4156,7 +4200,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher"
+		(property "CP" "Christopher North"
 			(at 132.08 104.78 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4283,7 +4327,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 83.82 95.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4399,7 +4443,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 195.58 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4651,7 +4695,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 71.12 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4735,7 +4779,7 @@
 				)
 			)
 		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
 			(at 135.255 114.935 0)
 			(hide yes)
 			(show_name no)
@@ -4890,7 +4934,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 72.39 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -4979,7 +5023,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher"
+		(property "CP" "Christopher North"
 			(at 132.08 118.74 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5079,8 +5123,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
-			(at 72.39 47.63 0)
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 72.39 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5180,7 +5224,7 @@
 				)
 			)
 		)
-		(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 			(at 227.965 71.755 0)
 			(hide yes)
 			(show_name no)
@@ -5404,7 +5448,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 72.39 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5744,7 +5788,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher"
+		(property "CP" "Christopher North"
 			(at 170.18 62.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5993,7 +6037,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher North"
 			(at 195.58 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6288,7 +6332,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher South"
 			(at 210.82 69.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6499,8 +6543,8 @@
 				)
 			)
 		)
-		(property "CP" ""
-			(at 73.025 102.235 0)
+		(property "CP" "Christopher North"
+			(at 71.12 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6508,7 +6552,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
@@ -6639,7 +6682,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher North"
 			(at 196.85 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6731,7 +6774,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher South"
 			(at 210.82 102.23 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6942,8 +6985,8 @@
 				)
 			)
 		)
-		(property "CP" ""
-			(at 194.945 98.425 0)
+		(property "CP" "Christopher South"
+			(at 196.85 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6951,7 +6994,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
@@ -7059,7 +7101,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher South"
 			(at 184.15 95.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7308,7 +7350,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher South"
+		(property "CP" "Christopher North"
 			(at 195.58 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -7403,7 +7445,7 @@
 				)
 			)
 		)
-		(property "CP" "CP Christopher North"
+		(property "CP" "Christopher North"
 			(at 55.88 69.21 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7819,8 +7861,8 @@
 				)
 			)
 		)
-		(property "CP" ""
-			(at 100.965 114.935 0)
+		(property "CP" "Christopher North"
+			(at 102.87 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7828,7 +7870,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
@@ -8144,8 +8185,8 @@
 				)
 			)
 		)
-		(property "CP" ""
-			(at 167.005 118.745 0)
+		(property "CP" "Christopher South"
+			(at 165.1 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8153,7 +8194,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Role" "TRACK"
@@ -8252,7 +8292,7 @@
 				)
 			)
 		)
-		(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 			(at 38.735 71.755 0)
 			(hide yes)
 			(show_name no)

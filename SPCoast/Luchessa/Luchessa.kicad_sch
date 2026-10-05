@@ -28,9 +28,10 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "AUX"
-				(at 0 -2.54 0)
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -38,9 +39,9 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 0 0)
+				(at 0 2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -99,6 +100,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -284,6 +295,7 @@
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -294,6 +306,7 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -669,7 +682,7 @@
 					)
 				)
 			)
-			(property "Milepost" "79.0"
+			(property "Milepost" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -680,7 +693,18 @@
 					)
 				)
 			)
-			(property "Role" "CONTROLLED_POINT"
+			(property "Role" "CONTROL_POINT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAIN_HOUSE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1637,8 +1661,8 @@
 					)
 				)
 			)
-			(property "Value" "Restricted Speed"
-				(at 0.635 0 0)
+			(property "Value" ""
+				(at 0.635 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1670,7 +1694,7 @@
 					)
 				)
 			)
-			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
 				(at -3.175 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1703,17 +1727,6 @@
 					)
 				)
 			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Role" "POLICY"
 				(at 0 0 0)
 				(show_name no)
@@ -1725,7 +1738,40 @@
 					)
 				)
 			)
+			(symbol "Rule105-RestrictedSpeed_0_1"
+				(rectangle
+					(start -0.635 0)
+					(end 0.635 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "Rule105-RestrictedSpeed_1_1"
+				(text "R"
+					(at 0 -0.635 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
@@ -1772,12 +1818,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at 3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -1804,7 +1850,7 @@
 					)
 				)
 			)
-			(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 				(at -3.175 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1817,17 +1863,6 @@
 			)
 			(property "Direction" "LEFT"
 				(at -6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Track Signaled in One Direction"
-				(at 0.635 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1934,12 +1969,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at -3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2085,12 +2120,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2219,7 +2254,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2458,6 +2493,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
 					)
 				)
 			)
@@ -2769,6 +2814,16 @@
 					)
 				)
 			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
 			(symbol "Switch_Powered_1_1"
 				(polyline
 					(pts
@@ -3017,6 +3072,17 @@
 					)
 				)
 			)
+			(property "Indications" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
 			(symbol "Switch_Powered_Derail_1_1"
 				(polyline
 					(pts
@@ -3202,7 +3268,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -3311,22 +3377,16 @@
 		(uuid "7f4503c4-5eac-4cb3-a458-eba9f97a722a")
 	)
 	(junction
+		(at 72.39 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "042af8e1-ca84-4734-a07e-e73ce0d622f4")
+	)
+	(junction
 		(at 229.87 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "09c71851-60c9-4534-9029-566c6ebd3d86")
-	)
-	(junction
-		(at 50.8 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f58a1b6-82c1-4e91-92aa-20a2ecf7ddfa")
-	)
-	(junction
-		(at 72.39 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47d48170-9948-4dd7-87a4-643812c2577a")
 	)
 	(junction
 		(at 229.87 86.36)
@@ -3357,6 +3417,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6155b88e-edf7-4085-a785-b88cc78ccfbf")
+	)
+	(junction
+		(at 66.04 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7eb7fa48-22f2-4926-9ace-a74cce51cc12")
 	)
 	(junction
 		(at 36.83 86.36)
@@ -3486,17 +3552,6 @@
 		)
 		(uuid "95b192ec-0071-4f02-aa11-943a7b6453d9")
 	)
-	(wire
-		(pts
-			(xy 38.1 69.85) (xy 50.8 69.85)
-		)
-		(stroke
-			(width 0.254)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(uuid "97f3a3a6-1906-4032-a742-100b22051071")
-	)
 	(polyline
 		(pts
 			(xy 48.26 41.91) (xy 49.53 40.64)
@@ -3539,16 +3594,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 69.85) (xy 76.2 69.85)
-		)
-		(stroke
-			(width 0.3048)
-			(type default)
-		)
-		(uuid "b1a98094-619f-465b-a07d-daa1aaf4e777")
-	)
-	(wire
-		(pts
 			(xy 50.8 86.36) (xy 57.15 86.36)
 		)
 		(stroke
@@ -3556,6 +3601,16 @@
 			(type default)
 		)
 		(uuid "b2698830-6fc5-4b9d-8b89-600dbf01b5ef")
+	)
+	(wire
+		(pts
+			(xy 66.04 69.85) (xy 72.39 69.85)
+		)
+		(stroke
+			(width 0.3048)
+			(type default)
+		)
+		(uuid "c3e8a8d2-5d0c-4fee-98c8-99f412b282f8")
 	)
 	(wire
 		(pts
@@ -3569,7 +3624,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 69.85) (xy 66.04 69.85)
+			(xy 38.1 69.85) (xy 59.69 69.85)
 		)
 		(stroke
 			(width 0.254)
@@ -3630,13 +3685,23 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 69.85) (xy 72.39 69.85)
+			(xy 62.23 69.85) (xy 66.04 69.85)
 		)
 		(stroke
 			(width 0.3048)
 			(type default)
 		)
 		(uuid "f391ef12-8ac8-4d90-be44-89bcdb1a12a2")
+	)
+	(wire
+		(pts
+			(xy 72.39 69.85) (xy 76.2 69.85)
+		)
+		(stroke
+			(width 0.3048)
+			(type default)
+		)
+		(uuid "fdc3ffe2-640c-4608-ae81-c1f4c3ae4b62")
 	)
 	(symbol
 		(lib_id "Railroad:Bumper")
@@ -3694,7 +3759,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "End of Track Bumper/Stop"
 			(at 36.83 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3896,8 +3961,9 @@
 				)
 			)
 		)
-		(property "Description" "Rule 251"
-			(at 229.87 81.28 0)
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(at 226.695 90.805 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4028,7 +4094,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 77.47 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -4169,6 +4235,17 @@
 			)
 		)
 		(property "Kind" "MAST_SINGLE"
+			(at 121.92 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "CP Gilroy"
 			(at 121.92 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -4382,6 +4459,17 @@
 			)
 		)
 		(property "Kind" "AUXILIARY"
+			(at 43.18 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "CP Luchessa"
 			(at 43.18 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -4789,6 +4877,17 @@
 				)
 			)
 		)
+		(property "CP" "CP Carnadero"
+			(at 204.47 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d505b8aa-e785-4c0e-8d85-62d1f42768fb")
 		)
@@ -4896,6 +4995,17 @@
 				)
 			)
 		)
+		(property "CP" "CP Gilroy"
+			(at 77.47 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "818f6207-fbac-470f-8188-1476580fbde8")
 		)
@@ -4906,6 +5016,117 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "S784E2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule105-RestrictedSpeed")
+		(at 72.39 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "45265a33-23dd-4bb7-a638-5cdd2d7792f4")
+		(property "Reference" "DOT6"
+			(at 66.675 66.675 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Restricted Speed"
+			(at 72.898 66.294 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.215 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.215 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(at 69.215 71.755 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_105"
+			(at 72.39 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 66.675 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 72.39 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4dcb2278-6e5d-4e63-ab87-93d5a83c4866")
+		)
+		(instances
+			(project "Luchessa"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "DOT6")
 					(unit 1)
 				)
 			)
@@ -4966,7 +5187,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
 			(at 109.22 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -5006,6 +5227,117 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "HOUSE3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 66.04 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4bbdf1e3-41b0-4964-9add-d5310c799607")
+		(property "Reference" "TC5"
+			(at 66.04 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "02T"
+			(at 64.008 67.056 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "CP Gilroy"
+			(at 66.04 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f375b648-057c-4e62-82d5-04371b4c56b3")
+		)
+		(instances
+			(project "Luchessa"
+				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
+					(reference "TC5")
 					(unit 1)
 				)
 			)
@@ -5295,8 +5627,9 @@
 				)
 			)
 		)
-		(property "Description" "Rule 251"
-			(at 229.87 97.79 0)
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(at 226.695 107.315 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5626,7 +5959,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint"
 			(at 121.92 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5987,6 +6320,17 @@
 				)
 			)
 		)
+		(property "CP" "CP Luchessa"
+			(at 36.83 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0eaa2ea0-66d0-45ce-906e-98b8c53687e0")
 		)
@@ -5994,128 +6338,6 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "FLK1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 50.8 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8b82f424-4adc-4956-b1ad-0cfcbb1e089f")
-		(property "Reference" "DOT5"
-			(at 45.085 66.675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 50.8 71.374 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 47.625 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 47.625 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 47.625 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 50.8 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 45.085 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 52.07 62.865 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 50.8 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0dcd5e10-103c-4ef8-aae0-09a17b66e2d2")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "DOT5")
 					(unit 1)
 				)
 			)
@@ -6515,8 +6737,9 @@
 				)
 			)
 		)
-		(property "Description" "Rule 261"
-			(at 37.084 81.534 0)
+		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
+			(at 36.83 88.265 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6749,8 +6972,9 @@
 				)
 			)
 		)
-		(property "Description" "Rule 261"
-			(at 230.124 64.516 0)
+		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
+			(at 229.87 71.755 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6892,6 +7116,17 @@
 			)
 		)
 		(property "Kind" "MAINTAINER_CALL"
+			(at 109.22 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "CP Gilroy"
 			(at 109.22 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -7068,7 +7303,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 204.47 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7185,7 +7420,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
 			(at 172.72 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -7285,7 +7520,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 204.47 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -7488,7 +7723,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 58.42 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -7639,6 +7874,17 @@
 				)
 			)
 		)
+		(property "CP" "CP Luchessa"
+			(at 58.42 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ee8b3c1d-df6d-423b-94ec-fce2379cb4da")
 		)
@@ -7712,7 +7958,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 121.92 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -7769,117 +8015,6 @@
 			(project "Luchessa"
 				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
 					(reference "B3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 72.39 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0e26c48-7550-494a-bd01-a1fb70eda2b2")
-		(property "Reference" "TC5"
-			(at 72.39 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "02T"
-			(at 70.358 67.056 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "CP Gilroy"
-			(at 72.39 71.755 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 72.39 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "593c93cb-056a-4866-a794-e4d8b470a9ef")
-		)
-		(instances
-			(project "Luchessa"
-				(path "/87b90fc6-5e27-4e06-8416-fb28e674fdea"
-					(reference "TC5")
 					(unit 1)
 				)
 			)
@@ -8288,7 +8423,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:IRJ")
-		(at 67.31 69.85 0)
+		(at 60.96 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8299,7 +8434,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee38eb60-e6d5-4ea1-bf3e-35b646157737")
 		(property "Reference" "B10"
-			(at 67.31 66.04 0)
+			(at 60.96 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8310,7 +8445,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 67.31 69.85 0)
+			(at 60.96 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8320,7 +8455,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 69.85 0)
+			(at 60.96 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8331,7 +8466,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 69.85 0)
+			(at 60.96 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8341,8 +8476,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 67.31 69.85 0)
+		(property "Description" "Insulated Rail Joint"
+			(at 60.96 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8353,7 +8488,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 67.31 69.85 0)
+			(at 60.96 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8364,7 +8499,7 @@
 			)
 		)
 		(property "Kind" "IRJ"
-			(at 67.31 69.85 0)
+			(at 60.96 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8478,6 +8613,17 @@
 				)
 			)
 		)
+		(property "CP" "CP Carnadero"
+			(at 204.47 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "74d94787-546c-482c-8cb6-a3f7121b2733")
 		)
@@ -8548,7 +8694,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint"
 			(at 160.02 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8650,7 +8796,7 @@
 				)
 			)
 		)
-		(property "Description" "Protective DERAIL for sidings. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+		(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
 			(at 85.09 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -8774,7 +8920,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
 			(at 71.12 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -8874,7 +9020,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Insulated Rail Joint"
 			(at 90.17 86.36 0)
 			(hide yes)
 			(show_name no)

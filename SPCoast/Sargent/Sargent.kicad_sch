@@ -909,7 +909,7 @@
 					)
 				)
 			)
-			(property "Milepost" "79.0"
+			(property "Milepost" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -920,7 +920,18 @@
 					)
 				)
 			)
-			(property "Role" "CONTROLLED_POINT"
+			(property "Role" "CONTROL_POINT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAIN_HOUSE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1877,8 +1888,8 @@
 					)
 				)
 			)
-			(property "Value" "Restricted Speed"
-				(at 0.635 0 0)
+			(property "Value" ""
+				(at 0.635 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1910,7 +1921,7 @@
 					)
 				)
 			)
-			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
 				(at -3.175 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1943,17 +1954,6 @@
 					)
 				)
 			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Role" "POLICY"
 				(at 0 0 0)
 				(show_name no)
@@ -1965,7 +1965,40 @@
 					)
 				)
 			)
+			(symbol "Rule105-RestrictedSpeed_0_1"
+				(rectangle
+					(start -0.635 0)
+					(end 0.635 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "Rule105-RestrictedSpeed_1_1"
+				(text "R"
+					(at 0 -0.635 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
@@ -2325,12 +2358,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2459,7 +2492,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2701,6 +2734,16 @@
 					)
 				)
 			)
+			(property "Indications" "RESTRICTING/RESTRICTING"
+				(at 11.43 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
 			(symbol "Switch_HandThrow_1_1"
 				(polyline
 					(pts
@@ -2906,6 +2949,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
 					)
 				)
 			)
@@ -3402,7 +3455,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -3431,6 +3484,18 @@
 			(justify left)
 		)
 		(uuid "9f6cccee-c81e-4eee-9c0d-929fb5cb9f40")
+	)
+	(junction
+		(at 116.84 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "264165c4-f92b-45dd-86ef-034e3a445ae7")
+	)
+	(junction
+		(at 124.46 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3424d7e7-4e55-4dc8-8264-896d5bdc17c4")
 	)
 	(junction
 		(at 68.58 93.98)
@@ -3468,15 +3533,9 @@
 		(color 0 0 0 0)
 		(uuid "ea311669-4144-491e-9b10-46c2c206d406")
 	)
-	(junction
-		(at 119.38 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eac7ffc8-622d-4b67-ab84-7d40e008eba4")
-	)
 	(wire
 		(pts
-			(xy 119.38 77.47) (xy 127 77.47)
+			(xy 111.76 77.47) (xy 116.84 77.47)
 		)
 		(stroke
 			(width 0.4064)
@@ -3527,6 +3586,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 77.47) (xy 124.46 77.47)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "6c902f2a-f198-4efa-8ff4-0e55ccfe8f64")
+	)
+	(wire
+		(pts
 			(xy 68.58 93.98) (xy 85.09 93.98)
 		)
 		(stroke
@@ -3534,16 +3603,6 @@
 			(type default)
 		)
 		(uuid "6cbb5126-190a-4ad1-bc5a-328c80c79f01")
-	)
-	(wire
-		(pts
-			(xy 111.76 77.47) (xy 119.38 77.47)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "77cc28aa-6674-47bf-8ec4-9a8029979c27")
 	)
 	(wire
 		(pts
@@ -3575,6 +3634,16 @@
 			(type default)
 		)
 		(uuid "a4d33cf0-3e56-4111-89d6-a00b78260a59")
+	)
+	(wire
+		(pts
+			(xy 124.46 77.47) (xy 127 77.47)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "a783e815-d5e2-4713-b3b6-09124a2c503e")
 	)
 	(wire
 		(pts
@@ -3708,129 +3777,6 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "SW835")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 68.58 63.5 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15913f3e-7651-4303-ad8e-b59537e959c2")
-		(property "Reference" "DOT1"
-			(at 74.295 64.135 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 67.945 63.5 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.755 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.755 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 71.755 59.055 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 68.58 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 74.295 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 67.31 67.945 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 68.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1cc5ef4b-6c3c-48a4-bef4-2032ea57ff9b")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DOT1")
 					(unit 1)
 				)
 			)
@@ -4241,8 +4187,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
-			(at 147.32 52.71 0)
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 147.32 52.705 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4382,6 +4328,118 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "CP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule105-RestrictedSpeed")
+		(at 124.46 74.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a82da74-a0dc-4b87-942c-1e472793994b")
+		(property "Reference" "DOT6"
+			(at 118.745 74.295 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Restricted Speed"
+			(at 125.095 74.295 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.285 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.285 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(at 121.285 79.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_105"
+			(at 124.46 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 118.745 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 124.46 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96a735a8-9ce3-4e52-9e78-6ecbc2d93019")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "DOT6")
 					(unit 1)
 				)
 			)
@@ -5776,129 +5834,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 68.58 80.01 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ce36acb-4eae-42e4-89ea-27ee8a78bedd")
-		(property "Reference" "DOT2"
-			(at 74.295 80.645 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 67.945 80.01 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.755 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.755 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 71.755 75.565 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 68.58 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 74.295 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 67.31 84.455 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 68.58 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "274812fa-85fc-4fca-8ef6-e8b117f58171")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DOT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad:Mast_Double")
 		(at 160.02 90.17 0)
 		(unit 1)
@@ -6116,8 +6051,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 119.38 80.01 180)
+		(lib_id "Railroad:Track Circuit")
+		(at 116.84 77.47 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6125,9 +6060,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b60e7479-f791-4a1f-8684-32b05497016a")
-		(property "Reference" "DOT3"
-			(at 125.095 80.645 0)
+		(uuid "b6870b4a-04dc-46eb-a9a6-8550d5fa377f")
+		(property "Reference" "TC2"
+			(at 116.84 73.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6137,19 +6072,19 @@
 				)
 			)
 		)
-		(property "Value" "Restricted Speed"
-			(at 118.872 80.772 0)
+		(property "Value" "2SAT"
+			(at 114.81 74.68 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 122.555 80.01 0)
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6160,7 +6095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 122.555 80.01 0)
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6170,8 +6105,8 @@
 				)
 			)
 		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 122.555 75.565 0)
+		(property "Description" ""
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6181,8 +6116,19 @@
 				)
 			)
 		)
-		(property "Kind" "RULE_105"
-			(at 119.38 77.47 0)
+		(property "CP" "Sargent"
+			(at 116.84 79.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6192,30 +6138,8 @@
 				)
 			)
 		)
-		(property "Direction" "BOTH"
-			(at 125.095 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 118.11 84.455 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 119.38 80.01 0)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 116.84 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6226,12 +6150,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "39a2bb5e-d94e-4af1-803a-73b208f3d554")
+			(uuid "47799612-7372-4242-91ca-e37406ab4286")
 		)
 		(instances
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DOT3")
+					(reference "TC2")
 					(unit 1)
 				)
 			)
@@ -6261,7 +6185,7 @@
 			)
 		)
 		(property "Value" "Corporal"
-			(at 66.675 93.98 0)
+			(at 68.58 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6269,7 +6193,6 @@
 					(size 1.27 1.27)
 					(color 0 0 0 1)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -6446,117 +6369,6 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "DOT4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 119.38 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "db083877-034d-4a70-9bbf-aec6f21faf6c")
-		(property "Reference" "TC2"
-			(at 119.38 73.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2SAT"
-			(at 117.35 74.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Sargent"
-			(at 119.38 79.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 119.38 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53f0fb2e-f7a6-4d02-8c49-4eaf8529d21e")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "TC2")
 					(unit 1)
 				)
 			)

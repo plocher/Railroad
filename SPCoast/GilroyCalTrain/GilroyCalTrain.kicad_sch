@@ -553,7 +553,7 @@
 					)
 				)
 			)
-			(property "Milepost" "79.0"
+			(property "Milepost" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -564,7 +564,18 @@
 					)
 				)
 			)
-			(property "Role" "CONTROLLED_POINT"
+			(property "Role" "CONTROL_POINT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAIN_HOUSE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1716,12 +1727,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -1850,7 +1861,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2035,7 +2046,7 @@
 					)
 				)
 			)
-			(property "Value" "YARD"
+			(property "Value" ""
 				(at 0 -6.35 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2081,28 +2092,17 @@
 				)
 			)
 			(property "Kind" "RULE_93"
-				(at 0 1.27 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.508 0.508)
 					)
 				)
 			)
 			(property "Direction" "BOTH"
 				(at -5.715 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Yard Limits"
-				(at 1.27 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2404,6 +2404,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
 					)
 				)
 			)
@@ -2840,7 +2850,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -2971,7 +2981,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -3378,7 +3388,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 69.85 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3412,7 +3422,7 @@
 			)
 		)
 		(property "CP" "Gilroy Caltrain"
-			(at 71.755 61.595 0)
+			(at 69.85 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3420,7 +3430,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -3722,7 +3731,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 190.5 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3756,7 +3765,7 @@
 			)
 		)
 		(property "CP" "Gilroy Caltrain"
-			(at 188.595 106.045 0)
+			(at 190.5 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3764,7 +3773,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -3962,6 +3970,7 @@
 		)
 		(property "Kind" "RULE_93"
 			(at 191.77 104.14 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4494,6 +4503,7 @@
 		)
 		(property "Kind" "RULE_93"
 			(at 193.04 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4602,7 +4612,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 191.77 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4636,7 +4646,7 @@
 			)
 		)
 		(property "CP" "Gilroy Caltrain"
-			(at 189.865 89.535 0)
+			(at 191.77 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4644,7 +4654,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -4948,7 +4957,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -4982,7 +4991,7 @@
 			)
 		)
 		(property "CP" "Gilroy Caltrain"
-			(at 189.865 73.025 0)
+			(at 191.77 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4990,7 +4999,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -5066,7 +5074,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Insulated Rail Joint with Signal"
 			(at 185.42 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5100,7 +5108,7 @@
 			)
 		)
 		(property "CP" "Gilroy Caltrain"
-			(at 183.515 57.785 0)
+			(at 185.42 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5108,7 +5116,6 @@
 					(size 0.508 0.508)
 					(color 72 72 72 1)
 				)
-				(justify right)
 			)
 		)
 		(pin "2"
@@ -5605,6 +5612,7 @@
 		)
 		(property "Kind" "RULE_93"
 			(at 193.04 71.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6358,8 +6366,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
-			(at 69.85 40.01 0)
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 69.85 40.005 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

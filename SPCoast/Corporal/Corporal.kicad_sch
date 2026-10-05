@@ -779,7 +779,7 @@
 					)
 				)
 			)
-			(property "Milepost" "79.0"
+			(property "Milepost" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -790,7 +790,18 @@
 					)
 				)
 			)
-			(property "Role" "CONTROLLED_POINT"
+			(property "Role" "CONTROL_POINT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAIN_HOUSE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1747,8 +1758,8 @@
 					)
 				)
 			)
-			(property "Value" "Restricted Speed"
-				(at 0.635 0 0)
+			(property "Value" ""
+				(at 0.635 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1780,7 +1791,7 @@
 					)
 				)
 			)
-			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
 				(at -3.175 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1813,17 +1824,6 @@
 					)
 				)
 			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Role" "POLICY"
 				(at 0 0 0)
 				(show_name no)
@@ -1835,7 +1835,40 @@
 					)
 				)
 			)
+			(symbol "Rule105-RestrictedSpeed_0_1"
+				(rectangle
+					(start -0.635 0)
+					(end 0.635 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
 			(symbol "Rule105-RestrictedSpeed_1_1"
+				(text "R"
+					(at 0 -0.635 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
@@ -1882,12 +1915,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at 3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -1914,7 +1947,7 @@
 					)
 				)
 			)
-			(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 				(at -3.175 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1927,17 +1960,6 @@
 			)
 			(property "Direction" "LEFT"
 				(at -6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Track Signaled in One Direction"
-				(at 0.635 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2044,12 +2066,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at -3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2195,12 +2217,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2329,7 +2351,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2571,6 +2593,16 @@
 					)
 				)
 			)
+			(property "Indications" "RESTRICTING/RESTRICTING"
+				(at 11.43 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
 			(symbol "Switch_HandThrow_1_1"
 				(polyline
 					(pts
@@ -2776,6 +2808,16 @@
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
 					)
 				)
 			)
@@ -3087,6 +3129,16 @@
 					)
 				)
 			)
+			(property "Indications" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
 			(symbol "Switch_Powered_1_1"
 				(polyline
 					(pts
@@ -3335,6 +3387,17 @@
 					)
 				)
 			)
+			(property "Indications" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
 			(symbol "Switch_Powered_Derail_1_1"
 				(polyline
 					(pts
@@ -3520,7 +3583,7 @@
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
-					(name "MC"
+					(name "TC"
 						(effects
 							(font
 								(size 0 0)
@@ -3596,7 +3659,13 @@
 		(at 147.32 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e76de0d3-2719-4d1d-946d-f10fcb6a89b8")
+		(uuid "ec0b1744-4f89-4ab0-8c39-42d9dd4353b6")
+	)
+	(junction
+		(at 132.08 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbb2fa4c-b16b-46c8-80b7-c389e2297124")
 	)
 	(wire
 		(pts
@@ -3610,7 +3679,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 68.58) (xy 147.32 68.58)
+			(xy 139.7 68.58) (xy 147.32 68.58)
 		)
 		(stroke
 			(width 0.4064)
@@ -3627,6 +3696,16 @@
 			(type default)
 		)
 		(uuid "1e375b2a-389d-4b28-8e0f-870ca30f89d8")
+	)
+	(wire
+		(pts
+			(xy 132.08 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "1ec39f91-1f2c-4fc0-be07-a21b4eaad855")
 	)
 	(wire
 		(pts
@@ -3651,7 +3730,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 68.58) (xy 135.89 68.58)
+			(xy 129.54 68.58) (xy 132.08 68.58)
 		)
 		(stroke
 			(width 0.4064)
@@ -3863,7 +3942,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Signal Head - CL")
-		(at 138.43 64.77 0)
+		(at 139.7 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3873,7 +3952,7 @@
 		(dnp no)
 		(uuid "1267f20d-0f96-4520-98cd-ab32ae1d36c1")
 		(property "Reference" "H1"
-			(at 134.62 62.23 0)
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3884,7 +3963,7 @@
 			)
 		)
 		(property "Value" "A"
-			(at 134.112 59.944 90)
+			(at 135.382 59.944 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3894,7 +3973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 138.43 64.77 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3905,7 +3984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 64.77 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3916,7 +3995,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 64.77 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3927,7 +4006,7 @@
 			)
 		)
 		(property "Role" "COMPONENT"
-			(at 138.43 64.77 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3938,7 +4017,7 @@
 			)
 		)
 		(property "Kind" "HEAD"
-			(at 138.43 64.77 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4014,8 +4093,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 123.19 68.58 0)
+		(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+			(at 123.19 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4288,7 +4367,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:IRJ-Signal")
-		(at 137.16 68.58 0)
+		(at 138.43 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4299,7 +4378,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d2a9ef0-9b47-40e3-b3ba-013a10286b2a")
 		(property "Reference" "B4"
-			(at 137.16 71.12 0)
+			(at 138.43 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4310,7 +4389,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4320,7 +4399,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4331,7 +4410,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,7 +4421,7 @@
 			)
 		)
 		(property "Description" "Insulated Rail Joint with Signal"
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4353,7 +4432,7 @@
 			)
 		)
 		(property "CP" ""
-			(at 135.255 66.675 0)
+			(at 136.525 66.675 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4365,7 +4444,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4376,7 +4455,7 @@
 			)
 		)
 		(property "Kind" "IRJ_SIGNAL"
-			(at 137.16 68.58 0)
+			(at 138.43 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4499,6 +4578,118 @@
 			(project "Corporal"
 				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
 					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule105-RestrictedSpeed")
+		(at 132.08 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31c609a5-fe13-4a8c-a17c-b91fcce56c6b")
+		(property "Reference" "DOT6"
+			(at 126.365 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Restricted Speed"
+			(at 132.715 65.405 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.905 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.905 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(at 128.905 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_105"
+			(at 132.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 126.365 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 132.08 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07bd1346-019a-43ac-85ab-0dd118d59a71")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "DOT6")
 					(unit 1)
 				)
 			)
@@ -4687,7 +4878,7 @@
 				)
 			)
 		)
-		(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 			(at 60.325 89.535 0)
 			(hide yes)
 			(show_name no)
@@ -4866,374 +5057,6 @@
 			(project "Corporal"
 				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
 					(reference "B2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 147.32 71.12 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4deede5c-16c7-4960-8cae-d497a7a4b215")
-		(property "Reference" "DOT6"
-			(at 153.035 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 146.558 71.628 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 150.495 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 150.495 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 150.495 66.675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 147.32 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 153.035 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 146.05 75.565 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 147.32 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95ab809c-4426-418a-ab11-d507df2176f6")
-		)
-		(instances
-			(project "Corporal"
-				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
-					(reference "DOT6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 207.01 71.12 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57d62831-6951-4f0b-806a-fa1004d394bd")
-		(property "Reference" "DOT5"
-			(at 212.725 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 206.375 71.12 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.185 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.185 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 210.185 66.675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 207.01 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 212.725 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 205.74 75.565 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 207.01 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "13349bac-8066-46ed-bec6-a0bf82a725c6")
-		)
-		(instances
-			(project "Corporal"
-				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
-					(reference "DOT5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 207.01 54.61 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bef708d-24a3-45fc-8399-62585d6f39e5")
-		(property "Reference" "DOT1"
-			(at 212.725 55.245 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Restricted Speed"
-			(at 206.375 54.61 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.185 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.185 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 210.185 50.165 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_105"
-			(at 207.01 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 212.725 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 205.74 59.055 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 207.01 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "da1e3204-790c-4e03-ae59-c30787d9cc03")
-		)
-		(instances
-			(project "Corporal"
-				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
-					(reference "DOT1")
 					(unit 1)
 				)
 			)
@@ -6501,8 +6324,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Bungalow"
-			(at 99.06 47.63 0)
+		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 99.06 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7299,7 +7122,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Mast_Dwarf")
-		(at 137.16 64.77 0)
+		(at 138.43 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7309,7 +7132,7 @@
 		(dnp no)
 		(uuid "ed01bf46-22bd-4088-8c1f-8663df50464c")
 		(property "Reference" "S1"
-			(at 135.89 64.135 0)
+			(at 137.16 64.135 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7321,7 +7144,7 @@
 			)
 		)
 		(property "Value" "832NA"
-			(at 144.018 62.23 0)
+			(at 145.288 62.23 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7332,7 +7155,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 64.77 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7343,7 +7166,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 64.77 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7354,7 +7177,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 64.77 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7365,7 +7188,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 137.16 64.77 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7376,7 +7199,7 @@
 			)
 		)
 		(property "Kind" "MAST_DWARF"
-			(at 137.16 64.77 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
