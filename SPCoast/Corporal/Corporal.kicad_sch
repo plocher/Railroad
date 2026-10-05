@@ -712,6 +712,139 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad:Interlocking"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Plant"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "${TITLE}"
+				(at -3.048 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -11.303 9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "INTERLOCKING"
+				(at -9.906 8.001 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Interlocking_0_1"
+				(rectangle
+					(start -17.018 4.826)
+					(end 17.018 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Interlocking_1_1"
+				(text "Interlocking:"
+					(at -10.16 3.048 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin free line
+					(at 0 0 90)
+					(length 1.27)
+					(name "Interlocking"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad:MAIN HOUSE"
 			(pin_numbers
 				(hide yes)
@@ -726,7 +859,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "HOUSE"
-				(at 0 -1.27 0)
+				(at -0.889 -4.318 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -768,7 +901,7 @@
 					)
 				)
 			)
-			(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -790,8 +923,8 @@
 					)
 				)
 			)
-			(property "Role" "CONTROL_POINT"
-				(at 0 0 0)
+			(property "Role" "STRUCTURE"
+				(at -15.24 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -801,8 +934,8 @@
 					)
 				)
 			)
-			(property "Kind" "MAIN_HOUSE"
-				(at 0 0 0)
+			(property "Kind" "CONTROL_POINT"
+				(at -13.335 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -851,6 +984,22 @@
 				)
 			)
 			(symbol "MAIN HOUSE_1_1"
+				(text "Interlocking"
+					(at 0 4.064 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(text "MCall"
+					(at 0 -0.762 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 0)
 					(length 0)
@@ -862,6 +1011,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 0)
+					(length 0)
+					(name "Interlocking"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -6313,7 +6480,7 @@
 				)
 			)
 		)
-		(property "Description" "Rrepresents the Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
 			(at 99.06 47.625 0)
 			(hide yes)
 			(show_name no)
@@ -6324,8 +6491,8 @@
 				)
 			)
 		)
-		(property "Milepost" "FIXME"
-			(at 99.06 47.63 0)
+		(property "Milepost" "83.0"
+			(at 99.06 47.625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6335,8 +6502,19 @@
 				)
 			)
 		)
-		(property "Role" "CONTROL_POINT"
-			(at 99.06 41.91 0)
+		(property "Role" "STRUCTURE"
+			(at 83.82 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CONTROL_POINT"
+			(at 85.725 41.402 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6348,6 +6526,9 @@
 		)
 		(pin "1"
 			(uuid "536060bd-8269-4d1b-8256-e30891c33962")
+		)
+		(pin "2"
+			(uuid "ab14334c-1ece-424f-8c0d-f1f4f0061ff1")
 		)
 		(instances
 			(project "Corporal"
@@ -6900,6 +7081,107 @@
 			(project "Corporal"
 				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
 					(reference "CP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Interlocking")
+		(at 99.06 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dae2441a-a4a6-4251-8e3e-6df2da3d73cf")
+		(property "Reference" "Plant1"
+			(at 84.836 30.988 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${TITLE}"
+			(at 96.012 33.782 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 87.757 27.178 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INTERLOCKING"
+			(at 89.154 28.829 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c326ebf1-07a5-4d79-a442-d8e8600b9da6")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "Plant1")
 					(unit 1)
 				)
 			)
