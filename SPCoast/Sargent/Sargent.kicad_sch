@@ -18,6 +18,136 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "Railroad:AUXILIARY"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "AUX"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "AUXILIARY"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(symbol "AUXILIARY_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 194 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name "MC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad:Bumper"
 			(pin_numbers
 				(hide yes)
@@ -3303,12 +3433,6 @@
 		(uuid "9f6cccee-c81e-4eee-9c0d-929fb5cb9f40")
 	)
 	(junction
-		(at 110.49 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "481928de-07f4-4b28-9741-d6ccc53717f1")
-	)
-	(junction
 		(at 68.58 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3319,6 +3443,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c0cb5ba-aa4b-4aaf-abf1-14e3f3430508")
+	)
+	(junction
+		(at 109.22 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a41b2f92-0c30-45e3-9b63-e89994758bd6")
 	)
 	(junction
 		(at 189.23 93.98)
@@ -3377,7 +3507,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 93.98) (xy 119.38 93.98)
+			(xy 96.52 93.98) (xy 109.22 93.98)
 		)
 		(stroke
 			(width 0.4064)
@@ -3417,6 +3547,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 93.98) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "78756ebe-1fc1-44ac-b4b1-03f12ccfa74f")
+	)
+	(wire
+		(pts
 			(xy 68.58 60.96) (xy 80.01 60.96)
 		)
 		(stroke
@@ -3445,16 +3585,6 @@
 			(type default)
 		)
 		(uuid "f43afbff-d3eb-4747-9a6f-141419d566d0")
-	)
-	(wire
-		(pts
-			(xy 96.52 93.98) (xy 110.49 93.98)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "faf772fc-ac76-4354-8abf-f6f04d2b0466")
 	)
 	(symbol
 		(lib_id "Railroad:Switch_Lock")
@@ -4370,6 +4500,117 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "B5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY")
+		(at 109.22 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2e1492cd-0f5b-4707-8bde-15bf6e93b2f8")
+		(property "Reference" "AUX1"
+			(at 109.22 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HBA"
+			(at 107.696 91.186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY"
+			(at 109.22 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Sargent"
+			(at 107.95 96.012 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "980e2b38-6bb7-4a0f-87be-f0ee64913dd0")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "AUX1")
 					(unit 1)
 				)
 			)
@@ -6093,117 +6334,6 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "CP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 110.49 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cf0ea8ed-b3e9-41bd-b828-a7898d2fe30b")
-		(property "Reference" "TC3"
-			(at 110.49 89.54 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HBA"
-			(at 108.46 91.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Sargent"
-			(at 110.49 95.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 110.49 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 110.49 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5f299d21-2c70-43e7-8bcd-71b0933dcab7")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "TC3")
 					(unit 1)
 				)
 			)

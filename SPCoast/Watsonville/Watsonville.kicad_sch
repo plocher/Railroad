@@ -18,7 +18,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad:AUXILIARY"
+		(symbol "Railroad:AUXILIARY_TRAFFIC"
 			(pin_numbers
 				(hide yes)
 			)
@@ -27,18 +27,19 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "AUX"
+			(property "Reference" "FLK"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "FLK"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -91,7 +92,7 @@
 					)
 				)
 			)
-			(property "Kind" "AUXILIARY"
+			(property "Kind" "AUXILIARY_TRAFFIC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -102,7 +103,7 @@
 					)
 				)
 			)
-			(symbol "AUXILIARY_1_1"
+			(symbol "AUXILIARY_TRAFFIC_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -113,7 +114,7 @@
 					)
 					(fill
 						(type color)
-						(color 194 0 194 1)
+						(color 0 0 255 1)
 					)
 				)
 				(pin passive line
@@ -5952,105 +5953,6 @@
 			(project "Watsonville"
 				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
 					(reference "TC25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:AUXILIARY")
-		(at 38.1 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "214d2f23-951a-4138-b1d3-9bc557f94f35")
-		(property "Reference" "FLK2"
-			(at 38.1 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NFLK"
-			(at 38.1 44.196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "AUXILIARY"
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "368e0606-2f25-4d0f-a95c-18a20a1c3e05")
-		)
-		(instances
-			(project "Watsonville"
-				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
-					(reference "FLK2")
 					(unit 1)
 				)
 			)
@@ -12165,6 +12067,17 @@
 				)
 			)
 		)
+		(property "CP" "Watsonville"
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b03a2594-9502-4129-a08c-3f719be124ba")
 		)
@@ -12259,6 +12172,17 @@
 			)
 		)
 		(property "Kind" "MAST_DWARF"
+			(at 85.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
 			(at 85.09 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -13148,6 +13072,17 @@
 				)
 			)
 		)
+		(property "CP" "Watsonville"
+			(at 118.11 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "601e12a7-1eb3-4c39-b7fd-e4810932b9ff")
 		)
@@ -13818,6 +13753,17 @@
 				)
 			)
 		)
+		(property "CP" "Watsonville"
+			(at 95.25 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "061d0e76-d3e4-469b-ab27-c3031dc90c6c")
 		)
@@ -14148,6 +14094,17 @@
 				)
 			)
 		)
+		(property "CP" "Watsonville"
+			(at 102.87 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "670c73f1-03e0-423c-8070-3db9877741f1")
 		)
@@ -14389,6 +14346,117 @@
 			(project "Watsonville"
 				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
 					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:AUXILIARY_TRAFFIC")
+		(at 38.1 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b8e77923-06cc-4129-b439-3922f84b991d")
+		(property "Reference" "FLK3"
+			(at 38.1 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NFLK"
+			(at 36.322 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AUXILIARY_TRAFFIC"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a899e1a-2c35-4c3a-903d-fb605acba1d7")
+		)
+		(instances
+			(project "Watsonville"
+				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
+					(reference "FLK3")
 					(unit 1)
 				)
 			)
@@ -15043,6 +15111,17 @@
 			)
 		)
 		(property "Kind" "MAST_DWARF"
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
 			(at 110.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -15841,7 +15920,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:AUXILIARY")
+		(lib_id "Railroad:AUXILIARY_TRAFFIC")
 		(at 44.45 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -15850,8 +15929,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cd16efa7-5043-471c-a374-4746ae33f5a4")
-		(property "Reference" "FLK1"
+		(uuid "cd5a29ef-cd56-459f-9a23-7c890eb3137e")
+		(property "Reference" "FLK4"
 			(at 44.45 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -15863,13 +15942,14 @@
 			)
 		)
 		(property "Value" "SFLK"
-			(at 44.45 44.196 0)
+			(at 42.672 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15916,7 +15996,18 @@
 				)
 			)
 		)
-		(property "Kind" "AUXILIARY"
+		(property "Kind" "AUXILIARY_TRAFFIC"
+			(at 44.45 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
 			(at 44.45 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -15928,12 +16019,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3932e1c2-66db-4f3b-a87f-3e69fca29e4b")
+			(uuid "3ca7d2df-a05f-45e3-8c71-3f4fd7934b03")
 		)
 		(instances
 			(project "Watsonville"
 				(path "/773cfd5d-7233-47b3-8f6c-03be10f2d31c"
-					(reference "FLK1")
+					(reference "FLK4")
 					(unit 1)
 				)
 			)
@@ -16587,6 +16678,17 @@
 			)
 		)
 		(property "Kind" "MAST_DWARF"
+			(at 245.11 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
 			(at 245.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -17585,6 +17687,17 @@
 			)
 		)
 		(property "Kind" "MAST_DWARF"
+			(at 125.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Watsonville"
 			(at 125.73 113.03 0)
 			(hide yes)
 			(show_name no)
