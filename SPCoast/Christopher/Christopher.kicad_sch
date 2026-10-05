@@ -2142,149 +2142,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule6.28-OtherThanMain"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DOT"
-				(at -5.715 0.635 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Rule 6.28"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(color 0 0 0 1)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-				(at -3.175 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "RULE_6.28"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Direction" "BOTH"
-				(at -5.715 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "POLICY"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Rule6.28-OtherThanMain_1_1"
-				(text "DARK"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 180)
-					(length 0)
-					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad:Signal Head - CL"
 			(pin_numbers
 				(hide yes)
@@ -3787,7 +3644,7 @@
 				)
 			)
 		)
-		(property "Role" "CONTROLLED_POINT"
+		(property "Role" "CONTROL_POINT"
 			(at 195.58 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -3998,7 +3855,7 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
+		(property "Kind" "MAST_SINGLE"
 			(at 72.39 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4465,7 +4322,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 195.58 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4812,17 +4669,6 @@
 				)
 			)
 		)
-		(property "Name" "Movement on Other Than Main Track"
-			(at 130.81 123.825 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "POLICY"
 			(at 132.08 119.38 0)
 			(hide yes)
@@ -5145,7 +4991,7 @@
 				)
 			)
 		)
-		(property "Role" "CONTROLLED_POINT"
+		(property "Role" "CONTROL_POINT"
 			(at 72.39 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -5237,17 +5083,6 @@
 		)
 		(property "Direction" "LEFT"
 			(at 224.79 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Track Signaled in One Direction"
-			(at 231.775 60.325 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5470,7 +5305,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 72.39 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -6671,7 +6506,7 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
+		(property "Kind" "MAST_SINGLE"
 			(at 196.85 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -8305,17 +8140,6 @@
 		)
 		(property "Direction" "LEFT"
 			(at 35.56 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Track Signaled in One Direction"
-			(at 42.545 60.325 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1879,149 +1879,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule6.28-OtherThanMain"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DOT"
-				(at -5.715 0.635 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Rule 6.28"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(color 0 0 0 1)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-				(at -3.175 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "RULE_6.28"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Direction" "BOTH"
-				(at -5.715 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Movement on Other Than Main Track"
-				(at 1.27 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "POLICY"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Rule6.28-OtherThanMain_1_1"
-				(text "DARK"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 180)
-					(length 0)
-					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad:Rule93-Yard Limits"
 			(pin_numbers
 				(hide yes)
@@ -3310,17 +3167,6 @@
 				)
 			)
 		)
-		(property "CP" "Gilroy Caltrain"
-			(at 213.36 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "9fc1a5eb-9fa0-41b0-8477-f3281091745a")
 		)
@@ -3410,7 +3256,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 69.85 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -3753,7 +3599,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 190.5 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -3981,17 +3827,6 @@
 		)
 		(property "Direction" "BOTH"
 			(at 186.055 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "Yard Limits"
-			(at 193.04 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4523,17 +4358,6 @@
 				)
 			)
 		)
-		(property "Name" "Yard Limits"
-			(at 194.31 84.455 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "POLICY"
 			(at 193.04 93.98 0)
 			(hide yes)
@@ -4634,7 +4458,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 191.77 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4979,7 +4803,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 191.77 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5096,7 +4920,7 @@
 				)
 			)
 		)
-		(property "Kind" "IRJ"
+		(property "Kind" "IRJ_SIGNAL"
 			(at 185.42 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -5632,17 +5456,6 @@
 				)
 			)
 		)
-		(property "Name" "Yard Limits"
-			(at 194.31 67.945 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "POLICY"
 			(at 193.04 77.47 0)
 			(hide yes)
@@ -5955,17 +5768,6 @@
 			)
 		)
 		(property "Kind" "BUMPER"
-			(at 213.36 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Gilroy Caltrain"
 			(at 213.36 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -6387,7 +6189,7 @@
 				)
 			)
 		)
-		(property "Role" "CONTROLLED_POINT"
+		(property "Role" "CONTROL_POINT"
 			(at 69.85 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -6489,17 +6291,6 @@
 			)
 		)
 		(property "Kind" "BUMPER"
-			(at 213.36 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Gilroy Caltrain"
 			(at 213.36 74.93 0)
 			(hide yes)
 			(show_name no)
