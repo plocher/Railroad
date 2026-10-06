@@ -4939,137 +4939,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Servo_PWM"
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
-				(at -5.9274 3.1548 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "DEVICE"
-				(at -5.08 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Kind" "SERVO_PWM"
-				(at -2.54 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(symbol "Device-Servo_PWM_0_1"
-				(rectangle
-					(start -7.62 2.54)
-					(end 7.62 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Device-Servo_PWM_1_1"
-				(text "Servo ${VALUE}"
-					(at -7.218 1.3901 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(pin output line
-					(at 10.16 1.27 180)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "RailroadField:Device-Signal-1LED_NEO"
 			(pin_names
 				(offset 1.27)
@@ -5525,6 +5394,153 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadField:Device-Signal-Semaphore_2PWM"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "DevSW"
+				(at -5.9274 3.1548 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "DEVICE"
+				(at -5.08 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Kind" "SIG_SEM_2PWM"
+				(at -6.8229 -1.3712 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(symbol "Device-Signal-Semaphore_2PWM_0_1"
+				(rectangle
+					(start -7.62 2.54)
+					(end 7.62 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Device-Signal-Semaphore_2PWM_1_1"
+				(text "SIG ${VALUE}"
+					(at -7.218 1.3901 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "ARM"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -1.27 180)
+					(length 2.54)
+					(name "LAMP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 0.381 0.381)
@@ -6028,6 +6044,882 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "RailroadPanel:PanelLock"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+				(at 2.54 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LOCK_LEVER"
+				(at 0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLock_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 6.35 -6.35) (xy -3.175 -6.35) (xy -3.81 -5.715) (xy -3.81 -2.54) (xy -3.175 -1.905)
+						(xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelLock_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(text "N"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "LOCK"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -5.08 180)
+					(length 0)
+					(name "NWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "RWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 0)
+					(name "RWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 0)
+					(name "NWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelSwitch"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+				(at 2.54 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "SWITCH_LEVER"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelSwitch_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 6.35 -6.35) (xy -3.175 -6.35) (xy -3.81 -5.715) (xy -3.81 -2.54) (xy -3.175 -1.905)
+						(xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelSwitch_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(text "N"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SWITCH"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -5.08 180)
+					(length 0)
+					(name "NWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "RWS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 0)
+					(name "RWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 0)
+					(name "NWK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 93.98 35.56)
@@ -6308,6 +7200,118 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "DevSW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLock")
+		(at 41.91 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06887cda-8418-4fed-b84a-633aabbb4270")
+		(property "Reference" "SW1"
+			(at 41.91 78.105 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 41.91 74.295 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 44.45 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 42.545 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LOCK_LEVER"
+			(at 42.545 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b12479a-4504-44c0-9efe-37dae6200612")
+		)
+		(pin "3"
+			(uuid "90afa4b5-2280-4815-8943-9e37e2ca8c22")
+		)
+		(pin "2"
+			(uuid "35cc86df-35b0-4c82-9d92-b0f938c71efd")
+		)
+		(pin "5"
+			(uuid "7a001643-39d1-4954-a71a-e573d0b8ef28")
+		)
+		(pin "4"
+			(uuid "fb38faf4-bea1-44e9-8c96-25d2cb8c613f")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -7025,7 +8029,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" "0x21"
 			(at 128.27 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9810,7 +10814,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" "0x21"
 			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9822,52 +10826,52 @@
 			)
 		)
 		(pin "9"
-			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba6f")
+			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba70")
 		)
 		(pin "13"
-			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bfee")
+			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bfef")
 		)
 		(pin "10"
-			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fb")
+			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fc")
 		)
 		(pin "7"
-			(uuid "68bdb901-a681-4e10-b276-447e5b053b98")
+			(uuid "68bdb901-a681-4e10-b276-447e5b053b99")
 		)
 		(pin "8"
-			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca13")
+			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca14")
 		)
 		(pin "14"
-			(uuid "40657d77-9150-47fa-9f1d-b77476308e90")
+			(uuid "40657d77-9150-47fa-9f1d-b77476308e91")
 		)
 		(pin "11"
-			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7975")
+			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7976")
 		)
 		(pin "12"
-			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9b")
+			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9c")
 		)
 		(pin "15"
-			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41af")
+			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41b0")
 		)
 		(pin "16"
-			(uuid "f6b547b8-704c-4da9-9e68-68f25511566b")
+			(uuid "f6b547b8-704c-4da9-9e68-68f25511566c")
 		)
 		(pin "1"
-			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca414")
+			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca415")
 		)
 		(pin "2"
-			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0e8")
+			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0e9")
 		)
 		(pin "5"
-			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf658")
+			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf659")
 		)
 		(pin "3"
-			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02c")
+			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02d")
 		)
 		(pin "6"
-			(uuid "41a178fc-6f15-439d-ada3-425106e801f7")
+			(uuid "41a178fc-6f15-439d-ada3-425106e801f8")
 		)
 		(pin "4"
-			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17c")
+			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17d")
 		)
 		(instances
 			(project "Sargent"
@@ -9985,222 +10989,6 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Digital_Output")
-		(at 58.42 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "819fede3-e80f-450a-bce1-7425554e5c98")
-		(property "Reference" "DevSW12"
-			(at 52.5848 98.3324 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "MC1"
-			(at 58.42 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 54.8762 98.306 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Kind" "DIGITAL_INPUT"
-			(at 58.9191 98.3851 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Polarity" "IN"
-			(at 53.34 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6d532feb-27a0-4333-8aea-89ec5d0332d8")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DevSW12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RailroadField:Device-Servo_PWM")
-		(at 58.42 99.06 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8292d725-751c-4402-9519-1c6e07144891")
-		(property "Reference" "DevSW11"
-			(at 52.4926 95.9052 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "836SB"
-			(at 58.42 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 53.34 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Kind" "SERVO_PWM"
-			(at 55.88 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "c35dde89-a9b3-4900-badf-0e44c0ef7989")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DevSW11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RailroadField:Device-I2C-PWMx4")
 		(at 116.84 92.71 0)
 		(unit 3)
@@ -10288,7 +11076,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" "0x21"
 			(at 128.27 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -10300,164 +11088,58 @@
 			)
 		)
 		(pin "9"
-			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba6f")
+			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba71")
 		)
 		(pin "13"
-			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bfee")
+			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bff0")
 		)
 		(pin "10"
-			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fb")
+			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fd")
 		)
 		(pin "7"
-			(uuid "68bdb901-a681-4e10-b276-447e5b053b98")
+			(uuid "68bdb901-a681-4e10-b276-447e5b053b9a")
 		)
 		(pin "8"
-			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca13")
+			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca15")
 		)
 		(pin "14"
-			(uuid "40657d77-9150-47fa-9f1d-b77476308e90")
+			(uuid "40657d77-9150-47fa-9f1d-b77476308e92")
 		)
 		(pin "11"
-			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7975")
+			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7977")
 		)
 		(pin "12"
-			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9b")
+			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9d")
 		)
 		(pin "15"
-			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41af")
+			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41b1")
 		)
 		(pin "16"
-			(uuid "f6b547b8-704c-4da9-9e68-68f25511566b")
+			(uuid "f6b547b8-704c-4da9-9e68-68f25511566d")
 		)
 		(pin "1"
-			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca414")
+			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca416")
 		)
 		(pin "2"
-			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0e8")
+			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0ea")
 		)
 		(pin "5"
-			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf658")
+			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf65a")
 		)
 		(pin "3"
-			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02c")
+			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02e")
 		)
 		(pin "6"
-			(uuid "41a178fc-6f15-439d-ada3-425106e801f7")
+			(uuid "41a178fc-6f15-439d-ada3-425106e801f9")
 		)
 		(pin "4"
-			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17c")
+			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17e")
 		)
 		(instances
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "Exp2")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RailroadField:Device-Signal-3LED_PWM")
-		(at 106.68 81.28 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a0c4aaa-ea8a-4746-9a64-8c6d2311fa36")
-		(property "Reference" "DevSW7"
-			(at 100.7526 78.1252 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "836SB"
-			(at 106.68 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 106.68 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 101.6 83.82 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Kind" "PWM_3LED"
-			(at 99.8571 85.1912 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "3fc2cb72-a1bb-4722-88cf-0cb8cdeb4f94")
-		)
-		(pin "2"
-			(uuid "7b34d8ce-98dc-43af-8611-744b64b465a9")
-		)
-		(pin "3"
-			(uuid "e0d42e32-e5cd-43ca-835b-3cefb6bd80ba")
-		)
-		(instances
-			(project "Sargent"
-				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
-					(reference "DevSW7")
-					(unit 1)
 				)
 			)
 		)
@@ -10653,7 +11335,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" "0x21"
 			(at 128.27 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -10665,52 +11347,52 @@
 			)
 		)
 		(pin "9"
-			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba6f")
+			(uuid "fd1eee41-d161-454c-ab97-b4c117ddba72")
 		)
 		(pin "13"
-			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bfee")
+			(uuid "64307983-6ffc-4f62-9d1d-0d31fd25bff1")
 		)
 		(pin "10"
-			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fb")
+			(uuid "5e46eff2-e951-47c4-8e03-486ee6bf12fe")
 		)
 		(pin "7"
-			(uuid "68bdb901-a681-4e10-b276-447e5b053b98")
+			(uuid "68bdb901-a681-4e10-b276-447e5b053b9b")
 		)
 		(pin "8"
-			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca13")
+			(uuid "ab5f305c-255b-4e62-a0cd-cabf1327ca16")
 		)
 		(pin "14"
-			(uuid "40657d77-9150-47fa-9f1d-b77476308e90")
+			(uuid "40657d77-9150-47fa-9f1d-b77476308e93")
 		)
 		(pin "11"
-			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7975")
+			(uuid "b1a3726f-1cf5-4521-98c1-4a24396c7978")
 		)
 		(pin "12"
-			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9b")
+			(uuid "f001a8d1-2b17-473e-b5af-8518f08c4c9e")
 		)
 		(pin "15"
-			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41af")
+			(uuid "6ad42ef7-080a-4b95-8cd2-e3cc23df41b2")
 		)
 		(pin "16"
-			(uuid "f6b547b8-704c-4da9-9e68-68f25511566b")
+			(uuid "f6b547b8-704c-4da9-9e68-68f25511566e")
 		)
 		(pin "1"
-			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca414")
+			(uuid "0936b4ee-1c64-4896-a74e-85e9116ca417")
 		)
 		(pin "2"
-			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0e8")
+			(uuid "d2d17d98-c872-4e60-b5c6-d9e52daeb0eb")
 		)
 		(pin "5"
-			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf658")
+			(uuid "828d9384-6fdf-4c5f-a573-6020eefbf65b")
 		)
 		(pin "3"
-			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02c")
+			(uuid "3bb715a6-ce1f-4462-a1e9-f8e02b25e02f")
 		)
 		(pin "6"
-			(uuid "41a178fc-6f15-439d-ada3-425106e801f7")
+			(uuid "41a178fc-6f15-439d-ada3-425106e801fa")
 		)
 		(pin "4"
-			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17c")
+			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17f")
 		)
 		(instances
 			(project "Sargent"
@@ -10837,6 +11519,120 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "DevSW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadField:Device-Digital_Output")
+		(at 58.42 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "98c15d56-9456-466b-8420-b38b011fe737")
+		(property "Reference" "DevSW12"
+			(at 52.5848 95.7924 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "MC1"
+			(at 58.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 54.8762 95.766 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "DIGITAL_OUTPUT"
+			(at 58.9191 95.8451 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Polarity" "OUT"
+			(at 53.34 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05bb5c83-ddff-427f-913b-0ac720b91e4d")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "DevSW12")
 					(unit 1)
 				)
 			)
@@ -11169,6 +11965,118 @@
 		)
 	)
 	(symbol
+		(lib_id "RailroadPanel:PanelSwitch")
+		(at 25.4 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac465979-5fee-4507-a97d-f913d3d114ea")
+		(property "Reference" "SW2"
+			(at 25.4 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 25.4 74.295 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 25.4 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 25.4 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 27.94 85.725 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 26.035 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_LEVER"
+			(at 26.035 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "91dcf933-4834-4e25-9880-a75c159c77cc")
+		)
+		(pin "1"
+			(uuid "33ededac-3f92-4aab-aa0d-c72ca4e6504e")
+		)
+		(pin "3"
+			(uuid "eaf1ae8f-c7a9-45aa-96c0-0ba0af153fae")
+		)
+		(pin "5"
+			(uuid "4820ddba-8cbb-400a-8d82-f98c519597db")
+		)
+		(pin "4"
+			(uuid "7c395ddf-2b7f-44e9-a804-f3acb02849a9")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad:Track Circuit")
 		(at 93.98 35.56 0)
 		(unit 1)
@@ -11274,6 +12182,109 @@
 			(project "Sargent"
 				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
 					(reference "TC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadField:Device-Signal-Semaphore_2PWM")
+		(at 106.68 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc487295-b62a-4588-bf65-78751530177b")
+		(property "Reference" "DevSW7"
+			(at 100.7526 78.1252 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "836SB"
+			(at 106.68 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 106.68 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 101.6 81.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Kind" "SIG_SEM_2PWM"
+			(at 99.8571 82.6512 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "01de8452-464c-4d14-a6f9-f7c533bceeab")
+		)
+		(pin "2"
+			(uuid "461f4b91-a7ae-4547-89a0-551ac1b10301")
+		)
+		(instances
+			(project "Sargent"
+				(path "/1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+					(reference "DevSW7")
 					(unit 1)
 				)
 			)
