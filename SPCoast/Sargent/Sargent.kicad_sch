@@ -6576,7 +6576,7 @@
 					)
 				)
 			)
-			(property "Role" "APPLIANCE"
+			(property "Role" "PANEL"
 				(at 0.635 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6589,6 +6589,28 @@
 			)
 			(property "Kind" "LOCK_LEVER"
 				(at 0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "WLS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "WLK" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6879,7 +6901,7 @@
 				(pin output line
 					(at 7.62 -5.08 180)
 					(length 0)
-					(name "NWS"
+					(name "WLS"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -6897,7 +6919,7 @@
 				(pin output line
 					(at 7.62 -2.54 180)
 					(length 0)
-					(name "RWS"
+					(name "~{WLS}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -6915,7 +6937,7 @@
 				(pin input line
 					(at 7.62 2.54 180)
 					(length 0)
-					(name "RWK"
+					(name "~{WLK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -6933,7 +6955,7 @@
 				(pin input line
 					(at 7.62 5.08 180)
 					(length 0)
-					(name "NWK"
+					(name "WLK"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7014,7 +7036,7 @@
 					)
 				)
 			)
-			(property "Role" "APPLIANCE"
+			(property "Role" "PANEL"
 				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7027,6 +7049,50 @@
 			)
 			(property "Kind" "SWITCH_LEVER"
 				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NWS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "RWS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "RWK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NWK" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7317,7 +7383,7 @@
 				(pin output line
 					(at 7.62 -5.08 180)
 					(length 0)
-					(name "NWS"
+					(name "~{NWS}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7335,7 +7401,7 @@
 				(pin output line
 					(at 7.62 -2.54 180)
 					(length 0)
-					(name "RWS"
+					(name "~{RWS}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7353,7 +7419,7 @@
 				(pin input line
 					(at 7.62 2.54 180)
 					(length 0)
-					(name "RWK"
+					(name "~{RWK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7371,7 +7437,7 @@
 				(pin input line
 					(at 7.62 5.08 180)
 					(length 0)
-					(name "NWK"
+					(name "~{NWK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7743,7 +7809,7 @@
 				)
 			)
 		)
-		(property "Role" "APPLIANCE"
+		(property "Role" "PANEL"
 			(at 36.195 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -12511,7 +12577,7 @@
 				)
 			)
 		)
-		(property "Role" "APPLIANCE"
+		(property "Role" "PANEL"
 			(at 19.685 88.9 0)
 			(hide yes)
 			(show_name no)
