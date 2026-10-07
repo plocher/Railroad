@@ -1,0 +1,5284 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "bcbbf5c9-000a-5314-9d5b-01a9aca22e90")
+	(paper "USLetter")
+	(title_block
+		(title "South cTc")
+		(date "2026.09")
+		(rev "0.1")
+		(company "SPCoast Railroad")
+		(comment 1 "JPlocher")
+	)
+	(lib_symbols
+		(symbol "RailroadPanel:PanelCode"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CODE"
+				(at 0 5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CODE"
+				(at 5.715 -0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Station CODE pushbutton (one-shot). One per multi-column CtcStation, regardless of how many columns it spans."
+				(at -1.27 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "CODE"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CODE" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelCode_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.905)
+					(stroke
+						(width 0.127)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 2.6941)
+					(stroke
+						(width 0.4064)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~{CODE}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelColumn"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "COL"
+				(at -5.08 -22.86 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "COLUMN#"
+				(at 1.27 -36.83 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "Luchessa"
+				(at 0 -31.75 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "COLUMN"
+				(at 0.635 -24.765 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Machine" "SPCoast South"
+				(at 0.635 -27.94 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.905 1.905)
+					)
+				)
+			)
+			(property "Column" "${VALUE}"
+				(at 2.54 -22.86 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0.635 -34.29 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelColumn_1_1"
+				(circle
+					(center -3.81 38.1)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -3.81 17.78)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 71.12)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 66.04)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 60.96)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 49.53)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 21.59)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -6.35)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.0065 29.5877)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.0116 9.3122)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 38.1)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 17.78)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Column"
+					(at 0.635 -36.83 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify right)
+					)
+				)
+				(pin free line
+					(at 0 71.12 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 66.04 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 60.96 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 49.53 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 33.02 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 12.7 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 0 -6.35 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:Driver-I2C-MAX7313"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "I2C"
+				(at -7.62 49.53 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "${Address}"
+				(at 4.445 49.53 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+				(at 13.335 54.61 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "I2C-MAX7313"
+				(at -5.715 -37.465 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 1.5681 -39.9209 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-I2C-MAX7313_1_1"
+				(rectangle
+					(start -8.255 48.26)
+					(end 8.255 -42.545)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "LED MB1"
+					(at -3.175 45.72 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MB2"
+					(at -3.175 40.64 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MB3"
+					(at -3.175 35.56 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "MC"
+					(at -3.175 24.13 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SW N"
+					(at -3.175 13.97 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SW R"
+					(at -3.175 11.43 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SW R"
+					(at -3.175 6.35 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SW N"
+					(at -3.175 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG S"
+					(at -3.175 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG L"
+					(at -3.175 -5.08 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG R"
+					(at -3.175 -7.62 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG R"
+					(at -3.175 -10.16 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG S"
+					(at -3.175 -12.7 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG L"
+					(at -3.175 -15.24 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "CODE"
+					(at -3.175 -25.4 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MC"
+					(at -3.175 -31.75 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "Address:"
+					(at -3.175 -40.005 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 13.97 0)
+					(length 3.81)
+					(name "A1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 11.43 0)
+					(length 3.81)
+					(name "A2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 24.13 0)
+					(length 3.81)
+					(name "A3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 45.72 0)
+					(length 3.81)
+					(name "A4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 40.64 0)
+					(length 3.81)
+					(name "A5"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 35.56 0)
+					(length 3.81)
+					(name "A6"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 6.35 0)
+					(length 3.81)
+					(name "A7"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 3.81 0)
+					(length 3.81)
+					(name "A8"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -31.75 0)
+					(length 3.81)
+					(name "B1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -15.24 0)
+					(length 3.81)
+					(name "B2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -12.7 0)
+					(length 3.81)
+					(name "B3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -10.16 0)
+					(length 3.81)
+					(name "B4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -25.4 0)
+					(length 3.81)
+					(name "B5"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -5.08 0)
+					(length 3.81)
+					(name "B6"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -7.62 0)
+					(length 3.81)
+					(name "B7"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -2.54 0)
+					(length 3.81)
+					(name "B8"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelLamp-BLUE"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LAMP"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OS"
+				(at 5.715 -0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+				(at -0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Color" "blue"
+				(at -0.635 -8.255 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IndicationToken" "S"
+				(at -1.905 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LAMP"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LAMP" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLamp-BLUE_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 0 255 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 6.35)
+					(name "~{LAMP}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelLamp-RED"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LAMP"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OS"
+				(at 5.715 -0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+				(at -0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Color" "red"
+				(at -0.635 -8.255 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IndicationToken" "S"
+				(at -1.905 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LAMP"
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LAMP" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLamp-RED_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 0 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 6.35)
+					(name "~{LAMP}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelLamp-YELLOW"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LAMP"
+				(at -4.445 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TRACK"
+				(at 5.715 -0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Color" "yellow"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IndicationToken" "S"
+				(at -1.905 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LAMP"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LAMP" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLamp-YELLOW_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 255 0 1)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 6.35)
+					(name "~{LAMP}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelLock"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+				(at 2.54 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
+				(at 0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "WLS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "WLK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelLock_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 6.35 -6.35) (xy -3.175 -6.35) (xy -3.81 -5.715) (xy -3.81 -2.54) (xy -3.175 -1.905)
+						(xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelLock_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(text "N"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "LOCK"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -5.08 180)
+					(length 0)
+					(name "WLS"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "~{WLS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 0)
+					(name "~{WLK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 0)
+					(name "WLK"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelMCall"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MC"
+				(at -6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MC1"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Maintainer Call Lever"
+				(at 0 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Vital" "NO"
+				(at 6.35 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "ControlToken" "${VALUE}S"
+				(at -3.175 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Kind" "MAINTAINER_CALL"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SW" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelMCall_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.4199)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 1.6722)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelMCall_1_1"
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+					)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(arc
+					(start 0 -0.635)
+					(mid -0.263 0)
+					(end 0 0.635)
+					(stroke
+						(width 0.0762)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~{SW}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelSignal"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SIG"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+				(at -1.905 13.335 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "SIGNAL_LEVER"
+				(at 0 -10.795 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NGS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "HS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SGS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "SGK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NGK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "TEK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelSignal_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 5.08 5.08) (xy 6.35 5.08) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 6.35) (xy 6.35 7.62) (xy 4.445 7.62) (xy 1.27 5.08) (xy -1.905 5.08) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 6.985 1.905) (xy 5.08 1.905) (xy 4.445 1.27) (xy 3.175 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -1.27) (xy 6.985 -0.635) (xy 5.08 -0.635) (xy 4.445 -1.27) (xy 0.635 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -3.81) (xy 5.08 -6.35) (xy -4.445 -6.35) (xy -5.08 -5.715) (xy -5.08 0.635) (xy -4.445 1.27)
+						(xy -3.175 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelSignal_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 0 7.62)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 8.89) (xy 6.985 9.525) (xy 2.54 9.525) (xy 0 7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "L"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SIGNAL"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "S"
+					(at 0 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -3.81 180)
+					(length 0)
+					(name "~{NGS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -1.27 180)
+					(length 0)
+					(name "~{HS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 1.27 180)
+					(length 0)
+					(name "~{SGS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 3.81 180)
+					(length 0)
+					(name "~{SGK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 6.35 180)
+					(length 0)
+					(name "~{NGK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 8.89 180)
+					(length 0)
+					(name "~{TEK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RailroadPanel:PanelSwitch"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+				(at 2.54 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "SWITCH_LEVER"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NWS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "RWS" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "RWK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "NWK" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelSwitch_0_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 2.54) (xy -3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.175) (xy 1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.905 2.54)
+					(mid -1.719 2.989)
+					(end -1.27 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0152 -2.9895)
+					(radius 0.2164)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.2603 -4.6876)
+					(mid 0.8883 -5.5856)
+					(end -0.0097 -5.9576)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -0.0097 -4.6876)
+					(radius 0.898)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.0097 -5.9576)
+					(mid -0.9077 -5.5856)
+					(end -1.2797 -4.6876)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.2603 -4.6876) (xy 3.81 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.175)
+					(mid 1.719 2.989)
+					(end 1.905 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.175 1.905)
+					(mid 3.7555 1.4015)
+					(end 3.81 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 6.35 -6.35) (xy -3.175 -6.35) (xy -3.81 -5.715) (xy -3.81 -2.54) (xy -3.175 -1.905)
+						(xy -2.54 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "PanelSwitch_1_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(text "N"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SWITCH"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -5.08 180)
+					(length 0)
+					(name "~{NWS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "~{RWS}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 2.54 180)
+					(length 0)
+					(name "~{RWK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 5.08 180)
+					(length 0)
+					(name "~{NWK}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(no_connect
+		(at 87.63 87.63)
+		(uuid "131ae219-bf16-4e38-919a-b452717ac650")
+	)
+	(no_connect
+		(at 138.43 77.47)
+		(uuid "256fc245-68b7-4d30-a388-299cae8e58b3")
+	)
+	(no_connect
+		(at 87.63 82.55)
+		(uuid "439977ea-b586-4686-befc-3c41e535485a")
+	)
+	(no_connect
+		(at 138.43 104.14)
+		(uuid "4552e40c-47d8-4c64-84af-2720d89dddc3")
+	)
+	(no_connect
+		(at 138.43 74.93)
+		(uuid "4b7520eb-e64e-4f27-adda-4b2ff140f2fd")
+	)
+	(no_connect
+		(at 87.63 80.01)
+		(uuid "4f437b5b-d5a8-4986-9132-5354565b0e1f")
+	)
+	(no_connect
+		(at 138.43 85.09)
+		(uuid "70ce702a-909b-4a17-bd04-b3ecf5d52719")
+	)
+	(no_connect
+		(at 138.43 80.01)
+		(uuid "76be0836-cadd-4feb-982b-163e625d079c")
+	)
+	(no_connect
+		(at 87.63 74.93)
+		(uuid "7e2c7277-de1b-4f8a-a458-132ff83a463e")
+	)
+	(no_connect
+		(at 87.63 97.79)
+		(uuid "8bf0fdc1-5424-4855-b7f3-e2b164827f6d")
+	)
+	(no_connect
+		(at 138.43 87.63)
+		(uuid "9a41b2f6-70c9-4885-8582-b675bf294886")
+	)
+	(no_connect
+		(at 87.63 77.47)
+		(uuid "afcc52e9-cb58-4ded-9e60-2e18369f5a5e")
+	)
+	(no_connect
+		(at 138.43 48.26)
+		(uuid "cc897857-2942-48d1-a9c2-e42ffda951ce")
+	)
+	(no_connect
+		(at 87.63 36.83)
+		(uuid "e2672170-00b3-4d8c-9041-b1c27865fca4")
+	)
+	(no_connect
+		(at 138.43 82.55)
+		(uuid "ed16210f-274a-45c2-bd1e-f72e5bd4edf1")
+	)
+	(no_connect
+		(at 87.63 85.09)
+		(uuid "ff0599fe-5896-40f7-a141-7904b2e5a02c")
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-RED")
+		(at 80.01 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0515b7e8-4342-430d-943b-862869e792b0")
+		(property "Reference" "LMP4011"
+			(at 76.2 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OS"
+			(at 85.725 27.305 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 79.375 36.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "red"
+			(at 79.375 34.925 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "773T1,775T1"
+			(at 78.105 26.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 80.01 31.115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56bfb092-bcee-4cb3-8f7d-261156d18b10")
+		)
+		(pin "2"
+			(uuid "d940d197-2afe-4ba2-8e5a-e252c92586e5")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "LMP4011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelSwitch")
+		(at 130.81 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1d08402a-c187-446f-804b-0c9c439f7e28")
+		(property "Reference" "SWL4002"
+			(at 130.81 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "775"
+			(at 130.81 61.595 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 133.35 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_LEVER"
+			(at 131.445 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5f4884b-3af9-4c59-af8d-ed5513ec56dd")
+		)
+		(pin "2"
+			(uuid "7f08a0da-5664-40bd-abb9-5b375a863a8d")
+		)
+		(pin "3"
+			(uuid "c32f703c-fe77-4eeb-b44d-08fc6cc42fd8")
+		)
+		(pin "4"
+			(uuid "f22c8b1f-3dcc-4d69-be27-381dd8d9f3c7")
+		)
+		(pin "5"
+			(uuid "44bb73e6-eeda-422b-a34f-6a6471353b60")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "SWL4002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelColumn")
+		(at 80.01 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a5900b1-4389-406d-a8fa-55de6c18e3ec")
+		(property "Reference" "COL4021"
+			(at 80.01 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1"
+			(at 82.042 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 80.01 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "Gilroy Caltrain"
+			(at 80.01 129.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Machine" "SPCoast South"
+			(at 80.645 125.73 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.905 1.905)
+				)
+			)
+		)
+		(property "Role" "COLUMN"
+			(at 80.645 122.555 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Column" "${VALUE}"
+			(at 82.55 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 80.645 132.08 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "24e3f604-4693-4c7b-8fec-58da6932d4f2")
+		)
+		(pin "8"
+			(uuid "aaddef44-3077-4af5-86f1-d5b4714f93aa")
+		)
+		(pin "2"
+			(uuid "da7e3d6c-4619-4445-8f22-2f466c9991cd")
+		)
+		(pin "6"
+			(uuid "42924edb-8ff2-4f7a-9469-9020acbaf7e8")
+		)
+		(pin "3"
+			(uuid "a5bf4541-950b-4411-bbb3-665425cedd88")
+		)
+		(pin "5"
+			(uuid "340f0964-1e7a-49d5-a979-6399d4861ebc")
+		)
+		(pin "1"
+			(uuid "c48cef2b-7699-4585-b86f-ea82057985a7")
+		)
+		(pin "7"
+			(uuid "8643fdf6-a796-4efc-bd1f-6116458b8054")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "COL4021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelCode")
+		(at 130.81 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6ad31c8e-f624-42ed-b1a1-dacc183ed470")
+		(property "Reference" "CDE4002"
+			(at 132.08 92.075 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CODE"
+			(at 136.525 98.425 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Station CODE pushbutton (one-shot). One per multi-column CtcStation, regardless of how many columns it spans."
+			(at 129.54 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 130.81 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CODE"
+			(at 130.81 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b979b1c8-ab21-4b3b-a134-01fd7d8f8728")
+		)
+		(pin "2"
+			(uuid "aa35255a-ed5f-4468-836d-9be017a3728b")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "CDE4002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelSwitch")
+		(at 80.01 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b4430e0-6b90-4dd7-b543-bf64f369933f")
+		(property "Reference" "SWL4001"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "773"
+			(at 80.01 61.595 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 82.55 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.645 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_LEVER"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "140987c5-19ce-41d4-8752-ac920a4bef0c")
+		)
+		(pin "2"
+			(uuid "7e96b582-3ce6-4be8-ab66-b005c7433b6c")
+		)
+		(pin "3"
+			(uuid "9ec85fa9-edad-4f09-bd3b-ed1a9da3e110")
+		)
+		(pin "4"
+			(uuid "288c9116-c42f-4240-aad9-ba4a76843494")
+		)
+		(pin "5"
+			(uuid "3fc5c385-e273-42df-9b1b-9e75d062e2ad")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "SWL4001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(at 130.81 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91de874f-a455-449d-8810-b8a7050c1680")
+		(property "Reference" "LMP4021"
+			(at 126.365 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TRACK"
+			(at 136.525 27.305 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 130.81 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 130.81 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "01T"
+			(at 128.905 26.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 130.81 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 130.81 22.225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "024636a2-ea24-4077-8627-4fbab67bec58")
+		)
+		(pin "2"
+			(uuid "6ac5378e-6f62-431c-9c42-f312ec582c45")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "LMP4021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelMCall")
+		(at 80.01 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9896ddc4-4578-412a-a2fe-75bafe5091f5")
+		(property "Reference" "MCL4001"
+			(at 73.66 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC1"
+			(at 80.01 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Maintainer Call Lever"
+			(at 80.01 55.245 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAINTAINER_CALL"
+			(at 80.01 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Vital" "NO"
+			(at 86.36 46.355 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "ControlToken" "MC1S"
+			(at 76.835 48.26 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 86.36 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4dccc07f-5c0c-4f83-8a8a-3212cb51163c")
+		)
+		(pin "2"
+			(uuid "6af5dba7-9e48-4cf9-b996-c40b986599a3")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "MCL4001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
+		(at 99.06 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9ec64cbe-3f2e-44ae-a9d3-d9873b9aeece")
+		(property "Reference" "U4021"
+			(at 91.44 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${ADDRESS}"
+			(at 102.362 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+			(at 112.395 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 97.79 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
+			(at 93.345 109.855 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "0x20"
+			(at 100.6281 112.3109 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "04770bc0-3835-4811-83a7-e17824e92163")
+		)
+		(pin "11"
+			(uuid "fc1ab2c8-dfc6-4dd0-9c2d-52e5aa2fb48e")
+		)
+		(pin "7"
+			(uuid "d98d3661-9b90-4339-95fa-ca1163319e99")
+		)
+		(pin "8"
+			(uuid "c96796f6-f9ac-4ab2-881b-cbc7f1454db4")
+		)
+		(pin "14"
+			(uuid "076cecb0-7817-461f-9dd1-de64c2eabf3f")
+		)
+		(pin "1"
+			(uuid "957b6ef9-73b3-47a4-b213-4dfd8cb75a72")
+		)
+		(pin "2"
+			(uuid "e0e24510-14f3-4bb0-88b5-3ea2b9c30d61")
+		)
+		(pin "4"
+			(uuid "9a12e362-04d1-4c47-b6fe-ee1eddc5f0d8")
+		)
+		(pin "13"
+			(uuid "6c13cf2f-0a11-4fa4-b3fb-86898e4adac4")
+		)
+		(pin "3"
+			(uuid "0bdaf13b-cf87-4e91-9342-5ae064e1d8bc")
+		)
+		(pin "6"
+			(uuid "c8dfab1e-6b1c-4672-89f5-c17c59223441")
+		)
+		(pin "9"
+			(uuid "2de529ce-9323-4a73-bc17-9306213cac6e")
+		)
+		(pin "10"
+			(uuid "1633723a-260d-4b18-a1ca-7acd297a935e")
+		)
+		(pin "12"
+			(uuid "24dd6661-df16-4bd3-8f82-7f44ce5c15d7")
+		)
+		(pin "15"
+			(uuid "c6b79b9a-f221-4f3c-b02b-6db701ab586b")
+		)
+		(pin "16"
+			(uuid "30869678-d07f-4b30-9726-87c28f7bc110")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "U4021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(at 130.81 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b879d6a2-7f4d-41a5-ab52-a23125215dd7")
+		(property "Reference" "LMP4022"
+			(at 126.365 37.465 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TRACK"
+			(at 136.525 32.385 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 130.81 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 130.81 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "02T"
+			(at 128.905 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 130.81 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 130.81 27.305 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57d52b07-9fb5-43fc-a4d1-250a8c379dd4")
+		)
+		(pin "2"
+			(uuid "493cfba2-9d9e-4c44-adb5-f08e007376b5")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "LMP4022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
+		(at 149.86 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba244cc8-2f20-419e-81c9-9edb30812a43")
+		(property "Reference" "U4022"
+			(at 142.24 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${ADDRESS}"
+			(at 149.86 112.395 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+			(at 163.195 17.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 148.59 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "I2C-MAX7313"
+			(at 144.145 109.855 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" "0x21"
+			(at 152.146 112.522 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "0279abbd-2249-4e37-b298-80713d4009b5")
+		)
+		(pin "11"
+			(uuid "85dd667e-1f06-4e26-af85-bf753cece52c")
+		)
+		(pin "7"
+			(uuid "2233ca82-0a30-4730-be0e-14103eca2de4")
+		)
+		(pin "8"
+			(uuid "73fe1705-3996-47d5-8465-8e68a6ce70c7")
+		)
+		(pin "14"
+			(uuid "7d406425-4912-4711-8ce5-441f85962301")
+		)
+		(pin "1"
+			(uuid "a468a423-a2eb-443a-8a4e-24a041ea5e8b")
+		)
+		(pin "2"
+			(uuid "7a630ace-e1ab-47a9-a56c-9db8ecab0b0d")
+		)
+		(pin "4"
+			(uuid "c9568323-625b-4527-ae53-3751c9f3fb45")
+		)
+		(pin "13"
+			(uuid "14e6ddb3-6a1f-4fc9-b159-b18cd6fed7e1")
+		)
+		(pin "3"
+			(uuid "5ac6bc41-9db7-453c-a8d3-0c05221e6394")
+		)
+		(pin "6"
+			(uuid "7e6ae8ac-bb46-42df-84f2-0d9fa9bd25d5")
+		)
+		(pin "9"
+			(uuid "f95b8bef-f74e-49df-a472-381505efd8f6")
+		)
+		(pin "10"
+			(uuid "5f2e5847-481f-4614-901c-b8f3ee74b366")
+		)
+		(pin "12"
+			(uuid "87876cfe-0b8a-47c5-a597-52ffb746e183")
+		)
+		(pin "15"
+			(uuid "af4fd36f-ae83-4e8d-aeb0-fb3788e57801")
+		)
+		(pin "16"
+			(uuid "1e05972c-a49e-471a-8252-0e8738e98428")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "U4022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(at 130.81 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca646aef-8847-4a6f-8cbf-a9dd0c669bf2")
+		(property "Reference" "LMP4023"
+			(at 126.365 42.545 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TRACK"
+			(at 136.525 37.465 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 130.81 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 130.81 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "03T"
+			(at 128.905 36.83 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 130.81 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 130.81 32.385 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "336c8fba-f89f-463b-80ed-473f224f8f7e")
+		)
+		(pin "2"
+			(uuid "910ecd7c-5b94-40f0-b199-f398c0766b22")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "LMP4023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(at 80.01 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dca600a0-97bc-44a0-89a4-ab4ea7eff297")
+		(property "Reference" "MCK4001"
+			(at 75.565 109.855 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MC"
+			(at 85.725 104.775 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 80.01 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 80.01 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "MC1K"
+			(at 78.105 104.14 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 80.01 99.695 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "40eaa84b-c977-49cd-9840-d5d2b04d4794")
+		)
+		(pin "2"
+			(uuid "afe6000b-8291-4821-ab54-6833a07423b4")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "MCK4001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelColumn")
+		(at 130.81 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "efda58fb-071b-4bde-ba37-ef84d4e60677")
+		(property "Reference" "COL4022"
+			(at 130.81 133.985 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2"
+			(at 132.842 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 130.81 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "Gilroy Caltrain"
+			(at 130.81 129.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Machine" "SPCoast South"
+			(at 131.445 125.73 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.905 1.905)
+				)
+			)
+		)
+		(property "Role" "COLUMN"
+			(at 131.445 122.555 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Column" "${VALUE}"
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 131.445 132.08 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "6d46b142-05f3-437d-806d-e0b670d5af41")
+		)
+		(pin "8"
+			(uuid "72c0382b-e36e-4982-9730-a603ca026418")
+		)
+		(pin "2"
+			(uuid "888b6b7a-2b14-4727-ba10-de667a0f0a36")
+		)
+		(pin "6"
+			(uuid "9864c811-f1bb-4321-9ca5-350abc0f6578")
+		)
+		(pin "3"
+			(uuid "1fe740c4-133f-4807-a889-e45563406ace")
+		)
+		(pin "5"
+			(uuid "7b5f165c-38d0-42ec-948d-90ddac6711e2")
+		)
+		(pin "1"
+			(uuid "4dd41e62-f825-4c31-930b-4b67d0e7af66")
+		)
+		(pin "7"
+			(uuid "433f17b4-2771-4670-b253-ef850b818ba3")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "COL4022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(at 80.01 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f9548512-f06b-4352-a972-9cb62da209e6")
+		(property "Reference" "LMP4012"
+			(at 75.565 37.465 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TRACK"
+			(at 85.725 32.385 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at 80.01 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 80.01 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" "1SAT"
+			(at 78.105 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LAMP"
+			(at 80.01 27.305 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bc549e8-71f8-44c8-a74e-b5a88f344196")
+		)
+		(pin "2"
+			(uuid "8eba8e0b-f5d8-4ab3-a017-2f392d10fb60")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "LMP4012")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
