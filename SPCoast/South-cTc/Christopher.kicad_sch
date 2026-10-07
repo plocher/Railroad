@@ -603,7 +603,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelColumn-MAX7313"
+		(symbol "RailroadPanel:Driver-I2C-MAX7313"
 			(pin_numbers
 				(hide yes)
 			)
@@ -699,7 +699,7 @@
 					)
 				)
 			)
-			(symbol "PanelColumn-MAX7313_1_1"
+			(symbol "Driver-I2C-MAX7313_1_1"
 				(rectangle
 					(start -8.255 48.26)
 					(end 8.255 -42.545)
@@ -866,7 +866,7 @@
 				(pin bidirectional line
 					(at -11.43 13.97 0)
 					(length 3.81)
-					(name "bit0"
+					(name "A1"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -884,7 +884,7 @@
 				(pin bidirectional line
 					(at -11.43 11.43 0)
 					(length 3.81)
-					(name "bit1"
+					(name "A2"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -902,7 +902,7 @@
 				(pin bidirectional line
 					(at -11.43 24.13 0)
 					(length 3.81)
-					(name "bit2"
+					(name "A3"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -920,7 +920,7 @@
 				(pin bidirectional line
 					(at -11.43 45.72 0)
 					(length 3.81)
-					(name "bit3"
+					(name "A4"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -938,7 +938,7 @@
 				(pin bidirectional line
 					(at -11.43 40.64 0)
 					(length 3.81)
-					(name "bit4"
+					(name "A5"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -956,7 +956,7 @@
 				(pin bidirectional line
 					(at -11.43 35.56 0)
 					(length 3.81)
-					(name "bit5"
+					(name "A6"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -974,7 +974,7 @@
 				(pin bidirectional line
 					(at -11.43 6.35 0)
 					(length 3.81)
-					(name "bit6"
+					(name "A7"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -992,7 +992,7 @@
 				(pin bidirectional line
 					(at -11.43 3.81 0)
 					(length 3.81)
-					(name "bit7"
+					(name "A8"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1010,7 +1010,7 @@
 				(pin bidirectional line
 					(at -11.43 -31.75 0)
 					(length 3.81)
-					(name "bit8"
+					(name "B1"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1028,7 +1028,7 @@
 				(pin bidirectional line
 					(at -11.43 -15.24 0)
 					(length 3.81)
-					(name "bit9"
+					(name "B2"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1046,7 +1046,7 @@
 				(pin bidirectional line
 					(at -11.43 -12.7 0)
 					(length 3.81)
-					(name "bit10"
+					(name "B3"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1064,7 +1064,7 @@
 				(pin bidirectional line
 					(at -11.43 -10.16 0)
 					(length 3.81)
-					(name "bit11"
+					(name "B4"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1082,7 +1082,7 @@
 				(pin bidirectional line
 					(at -11.43 -25.4 0)
 					(length 3.81)
-					(name "bit12"
+					(name "B5"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1100,7 +1100,7 @@
 				(pin bidirectional line
 					(at -11.43 -5.08 0)
 					(length 3.81)
-					(name "bit13"
+					(name "B6"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1118,7 +1118,7 @@
 				(pin bidirectional line
 					(at -11.43 -7.62 0)
 					(length 3.81)
-					(name "bit14"
+					(name "B7"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1136,7 +1136,7 @@
 				(pin bidirectional line
 					(at -11.43 -2.54 0)
 					(length 3.81)
-					(name "bit15"
+					(name "B8"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1741,7 +1741,7 @@
 					)
 				)
 			)
-			(property "Kind" "LOCK_LEVER"
+			(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
 				(at 0.635 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3594,7 +3594,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn-MAX7313")
+		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
 		(at 149.86 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -4246,7 +4246,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn-MAX7313")
+		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
 		(at 200.66 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -4477,7 +4477,7 @@
 				)
 			)
 		)
-		(property "Kind" "LOCK_LEVER"
+		(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
 			(at 80.645 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -5213,7 +5213,7 @@
 				)
 			)
 		)
-		(property "Kind" "LOCK_LEVER"
+		(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
 			(at 182.245 73.025 0)
 			(hide yes)
 			(show_name no)
@@ -5400,7 +5400,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn-MAX7313")
+		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
 		(at 99.06 72.39 0)
 		(unit 1)
 		(body_style 1)
