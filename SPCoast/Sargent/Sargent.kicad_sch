@@ -2795,7 +2795,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_HandThrow"
+		(symbol "Railroad:Switch_Manual_Sensed"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2847,8 +2847,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Manual switch, no motor but with N/R feedback"
+				(at 1.27 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2890,7 +2890,7 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_MANUAL"
+			(property "Kind" "SWITCH_MANUAL_SENSED"
 				(at -1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2911,7 +2911,7 @@
 					)
 				)
 			)
-			(symbol "Switch_HandThrow_1_1"
+			(symbol "Switch_Manual_Sensed_1_1"
 				(polyline
 					(pts
 						(xy -11.43 0) (xy 1.27 0)
@@ -3640,7 +3640,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Digital_Output"
+		(symbol "RailroadField:Device-Lamp-Bit"
 			(pin_names
 				(offset 1.27)
 			)
@@ -3716,7 +3716,7 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "DIGITAL_OUTPUT"
+			(property "Kind" "LAMP_BIT"
 				(at 0.4991 1.9449 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3728,8 +3728,8 @@
 					(justify left)
 				)
 			)
-			(property "Polarity" "OUT"
-				(at -5.08 3.81 0)
+			(property "OUT" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3739,7 +3739,7 @@
 					)
 				)
 			)
-			(symbol "Device-Digital_Output_0_1"
+			(symbol "Device-Lamp-Bit_0_1"
 				(rectangle
 					(start -11.43 1.27)
 					(end 7.62 -1.27)
@@ -3775,7 +3775,7 @@
 					)
 				)
 			)
-			(symbol "Device-Digital_Output_1_1"
+			(symbol "Device-Lamp-Bit_1_1"
 				(polyline
 					(pts
 						(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
@@ -3801,7 +3801,7 @@
 				(pin output line
 					(at 10.16 0 180)
 					(length 2.54)
-					(name "OUT"
+					(name "~{OUT}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -3819,7 +3819,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-I2C-IOx4"
+		(symbol "RailroadField:Driver-I2C-MCP23017"
 			(pin_names
 				(offset 0.635)
 			)
@@ -3882,7 +3882,7 @@
 					)
 				)
 			)
-			(property "Role" "IODriver"
+			(property "Role" "IODRIVER"
 				(at -5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3893,7 +3893,7 @@
 					)
 				)
 			)
-			(property "Kind" "MCP23017"
+			(property "Kind" "I2C-MCP23017"
 				(at 6.35 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3915,7 +3915,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-IOx4_1_1"
+			(symbol "Driver-I2C-MCP23017_1_1"
 				(unit_name "AA")
 				(rectangle
 					(start 2.54 1.27)
@@ -4035,7 +4035,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-IOx4_2_1"
+			(symbol "Driver-I2C-MCP23017_2_1"
 				(unit_name "AB")
 				(rectangle
 					(start 2.54 1.27)
@@ -4155,7 +4155,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-IOx4_3_1"
+			(symbol "Driver-I2C-MCP23017_3_1"
 				(unit_name "BA")
 				(rectangle
 					(start 2.54 1.27)
@@ -4275,7 +4275,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-IOx4_4_1"
+			(symbol "Driver-I2C-MCP23017_4_1"
 				(unit_name "BB")
 				(rectangle
 					(start 2.54 1.27)
@@ -4397,7 +4397,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-I2C-PWMx4"
+		(symbol "RailroadField:Driver-I2C-PCA9685"
 			(pin_names
 				(offset 0.635)
 			)
@@ -4460,7 +4460,7 @@
 					)
 				)
 			)
-			(property "Role" "IODriver"
+			(property "Role" "IODRIVER"
 				(at -5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4471,7 +4471,7 @@
 					)
 				)
 			)
-			(property "Kind" "PCA9685"
+			(property "Kind" "I2C-PCA9685"
 				(at 6.35 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4493,7 +4493,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-PWMx4_1_1"
+			(symbol "Driver-I2C-PCA9685_1_1"
 				(unit_name "AA")
 				(rectangle
 					(start 2.54 1.27)
@@ -4613,7 +4613,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-PWMx4_2_1"
+			(symbol "Driver-I2C-PCA9685_2_1"
 				(unit_name "AB")
 				(rectangle
 					(start 2.54 1.27)
@@ -4733,7 +4733,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-PWMx4_3_1"
+			(symbol "Driver-I2C-PCA9685_3_1"
 				(unit_name "BA")
 				(rectangle
 					(start 2.54 1.27)
@@ -4853,7 +4853,7 @@
 					)
 				)
 			)
-			(symbol "Device-I2C-PWMx4_4_1"
+			(symbol "Driver-I2C-PCA9685_4_1"
 				(unit_name "BB")
 				(rectangle
 					(start 2.54 1.27)
@@ -4975,7 +4975,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Signal-1LED_NEO"
+		(symbol "RailroadField:Device-Lamp-NeoPixel"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5050,7 +5050,7 @@
 					)
 				)
 			)
-			(property "Kind" "SIG_1LED_NEOPIXEL"
+			(property "Kind" "LAMP_NEOPIXEL"
 				(at -2.54 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5062,7 +5062,7 @@
 					(justify left)
 				)
 			)
-			(property "Chain" "A"
+			(property "Chain" ""
 				(at -3.81 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5073,7 +5073,7 @@
 					(justify left)
 				)
 			)
-			(property "Index" "23"
+			(property "Index" ""
 				(at 2.54 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5084,7 +5084,7 @@
 					(justify left)
 				)
 			)
-			(symbol "Device-Signal-1LED_NEO_0_1"
+			(symbol "Device-Lamp-NeoPixel_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -1.27)
@@ -5120,7 +5120,7 @@
 					)
 				)
 			)
-			(symbol "Device-Signal-1LED_NEO_1_1"
+			(symbol "Device-Lamp-NeoPixel_1_1"
 				(circle
 					(center -10.16 0.635)
 					(radius 0.4033)
@@ -5163,7 +5163,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Signal-3LED_2MUX"
+		(symbol "RailroadField:Device-Head-3LED-Mux2"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5237,7 +5237,7 @@
 					)
 				)
 			)
-			(property "Kind" "SIG_3LED_2MUX"
+			(property "Kind" "HEAD_3LED_MUX2"
 				(at -6.8229 -1.3712 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5248,7 +5248,7 @@
 					(justify left)
 				)
 			)
-			(symbol "Device-Signal-3LED_2MUX_0_1"
+			(symbol "Device-Head-3LED-Mux2_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -2.54)
@@ -5321,7 +5321,7 @@
 					)
 				)
 			)
-			(symbol "Device-Signal-3LED_2MUX_1_1"
+			(symbol "Device-Head-3LED-Mux2_1_1"
 				(circle
 					(center -10.16 1.27)
 					(radius 0.4033)
@@ -5358,7 +5358,7 @@
 						(color 255 0 0 1)
 					)
 				)
-				(text "SIG ${VALUE}"
+				(text "HEAD ${VALUE}"
 					(at -7.218 1.3901 0)
 					(effects
 						(font
@@ -5406,7 +5406,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Signal-3LED_PWM"
+		(symbol "RailroadField:Device-Head-3LED-PWM"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5480,7 +5480,7 @@
 					)
 				)
 			)
-			(property "Kind" "SIG_3LED_PWM"
+			(property "Kind" "HEAD_3LED_PWM"
 				(at -6.8229 -3.9112 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5491,7 +5491,18 @@
 					(justify left)
 				)
 			)
-			(symbol "Device-Signal-3LED_PWM_0_1"
+			(property "Fade_ms" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Device-Head-3LED-PWM_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -5.08)
@@ -5564,7 +5575,7 @@
 					)
 				)
 			)
-			(symbol "Device-Signal-3LED_PWM_1_1"
+			(symbol "Device-Head-3LED-PWM_1_1"
 				(circle
 					(center -10.16 0)
 					(radius 0.4033)
@@ -5601,7 +5612,7 @@
 						(color 255 0 0 1)
 					)
 				)
-				(text "SIG ${VALUE}"
+				(text "HEAD ${VALUE}"
 					(at -7.218 1.3901 0)
 					(effects
 						(font
@@ -5667,7 +5678,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Signal-Semaphore_2PWM"
+		(symbol "RailroadField:Device-Head-Semaphore-Servo"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5741,7 +5752,7 @@
 					)
 				)
 			)
-			(property "Kind" "SIG_SEM_2PWM"
+			(property "Kind" "HEAD_SEMAPHORE_SERVO"
 				(at -6.8229 -1.3712 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -5752,7 +5763,40 @@
 					(justify left)
 				)
 			)
-			(symbol "Device-Signal-Semaphore_2PWM_0_1"
+			(property "Stop_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Approach_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Clear_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Device-Head-Semaphore-Servo_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -2.54)
@@ -5801,7 +5845,7 @@
 					)
 				)
 			)
-			(symbol "Device-Signal-Semaphore_2PWM_1_1"
+			(symbol "Device-Head-Semaphore-Servo_1_1"
 				(circle
 					(center -10.16 -0.635)
 					(radius 0.4033)
@@ -5814,7 +5858,7 @@
 						(color 255 0 0 1)
 					)
 				)
-				(text "SIG ${VALUE}"
+				(text "HEAD ${VALUE}"
 					(at -7.218 1.3901 0)
 					(effects
 						(font
@@ -5862,7 +5906,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Switch-HandThrow"
+		(symbol "RailroadField:Device-Switch-Sense"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5926,7 +5970,7 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -7.1066 -0.5256 0)
+				(at -7.0111 -0.4377 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -5937,8 +5981,8 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "SWITCH_MANUAL_SENSED"
-				(at -7.1084 -1.4349 0)
+			(property "Kind" "SWITCH_SENSE"
+				(at -7.0233 -1.3619 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -5949,18 +5993,29 @@
 					(justify left)
 				)
 			)
-			(property "Polarity" "N,R"
-				(at -2.3059 3.168 0)
+			(property "N" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "Device-Switch-HandThrow_0_1"
+			(property "R" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Device-Switch-Sense_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -2.54)
@@ -5997,31 +6052,7 @@
 					)
 				)
 			)
-			(symbol "Device-Switch-HandThrow_1_1"
-				(circle
-					(center -9.0602 -0.4324)
-					(radius 0.2592)
-					(stroke
-						(width 0.1016)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
-				(circle
-					(center -9.0078 -1.4614)
-					(radius 0.2592)
-					(stroke
-						(width 0.1016)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
+			(symbol "Device-Switch-Sense_1_1"
 				(text "H"
 					(at -10.16 -0.635 0)
 					(effects
@@ -6042,7 +6073,7 @@
 				(pin input line
 					(at 10.16 1.27 180)
 					(length 2.54)
-					(name "N"
+					(name "~{N}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -6060,7 +6091,7 @@
 				(pin input line
 					(at 10.16 -1.27 180)
 					(length 2.54)
-					(name "R"
+					(name "~{R}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -6391,7 +6422,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-TrackCircuit"
+		(symbol "RailroadField:Device-Detector-Optical"
 			(pin_names
 				(offset 1.27)
 			)
@@ -6466,7 +6497,7 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "TRACK_CIRCUIT"
+			(property "Kind" "DETECTOR_OPTICAL"
 				(at 0.4991 1.9449 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -6478,8 +6509,8 @@
 					(justify left)
 				)
 			)
-			(property "Polarity" "!OCC"
-				(at -5.08 3.81 0)
+			(property "OCC" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6489,7 +6520,18 @@
 					)
 				)
 			)
-			(symbol "Device-TrackCircuit_0_1"
+			(property "Hold_ms" "1500"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Device-Detector-Optical_0_1"
 				(rectangle
 					(start -11.43 1.27)
 					(end 7.62 -1.27)
@@ -6502,7 +6544,7 @@
 					)
 				)
 			)
-			(symbol "Device-TrackCircuit_1_1"
+			(symbol "Device-Detector-Optical_1_1"
 				(polyline
 					(pts
 						(xy -10.16 0) (xy -10.795 0)
@@ -6551,7 +6593,7 @@
 				(pin input line
 					(at 10.16 0 180)
 					(length 2.54)
-					(name "OCC"
+					(name "~{OCC}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -8524,7 +8566,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Signal-3LED_2MUX")
+		(lib_id "RailroadField:Device-Head-3LED-Mux2")
 		(at 102.87 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -8600,7 +8642,7 @@
 				)
 			)
 		)
-		(property "Kind" "SIG_3LED_2MUX"
+		(property "Kind" "HEAD_3LED_MUX2"
 			(at 96.0471 85.1912 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8764,7 +8806,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_HandThrow")
+		(lib_id "Railroad:Switch_Manual_Sensed")
 		(at 74.93 35.56 0)
 		(mirror y)
 		(unit 1)
@@ -8861,7 +8903,7 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_MANUAL"
+		(property "Kind" "SWITCH_MANUAL_SENSED"
 			(at 74.93 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -8891,7 +8933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-TrackCircuit")
+		(lib_id "RailroadField:Device-Detector-Optical")
 		(at 102.87 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -8969,7 +9011,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Kind" "DETECTOR_OPTICAL"
 			(at 103.3691 78.0651 0)
 			(hide yes)
 			(show_name no)
@@ -8979,17 +9021,6 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
-			)
-		)
-		(property "Polarity" "!OCC"
-			(at 97.79 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -9116,7 +9147,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-IOx4")
+		(lib_id "RailroadField:Driver-I2C-MCP23017")
 		(at 68.58 82.55 0)
 		(unit 2)
 		(body_style 1)
@@ -9181,7 +9212,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 63.5 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9192,7 +9223,7 @@
 				)
 			)
 		)
-		(property "Kind" "MCP23017"
+		(property "Kind" "I2C-MCP23017"
 			(at 74.93 83.82 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9272,7 +9303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-PWMx4")
+		(lib_id "RailroadField:Driver-I2C-PCA9685")
 		(at 158.75 82.55 0)
 		(unit 2)
 		(body_style 1)
@@ -9337,7 +9368,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 153.67 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9348,7 +9379,7 @@
 				)
 			)
 		)
-		(property "Kind" "PCA9685"
+		(property "Kind" "I2C-PCA9685"
 			(at 165.1 83.82 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9985,7 +10016,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Signal-3LED_2MUX")
+		(lib_id "RailroadField:Device-Head-3LED-Mux2")
 		(at 102.87 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -10061,7 +10092,7 @@
 				)
 			)
 		)
-		(property "Kind" "SIG_3LED_2MUX"
+		(property "Kind" "HEAD_3LED_MUX2"
 			(at 96.0471 90.2712 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10402,7 +10433,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-TrackCircuit")
+		(lib_id "RailroadField:Device-Detector-Optical")
 		(at 102.87 77.47 0)
 		(unit 1)
 		(body_style 1)
@@ -10480,7 +10511,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Kind" "DETECTOR_OPTICAL"
 			(at 103.3691 75.5251 0)
 			(hide yes)
 			(show_name no)
@@ -10490,17 +10521,6 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
-			)
-		)
-		(property "Polarity" "!OCC"
-			(at 97.79 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -10972,7 +10992,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-IOx4")
+		(lib_id "RailroadField:Driver-I2C-MCP23017")
 		(at 68.58 92.71 0)
 		(unit 3)
 		(body_style 1)
@@ -11037,7 +11057,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 63.5 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -11048,7 +11068,7 @@
 				)
 			)
 		)
-		(property "Kind" "MCP23017"
+		(property "Kind" "I2C-MCP23017"
 			(at 74.93 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11557,7 +11577,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-IOx4")
+		(lib_id "RailroadField:Driver-I2C-MCP23017")
 		(at 68.58 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -11622,7 +11642,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 63.5 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11633,7 +11653,7 @@
 				)
 			)
 		)
-		(property "Kind" "MCP23017"
+		(property "Kind" "I2C-MCP23017"
 			(at 74.93 73.66 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11813,7 +11833,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-TrackCircuit")
+		(lib_id "RailroadField:Device-Detector-Optical")
 		(at 102.87 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -11891,7 +11911,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Kind" "DETECTOR_OPTICAL"
 			(at 103.3691 72.9851 0)
 			(hide yes)
 			(show_name no)
@@ -11901,17 +11921,6 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
-			)
-		)
-		(property "Polarity" "!OCC"
-			(at 97.79 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -11927,7 +11936,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-IOx4")
+		(lib_id "RailroadField:Driver-I2C-MCP23017")
 		(at 68.58 102.87 0)
 		(unit 4)
 		(body_style 1)
@@ -11992,7 +12001,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 63.5 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -12003,7 +12012,7 @@
 				)
 			)
 		)
-		(property "Kind" "MCP23017"
+		(property "Kind" "I2C-MCP23017"
 			(at 74.93 104.14 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12083,7 +12092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Signal-3LED_PWM")
+		(lib_id "RailroadField:Device-Head-3LED-PWM")
 		(at 148.59 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -12159,7 +12168,7 @@
 				)
 			)
 		)
-		(property "Kind" "PWM_3LED"
+		(property "Kind" "HEAD_3LED_PWM"
 			(at 141.7671 77.5712 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12508,7 +12517,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Digital_Output")
+		(lib_id "RailroadField:Device-Lamp-Bit")
 		(at 102.87 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -12586,7 +12595,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "DIGITAL_OUTPUT"
+		(property "Kind" "LAMP_BIT"
 			(at 103.3691 70.4451 0)
 			(hide yes)
 			(show_name no)
@@ -12596,17 +12605,6 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
-			)
-		)
-		(property "Polarity" "OUT"
-			(at 97.79 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -12622,7 +12620,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Signal-Semaphore_2PWM")
+		(lib_id "RailroadField:Device-Head-Semaphore-Servo")
 		(at 148.59 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -12698,7 +12696,7 @@
 				)
 			)
 		)
-		(property "Kind" "SIG_SEM_2PWM"
+		(property "Kind" "HEAD_SEMAPHORE_SERVO"
 			(at 141.7671 85.1912 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12842,7 +12840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-PWMx4")
+		(lib_id "RailroadField:Driver-I2C-PCA9685")
 		(at 158.75 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -12907,7 +12905,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 153.67 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12918,7 +12916,7 @@
 				)
 			)
 		)
-		(property "Kind" "PCA9685"
+		(property "Kind" "I2C-PCA9685"
 			(at 165.1 73.66 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13259,7 +13257,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-PWMx4")
+		(lib_id "RailroadField:Driver-I2C-PCA9685")
 		(at 158.75 92.71 0)
 		(unit 3)
 		(body_style 1)
@@ -13324,7 +13322,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 153.67 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13335,7 +13333,7 @@
 				)
 			)
 		)
-		(property "Kind" "PCA9685"
+		(property "Kind" "I2C-PCA9685"
 			(at 165.1 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13415,7 +13413,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Switch-HandThrow")
+		(lib_id "RailroadField:Device-Switch-Sense")
 		(at 58.42 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -13493,7 +13491,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "HAND_THROW"
+		(property "Kind" "SWITCH_SENSE"
 			(at 51.3116 105.5749 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13503,17 +13501,6 @@
 					(thickness 0.0635)
 				)
 				(justify left)
-			)
-		)
-		(property "Polarity" "N,R"
-			(at 56.1141 100.972 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
 			)
 		)
 		(pin "2"
@@ -13532,7 +13519,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-I2C-PWMx4")
+		(lib_id "RailroadField:Driver-I2C-PCA9685")
 		(at 158.75 102.87 0)
 		(unit 4)
 		(body_style 1)
@@ -13597,7 +13584,7 @@
 				)
 			)
 		)
-		(property "Role" "IODriver"
+		(property "Role" "IODRIVER"
 			(at 153.67 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -13608,7 +13595,7 @@
 				)
 			)
 		)
-		(property "Kind" "PCA9685"
+		(property "Kind" "I2C-PCA9685"
 			(at 165.1 104.14 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14111,7 +14098,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Signal-1LED_NEO")
+		(lib_id "RailroadField:Device-Lamp-NeoPixel")
 		(at 200.66 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -14188,7 +14175,7 @@
 				)
 			)
 		)
-		(property "Kind" "SIG_1LED_NEOPIXEL"
+		(property "Kind" "LAMP_NEOPIXEL"
 			(at 198.12 76.2 0)
 			(hide yes)
 			(show_name no)
