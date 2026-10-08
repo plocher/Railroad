@@ -8,27 +8,34 @@ KiCad 10 projects that serve as the **design source of truth** for SPCoast
 railroad signalling, not as PCBs. They are schematics that tools parse into data.
 
 ```
-SPCoast/
-  Luchessa/      interlocking plant drawing (Railroad symbols) → plant JSON, board SVG
-  South-cTc/     dispatcher desk (RailroadPanel symbols) → desk I/O binding (tooling TBD)
+SPCoast/                 the unified SPCoast project (hand-maintained; see "Unification" below)
+Archive/SPCoast/         the per-project drawings as of 2026-10-07, read-only reference
+  <Interlocking>/        plant drawings (Railroad symbols) -> plant JSON, board SVG
+  South-cTc/             dispatcher desk (RailroadPanel symbols)
+  kicad.mk               shared make rules for the archived projects
 ```
 
-- **Plant projects** (`<Interlocking>`, e.g. `Luchessa`) draw one interlocking's track topology: switches, derails, track circuits, masts and heads, MAIN HOUSEs, rule markers. Pins are passive; wires form the topology.
-- **Desk projects** draw the cTc machine: columns, levers, lamps, code buttons and the I/O expander bit each one lands on. Pins are typed in/out. Connections are made by pins touching; there are no wires.
-- **Naming: interlocking vs controlled point.** An interlocking (`Luchessa`) contains one or more controlled points, each a MAIN HOUSE whose Value is `CP <Name>` (`CP Luchessa`, `CP Gilroy`, `CP Carnadero`). One desk column is one CP. The interlocking and one of its CPs may share a base name; keep the `CP ` prefix on CPs and never on interlockings. Names are case-preserved when produced; consumers compare them case-insensitively.
-- Desk and plant are linked **only by name**: a panel appliance's Value must equal the plant appliance's Value.
-- **Value is the name; Reference is not.** KiCad re-annotates References freely (`SW784` may hold switch `783`). Tools must never derive or check names from References.
+## Unification (cutover 2026-10-07)
+
+`SPCoast/SPCoast.kicad_pro` is the single SPCoast project and is maintained by hand in KiCad. It was
+generated from `Archive/SPCoast/` (FieldUnit-Subdivision `docs/archive/unify/build_spcoast.py`, retired at
+cutover); `Archive/SPCoast/refmap.json` maps each archived reference to its new one. Hierarchy and
+membership rules: FieldUnit-Subdivision ADR 0004 D12-D13. The archived projects and the old compilers
+are a read-only reference for checking new tools; do not edit them.
+
+Derived files (netlists, ERC reports, JSON, SVG) go in `<project>/production/` (gitignored), never
+beside the schematics: they clutter KiCad's project navigator.
 
 ## External dependencies (outside this repo)
 
-- Symbol libraries: `~/Dropbox/KiCad/InterlockingPlant/symbols/{Railroad,RailroadPanel}.kicad_sym`. They are registered in the global KiCad 10 `sym-lib-table` and are not in git. They are evolving and expected to move into FieldUnit-Subdivision. **Do not copy them into this repo.** `.bak` files next to them are manual snapshots.
+- Symbol libraries: `~/Dropbox/KiCad/InterlockingPlant/symbols/{Railroad,RailroadPanel,RailroadField}.kicad_sym`. They are registered in the global KiCad 10 `sym-lib-table` and tracked in the InterlockingPlant git repo (no remote). They are evolving and expected to move into FieldUnit-Subdivision. **Do not copy them into this repo.** `.bak` files next to them are manual snapshots.
 - Tools: `~/Dropbox/workspace/FieldUnit-Subdivision/tools/`. Its AGENTS.md documents the symbol and field conventions the compiler enforces.
 - Firmware consumer: `~/Dropbox/Arduino/libraries/FieldUnit/examples/spcoast_ctc`.
 
 ## Generating outputs
 
 Each project has a two-line `Makefile` that sets `KIND` (`plant` or `desk`) and
-includes the shared rules in `SPCoast/kicad.mk`. That file is experimental and
+includes the shared rules in `Archive/SPCoast/kicad.mk` (relative `../kicad.mk`). That file is experimental and
 is expected to move into FieldUnit-Subdivision `tools/`. Put new rules there,
 not in project Makefiles.
 

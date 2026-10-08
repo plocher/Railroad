@@ -2,10 +2,10 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid "a1d80453-f1a2-4732-9b7c-c78b77308237")
+	(uuid "ee580a7d-3bcc-4815-828e-1449721b556e")
 	(paper "USLetter")
 	(title_block
-		(title "Christopher")
+		(title "Corporal")
 		(date "2026.09")
 		(rev "1.0")
 		(company "SPCoast")
@@ -290,6 +290,233 @@
 						(effects
 							(font
 								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad:IRJ-END_CTC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "B"
+				(at 0 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "END CTC"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "END_CTC"
+				(at 0 -10.795 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "TRACK"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "IRJ-END_CTC_0_1"
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.3175) (xy 0 -0.3175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.905) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.175) (xy 0 -3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 0.635 1.27) (xy 0.635 -1.27) (xy 1.905 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "IRJ-END_CTC_1_1"
+				(pin bidirectional line
+					(at 1.27 0 180)
+					(length 0)
+					(name "CTC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 0 0)
+					(length 0)
+					(name "DARK"
+						(effects
+							(font
+								(size 0.508 0.508)
 							)
 						)
 					)
@@ -1089,6 +1316,145 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad:Mast_Dwarf"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "S"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" ""
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MAST_DWARF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Mast_Dwarf_1_1"
+				(polyline
+					(pts
+						(xy 0 3.81) (xy 0 1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 90)
+					(length 0)
+					(name "SIGNAL"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 2.54 0)
+					(length 1.27)
+					(name "H"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -2018,12 +2384,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2152,7 +2518,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2278,6 +2644,224 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad:Switch_HandThrow"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP" ""
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(color 72 72 72 1)
+					)
+				)
+			)
+			(property "TC" ""
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at -1.905 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "SWITCH_MANUAL"
+				(at -1.27 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" "RESTRICTING/RESTRICTING"
+				(at 11.43 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(symbol "Switch_HandThrow_1_1"
+				(polyline
+					(pts
+						(xy -11.43 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 17.78 0)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 16.51) (xy 15.24 16.51) (xy 1.27 1.905) (xy -0.635 1.905)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "H"
+					(at 0 3.175 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -11.43 0 0)
+					(length 0)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 0)
+					(name "N"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 16.51 180)
+					(length 0)
+					(name "R"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 0 0)
@@ -2970,6 +3554,17 @@
 					)
 				)
 			)
+			(property "Indications" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
 			(symbol "Switch_Powered_Derail_1_1"
 				(polyline
 					(pts
@@ -3174,1356 +3769,246 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "There should be a 2nd signal in this interlocking for the industry track.\nThe as-built cTc machine didn't have this lever, so the siding dwarf signals would need special field logic to be useful."
+	(text "LEGACY DIAGRAM AND NOTES\n\n   \n       North end Beet Loader Industry switch, DT1 and DT2 merge, switch and signals\n   \n       < Railroad West/North          MP83               Railroad East/South >\n   \n                              DERAIL                     /---IND3---DARK Beet Loader1\n                                     \\5T1 O-| 4na   M  /\n                           /------ ---+----- ---IND1---+---IND2-----DARK Beet Loader2\n                       1T1/                O-| 2nab   [MC]\n       MT2 <==2SAT= =====+== ============+=== ==1NAT============== =======2NAT=====(<->)\n                   |-O 4sa          3T1/\n       MT1 >==1SAT= ===================/\n                   |-O 2sa\n   \n       Double track north of Corporal is operated using a \"current of traffic\" method.\n       This is rule 251 territory.  Trains operate in the same direction on one track and\n       the other direction on the other track.  It is only signaled in one direction\n       on each track.\n   \n       SIG2 is for MTx to MT movement and for Beet Loader access to MT2.\n       Since directional current of traffic is in force, SIG 2Sb is not really needed\n       since all reverse running is at restricted speed, alert for turnouts...\n   \n       Double track south of Gilroy converges into 1 main track via T#1,\n           Turnout (T#3) off of NB track 1: North end Beet Loader Industry tracks\n           (derail is T#5)\n           Industry track includes internal T#7\n   \n       There are four switches in CP Corporal:\n           SW1 for the North industry track\n           SW3 for the Double track to Single track conversion\n           M   for the internal industry turnout, and\n           SW5 for the industry track derail\n   \n        Southbound Approach from Christopher - NB (1SA) and SB (2SA) mains\n        Northbound Approach from Sargent (1NAT/2NAT)"
 		(exclude_from_sim no)
-		(at 132.08 122.936 0)
+		(at 28.448 160.782 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(uuid "185464e8-bfca-4e8f-8a77-9f54fd7bfcc6")
+		(uuid "1d9d3220-49f2-4a90-aa68-c5e0ba4e61c9")
 	)
 	(junction
-		(at 41.91 100.33)
+		(at 63.5 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "12578898-045e-4f98-a6f9-ac5a2c6e89d1")
+		(uuid "3219d8fe-6071-4ffa-80a0-54dd8653ea4f")
 	)
 	(junction
-		(at 55.88 100.33)
+		(at 170.18 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "45f29111-9648-489b-b542-9b305c0fa07f")
+		(uuid "3d80f1b9-e9c0-4439-bbba-98fb64bed03b")
 	)
 	(junction
-		(at 132.08 116.84)
+		(at 207.01 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4ad24ea2-b11d-4b60-9d95-4065860a6156")
+		(uuid "79e2573c-43ee-455f-ba99-74a1ac90db5c")
 	)
 	(junction
-		(at 231.14 67.31)
+		(at 63.5 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4d6ae268-3366-46f6-930b-f5690c70472a")
+		(uuid "84d7339f-8e68-467a-b0d9-08409ef3f8b1")
 	)
 	(junction
-		(at 41.91 67.31)
+		(at 73.66 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "78e71a33-6a40-495d-b568-793adcdcc4a1")
+		(uuid "9f5b75cd-92ba-424a-a043-d24444c63c2c")
 	)
 	(junction
-		(at 72.39 36.83)
+		(at 194.31 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8c5d3fdd-075a-4935-80f8-873135dbaa41")
+		(uuid "a412d005-ec10-4e0e-acba-ebce927d2cc2")
 	)
 	(junction
-		(at 55.88 67.31)
+		(at 73.66 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "940739c7-a998-418e-ac71-8b3451d7613e")
+		(uuid "cc9f89ac-87cb-42f5-82b5-075be1845978")
 	)
 	(junction
-		(at 231.14 100.33)
+		(at 147.32 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d7dbc1e6-58b4-452e-9e09-7fa848e4bc74")
+		(uuid "ec0b1744-4f89-4ab0-8c39-42d9dd4353b6")
 	)
 	(junction
-		(at 210.82 100.33)
+		(at 132.08 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e34743e4-2ad8-411c-a484-61b714979d90")
-	)
-	(junction
-		(at 210.82 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbb70235-f4fc-4975-9f04-ef4b001defc3")
+		(uuid "fbb2fa4c-b16b-46c8-80b7-c389e2297124")
 	)
 	(wire
 		(pts
-			(xy 55.88 100.33) (xy 69.85 100.33)
+			(xy 194.31 85.09) (xy 207.01 85.09)
 		)
 		(stroke
 			(width 0.4064)
 			(type default)
 		)
-		(uuid "12625712-0ff7-4851-a6d6-fd3cd8a2ba6e")
+		(uuid "01570aee-3e11-4676-985e-14c71473b808")
 	)
 	(wire
 		(pts
-			(xy 132.08 116.84) (xy 163.83 116.84)
+			(xy 139.7 68.58) (xy 147.32 68.58)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "13ae55dc-05d8-4853-aa0e-15d12ec36766")
+	)
+	(wire
+		(pts
+			(xy 63.5 85.09) (xy 73.66 85.09)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "1e375b2a-389d-4b28-8e0f-870ca30f89d8")
+	)
+	(wire
+		(pts
+			(xy 132.08 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "1ec39f91-1f2c-4fc0-be07-a21b4eaad855")
+	)
+	(wire
+		(pts
+			(xy 187.96 68.58) (xy 207.01 68.58)
 		)
 		(stroke
 			(width 0.4064)
 			(type dash)
 			(color 72 72 72 1)
 		)
-		(uuid "246faa59-706e-4245-8d13-539f5e0c2651")
+		(uuid "1f2487bf-8757-4c8e-978c-1f3a861990ed")
 	)
 	(wire
 		(pts
-			(xy 104.14 116.84) (xy 132.08 116.84)
+			(xy 73.66 101.6) (xy 80.01 101.6)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "22d2dec6-3050-4139-8b89-752191b3bc3a")
+	)
+	(wire
+		(pts
+			(xy 129.54 68.58) (xy 132.08 68.58)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "30684d1c-5623-4c59-9412-abc7e9a92566")
+	)
+	(wire
+		(pts
+			(xy 147.32 68.58) (xy 156.21 68.58)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "72865492-b0e1-4e78-989e-5ad192b10312")
+	)
+	(wire
+		(pts
+			(xy 82.55 85.09) (xy 87.63 85.09)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "8861f14e-0599-40ba-b063-317f4cc3e126")
+	)
+	(wire
+		(pts
+			(xy 63.5 101.6) (xy 73.66 101.6)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "8ef0463e-4c73-4563-8868-4b9acbbb1451")
+	)
+	(wire
+		(pts
+			(xy 82.55 101.6) (xy 119.38 101.6)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "aaf23243-13ff-4ba2-934d-d96ab98b9ebe")
+	)
+	(wire
+		(pts
+			(xy 73.66 85.09) (xy 80.01 85.09)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "b079b10a-1458-4391-a877-d9032328841c")
+	)
+	(wire
+		(pts
+			(xy 157.48 85.09) (xy 170.18 85.09)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "ba4de260-be9d-4f2d-b96a-7d21afdd7ae4")
+	)
+	(wire
+		(pts
+			(xy 148.59 85.09) (xy 154.94 85.09)
+		)
+		(stroke
+			(width 0.4064)
+			(type default)
+		)
+		(uuid "bb38b568-5344-4ff5-b76f-4f76b1ccb2f9")
+	)
+	(wire
+		(pts
+			(xy 187.96 52.07) (xy 207.01 52.07)
 		)
 		(stroke
 			(width 0.4064)
 			(type dash)
 			(color 72 72 72 1)
 		)
-		(uuid "4f7e1f00-83be-4d44-8ec4-b2d535e9e549")
+		(uuid "c89c0c1c-07c2-42c3-9883-ca448eda64a3")
 	)
 	(wire
 		(pts
-			(xy 72.39 36.83) (xy 195.58 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5013e74a-6dad-4dcd-8625-00e038c81904")
-	)
-	(wire
-		(pts
-			(xy 198.12 100.33) (xy 210.82 100.33)
+			(xy 182.88 85.09) (xy 194.31 85.09)
 		)
 		(stroke
 			(width 0.4064)
 			(type default)
 		)
-		(uuid "565edd76-c9b8-4739-b8c9-971d5a18cd5c")
+		(uuid "e2ee7132-c1fe-42e8-89bb-603fcdc5b93f")
 	)
 	(wire
 		(pts
-			(xy 55.88 67.31) (xy 71.12 67.31)
+			(xy 170.18 85.09) (xy 180.34 85.09)
 		)
 		(stroke
 			(width 0.4064)
 			(type default)
 		)
-		(uuid "5c14e2b0-0df8-4765-b15a-300949b03237")
-	)
-	(wire
-		(pts
-			(xy 210.82 67.31) (xy 231.14 67.31)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "5c38c846-fdac-45c2-892d-fb0910679d65")
-	)
-	(wire
-		(pts
-			(xy 210.82 100.33) (xy 231.14 100.33)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "5f49daab-94b8-4997-a395-6131ab2b453b")
-	)
-	(wire
-		(pts
-			(xy 73.66 67.31) (xy 152.4 67.31)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "7f631c7c-b8d7-4533-8373-a31c4f1a267e")
-	)
-	(wire
-		(pts
-			(xy 120.65 100.33) (xy 104.14 100.33)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "8b0f5a13-40b1-424f-9a51-38ef9e7e6f8c")
-	)
-	(wire
-		(pts
-			(xy 149.86 100.33) (xy 163.83 100.33)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "9d8eb2bc-556d-40ee-af09-f7c317c079c1")
-	)
-	(wire
-		(pts
-			(xy 196.85 67.31) (xy 210.82 67.31)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "b52d01d2-0976-47e0-9446-b198a816fbed")
-	)
-	(wire
-		(pts
-			(xy 41.91 67.31) (xy 55.88 67.31)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "ce80ce03-af1f-4889-91f9-f096d9ac3282")
-	)
-	(wire
-		(pts
-			(xy 41.91 100.33) (xy 55.88 100.33)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "e37cf74b-ef8b-4dac-87ff-36ad7e3f983f")
-	)
-	(wire
-		(pts
-			(xy 194.31 67.31) (xy 181.61 67.31)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "edadf5c2-c1e7-4d8d-81d0-18c420f7cdba")
-	)
-	(wire
-		(pts
-			(xy 132.08 116.84) (xy 133.35 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd2189bc-983b-4d80-804a-282539c7d31a")
-	)
-	(symbol
-		(lib_id "Railroad:Rule251-DoT-Right")
-		(at 41.91 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "06dfa718-4ab0-4e3d-8823-d3748ec83c8b")
-		(property "Reference" "DOT1"
-			(at 48.26 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RULE 251"
-			(at 41.91 95.25 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
-			(at 38.735 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "RIGHT"
-			(at 48.26 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 41.91 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 41.91 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "848dad68-8723-4990-831f-7532ecd48606")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "DOT1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 151.13 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0bb37034-0167-4ea7-9075-dad84dc3cc9d")
-		(property "Reference" "B1"
-			(at 151.13 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 151.13 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 151.13 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 151.13 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint"
-			(at 151.13 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 151.13 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 151.13 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "98c31403-92b1-437d-9ad0-48c180c9e440")
-		)
-		(pin "1"
-			(uuid "73a85358-e00b-48f2-add9-96da002c29ea")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
-		(at 195.58 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0f1f40a9-4a70-405c-b0f2-df7d77183f08")
-		(property "Reference" "HOUSE3"
-			(at 195.58 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Christopher South"
-			(at 189.74 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 195.58 47.625 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" "81.6"
-			(at 195.58 47.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 180.34 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "CONTROL_POINT"
-			(at 182.245 41.402 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "876d3967-1dfc-4348-9440-ac96beed971d")
-		)
-		(pin "2"
-			(uuid "0082d017-4e83-4447-8256-c6fac7e1e8f1")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "HOUSE3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 55.88 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "14eada11-384d-432c-88a1-0668c6451bff")
-		(property "Reference" "TC3"
-			(at 55.88 95.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1SAT"
-			(at 53.85 97.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 55.88 102.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 55.88 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 55.88 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8183304a-f403-449c-8f4d-0f7c2051334c")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "TC3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Single")
-		(at 72.39 71.12 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1955ecc4-ba2b-4457-8daf-c9d1a12c95f1")
-		(property "Reference" "S5"
-			(at 73.66 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "816SC"
-			(at 68.326 73.914 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_SINGLE"
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0a089b4c-d5a6-41e0-bfe3-687e3f8a66ea")
-		)
-		(pin "1"
-			(uuid "4d068e6a-2d67-42bd-91e3-72673e273fc2")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "S5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 194.31 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e727fed-0f29-426e-a19f-2e34fbdd7c99")
-		(property "Reference" "H9"
-			(at 190.5 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B"
-			(at 190.5 63.5 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 194.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 194.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 194.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 194.31 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "73a75813-8055-4245-8198-4ccc16566351")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Interlocking")
-		(at 72.39 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1eed0c6b-9980-4785-bcc6-9ce673746300")
-		(property "Reference" "Plant1"
-			(at 58.166 30.988 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "${TITLE}"
-			(at 69.342 33.782 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 61.087 27.178 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "INTERLOCKING"
-			(at 62.484 28.829 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "789f71ac-6028-4d20-bcd3-4daf701ce845")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "Plant1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Powered")
-		(at 132.08 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1f900b24-abfe-4e0e-ac74-244d99581797")
-		(property "Reference" "SW815"
-			(at 132.08 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "815"
-			(at 132.08 103.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 132.08 104.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "TC" "${VALUE}T1"
-			(at 139.7 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "SWITCH_POWERED"
-			(at 132.08 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "6085d9ca-3fa7-4bb9-9cd6-9ef4f6681401")
-		)
-		(pin "3"
-			(uuid "18df7d84-ad19-47a5-a7b3-2041caf1e64b")
-		)
-		(pin "1"
-			(uuid "30367c1d-06a7-432c-a655-5837649045e5")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "SW815")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Lock")
-		(at 83.82 100.33 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2111ae5b-95d6-41f0-ba67-461ccf1d702f")
-		(property "Reference" "SW813"
-			(at 83.82 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "813"
-			(at 83.82 97.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 83.82 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 83.82 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 83.82 95.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "TC" "${VALUE}T1"
-			(at 90.17 102.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 83.82 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "SWITCH_LOCK"
-			(at 83.82 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "022297a0-6293-412f-a4fa-d272cb97a6ad")
-		)
-		(pin "1"
-			(uuid "06d2f7df-1ac1-43cb-97d5-abee555471f2")
-		)
-		(pin "2"
-			(uuid "47e063d3-e463-4ce2-b2e7-b41dc154ca30")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "SW813")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 195.58 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37bafa86-889e-4b37-9ae3-00b8cee5ace7")
-		(property "Reference" "B4"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 195.58 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 195.58 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 195.58 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 195.58 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher South"
-			(at 193.675 65.405 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "617a8dfc-d4cc-4bdb-8fab-d7552e18d379")
-		)
-		(pin "1"
-			(uuid "2b548385-dc30-45f5-a354-ab18ff7f6c77")
-		)
-		(pin "3"
-			(uuid "9bfc8d59-7c66-40ba-9f5a-b4caaa2c2125")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B4")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "eca19dd1-25f0-472a-95ff-f9819442a53e")
 	)
 	(symbol
 		(lib_id "Railroad:NextCP")
-		(at 41.91 100.33 180)
+		(at 63.5 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4531,9 +4016,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3a0ea897-79d8-43b6-902d-a12292c46006")
-		(property "Reference" "CP4"
-			(at 38.735 98.425 0)
+		(uuid "1249c134-4620-40e4-9d44-016a33836a0d")
+		(property "Reference" "CP3"
+			(at 66.675 103.505 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4543,8 +4028,8 @@
 				)
 			)
 		)
-		(property "Value" "Luchessa"
-			(at 28.448 100.33 0)
+		(property "Value" "Christopher"
+			(at 60.452 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4556,7 +4041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 100.33 0)
+			(at 59.69 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4567,7 +4052,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 100.33 0)
+			(at 59.69 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4578,7 +4063,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 45.085 93.345 0)
+			(at 60.325 108.585 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4589,7 +4074,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 41.91 100.33 0)
+			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4600,7 +4085,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 41.91 100.33 0)
+			(at 63.5 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4611,20 +4096,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "656834d6-247a-4008-95dd-0ec1f0a1fa6d")
+			(uuid "ed3bade6-5ed4-4b94-b613-048f5b7e1457")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "CP4")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "CP3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Double")
-		(at 71.12 104.14 180)
+		(lib_id "Railroad:Signal Head - CL")
+		(at 139.7 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4632,9 +4117,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3a837291-24af-4c21-a1e6-2047c1aaea6f")
-		(property "Reference" "S4"
-			(at 72.39 104.775 0)
+		(uuid "1267f20d-0f96-4520-98cd-ab32ae1d36c1")
+		(property "Reference" "H1"
+			(at 135.89 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4642,11 +4127,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "816SAB"
-			(at 66.548 106.68 0)
+		(property "Value" "A"
+			(at 135.382 59.944 90)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4656,7 +4140,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 104.14 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4667,7 +4151,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 104.14 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4678,7 +4162,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 104.14 0)
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4688,8 +4172,8 @@
 				)
 			)
 		)
-		(property "Role" "APPLIANCE"
-			(at 71.12 104.14 0)
+		(property "Role" "COMPONENT"
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4699,8 +4183,8 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
-			(at 71.12 104.14 0)
+		(property "Kind" "HEAD"
+			(at 139.7 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4709,28 +4193,22 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "b4f9ad7b-2a6d-4ecc-bca6-9b722f862629")
 		)
 		(pin "1"
-			(uuid "f9c992d6-5e17-4a5d-a454-b6b6d6f5e223")
-		)
-		(pin "3"
-			(uuid "87cbc035-3fee-41a0-8fab-f8a516841f71")
+			(uuid "bda11c23-2841-45ab-97db-d29c16581325")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "S4")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 132.08 119.38 180)
+		(lib_id "Railroad:Switch_Powered_Derail")
+		(at 123.19 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4738,9 +4216,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3debc472-fd18-4dd4-a5a1-f86aecd987ad")
-		(property "Reference" "DOT5"
-			(at 137.795 120.015 0)
+		(uuid "13f3aa00-ba49-4000-a8b0-1ed5ea91d659")
+		(property "Reference" "SW900"
+			(at 123.19 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4750,19 +4228,18 @@
 				)
 			)
 		)
-		(property "Value" "Restricted Speed"
-			(at 131.572 120.142 0)
+		(property "Value" "829D"
+			(at 123.19 71.63 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
-					(color 0 0 0 1)
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 135.255 119.38 0)
+			(at 123.19 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4773,7 +4250,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.255 119.38 0)
+			(at 123.19 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4783,8 +4260,8 @@
 				)
 			)
 		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 135.255 114.935 0)
+		(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+			(at 123.19 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,8 +4271,29 @@
 				)
 			)
 		)
-		(property "Kind" "RULE_105"
-			(at 132.08 116.84 0)
+		(property "CP" "Corporal"
+			(at 123.19 73.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" ""
+			(at 130.81 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 123.19 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,8 +4303,8 @@
 				)
 			)
 		)
-		(property "Direction" "BOTH"
-			(at 137.795 118.11 0)
+		(property "Kind" "DERAIL"
+			(at 123.19 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4816,8 +4314,100 @@
 				)
 			)
 		)
-		(property "Role" "POLICY"
-			(at 132.08 119.38 0)
+		(pin "2"
+			(uuid "fe08cdc5-7566-4ebf-88c0-620f7b6c615c")
+		)
+		(pin "1"
+			(uuid "e25e0d70-3949-4448-9ad2-7b6377142637")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "SW900")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 154.94 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1504be05-367c-4173-b2ec-9f51ab6e3157")
+		(property "Reference" "H5"
+			(at 151.13 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B"
+			(at 151.13 81.28 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 154.94 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 154.94 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4828,20 +4418,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "51164bd7-40d3-4480-9a6b-7d9dce5b2f01")
+			(uuid "8266b481-978b-497d-aab9-bdce572918b0")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "DOT5")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:MaintainerCall")
-		(at 72.39 41.91 0)
+		(lib_id "Railroad:IRJ-END_CTC")
+		(at 157.48 68.58 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4849,9 +4439,2871 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4201e053-4ae4-4d17-ae02-56809761b8f5")
+		(fields_autoplaced yes)
+		(uuid "19fa32d3-a9c3-4a4c-a3ea-20c63680f896")
+		(property "Reference" "B3"
+			(at 157.48 61.595 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "END CTC"
+			(at 157.1625 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "END_CTC"
+			(at 157.48 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 157.48 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a9e2efce-c3fa-4136-9110-40fd7724efdd")
+		)
+		(pin "1"
+			(uuid "78396512-4c45-4b10-984d-315d97630c00")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-Signal")
+		(at 138.43 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d2a9ef0-9b47-40e3-b3ba-013a10286b2a")
+		(property "Reference" "B4"
+			(at 138.43 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 138.43 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 138.43 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 136.525 66.675 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 138.43 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 138.43 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "b7e7d675-9575-4d07-bfab-23c636d417db")
+		)
+		(pin "2"
+			(uuid "1e3af9e5-ace4-4765-8506-81956a306728")
+		)
+		(pin "1"
+			(uuid "770a5ee9-c833-4617-8dca-41c75b73edb2")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 152.4 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f2a7d13-16be-48a2-9b9b-3ba3c09d1d3f")
+		(property "Reference" "H6"
+			(at 148.59 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A"
+			(at 148.59 81.28 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 152.4 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44e53bed-912f-4dcc-8fa7-0542fc179ff7")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule105-RestrictedSpeed")
+		(at 132.08 66.04 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31c609a5-fe13-4a8c-a17c-b91fcce56c6b")
+		(property "Reference" "DOT6"
+			(at 126.365 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Restricted Speed"
+			(at 132.715 65.405 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.905 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.905 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+			(at 128.905 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_105"
+			(at 132.08 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 126.365 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 132.08 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "07bd1346-019a-43ac-85ab-0dd118d59a71")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "DOT6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Switch_Lock")
+		(at 99.06 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3b21bd3f-46ce-4fde-a370-a98d6944c3ca")
+		(property "Reference" "SW829"
+			(at 99.06 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "829"
+			(at 99.06 87.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 99.06 89.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" "${VALUE}T1"
+			(at 105.41 83.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 99.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_LOCK"
+			(at 99.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a8d38084-82f8-4950-a5b4-199bd6b5823c")
+		)
+		(pin "1"
+			(uuid "10e4de33-7ddb-4051-8cda-9a21a905e5bc")
+		)
+		(pin "2"
+			(uuid "3fa93744-636c-4cf4-886a-e21cb908f331")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "SW829")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule251-DoT-Left")
+		(at 63.5 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "48c00702-a00e-4db6-aa21-1664705b08b0")
+		(property "Reference" "DOT2"
+			(at 57.15 81.915 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MT1"
+			(at 63.754 87.63 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(at 60.325 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "LEFT"
+			(at 57.15 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 63.5 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_251"
+			(at 63.754 79.756 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "393b5b3f-e994-4a81-860e-7b58be3500b8")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "DOT2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-Signal")
+		(at 81.28 101.6 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a4a8a59-1f6a-4701-9675-e1f591439b8d")
+		(property "Reference" "B2"
+			(at 81.28 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 81.28 101.6 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 83.185 103.505 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 81.28 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0cc11f0b-7334-43fc-bcdd-5c09dfd9c28c")
+		)
+		(pin "2"
+			(uuid "1a49c14a-62be-45a8-8027-393dd0dac456")
+		)
+		(pin "3"
+			(uuid "d5d615cd-0b8c-4499-910f-bc97ce926a33")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Double")
+		(at 156.21 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5c4a52ee-a88a-476f-9e76-ac7b94c1a685")
+		(property "Reference" "S4"
+			(at 154.94 80.645 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "830NAB"
+			(at 160.528 78.74 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 156.21 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DOUBLE"
+			(at 156.21 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "8b1c84fe-57c1-4803-a653-a818ca3e9509")
+		)
+		(pin "2"
+			(uuid "a0f3d352-f435-493e-a4b3-41d9220e3630")
+		)
+		(pin "1"
+			(uuid "08421c8f-cf0c-4658-9908-cc563c4d3746")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 82.55 105.41 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6abe1ca2-a039-4032-b534-3082734e0fec")
+		(property "Reference" "H3"
+			(at 86.36 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B"
+			(at 86.36 105.41 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 82.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 82.55 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c9335c5-577d-4e9f-a740-9c7d326dbaf4")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Switch_HandThrow")
+		(at 170.18 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6fdf93c7-e3a2-4e94-b530-2febeaae3833")
+		(property "Reference" "SW901"
+			(at 170.18 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1"
+			(at 170.18 71.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 170.18 73.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" ""
+			(at 177.8 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_MANUAL"
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4f8ca4a9-5bca-4e2f-9e44-d5aa7c31457d")
+		)
+		(pin "3"
+			(uuid "2aec9f12-8891-4d64-9536-faa4a9bedc6a")
+		)
+		(pin "1"
+			(uuid "4d75cacd-58b3-45b6-a9fe-f27eb9a67980")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "SW901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 194.31 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "70c918ca-0653-45ed-a1bf-d5ea82201b2b")
+		(property "Reference" "TC2"
+			(at 194.31 80.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2NAT"
+			(at 192.28 82.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 194.31 86.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5d079a8-eee6-4145-8785-e4c74c0a782c")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "TC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-Signal")
+		(at 156.21 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89d46d4f-a3c1-4b2c-a64f-c3c0bb576e64")
+		(property "Reference" "B5"
+			(at 156.21 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 156.21 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 154.305 83.185 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 156.21 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "de1061c8-d68a-483a-b619-b30f05114b93")
+		)
+		(pin "2"
+			(uuid "775f3de3-d1d9-487c-a377-8a22a078b4a1")
+		)
+		(pin "1"
+			(uuid "db82448a-92a2-4325-bcad-91838bbadf73")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ-Signal")
+		(at 81.28 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "903e6628-4d4c-4198-810d-2e454dfab397")
+		(property "Reference" "B1"
+			(at 81.28 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 81.28 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 81.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 83.185 86.995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 81.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 81.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "569175d4-dcdc-44ac-9b4f-7c79f4f41a2c")
+		)
+		(pin "2"
+			(uuid "3077914d-201d-433b-9f72-f4447f2dda2c")
+		)
+		(pin "1"
+			(uuid "cb82b9d3-bd1f-483f-b711-622f06d648d4")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 147.32 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "997bcf8a-1055-4d66-8e42-7e67d12a0434")
+		(property "Reference" "TC5"
+			(at 147.32 64.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "01T"
+			(at 145.29 65.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 147.32 70.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "56693b4d-7ae8-4f71-ba2a-bf2fe5a4785e")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "TC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 85.09 88.9 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4a908b8-dfc5-4d6c-8e48-957777820fe3")
+		(property "Reference" "H2"
+			(at 88.9 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A"
+			(at 88.9 88.9 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 85.09 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 85.09 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bff4e0a4-dac3-49a8-849c-c965573f74e6")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Track Circuit")
+		(at 73.66 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a6febe67-e3a2-4a16-b20c-168a3dfeec24")
+		(property "Reference" "TC4"
+			(at 73.66 80.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2SAT"
+			(at 71.63 82.3 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 73.66 86.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TRACK_CIRCUIT"
+			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff11e926-3c45-477e-87ba-e5ab38ddd5a6")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "TC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Signal Head - CL")
+		(at 85.09 105.41 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab13c839-a711-4435-920c-8e718891db90")
+		(property "Reference" "H4"
+			(at 88.9 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "A"
+			(at 88.9 105.41 90)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "COMPONENT"
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "HEAD"
+			(at 85.09 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1123136a-23aa-42ca-a496-5472a7061ff4")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Double")
+		(at 81.28 105.41 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b0cd8733-bba7-4144-9400-4d41d4086d1f")
+		(property "Reference" "S2"
+			(at 82.55 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "830SAB"
+			(at 76.962 107.95 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 81.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_DOUBLE"
+			(at 81.28 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "3a6d0734-3e42-4bea-9942-c3c710d46a07")
+		)
+		(pin "2"
+			(uuid "b09d6284-d114-4f24-87e9-1c409fd0df3f")
+		)
+		(pin "1"
+			(uuid "8ad2382d-a5a9-49bf-baee-dfc3d2f5e156")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:MAIN HOUSE")
+		(at 99.06 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b1b40152-0339-43b3-baa8-ca6131e8166c")
+		(property "Reference" "HOUSE1"
+			(at 99.06 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Corporal"
+			(at 93.22 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 99.06 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Milepost" "83.0"
+			(at 99.06 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 83.82 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CONTROL_POINT"
+			(at 85.725 41.402 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "536060bd-8269-4d1b-8256-e30891c33962")
+		)
+		(pin "2"
+			(uuid "ab14334c-1ece-424f-8c0d-f1f4f0061ff1")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "HOUSE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Mast_Single")
+		(at 81.28 88.9 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2e01448-1926-4bf2-a6a1-ffe5e812a98c")
+		(property "Reference" "S3"
+			(at 82.55 89.535 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "832SA"
+			(at 73.66 91.44 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 81.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MAST_SINGLE"
+			(at 81.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8be36b1b-4e6a-4e20-a718-cec60cb2c7f6")
+		)
+		(pin "2"
+			(uuid "2d8b8a14-c389-470b-954a-087003dcf6e7")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Rule251-DoT-Right")
+		(at 63.5 99.06 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b654ee68-d6ee-44f3-998b-9b0d055435df")
+		(property "Reference" "DOT3"
+			(at 69.85 98.425 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MT2"
+			(at 63.5 103.632 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(at 60.325 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "RIGHT"
+			(at 69.85 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 63.5 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_251"
+			(at 63.5 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1d45651e-d7b4-4a55-beea-53dd42a4ea90")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "DOT3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Switch_Powered")
+		(at 137.16 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c368e53b-93f3-4b5a-9449-6639828189e6")
+		(property "Reference" "SW831"
+			(at 137.16 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "831"
+			(at 137.16 82.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Corporal"
+			(at 137.16 80.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" "${VALUE}T1"
+			(at 129.54 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "SWITCH_REMOTE"
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8d4126d-88fc-4414-88ce-5e3394197024")
+		)
+		(pin "3"
+			(uuid "7f9a28d7-18da-4502-b9d5-c6a8e97cfa42")
+		)
+		(pin "1"
+			(uuid "08eb9183-14f0-47c5-9b36-5d46c327c8f9")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "SW831")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ")
+		(at 118.11 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf821b6b-21f6-4c04-a11b-83cd2de333b2")
+		(property "Reference" "B6"
+			(at 118.11 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint"
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ"
+			(at 118.11 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "232f2828-ecc6-4401-8f8f-582c4fbb6dd5")
+		)
+		(pin "1"
+			(uuid "94fd6f37-9da1-4ce3-a166-f005289f0476")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:NextCP")
+		(at 207.01 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d75ebcfa-92df-4ee6-b8e7-0b656fd40f1b")
+		(property "Reference" "CP1"
+			(at 210.185 86.995 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Sargent"
+			(at 216.662 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Identifies the next control point on this track"
+			(at 203.835 92.075 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 207.01 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "NEXT_CP"
+			(at 207.01 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "796e945a-7bfa-47dd-a8f2-36942bfd0365")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "CP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:Interlocking")
+		(at 99.06 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dae2441a-a4a6-4251-8e3e-6df2da3d73cf")
+		(property "Reference" "Plant1"
+			(at 84.836 30.988 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${TITLE}"
+			(at 96.012 33.782 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 87.757 27.178 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INTERLOCKING"
+			(at 89.154 28.829 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c326ebf1-07a5-4d79-a442-d8e8600b9da6")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "Plant1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:IRJ")
+		(at 181.61 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ddd56695-5907-4c47-9faa-18723057031a")
+		(property "Reference" "B7"
+			(at 181.61 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint"
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ"
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "03fab429-e649-422b-8b40-00bc808cc69f")
+		)
+		(pin "1"
+			(uuid "0866b968-0b2a-4367-97a2-552d4043dacc")
+		)
+		(instances
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "B7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad:MaintainerCall")
+		(at 99.06 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e2d9159b-5ad8-40c5-9f3c-62d814bbd719")
 		(property "Reference" "MC1"
-			(at 70.36 44.2 0)
+			(at 97.03 44.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4863,7 +7315,7 @@
 			)
 		)
 		(property "Value" "MC1"
-			(at 72.39 44.196 0)
+			(at 99.06 44.196 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4873,7 +7325,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 41.91 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4884,7 +7336,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 41.91 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4895,7 +7347,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 41.91 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4906,7 +7358,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 72.39 41.91 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,7 +7369,7 @@
 			)
 		)
 		(property "Kind" "MAINTAINER_CALL"
-			(at 72.39 41.91 0)
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4928,11 +7380,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d2fc023d-e0fe-4e31-8537-6e7cf7318933")
+			(uuid "3a28238b-1426-4435-b37b-2d682d17b455")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
 					(reference "MC1")
 					(unit 1)
 				)
@@ -4940,8 +7392,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 132.08 116.84 0)
+		(lib_id "Railroad:Mast_Dwarf")
+		(at 138.43 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4949,1638 +7401,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "424ddddc-0f4c-4a41-9c73-c179d5a88adb")
-		(property "Reference" "TC5"
-			(at 132.08 112.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "01T"
-			(at 130.05 114.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 132.08 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 132.08 118.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 132.08 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 132.08 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "680b2e14-b36a-4d40-a1e4-ad9c00d1f516")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "TC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
-		(at 72.39 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "451aa50b-3cda-4d8e-86ae-2d1318d3aad8")
-		(property "Reference" "HOUSE1"
-			(at 72.39 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Christopher North"
-			(at 66.55 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 72.39 47.625 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" "81.3"
-			(at 72.39 47.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 57.15 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "CONTROL_POINT"
-			(at 59.055 41.402 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "319f8302-b9f4-4913-a62f-94f7ae1b3d2a")
-		)
-		(pin "2"
-			(uuid "da69cb73-c8c4-47fa-bf85-8f3ea78c95a1")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "HOUSE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule251-DoT-Left")
-		(at 231.14 64.77 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4cdd4b1b-c6f2-4def-b845-a59bfa431d38")
-		(property "Reference" "DOT2"
-			(at 224.79 64.135 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RULE 251"
-			(at 231.14 62.23 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
-			(at 227.965 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "LEFT"
-			(at 224.79 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 231.14 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 231.14 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "03e3b6b4-e591-4a8b-86f8-97c1b32e9707")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "DOT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:NextCP")
-		(at 231.14 100.33 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50484897-801f-4038-8eff-f57b4a449b83")
-		(property "Reference" "CP2"
-			(at 227.965 98.425 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Sargent"
-			(at 233.68 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 234.315 93.345 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 231.14 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 231.14 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "23c9d1c4-b2f4-47c8-8af0-34cd63b2134f")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "CP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 72.39 67.31 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "51dc0b81-3000-475d-9a0e-465bcf77b816")
-		(property "Reference" "B5"
-			(at 72.39 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 72.39 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 72.39 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 72.39 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 72.39 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 74.295 69.215 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-				(justify right)
-			)
-		)
-		(pin "2"
-			(uuid "b347df4e-ad65-46e9-801f-bacb0e977696")
-		)
-		(pin "1"
-			(uuid "f58de596-7bc5-4b9e-a1ea-897662c4f79e")
-		)
-		(pin "3"
-			(uuid "d568931a-0b09-431d-a109-2ae0338ff764")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 193.04 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "542ccd64-cd42-4cc6-86b9-686ef51a3db6")
-		(property "Reference" "H3"
-			(at 189.23 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 189.23 96.52 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 193.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 193.04 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "47bc955f-2d3b-4de0-b9f9-cba8d5816505")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Rule251-DoT-Right")
-		(at 231.14 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "56fd1057-c834-4e85-8d19-58c52142a94f")
-		(property "Reference" "DOT4"
-			(at 237.49 97.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RULE 251"
-			(at 231.14 95.25 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 227.33 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 227.33 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
-			(at 227.965 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "RIGHT"
-			(at 237.49 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 231.14 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 231.14 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "74ecd9d7-a065-4c03-9672-b6c5e698d2ab")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "DOT4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Powered")
-		(at 170.18 67.31 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "57ceeebf-3bf6-49e5-ab7b-a06ea5f80888")
-		(property "Reference" "SW900"
-			(at 170.18 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "815A"
-			(at 170.18 64.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 170.18 62.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "TC" "${VALUE}T1"
-			(at 162.56 69.85 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "SWITCH_POWERED"
-			(at 170.18 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "845d142c-51f6-4b7e-b90d-ea01c1c3ef40")
-		)
-		(pin "3"
-			(uuid "ecacdbb6-b52c-4949-8df2-b1ece34f0761")
-		)
-		(pin "1"
-			(uuid "b119b77f-bb2f-4c84-b04d-9b133a0b2725")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "SW900")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 74.93 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61334ccd-b007-4c71-a77a-e2bc0ee17a9e")
-		(property "Reference" "H5"
-			(at 78.74 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A"
-			(at 78.74 104.14 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 74.93 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 74.93 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cf1e54e7-aac3-4d97-ac6a-25f084d9f87b")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:MaintainerCall")
-		(at 195.58 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "67d977cc-adb4-44da-9583-bfc78cb5043f")
-		(property "Reference" "MC2"
-			(at 193.55 44.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MC2"
-			(at 195.58 44.196 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAINTAINER_CALL"
-			(at 195.58 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65748510-b5ae-49a4-928e-904c607ae263")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "MC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 102.87 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6b1be755-d3ef-49a6-8d83-e51c1128f04d")
-		(property "Reference" "B3"
-			(at 102.87 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 102.87 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint"
-			(at 102.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 102.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 102.87 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d6754ec8-bf91-43d4-b2fe-01100cafb09c")
-		)
-		(pin "1"
-			(uuid "253d8c03-c2d0-4c9c-8afa-baec2f2451d8")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 165.1 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6bb3342e-675c-4782-b2d5-bed5df2ce467")
-		(property "Reference" "B2"
-			(at 165.1 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 165.1 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint"
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 165.1 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2a39a2ad-4c86-4175-b4e1-56dd3d7ed980")
-		)
-		(pin "1"
-			(uuid "cb5fedc4-02fb-43ac-b293-0d639905a192")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Track Circuit")
-		(at 210.82 67.31 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6c09982b-f4a5-4f51-b067-59d9099a983b")
-		(property "Reference" "TC2"
-			(at 210.82 62.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2NAT"
-			(at 208.79 64.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 210.82 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher South"
-			(at 210.82 69.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 210.82 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "TRACK_CIRCUIT"
-			(at 210.82 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d23e8ca4-ee62-404f-9d34-9d1f931eced4")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "TC2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 72.39 104.14 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7fb9f181-97a2-46f8-aa80-2f5cbf769ff2")
-		(property "Reference" "H6"
-			(at 76.2 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B"
-			(at 76.2 104.14 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 72.39 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 72.39 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 72.39 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 72.39 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 72.39 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6d302816-d8ac-497e-99f6-56e0f68aaa86")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 71.12 100.33 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80308d0f-f2c8-4ac0-b5db-842ea84e779f")
-		(property "Reference" "B6"
-			(at 71.12 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 71.12 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 71.12 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher North"
-			(at 71.12 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 71.12 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 71.12 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cef67f5b-926f-403e-9d13-40f778ca5710")
-		)
-		(pin "3"
-			(uuid "6ae8c11d-8f17-44d4-839e-3fe6193776b7")
-		)
-		(pin "1"
-			(uuid "5a18b62f-5f19-483b-9dbb-708e8723e3d2")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Single")
-		(at 196.85 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8c381a0f-8e58-488b-b03b-f48f4fa129cd")
-		(property "Reference" "S3"
-			(at 195.58 95.885 0)
+		(uuid "ed01bf46-22bd-4088-8c1f-8663df50464c")
+		(property "Reference" "S1"
+			(at 137.16 64.135 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6591,18 +7414,19 @@
 				(justify right)
 			)
 		)
-		(property "Value" "816NC"
-			(at 201.168 93.98 0)
+		(property "Value" "832NA"
+			(at 145.288 62.23 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 96.52 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6613,7 +7437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 96.52 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6624,7 +7448,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 196.85 96.52 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6635,7 +7459,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 196.85 96.52 0)
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6645,8 +7469,8 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_SINGLE"
-			(at 196.85 96.52 0)
+		(property "Kind" "MAST_DWARF"
+			(at 138.43 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6655,17 +7479,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "0e5c5268-8e86-48e8-bcb6-1ea0b1d7ac78")
 		)
 		(pin "1"
-			(uuid "3550334e-50e8-4aa4-8e5c-2f00066f6c9d")
+			(uuid "a4dc8f6d-f019-4184-8fd1-77f64cfb6536")
+		)
+		(pin "2"
+			(uuid "7c92ae61-82c6-4c54-8987-405eebf990ef")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "S3")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -6673,7 +7497,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Track Circuit")
-		(at 210.82 100.33 0)
+		(at 170.18 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6681,9 +7505,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "965eada1-4e18-4f61-b617-399e5626b1e3")
+		(uuid "edf72dee-3a31-434b-b949-cc47e3409f6a")
 		(property "Reference" "TC1"
-			(at 210.82 95.89 0)
+			(at 170.18 80.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6694,7 +7518,7 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 208.79 97.54 0)
+			(at 168.15 82.3 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6705,7 +7529,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 100.33 0)
+			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6716,7 +7540,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 100.33 0)
+			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6727,7 +7551,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 210.82 100.33 0)
+			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6737,8 +7561,8 @@
 				)
 			)
 		)
-		(property "CP" "Christopher South"
-			(at 210.82 102.23 0)
+		(property "CP" "Corporal"
+			(at 170.18 86.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6749,7 +7573,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 210.82 100.33 0)
+			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6760,7 +7584,7 @@
 			)
 		)
 		(property "Kind" "TRACK_CIRCUIT"
-			(at 210.82 100.33 0)
+			(at 170.18 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6771,11 +7595,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "d36cf7ef-ac85-43bc-a3fd-943e21760641")
+			(uuid "3a8756b9-1dd5-4eec-97eb-9a90ac6beefa")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
 					(reference "TC1")
 					(unit 1)
 				)
@@ -6783,661 +7607,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 76.2 71.12 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d32408d-affd-4854-a295-dd52898a6faf")
-		(property "Reference" "H8"
-			(at 80.01 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C"
-			(at 80.01 71.12 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 76.2 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f35d98d8-4a62-44b0-b7aa-e31af2afd5e8")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ-Signal")
-		(at 196.85 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a2e8602c-de0a-45b1-a380-358d49c0ab54")
-		(property "Reference" "B7"
-			(at 196.85 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 196.85 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 196.85 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher South"
-			(at 196.85 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 196.85 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 196.85 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c330a4a2-f5e7-4b8e-98bd-1f955e657e9c")
-		)
-		(pin "3"
-			(uuid "faa157af-26c3-4d76-9761-30c405f00e3f")
-		)
-		(pin "1"
-			(uuid "9ba606c6-cb15-413b-bd05-b23d4ddc8609")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Switch_Lock")
-		(at 184.15 100.33 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a786d269-537d-4037-9d4d-408d4eb78a21")
-		(property "Reference" "SW817"
-			(at 184.15 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "817"
-			(at 184.15 97.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 184.15 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 184.15 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 184.15 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Christopher South"
-			(at 184.15 95.88 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "TC" "${VALUE}T1"
-			(at 177.8 102.23 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 184.15 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "SWITCH_LOCK"
-			(at 184.15 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "b4dccfce-31e0-45d7-a419-54dc9a88f5b4")
-		)
-		(pin "1"
-			(uuid "c92a3b97-7126-4421-b100-21007752701b")
-		)
-		(pin "2"
-			(uuid "ccaf0da9-936d-4fce-b1f7-8da5b95cac09")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "SW817")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Signal Head - CL")
-		(at 191.77 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4253175-ade7-43b4-9b58-2dd0351dc3b9")
-		(property "Reference" "H10"
-			(at 187.96 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "A"
-			(at 187.96 63.5 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 191.77 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "COMPONENT"
-			(at 191.77 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "HEAD"
-			(at 191.77 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3ab57346-c269-4113-9b58-d4a063015380")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "H10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 165.1 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8ebf271-4787-4053-b0fb-66bc9e3a15d1")
-		(property "Reference" "B9"
-			(at 165.1 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint"
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 165.1 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b85a9f75-5449-45c4-b590-9ba682462ec4")
-		)
-		(pin "2"
-			(uuid "763dde00-5650-40d1-a31c-1ba50ee48e7c")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:Mast_Double")
-		(at 195.58 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "bb357339-5c1a-423e-9e55-78bc7abaf403")
-		(property "Reference" "S6"
-			(at 194.31 62.865 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "816NAB"
-			(at 200.914 60.96 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "MAST_DOUBLE"
-			(at 195.58 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e7a6670c-c4a6-4669-be9f-a85d01e17289")
-		)
-		(pin "1"
-			(uuid "8c457f5c-a875-4c62-b59e-9c441776e047")
-		)
-		(pin "3"
-			(uuid "c2ffbe8d-d21a-4d92-91be-e346b01b6759")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "S6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad:Track Circuit")
-		(at 55.88 67.31 0)
+		(at 73.66 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7445,9 +7616,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c02b0f4b-b058-472b-8b90-cce0a319c18e")
-		(property "Reference" "TC4"
-			(at 55.88 62.87 0)
+		(uuid "efd46558-f2ab-48b8-8a8d-5f43bd46a1d6")
+		(property "Reference" "TC3"
+			(at 73.66 97.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7457,8 +7628,8 @@
 				)
 			)
 		)
-		(property "Value" "2SAT"
-			(at 53.85 64.52 0)
+		(property "Value" "1SAT"
+			(at 71.63 98.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7469,7 +7640,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 67.31 0)
+			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7480,7 +7651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 67.31 0)
+			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7491,7 +7662,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 67.31 0)
+			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7501,8 +7672,8 @@
 				)
 			)
 		)
-		(property "CP" "Christopher North"
-			(at 55.88 69.21 0)
+		(property "CP" "Corporal"
+			(at 73.66 103.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7513,7 +7684,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 55.88 67.31 0)
+			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7524,7 +7695,7 @@
 			)
 		)
 		(property "Kind" "TRACK_CIRCUIT"
-			(at 55.88 67.31 0)
+			(at 73.66 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7535,116 +7706,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "020d992c-203d-4fb2-8dfa-23aa3b957e32")
+			(uuid "e7762820-646f-4e14-9fe2-28f275bf6010")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "TC4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:IRJ")
-		(at 102.87 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0db73c7-64fc-4210-998c-4a2b389ef11c")
-		(property "Reference" "B8"
-			(at 102.87 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint"
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ"
-			(at 102.87 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "277f9d5b-c926-4ae0-8774-c65d36b0e7f4")
-		)
-		(pin "2"
-			(uuid "d78bba63-72d5-4eff-a6bf-90034bfecfcd")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "B8")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "TC3")
 					(unit 1)
 				)
 			)
@@ -7652,7 +7719,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:NextCP")
-		(at 231.14 67.31 180)
+		(at 63.5 85.09 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7660,10 +7727,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb70db2c-9caf-4a09-9169-4188cb5c1c2b")
-		(property "Reference" "CP1"
-			(at 227.965 65.405 0)
+		(uuid "f253c3b0-fd0e-4c21-94e6-094d82fe6fcb")
+		(property "Reference" "CP2"
+			(at 66.675 86.995 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7673,8 +7739,8 @@
 				)
 			)
 		)
-		(property "Value" "Sargent"
-			(at 233.68 67.3099 0)
+		(property "Value" "Christopher"
+			(at 60.452 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7686,7 +7752,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 67.31 0)
+			(at 59.69 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7697,7 +7763,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 67.31 0)
+			(at 59.69 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,7 +7774,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 234.315 60.325 0)
+			(at 60.325 92.075 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7719,7 +7785,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 231.14 67.31 0)
+			(at 63.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7730,7 +7796,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 231.14 67.31 0)
+			(at 63.5 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7741,20 +7807,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9a3b4a4-f5ac-4c82-ada5-f5d4f97c4c1a")
+			(uuid "402f53d6-5ac9-46bd-a600-9d158061ecd8")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "CP1")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "CP2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule251-DoT-Left")
-		(at 41.91 64.77 0)
+		(lib_id "Railroad:Rule261-DoT-BiDirectional")
+		(at 207.01 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7762,32 +7828,34 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ffb4dff7-f8b1-4878-90ca-9b06478b1748")
-		(property "Reference" "DOT3"
-			(at 35.56 64.135 0)
+		(uuid "f8985365-28b1-449d-b06d-02d5d3a00b10")
+		(property "Reference" "DOT4"
+			(at 197.485 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.1588)
 				)
 			)
 		)
-		(property "Value" "RULE 251"
-			(at 41.91 62.23 0)
+		(property "Value" "MT"
+			(at 207.01 87.63 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 					(color 0 0 0 1)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 64.77 0)
+			(at 207.01 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7798,7 +7866,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 64.77 0)
+			(at 207.01 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7808,8 +7876,8 @@
 				)
 			)
 		)
-		(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
-			(at 38.735 71.755 0)
+		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
+			(at 207.01 86.995 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7819,8 +7887,18 @@
 				)
 			)
 		)
-		(property "Direction" "LEFT"
-			(at 35.56 66.04 0)
+		(property "Kind" "RULE_261"
+			(at 207.264 80.01 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 197.485 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7831,18 +7909,7 @@
 			)
 		)
 		(property "Role" "POLICY"
-			(at 41.91 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_251"
-			(at 41.91 64.77 0)
+			(at 207.01 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7853,113 +7920,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d1b1d693-61cb-4eea-b2e8-3f680697b5f2")
+			(uuid "12142bcd-eb43-4846-be8c-931ac3b724ea")
 		)
 		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "DOT3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad:NextCP")
-		(at 41.91 67.31 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fffcdaf7-87f9-4635-839d-92d2d1377cc6")
-		(property "Reference" "CP3"
-			(at 38.735 65.405 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Luchessa"
-			(at 28.448 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 45.085 60.325 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 41.91 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 41.91 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f95cd54-346c-4bf5-85b9-5b8e1800ab30")
-		)
-		(instances
-			(project "Christopher"
-				(path "/a1d80453-f1a2-4732-9b7c-c78b77308237"
-					(reference "CP3")
+			(project "Corporal"
+				(path "/ee580a7d-3bcc-4815-828e-1449721b556e"
+					(reference "DOT4")
 					(unit 1)
 				)
 			)

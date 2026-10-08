@@ -8,7 +8,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1.0"
+      "sch_revision": "0.1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -253,10 +253,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "RailroadPanel"
+    ]
   },
   "meta": {
-    "filename": "Sargent.kicad_pro",
+    "filename": "SPCoast.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -329,49 +331,169 @@
           "group_by": false,
           "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Value",
           "name": "Value",
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "BusKind",
+          "name": "BusKind",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "CP Name",
+          "name": "CP Name",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Color",
+          "name": "Color",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Column",
+          "name": "Column",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Columns",
+          "name": "Columns",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ControlToken",
+          "name": "ControlToken",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Era",
+          "name": "Era",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "IndicationToken",
+          "name": "IndicationToken",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Interlocking",
+          "name": "Interlocking",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Kind",
+          "name": "Kind",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Machine",
+          "name": "Machine",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Railroad",
+          "name": "Railroad",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Role",
+          "name": "Role",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Station",
+          "name": "Station",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Topic",
+          "name": "Topic",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Type",
+          "name": "Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vital",
+          "name": "Vital",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Broker",
+          "name": "Broker",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -411,18 +533,78 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Sargent.kicad_sch",
-        "name": "Sargent",
-        "uuid": "1c4b404d-a2d2-4d1c-a762-b87ef02fd34f"
+        "filename": "SPCoast.kicad_sch",
+        "name": "SPCoast",
+        "uuid": "528348b2-add8-5367-a5f7-439c76f0ca33"
       }
     ],
-    "used_designators": "Plant1,AUX1,FLK1,H1-4,DOT1-7,TC2,TC4-5,B1-5,S1-3,CP1-2",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
-      "1c4b404d-a2d2-4d1c-a762-b87ef02fd34f",
+      "528348b2-add8-5367-a5f7-439c76f0ca33",
+      "Root"
+    ],
+    [
+      "2ed995e3-3819-55cd-b8d9-5c2af048ccb4",
+      "South-cTc"
+    ],
+    [
+      "0ce55e2d-fbe5-47d3-a48a-db8408a15e7e",
+      "Watsonville"
+    ],
+    [
+      "edcaf13c-88f7-5312-bbd2-27adbfe51f47",
+      "Panel"
+    ],
+    [
+      "152658f8-a042-4e04-bedb-bf34ee4ce875",
+      "Corporal"
+    ],
+    [
+      "88e4e61b-d7c8-5245-8429-ef60b2528e61",
+      "Panel"
+    ],
+    [
+      "61cd2495-14f3-42a6-a7c2-38f34b91ee1e",
+      "Gilroy Caltrain"
+    ],
+    [
+      "8ecebbd2-e7a6-5949-8793-5f9acfb44e33",
+      "Panel"
+    ],
+    [
+      "a167e02f-2575-49a1-bdf8-73758c645318",
+      "Christopher"
+    ],
+    [
+      "f5acff20-f0c7-5bc8-b736-12c4fc3de1a5",
+      "Panel"
+    ],
+    [
+      "b4829d91-9b5a-495f-b7c8-ba6a6006660d",
+      "Luchessa"
+    ],
+    [
+      "00f71388-de5d-5221-b08d-59e5132f8ba4",
+      "Panel"
+    ],
+    [
+      "defc570c-1f61-4751-be37-2827b304f837",
+      "Gilroy Interchange"
+    ],
+    [
+      "90de2d8f-27de-5d73-94ac-16d937159278",
+      "Panel"
+    ],
+    [
+      "f687a7a3-8fc1-435d-a0f4-b6b97af39a7e",
       "Sargent"
+    ],
+    [
+      "3b382d23-5313-5c7e-a2ee-6b234006a75a",
+      "Panel"
     ]
   ],
   "text_variables": {},
