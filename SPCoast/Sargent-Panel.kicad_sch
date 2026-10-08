@@ -20,6 +20,557 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "RailroadPanel:Driver-I2C-MAX7313"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "I2C"
+				(at -7.62 49.53 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "${Address}"
+				(at 4.445 49.53 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+				(at 13.335 54.61 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "I2C-MAX7313"
+				(at -5.715 -37.465 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 1.5681 -39.9209 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-I2C-MAX7313_1_1"
+				(rectangle
+					(start -8.255 48.26)
+					(end 8.255 -42.545)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "LED MB1"
+					(at -3.175 45.72 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MB2"
+					(at -3.175 40.64 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MB3"
+					(at -3.175 35.56 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "MC"
+					(at -3.175 24.13 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SW N"
+					(at -3.175 13.97 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SW R"
+					(at -3.175 11.43 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SW R"
+					(at -3.175 6.35 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SW N"
+					(at -3.175 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG S"
+					(at -3.175 -2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG L"
+					(at -3.175 -5.08 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED SIG R"
+					(at -3.175 -7.62 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG R"
+					(at -3.175 -10.16 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG S"
+					(at -3.175 -12.7 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "SIG L"
+					(at -3.175 -15.24 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "CODE"
+					(at -3.175 -25.4 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "LED MC"
+					(at -3.175 -31.75 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+						(justify left)
+					)
+				)
+				(text "Address:"
+					(at -3.175 -40.005 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 13.97 0)
+					(length 3.81)
+					(name "A1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 11.43 0)
+					(length 3.81)
+					(name "A2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 24.13 0)
+					(length 3.81)
+					(name "A3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 45.72 0)
+					(length 3.81)
+					(name "A4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 40.64 0)
+					(length 3.81)
+					(name "A5"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 35.56 0)
+					(length 3.81)
+					(name "A6"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 6.35 0)
+					(length 3.81)
+					(name "A7"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 3.81 0)
+					(length 3.81)
+					(name "A8"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -31.75 0)
+					(length 3.81)
+					(name "B1"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -15.24 0)
+					(length 3.81)
+					(name "B2"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -12.7 0)
+					(length 3.81)
+					(name "B3"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -10.16 0)
+					(length 3.81)
+					(name "B4"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -25.4 0)
+					(length 3.81)
+					(name "B5"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -5.08 0)
+					(length 3.81)
+					(name "B6"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -7.62 0)
+					(length 3.81)
+					(name "B7"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -11.43 -2.54 0)
+					(length 3.81)
+					(name "B8"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "RailroadPanel:PanelCode"
 			(pin_numbers
 				(hide yes)
@@ -604,557 +1155,6 @@
 						(effects
 							(font
 								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "RailroadPanel:Driver-I2C-MAX7313"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "I2C"
-				(at -7.62 49.53 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "${Address}"
-				(at 4.445 49.53 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
-				(at 13.335 54.61 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "I2C-MAX7313"
-				(at -5.715 -37.465 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at -1.27 -34.925 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" ""
-				(at 1.5681 -39.9209 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-I2C-MAX7313_1_1"
-				(rectangle
-					(start -8.255 48.26)
-					(end 8.255 -42.545)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LED MB1"
-					(at -3.175 45.72 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED MB2"
-					(at -3.175 40.64 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED MB3"
-					(at -3.175 35.56 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "MC"
-					(at -3.175 24.13 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED SW N"
-					(at -3.175 13.97 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED SW R"
-					(at -3.175 11.43 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "SW R"
-					(at -3.175 6.35 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "SW N"
-					(at -3.175 3.81 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED SIG S"
-					(at -3.175 -2.54 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED SIG L"
-					(at -3.175 -5.08 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED SIG R"
-					(at -3.175 -7.62 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "SIG R"
-					(at -3.175 -10.16 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "SIG S"
-					(at -3.175 -12.7 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "SIG L"
-					(at -3.175 -15.24 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "CODE"
-					(at -3.175 -25.4 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "LED MC"
-					(at -3.175 -31.75 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "Address:"
-					(at -3.175 -40.005 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 13.97 0)
-					(length 3.81)
-					(name "A1"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 11.43 0)
-					(length 3.81)
-					(name "A2"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 24.13 0)
-					(length 3.81)
-					(name "A3"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 45.72 0)
-					(length 3.81)
-					(name "A4"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 40.64 0)
-					(length 3.81)
-					(name "A5"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 35.56 0)
-					(length 3.81)
-					(name "A6"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 6.35 0)
-					(length 3.81)
-					(name "A7"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 3.81 0)
-					(length 3.81)
-					(name "A8"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -31.75 0)
-					(length 3.81)
-					(name "B1"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -15.24 0)
-					(length 3.81)
-					(name "B2"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -12.7 0)
-					(length 3.81)
-					(name "B3"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -10.16 0)
-					(length 3.81)
-					(name "B4"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -25.4 0)
-					(length 3.81)
-					(name "B5"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -5.08 0)
-					(length 3.81)
-					(name "B6"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -7.62 0)
-					(length 3.81)
-					(name "B7"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -11.43 -2.54 0)
-					(length 3.81)
-					(name "B8"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 0.635 0.635)
 							)
 						)
 					)
