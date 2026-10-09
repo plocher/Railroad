@@ -3178,7 +3178,7 @@
 	)
 	(text "There should be a 2nd signal in this interlocking for the industry track.\nThe as-built cTc machine didn't have this lever, so the siding dwarf signals would need special field logic to be useful."
 		(exclude_from_sim no)
-		(at 132.08 122.936 0)
+		(at 132.334 123.698 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3199,16 +3199,16 @@
 		(uuid "45f29111-9648-489b-b542-9b305c0fa07f")
 	)
 	(junction
-		(at 132.08 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ad24ea2-b11d-4b60-9d95-4065860a6156")
-	)
-	(junction
 		(at 231.14 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d6ae268-3366-46f6-930b-f5690c70472a")
+	)
+	(junction
+		(at 130.81 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7896c15b-8632-44c1-a3ad-9c125dcc612c")
 	)
 	(junction
 		(at 41.91 67.31)
@@ -3258,25 +3258,14 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 116.84) (xy 163.83 116.84)
+			(xy 104.14 116.84) (xy 163.83 116.84)
 		)
 		(stroke
 			(width 0.4064)
 			(type dash)
 			(color 72 72 72 1)
 		)
-		(uuid "246faa59-706e-4245-8d13-539f5e0c2651")
-	)
-	(wire
-		(pts
-			(xy 104.14 116.84) (xy 132.08 116.84)
-		)
-		(stroke
-			(width 0.4064)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(uuid "4f7e1f00-83be-4d44-8ec4-b2d535e9e549")
+		(uuid "2699f898-955c-48d2-9b3a-04dc1895a00d")
 	)
 	(wire
 		(pts
@@ -3397,16 +3386,6 @@
 			(type default)
 		)
 		(uuid "edadf5c2-c1e7-4d8d-81d0-18c420f7cdba")
-	)
-	(wire
-		(pts
-			(xy 132.08 116.84) (xy 133.35 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd2189bc-983b-4d80-804a-282539c7d31a")
 	)
 	(symbol
 		(lib_id "Railroad:Rule251-DoT-Right")
@@ -4751,7 +4730,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Rule105-RestrictedSpeed")
-		(at 132.08 119.38 180)
+		(at 130.81 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4761,7 +4740,7 @@
 		(dnp no)
 		(uuid "3debc472-fd18-4dd4-a5a1-f86aecd987ad")
 		(property "Reference" "DOT9005"
-			(at 137.795 120.015 0)
+			(at 136.525 120.015 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4772,7 +4751,7 @@
 			)
 		)
 		(property "Value" "Restricted Speed"
-			(at 131.572 120.142 0)
+			(at 130.302 120.396 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4783,7 +4762,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.255 119.38 0)
+			(at 133.985 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4794,7 +4773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.255 119.38 0)
+			(at 133.985 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4805,7 +4784,7 @@
 			)
 		)
 		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-			(at 135.255 114.935 0)
+			(at 133.985 114.935 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4816,7 +4795,7 @@
 			)
 		)
 		(property "Kind" "RULE_105"
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4827,7 +4806,7 @@
 			)
 		)
 		(property "Direction" "BOTH"
-			(at 137.795 118.11 0)
+			(at 136.525 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4838,7 +4817,7 @@
 			)
 		)
 		(property "Role" "POLICY"
-			(at 132.08 119.38 0)
+			(at 130.81 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4962,7 +4941,7 @@
 	)
 	(symbol
 		(lib_id "Railroad:Track Circuit")
-		(at 132.08 116.84 0)
+		(at 130.81 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4972,7 +4951,7 @@
 		(dnp no)
 		(uuid "424ddddc-0f4c-4a41-9c73-c179d5a88adb")
 		(property "Reference" "TC9005"
-			(at 132.08 112.4 0)
+			(at 130.81 112.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4983,7 +4962,7 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 130.05 114.05 0)
+			(at 128.78 114.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4994,7 +4973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5005,7 +4984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5016,7 +4995,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5027,7 +5006,7 @@
 			)
 		)
 		(property "CP" "Christopher North"
-			(at 132.08 118.745 0)
+			(at 130.81 119.634 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5038,7 +5017,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5049,7 +5028,7 @@
 			)
 		)
 		(property "Kind" "TRACK_CIRCUIT"
-			(at 132.08 116.84 0)
+			(at 130.81 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
