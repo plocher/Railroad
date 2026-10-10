@@ -2656,224 +2656,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_HandThrow"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at -2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "CP" ""
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.508 0.508)
-						(color 72 72 72 1)
-					)
-				)
-			)
-			(property "TC" ""
-				(at 7.62 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "APPLIANCE"
-				(at -1.905 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "SWITCH_MANUAL"
-				(at -1.27 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Indications" "RESTRICTING/RESTRICTING"
-				(at 11.43 0.635 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(symbol "Switch_HandThrow_1_1"
-				(polyline
-					(pts
-						(xy -11.43 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 17.78 0)
-					)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 17.78 16.51) (xy 15.24 16.51) (xy 1.27 1.905) (xy -0.635 1.905)
-					)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "H"
-					(at 0 3.175 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at -11.43 0 0)
-					(length 0)
-					(name "C"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 0 180)
-					(length 0)
-					(name "N"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 16.51 180)
-					(length 0)
-					(name "R"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad:Switch_Lock"
 			(pin_numbers
 				(hide yes)
@@ -3133,6 +2915,224 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(pin passive line
+					(at -11.43 0 0)
+					(length 0)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 0)
+					(name "N"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 16.51 180)
+					(length 0)
+					(name "R"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad:Switch_Manual_Sensed"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Manual switch, no motor but with N/R feedback"
+				(at 1.27 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP" ""
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(color 72 72 72 1)
+					)
+				)
+			)
+			(property "TC" ""
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at -1.905 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "SWITCH_MANUAL_SENSED"
+				(at -1.27 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indications" "RESTRICTING/RESTRICTING"
+				(at 11.43 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(symbol "Switch_Manual_Sensed_1_1"
+				(polyline
+					(pts
+						(xy -11.43 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 17.78 0)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 17.78 16.51) (xy 15.24 16.51) (xy 1.27 1.905) (xy -0.635 1.905)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "H"
+					(at 0 3.175 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 				(pin passive line
@@ -3771,17 +3771,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "LEGACY DIAGRAM AND NOTES\n\n   \n       North end Beet Loader Industry switch, DT1 and DT2 merge, switch and signals\n   \n       < Railroad West/North          MP83               Railroad East/South >\n   \n                              DERAIL                     /---IND3---DARK Beet Loader1\n                                     \\5T1 O-| 4na   M  /\n                           /------ ---+----- ---IND1---+---IND2-----DARK Beet Loader2\n                       1T1/                O-| 2nab   [MC]\n       MT2 <==2SAT= =====+== ============+=== ==1NAT============== =======2NAT=====(<->)\n                   |-O 4sa          3T1/\n       MT1 >==1SAT= ===================/\n                   |-O 2sa\n   \n       Double track north of Corporal is operated using a \"current of traffic\" method.\n       This is rule 251 territory.  Trains operate in the same direction on one track and\n       the other direction on the other track.  It is only signaled in one direction\n       on each track.\n   \n       SIG2 is for MTx to MT movement and for Beet Loader access to MT2.\n       Since directional current of traffic is in force, SIG 2Sb is not really needed\n       since all reverse running is at restricted speed, alert for turnouts...\n   \n       Double track south of Gilroy converges into 1 main track via T#1,\n           Turnout (T#3) off of NB track 1: North end Beet Loader Industry tracks\n           (derail is T#5)\n           Industry track includes internal T#7\n   \n       There are four switches in CP Corporal:\n           SW1 for the North industry track\n           SW3 for the Double track to Single track conversion\n           M   for the internal industry turnout, and\n           SW5 for the industry track derail\n   \n        Southbound Approach from Christopher - NB (1SA) and SB (2SA) mains\n        Northbound Approach from Sargent (1NAT/2NAT)"
-		(exclude_from_sim no)
-		(at 28.448 160.782 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1d9d3220-49f2-4a90-aa68-c5e0ba4e61c9")
-	)
 	(junction
 		(at 63.5 85.09)
 		(diameter 0)
@@ -3835,6 +3824,22 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbb2fa4c-b16b-46c8-80b7-c389e2297124")
+	)
+	(no_connect
+		(at 207.01 68.58)
+		(uuid "1a924240-d250-43a8-aad1-64285afc8d89")
+	)
+	(no_connect
+		(at 207.01 52.07)
+		(uuid "7e0c1122-32b3-48f7-a978-a7ba19ccf0e7")
+	)
+	(no_connect
+		(at 187.96 52.07)
+		(uuid "c4c0967d-dc34-474d-b3a3-12643f07bc98")
+	)
+	(no_connect
+		(at 187.96 68.58)
+		(uuid "c7a416bb-80fb-41fa-95bc-246041b278c8")
 	)
 	(wire
 		(pts
@@ -4274,7 +4279,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 123.19 73.03 0)
+			(at 123.19 73.025 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4314,6 +4319,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Indications" "STOP/RESTRICTING"
+			(at 121.92 67.945 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
 			)
 		)
 		(pin "2"
@@ -4929,7 +4945,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 99.06 89.54 0)
+			(at 99.06 89.535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4940,7 +4956,7 @@
 			)
 		)
 		(property "TC" "${VALUE}T1"
-			(at 105.41 83.19 0)
+			(at 105.41 83.185 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4950,7 +4966,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 99.06 85.09 0)
+			(at 92.075 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4961,13 +4977,23 @@
 			)
 		)
 		(property "Kind" "SWITCH_LOCK"
-			(at 99.06 85.09 0)
+			(at 93.345 80.645 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indications" ""
+			(at 112.395 84.455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
 				)
 			)
 		)
@@ -5080,7 +5106,8 @@
 			)
 		)
 		(property "Kind" "RULE_251"
-			(at 63.754 79.756 0)
+			(at 63.5 82.55 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5425,7 +5452,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_HandThrow")
+		(lib_id "Railroad:Switch_Manual_Sensed")
 		(at 170.18 68.58 0)
 		(unit 1)
 		(body_style 1)
@@ -5479,7 +5506,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 170.18 68.58 0)
+			(at 171.45 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5490,7 +5517,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 170.18 73.03 0)
+			(at 170.18 73.025 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5503,7 +5530,7 @@
 		(property "TC" ""
 			(at 177.8 66.04 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5511,7 +5538,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 170.18 68.58 0)
+			(at 168.275 73.025 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5522,13 +5549,23 @@
 			)
 		)
 		(property "Kind" "SWITCH_MANUAL"
-			(at 170.18 68.58 0)
+			(at 168.91 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indications" ""
+			(at 181.61 67.945 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
 				)
 			)
 		)
@@ -5617,7 +5654,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 194.31 86.99 0)
+			(at 194.31 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5962,7 +5999,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 147.32 70.48 0)
+			(at 147.32 70.485 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6173,7 +6210,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 73.66 86.99 0)
+			(at 73.66 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6732,7 +6769,8 @@
 			)
 		)
 		(property "Kind" "RULE_251"
-			(at 63.5 96.52 0)
+			(at 63.5 99.06 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6819,7 +6857,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 137.16 80.64 0)
+			(at 137.16 80.645 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6832,7 +6870,7 @@
 		(property "TC" "${VALUE}T1"
 			(at 129.54 87.63 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6840,7 +6878,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 137.16 85.09 0)
+			(at 145.415 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6851,13 +6889,23 @@
 			)
 		)
 		(property "Kind" "SWITCH_REMOTE"
-			(at 137.16 85.09 0)
+			(at 142.875 90.805 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indications" ""
+			(at 123.825 85.725 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
 				)
 			)
 		)
@@ -7560,7 +7608,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 170.18 86.99 0)
+			(at 170.18 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7671,7 +7719,7 @@
 			)
 		)
 		(property "CP" "Corporal"
-			(at 73.66 103.5 0)
+			(at 73.66 103.505 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7886,7 +7934,8 @@
 			)
 		)
 		(property "Kind" "RULE_261"
-			(at 207.264 80.01 0)
+			(at 207.01 82.55 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
