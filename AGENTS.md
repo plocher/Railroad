@@ -28,7 +28,10 @@ beside the schematics: they clutter KiCad's project navigator.
 
 ## External dependencies (outside this repo)
 
-- Symbol libraries: `~/Dropbox/KiCad/InterlockingPlant/symbols/{Railroad,RailroadPanel,RailroadField}.kicad_sym`. They are registered in the global KiCad 10 `sym-lib-table` and tracked in the InterlockingPlant git repo (no remote). They are evolving and expected to move into FieldUnit-Subdivision. **Do not copy them into this repo.** `.bak` files next to them are manual snapshots.
+- Symbol libraries, two generations (owner's ruling 2026-10-10):
+  - `symbols/RailroadPlant`, `RailroadDevice`, `RailroadDesk.kicad_sym`: the current libraries, built here from the baseline by FieldUnit-Subdivision `tools/contract/apply_symbol_recipe.py` (recipe: its `docs/review/symbol-library-triage-2026-10-10.md`) and checked by `tools/contract/lint_symbol_fields.py`. Symbols are keyed by their fields (Role, Appliance, Style, `IC`, `Pin.*`, `Invert`), never by name. Edit them in KiCad once the recipe step is over; until then, edit the recipe and regenerate.
+  - `symbols/Railroad`, `RailroadField`, `RailroadPanel.kicad_sym`: a byte-identical baseline copy of `~/Dropbox/KiCad/InterlockingPlant/symbols/` (commit 96fc28f), kept so the recipe is an auditable diff. The InterlockingPlant copies stay registered in the global `sym-lib-table` until every SPCoast sheet has migrated to the new libraries; then both baselines go. Do not edit the baseline.
+  - `symbols/production/`: renders and the contact sheet, gitignored.
 - Tools: `~/Dropbox/workspace/FieldUnit-Subdivision/tools/`. Its AGENTS.md documents the symbol and field conventions the compiler enforces.
 - Firmware consumer: `~/Dropbox/Arduino/libraries/FieldUnit/examples/spcoast_ctc`.
 
