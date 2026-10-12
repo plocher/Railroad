@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "Device-TrackCircuit-Current"
+	(symbol "Device-Contact"
 		(pin_names
 			(offset 1.27)
 		)
@@ -54,7 +54,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Contact: one binary input, the device of the Contact appliance."
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -77,7 +77,7 @@
 				(justify left)
 			)
 		)
-		(property "Appliance" "track_circuit"
+		(property "Appliance" "contact"
 			(at -3.5438 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -89,7 +89,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.OCC" "binary in"
+		(property "Pin.IN" "binary in"
 			(at -3.5438 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -101,7 +101,7 @@
 				(justify left)
 			)
 		)
-		(symbol "Device-TrackCircuit-Current_0_1"
+		(symbol "Device-Contact_0_1"
 			(rectangle
 				(start -11.43 1.27)
 				(end 7.62 -1.27)
@@ -113,11 +113,9 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "Device-TrackCircuit-Current_1_1"
 			(polyline
 				(pts
-					(xy -10.16 0) (xy -10.795 0)
+					(xy -9.525 0) (xy -8.89 0)
 				)
 				(stroke
 					(width 0)
@@ -128,21 +126,8 @@
 				)
 			)
 			(circle
-				(center -9.525 0)
-				(radius 0.635)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 0) (xy -8.255 0)
-				)
+				(center -8.6058 0.0118)
+				(radius 0.2893)
 				(stroke
 					(width 0)
 					(type default)
@@ -151,7 +136,22 @@
 					(type none)
 				)
 			)
-			(text "TC ${VALUE}"
+		)
+		(symbol "Device-Contact_1_1"
+			(polyline
+				(pts
+					(xy -10.16 0) (xy -9.525 -0.635) (xy -9.525 0.635) (xy -10.16 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "CONTACT ${VALUE}"
 				(at -7.2707 0.1012 0)
 				(effects
 					(font
@@ -163,197 +163,7 @@
 			(pin output line
 				(at 10.16 0 180)
 				(length 2.54)
-				(name "~{OCC}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Device-TrackCircuit-Optical"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevSW"
-			(at -5.8352 1.9976 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "hold_ms" "1500"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.OCC" "binary in"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Device-TrackCircuit-Optical_0_1"
-			(rectangle
-				(start -11.43 1.27)
-				(end 7.62 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-TrackCircuit-Optical_1_1"
-			(polyline
-				(pts
-					(xy -10.16 0) (xy -10.795 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -9.525 0)
-				(radius 0.635)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy -8.89 0) (xy -8.255 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "TC ${VALUE}"
-				(at -7.2707 0.1012 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin output line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "~{OCC}"
+				(name "~{IN}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1381,7 +1191,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
@@ -1509,6 +1319,17 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at -5.08 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(symbol "Device-Head-Semaphore_0_1"
 			(rectangle
 				(start -11.43 2.54)
@@ -1557,8 +1378,6 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "Device-Head-Semaphore_1_1"
 			(circle
 				(center -10.16 -0.635)
 				(radius 0.4033)
@@ -1580,6 +1399,8 @@
 					(justify left)
 				)
 			)
+		)
+		(symbol "Device-Head-Semaphore_1_1"
 			(pin input line
 				(at 10.16 1.27 180)
 				(length 2.54)
@@ -1598,6 +1419,8 @@
 					)
 				)
 			)
+		)
+		(symbol "Device-Head-Semaphore_2_1"
 			(pin input line
 				(at 10.16 -1.27 180)
 				(length 2.54)
@@ -1609,185 +1432,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Device-Contact"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevSW"
-			(at -5.8352 1.9976 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Contact: one binary input, the device of the Contact appliance."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Appliance" "contact"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.IN" "binary in"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Device-Contact_0_1"
-			(rectangle
-				(start -11.43 1.27)
-				(end 7.62 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -8.89 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -8.6058 0.0118)
-				(radius 0.2893)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-Contact_1_1"
-			(polyline
-				(pts
-					(xy -10.16 0) (xy -9.525 -0.635) (xy -9.525 0.635) (xy -10.16 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "CONTACT ${VALUE}"
-				(at -7.2707 0.1012 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin output line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "~{IN}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
 					(effects
 						(font
 							(size 0.381 0.381)
@@ -1980,6 +1624,575 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Lock"
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DevSW"
+			(at -5.9274 3.1548 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Electric lock mechanism: UNLOCK is the demand, ~{LOCKED} the optional plunger sense. Unwired, the driver simulates the sense (quality SIMULATED) after settle_ms. Shares its Value with the Device-Switch of the same switch."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Style" "lock"
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "settle_ms" ""
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.UNLOCK" "binary out"
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.LOCKED" "binary in"
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_locked" ""
+			(at -7.0111 -0.4377 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Device-Lock_0_1"
+			(rectangle
+				(start -11.43 2.54)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -11.0553 -1.471) (xy -8.5153 -1.471)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.4605 -1.1777) (xy -9.8255 -1.1777) (xy -8.5555 0.0923)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "H"
+				(at -10.16 -0.635 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "LOCK ${VALUE}"
+				(at -7.218 1.3901 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+		)
+		(symbol "Device-Lock_1_1"
+			(pin input line
+				(at 10.16 1.27 180)
+				(length 2.54)
+				(name "UNLOCK"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device-Lock_2_1"
+			(pin output line
+				(at 10.16 -1.27 180)
+				(length 2.54)
+				(name "~{LOCKED}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Switch"
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DevSW"
+			(at -5.9274 5.6948 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Style" "powered, lock"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.M" "binary out"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.N" "binary in"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.R" "binary in"
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_locked" ""
+			(at -6.9561 -0.4908 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Device-Switch_0_1"
+			(rectangle
+				(start -11.43 5.08)
+				(end 7.62 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.795 -1.27) (xy -8.255 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.212 -0.9725) (xy -10.212 -0.3375)
+				)
+				(stroke
+					(width 0.1016)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.2002 -0.9767) (xy -9.5652 -0.9767) (xy -8.2952 0.2933)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.9032 -0.9727) (xy -9.9032 -0.3377)
+				)
+				(stroke
+					(width 0.1016)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.577 -0.9725) (xy -9.577 -0.3375)
+				)
+				(stroke
+					(width 0.1016)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -8.8109 -0.25)
+				(radius 0.2592)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 153 0 1)
+				)
+			)
+			(circle
+				(center -8.7585 -1.279)
+				(radius 0.2592)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(text "SW ${VALUE}"
+				(at -7.218 3.9301 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+		)
+		(symbol "Device-Switch_1_1"
+			(pin input line
+				(at 10.16 3.81 180)
+				(length 2.54)
+				(name "M"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device-Switch_2_1"
+			(pin output line
+				(at 10.16 1.27 180)
+				(length 2.54)
+				(name "~{N}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 -1.27 180)
+				(length 2.54)
+				(name "~{R}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 0.381 0.381)
@@ -2211,311 +2424,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Switch"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevSW"
-			(at -5.9274 5.6948 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Appliance" "switch"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Style" "powered, lock"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.M" "binary out"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.N" "binary in"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.R" "binary in"
-			(at -6.9561 -0.4908 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Device-Switch_0_1"
-			(rectangle
-				(start -11.43 5.08)
-				(end 7.62 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.795 -1.27) (xy -8.255 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.212 -0.9725) (xy -10.212 -0.3375)
-				)
-				(stroke
-					(width 0.1016)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.2002 -0.9767) (xy -9.5652 -0.9767) (xy -8.2952 0.2933)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.9032 -0.9727) (xy -9.9032 -0.3377)
-				)
-				(stroke
-					(width 0.1016)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.577 -0.9725) (xy -9.577 -0.3375)
-				)
-				(stroke
-					(width 0.1016)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-Switch_1_1"
-			(circle
-				(center -8.8109 -0.25)
-				(radius 0.2592)
-				(stroke
-					(width 0.1016)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 153 0 1)
-				)
-			)
-			(circle
-				(center -8.7585 -1.279)
-				(radius 0.2592)
-				(stroke
-					(width 0.1016)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(text "SW ${VALUE}"
-				(at -7.218 3.9301 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin input line
-				(at 10.16 3.81 180)
-				(length 2.54)
-				(name "M"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 1.27 180)
-				(length 2.54)
-				(name "~{N}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 -1.27 180)
-				(length 2.54)
-				(name "~{R}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "Device-Switch-OS"
 		(pin_names
 			(offset 1.27)
@@ -2539,7 +2447,7 @@
 		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
@@ -2670,6 +2578,19 @@
 				(justify left)
 			)
 		)
+		(property "ki_locked" ""
+			(at -6.9933 -3.0244 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
 		(symbol "Device-Switch-OS_0_1"
 			(rectangle
 				(start -11.43 5.08)
@@ -2742,8 +2663,6 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "Device-Switch-OS_1_1"
 			(circle
 				(center -8.847 -2.7561)
 				(radius 0.2592)
@@ -2777,6 +2696,8 @@
 					(justify left)
 				)
 			)
+		)
+		(symbol "Device-Switch-OS_1_1"
 			(pin input line
 				(at 10.16 3.81 180)
 				(length 2.54)
@@ -2795,6 +2716,8 @@
 					)
 				)
 			)
+		)
+		(symbol "Device-Switch-OS_2_1"
 			(pin output line
 				(at 10.16 1.27 180)
 				(length 2.54)
@@ -2852,7 +2775,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Lock"
+	(symbol "Device-TrackCircuit-Current"
 		(pin_names
 			(offset 1.27)
 		)
@@ -2862,7 +2785,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "DevSW"
-			(at -5.9274 3.1548 0)
+			(at -5.8352 1.9976 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -2904,7 +2827,7 @@
 				)
 			)
 		)
-		(property "Description" "Electric lock mechanism: UNLOCK is the demand, ~{LOCKED} the optional plunger sense. Unwired, the driver simulates the sense (quality SIMULATED) after settle_ms. Shares its Value with the Device-Switch of the same switch."
+		(property "Description" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2916,110 +2839,45 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at -7.0111 -0.4377 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Appliance" "switch"
-			(at -7.0111 -0.4377 0)
+			(at -3.5438 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
+					(size 0.635 0.635)
 				)
 				(justify left)
 			)
 		)
-		(property "Style" "lock"
-			(at -7.0111 -0.4377 0)
+		(property "Appliance" "track_circuit"
+			(at -3.5438 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
+					(size 0.635 0.635)
 				)
 				(justify left)
 			)
 		)
-		(property "settle_ms" ""
-			(at -7.0111 -0.4377 0)
+		(property "Pin.OCC" "binary in"
+			(at -3.5438 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
+					(size 0.635 0.635)
 				)
 				(justify left)
 			)
 		)
-		(property "Pin.UNLOCK" "binary out"
-			(at -7.0111 -0.4377 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.LOCKED" "binary in"
-			(at -7.0111 -0.4377 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Device-Lock_0_1"
+		(symbol "Device-TrackCircuit-Current_0_1"
 			(rectangle
-				(start -11.43 2.54)
-				(end 7.62 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -11.0553 -1.471) (xy -8.5153 -1.471)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.4605 -1.1777) (xy -9.8255 -1.1777) (xy -8.5555 0.0923)
-				)
+				(start -11.43 1.27)
+				(end 7.62 -1.27)
 				(stroke
 					(width 0)
 					(type default)
@@ -3029,17 +2887,45 @@
 				)
 			)
 		)
-		(symbol "Device-Lock_1_1"
-			(text "H"
-				(at -10.16 -0.635 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
+		(symbol "Device-TrackCircuit-Current_1_1"
+			(polyline
+				(pts
+					(xy -10.16 0) (xy -10.795 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
-			(text "LOCK ${VALUE}"
-				(at -7.218 1.3901 0)
+			(circle
+				(center -9.525 0)
+				(radius 0.635)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 0) (xy -8.255 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "TC ${VALUE}"
+				(at -7.2707 0.1012 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -3047,10 +2933,10 @@
 					(justify left)
 				)
 			)
-			(pin input line
-				(at 10.16 1.27 180)
+			(pin output line
+				(at 10.16 0 180)
 				(length 2.54)
-				(name "UNLOCK"
+				(name "~{OCC}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -3065,20 +2951,1279 @@
 					)
 				)
 			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-TrackCircuit-Optical"
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DevSW"
+			(at -5.8352 1.9976 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "hold_ms" "1500"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.OCC" "binary in"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Device-TrackCircuit-Optical_0_1"
+			(rectangle
+				(start -11.43 1.27)
+				(end 7.62 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-TrackCircuit-Optical_1_1"
+			(polyline
+				(pts
+					(xy -10.16 0) (xy -10.795 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -9.525 0)
+				(radius 0.635)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 0) (xy -8.255 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "TC ${VALUE}"
+				(at -7.2707 0.1012 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
 			(pin output line
-				(at 10.16 -1.27 180)
+				(at 10.16 0 180)
 				(length 2.54)
-				(name "~{LOCKED}"
+				(name "~{OCC}"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "2"
+				(number "1"
 					(effects
 						(font
 							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-GPIO-Digital"
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "GPIO"
+			(at -5.8352 1.9976 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Value = the board core's pin name (D4, GPIO5); the C++ build is the check."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "GPIO"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.D" "binary bidirectional"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Driver-GPIO-Digital_0_1"
+			(rectangle
+				(start -11.43 1.27)
+				(end 7.62 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.525 0) (xy -8.89 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -8.6058 0.0118)
+				(radius 0.2893)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Driver-GPIO-Digital_1_1"
+			(polyline
+				(pts
+					(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "GPIO ${VALUE}"
+				(at -7.2707 0.1012 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-GPIO-Pixel"
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "GPIO"
+			(at -5.8352 1.9976 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Value = the board core's pin name."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "GPIO"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.D" "pixel out"
+			(at -3.5438 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Driver-GPIO-Pixel_0_1"
+			(rectangle
+				(start -11.43 1.27)
+				(end 7.62 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.525 0) (xy -8.89 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -8.6058 0.0118)
+				(radius 0.2893)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Driver-GPIO-Pixel_1_1"
+			(polyline
+				(pts
+					(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "PIXEL ${VALUE}"
+				(at -7.2707 0.1012 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-I2C-MAX7313"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "I2C"
+			(at -7.62 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${Address}"
+			(at 4.445 49.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+			(at 13.335 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 1.5681 -39.9209 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IC" "MAX7313"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary bidirectional"
+			(at -1.27 -34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-I2C-MAX7313_1_1"
+			(rectangle
+				(start -8.255 48.26)
+				(end 8.255 -42.545)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "LED MB1"
+				(at -3.175 45.72 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED MB2"
+				(at -3.175 40.64 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED MB3"
+				(at -3.175 35.56 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "MC"
+				(at -3.175 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED SW N"
+				(at -3.175 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED SW R"
+				(at -3.175 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "SW R"
+				(at -3.175 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "SW N"
+				(at -3.175 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED SIG S"
+				(at -3.175 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED SIG L"
+				(at -3.175 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED SIG R"
+				(at -3.175 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "SIG R"
+				(at -3.175 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "SIG S"
+				(at -3.175 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "SIG L"
+				(at -3.175 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "CODE"
+				(at -3.175 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "LED MC"
+				(at -3.175 -31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "Address:"
+				(at -3.175 -40.005 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 13.97 0)
+				(length 3.81)
+				(name "A1"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 11.43 0)
+				(length 3.81)
+				(name "A2"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 24.13 0)
+				(length 3.81)
+				(name "A3"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 45.72 0)
+				(length 3.81)
+				(name "A4"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 40.64 0)
+				(length 3.81)
+				(name "A5"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 35.56 0)
+				(length 3.81)
+				(name "A6"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 6.35 0)
+				(length 3.81)
+				(name "A7"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 3.81 0)
+				(length 3.81)
+				(name "A8"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -31.75 0)
+				(length 3.81)
+				(name "B1"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -15.24 0)
+				(length 3.81)
+				(name "B2"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -12.7 0)
+				(length 3.81)
+				(name "B3"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -10.16 0)
+				(length 3.81)
+				(name "B4"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -25.4 0)
+				(length 3.81)
+				(name "B5"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -5.08 0)
+				(length 3.81)
+				(name "B6"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -7.62 0)
+				(length 3.81)
+				(name "B7"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -11.43 -2.54 0)
+				(length 3.81)
+				(name "B8"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0.635 0.635)
 						)
 					)
 				)
@@ -3840,733 +4985,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Driver-I2C-MAX7313"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "I2C"
-			(at -7.62 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "${Address}"
-			(at 4.445 49.53 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
-			(at 13.335 54.61 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "IODRIVER"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" ""
-			(at 1.5681 -39.9209 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "IC" "MAX7313"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A1" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A2" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A3" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A4" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A5" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A6" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A7" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.A8" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B1" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B2" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B3" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B4" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B5" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B6" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B7" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.B8" "binary bidirectional"
-			(at -1.27 -34.925 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Driver-I2C-MAX7313_1_1"
-			(rectangle
-				(start -8.255 48.26)
-				(end 8.255 -42.545)
-				(stroke
-					(width 0.3048)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "LED MB1"
-				(at -3.175 45.72 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED MB2"
-				(at -3.175 40.64 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED MB3"
-				(at -3.175 35.56 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "MC"
-				(at -3.175 24.13 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED SW N"
-				(at -3.175 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED SW R"
-				(at -3.175 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "SW R"
-				(at -3.175 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "SW N"
-				(at -3.175 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED SIG S"
-				(at -3.175 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED SIG L"
-				(at -3.175 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED SIG R"
-				(at -3.175 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "SIG R"
-				(at -3.175 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "SIG S"
-				(at -3.175 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "SIG L"
-				(at -3.175 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "CODE"
-				(at -3.175 -25.4 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "LED MC"
-				(at -3.175 -31.75 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "Address:"
-				(at -3.175 -40.005 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 13.97 0)
-				(length 3.81)
-				(name "A1"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 11.43 0)
-				(length 3.81)
-				(name "A2"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 24.13 0)
-				(length 3.81)
-				(name "A3"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 45.72 0)
-				(length 3.81)
-				(name "A4"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 40.64 0)
-				(length 3.81)
-				(name "A5"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 35.56 0)
-				(length 3.81)
-				(name "A6"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 6.35 0)
-				(length 3.81)
-				(name "A7"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 3.81 0)
-				(length 3.81)
-				(name "A8"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -31.75 0)
-				(length 3.81)
-				(name "B1"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -15.24 0)
-				(length 3.81)
-				(name "B2"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -12.7 0)
-				(length 3.81)
-				(name "B3"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -10.16 0)
-				(length 3.81)
-				(name "B4"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -25.4 0)
-				(length 3.81)
-				(name "B5"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -5.08 0)
-				(length 3.81)
-				(name "B6"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -7.62 0)
-				(length 3.81)
-				(name "B7"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -11.43 -2.54 0)
-				(length 3.81)
-				(name "B8"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "Driver-I2C-PCA9685-PWM"
 		(pin_names
 			(offset 0.635)
@@ -4847,6 +5265,332 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-I2C-PCA9685-PWM_0_1"
+			(polyline
+				(pts
+					(xy 5.588 -0.762) (xy 5.588 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.588 -0.762) (xy 5.715 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -0.762) (xy 5.715 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.715 -2.032) (xy 5.842 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.842 -0.762) (xy 5.842 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.842 -0.762) (xy 5.969 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.969 -0.762) (xy 5.969 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.969 -2.032) (xy 6.096 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.096 -0.762) (xy 6.096 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.096 -0.762) (xy 6.223 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.223 -0.762) (xy 6.223 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.223 -2.032) (xy 6.477 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.477 -0.762) (xy 6.477 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.477 -0.762) (xy 6.731 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.731 -0.762) (xy 6.731 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.731 -2.032) (xy 6.985 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.985 -0.762) (xy 6.985 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.985 -0.762) (xy 7.239 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.239 -0.762) (xy 7.239 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.239 -2.032) (xy 7.747 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.747 -0.762) (xy 7.747 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.747 -0.762) (xy 8.255 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.255 -0.762) (xy 8.255 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.255 -2.032) (xy 8.763 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.763 -0.762) (xy 8.763 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 8.763 -0.762) (xy 9.271 -0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 9.271 -0.762) (xy 9.271 -2.032)
+				)
+				(stroke
+					(width 0.0254)
+					(type solid)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -5626,6 +6370,102 @@
 				)
 			)
 		)
+		(symbol "Driver-I2C-PCA9685-Servo_0_1"
+			(polyline
+				(pts
+					(xy 5.842 -0.762) (xy 7.112 -1.016)
+				)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.334 -1.27)
+				(mid 5.4828 -0.9108)
+				(end 5.842 -0.762)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.842 -1.27)
+				(radius 0.381)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.842 -1.778)
+				(mid 5.4828 -1.6292)
+				(end 5.334 -1.27)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.223 -0.762) (xy 6.223 -0.508) (xy 4.826 -0.508) (xy 4.826 -2.032) (xy 6.223 -2.032) (xy 6.223 -1.778)
+				)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.112 -1.016)
+				(mid 7.2172 -1.27)
+				(end 7.112 -1.524)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 6.985 -1.27)
+				(radius 0.127)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.112 -1.524) (xy 5.842 -1.778)
+				)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
 		(symbol "Driver-I2C-PCA9685-Servo_1_1"
 			(unit_name "AA")
 			(rectangle
@@ -6101,522 +6941,6 @@
 					(effects
 						(font
 							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Driver-GPIO-Digital"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "GPIO"
-			(at -5.8352 1.9976 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Value = the board core's pin name (D4, GPIO5); the C++ build is the check."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "IODRIVER"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "IC" "GPIO"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.D" "binary bidirectional"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Driver-GPIO-Digital_0_1"
-			(rectangle
-				(start -11.43 1.27)
-				(end 7.62 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -8.89 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -8.6058 0.0118)
-				(radius 0.2893)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Driver-GPIO-Digital_1_1"
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "GPIO ${VALUE}"
-				(at -7.2707 0.1012 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Driver-GPIO-Pixel"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "GPIO"
-			(at -5.8352 1.9976 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Value = the board core's pin name."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "IODRIVER"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "IC" "GPIO"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.D" "pixel out"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Driver-GPIO-Pixel_0_1"
-			(rectangle
-				(start -11.43 1.27)
-				(end 7.62 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -8.89 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -8.6058 0.0118)
-				(radius 0.2893)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Driver-GPIO-Pixel_1_1"
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "PIXEL ${VALUE}"
-				(at -7.2707 0.1012 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin output line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "D"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Terminal"
-		(pin_names
-			(offset 1.27)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "T"
-			(at -5.8352 1.9976 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Terminal: one end of a wire that cannot be drawn. Placed in pairs with the same Value, <part>.<function>; the compiler merges the two nets within the interlocking hierarchy."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TERMINAL"
-			(at -3.5438 2.024 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Terminal_0_1"
-			(rectangle
-				(start -11.43 1.27)
-				(end 7.62 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -8.89 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -8.6058 0.0118)
-				(radius 0.2893)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Terminal_1_1"
-			(polyline
-				(pts
-					(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "${VALUE}"
-				(at -7.2707 0.1012 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin passive line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name "T"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
 						)
 					)
 				)
