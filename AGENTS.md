@@ -28,7 +28,9 @@ beside the schematics: they clutter KiCad's project navigator.
 
 ## External dependencies (outside this repo)
 
-- Symbol libraries: `~/Dropbox/KiCad/InterlockingPlant/symbols/{Railroad,RailroadPanel,RailroadField}.kicad_sym`. They are registered in the global KiCad 10 `sym-lib-table` and tracked in the InterlockingPlant git repo (no remote). They are evolving and expected to move into FieldUnit-Subdivision. **Do not copy them into this repo.** `.bak` files next to them are manual snapshots.
+- Symbol libraries (owner's rulings 2026-10-10 and 11):
+  - `symbols/RailroadPlant`, `RailroadDevice`, `RailroadDesk.kicad_sym`: the libraries, hand-maintained in the KiCad Symbol Editor since the 2026-10-11 cutover. Symbols are keyed by their fields (Role, Appliance, Style, `IC`, `Pin.*`, `Invert`), never by name. A symbol whose pins mix capabilities is multi-unit, one unit per capability, body graphics in unit 0, Value fixed, units not interchangeable, so the units mesh on a sheet and show one name. Gate: FieldUnit-Subdivision `tools/contract/lint_symbol_fields.py`; render check and contact sheet: `tools/contract/symbol_contact_sheet.py`. A bulk field edit is a one-off in-place text script, committed beside what it changed. The libraries were first generated from `~/Dropbox/KiCad/InterlockingPlant/symbols/` (its git, 96fc28f) by a recipe whose record is Subdivision `docs/review/symbol-library-triage-2026-10-10.md`; the InterlockingPlant libraries stay registered in the global `sym-lib-table` until every SPCoast sheet has migrated.
+  - `symbols/production/`: renders and the contact sheet, gitignored.
 - Tools: `~/Dropbox/workspace/FieldUnit-Subdivision/tools/`. Its AGENTS.md documents the symbol and field conventions the compiler enforces.
 - Firmware consumer: `~/Dropbox/Arduino/libraries/FieldUnit/examples/spcoast_ctc`.
 
