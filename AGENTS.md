@@ -28,8 +28,13 @@ beside the schematics: they clutter KiCad's project navigator.
 
 ## External dependencies (outside this repo)
 
-- Symbol libraries (owner's rulings 2026-10-10 and 11):
-  - `symbols/RailroadPlant`, `RailroadDevice`, `RailroadDesk.kicad_sym`: the libraries, hand-maintained in the KiCad Symbol Editor since the 2026-10-11 cutover. Symbols are keyed by their fields (Role, Appliance, Style, `IC`, `Pin.*`, `Invert`), never by name. A symbol whose pins mix capabilities is multi-unit, one unit per capability, body graphics in unit 0, Value fixed, units not interchangeable, so the units mesh on a sheet and show one name. Gate: FieldUnit-Subdivision `tools/contract/lint_symbol_fields.py`; render check and contact sheet: `tools/contract/symbol_contact_sheet.py`. A bulk field edit is a one-off in-place text script, committed beside what it changed. The libraries were first generated from `~/Dropbox/KiCad/InterlockingPlant/symbols/` (its git, 96fc28f) by a recipe whose record is Subdivision `docs/review/symbol-library-triage-2026-10-10.md`; the InterlockingPlant libraries stay registered in the global `sym-lib-table` until every SPCoast sheet has migrated.
+- Symbol libraries (owner's rulings 2026-10-10 to 12), four by the sheet they serve, hand-maintained in the KiCad Symbol Editor since the 2026-10-11 cutover:
+  - `symbols/Railroad-Trackplan.kicad_sym`: plant symbols (track, policy, structure, appliances), the layout anchor.
+  - `symbols/Railroad-Office.kicad_sym`: the CTC machine's plates, `PanelColumn`, `CtcMachine`, the code-line symbols.
+  - `symbols/Railroad-Field.kicad_sym`: device symbols that realise appliances, and the `Local-*` plates at a location.
+  - `symbols/Railroad-HardwareIO.kicad_sym`: the I2C chips, the GPIO pins, `Setting`; used on office and field sheets alike.
+  - Symbols are keyed by their fields (Role, Appliance, Style, `IC`, `Pin.*`, `Invert`), never by name. A `Pin.<base>` value is one primary word (binary, level, position, color, pixel, message); direction is the KiCad electrical type. A symbol whose pins mix word or type is multi-unit, one unit per capability, body graphics in unit 0, Value fixed, units not interchangeable. Gate: FieldUnit-Subdivision `tools/contract/lint_symbol_fields.py`; render check and contact sheet: `tools/contract/symbol_contact_sheet.py`.
+  - A bulk edit is a one-off text script in `symbols/edits/`, dated, committed with the change it made. The libraries were first generated from `~/Dropbox/KiCad/InterlockingPlant/symbols/` (its git, 96fc28f); the record is Subdivision `docs/review/symbol-library-triage-2026-10-10.md`. The InterlockingPlant libraries stay registered in the global `sym-lib-table` until every SPCoast sheet has migrated.
   - `symbols/production/`: renders and the contact sheet, gitignored.
 - Tools: `~/Dropbox/workspace/FieldUnit-Subdivision/tools/`. Its AGENTS.md documents the symbol and field conventions the compiler enforces.
 - Firmware consumer: `~/Dropbox/Arduino/libraries/FieldUnit/examples/spcoast_ctc`.

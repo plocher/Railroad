@@ -1512,1124 +1512,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Local-Lamp"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -3.81 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 5.715 -0.635 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at -0.635 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "amber"
-			(at -0.635 -8.255 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" ""
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary out"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Local-Lamp_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 255 153 0 1)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Local-Lock"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LK"
-			(at 0 -4.445 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "111"
-			(at 0.01 1.7733 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
-			(at 2.54 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "lock"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Invert" "WLK"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLQ" "binary in"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLQK" "binary out"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLK" "binary out"
-			(at -0.635 6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Local-Lock_0_1"
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -3.175 0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -1.905 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.27 2.54) (xy 1.27 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -1.905 1.905)
-				(mid -1.719 2.354)
-				(end -1.27 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 1.27 2.54)
-				(mid 1.719 2.354)
-				(end 1.905 1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 1.27) (xy 1.905 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 1.27) (xy 3.175 0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Local-Lock_1_1"
-			(arc
-				(start -3.175 -0.635)
-				(mid -3.438 0)
-				(end -3.175 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 -2.54) (xy -3.175 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 1.905 -2.54)
-				(mid 0 -3.3291)
-				(end -1.905 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 -2.54) (xy 3.175 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 3.175 0.635)
-				(mid 3.438 0)
-				(end 3.175 -0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 2.9042 -1.2759) (xy 6.35 -1.27) (xy 7.62 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "KEY"
-				(at -0.0283 -0.7959 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "LOCK"
-				(at -0.0283 -2.0659 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(pin output line
-				(at 7.62 -2.54 180)
-				(length 0)
-				(name "~{WLQ}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Local-Lock_2_1"
-			(circle
-				(center -3.175 1.905)
-				(radius 0.635)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(circle
-				(center 3.175 1.905)
-				(radius 0.635)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 2.54) (xy 6.985 3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 6.6832 0.9439) (xy 4.1462 0.9439) (xy 3.5913 1.4592)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "LOCK"
-				(at -1.7375 0.3757 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(text "UNLCK"
-				(at 1.4375 0.3757 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 0)
-				(name "~{WLQK}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 2.54 180)
-				(length 0)
-				(name "~{WLK}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Local-Switch"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "SW"
-			(at 0 -7.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at -0.0547 1.7866 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
-			(at 2.54 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "switch"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NWS" "binary in"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.RWS" "binary in"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NWK" "binary out"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.RWK" "binary out"
-			(at 0.635 -12.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Local-Switch_0_1"
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -3.175 0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.905 1.27) (xy -1.905 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.27 2.54) (xy 1.27 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -1.905 1.905)
-				(mid -1.719 2.354)
-				(end -1.27 2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 1.27 2.54)
-				(mid 1.719 2.354)
-				(end 1.905 1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 1.27) (xy 1.905 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 1.27) (xy 3.175 0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "N"
-				(at -2.54 0 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "SWITCH"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(text "R"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-		)
-		(symbol "Local-Switch_1_1"
-			(arc
-				(start -3.175 -0.635)
-				(mid -3.438 0)
-				(end -3.175 0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.2503 -4.1034) (xy -3.175 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 0.01 -3.076)
-				(radius 0.898)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 1.2897 -4.1034)
-				(mid 0.0197 -4.6295)
-				(end -1.2503 -4.1034)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.2897 -4.1034) (xy 3.175 -0.635)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 3.175 0.635)
-				(mid 3.438 0)
-				(end 3.175 -0.635)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 6.35 -1.27) (xy 2.54 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 6.35 -3.81) (xy 5.08 -3.81) (xy 3.81 -5.08) (xy -3.175 -5.08) (xy -3.81 -4.445)
-					(xy -3.81 -1.905) (xy -3.175 -1.27) (xy -2.54 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin output line
-				(at 7.62 -5.08 180)
-				(length 0)
-				(name "~{NWS}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 7.62 -2.54 180)
-				(length 0)
-				(name "~{RWS}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Local-Switch_2_1"
-			(circle
-				(center -3.175 1.905)
-				(radius 0.635)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(circle
-				(center 3.175 1.905)
-				(radius 0.635)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 255 153 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 2.54) (xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 6.6832 0.9439) (xy 4.1462 0.9439) (xy 3.5913 1.4592)
-				)
-				(stroke
-					(width 0)
-					(type default)
-					(color 72 72 0 1)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 0)
-				(name "~{RWK}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 2.54 180)
-				(length 0)
-				(name "~{NWK}"
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "PanelAuxiliary"
 		(pin_numbers
 			(hide yes)
@@ -2729,7 +1611,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary in"
+		(property "Pin.S" "binary"
 			(at 6.35 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2927,7 +1809,7 @@
 				)
 			)
 		)
-		(property "Pin.CODE" "binary in"
+		(property "Pin.CODE" "binary"
 			(at 0 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3551,7 +2433,7 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "binary out"
+		(property "Pin.LAMP" "binary"
 			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3733,7 +2615,7 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "binary out"
+		(property "Pin.LAMP" "binary"
 			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3915,7 +2797,7 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "binary out"
+		(property "Pin.LAMP" "binary"
 			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4097,7 +2979,7 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "binary out"
+		(property "Pin.LAMP" "binary"
 			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4279,7 +3161,7 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "binary out"
+		(property "Pin.LAMP" "binary"
 			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4450,7 +3332,7 @@
 				)
 			)
 		)
-		(property "Pin.WLS" "binary in"
+		(property "Pin.WLS" "binary"
 			(at 0.635 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4461,7 +3343,7 @@
 				)
 			)
 		)
-		(property "Pin.UNUSED" "binary in"
+		(property "Pin.UNUSED" "binary"
 			(at 0.635 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4472,7 +3354,7 @@
 				)
 			)
 		)
-		(property "Pin.WLQK" "binary out"
+		(property "Pin.WLQK" "binary"
 			(at 0.635 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4483,7 +3365,7 @@
 				)
 			)
 		)
-		(property "Pin.WLK" "binary out"
+		(property "Pin.WLK" "binary"
 			(at 0.635 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4982,7 +3864,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary in"
+		(property "Pin.S" "binary"
 			(at 6.35 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5193,7 +4075,7 @@
 				)
 			)
 		)
-		(property "Pin.NGS" "binary in"
+		(property "Pin.NGS" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5204,7 +4086,7 @@
 				)
 			)
 		)
-		(property "Pin.HS" "binary in"
+		(property "Pin.HS" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5215,7 +4097,7 @@
 				)
 			)
 		)
-		(property "Pin.SGS" "binary in"
+		(property "Pin.SGS" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5226,7 +4108,7 @@
 				)
 			)
 		)
-		(property "Pin.NGK" "binary out"
+		(property "Pin.NGK" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5237,7 +4119,7 @@
 				)
 			)
 		)
-		(property "Pin.SGK" "binary out"
+		(property "Pin.SGK" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5248,7 +4130,7 @@
 				)
 			)
 		)
-		(property "Pin.TEK" "binary out"
+		(property "Pin.TEK" "binary"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5827,7 +4709,7 @@
 				)
 			)
 		)
-		(property "Pin.NWS" "binary in"
+		(property "Pin.NWS" "binary"
 			(at 0.635 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5838,7 +4720,7 @@
 				)
 			)
 		)
-		(property "Pin.RWS" "binary in"
+		(property "Pin.RWS" "binary"
 			(at 0.635 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5849,7 +4731,7 @@
 				)
 			)
 		)
-		(property "Pin.NWK" "binary out"
+		(property "Pin.NWK" "binary"
 			(at 0.635 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5860,7 +4742,7 @@
 				)
 			)
 		)
-		(property "Pin.RWK" "binary out"
+		(property "Pin.RWK" "binary"
 			(at 0.635 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
