@@ -4359,9 +4359,9 @@
 			)
 		)
 		(property "Value" "816"
-			(at 130.81 81.915 0)
+			(at 130.81 80.899 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -4413,7 +4413,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4424,7 +4424,7 @@
 			)
 		)
 		(property "Style" "signal"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4435,7 +4435,7 @@
 			)
 		)
 		(property "Pin.NGS" "binary"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4446,7 +4446,7 @@
 			)
 		)
 		(property "Pin.HS" "binary"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4457,7 +4457,7 @@
 			)
 		)
 		(property "Pin.SGS" "binary"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4468,7 +4468,7 @@
 			)
 		)
 		(property "Pin.NGK" "binary"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4479,7 +4479,7 @@
 			)
 		)
 		(property "Pin.SGK" "binary"
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4490,18 +4490,7 @@
 			)
 		)
 		(property "Pin.TEK" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 130.81 83.82 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4523,204 +4512,20 @@
 		(pin "4"
 			(uuid "8179fa95-aa9e-41f7-86b1-8a579b0f984d")
 		)
+		(pin "5"
+			(uuid "bfb1cedf-41df-4405-a55a-12ec786cfcf9")
+		)
+		(pin "6"
+			(uuid "a8e1ab19-aa4d-43f8-aca9-5419a8b49899")
+		)
+		(pin "7"
+			(uuid "f1059167-0507-4ff5-b965-493c8a0215d0")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "SGL10009")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Office:PanelSignal")
-		(at 130.81 83.82 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "445e5d2d-6d75-49fe-a047-ea0a434ec9ea")
-		(property "Reference" "SGL10009"
-			(at 130.81 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "816"
-			(at 130.81 81.915 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
-			(at 128.905 70.485 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 130.81 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "signal"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NGS" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.HS" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.SGS" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NGK" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.SGK" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.TEK" "binary"
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 130.81 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "3ba78bd1-ee5f-41a2-96cf-9c2ad3998926")
-		)
-		(pin "6"
-			(uuid "fbae3d73-f686-4ff7-a354-b4357e16cd1c")
-		)
-		(pin "7"
-			(uuid "5d96ae18-aca2-449b-8f35-a0399dac977f")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "SGL10009")
-					(unit 2)
 				)
 			)
 		)
@@ -4748,8 +4553,7 @@
 			)
 		)
 		(property "Value" "0x28"
-			(at 149.86 112.395 0)
-			(hide yes)
+			(at 154.305 22.86 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4814,7 +4618,7 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4825,7 +4629,7 @@
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4836,7 +4640,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4847,7 +4651,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4858,7 +4662,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4869,7 +4673,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4880,7 +4684,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4891,7 +4695,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4902,7 +4706,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4913,7 +4717,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4924,7 +4728,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4935,7 +4739,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4946,7 +4750,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4957,7 +4761,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4968,7 +4772,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4979,7 +4783,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4990,7 +4794,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 149.86 72.39 0)
+			(at 148.59 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5080,7 +4884,7 @@
 			)
 		)
 		(property "Value" "MC"
-			(at 187.325 104.775 0)
+			(at 185.547 104.648 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5156,7 +4960,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 181.61 104.14 0)
+			(at 181.61 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5167,7 +4971,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 181.61 104.14 0)
+			(at 181.61 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5178,7 +4982,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 181.61 104.14 0)
+			(at 181.61 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5226,7 +5030,7 @@
 			)
 		)
 		(property "Value" "OS"
-			(at 136.525 27.305 0)
+			(at 134.239 27.178 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5302,7 +5106,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 130.81 26.67 0)
+			(at 130.81 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5313,7 +5117,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 130.81 26.67 0)
+			(at 130.81 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5324,7 +5128,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 130.81 26.67 0)
+			(at 130.81 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5372,7 +5176,7 @@
 			)
 		)
 		(property "Value" "TRACK"
-			(at 187.325 32.385 0)
+			(at 185.547 32.258 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5448,7 +5252,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 181.61 31.75 0)
+			(at 181.61 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5459,7 +5263,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 181.61 31.75 0)
+			(at 181.61 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5470,7 +5274,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 181.61 31.75 0)
+			(at 181.61 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5518,7 +5322,7 @@
 			)
 		)
 		(property "Value" "TRACK"
-			(at 85.725 37.465 0)
+			(at 83.947 37.338 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5594,7 +5398,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 80.01 36.83 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5605,7 +5409,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 80.01 36.83 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5616,7 +5420,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 80.01 36.83 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5664,8 +5468,7 @@
 			)
 		)
 		(property "Value" "0x29"
-			(at 200.66 112.395 0)
-			(hide yes)
+			(at 205.105 22.86 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5730,7 +5533,7 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5741,7 +5544,7 @@
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5752,7 +5555,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5763,7 +5566,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5774,7 +5577,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5785,7 +5588,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5796,7 +5599,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5807,7 +5610,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5818,7 +5621,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5829,7 +5632,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5840,7 +5643,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5851,7 +5654,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5862,7 +5665,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5873,7 +5676,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5884,7 +5687,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5895,7 +5698,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5906,7 +5709,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 200.66 72.39 0)
+			(at 199.39 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5996,7 +5799,7 @@
 			)
 		)
 		(property "Value" "813"
-			(at 80.01 61.595 0)
+			(at 80.01 60.579 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6050,7 +5853,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6061,7 +5864,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6072,7 +5875,7 @@
 			)
 		)
 		(property "Invert" "WLK"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6083,7 +5886,7 @@
 			)
 		)
 		(property "Pin.WLS" "binary"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6094,7 +5897,7 @@
 			)
 		)
 		(property "Pin.UNUSED" "binary"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6105,7 +5908,7 @@
 			)
 		)
 		(property "Pin.WLQK" "binary"
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6116,18 +5919,7 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
-			(at 80.01 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 80.01 63.5 0)
+			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6146,6 +5938,12 @@
 		(pin "3"
 			(uuid "895d446c-84dc-4430-8199-37384355c91f")
 		)
+		(pin "4"
+			(uuid "f3d4c834-4b5a-4f39-a9f2-32af8a28b6d6")
+		)
+		(pin "5"
+			(uuid "c0ce760c-28f3-4ab3-b73c-f177b368080b")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
@@ -6156,8 +5954,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelLock")
-		(at 80.01 63.5 0)
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 130.81 83.82 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6165,9 +5963,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9e94c188-4a37-4eca-ab8f-1f41c20bcbc2")
-		(property "Reference" "LKL10008"
-			(at 80.01 71.12 0)
+		(uuid "445e5d2d-6d75-49fe-a047-ea0a434ec9ea")
+		(property "Reference" "SGL10009"
+			(at 130.81 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6177,8 +5975,8 @@
 				)
 			)
 		)
-		(property "Value" "813"
-			(at 80.01 61.595 0)
+		(property "Value" "816"
+			(at 130.81 80.899 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6188,7 +5986,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 63.5 0)
+			(at 130.81 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6199,7 +5997,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 63.5 0)
+			(at 130.81 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6209,8 +6007,8 @@
 				)
 			)
 		)
-		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
-			(at 82.55 71.12 0)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 128.905 70.485 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6221,7 +6019,7 @@
 			)
 		)
 		(property "Role" "PANEL"
-			(at 80.645 74.93 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6232,7 +6030,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 80.01 63.5 0)
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6242,8 +6040,8 @@
 				)
 			)
 		)
-		(property "Style" "lock"
-			(at 80.01 63.5 0)
+		(property "Style" "signal"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6253,8 +6051,8 @@
 				)
 			)
 		)
-		(property "Invert" "WLK"
-			(at 80.01 63.5 0)
+		(property "Pin.NGS" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6264,8 +6062,8 @@
 				)
 			)
 		)
-		(property "Pin.WLS" "binary"
-			(at 80.01 63.5 0)
+		(property "Pin.HS" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6275,8 +6073,8 @@
 				)
 			)
 		)
-		(property "Pin.UNUSED" "binary"
-			(at 80.01 63.5 0)
+		(property "Pin.SGS" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6286,8 +6084,8 @@
 				)
 			)
 		)
-		(property "Pin.WLQK" "binary"
-			(at 80.01 63.5 0)
+		(property "Pin.NGK" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6297,8 +6095,8 @@
 				)
 			)
 		)
-		(property "Pin.WLK" "binary"
-			(at 80.01 63.5 0)
+		(property "Pin.SGK" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6308,8 +6106,8 @@
 				)
 			)
 		)
-		(property "ki_locked" ""
-			(at 80.01 63.5 0)
+		(property "Pin.TEK" "binary"
+			(at 130.81 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6318,17 +6116,32 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "4"
-			(uuid "c0645871-4059-44ef-ac6e-46c590990991")
 		)
 		(pin "5"
-			(uuid "20eeadd3-9b30-4c10-9450-f4c9eadd03fb")
+			(uuid "3ba78bd1-ee5f-41a2-96cf-9c2ad3998926")
+		)
+		(pin "6"
+			(uuid "fbae3d73-f686-4ff7-a354-b4357e16cd1c")
+		)
+		(pin "7"
+			(uuid "5d96ae18-aca2-449b-8f35-a0399dac977f")
+		)
+		(pin "1"
+			(uuid "d8a08e00-0efa-4c23-a401-42353b0af88d")
+		)
+		(pin "2"
+			(uuid "7f69c98f-325f-4483-8f5a-92216a003d3a")
+		)
+		(pin "3"
+			(uuid "a6e760b0-2abd-49e4-9b1e-32d81f44bf92")
+		)
+		(pin "4"
+			(uuid "a88223b5-72c1-458c-be1b-a3c684269710")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "LKL10008")
+					(reference "SGL10009")
 					(unit 2)
 				)
 			)
@@ -6357,7 +6170,7 @@
 			)
 		)
 		(property "Value" "OS"
-			(at 187.325 37.465 0)
+			(at 185.039 37.338 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6433,7 +6246,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 181.61 36.83 0)
+			(at 181.61 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6444,7 +6257,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 181.61 36.83 0)
+			(at 181.61 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6455,7 +6268,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 181.61 36.83 0)
+			(at 181.61 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6503,7 +6316,7 @@
 			)
 		)
 		(property "Value" "OS"
-			(at 85.725 32.385 0)
+			(at 83.439 32.258 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6579,7 +6392,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 80.01 31.75 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6590,7 +6403,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 80.01 31.75 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6601,7 +6414,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 80.01 31.75 0)
+			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6649,7 +6462,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 183.642 134.62 0)
+			(at 182.88 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6800,7 +6613,7 @@
 			)
 		)
 		(property "Value" "TRACK"
-			(at 85.725 27.305 0)
+			(at 83.947 27.178 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6876,7 +6689,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 80.01 26.67 0)
+			(at 80.01 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6887,7 +6700,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 80.01 26.67 0)
+			(at 80.01 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6898,7 +6711,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 80.01 26.67 0)
+			(at 80.01 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6946,7 +6759,7 @@
 			)
 		)
 		(property "Value" "CODE"
-			(at 187.325 98.425 0)
+			(at 185.928 98.425 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7000,7 +6813,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 181.61 97.79 0)
+			(at 181.61 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7011,7 +6824,7 @@
 			)
 		)
 		(property "Style" "code"
-			(at 181.61 97.79 0)
+			(at 181.61 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7022,7 +6835,7 @@
 			)
 		)
 		(property "Pin.CODE" "binary"
-			(at 181.61 97.79 0)
+			(at 181.61 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7070,7 +6883,7 @@
 			)
 		)
 		(property "Value" "817"
-			(at 181.61 61.595 0)
+			(at 181.61 60.579 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7124,7 +6937,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7135,7 +6948,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7146,7 +6959,7 @@
 			)
 		)
 		(property "Invert" "WLK"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7157,7 +6970,7 @@
 			)
 		)
 		(property "Pin.WLS" "binary"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7168,7 +6981,7 @@
 			)
 		)
 		(property "Pin.UNUSED" "binary"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7179,7 +6992,7 @@
 			)
 		)
 		(property "Pin.WLQK" "binary"
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7190,18 +7003,7 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 181.61 63.5 0)
+			(at 182.245 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7220,190 +7022,17 @@
 		(pin "3"
 			(uuid "e54905e3-ce22-4191-b181-fa3003ac8220")
 		)
+		(pin "4"
+			(uuid "08c490f1-569f-41a6-988a-f172a0fbee5a")
+		)
+		(pin "5"
+			(uuid "de2a8dec-0648-4c33-99b1-13b626804130")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "LKL10010")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Office:PanelLock")
-		(at 181.61 63.5 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "eba4d116-653e-4c98-b8fb-0ca9bfa6a6b7")
-		(property "Reference" "LKL10010"
-			(at 181.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "817"
-			(at 181.61 61.595 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
-			(at 184.15 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 182.245 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "lock"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Invert" "WLK"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLS" "binary"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.UNUSED" "binary"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLQK" "binary"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.WLK" "binary"
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 181.61 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "88d42570-7712-403d-880a-18d4d41433be")
-		)
-		(pin "5"
-			(uuid "bd8c234c-3532-48ae-a01f-08a35c209952")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "LKL10010")
-					(unit 2)
 				)
 			)
 		)
@@ -7431,7 +7060,7 @@
 			)
 		)
 		(property "Value" "9"
-			(at 132.842 134.62 0)
+			(at 132.08 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7582,8 +7211,7 @@
 			)
 		)
 		(property "Value" "0x27"
-			(at 99.06 112.395 0)
-			(hide yes)
+			(at 103.505 22.86 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7648,7 +7276,7 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7659,7 +7287,7 @@
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7670,7 +7298,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7681,7 +7309,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7692,7 +7320,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7703,7 +7331,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7714,7 +7342,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7725,7 +7353,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7736,7 +7364,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7747,7 +7375,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7758,7 +7386,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7769,7 +7397,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7780,7 +7408,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7791,7 +7419,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7802,7 +7430,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7813,7 +7441,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7824,7 +7452,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 99.06 72.39 0)
+			(at 97.79 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7892,6 +7520,183 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Office:PanelLock")
+		(at 80.01 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9e94c188-4a37-4eca-ab8f-1f41c20bcbc2")
+		(property "Reference" "LKL10008"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "813"
+			(at 80.01 60.579 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
+			(at 82.55 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "lock"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Invert" "WLK"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLS" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.UNUSED" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "c0645871-4059-44ef-ac6e-46c590990991")
+		)
+		(pin "5"
+			(uuid "20eeadd3-9b30-4c10-9450-f4c9eadd03fb")
+		)
+		(pin "1"
+			(uuid "1075e3e2-a236-4ac9-8bf8-b719e7c0a99a")
+		)
+		(pin "2"
+			(uuid "c6fbc95a-450f-41e8-8db2-b9fe1a61a644")
+		)
+		(pin "3"
+			(uuid "d9a99d96-7914-47f5-811b-4d198af39320")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "LKL10008")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:PanelLamp-YELLOW")
 		(at 80.01 104.14 0)
 		(unit 1)
@@ -7914,7 +7719,7 @@
 			)
 		)
 		(property "Value" "MC"
-			(at 85.725 104.775 0)
+			(at 83.947 104.648 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7990,7 +7795,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 80.01 104.14 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8001,7 +7806,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 80.01 104.14 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8012,7 +7817,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 80.01 104.14 0)
+			(at 80.01 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8060,7 +7865,7 @@
 			)
 		)
 		(property "Value" "815"
-			(at 130.81 61.595 0)
+			(at 130.81 60.706 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -8114,7 +7919,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8125,7 +7930,7 @@
 			)
 		)
 		(property "Style" "switch"
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8136,7 +7941,7 @@
 			)
 		)
 		(property "Pin.NWS" "binary"
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8147,7 +7952,7 @@
 			)
 		)
 		(property "Pin.RWS" "binary"
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8158,7 +7963,7 @@
 			)
 		)
 		(property "Pin.NWK" "binary"
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8169,18 +7974,7 @@
 			)
 		)
 		(property "Pin.RWK" "binary"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 130.81 63.5 0)
+			(at 131.445 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8199,179 +7993,17 @@
 		(pin "3"
 			(uuid "eb631e7c-2e8d-4189-8a91-c5fcd1fce12d")
 		)
+		(pin "4"
+			(uuid "754ee537-b8ab-45cd-a0c5-6018988d89d5")
+		)
+		(pin "5"
+			(uuid "bfe794f0-1f77-4d65-b50f-05613bfad81a")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "SWL10009")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Office:PanelSwitch")
-		(at 130.81 63.5 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ff33c5e7-eeed-49e2-bd4a-3cb594df1303")
-		(property "Reference" "SWL10009"
-			(at 130.81 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "815"
-			(at 130.81 61.595 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
-			(at 133.35 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 131.445 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "switch"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NWS" "binary"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.RWS" "binary"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.NWK" "binary"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.RWK" "binary"
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 130.81 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "8ff9bd31-1767-42b0-944f-3b36292880ad")
-		)
-		(pin "5"
-			(uuid "4e9808cd-6d60-4c26-934d-8946796d377a")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "SWL10009")
-					(unit 2)
 				)
 			)
 		)
@@ -8399,7 +8031,7 @@
 			)
 		)
 		(property "Value" "OS"
-			(at 136.525 32.385 0)
+			(at 134.239 32.258 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -8475,7 +8107,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 130.81 31.75 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8486,7 +8118,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 130.81 31.75 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8497,7 +8129,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 130.81 31.75 0)
+			(at 130.81 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8545,13 +8177,12 @@
 			)
 		)
 		(property "Value" "MC2"
-			(at 181.61 44.45 0)
-			(hide yes)
+			(at 185.928 48.895 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
 			)
 		)
@@ -8601,36 +8232,39 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 181.61 48.26 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 181.61 48.26 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
-			(at 181.61 48.26 0)
+			(at 187.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -8671,7 +8305,7 @@
 			)
 		)
 		(property "Value" "8"
-			(at 82.042 134.62 0)
+			(at 81.28 134.62 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -8822,13 +8456,12 @@
 			)
 		)
 		(property "Value" "MC1"
-			(at 80.01 44.45 0)
-			(hide yes)
+			(at 84.328 48.895 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
 			)
 		)
@@ -8878,36 +8511,39 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 80.01 48.26 0)
+			(at 86.36 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 80.01 48.26 0)
+			(at 86.36 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
-			(at 80.01 48.26 0)
+			(at 86.36 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -8921,6 +8557,183 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "MCL10008")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelLock")
+		(at 181.61 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eba4d116-653e-4c98-b8fb-0ca9bfa6a6b7")
+		(property "Reference" "LKL10010"
+			(at 181.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "817"
+			(at 181.61 60.579 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
+			(at 184.15 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "lock"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Invert" "WLK"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLS" "binary"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.UNUSED" "binary"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 182.245 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "88d42570-7712-403d-880a-18d4d41433be")
+		)
+		(pin "5"
+			(uuid "bd8c234c-3532-48ae-a01f-08a35c209952")
+		)
+		(pin "1"
+			(uuid "696804e6-da64-48bc-b460-c35632f4afcc")
+		)
+		(pin "2"
+			(uuid "293a404a-5636-4437-b616-34a5f5491862")
+		)
+		(pin "3"
+			(uuid "b212d2ed-2748-4163-b5fc-20672cdb4c26")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "LKL10010")
+					(unit 2)
 				)
 			)
 		)
@@ -8948,7 +8761,7 @@
 			)
 		)
 		(property "Value" "TRACK"
-			(at 187.325 27.305 0)
+			(at 185.547 27.178 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -9024,7 +8837,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 181.61 26.67 0)
+			(at 181.61 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9035,7 +8848,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 181.61 26.67 0)
+			(at 181.61 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9046,7 +8859,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 181.61 26.67 0)
+			(at 181.61 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9067,6 +8880,172 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "LMP10101")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelSwitch")
+		(at 130.81 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff33c5e7-eeed-49e2-bd4a-3cb594df1303")
+		(property "Reference" "SWL10009"
+			(at 130.81 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "815"
+			(at 130.81 60.706 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 133.35 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "switch"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWS" "binary"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWS" "binary"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 131.445 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "8ff9bd31-1767-42b0-944f-3b36292880ad")
+		)
+		(pin "5"
+			(uuid "4e9808cd-6d60-4c26-934d-8946796d377a")
+		)
+		(pin "1"
+			(uuid "f49ffe7e-8be7-4dd5-a571-bca813e712e9")
+		)
+		(pin "2"
+			(uuid "757f6e07-8fc6-4872-a6c6-fc2212127d7b")
+		)
+		(pin "3"
+			(uuid "1df8abc6-066f-4c4d-b602-e9e1d01bf943")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "SWL10009")
+					(unit 2)
 				)
 			)
 		)

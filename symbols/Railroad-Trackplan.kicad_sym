@@ -2022,13 +2022,14 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.905 0.635 0)
+			(at 0.635 2.667 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2201,14 +2202,14 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.27 0.635 0)
+			(at 0.508 2.667 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2351,14 +2352,14 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.27 0.635 0)
+			(at 0.635 2.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3691,6 +3692,57 @@
 					(type none)
 				)
 			)
+			(arc
+				(start -4.442 2.54)
+				(mid -4.256 2.989)
+				(end -3.807 3.175)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -3.807 3.175)
+				(mid -3.358 2.989)
+				(end -3.172 2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -3.807 1.905)
+				(mid -4.256 2.091)
+				(end -4.442 2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -3.172 2.54)
+				(mid -3.358 2.091)
+				(end -3.807 1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(pin passive line
 				(at -2.54 2.54 180)
 				(length 0)
@@ -3722,7 +3774,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "H"
-			(at -3.81 2.54 0)
+			(at -5.588 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3810,6 +3862,30 @@
 		)
 		(symbol "Signal Head - CPL_1_1"
 			(circle
+				(center -4.572 2.54)
+				(radius 0.3592)
+				(stroke
+					(width 0.0762)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(circle
+				(center -3.81 2.54)
+				(radius 0.3592)
+				(stroke
+					(width 0.0762)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(circle
 				(center -3.81 2.54)
 				(radius 1.2655)
 				(stroke
@@ -3818,6 +3894,18 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(circle
+				(center -3.048 2.54)
+				(radius 0.3592)
+				(stroke
+					(width 0.0762)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
 				)
 			)
 			(pin passive line
@@ -3841,7 +3929,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Signal Head - SemaphoreLQ2"
+	(symbol "Signal Head - Semaphore-LQ"
 		(pin_numbers
 			(hide yes)
 		)
@@ -3851,7 +3939,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "H"
-			(at -3.81 2.54 0)
+			(at -5.715 1.778 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3937,7 +4025,7 @@
 				)
 			)
 		)
-		(symbol "Signal Head - SemaphoreLQ2_0_1"
+		(symbol "Signal Head - Semaphore-LQ_0_1"
 			(polyline
 				(pts
 					(xy -2.54 2.54) (xy -5.715 2.54)
@@ -3951,11 +4039,11 @@
 				)
 			)
 		)
-		(symbol "Signal Head - SemaphoreLQ2_1_1"
+		(symbol "Signal Head - Semaphore-LQ_1_1"
 			(arc
-				(start -3.175 3.175)
-				(mid -2.989 3.624)
-				(end -2.54 3.81)
+				(start -2.54 3.81)
+				(mid -2.091 3.624)
+				(end -1.905 3.175)
 				(stroke
 					(width 0)
 					(type default)
@@ -3967,7 +4055,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 3.175) (xy -4.445 5.08)
+					(xy -2.54 3.175) (xy -2.54 5.715)
 				)
 				(stroke
 					(width 0)
@@ -3979,7 +4067,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 3.175) (xy -2.54 5.715)
+					(xy -2.54 3.175) (xy -0.381 4.699)
 				)
 				(stroke
 					(width 0)
@@ -4022,7 +4110,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Signal Head - SemaphoreUQ3"
+	(symbol "Signal Head - Semaphore-UQ"
 		(pin_numbers
 			(hide yes)
 		)
@@ -4118,7 +4206,7 @@
 				)
 			)
 		)
-		(symbol "Signal Head - SemaphoreUQ3_0_1"
+		(symbol "Signal Head - Semaphore-UQ_0_1"
 			(polyline
 				(pts
 					(xy -2.54 2.54) (xy -5.715 2.54)
@@ -4132,7 +4220,7 @@
 				)
 			)
 		)
-		(symbol "Signal Head - SemaphoreUQ3_1_1"
+		(symbol "Signal Head - Semaphore-UQ_1_1"
 			(arc
 				(start -3.175 3.175)
 				(mid -2.989 3.624)
