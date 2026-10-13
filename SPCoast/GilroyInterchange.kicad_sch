@@ -154,6 +154,206 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Trackplan:Derail"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "DERAIL"
+				(at -2.54 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP" ""
+				(at 0 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(color 72 72 72 1)
+					)
+				)
+			)
+			(property "TC" ""
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "APPLIANCE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IndicationCeiling" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(property "Appliance" "switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "derail"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Derail_1_1"
+				(polyline
+					(pts
+						(xy -6.35 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 5.08) (xy 1.27 1.905) (xy -0.635 1.905)
+					)
+					(stroke
+						(width 0.4064)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "D"
+					(at 0 3.175 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 0)
+					(name "C"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 0 180)
+					(length 0)
+					(name "R"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Trackplan:IRJ"
 			(pin_numbers
 				(hide yes)
@@ -966,13 +1166,14 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0.635 0)
+				(at 0.635 2.667 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1145,14 +1346,14 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.27 0.635 0)
+				(at 0.508 2.667 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1295,14 +1496,14 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.27 0.635 0)
+				(at 0.635 2.794 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -2376,7 +2577,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "H"
-				(at -3.81 2.54 0)
+				(at -5.588 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2464,6 +2665,30 @@
 			)
 			(symbol "Signal Head - CPL_1_1"
 				(circle
+					(center -4.572 2.54)
+					(radius 0.3592)
+					(stroke
+						(width 0.0762)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center -3.81 2.54)
+					(radius 0.3592)
+					(stroke
+						(width 0.0762)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 255 0 1)
+					)
+				)
+				(circle
 					(center -3.81 2.54)
 					(radius 1.2655)
 					(stroke
@@ -2472,6 +2697,18 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center -3.048 2.54)
+					(radius 0.3592)
+					(stroke
+						(width 0.0762)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 0 0 1)
 					)
 				)
 				(pin passive line
@@ -3083,206 +3320,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Trackplan:Derail"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DERAIL"
-				(at -2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "CP" ""
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.508 0.508)
-						(color 72 72 72 1)
-					)
-				)
-			)
-			(property "TC" ""
-				(at 7.62 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "APPLIANCE"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "IndicationCeiling" "STOP/RESTRICTING"
-				(at -1.27 0.635 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify left)
-				)
-			)
-			(property "Appliance" "switch"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "derail"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Derail_1_1"
-				(polyline
-					(pts
-						(xy -6.35 0) (xy 6.35 0)
-					)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.445 5.08) (xy 1.27 1.905) (xy -0.635 1.905)
-					)
-					(stroke
-						(width 0.4064)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "D"
-					(at 0 3.175 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 0 0)
-					(length 0)
-					(name "C"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 0 180)
-					(length 0)
-					(name "R"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -3948,14 +3985,13 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 61.47 74.68 0)
+			(at 63.5 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4059,7 +4095,7 @@
 			)
 		)
 		(property "Value" "Restricted Speed"
-			(at 120.142 64.008 0)
+			(at 120.015 64.135 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4171,7 +4207,7 @@
 			)
 		)
 		(property "Value" "778SAB"
-			(at 73.66 83.82 0)
+			(at 74.295 83.947 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4290,6 +4326,7 @@
 		)
 		(property "Value" ""
 			(at 106.68 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4392,7 +4429,7 @@
 			)
 		)
 		(property "Value" "781"
-			(at 156.21 80.26 0)
+			(at 156.21 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4469,7 +4506,7 @@
 		(property "IndicationCeiling" ""
 			(at 142.875 76.835 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.508 0.508)
@@ -4477,7 +4514,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 156.21 77.47 0)
+			(at 163.195 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4488,7 +4525,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 156.21 77.47 0)
+			(at 163.195 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4539,7 +4576,7 @@
 			)
 		)
 		(property "Value" "777"
-			(at 87.63 80.26 0)
+			(at 87.63 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4616,7 +4653,7 @@
 		(property "IndicationCeiling" ""
 			(at 100.965 76.835 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.508 0.508)
@@ -4624,7 +4661,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 87.63 77.47 0)
+			(at 80.645 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4635,7 +4672,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 87.63 77.47 0)
+			(at 80.645 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4686,14 +4723,13 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 109.982 57.658 0)
+			(at 120.65 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 2.54 2.54)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4798,7 +4834,7 @@
 			)
 		)
 		(property "Value" "778NAB"
-			(at 170.18 71.12 0)
+			(at 169.545 70.993 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4915,14 +4951,13 @@
 			)
 		)
 		(property "Value" "Gilroy South"
-			(at 163.07 45.72 0)
+			(at 168.91 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5030,7 +5065,7 @@
 			)
 		)
 		(property "Value" "MC2"
-			(at 168.91 42.926 0)
+			(at 168.91 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5140,7 +5175,7 @@
 			)
 		)
 		(property "Value" "Luchessa"
-			(at 208.534 77.216 0)
+			(at 194.945 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5570,14 +5605,13 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 180.85 74.68 0)
+			(at 182.88 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -5681,7 +5715,7 @@
 			)
 		)
 		(property "Value" "Gilroy Caltrain"
-			(at 43.942 77.47 0)
+			(at 51.435 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5689,6 +5723,7 @@
 					(size 1.27 1.27)
 					(color 0 0 0 1)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -5782,12 +5817,12 @@
 			)
 		)
 		(property "Value" "Rule 261"
-			(at 53.34 72.39 0)
+			(at 53.34 74.295 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.508 0.508)
 					(color 0 0 0 1)
 				)
 			)
@@ -6123,6 +6158,7 @@
 		)
 		(property "Value" ""
 			(at 137.16 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6335,14 +6371,13 @@
 			)
 		)
 		(property "Value" "Gilroy North"
-			(at 69.09 45.72 0)
+			(at 74.93 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6561,7 +6596,7 @@
 			)
 		)
 		(property "Value" "778SC"
-			(at 135.128 67.31 0)
+			(at 136.652 67.437 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6787,12 +6822,12 @@
 			)
 		)
 		(property "Value" "Rule 261"
-			(at 196.85 72.39 0)
+			(at 196.85 74.295 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.508 0.508)
 					(color 0 0 0 1)
 				)
 			)
@@ -6899,7 +6934,7 @@
 			)
 		)
 		(property "Value" "MC1"
-			(at 74.93 42.926 0)
+			(at 74.93 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7010,7 +7045,7 @@
 			)
 		)
 		(property "Value" "778NC"
-			(at 108.712 54.61 0)
+			(at 107.188 54.483 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7124,14 +7159,13 @@
 			)
 		)
 		(property "Value" "02T"
-			(at 118.62 74.68 0)
+			(at 120.65 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""

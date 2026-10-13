@@ -1,8 +1,7 @@
 (kicad_symbol_lib
 	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "10.0")
-	(symbol "Driver-GPIO-Digital"
+	(generator_version "10.0")	(symbol "Driver-GPIO-Digital"
 		(pin_names
 			(offset 1.27)
 		)
@@ -325,17 +324,6 @@
 					(color 0 255 0 1)
 				)
 			)
-			(circle
-				(center 20.193 0)
-				(radius 0.8519)
-				(stroke
-					(width 0.0762)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start 20.193 -0.635)
 				(mid 19.744 -0.449)
@@ -356,6 +344,17 @@
 				(stroke
 					(width 0)
 					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 20.193 0)
+				(radius 0.8519)
+				(stroke
+					(width 0.0762)
+					(type solid)
 				)
 				(fill
 					(type none)
@@ -1260,17 +1259,18 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 11.739 0.3913 0)
+			(at 7.874 0.508 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 6.35 -3.81 0)
+			(at 9.271 -2.413 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1336,13 +1336,14 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 8.89 -1.27 0)
+			(at 9.271 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
@@ -1626,6 +1627,15 @@
 					(color 132 0 0 1)
 				)
 			)
+			(text "0/1"
+				(at 5.461 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
 		)
 		(symbol "Driver-I2C-MAX7313_1_1"
 			(unit_name "AA")
@@ -1641,7 +1651,7 @@
 				)
 			)
 			(text "Type:"
-				(at 7.62 0 0)
+				(at 7.62 -0.381 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -3054,17 +3064,18 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 11.739 0.3913 0)
+			(at 7.747 0.254 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 6.35 -3.81 0)
+			(at 9.271 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3130,13 +3141,14 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 8.89 -1.27 0)
+			(at 9.398 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
@@ -3420,18 +3432,12 @@
 					(color 132 0 0 1)
 				)
 			)
-		)
-		(symbol "Driver-I2C-MCP23017_1_1"
-			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
+			(text "0/1"
+				(at 6.604 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
 				)
 			)
 			(text "Type:"
@@ -3452,20 +3458,18 @@
 					(justify right)
 				)
 			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
+		)
+		(symbol "Driver-I2C-MCP23017_1_1"
+			(unit_name "AA")
+			(rectangle
+				(start 2.54 1.27)
+				(end 15.24 -8.89)
+				(stroke
+					(width 0)
+					(type default)
 				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
+				(fill
+					(type none)
 				)
 			)
 			(pin bidirectional line
@@ -3554,40 +3558,6 @@
 					(type none)
 				)
 			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3674,40 +3644,6 @@
 					(type none)
 				)
 			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3792,40 +3728,6 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
 				)
 			)
 			(pin bidirectional line
