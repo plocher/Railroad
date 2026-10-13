@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad-Field:Device-Head-CL_3"
+		(symbol "Railroad-Field:Device-Head-CL"
 			(pin_names
 				(offset 1.27)
 			)
@@ -29,7 +29,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
+			(property "Reference" "DevHead"
 				(at -16.0874 4.4248 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -73,7 +73,7 @@
 					)
 				)
 			)
-			(property "Description" "Colour-light head realised as three lamps, one wire each. Brightness and fade are the two-point cast's settings when a lamp lands on a level-out pin."
+			(property "Description" "Color light head as one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three. On an expander or, with brightness per leg, on PWM (E71)."
 				(at 0 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -128,17 +128,6 @@
 					)
 				)
 			)
-			(property "Pin.Y" "binary"
-				(at -4.064 4.826 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
 			(property "Pin.G" "binary"
 				(at -4.064 4.826 0)
 				(show_name no)
@@ -150,7 +139,18 @@
 					)
 				)
 			)
-			(symbol "Device-Head-CL_3_0_1"
+			(property "Pin.B" "binary"
+				(at -4.064 4.826 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Device-Head-CL_0_1"
 				(rectangle
 					(start -21.59 3.81)
 					(end -2.54 -3.81)
@@ -186,7 +186,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-CL_3_1_1"
+			(symbol "Device-Head-CL_1_1"
 				(arc
 					(start -20.8243 0.3164)
 					(mid -20.6383 0.7654)
@@ -307,7 +307,7 @@
 				(pin input line
 					(at 0 0 180)
 					(length 2.54)
-					(name "~{Y}"
+					(name "~{G}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -325,7 +325,7 @@
 				(pin input line
 					(at 0 2.54 180)
 					(length 2.54)
-					(name "~{G}"
+					(name "~{B}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -352,7 +352,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
+			(property "Reference" "DevHead"
 				(at -5.1216 3.1548 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -654,7 +654,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Field:Device-Head-Semaphore-UQ-CL_3"
+		(symbol "Railroad-Field:Device-Head-Semaphore-RGB"
 			(pin_names
 				(offset 1.016)
 			)
@@ -663,7 +663,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
+			(property "Reference" "DevHead"
 				(at -6.3084 3.1548 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -707,7 +707,7 @@
 					)
 				)
 			)
-			(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+			(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
 				(at 1.143 -20.828 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -719,6 +719,39 @@
 				)
 			)
 			(property "Role" "DEVICE"
+				(at -9.779 4.318 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.B" "binary"
+				(at -9.779 4.318 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.G" "binary"
+				(at -9.779 4.318 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.R" "binary"
 				(at -9.779 4.318 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -773,7 +806,7 @@
 					)
 				)
 			)
-			(property "Style" "UQ"
+			(property "Style" "LQ, UQ"
 				(at -7.112 4.318 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -795,17 +828,6 @@
 					)
 				)
 			)
-			(property "Pin.LAMP" "color"
-				(at 4.445 4.953 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
 			(property "ki_locked" ""
 				(at 0 0 0)
 				(show_name no)
@@ -816,7 +838,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ-CL_3_1_1"
+			(symbol "Device-Head-Semaphore-RGB_1_1"
 				(rectangle
 					(start -21.59 2.54)
 					(end -2.54 0)
@@ -956,7 +978,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ-CL_3_2_1"
+			(symbol "Device-Head-Semaphore-RGB_2_1"
 				(rectangle
 					(start -21.59 -2.54)
 					(end -2.54 0)
@@ -1096,7 +1118,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ-CL_3_3_1"
+			(symbol "Device-Head-Semaphore-RGB_3_1"
 				(rectangle
 					(start -21.59 -5.08)
 					(end -2.54 -2.54)
@@ -1220,7 +1242,7 @@
 				(pin input line
 					(at 0 -3.81 180)
 					(length 2.54)
-					(name "~{Y}"
+					(name "~{B}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1236,7 +1258,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ-CL_3_4_1"
+			(symbol "Device-Head-Semaphore-RGB_4_1"
 				(rectangle
 					(start -21.59 -7.62)
 					(end -2.54 -5.08)
@@ -1367,7 +1389,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 0.381 0.381)
@@ -1387,7 +1409,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
+			(property "Reference" "DevLamp"
 				(at -15.9952 1.9976 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2425,7 +2447,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
+			(property "Reference" "DevTC"
 				(at -5.8352 1.9976 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2692,7 +2714,7 @@
 					)
 				)
 			)
-			(property "Role" "PANEL"
+			(property "Role" "DEVICE"
 				(at -0.635 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3197,7 +3219,7 @@
 					)
 				)
 			)
-			(property "Role" "PANEL"
+			(property "Role" "DEVICE"
 				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9548,7 +9570,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Trackplan:Signal Head - SemaphoreUQ3"
+		(symbol "Railroad-Trackplan:Signal Head - Semaphore-UQ"
 			(pin_numbers
 				(hide yes)
 			)
@@ -9644,7 +9666,7 @@
 					)
 				)
 			)
-			(symbol "Signal Head - SemaphoreUQ3_0_1"
+			(symbol "Signal Head - Semaphore-UQ_0_1"
 				(polyline
 					(pts
 						(xy -2.54 2.54) (xy -5.715 2.54)
@@ -9658,7 +9680,7 @@
 					)
 				)
 			)
-			(symbol "Signal Head - SemaphoreUQ3_1_1"
+			(symbol "Signal Head - Semaphore-UQ_1_1"
 				(arc
 					(start -3.175 3.175)
 					(mid -2.989 3.624)
@@ -10775,6 +10797,17 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 83.82 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "028bf426-7fdd-4852-8c62-f0436ef2aa89")
 		)
@@ -10956,7 +10989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f6d0335-f5b6-4ed2-97d2-50472d320751")
-		(property "Reference" "DevSW1"
+		(property "Reference" "DevTC1"
 			(at 75.4448 99.6024 0)
 			(hide yes)
 			(show_name no)
@@ -11065,7 +11098,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW1")
+					(reference "DevTC1")
 					(unit 1)
 				)
 			)
@@ -12980,6 +13013,17 @@
 				(justify left)
 			)
 		)
+		(property "ki_locked" ""
+			(at 91.44 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "48a1ef54-5cda-4552-ac0b-e2ef2549fe65")
 		)
@@ -13445,7 +13489,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-CL_3")
+		(lib_id "Railroad-Field:Device-Head-CL")
 		(at 160.02 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -13456,7 +13500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d02ab17-8282-4379-88d2-909af0517505")
-		(property "Reference" "DevSW6"
+		(property "Reference" "DevHead1"
 			(at 143.9326 92.0952 0)
 			(hide yes)
 			(show_name no)
@@ -13500,7 +13544,7 @@
 				)
 			)
 		)
-		(property "Description" "Colour-light head realised as three lamps, one wire each. Brightness and fade are the two-point cast's settings when a lamp lands on a level-out pin."
+		(property "Description" "Color light head as one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three. On an expander or, with brightness per leg, on PWM (E71)."
 			(at 160.02 103.124 0)
 			(hide yes)
 			(show_name no)
@@ -13555,7 +13599,7 @@
 				)
 			)
 		)
-		(property "Pin.Y" "binary"
+		(property "Pin.G" "binary"
 			(at 155.956 91.694 0)
 			(hide yes)
 			(show_name no)
@@ -13566,14 +13610,14 @@
 				)
 			)
 		)
-		(property "Pin.G" "binary"
-			(at 155.956 91.694 0)
+		(property "Pin.B" "binary"
+			(at 160.02 96.52 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13589,7 +13633,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW6")
+					(reference "DevHead1")
 					(unit 1)
 				)
 			)
@@ -13873,6 +13917,17 @@
 				(justify left)
 			)
 		)
+		(property "ki_locked" ""
+			(at 91.44 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "48a1ef54-5cda-4552-ac0b-e2ef2549fe66")
 		)
@@ -14140,6 +14195,17 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 83.82 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "89e0f9dd-8075-44fa-a749-b6488abf4e56")
 		)
@@ -14213,7 +14279,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 132.08 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -14281,7 +14347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39e95ac8-f8b4-4e9a-a7a5-843704e3219f")
-		(property "Reference" "DevSW4"
+		(property "Reference" "DevTC3"
 			(at 75.4448 130.0824 0)
 			(hide yes)
 			(show_name no)
@@ -14390,14 +14456,14 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW4")
+					(reference "DevTC3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Signal Head - SemaphoreUQ3")
+		(lib_id "Railroad-Trackplan:Signal Head - Semaphore-UQ")
 		(at 127 60.96 180)
 		(unit 1)
 		(body_style 1)
@@ -14451,7 +14517,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Upper-quadrant semaphore head, three positions: STOP (horizontal), APPROACH (45 degrees), CLEAR (vertical). The aspect set is an era fact; see FieldUnit's primer section 17."
 			(at 127 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -14862,6 +14928,17 @@
 		)
 		(property "Pin.RWK" "binary"
 			(at 84.455 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 83.82 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16128,7 +16205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "63f9be03-670e-48ae-a132-03bd80f2729e")
-		(property "Reference" "DevSW10"
+		(property "Reference" "DevLamp1"
 			(at 154.1848 109.7624 0)
 			(hide yes)
 			(show_name no)
@@ -16237,7 +16314,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW10")
+					(reference "DevLamp1")
 					(unit 1)
 				)
 			)
@@ -16480,7 +16557,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c8fd9a8-d8a6-4d1d-afcb-a61e84e024f9")
-		(property "Reference" "DevSW11"
+		(property "Reference" "DevLamp2"
 			(at 154.0926 111.1452 0)
 			(hide yes)
 			(show_name no)
@@ -16589,7 +16666,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW11")
+					(reference "DevLamp2")
 					(unit 1)
 				)
 			)
@@ -16722,7 +16799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "703d6f33-f92e-4a53-8ef8-45e55d4ef8d6")
-		(property "Reference" "DevSW7"
+		(property "Reference" "DevHead2"
 			(at 154.8984 99.7152 0)
 			(hide yes)
 			(show_name no)
@@ -16840,7 +16917,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW7")
+					(reference "DevHead2")
 					(unit 1)
 				)
 			)
@@ -17002,6 +17079,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "ki_locked" ""
+			(at 91.44 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -17956,7 +18044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "896e9eff-b2d1-4102-a9b9-4a9b485c690c")
-		(property "Reference" "DevSW8"
+		(property "Reference" "DevHead3"
 			(at 154.8984 104.7952 0)
 			(hide yes)
 			(show_name no)
@@ -18074,7 +18162,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW8")
+					(reference "DevHead3")
 					(unit 1)
 				)
 			)
@@ -18901,7 +18989,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bae79020-a1fc-4de7-b95a-50ce27f64e6d")
-		(property "Reference" "DevSW3"
+		(property "Reference" "DevTC2"
 			(at 75.4448 127.5424 0)
 			(hide yes)
 			(show_name no)
@@ -19010,7 +19098,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW3")
+					(reference "DevTC2")
 					(unit 1)
 				)
 			)
@@ -19118,7 +19206,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ-CL_3")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-RGB")
 		(at 201.93 95.25 0)
 		(unit 1)
 		(body_style 1)
@@ -19129,7 +19217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bff95f1f-d372-4632-af1a-d65b7da00eef")
-		(property "Reference" "DevSW9"
+		(property "Reference" "DevHead4"
 			(at 195.6216 92.0952 0)
 			(hide yes)
 			(show_name no)
@@ -19173,7 +19261,7 @@
 				)
 			)
 		)
-		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+		(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
 			(at 203.073 116.078 0)
 			(hide yes)
 			(show_name no)
@@ -19261,14 +19349,47 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "color"
-			(at 206.375 90.297 0)
+		(property "Pin.B" "binary"
+			(at 201.93 95.25 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.G" "binary"
+			(at 201.93 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 201.93 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 201.93 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -19287,7 +19408,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW9")
+					(reference "DevHead4")
 					(unit 1)
 				)
 			)
@@ -19648,7 +19769,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ-CL_3")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-RGB")
 		(at 160.02 115.57 0)
 		(unit 3)
 		(body_style 1)
@@ -19659,7 +19780,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6b43a70-0761-47e9-9f5e-e91afbc81a66")
-		(property "Reference" "DevSW9"
+		(property "Reference" "DevHead4"
 			(at 153.7116 112.4152 0)
 			(hide yes)
 			(show_name no)
@@ -19703,7 +19824,7 @@
 				)
 			)
 		)
-		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+		(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
 			(at 161.163 136.398 0)
 			(hide yes)
 			(show_name no)
@@ -19791,14 +19912,47 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "color"
-			(at 164.465 110.617 0)
+		(property "Pin.B" "binary"
+			(at 160.02 115.57 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.G" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -19817,7 +19971,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW9")
+					(reference "DevHead4")
 					(unit 3)
 				)
 			)
@@ -19956,6 +20110,17 @@
 		)
 		(property "Pin.WLK" "binary"
 			(at 83.185 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 83.82 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20198,7 +20363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ-CL_3")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-RGB")
 		(at 160.02 115.57 0)
 		(unit 2)
 		(body_style 1)
@@ -20209,7 +20374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de2deec1-4afa-4917-bb41-3ea601ef742c")
-		(property "Reference" "DevSW9"
+		(property "Reference" "DevHead4"
 			(at 153.7116 112.4152 0)
 			(hide yes)
 			(show_name no)
@@ -20253,7 +20418,7 @@
 				)
 			)
 		)
-		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+		(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
 			(at 161.163 136.398 0)
 			(hide yes)
 			(show_name no)
@@ -20341,14 +20506,47 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "color"
-			(at 164.465 110.617 0)
+		(property "Pin.B" "binary"
+			(at 160.02 115.57 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.G" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -20367,14 +20565,14 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW9")
+					(reference "DevHead4")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ-CL_3")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-RGB")
 		(at 160.02 115.57 0)
 		(unit 4)
 		(body_style 1)
@@ -20385,7 +20583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec08fe37-99bc-4510-8f06-88da5776a4e5")
-		(property "Reference" "DevSW9"
+		(property "Reference" "DevHead4"
 			(at 153.7116 112.4152 0)
 			(hide yes)
 			(show_name no)
@@ -20429,7 +20627,7 @@
 				)
 			)
 		)
-		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+		(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
 			(at 161.163 136.398 0)
 			(hide yes)
 			(show_name no)
@@ -20517,14 +20715,47 @@
 				)
 			)
 		)
-		(property "Pin.LAMP" "color"
-			(at 164.465 110.617 0)
+		(property "Pin.B" "binary"
+			(at 160.02 115.57 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.G" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 160.02 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -20543,7 +20774,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "DevSW9")
+					(reference "DevHead4")
 					(unit 4)
 				)
 			)

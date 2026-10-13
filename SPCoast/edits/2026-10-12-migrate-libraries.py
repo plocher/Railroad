@@ -47,7 +47,7 @@ PLANT_EXCEPTIONS = {"Switch_Powered_Derail": "Railroad-Trackplan:Derail",
 FIELD = {"Device-Detector-Optical": "Railroad-Field:Device-TrackCircuit-Optical",
          "Device-Head-3LED-Mux2": "Railroad-Field:Device-Head-CPL-Encoder",
          "Device-Head-3LED-PWM": "Railroad-Field:Device-Head-CPL",
-         "Device-Head-Semaphore-Servo": "Railroad-Field:Device-Head-Semaphore-UQ",
+         "Device-Head-Semaphore-Servo": "Railroad-Field:Device-Head-Semaphore",
          "Device-Lamp-Bit": "Railroad-Field:Device-Lamp",
          "Device-Lamp-NeoPixel": "Railroad-Field:Device-Lamp",
          "Device-Switch-Sense": "Railroad-Field:Device-Switch-ManualSensed",
@@ -57,6 +57,16 @@ FIELD = {"Device-Detector-Optical": "Railroad-Field:Device-TrackCircuit-Optical"
          "Local-Lock": "Railroad-Field:Local-Lock",
          "Local-Switch": "Railroad-Field:Local-Switch"}
 OFFICE_EXCEPTIONS = {"Driver-I2C-MAX7313": "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc"}
+# Symbols renamed in the libraries after a sheet was migrated (2026-10-13, the six-head set, E71).
+RENAMED_SYMBOLS = {"Railroad-Field:Device-Head-CL-1": "Railroad-Field:Device-Head-CL-Pixel",
+                   "Railroad-Field:Device-Head-CL_3": "Railroad-Field:Device-Head-CL",
+                   "Railroad-Field:Device-Head-Semaphore-UQ-CL": "Railroad-Field:Device-Head-Semaphore",
+                   "Railroad-Field:Device-Head-Semaphore-UQ-CL_3": "Railroad-Field:Device-Head-Semaphore-RGB",
+                   "Railroad-Field:Device-Head-Semaphore-LQ": "Railroad-Field:Device-Head-Semaphore",
+                   "Railroad-Field:Device-Head-Semaphore-UQ": "Railroad-Field:Device-Head-Semaphore",
+                   "Railroad-Field:Local-Lamp": "Railroad-Field:Device-Lamp",
+                   "Railroad-Trackplan:Signal Head - SemaphoreLQ2": "Railroad-Trackplan:Signal Head - Semaphore-LQ",
+                   "Railroad-Trackplan:Signal Head - SemaphoreUQ3": "Railroad-Trackplan:Signal Head - Semaphore-UQ"}
 
 
 def target(lib_id: str, heads: str) -> str | None | str:
@@ -70,7 +80,7 @@ def target(lib_id: str, heads: str) -> str | None | str:
     if lib == "RailroadField":
         return FIELD.get(name, "?")
     if lib.startswith("Railroad-"):
-        return lib_id                                   # already on the new libraries: pass through
+        return RENAMED_SYMBOLS.get(lib_id, lib_id)       # already on the new libraries: pass through, or renamed since
     return "?"
 
 
@@ -152,7 +162,7 @@ class Migration:
             if name in STANDARD or name == "Description":
                 continue
             if name not in lib:
-                if name in RETIRED or v == "":
+                if name in RETIRED or v == "" or name.startswith("Pin."):
                     b = b[:s - 3] + b[e:]
                     if v and name not in RETIRED:
                         pass
