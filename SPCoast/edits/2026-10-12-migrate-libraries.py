@@ -2,7 +2,7 @@
 """One-off, 2026-10-12: move every SPCoast sheet from the InterlockingPlant libraries to the four
 Railroad libraries (checkpoint step 6, the mechanical half).
 
-    python3 SPCoast/edits/2026-10-12-migrate-libraries.py [--dry-run] [--heads CL|CPL] [--project DIR]
+    python3 SPCoast/edits/2026-10-12-migrate-libraries.py [--dry-run] [--heads CL|CPL] [--project DIR] [--libdir DIR]
 
 Re-runnable: an instance already on a Railroad-* library passes through with its fields synced.
 
@@ -104,12 +104,12 @@ def new_property(name: str, value: str, at: str) -> str:
 
 
 class Migration:
-    def __init__(self, heads: str):
+    def __init__(self, heads: str, libdir: Path = LIBDIR):
         self.heads = heads
         self.lib_blocks: dict[str, str] = {}
         self.lib_syms: dict[str, dict] = {}
         for lib in LIBRARIES:
-            text = (LIBDIR / f"{lib}.kicad_sym").read_text()
+            text = (libdir / f"{lib}.kicad_sym").read_text()
             for name, b in symbol_blocks(text).items():
                 self.lib_blocks[f"{lib}:{name}"] = b
             for name, s in library_symbols(text).items():
@@ -266,12 +266,13 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--project", type=Path, default=SPCOAST, help="the SPCoast project directory")
+    ap.add_argument("--libdir", type=Path, default=None, help="the symbols directory (default: <project>/../symbols)")
     ap.add_argument("--heads", default="CPL", choices=("CL", "CPL"), help="Style for every plant head drawn as Signal Head - CL")
     a = ap.parse_args(argv)
     if any(a.project.glob("~*.lck")) and not a.dry_run:
         print("KiCad has the project open (lock files present); close it first", file=sys.stderr)
         return 1
-    m = Migration(a.heads)
+    m = Migration(a.heads, a.libdir or a.project.parent / "symbols")
     for lib_id in list(FIELD.values()) + list(OFFICE_EXCEPTIONS.values()) + [v for v in PLANT_EXCEPTIONS.values() if v]:
         assert lib_id in m.lib_blocks, lib_id
     for path in sorted(a.project.glob("*.kicad_sch")):
