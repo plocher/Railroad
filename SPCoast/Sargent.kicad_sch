@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad:AUXILIARY"
+		(symbol "Railroad-Trackplan:AUXILIARY"
 			(pin_numbers
 				(hide yes)
 			)
@@ -94,7 +94,17 @@
 					)
 				)
 			)
-			(property "Kind" "AUXILIARY"
+			(property "CP" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Appliance" "lamp"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,13 +115,14 @@
 					)
 				)
 			)
-			(property "CP" ""
-				(at 0 -2.54 0)
+			(property "Style" "non_vital"
+				(at 0 0 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -150,7 +161,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Bumper"
+		(symbol "Railroad-Trackplan:Bumper"
 			(pin_numbers
 				(hide yes)
 			)
@@ -284,7 +295,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ"
+		(symbol "Railroad-Trackplan:IRJ"
 			(pin_numbers
 				(hide yes)
 			)
@@ -436,7 +447,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ-END_CTC"
+		(symbol "Railroad-Trackplan:IRJ-END_CTC"
 			(pin_numbers
 				(hide yes)
 			)
@@ -663,7 +674,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ-Signal"
+		(symbol "Railroad-Trackplan:IRJ-Signal"
 			(pin_numbers
 				(hide yes)
 			)
@@ -844,7 +855,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Interlocking"
+		(symbol "Railroad-Trackplan:Interlocking"
 			(pin_numbers
 				(hide yes)
 			)
@@ -977,7 +988,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:MAIN HOUSE"
+		(symbol "Railroad-Trackplan:MAIN HOUSE"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1171,7 +1182,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:MaintainerCall"
+		(symbol "Railroad-Trackplan:MaintainerCall"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1244,7 +1255,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAINTAINER_CALL"
+			(property "Appliance" "lamp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "maintainer_call"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1290,7 +1312,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Double"
+		(symbol "Railroad-Trackplan:Mast_Double"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1365,7 +1387,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_DOUBLE"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "double"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1458,7 +1491,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Dwarf"
+		(symbol "Railroad-Trackplan:Mast_Dwarf"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1534,7 +1567,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_DWARF"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "dwarf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1597,7 +1641,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Single"
+		(symbol "Railroad-Trackplan:Mast_Single"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1673,7 +1717,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_SINGLE"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "single"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1748,7 +1803,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Milepost"
+		(symbol "Railroad-Trackplan:Milepost"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1805,7 +1860,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Milepost: a track anchor carrying the milepost of the point it sits on."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1816,7 +1871,18 @@
 					)
 				)
 			)
-			(property "Role" "ANNOTATION"
+			(property "Role" "TRACK"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MILEPOST"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1866,7 +1932,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:NextCP"
+		(symbol "Railroad-Trackplan:NextCP"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2033,7 +2099,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule105-RestrictedSpeed"
+		(symbol "Railroad-Trackplan:Rule105-RestrictedSpeed"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2189,7 +2255,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule251-DoT-Left"
+		(symbol "Railroad-Trackplan:Rule251-DoT-Left"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2214,12 +2280,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at 3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2246,7 +2312,7 @@
 					)
 				)
 			)
-			(property "Description" "Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
+			(property "Description" "Rule 251 (Track Signaled in One Direction): Governs movements on tracks where signals are only configured for  one direction.  Under this rule, signal indications supersede the superiority of trains for movements operating with the current of traffic.  Moving against this traffic direction requires explicit authority (such as a train order or track warrant)."
 				(at -3.175 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2259,17 +2325,6 @@
 			)
 			(property "Direction" "LEFT"
 				(at -6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "Track Signaled in One Direction"
-				(at 0.635 4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2351,7 +2406,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule251-DoT-Right"
+		(symbol "Railroad-Trackplan:Rule251-DoT-Right"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2376,12 +2431,12 @@
 				)
 			)
 			(property "Value" "RULE 251"
-				(at 0 2.54 0)
+				(at -3.175 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2502,7 +2557,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule261-DoT-BiDirectional"
+		(symbol "Railroad-Trackplan:Rule261-DoT-BiDirectional"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2679,7 +2734,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Signal Head - CL"
+		(symbol "Railroad-Trackplan:Signal Head - CPL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2731,7 +2786,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2742,7 +2797,7 @@
 					)
 				)
 			)
-			(property "Role" "COMPONENT"
+			(property "Role" "APPLIANCE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2753,7 +2808,7 @@
 					)
 				)
 			)
-			(property "Kind" "HEAD"
+			(property "Appliance" "head"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2764,7 +2819,18 @@
 					)
 				)
 			)
-			(symbol "Signal Head - CL_1_1"
+			(property "Style" "CPL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Signal Head - CPL_1_1"
 				(circle
 					(center -3.81 2.54)
 					(radius 1.2655)
@@ -2797,7 +2863,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Lock"
+		(symbol "Railroad-Trackplan:Switch_Lock"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2892,8 +2958,18 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_LOCK"
-				(at -5.715 4.445 0)
+			(property "IndicationCeiling" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Appliance" "switch"
+				(at -6.985 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2903,13 +2979,14 @@
 					)
 				)
 			)
-			(property "Indications" ""
-				(at 13.335 0.635 0)
+			(property "Style" "lock"
+				(at -6.985 6.35 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -3115,7 +3192,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Manual_Sensed"
+		(symbol "Railroad-Trackplan:Switch_Manual_Sensed"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3210,8 +3287,18 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_MANUAL_SENSED"
-				(at -1.27 -6.35 0)
+			(property "IndicationCeiling" "RESTRICTING/RESTRICTING"
+				(at 11.43 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Appliance" "switch"
+				(at -1.905 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3221,13 +3308,14 @@
 					)
 				)
 			)
-			(property "Indications" "RESTRICTING/RESTRICTING"
-				(at 11.43 0.635 0)
+			(property "Style" "manual_sensed"
+				(at -1.905 -4.445 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -3333,7 +3421,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Powered_Derail"
+		(symbol "Railroad-Trackplan:Derail"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3428,7 +3516,18 @@
 					)
 				)
 			)
-			(property "Kind" "DERAIL"
+			(property "IndicationCeiling" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(property "Appliance" "switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3439,7 +3538,18 @@
 					)
 				)
 			)
-			(symbol "Switch_Powered_Derail_1_1"
+			(property "Style" "derail"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Derail_1_1"
 				(polyline
 					(pts
 						(xy -6.35 0) (xy 6.35 0)
@@ -3511,7 +3621,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Track Circuit"
+		(symbol "Railroad-Trackplan:Track Circuit"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3596,7 +3706,7 @@
 					)
 				)
 			)
-			(property "Kind" "TRACK_CIRCUIT"
+			(property "Appliance" "track_circuit"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3642,7 +3752,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Detector-Optical"
+		(symbol "Railroad-Field:Device-TrackCircuit-Optical"
 			(pin_names
 				(offset 1.27)
 			)
@@ -3717,41 +3827,43 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "DETECTOR_OPTICAL"
-				(at 0.4991 1.9449 0)
+			(property "hold_ms" "1500"
+				(at -10.414 1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.508 0.508)
+						(thickness 0.0794)
+					)
+				)
+			)
+			(property "Appliance" "track_circuit"
+				(at -3.5438 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
 			)
-			(property "OCC" ""
-				(at 0 0 0)
+			(property "Pin.OCC" "binary"
+				(at -3.5438 2.024 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
+					(justify left)
 				)
 			)
-			(property "Hold_ms" "1500"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Device-Detector-Optical_0_1"
+			(symbol "Device-TrackCircuit-Optical_0_1"
 				(rectangle
 					(start -11.43 1.27)
 					(end 7.62 -1.27)
@@ -3764,7 +3876,7 @@
 					)
 				)
 			)
-			(symbol "Device-Detector-Optical_1_1"
+			(symbol "Device-TrackCircuit-Optical_1_1"
 				(polyline
 					(pts
 						(xy -10.16 0) (xy -10.795 0)
@@ -3801,13 +3913,34 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 8.509 0) (xy 7.874 0.635) (xy 7.874 -0.635) (xy 8.509 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(text "TC ${VALUE}"
-					(at -7.2707 0.1012 0)
+					(at -7.874 0.381 0)
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 						(justify left)
+					)
+				)
+				(text "${hold_ms} ms"
+					(at -5.969 -0.762 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
 					)
 				)
 				(pin output line
@@ -3831,7 +3964,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Head-3LED-Mux2"
+		(symbol "Railroad-Field:Device-Head-CPL-Encoder"
 			(pin_names
 				(offset 1.27)
 			)
@@ -3841,7 +3974,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "DevSW"
-				(at -5.9274 3.1548 0)
+				(at -5.1216 3.1548 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -3884,8 +4017,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Colour-light head driven by a two-bit select code; the decoder on the head is field hardware."
+				(at -0.127 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3896,7 +4029,29 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -5.08 0 0)
+				(at 9.525 4.064 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Appliance" "head"
+				(at -0.762 3.175 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" "CPL"
+				(at -18.288 -0.127 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -3905,21 +4060,32 @@
 					)
 				)
 			)
-			(property "Kind" "HEAD_3LED_MUX2"
-				(at -6.8229 -1.3712 0)
+			(property "Pin.S0" "binary"
+				(at -16.256 -3.175 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.635 0.635)
 					)
-					(justify left)
 				)
 			)
-			(symbol "Device-Head-3LED-Mux2_0_1"
+			(property "Pin.S1" "binary"
+				(at -16.256 -3.175 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Device-Head-CPL-Encoder_0_1"
 				(rectangle
-					(start -11.43 2.54)
-					(end 7.62 -2.54)
+					(start -21.59 2.54)
+					(end -2.54 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -3930,7 +4096,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.795 1.905) (xy -10.795 -1.905)
+						(xy -20.955 1.905) (xy -20.955 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -3941,9 +4107,9 @@
 					)
 				)
 				(arc
-					(start -10.795 1.905)
-					(mid -10.16 2.168)
-					(end -9.525 1.905)
+					(start -20.955 1.905)
+					(mid -20.32 2.168)
+					(end -19.685 1.905)
 					(stroke
 						(width 0)
 						(type default)
@@ -3953,9 +4119,9 @@
 					)
 				)
 				(arc
-					(start -9.525 -1.905)
-					(mid -10.16 -2.168)
-					(end -10.795 -1.905)
+					(start -19.685 -1.905)
+					(mid -20.32 -2.168)
+					(end -20.955 -1.905)
 					(stroke
 						(width 0)
 						(type default)
@@ -3966,7 +4132,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.1593 -2.2214) (xy -10.16 -2.54)
+						(xy -20.3193 -2.2214) (xy -20.32 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -3978,7 +4144,7 @@
 				)
 				(polyline
 					(pts
-						(xy -9.525 1.905) (xy -9.525 -1.905)
+						(xy -19.685 1.905) (xy -19.685 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -3989,9 +4155,9 @@
 					)
 				)
 			)
-			(symbol "Device-Head-3LED-Mux2_1_1"
+			(symbol "Device-Head-CPL-Encoder_1_1"
 				(circle
-					(center -10.16 1.27)
+					(center -20.32 1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4003,7 +4169,7 @@
 					)
 				)
 				(circle
-					(center -10.16 0)
+					(center -20.32 0)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4015,7 +4181,7 @@
 					)
 				)
 				(circle
-					(center -10.16 -1.27)
+					(center -20.32 -1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4026,8 +4192,43 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -3.429 1.27) (xy -2.794 1.905) (xy -2.794 0.635) (xy -3.429 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 -1.27) (xy -2.794 -0.635) (xy -2.794 -1.905) (xy -3.429 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "0 0 Green\n0 1 Yellow\n1 0 Red\n1 1 Dark"
+					(at -28.321 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
 				(text "HEAD ${VALUE}"
-					(at -7.218 1.3901 0)
+					(at -19.431 1.397 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -4036,7 +4237,7 @@
 					)
 				)
 				(pin input line
-					(at 10.16 1.27 180)
+					(at 0 1.27 180)
 					(length 2.54)
 					(name "S0"
 						(effects
@@ -4054,7 +4255,7 @@
 					)
 				)
 				(pin input line
-					(at 10.16 -1.27 180)
+					(at 0 -1.27 180)
 					(length 2.54)
 					(name "S1"
 						(effects
@@ -4074,7 +4275,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Head-3LED-PWM"
+		(symbol "Railroad-Field:Device-Head-CPL"
 			(pin_names
 				(offset 1.27)
 			)
@@ -4084,7 +4285,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "DevSW"
-				(at -5.9274 3.1548 0)
+				(at -16.0874 4.4248 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -4098,7 +4299,6 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4127,8 +4327,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Colour-light head realised as three lamps, one wire each. Brightness and fade are the two-point cast's settings when a lamp lands on a level-out pin."
+				(at 0 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4139,41 +4339,75 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -5.08 -2.54 0)
+				(at -5.334 3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.635 0.635)
 					)
 				)
 			)
-			(property "Kind" "HEAD_3LED_PWM"
-				(at -6.8229 -3.9112 0)
+			(property "Appliance" "head"
+				(at -4.064 4.826 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" "CPL"
+				(at -18.796 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
 			)
-			(property "Fade_ms" ""
-				(at 0 0 0)
+			(property "Pin.R" "binary"
+				(at -4.064 4.826 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
-			(symbol "Device-Head-3LED-PWM_0_1"
+			(property "Pin.Y" "binary"
+				(at -4.064 4.826 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.G" "binary"
+				(at -4.064 4.826 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Device-Head-CPL_0_1"
 				(rectangle
-					(start -11.43 2.54)
-					(end 7.62 -5.08)
+					(start -21.59 3.81)
+					(end -2.54 -3.81)
 					(stroke
 						(width 0)
 						(type default)
@@ -4184,7 +4418,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.795 0.635) (xy -10.795 -3.175)
+						(xy -20.955 1.905) (xy -20.955 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -4195,9 +4429,9 @@
 					)
 				)
 				(arc
-					(start -10.795 0.635)
-					(mid -10.16 0.898)
-					(end -9.525 0.635)
+					(start -20.955 1.905)
+					(mid -20.32 2.168)
+					(end -19.685 1.905)
 					(stroke
 						(width 0)
 						(type default)
@@ -4207,9 +4441,9 @@
 					)
 				)
 				(arc
-					(start -9.525 -3.175)
-					(mid -10.16 -3.438)
-					(end -10.795 -3.175)
+					(start -19.685 -1.905)
+					(mid -20.32 -2.168)
+					(end -20.955 -1.905)
 					(stroke
 						(width 0)
 						(type default)
@@ -4220,7 +4454,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.1593 -3.4914) (xy -10.16 -3.81)
+						(xy -20.3193 -2.2214) (xy -20.32 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -4232,7 +4466,7 @@
 				)
 				(polyline
 					(pts
-						(xy -9.525 0.635) (xy -9.525 -3.175)
+						(xy -19.685 1.905) (xy -19.685 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -4243,9 +4477,9 @@
 					)
 				)
 			)
-			(symbol "Device-Head-3LED-PWM_1_1"
+			(symbol "Device-Head-CPL_1_1"
 				(circle
-					(center -10.16 0)
+					(center -20.32 1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4257,7 +4491,7 @@
 					)
 				)
 				(circle
-					(center -10.16 -1.27)
+					(center -20.32 0)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4269,7 +4503,7 @@
 					)
 				)
 				(circle
-					(center -10.16 -2.54)
+					(center -20.32 -1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4280,8 +4514,47 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -3.429 2.54) (xy -2.794 3.175) (xy -2.794 1.905) (xy -3.429 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 0) (xy -2.794 0.635) (xy -2.794 -0.635) (xy -3.429 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 -2.54) (xy -2.794 -1.905) (xy -2.794 -3.175) (xy -3.429 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(text "HEAD ${VALUE}"
-					(at -7.218 1.3901 0)
+					(at -18.923 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -4290,9 +4563,9 @@
 					)
 				)
 				(pin input line
-					(at 10.16 1.27 180)
+					(at 0 -2.54 180)
 					(length 2.54)
-					(name "R"
+					(name "~{R}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4308,9 +4581,9 @@
 					)
 				)
 				(pin input line
-					(at 10.16 -1.27 180)
+					(at 0 0 180)
 					(length 2.54)
-					(name "Y"
+					(name "~{Y}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4326,9 +4599,9 @@
 					)
 				)
 				(pin input line
-					(at 10.16 -3.81 180)
+					(at 0 2.54 180)
 					(length 2.54)
-					(name "G"
+					(name "~{G}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4346,9 +4619,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Head-Semaphore-Servo"
+		(symbol "Railroad-Field:Device-Head-Semaphore-UQ"
 			(pin_names
-				(offset 1.27)
+				(offset 0.889)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4356,7 +4629,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "DevSW"
-				(at -5.9274 3.1548 0)
+				(at -6.3084 3.1548 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -4369,7 +4642,7 @@
 			(property "Value" ""
 				(at 0 0 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
@@ -4399,8 +4672,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+				(at 0.889 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4411,63 +4684,107 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -5.08 0 0)
+				(at -9.779 4.318 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.635 0.635)
 					)
 				)
 			)
-			(property "Kind" "HEAD_SEMAPHORE_SERVO"
-				(at -6.8229 -1.3712 0)
+			(property "stop_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "approach_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "clear_deg" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Appliance" "head"
+				(at -10.16 3.175 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.635 0.635)
 					)
-					(justify left)
 				)
 			)
-			(property "Stop_deg" ""
+			(property "Style" "UQ"
+				(at -7.112 4.318 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.ARM" "position"
+				(at 4.826 3.937 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.LAMP" "binary"
+				(at 4.445 4.953 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Approach_deg" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Clear_deg" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Device-Head-Semaphore-Servo_0_1"
+			(symbol "Device-Head-Semaphore-UQ_1_1"
 				(rectangle
-					(start -11.43 2.54)
-					(end 7.62 -2.54)
+					(start -21.59 2.54)
+					(end -2.54 0)
 					(stroke
 						(width 0)
 						(type default)
@@ -4478,19 +4795,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.795 1.27) (xy -10.795 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.795 0) (xy -9.525 0)
+						(xy -20.955 2.286) (xy -20.955 0.254)
 					)
 					(stroke
 						(width 0)
@@ -4502,7 +4807,7 @@
 				)
 				(polyline
 					(pts
-						(xy -9.8367 1.0849) (xy -10.795 0)
+						(xy -20.955 1.27) (xy -19.685 1.27)
 					)
 					(stroke
 						(width 0)
@@ -4512,10 +4817,8 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Device-Head-Semaphore-Servo_1_1"
 				(circle
-					(center -10.16 -0.635)
+					(center -20.32 0.635)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -4526,17 +4829,42 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -20.066 2.032) (xy -20.955 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 1.27) (xy -2.794 1.905) (xy -2.794 0.635) (xy -3.429 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(text "HEAD ${VALUE}"
-					(at -7.218 1.3901 0)
+					(at -7.62 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
-						(justify left)
+						(justify right)
 					)
 				)
 				(pin input line
-					(at 10.16 1.27 180)
+					(at 0 1.27 180)
 					(length 2.54)
 					(name "ARM"
 						(effects
@@ -4553,10 +4881,93 @@
 						)
 					)
 				)
+			)
+			(symbol "Device-Head-Semaphore-UQ_2_1"
+				(rectangle
+					(start -21.59 -2.54)
+					(end -2.54 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -21.209 -0.254) (xy -21.209 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -21.209 -1.27) (xy -19.939 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -20.574 -1.905)
+					(radius 0.4033)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.32 -0.508) (xy -21.209 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 -1.27) (xy -2.794 -1.905) (xy -2.794 -0.635) (xy -3.429 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "HEAD ${VALUE}"
+					(at -7.62 -1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify right)
+					)
+				)
 				(pin input line
-					(at 10.16 -1.27 180)
+					(at 0 -1.27 180)
 					(length 2.54)
-					(name "LAMP"
+					(name "~{LAMP}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4574,7 +4985,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Lamp-Bit"
+		(symbol "Railroad-Field:Device-Lamp"
 			(pin_names
 				(offset 1.27)
 			)
@@ -4584,7 +4995,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "DevSW"
-				(at -5.8352 1.9976 0)
+				(at -15.9952 1.9976 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -4627,8 +5038,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Lamp: one binary output, lit or dark. On a level-out pin they gain brightness and fade; on a pixel bus it carries an Address and colour."
+				(at -0.127 -3.048 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4650,56 +5061,46 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "LAMP_BIT"
-				(at 0.4991 1.9449 0)
+			(property "Appliance" "lamp"
+				(at -3.5438 2.024 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
 			)
-			(property "OUT" ""
-				(at 0 0 0)
+			(property "Address" ""
+				(at -3.5438 2.024 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
+					(justify left)
 				)
 			)
-			(symbol "Device-Lamp-Bit_0_1"
+			(property "Pin.LAMP" "binary"
+				(at -3.5438 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(symbol "Device-Lamp_0_1"
 				(rectangle
-					(start -11.43 1.27)
-					(end 7.62 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -9.525 0) (xy -8.89 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -8.6058 0.0118)
-					(radius 0.2893)
+					(start -21.59 1.27)
+					(end -2.54 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -4709,10 +5110,22 @@
 					)
 				)
 			)
-			(symbol "Device-Lamp-Bit_1_1"
+			(symbol "Device-Lamp_1_1"
+				(circle
+					(center -20.574 0)
+					(radius 0.4033)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 0 0 1)
+					)
+				)
 				(polyline
 					(pts
-						(xy -9.525 0) (xy -10.16 0.635) (xy -10.16 -0.635) (xy -9.525 0)
+						(xy -1.651 0) (xy -2.286 0.635) (xy -2.286 -0.635) (xy -1.651 0)
 					)
 					(stroke
 						(width 0)
@@ -4723,8 +5136,8 @@
 						(color 132 0 0 1)
 					)
 				)
-				(text "I/O ${VALUE}"
-					(at -7.2707 0.1012 0)
+				(text "LAMP ${VALUE}"
+					(at -19.685 0 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -4733,9 +5146,9 @@
 					)
 				)
 				(pin input line
-					(at 10.16 0 180)
+					(at 0 0 180)
 					(length 2.54)
-					(name "~{OUT}"
+					(name "~{LAMP}"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4753,195 +5166,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Lamp-NeoPixel"
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevSW"
-				(at -5.9274 3.1548 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Chain <name> for multiple strings, Index <number> for position in string"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "DEVICE"
-				(at -5.08 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Kind" "LAMP_NEOPIXEL"
-				(at -2.54 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "Chain" ""
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "Index" ""
-				(at 2.54 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(symbol "Device-Lamp-NeoPixel_0_1"
-				(rectangle
-					(start -11.43 2.54)
-					(end 7.62 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -10.16 0.635)
-					(radius 0.898)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.1593 -0.3164) (xy -10.16 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Device-Lamp-NeoPixel_1_1"
-				(circle
-					(center -10.16 0.635)
-					(radius 0.4033)
-					(stroke
-						(width 0.1016)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 0 0 1)
-					)
-				)
-				(text "NeoPixel ${VALUE}"
-					(at -7.218 1.3901 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(text "Chain"
-					(at -5.08 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Index"
-					(at 1.27 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "RailroadField:Device-Switch-Sense"
+		(symbol "Railroad-Field:Device-Switch-ManualSensed"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5005,9 +5230,10 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -7.0111 -0.4377 0)
+				(at -7.874 4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -5016,10 +5242,11 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "SWITCH_SENSE"
-				(at -7.0233 -1.3619 0)
+			(property "Appliance" "switch"
+				(at -7.874 4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -5028,29 +5255,46 @@
 					(justify left)
 				)
 			)
-			(property "N" ""
-				(at 0 0 0)
+			(property "Style" "manual_sensed"
+				(at -7.874 4.445 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
+						(thickness 0.0635)
 					)
+					(justify left)
 				)
 			)
-			(property "R" ""
-				(at 0 0 0)
+			(property "Pin.N" "binary"
+				(at -7.874 4.445 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
+						(thickness 0.0635)
 					)
+					(justify left)
 				)
 			)
-			(symbol "Device-Switch-Sense_0_1"
+			(property "Pin.R" "binary"
+				(at -7.874 4.445 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(symbol "Device-Switch-ManualSensed_0_1"
 				(rectangle
 					(start -11.43 2.54)
 					(end 7.62 -2.54)
@@ -5064,7 +5308,7 @@
 				)
 				(polyline
 					(pts
-						(xy -11.0553 -1.471) (xy -8.5153 -1.471)
+						(xy -10.9283 -0.582) (xy -8.3883 -0.582)
 					)
 					(stroke
 						(width 0)
@@ -5076,7 +5320,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.4605 -1.1777) (xy -9.8255 -1.1777) (xy -8.5555 0.0923)
+						(xy -10.3335 -0.2887) (xy -9.6985 -0.2887) (xy -8.4285 0.9813)
 					)
 					(stroke
 						(width 0)
@@ -5087,9 +5331,35 @@
 					)
 				)
 			)
-			(symbol "Device-Switch-Sense_1_1"
+			(symbol "Device-Switch-ManualSensed_1_1"
+				(polyline
+					(pts
+						(xy 8.509 1.27) (xy 7.874 1.905) (xy 7.874 0.635) (xy 8.509 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.509 -1.27) (xy 7.874 -0.635) (xy 7.874 -1.905) (xy 8.509 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(text "H"
-					(at -10.16 -0.635 0)
+					(at -10.033 0.254 0)
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -5097,7 +5367,7 @@
 					)
 				)
 				(text "SW ${VALUE}"
-					(at -7.218 1.3901 0)
+					(at -7.112 0 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5144,7 +5414,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Device-Switch-StallMotor-Sensed-OS"
+		(symbol "Railroad-Field:Device-Switch-OS"
 			(pin_names
 				(offset 1.27)
 			)
@@ -5167,7 +5437,7 @@
 			(property "Value" ""
 				(at 0 0 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
@@ -5197,8 +5467,8 @@
 					)
 				)
 			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
+				(at 2.54 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5209,9 +5479,10 @@
 				)
 			)
 			(property "Role" "DEVICE"
-				(at -6.9933 -3.0244 0)
+				(at -2.54 5.842 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -5220,10 +5491,11 @@
 					(justify left)
 				)
 			)
-			(property "Kind" "SWITCH_STALL_SENSED"
-				(at -6.985 -3.81 0)
+			(property "Appliance" "switch"
+				(at -2.54 5.842 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -5232,54 +5504,85 @@
 					(justify left)
 				)
 			)
-			(property "N" ""
+			(property "Style" "powered, lock, dual"
+				(at -2.54 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.M" "binary"
+				(at -2.54 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.N" "binary"
+				(at -2.54 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.R" "binary"
+				(at -2.54 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.OCC" "binary"
+				(at -2.54 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+						(thickness 0.0635)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
-				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "R" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "OCC" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "NormalIs" "HIGH"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Device-Switch-StallMotor-Sensed-OS_0_1"
+			(symbol "Device-Switch-OS_1_1"
 				(rectangle
-					(start -11.43 5.08)
-					(end 7.62 -5.08)
+					(start -21.59 5.08)
+					(end -2.54 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -5290,31 +5593,7 @@
 				)
 				(polyline
 					(pts
-						(xy -10.795 -3.81) (xy -8.255 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.212 -3.5125) (xy -10.212 -2.8775)
-					)
-					(stroke
-						(width 0.1016)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -10.2002 -3.5167) (xy -9.5652 -3.5167) (xy -8.2952 -2.2467)
+						(xy -20.828 3.302) (xy -18.288 3.302)
 					)
 					(stroke
 						(width 0)
@@ -5326,7 +5605,7 @@
 				)
 				(polyline
 					(pts
-						(xy -9.9032 -3.5127) (xy -9.9032 -2.8777)
+						(xy -20.245 3.5995) (xy -20.245 4.2345)
 					)
 					(stroke
 						(width 0.1016)
@@ -5338,7 +5617,19 @@
 				)
 				(polyline
 					(pts
-						(xy -9.577 -3.5125) (xy -9.577 -2.8775)
+						(xy -20.2332 3.5953) (xy -19.5982 3.5953) (xy -18.3282 4.8653)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -19.9362 3.5993) (xy -19.9362 4.2343)
 					)
 					(stroke
 						(width 0.1016)
@@ -5348,10 +5639,20 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Device-Switch-StallMotor-Sensed-OS_1_1"
+				(polyline
+					(pts
+						(xy -19.61 3.5995) (xy -19.61 4.2345)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -8.847 -2.7561)
+					(center -18.88 4.3559)
 					(radius 0.2592)
 					(stroke
 						(width 0.1016)
@@ -5363,7 +5664,7 @@
 					)
 				)
 				(circle
-					(center -8.7946 -3.7851)
+					(center -18.8276 3.3269)
 					(radius 0.2592)
 					(stroke
 						(width 0.1016)
@@ -5375,7 +5676,7 @@
 					)
 				)
 				(text "SW ${VALUE}"
-					(at -7.1521 3.9112 0)
+					(at -17.78 3.81 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5384,7 +5685,7 @@
 					)
 				)
 				(pin input line
-					(at 10.16 3.81 180)
+					(at 0 3.81 180)
 					(length 2.54)
 					(name "M"
 						(effects
@@ -5401,8 +5702,140 @@
 						)
 					)
 				)
+			)
+			(symbol "Device-Switch-OS_2_1"
+				(rectangle
+					(start -21.59 2.54)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.828 -0.508) (xy -18.288 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.245 -0.2105) (xy -20.245 0.4245)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.2332 -0.2147) (xy -19.5982 -0.2147) (xy -18.3282 1.0553)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -19.9362 -0.2107) (xy -19.9362 0.4243)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -19.61 -0.2105) (xy -19.61 0.4245)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -18.88 0.5459)
+					(radius 0.2592)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(circle
+					(center -18.8276 -0.4831)
+					(radius 0.2592)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 1.27) (xy -2.286 1.905) (xy -2.286 0.635) (xy -1.651 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 -1.27) (xy -2.286 -0.635) (xy -2.286 -1.905) (xy -1.651 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "SW ${VALUE}"
+					(at -17.78 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
 				(pin output line
-					(at 10.16 1.27 180)
+					(at 0 1.27 180)
 					(length 2.54)
 					(name "~{N}"
 						(effects
@@ -5420,7 +5853,7 @@
 					)
 				)
 				(pin output line
-					(at 10.16 -1.27 180)
+					(at 0 -1.27 180)
 					(length 2.54)
 					(name "~{R}"
 						(effects
@@ -5437,8 +5870,114 @@
 						)
 					)
 				)
+			)
+			(symbol "Device-Switch-OS_3_1"
+				(rectangle
+					(start -21.59 -2.54)
+					(end -2.54 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.828 -4.318) (xy -18.288 -4.318)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.245 -4.0205) (xy -20.245 -3.3855)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -20.2332 -4.0247) (xy -19.5982 -4.0247) (xy -18.3282 -2.7547)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -19.9362 -4.0207) (xy -19.9362 -3.3857)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -19.61 -4.0205) (xy -19.61 -3.3855)
+					)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -18.88 -3.2641)
+					(radius 0.2592)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(circle
+					(center -18.8276 -4.2931)
+					(radius 0.2592)
+					(stroke
+						(width 0.1016)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(text "SW ${VALUE}"
+					(at -17.78 -3.81 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
 				(pin output line
-					(at 10.16 -3.81 180)
+					(at 0 -3.81 180)
 					(length 2.54)
 					(name "~{OCC}"
 						(effects
@@ -5458,9 +5997,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Driver-I2C-MCP23017"
+		(symbol "Railroad-HardwareIO:Driver-I2C-MCP23017"
 			(pin_names
-				(offset 0.635)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -5510,7 +6049,7 @@
 					)
 				)
 			)
-			(property "Description" "16 bit I2C digital IO Expander"
+			(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 				(at 20.32 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5532,17 +6071,6 @@
 					)
 				)
 			)
-			(property "Kind" "I2C-MCP23017"
-				(at 6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
 			(property "Address" "0x20"
 				(at 11.43 -3.81 0)
 				(show_name no)
@@ -5551,6 +6079,298 @@
 				(effects
 					(font
 						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IC" "MCP23017"
+				(at 8.89 -1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.A1" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A2" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A3" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A4" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A5" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A6" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A7" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A8" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B1" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B2" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B3" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B4" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B5" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B6" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B7" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B8" "binary"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-I2C-MCP23017_0_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -5.08) (xy 2.286 -5.715) (xy 2.286 -4.445) (xy 1.651 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -7.62) (xy 2.286 -8.255) (xy 2.286 -6.985) (xy 1.651 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 -2.54) (xy 2.794 -1.905) (xy 2.794 -3.175) (xy 3.429 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 -5.08) (xy 2.794 -4.445) (xy 2.794 -5.715) (xy 3.429 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 -7.62) (xy 2.794 -6.985) (xy 2.794 -8.255) (xy 3.429 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 			)
@@ -6036,7 +6856,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Driver-I2C-PCA9685"
+		(symbol "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM"
 			(pin_names
 				(offset 0.635)
 			)
@@ -6046,22 +6866,23 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Exp"
-				(at 11.739 0.3913 0)
+				(at 9.398 0.127 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 0.889 0.889)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "${ADDRESS}"
-				(at 6.35 -3.81 0)
+				(at 9.398 -2.667 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
@@ -6088,7 +6909,7 @@
 					)
 				)
 			)
-			(property "Description" "16 channel I2C PWM Expander"
+			(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
 				(at 20.32 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6110,19 +6931,8 @@
 					)
 				)
 			)
-			(property "Kind" "I2C-PCA9685"
-				(at 6.35 -1.27 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
 			(property "Address" "0x20"
-				(at 11.43 -3.81 0)
+				(at 16.891 -2.667 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6132,7 +6942,600 @@
 					)
 				)
 			)
-			(symbol "Driver-I2C-PCA9685_1_1"
+			(property "IC" "PCA9685"
+				(at 11.557 -1.524 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "frequency_hz" ""
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A1" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A2" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A3" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A4" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A5" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A6" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A7" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A8" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B1" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B2" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B3" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B4" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B5" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B6" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B7" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B8" "level"
+				(at -5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-I2C-PCA9685-PWM_0_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -5.08) (xy 2.286 -5.715) (xy 2.286 -4.445) (xy 1.651 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.651 -7.62) (xy 2.286 -8.255) (xy 2.286 -6.985) (xy 1.651 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 -0.762) (xy 5.588 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 -0.762) (xy 5.715 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -0.762) (xy 5.715 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 -2.032) (xy 5.842 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 -0.762) (xy 5.842 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.842 -0.762) (xy 5.969 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.969 -0.762) (xy 5.969 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.969 -2.032) (xy 6.096 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -0.762) (xy 6.096 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -0.762) (xy 6.223 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.223 -0.762) (xy 6.223 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.223 -2.032) (xy 6.477 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.477 -0.762) (xy 6.477 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.477 -0.762) (xy 6.731 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.731 -0.762) (xy 6.731 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.731 -2.032) (xy 6.985 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.985 -0.762) (xy 6.985 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.985 -0.762) (xy 7.239 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.239 -0.762) (xy 7.239 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.239 -2.032) (xy 7.747 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.747 -0.762) (xy 7.747 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.747 -0.762) (xy 8.255 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.255 -0.762) (xy 8.255 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.255 -2.032) (xy 8.763 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.763 -0.762) (xy 8.763 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.763 -0.762) (xy 9.271 -0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 9.271 -0.762) (xy 9.271 -2.032)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Type:"
+					(at 7.62 -0.127 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(text "Address:"
+					(at 8.89 -2.667 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+			)
+			(symbol "Driver-I2C-PCA9685-PWM_1_1"
 				(unit_name "AA")
 				(rectangle
 					(start 2.54 1.27)
@@ -6143,24 +7546,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "Type:"
-					(at 7.62 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Address:"
-					(at 8.89 -2.54 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
 					)
 				)
 				(text "I2C Expander"
@@ -6252,7 +7637,7 @@
 					)
 				)
 			)
-			(symbol "Driver-I2C-PCA9685_2_1"
+			(symbol "Driver-I2C-PCA9685-PWM_2_1"
 				(unit_name "AB")
 				(rectangle
 					(start 2.54 1.27)
@@ -6263,40 +7648,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "Type:"
-					(at 7.62 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Address:"
-					(at 8.89 -2.54 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "I2C Expander"
-					(at 10.16 -6.35 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "12-bit PWM"
-					(at 10.16 -7.62 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin output line
@@ -6372,7 +7723,7 @@
 					)
 				)
 			)
-			(symbol "Driver-I2C-PCA9685_3_1"
+			(symbol "Driver-I2C-PCA9685-PWM_3_1"
 				(unit_name "BA")
 				(rectangle
 					(start 2.54 1.27)
@@ -6383,40 +7734,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "Type:"
-					(at 7.62 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Address:"
-					(at 8.89 -2.54 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "I2C Expander"
-					(at 10.16 -6.35 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "12-bit PWM"
-					(at 10.16 -7.62 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin output line
@@ -6492,7 +7809,7 @@
 					)
 				)
 			)
-			(symbol "Driver-I2C-PCA9685_4_1"
+			(symbol "Driver-I2C-PCA9685-PWM_4_1"
 				(unit_name "BB")
 				(rectangle
 					(start 2.54 1.27)
@@ -6503,40 +7820,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "Type:"
-					(at 7.62 0 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Address:"
-					(at 8.89 -2.54 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "I2C Expander"
-					(at 10.16 -6.35 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "12-bit PWM"
-					(at 10.16 -7.62 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin output line
@@ -6614,7 +7897,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Local-Lock"
+		(symbol "Railroad-Field:Local-Lock"
 			(pin_numbers
 				(hide yes)
 			)
@@ -6634,7 +7917,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "111"
 				(at 0.01 1.7733 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -6666,7 +7949,7 @@
 					)
 				)
 			)
-			(property "Description" "Local crew-controlled Switch Lock. Value cross-references the plant sheet's Switch appliance by name."
+			(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
 				(at 2.54 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6688,8 +7971,8 @@
 					)
 				)
 			)
-			(property "Kind" "LOCK_LEVER"
-				(at 1.905 4.445 0)
+			(property "Appliance" "lever"
+				(at -0.635 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6699,8 +7982,8 @@
 					)
 				)
 			)
-			(property "WLK" ""
-				(at 0 0 0)
+			(property "Style" "lock"
+				(at -0.635 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6710,8 +7993,8 @@
 					)
 				)
 			)
-			(property "WLQ" ""
-				(at 0 0 0)
+			(property "Invert" "WLK"
+				(at -0.635 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6721,11 +8004,43 @@
 					)
 				)
 			)
-			(property "WLQK" ""
-				(at 0 0 0)
+			(property "Pin.WLQ" "binary"
+				(at -0.635 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.WLQK" "binary"
+				(at -0.635 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.WLK" "binary"
+				(at -0.635 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6733,18 +8048,6 @@
 				)
 			)
 			(symbol "Local-Lock_0_1"
-				(arc
-					(start -3.175 -0.635)
-					(mid -3.438 0)
-					(end -3.175 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.905 1.27) (xy -3.175 0.635)
@@ -6771,18 +8074,6 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -2.54) (xy -3.175 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
@@ -6797,18 +8088,6 @@
 					(start -1.905 1.905)
 					(mid -1.719 2.354)
 					(end -1.27 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.905 -2.54)
-					(mid 0 -3.3291)
-					(end -1.905 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -6845,6 +8124,44 @@
 					(pts
 						(xy 1.905 1.27) (xy 3.175 0.635)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Local-Lock_1_1"
+				(arc
+					(start -3.175 -0.635)
+					(mid -3.438 0)
+					(end -3.175 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 -2.54) (xy -3.175 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.905 -2.54)
+					(mid 0 -3.3291)
+					(end -1.905 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -6892,6 +8209,81 @@
 				)
 				(polyline
 					(pts
+						(xy 4.318 -1.27) (xy 3.683 -0.635) (xy 3.683 -1.905) (xy 4.318 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "KEY"
+					(at -0.0283 -0.7959 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "LOCK"
+					(at -0.0283 -2.0659 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -2.54 180)
+					(length 0)
+					(name "~{WLQ}"
+						(effects
+							(font
+								(size 0.508 0.508)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Local-Lock_2_1"
+				(circle
+					(center -3.175 1.905)
+					(radius 0.635)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.175 1.905)
+					(radius 0.635)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 0 0 1)
+					)
+				)
+				(polyline
+					(pts
 						(xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
 					)
 					(stroke
@@ -6929,34 +8321,6 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "Local-Lock_1_1"
-				(circle
-					(center -3.175 1.905)
-					(radius 0.635)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(circle
-					(center 3.175 1.905)
-					(radius 0.635)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
 				(text "LOCK"
 					(at -1.7375 0.3757 0)
 					(effects
@@ -6965,45 +8329,11 @@
 						)
 					)
 				)
-				(text "KEY"
-					(at -0.0283 -0.7959 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "LOCK"
-					(at -0.0283 -2.0659 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
 				(text "UNLCK"
 					(at 1.4375 0.3757 0)
 					(effects
 						(font
 							(size 0.508 0.508)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 -2.54 180)
-					(length 0)
-					(name "~{WLQ}"
-						(effects
-							(font
-								(size 0.508 0.508)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
 						)
 					)
 				)
@@ -7028,7 +8358,7 @@
 				(pin input line
 					(at 7.62 2.54 180)
 					(length 0)
-					(name "WLK"
+					(name "~{WLK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -7046,7 +8376,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadField:Local-Switch"
+		(symbol "Railroad-Field:Local-Switch"
 			(pin_numbers
 				(hide yes)
 			)
@@ -7120,8 +8450,8 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_LEVER"
-				(at 0.635 -11.43 0)
+			(property "Appliance" "lever"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7131,8 +8461,8 @@
 					)
 				)
 			)
-			(property "NWS" ""
-				(at 0 0 0)
+			(property "Style" "switch"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7142,8 +8472,8 @@
 					)
 				)
 			)
-			(property "RWS" ""
-				(at 0 0 0)
+			(property "Pin.NWS" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7153,8 +8483,8 @@
 					)
 				)
 			)
-			(property "RWK" ""
-				(at 0 0 0)
+			(property "Pin.RWS" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7164,11 +8494,32 @@
 					)
 				)
 			)
-			(property "NWK" ""
-				(at 0 0 0)
+			(property "Pin.NWK" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.RWK" "binary"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7176,18 +8527,6 @@
 				)
 			)
 			(symbol "Local-Switch_0_1"
-				(arc
-					(start -3.175 -0.635)
-					(mid -3.438 0)
-					(end -3.175 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.905 1.27) (xy -3.175 0.635)
@@ -7236,6 +8575,80 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 1.27 2.54)
+					(mid 1.719 2.354)
+					(end 1.905 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 1.905 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 3.175 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "N"
+					(at -2.54 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SWITCH"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "Local-Switch_1_1"
+				(arc
+					(start -3.175 -0.635)
+					(mid -3.438 0)
+					(end -3.175 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy -1.2503 -4.1034) (xy -3.175 -0.635)
@@ -7271,45 +8684,9 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 1.27 2.54)
-					(mid 1.719 2.354)
-					(end 1.905 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 1.2897 -4.1034) (xy 3.175 -0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 1.27) (xy 1.905 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 1.27) (xy 3.175 0.635)
 					)
 					(stroke
 						(width 0)
@@ -7333,33 +8710,33 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
+						(xy 3.81 -1.27) (xy 3.175 -0.635) (xy 3.175 -1.905) (xy 3.81 -1.27)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
 					(pts
-						(xy 7.62 0) (xy 6.6832 0.9439) (xy 4.1462 0.9439) (xy 3.5913 1.4592)
+						(xy 3.81 -5.08) (xy 3.175 -4.445) (xy 3.175 -5.715) (xy 3.81 -5.08)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
 					(pts
-						(xy 7.62 -2.54) (xy 6.35 -1.27) (xy 2.54 -1.27)
+						(xy 7.62 -2.54) (xy 6.35 -1.27) (xy 2.921 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -7373,7 +8750,7 @@
 				(polyline
 					(pts
 						(xy 7.62 -5.08) (xy 6.35 -3.81) (xy 5.08 -3.81) (xy 3.81 -5.08) (xy -3.175 -5.08) (xy -3.81 -4.445)
-						(xy -3.81 -1.905) (xy -3.175 -1.27) (xy -2.54 -1.27)
+						(xy -3.81 -1.905) (xy -3.175 -1.27) (xy -2.921 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -7382,58 +8759,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "Local-Switch_1_1"
-				(circle
-					(center -3.175 1.905)
-					(radius 0.635)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(circle
-					(center 3.175 1.905)
-					(radius 0.635)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
-				(text "N"
-					(at -2.54 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "SWITCH"
-					(at -0.0077 -0.9253 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "R"
-					(at 2.54 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin output line
@@ -7470,6 +8795,60 @@
 								(size 0 0)
 							)
 						)
+					)
+				)
+			)
+			(symbol "Local-Switch_2_1"
+				(circle
+					(center -3.175 1.905)
+					(radius 0.635)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 3.175 1.905)
+					(radius 0.635)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 6.6832 0.9439) (xy 4.1462 0.9439) (xy 3.5913 1.4592)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin input line
@@ -7857,7 +9236,7 @@
 		(uuid "f43afbff-d3eb-4747-9a6f-141419d566d0")
 	)
 	(symbol
-		(lib_id "RailroadField:Local-Switch")
+		(lib_id "Railroad-Field:Local-Switch")
 		(at 60.96 85.09 0)
 		(unit 1)
 		(body_style 1)
@@ -7932,18 +9311,7 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LEVER"
-			(at 61.595 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NWS" ""
+		(property "Appliance" "lever"
 			(at 60.96 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7954,7 +9322,7 @@
 				)
 			)
 		)
-		(property "RWS" ""
+		(property "Style" "switch"
 			(at 60.96 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7965,7 +9333,7 @@
 				)
 			)
 		)
-		(property "RWK" ""
+		(property "Pin.NWS" "binary"
 			(at 60.96 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7976,7 +9344,40 @@
 				)
 			)
 		)
-		(property "NWK" ""
+		(property "Pin.RWS" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 60.96 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7989,12 +9390,6 @@
 		)
 		(pin "1"
 			(uuid "028bf426-7fdd-4852-8c62-f0436ef2aa89")
-		)
-		(pin "4"
-			(uuid "b59146ad-755d-4075-a748-27ee4c6f31b6")
-		)
-		(pin "3"
-			(uuid "4ae88b6c-bb70-4361-8771-f8de4a3752d3")
 		)
 		(pin "2"
 			(uuid "88794015-35ac-4193-b0e9-0763773c37f9")
@@ -8009,7 +9404,175 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-Field:Local-Switch")
+		(at 60.96 85.09 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c47b79c2-e026-42b0-b853-63d7e3d8afcb")
+		(property "Reference" "SW13001"
+			(at 60.96 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 60.96 83.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 63.5 94.615 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 61.595 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "switch"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWS" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWS" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 60.96 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "c5aca7f8-b81c-40fd-a4c9-c48cc3d89ff6")
+		)
+		(pin "3"
+			(uuid "9278b397-9f62-4ab0-80ca-835860188428")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "SW13001")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 113.03 102.87 0)
 		(unit 4)
 		(body_style 1)
@@ -8063,7 +9626,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 133.35 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -8085,17 +9648,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 119.38 104.14 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x21"
 			(at 124.46 106.68 0)
 			(hide yes)
@@ -8104,6 +9656,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 113.03 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8165,7 +9904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Head-3LED-Mux2")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoder")
 		(at 102.87 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -8220,7 +9959,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Colour-light head driven by a two-bit select code; the decoder on the head is field hardware."
 			(at 102.87 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -8241,15 +9980,48 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD_3LED_MUX2"
-			(at 96.0471 85.1912 0)
+		(property "Appliance" "head"
+			(at 102.87 83.82 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
-				(justify left)
+			)
+		)
+		(property "Style" "CPL"
+			(at 102.87 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.S0" "binary"
+			(at 102.87 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.S1" "binary"
+			(at 102.87 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8268,7 +10040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Lock")
+		(lib_id "Railroad-Trackplan:Switch_Lock")
 		(at 124.46 52.07 0)
 		(mirror y)
 		(unit 1)
@@ -8365,8 +10137,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LOCK"
-			(at 130.175 47.625 0)
+		(property "IndicationCeiling" ""
+			(at 111.125 51.435 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 124.46 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8376,13 +10158,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 111.125 51.435 0)
+		(property "Style" "lock"
+			(at 124.46 52.07 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8405,7 +10188,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Manual_Sensed")
+		(lib_id "Railroad-Trackplan:Switch_Manual_Sensed")
 		(at 74.93 35.56 0)
 		(mirror y)
 		(unit 1)
@@ -8459,7 +10242,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Manual switch, no motor but with N/R feedback"
 			(at 73.66 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -8502,8 +10285,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_MANUAL_SENSED"
-			(at 76.2 41.91 0)
+		(property "IndicationCeiling" "RESTRICTING/RESTRICTING"
+			(at 63.5 34.925 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 74.93 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8513,13 +10306,14 @@
 				)
 			)
 		)
-		(property "Indications" "RESTRICTING/RESTRICTING"
-			(at 63.5 34.925 0)
+		(property "Style" "manual_sensed"
+			(at 74.93 35.56 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8542,7 +10336,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Detector-Optical")
+		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
 		(at 102.87 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -8620,19 +10414,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "DETECTOR_OPTICAL"
-			(at 103.3691 78.0651 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "OCC" ""
+		(property "hold_ms" "1500"
 			(at 102.87 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8643,7 +10425,18 @@
 				)
 			)
 		)
-		(property "Hold_ms" "1500"
+		(property "Appliance" "track_circuit"
+			(at 102.87 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
 			(at 102.87 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8667,7 +10460,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
+		(lib_id "Railroad-Trackplan:Track Circuit")
 		(at 62.23 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -8754,7 +10547,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 62.23 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -8778,7 +10571,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 68.58 82.55 0)
 		(unit 2)
 		(body_style 1)
@@ -8832,7 +10625,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 88.9 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -8854,17 +10647,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 74.93 83.82 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x20"
 			(at 80.01 86.36 0)
 			(hide yes)
@@ -8873,6 +10655,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 68.58 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8934,7 +10903,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-PCA9685")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
 		(at 158.75 82.55 0)
 		(unit 2)
 		(body_style 1)
@@ -8988,7 +10957,7 @@
 				)
 			)
 		)
-		(property "Description" "16 channel I2C PWM Expander"
+		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
 			(at 179.07 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -9010,17 +10979,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-PCA9685"
-			(at 165.1 83.82 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x27"
 			(at 170.18 86.36 0)
 			(hide yes)
@@ -9029,6 +10987,204 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "PCA9685"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "frequency_hz" ""
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "level"
+			(at 158.75 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9090,7 +11246,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule261-DoT-BiDirectional")
+		(lib_id "Railroad-Trackplan:Rule261-DoT-BiDirectional")
 		(at 166.37 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -9203,7 +11359,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
+		(lib_id "Railroad-Trackplan:MAIN HOUSE")
 		(at 134.62 25.4 0)
 		(unit 1)
 		(body_style 1)
@@ -9317,7 +11473,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:NextCP")
+		(lib_id "Railroad-Trackplan:NextCP")
 		(at 166.37 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9418,7 +11574,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule105-RestrictedSpeed")
+		(lib_id "Railroad-Trackplan:Rule105-RestrictedSpeed")
 		(at 101.6 33.02 0)
 		(unit 1)
 		(body_style 1)
@@ -9530,7 +11686,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 137.16 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9647,7 +11803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Head-3LED-Mux2")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoder")
 		(at 102.87 88.9 0)
 		(unit 1)
 		(body_style 1)
@@ -9702,7 +11858,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Colour-light head driven by a two-bit select code; the decoder on the head is field hardware."
 			(at 102.87 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -9723,15 +11879,48 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD_3LED_MUX2"
-			(at 96.0471 90.2712 0)
+		(property "Appliance" "head"
+			(at 102.87 88.9 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
-				(justify left)
+			)
+		)
+		(property "Style" "CPL"
+			(at 102.87 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.S0" "binary"
+			(at 102.87 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.S1" "binary"
+			(at 102.87 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9750,7 +11939,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:AUXILIARY")
+		(lib_id "Railroad-Trackplan:AUXILIARY")
 		(at 86.36 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9826,7 +12015,17 @@
 				)
 			)
 		)
-		(property "Kind" "AUXILIARY"
+		(property "CP" "Sargent"
+			(at 86.36 54.61 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
 			(at 86.36 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -9837,13 +12036,14 @@
 				)
 			)
 		)
-		(property "CP" "Sargent"
-			(at 86.36 54.61 0)
+		(property "Style" "non_vital"
+			(at 86.36 52.07 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9860,7 +12060,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 72.39 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -9964,7 +12164,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 109.22 55.88 180)
 		(unit 1)
 		(body_style 1)
@@ -10018,7 +12218,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 109.22 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10040,7 +12240,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 109.22 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 109.22 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -10064,7 +12275,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Detector-Optical")
+		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
 		(at 102.87 77.47 0)
 		(unit 1)
 		(body_style 1)
@@ -10142,19 +12353,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "DETECTOR_OPTICAL"
-			(at 103.3691 75.5251 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "OCC" ""
+		(property "hold_ms" "1500"
 			(at 102.87 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10165,7 +12364,18 @@
 				)
 			)
 		)
-		(property "Hold_ms" "1500"
+		(property "Appliance" "track_circuit"
+			(at 102.87 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
 			(at 102.87 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -10189,7 +12399,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 104.14 39.37 180)
 		(unit 1)
 		(body_style 1)
@@ -10243,7 +12453,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 104.14 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10265,7 +12475,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 104.14 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 104.14 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -10289,7 +12510,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 133.35 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -10343,7 +12564,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 133.35 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -10365,7 +12586,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 133.35 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 133.35 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -10389,7 +12621,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:MaintainerCall")
+		(lib_id "Railroad-Trackplan:MaintainerCall")
 		(at 134.62 25.4 0)
 		(unit 1)
 		(body_style 1)
@@ -10465,7 +12697,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAINTAINER_CALL"
+		(property "Appliance" "lamp"
+			(at 134.62 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "maintainer_call"
 			(at 134.62 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -10489,7 +12732,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 113.03 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -10543,7 +12786,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 133.35 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -10565,17 +12808,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 119.38 73.66 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x21"
 			(at 124.46 76.2 0)
 			(hide yes)
@@ -10584,6 +12816,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 113.03 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10645,7 +13064,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 68.58 92.71 0)
 		(unit 3)
 		(body_style 1)
@@ -10699,7 +13118,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 88.9 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -10721,17 +13140,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 74.93 93.98 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x20"
 			(at 80.01 96.52 0)
 			(hide yes)
@@ -10740,6 +13148,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 68.58 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10801,7 +13396,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 105.41 52.07 180)
 		(unit 1)
 		(body_style 1)
@@ -10918,7 +13513,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 113.03 92.71 0)
 		(unit 3)
 		(body_style 1)
@@ -10972,7 +13567,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 133.35 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -10994,17 +13589,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 119.38 93.98 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x21"
 			(at 124.46 96.52 0)
 			(hide yes)
@@ -11013,6 +13597,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 113.03 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11074,7 +13845,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 113.03 82.55 0)
 		(unit 2)
 		(body_style 1)
@@ -11128,7 +13899,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 133.35 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -11150,17 +13921,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 119.38 83.82 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x21"
 			(at 124.46 86.36 0)
 			(hide yes)
@@ -11169,6 +13929,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 113.03 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11230,7 +14177,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 68.58 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -11284,7 +14231,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 88.9 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11306,17 +14253,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 74.93 73.66 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x20"
 			(at 80.01 76.2 0)
 			(hide yes)
@@ -11325,6 +14261,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 68.58 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11386,7 +14509,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 135.89 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -11440,7 +14563,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 135.89 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11462,7 +14585,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 135.89 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 135.89 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -11486,7 +14620,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Detector-Optical")
+		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
 		(at 102.87 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -11564,19 +14698,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "DETECTOR_OPTICAL"
-			(at 103.3691 72.9851 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "OCC" ""
+		(property "hold_ms" "1500"
 			(at 102.87 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11587,7 +14709,18 @@
 				)
 			)
 		)
-		(property "Hold_ms" "1500"
+		(property "Appliance" "track_circuit"
+			(at 102.87 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
 			(at 102.87 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11611,7 +14744,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-MCP23017")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 68.58 102.87 0)
 		(unit 4)
 		(body_style 1)
@@ -11665,7 +14798,7 @@
 				)
 			)
 		)
-		(property "Description" "16 bit I2C digital IO Expander"
+		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
 			(at 88.9 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -11687,17 +14820,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MCP23017"
-			(at 74.93 104.14 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x20"
 			(at 80.01 106.68 0)
 			(hide yes)
@@ -11706,6 +14828,193 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "MCP23017"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 68.58 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -11767,7 +15076,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Head-3LED-PWM")
+		(lib_id "Railroad-Field:Device-Head-CPL")
 		(at 148.59 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -11822,7 +15131,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Colour-light head realised as three lamps, one wire each. Brightness and fade are the two-point cast's settings when a lamp lands on a level-out pin."
 			(at 148.59 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -11843,18 +15152,51 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD_3LED_PWM"
-			(at 141.7671 77.5712 0)
+		(property "Appliance" "head"
+			(at 148.59 73.66 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Fade_ms" ""
+		(property "Style" "CPL"
+			(at 148.59 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 148.59 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.Y" "binary"
+			(at 148.59 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.G" "binary"
 			(at 148.59 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -11884,7 +15226,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 105.41 39.37 180)
 		(unit 1)
 		(body_style 1)
@@ -11961,7 +15303,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 105.41 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 105.41 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -11988,7 +15341,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
+		(lib_id "Railroad-Trackplan:Track Circuit")
 		(at 152.4 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -12075,7 +15428,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 152.4 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -12099,7 +15452,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Single")
+		(lib_id "Railroad-Trackplan:Mast_Single")
 		(at 105.41 55.88 180)
 		(unit 1)
 		(body_style 1)
@@ -12176,7 +15529,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_SINGLE"
+		(property "Appliance" "mast"
+			(at 105.41 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "single"
 			(at 105.41 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -12203,7 +15567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Lamp-Bit")
+		(lib_id "Railroad-Field:Device-Lamp")
 		(at 102.87 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -12258,7 +15622,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Lamp: one binary output, lit or dark. On a level-out pin they gain brightness and fade; on a pixel bus it carries an Address and colour."
 			(at 102.87 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -12281,19 +15645,29 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "LAMP_BIT"
-			(at 103.3691 70.4451 0)
+		(property "Appliance" "lamp"
+			(at 102.87 72.39 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "OUT" ""
+		(property "Address" ""
+			(at 102.87 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
 			(at 102.87 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -12317,7 +15691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Head-Semaphore-Servo")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ")
 		(at 148.59 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -12372,7 +15746,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
 			(at 148.59 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -12393,18 +15767,7 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD_SEMAPHORE_SERVO"
-			(at 141.7671 85.1912 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Stop_deg" ""
+		(property "stop_deg" ""
 			(at 148.59 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -12415,7 +15778,7 @@
 				)
 			)
 		)
-		(property "Approach_deg" ""
+		(property "approach_deg" ""
 			(at 148.59 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -12426,7 +15789,62 @@
 				)
 			)
 		)
-		(property "Clear_deg" ""
+		(property "clear_deg" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "UQ"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.ARM" "position"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 148.59 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -12440,9 +15858,6 @@
 		(pin "1"
 			(uuid "efd8c399-6b2b-4df2-a486-106947046148")
 		)
-		(pin "2"
-			(uuid "c344b9e0-a4a6-45eb-a749-c8ac25063303")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -12453,7 +15868,184 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ")
+		(at 148.59 83.82 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91f9f205-d87c-4f7b-ae56-97d7fc1eb949")
+		(property "Reference" "DevSW13007"
+			(at 142.6626 80.6652 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "836SB"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Semaphore head: ARM is a position, ~{LAMP} the arm's lamp."
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 143.51 83.82 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "stop_deg" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "approach_deg" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "clear_deg" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "UQ"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.ARM" "position"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 148.59 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a87aa1b3-04d7-4c2a-8ad8-846b641771c8")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "DevSW13007")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 105.41 35.56 180)
 		(unit 1)
 		(body_style 1)
@@ -12570,7 +16162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-PCA9685")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
 		(at 158.75 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -12624,7 +16216,7 @@
 				)
 			)
 		)
-		(property "Description" "16 channel I2C PWM Expander"
+		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
 			(at 179.07 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12646,17 +16238,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-PCA9685"
-			(at 165.1 73.66 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x27"
 			(at 170.18 76.2 0)
 			(hide yes)
@@ -12665,6 +16246,204 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "PCA9685"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "frequency_hz" ""
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "level"
+			(at 158.75 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12726,7 +16505,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Double")
+		(lib_id "Railroad-Trackplan:Mast_Double")
 		(at 137.16 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -12802,7 +16581,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
+		(property "Appliance" "mast"
+			(at 137.16 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "double"
 			(at 137.16 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -12832,7 +16622,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Switch-StallMotor-Sensed-OS")
+		(lib_id "Railroad-Field:Device-Switch-OS")
 		(at 58.42 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -12886,7 +16676,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12909,19 +16699,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "SWITCH_STALL_SENSED"
-			(at 51.435 100.33 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "N" ""
+		(property "Appliance" "switch"
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12932,7 +16710,7 @@
 				)
 			)
 		)
-		(property "R" ""
+		(property "Style" "powered, lock, dual"
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12943,7 +16721,7 @@
 				)
 			)
 		)
-		(property "OCC" ""
+		(property "Pin.M" "binary"
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12954,7 +16732,40 @@
 				)
 			)
 		)
-		(property "NormalIs" "HIGH"
+		(property "Pin.N" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 58.42 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12968,15 +16779,6 @@
 		(pin "1"
 			(uuid "fa008d5b-68f5-492d-b788-89a3beb98bb1")
 		)
-		(pin "4"
-			(uuid "85374d0c-8d96-4177-a7cf-3e997b6f4da7")
-		)
-		(pin "2"
-			(uuid "30308acf-4ed0-4f37-9994-e7b8b4932752")
-		)
-		(pin "3"
-			(uuid "4ebccf5a-b55c-46a5-8bf7-d889aa3c8d69")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -12987,7 +16789,344 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-PCA9685")
+		(lib_id "Railroad-Field:Device-Switch-OS")
+		(at 58.42 96.52 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "06e8c027-7799-4139-9694-1835eb1765c4")
+		(property "Reference" "DevSW13001"
+			(at 52.5058 90.7388 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 52.578 89.154 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 51.4267 99.5444 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "powered, lock, dual"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.M" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.N" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "137d301e-8e2d-4d21-b4b7-1800746413ac")
+		)
+		(pin "3"
+			(uuid "a27377f2-306f-4272-aa7b-c3cef8a2658a")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "DevSW13001")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Device-Switch-OS")
+		(at 58.42 96.52 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3999c9d3-f7ca-423c-a90a-eb27a9289f3b")
+		(property "Reference" "DevSW13001"
+			(at 52.5058 90.7388 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 52.578 89.154 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 51.4267 99.5444 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "powered, lock, dual"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.M" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.N" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.OCC" "binary"
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 58.42 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "d150587b-e32f-487f-92ca-2d89242477a6")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "DevSW13001")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
 		(at 158.75 92.71 0)
 		(unit 3)
 		(body_style 1)
@@ -13041,7 +17180,7 @@
 				)
 			)
 		)
-		(property "Description" "16 channel I2C PWM Expander"
+		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
 			(at 179.07 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -13063,17 +17202,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-PCA9685"
-			(at 165.1 93.98 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x27"
 			(at 170.18 96.52 0)
 			(hide yes)
@@ -13082,6 +17210,204 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "PCA9685"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "frequency_hz" ""
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "level"
+			(at 158.75 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13143,7 +17469,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Switch-Sense")
+		(lib_id "Railroad-Field:Device-Switch-ManualSensed")
 		(at 58.42 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -13221,19 +17547,7 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "SWITCH_SENSE"
-			(at 51.3967 105.5019 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "N" ""
+		(property "Appliance" "switch"
 			(at 58.42 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13244,7 +17558,29 @@
 				)
 			)
 		)
-		(property "R" ""
+		(property "Style" "manual_sensed"
+			(at 58.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.N" "binary"
+			(at 58.42 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
 			(at 58.42 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -13271,7 +17607,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Driver-I2C-PCA9685")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
 		(at 158.75 102.87 0)
 		(unit 4)
 		(body_style 1)
@@ -13325,7 +17661,7 @@
 				)
 			)
 		)
-		(property "Description" "16 channel I2C PWM Expander"
+		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
 			(at 179.07 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -13347,17 +17683,6 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-PCA9685"
-			(at 165.1 104.14 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x27"
 			(at 170.18 106.68 0)
 			(hide yes)
@@ -13366,6 +17691,204 @@
 			(effects
 				(font
 					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "PCA9685"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "frequency_hz" ""
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "level"
+			(at 158.75 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13427,7 +17950,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Interlocking")
+		(lib_id "Railroad-Trackplan:Interlocking")
 		(at 134.62 20.32 0)
 		(unit 1)
 		(body_style 1)
@@ -13528,7 +18051,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
+		(lib_id "Railroad-Trackplan:Track Circuit")
 		(at 96.52 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -13615,7 +18138,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 96.52 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -13639,7 +18162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit")
+		(lib_id "Railroad-Trackplan:Track Circuit")
 		(at 93.98 35.56 0)
 		(unit 1)
 		(body_style 1)
@@ -13726,7 +18249,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 93.98 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -13750,7 +18273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:NextCP")
+		(lib_id "Railroad-Trackplan:NextCP")
 		(at 45.72 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -13850,7 +18373,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Device-Lamp-NeoPixel")
+		(lib_id "Railroad-Field:Device-Lamp")
 		(at 200.66 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -13905,7 +18428,7 @@
 				)
 			)
 		)
-		(property "Description" "Chain <name> for multiple strings, Index <number> for position in string"
+		(property "Description" "Lamp: one binary output, lit or dark. On a level-out pin they gain brightness and fade; on a pixel bus it carries an Address and colour."
 			(at 200.66 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -13927,30 +18450,7 @@
 				)
 			)
 		)
-		(property "Kind" "LAMP_NEOPIXEL"
-			(at 198.12 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Chain" "A"
-			(at 196.85 73.66 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Index" "1"
+		(property "Address" "1"
 			(at 203.2 73.66 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13959,6 +18459,28 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at 200.66 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 200.66 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -13971,7 +18493,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadField:Local-Lock")
+		(lib_id "Railroad-Field:Local-Lock")
 		(at 60.96 74.93 0)
 		(unit 1)
 		(body_style 1)
@@ -14024,7 +18546,7 @@
 				)
 			)
 		)
-		(property "Description" "Local crew-controlled Swithc Lock. Value cross-references the plant sheet's Switch appliance by name."
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
 			(at 63.5 84.455 0)
 			(hide yes)
 			(show_name no)
@@ -14046,18 +18568,7 @@
 				)
 			)
 		)
-		(property "Kind" "LOCK_LEVER"
-			(at 62.865 70.485 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "WLK" ""
+		(property "Appliance" "lever"
 			(at 60.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14068,7 +18579,7 @@
 				)
 			)
 		)
-		(property "WLQ" ""
+		(property "Style" "lock"
 			(at 60.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14079,7 +18590,7 @@
 				)
 			)
 		)
-		(property "WLQK" ""
+		(property "Invert" "WLK"
 			(at 60.96 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -14090,14 +18601,52 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "a48c9d39-2ccc-4bcd-82d6-9f6c30119960")
+		(property "Pin.WLQ" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
 			(uuid "232d1c43-e9e8-4145-be0d-82f8bb39944c")
-		)
-		(pin "2"
-			(uuid "8be2b149-88de-42fd-a5d4-c8e858d93106")
 		)
 		(instances
 			(project "SPCoast"
@@ -14109,7 +18658,175 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule261-DoT-BiDirectional")
+		(lib_id "Railroad-Field:Local-Lock")
+		(at 60.96 74.93 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b5449c93-e23e-40ea-98be-e81130c6057d")
+		(property "Reference" "LK13001"
+			(at 60.96 79.375 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "835"
+			(at 60.8785 73.2105 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+			(at 63.5 84.455 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 60.325 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "lock"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Invert" "WLK"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQ" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 60.96 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "260e3e86-9fae-4f14-ac1d-3ab416f78610")
+		)
+		(pin "2"
+			(uuid "c7d09f42-f645-468f-aa37-454de41772f0")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "LK13001")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Rule261-DoT-BiDirectional")
 		(at 45.72 49.53 0)
 		(unit 1)
 		(body_style 1)
@@ -14222,7 +18939,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-END_CTC")
+		(lib_id "Railroad-Trackplan:IRJ-END_CTC")
 		(at 87.63 35.56 0)
 		(unit 1)
 		(body_style 1)

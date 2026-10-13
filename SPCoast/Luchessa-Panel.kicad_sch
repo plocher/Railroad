@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "RailroadPanel:Codeline-Encoding-Bits"
+		(symbol "Railroad-Office:Codeline-Encoding-Bits"
 			(pin_numbers
 				(hide yes)
 			)
@@ -252,7 +252,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:Codeline-Encoding-US&S-506"
+		(symbol "Railroad-Office:Codeline-Encoding-US&S-506"
 			(pin_numbers
 				(hide yes)
 			)
@@ -428,7 +428,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:Driver-I2C-MAX7313"
+		(symbol "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc"
 			(pin_numbers
 				(hide yes)
 			)
@@ -481,7 +481,7 @@
 					)
 				)
 			)
-			(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+			(property "Description" "One physical IO expander instance bound to a PanelColumn. Address is 0x10 to 0x4F"
 				(at 13.335 54.61 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -490,17 +490,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Kind" "I2C-MAX7313"
-				(at -5.715 -37.465 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
 				)
 			)
 			(property "Role" "IODRIVER"
@@ -524,7 +513,311 @@
 					)
 				)
 			)
-			(symbol "Driver-I2C-MAX7313_1_1"
+			(property "IC" "MAX7313"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A1" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A2" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A3" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A4" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A5" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A6" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A7" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.A8" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B1" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B2" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B3" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B4" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B5" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B6" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B7" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.B8" "binary"
+				(at -1.27 -34.925 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-I2C-MAX7313-SPCoastcTc_1_1"
+				(polyline
+					(pts
+						(xy -9.271 45.72) (xy -8.636 45.085) (xy -8.636 46.355) (xy -9.271 45.72)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 40.64) (xy -8.636 40.005) (xy -8.636 41.275) (xy -9.271 40.64)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 35.56) (xy -8.636 34.925) (xy -8.636 36.195) (xy -9.271 35.56)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 13.97) (xy -8.636 13.335) (xy -8.636 14.605) (xy -9.271 13.97)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 11.43) (xy -8.636 10.795) (xy -8.636 12.065) (xy -9.271 11.43)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 -2.54) (xy -8.636 -3.175) (xy -8.636 -1.905) (xy -9.271 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 -5.08) (xy -8.636 -5.715) (xy -8.636 -4.445) (xy -9.271 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 -7.62) (xy -8.636 -8.255) (xy -8.636 -6.985) (xy -9.271 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.271 -31.75) (xy -8.636 -32.385) (xy -8.636 -31.115) (xy -9.271 -31.75)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(rectangle
 					(start -8.255 48.26)
 					(end 8.255 -42.545)
@@ -534,6 +827,97 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 24.13) (xy -7.874 24.765) (xy -7.874 23.495) (xy -7.239 24.13)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 6.35) (xy -7.874 6.985) (xy -7.874 5.715) (xy -7.239 6.35)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 3.81) (xy -7.874 4.445) (xy -7.874 3.175) (xy -7.239 3.81)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 -10.16) (xy -7.874 -9.525) (xy -7.874 -10.795) (xy -7.239 -10.16)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 -12.7) (xy -7.874 -12.065) (xy -7.874 -13.335) (xy -7.239 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 -15.24) (xy -7.874 -14.605) (xy -7.874 -15.875) (xy -7.239 -15.24)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -7.239 -25.4) (xy -7.874 -24.765) (xy -7.874 -26.035) (xy -7.239 -25.4)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(text "LED MB1"
@@ -688,7 +1072,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 13.97 0)
 					(length 3.81)
 					(name "A1"
@@ -706,7 +1090,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 11.43 0)
 					(length 3.81)
 					(name "A2"
@@ -724,7 +1108,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 24.13 0)
 					(length 3.81)
 					(name "A3"
@@ -742,7 +1126,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 45.72 0)
 					(length 3.81)
 					(name "A4"
@@ -760,7 +1144,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 40.64 0)
 					(length 3.81)
 					(name "A5"
@@ -778,7 +1162,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 35.56 0)
 					(length 3.81)
 					(name "A6"
@@ -796,7 +1180,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 6.35 0)
 					(length 3.81)
 					(name "A7"
@@ -814,7 +1198,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 3.81 0)
 					(length 3.81)
 					(name "A8"
@@ -832,7 +1216,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 -31.75 0)
 					(length 3.81)
 					(name "B1"
@@ -850,7 +1234,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 -15.24 0)
 					(length 3.81)
 					(name "B2"
@@ -868,7 +1252,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 -12.7 0)
 					(length 3.81)
 					(name "B3"
@@ -886,7 +1270,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 -10.16 0)
 					(length 3.81)
 					(name "B4"
@@ -904,7 +1288,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at -11.43 -25.4 0)
 					(length 3.81)
 					(name "B5"
@@ -922,7 +1306,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 -5.08 0)
 					(length 3.81)
 					(name "B6"
@@ -940,7 +1324,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 -7.62 0)
 					(length 3.81)
 					(name "B7"
@@ -958,7 +1342,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin output line
 					(at -11.43 -2.54 0)
 					(length 3.81)
 					(name "B8"
@@ -979,7 +1363,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelCode"
+		(symbol "Railroad-Office:PanelCode"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1000,7 +1384,7 @@
 				)
 			)
 			(property "Value" "CODE"
-				(at 5.715 -0.635 0)
+				(at 4.318 -0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1053,8 +1437,8 @@
 					)
 				)
 			)
-			(property "Kind" "CODE"
-				(at 0 3.81 0)
+			(property "Appliance" "lever"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1064,8 +1448,19 @@
 					)
 				)
 			)
-			(property "CODE" ""
-				(at 0 0 0)
+			(property "Style" "code"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.CODE" "binary"
+				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1096,6 +1491,19 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.731 0) (xy 6.096 0.635) (xy 6.096 -0.635) (xy 6.731 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(pin passive line
@@ -1137,7 +1545,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelColumn"
+		(symbol "Railroad-Office:PanelColumn"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1570,7 +1978,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelLamp-RED"
+		(symbol "Railroad-Office:PanelLamp-RED"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1591,7 +1999,7 @@
 				)
 			)
 			(property "Value" "OS"
-				(at 5.715 -0.635 0)
+				(at 3.429 -0.508 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1666,8 +2074,8 @@
 					)
 				)
 			)
-			(property "Kind" "LAMP"
-				(at 0 -4.445 0)
+			(property "Appliance" "lamp"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1677,8 +2085,19 @@
 					)
 				)
 			)
-			(property "LAMP" ""
-				(at 0 0 0)
+			(property "Style" "indication"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.LAMP" "binary"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1700,6 +2119,19 @@
 					(fill
 						(type color)
 						(color 194 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(pin passive line
@@ -1741,7 +2173,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelLamp-YELLOW"
+		(symbol "Railroad-Office:PanelLamp-YELLOW"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1762,7 +2194,7 @@
 				)
 			)
 			(property "Value" "TRACK"
-				(at 5.715 -0.635 0)
+				(at 3.937 -0.508 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1837,8 +2269,8 @@
 					)
 				)
 			)
-			(property "Kind" "LAMP"
-				(at 0 4.445 0)
+			(property "Appliance" "lamp"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1848,8 +2280,19 @@
 					)
 				)
 			)
-			(property "LAMP" ""
-				(at 0 0 0)
+			(property "Style" "indication"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.LAMP" "binary"
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1871,6 +2314,19 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(pin passive line
@@ -1912,7 +2368,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelLock"
+		(symbol "Railroad-Office:PanelLock"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1932,10 +2388,10 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 1.905 0)
+			(property "Value" "123"
+				(at 0 2.921 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -1964,7 +2420,7 @@
 					)
 				)
 			)
-			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
 				(at 2.54 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1986,8 +2442,8 @@
 					)
 				)
 			)
-			(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
-				(at 0.635 -9.525 0)
+			(property "Appliance" "lever"
+				(at 0.635 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -1997,8 +2453,8 @@
 					)
 				)
 			)
-			(property "WLS" ""
-				(at 0 0 0)
+			(property "Style" "lock"
+				(at 0.635 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2008,11 +2464,65 @@
 					)
 				)
 			)
-			(property "WLK" ""
-				(at 0 0 0)
+			(property "Invert" "WLK"
+				(at 0.635 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.WLS" "binary"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.UNUSED" "binary"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.WLQK" "binary"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.WLK" "binary"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2020,18 +2530,6 @@
 				)
 			)
 			(symbol "PanelLock_0_1"
-				(arc
-					(start -3.81 0.635)
-					(mid -3.7555 1.4015)
-					(end -3.175 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.905 2.54) (xy -3.175 1.905)
@@ -2046,7 +2544,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+						(xy -1.905 2.54) (xy -1.905 3.175)
 					)
 					(stroke
 						(width 0)
@@ -2058,7 +2556,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 3.175) (xy 1.27 3.175)
+						(xy -1.27 3.81) (xy 1.27 3.81)
 					)
 					(stroke
 						(width 0)
@@ -2069,9 +2567,95 @@
 					)
 				)
 				(arc
-					(start -1.905 2.54)
-					(mid -1.719 2.989)
-					(end -1.27 3.175)
+					(start -1.905 3.175)
+					(mid -1.719 3.624)
+					(end -1.27 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.81)
+					(mid 1.719 3.624)
+					(end 1.905 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 1.905 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "N"
+					(at -2.54 1.397 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "LOCK"
+					(at 0 1.397 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.54 1.397 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "PanelLock_1_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2138,30 +2722,6 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 1.27 3.175)
-					(mid 1.719 2.989)
-					(end 1.905 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 2.54) (xy 3.175 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
@@ -2189,28 +2749,28 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+						(xy 3.937 -1.905) (xy 3.302 -1.27) (xy 3.302 -2.54) (xy 3.937 -1.905)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+						(xy 4.064 -6.35) (xy 3.429 -5.715) (xy 3.429 -6.985) (xy 4.064 -6.35)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
@@ -2225,58 +2785,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "PanelLock_1_1"
-				(circle
-					(center -3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(circle
-					(center 3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
-				(text "N"
-					(at -2.54 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "LOCK"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "R"
-					(at 2.54 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin passive line
@@ -2300,7 +2808,7 @@
 				(pin output line
 					(at 7.62 -5.08 180)
 					(length 0)
-					(name "WLS"
+					(name "~{UNUSED}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -2333,10 +2841,90 @@
 						)
 					)
 				)
+			)
+			(symbol "PanelLock_2_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 5.715) (xy 0 5.08) (xy 0 6.35) (xy -0.635 5.715)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 3.81) (xy 6.223 3.175) (xy 6.223 4.445) (xy 5.588 3.81)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin input line
 					(at 7.62 2.54 180)
 					(length 0)
-					(name "~{WLK}"
+					(name "~{WLQK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -2354,7 +2942,7 @@
 				(pin input line
 					(at 7.62 5.08 180)
 					(length 0)
-					(name "WLK"
+					(name "~{WLK}"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -2372,7 +2960,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelMCall"
+		(symbol "Railroad-Office:PanelMCall"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2393,13 +2981,12 @@
 				)
 			)
 			(property "Value" "MC1"
-				(at 0 3.81 0)
+				(at 4.318 -0.635 0)
 				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
+				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
@@ -2448,8 +3035,8 @@
 					(justify left)
 				)
 			)
-			(property "Vital" "NO"
-				(at 6.35 1.905 0)
+			(property "Appliance" "lever"
+				(at 6.35 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2460,37 +3047,28 @@
 					(justify left)
 				)
 			)
-			(property "ControlToken" "${VALUE}S"
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Kind" "MAINTAINER_CALL"
-				(at 0 -2.54 0)
+			(property "Style" "maintainer_call"
+				(at 6.35 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
+					(justify left)
 				)
 			)
-			(property "SW" ""
-				(at 0 0 0)
+			(property "Pin.S" "binary"
+				(at 6.35 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
+					(justify left)
 				)
 			)
 			(symbol "PanelMCall_0_1"
@@ -2516,6 +3094,32 @@
 						(type none)
 					)
 				)
+				(arc
+					(start -0.508 0)
+					(mid -0.322 0.449)
+					(end 0.127 0.635)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(arc
+					(start 0.127 -0.635)
+					(mid -0.322 -0.449)
+					(end -0.508 0)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
 			)
 			(symbol "PanelMCall_1_1"
 				(polyline
@@ -2531,17 +3135,17 @@
 						(color 0 0 0 0)
 					)
 				)
-				(arc
-					(start 0 -0.635)
-					(mid -0.263 0)
-					(end 0 0.635)
+				(polyline
+					(pts
+						(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
+					)
 					(stroke
-						(width 0.0762)
+						(width 0)
 						(type solid)
 					)
 					(fill
 						(type color)
-						(color 0 0 0 0)
+						(color 132 0 0 1)
 					)
 				)
 				(pin passive line
@@ -2565,7 +3169,7 @@
 				(pin output line
 					(at 7.62 0 180)
 					(length 5.08)
-					(name "~{SW}"
+					(name "~{S}"
 						(effects
 							(font
 								(size 0 0)
@@ -2583,7 +3187,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelSignal"
+		(symbol "Railroad-Office:PanelSignal"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2603,10 +3207,10 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 1.905 0)
+			(property "Value" "222"
+				(at 0 2.921 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -2657,8 +3261,8 @@
 					)
 				)
 			)
-			(property "Kind" "SIGNAL_LEVER"
-				(at 0 -10.795 0)
+			(property "Appliance" "lever"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2668,8 +3272,8 @@
 					)
 				)
 			)
-			(property "NGS" ""
-				(at 0 0 0)
+			(property "Style" "signal"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2679,8 +3283,8 @@
 					)
 				)
 			)
-			(property "HS" ""
-				(at 0 0 0)
+			(property "Pin.NGS" "binary"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2690,8 +3294,8 @@
 					)
 				)
 			)
-			(property "SGS" ""
-				(at 0 0 0)
+			(property "Pin.HS" "binary"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2701,8 +3305,8 @@
 					)
 				)
 			)
-			(property "SGK" ""
-				(at 0 0 0)
+			(property "Pin.SGS" "binary"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2712,8 +3316,8 @@
 					)
 				)
 			)
-			(property "NGK" ""
-				(at 0 0 0)
+			(property "Pin.NGK" "binary"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2723,11 +3327,32 @@
 					)
 				)
 			)
-			(property "TEK" ""
-				(at 0 0 0)
+			(property "Pin.SGK" "binary"
+				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.TEK" "binary"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2735,18 +3360,6 @@
 				)
 			)
 			(symbol "PanelSignal_0_1"
-				(arc
-					(start -3.81 0.635)
-					(mid -3.7555 1.4015)
-					(end -3.175 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.905 2.54) (xy -3.175 1.905)
@@ -2761,7 +3374,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+						(xy -1.905 2.54) (xy -1.905 3.175)
 					)
 					(stroke
 						(width 0)
@@ -2773,7 +3386,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 3.175) (xy 1.27 3.175)
+						(xy -1.27 3.81) (xy 1.27 3.81)
 					)
 					(stroke
 						(width 0)
@@ -2784,9 +3397,95 @@
 					)
 				)
 				(arc
-					(start -1.905 2.54)
-					(mid -1.719 2.989)
-					(end -1.27 3.175)
+					(start -1.905 3.175)
+					(mid -1.719 3.624)
+					(end -1.27 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.81)
+					(mid 1.719 3.624)
+					(end 1.905 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 1.905 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "L"
+					(at -2.921 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SIGNAL"
+					(at 0 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.921 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "PanelSignal_1_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2854,30 +3553,6 @@
 					)
 				)
 				(arc
-					(start 1.27 3.175)
-					(mid 1.719 2.989)
-					(end 1.905 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 2.54) (xy 3.175 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
 					(start 3.175 1.905)
 					(mid 3.7555 1.4015)
 					(end 3.81 0.635)
@@ -2891,7 +3566,46 @@
 				)
 				(polyline
 					(pts
-						(xy 3.81 3.81) (xy 5.08 5.08) (xy 6.35 5.08) (xy 7.62 3.81)
+						(xy 5.08 1.905) (xy 4.445 2.54) (xy 4.445 1.27) (xy 5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -1.016) (xy 4.445 -0.381) (xy 4.445 -1.651) (xy 5.08 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -6.35) (xy 4.445 -5.715) (xy 4.445 -6.985) (xy 5.08 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 6.985 1.905) (xy 5.08 1.905) (xy 4.445 1.27) (xy 3.81 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2904,33 +3618,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 6.35) (xy 6.35 7.62) (xy 4.445 7.62) (xy 1.27 5.08) (xy -1.905 5.08) (xy -3.81 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-						(color 72 72 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 1.27) (xy 6.985 1.905) (xy 5.08 1.905) (xy 4.445 1.27) (xy 3.175 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-						(color 72 72 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -1.27) (xy 6.985 -0.635) (xy 5.08 -0.635) (xy 4.445 -1.27) (xy 0.635 -1.27)
+						(xy 7.62 -1.27) (xy 6.985 -0.635) (xy 4.699 -0.635) (xy 4.191 -1.27) (xy 0.635 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -2944,7 +3632,7 @@
 				(polyline
 					(pts
 						(xy 7.62 -3.81) (xy 5.08 -6.35) (xy -4.445 -6.35) (xy -5.08 -5.715) (xy -5.08 0.635) (xy -4.445 1.27)
-						(xy -3.175 1.27)
+						(xy -3.81 1.27)
 					)
 					(stroke
 						(width 0)
@@ -2955,86 +3643,8 @@
 						(type none)
 					)
 				)
-			)
-			(symbol "PanelSignal_1_1"
-				(circle
-					(center -3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(circle
-					(center 0 7.62)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 194 0 0 1)
-					)
-				)
-				(circle
-					(center 3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 8.89) (xy 6.985 9.525) (xy 2.54 9.525) (xy 0 7.62)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-						(color 72 72 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "L"
-					(at -2.54 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "SIGNAL"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
 				(text "S"
 					(at 0 -1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "R"
-					(at 2.54 1.27 0)
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -3113,6 +3723,125 @@
 						)
 					)
 				)
+			)
+			(symbol "PanelSignal_2_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(circle
+					(center 0 7.62)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 5.08 5.08) (xy 6.35 5.08) (xy 7.62 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 9.525) (xy 5.461 8.89) (xy 5.461 10.16) (xy 4.826 9.525)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 7.62) (xy 5.461 6.985) (xy 5.461 8.255) (xy 4.826 7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.826 5.08) (xy 5.461 4.445) (xy 5.461 5.715) (xy 4.826 5.08)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 8.89) (xy 6.985 9.525) (xy 2.54 9.525) (xy 0 7.62)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 6.35) (xy 6.35 7.62) (xy 4.445 7.62) (xy 1.27 5.08) (xy -1.905 5.08) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin input line
 					(at 7.62 3.81 180)
 					(length 0)
@@ -3170,7 +3899,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RailroadPanel:PanelSwitch"
+		(symbol "Railroad-Office:PanelSwitch"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3190,8 +3919,8 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 1.905 0)
+			(property "Value" "111"
+				(at 0 2.794 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -3244,8 +3973,8 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_LEVER"
-				(at 0.635 -11.43 0)
+			(property "Appliance" "lever"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3255,8 +3984,8 @@
 					)
 				)
 			)
-			(property "NWS" ""
-				(at 0 0 0)
+			(property "Style" "switch"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3266,8 +3995,8 @@
 					)
 				)
 			)
-			(property "RWS" ""
-				(at 0 0 0)
+			(property "Pin.NWS" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3277,8 +4006,8 @@
 					)
 				)
 			)
-			(property "RWK" ""
-				(at 0 0 0)
+			(property "Pin.RWS" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3288,11 +4017,32 @@
 					)
 				)
 			)
-			(property "NWK" ""
-				(at 0 0 0)
+			(property "Pin.NWK" "binary"
+				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.RWK" "binary"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3300,18 +4050,6 @@
 				)
 			)
 			(symbol "PanelSwitch_0_1"
-				(arc
-					(start -3.81 0.635)
-					(mid -3.7555 1.4015)
-					(end -3.175 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -1.905 2.54) (xy -3.175 1.905)
@@ -3326,7 +4064,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+						(xy -1.905 2.54) (xy -1.905 3.175)
 					)
 					(stroke
 						(width 0)
@@ -3338,7 +4076,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 3.175) (xy 1.27 3.175)
+						(xy -1.27 3.81) (xy 1.27 3.81)
 					)
 					(stroke
 						(width 0)
@@ -3349,9 +4087,95 @@
 					)
 				)
 				(arc
-					(start -1.905 2.54)
-					(mid -1.719 2.989)
-					(end -1.27 3.175)
+					(start -1.905 3.175)
+					(mid -1.719 3.624)
+					(end -1.27 3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 3.81)
+					(mid 1.719 3.624)
+					(end 1.905 3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 1.905 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 2.54) (xy 3.175 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "N"
+					(at -2.921 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "SWITCH"
+					(at 0 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "R"
+					(at 2.921 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "PanelSwitch_1_1"
+				(arc
+					(start -3.81 0.635)
+					(mid -3.7555 1.4015)
+					(end -3.175 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.2797 -4.6876) (xy -3.81 0.635)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -3418,30 +4242,6 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 1.27 3.175)
-					(mid 1.719 2.989)
-					(end 1.905 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 2.54) (xy 3.175 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 2.54 -1.905) (xy 6.985 -1.905) (xy 7.62 -2.54)
@@ -3469,28 +4269,28 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+						(xy 3.937 -1.905) (xy 3.302 -1.27) (xy 3.302 -2.54) (xy 3.937 -1.905)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
 					(pts
-						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+						(xy 3.937 -6.35) (xy 3.302 -5.715) (xy 3.302 -6.985) (xy 3.937 -6.35)
 					)
 					(stroke
 						(width 0)
-						(type default)
-						(color 72 72 0 1)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type color)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
@@ -3505,58 +4305,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-			)
-			(symbol "PanelSwitch_1_1"
-				(circle
-					(center -3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(circle
-					(center 3.81 3.81)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
-				(text "N"
-					(at -2.54 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "SWITCH"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "R"
-					(at 2.54 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 				(pin passive line
@@ -3611,6 +4359,86 @@
 								(size 0 0)
 							)
 						)
+					)
+				)
+			)
+			(symbol "PanelSwitch_2_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 0 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 5.715) (xy 0 5.08) (xy 0 6.35) (xy -0.635 5.715)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 153 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 3.81) (xy 6.223 3.175) (xy 6.223 4.445) (xy 5.588 3.81)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 6.985 5.715) (xy -1.27 5.715) (xy -3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 6.35 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+						(color 72 72 0 1)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(pin input line
@@ -3848,7 +4676,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(lib_id "Railroad-Office:Codeline-Encoding-US&S-506")
 		(at 29.21 185.42 0)
 		(unit 1)
 		(body_style 1)
@@ -3981,7 +4809,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(lib_id "Railroad-Office:PanelLamp-YELLOW")
 		(at 130.81 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -4078,8 +4906,8 @@
 				)
 			)
 		)
-		(property "Kind" "LAMP"
-			(at 130.81 99.695 0)
+		(property "Appliance" "lamp"
+			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4089,7 +4917,18 @@
 				)
 			)
 		)
-		(property "LAMP" ""
+		(property "Style" "indication"
+			(at 130.81 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
 			(at 130.81 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4116,7 +4955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelLock")
+		(lib_id "Railroad-Office:PanelLock")
 		(at 130.81 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -4169,7 +5008,7 @@
 				)
 			)
 		)
-		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
 			(at 133.35 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4191,18 +5030,7 @@
 				)
 			)
 		)
-		(property "Kind" "LOCK_LEVER_2LAMP_2CONTACT"
-			(at 131.445 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "WLS" ""
+		(property "Appliance" "lever"
 			(at 130.81 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4213,7 +5041,73 @@
 				)
 			)
 		)
-		(property "WLK" ""
+		(property "Style" "lock"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Invert" "WLK"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLS" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.UNUSED" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 130.81 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4233,12 +5127,6 @@
 		(pin "3"
 			(uuid "6a52e1a5-5123-4847-b24d-3ba6b48aab83")
 		)
-		(pin "4"
-			(uuid "29032a67-f294-492b-87df-851aea372034")
-		)
-		(pin "5"
-			(uuid "6e7d3cbc-696a-427a-9994-09602e6baa5a")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
@@ -4249,7 +5137,186 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelLamp-RED")
+		(lib_id "Railroad-Office:PanelLock")
+		(at 130.81 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7700b65f-9344-4370-8ee5-cfdbc11a6fc8")
+		(property "Reference" "SW8796"
+			(at 130.81 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "795"
+			(at 130.81 61.595 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lock lever plate. ~{WLS} is the R contact (release control); ~{UNUSED} the N contact, wired but consumed by nothing; ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK: WLK asserted means released, fail-safe)."
+			(at 133.35 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 131.445 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "lock"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Invert" "WLK"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLS" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.UNUSED" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLQK" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.WLK" "binary"
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 130.81 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "e5823739-a6b2-46ba-83bc-960efe1d8140")
+		)
+		(pin "5"
+			(uuid "485768da-c633-4742-875c-ed45af177e74")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
+					(reference "SW8796")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelLamp-RED")
 		(at 80.01 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -4346,8 +5413,8 @@
 				)
 			)
 		)
-		(property "Kind" "LAMP"
-			(at 80.01 31.115 0)
+		(property "Appliance" "lamp"
+			(at 80.01 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4357,7 +5424,18 @@
 				)
 			)
 		)
-		(property "LAMP" ""
+		(property "Style" "indication"
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
 			(at 80.01 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -4384,7 +5462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelSwitch")
+		(lib_id "Railroad-Office:PanelSwitch")
 		(at 80.01 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -4459,18 +5537,7 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LEVER"
-			(at 80.645 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NWS" ""
+		(property "Appliance" "lever"
 			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4481,7 +5548,7 @@
 				)
 			)
 		)
-		(property "RWS" ""
+		(property "Style" "switch"
 			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4492,7 +5559,7 @@
 				)
 			)
 		)
-		(property "RWK" ""
+		(property "Pin.NWS" "binary"
 			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4503,7 +5570,40 @@
 				)
 			)
 		)
-		(property "NWK" ""
+		(property "Pin.RWS" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4523,12 +5623,6 @@
 		(pin "3"
 			(uuid "0e8eb8b9-e98f-4139-83b3-252aa9dbcf0f")
 		)
-		(pin "4"
-			(uuid "a70a9134-d4c7-406b-b91a-9940d719e742")
-		)
-		(pin "5"
-			(uuid "aaf3f9cf-164d-442f-bdc6-b4c18cec30b3")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
@@ -4539,7 +5633,175 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Encoding-Bits")
+		(lib_id "Railroad-Office:PanelSwitch")
+		(at 80.01 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0ab7687c-9213-4666-856e-4094834c0930")
+		(property "Reference" "SW8784"
+			(at 80.01 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "783"
+			(at 80.01 61.595 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 82.55 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.645 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "switch"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWS" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWS" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "4e8d131d-10ca-4eb7-9ee5-3d94a3d8929d")
+		)
+		(pin "5"
+			(uuid "bb837101-ecfd-4fd3-8d3d-746029ac0827")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
+					(reference "SW8784")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:Codeline-Encoding-Bits")
 		(at 29.21 165.1 0)
 		(unit 1)
 		(body_style 1)
@@ -4692,7 +5954,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(lib_id "Railroad-Office:Codeline-Encoding-US&S-506")
 		(at 29.21 176.53 0)
 		(unit 1)
 		(body_style 1)
@@ -4825,7 +6087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn")
+		(lib_id "Railroad-Office:PanelColumn")
 		(at 130.81 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -4976,7 +6238,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelLamp-YELLOW")
+		(lib_id "Railroad-Office:PanelLamp-YELLOW")
 		(at 130.81 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -5073,8 +6335,8 @@
 				)
 			)
 		)
-		(property "Kind" "LAMP"
-			(at 130.81 22.225 0)
+		(property "Appliance" "lamp"
+			(at 130.81 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5084,7 +6346,18 @@
 				)
 			)
 		)
-		(property "LAMP" ""
+		(property "Style" "indication"
+			(at 130.81 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
 			(at 130.81 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -5111,7 +6384,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelCode")
+		(lib_id "Railroad-Office:PanelCode")
 		(at 181.61 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -5186,8 +6459,8 @@
 				)
 			)
 		)
-		(property "Kind" "CODE"
-			(at 181.61 93.98 0)
+		(property "Appliance" "lever"
+			(at 181.61 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5197,7 +6470,18 @@
 				)
 			)
 		)
-		(property "CODE" ""
+		(property "Style" "code"
+			(at 181.61 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.CODE" "binary"
 			(at 181.61 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -5224,7 +6508,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn")
+		(lib_id "Railroad-Office:PanelColumn")
 		(at 181.61 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -5375,7 +6659,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelSwitch")
+		(lib_id "Railroad-Office:PanelSwitch")
 		(at 181.61 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -5450,18 +6734,7 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_LEVER"
-			(at 182.245 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NWS" ""
+		(property "Appliance" "lever"
 			(at 181.61 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5472,7 +6745,7 @@
 				)
 			)
 		)
-		(property "RWS" ""
+		(property "Style" "switch"
 			(at 181.61 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5483,7 +6756,7 @@
 				)
 			)
 		)
-		(property "RWK" ""
+		(property "Pin.NWS" "binary"
 			(at 181.61 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5494,7 +6767,40 @@
 				)
 			)
 		)
-		(property "NWK" ""
+		(property "Pin.RWS" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 181.61 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5514,12 +6820,6 @@
 		(pin "3"
 			(uuid "45e62dbc-9189-4528-bfa9-288e42b94251")
 		)
-		(pin "4"
-			(uuid "e12e5881-aabf-42a9-b2fa-c67d1dc387d8")
-		)
-		(pin "5"
-			(uuid "fe34bf3b-20d9-4696-b02c-f45082c2fe41")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
@@ -5530,7 +6830,175 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelMCall")
+		(lib_id "Railroad-Office:PanelSwitch")
+		(at 181.61 63.5 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c957cdd4-069e-408f-a402-a6faa9c80d1a")
+		(property "Reference" "SW8800"
+			(at 181.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "799"
+			(at 181.61 61.595 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(at 184.15 73.025 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 182.245 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "switch"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWS" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWS" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 181.61 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "eebe9bed-79a6-4bad-b172-a5a1d5aafcc1")
+		)
+		(pin "5"
+			(uuid "2ef5c4b3-c1bf-4f23-8101-b2b3de36439f")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
+					(reference "SW8800")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelMCall")
 		(at 130.81 48.26 0)
 		(unit 1)
 		(body_style 1)
@@ -5595,40 +7063,6 @@
 				)
 			)
 		)
-		(property "Kind" "MAINTAINER_CALL"
-			(at 130.81 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vital" "NO"
-			(at 137.16 46.355 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "ControlToken" "MC1S"
-			(at 127.635 48.26 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(property "Role" "PANEL"
 			(at 137.16 44.45 0)
 			(hide yes)
@@ -5641,7 +7075,29 @@
 				(justify left)
 			)
 		)
-		(property "SW" ""
+		(property "Appliance" "lever"
+			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "maintainer_call"
+			(at 130.81 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.S" "binary"
 			(at 130.81 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5668,7 +7124,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc")
 		(at 99.06 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -5723,7 +7179,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Address is 0x10 to 0x4F"
 			(at 112.395 17.78 0)
 			(hide yes)
 			(show_name no)
@@ -5745,19 +7201,195 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MAX7313"
-			(at 93.345 109.855 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x24"
 			(at 100.6281 112.3109 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IC" "MAX7313"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 99.06 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5824,7 +7456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelLamp-RED")
+		(lib_id "Railroad-Office:PanelLamp-RED")
 		(at 130.81 31.75 0)
 		(unit 1)
 		(body_style 1)
@@ -5921,8 +7553,8 @@
 				)
 			)
 		)
-		(property "Kind" "LAMP"
-			(at 130.81 36.195 0)
+		(property "Appliance" "lamp"
+			(at 130.81 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5932,7 +7564,18 @@
 				)
 			)
 		)
-		(property "LAMP" ""
+		(property "Style" "indication"
+			(at 130.81 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
 			(at 130.81 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -5959,7 +7602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelSignal")
+		(lib_id "Railroad-Office:PanelSignal")
 		(at 80.01 83.82 0)
 		(unit 1)
 		(body_style 1)
@@ -6034,18 +7677,7 @@
 				)
 			)
 		)
-		(property "Kind" "SIGNAL_LEVER"
-			(at 80.01 94.615 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NGS" ""
+		(property "Appliance" "lever"
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6056,7 +7688,7 @@
 				)
 			)
 		)
-		(property "HS" ""
+		(property "Style" "signal"
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6067,7 +7699,7 @@
 				)
 			)
 		)
-		(property "SGS" ""
+		(property "Pin.NGS" "binary"
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6078,7 +7710,7 @@
 				)
 			)
 		)
-		(property "SGK" ""
+		(property "Pin.HS" "binary"
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6089,7 +7721,7 @@
 				)
 			)
 		)
-		(property "NGK" ""
+		(property "Pin.SGS" "binary"
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6100,7 +7732,40 @@
 				)
 			)
 		)
-		(property "TEK" ""
+		(property "Pin.NGK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
 			(at 80.01 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -6123,15 +7788,6 @@
 		(pin "4"
 			(uuid "042234bf-8703-4aa7-8fde-5a088416fca1")
 		)
-		(pin "5"
-			(uuid "c6ba5690-5d83-4248-80c5-64c7294d6ab0")
-		)
-		(pin "6"
-			(uuid "3791c69a-54f8-4767-9f48-20a35d9fcbb2")
-		)
-		(pin "7"
-			(uuid "97660bbd-5209-4676-bf8e-d3ff1f535d82")
-		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
@@ -6142,7 +7798,200 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:PanelColumn")
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 80.01 83.82 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "08ed5bf4-2011-41c2-bf78-44c7212c0489")
+		(property "Reference" "SIG8785"
+			(at 80.01 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "784"
+			(at 80.01 81.915 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 78.105 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "signal"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGS" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.HS" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGS" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "ea367b1b-78e6-48f6-8777-fa1c9a10d139")
+		)
+		(pin "6"
+			(uuid "3c84648f-f432-4190-828a-49378844a54e")
+		)
+		(pin "7"
+			(uuid "0f2a1b83-7d96-42ac-b61c-4e65ae5239c6")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d/00f71388-de5d-5221-b08d-59e5132f8ba4"
+					(reference "SIG8785")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelColumn")
 		(at 80.01 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -6293,7 +8142,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc")
 		(at 200.66 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -6348,7 +8197,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Address is 0x10 to 0x4F"
 			(at 213.995 17.78 0)
 			(hide yes)
 			(show_name no)
@@ -6370,19 +8219,195 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MAX7313"
-			(at 194.945 109.855 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x26"
 			(at 202.2281 112.3109 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IC" "MAX7313"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 200.66 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6449,7 +8474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Encoding-US&S-506")
+		(lib_id "Railroad-Office:Codeline-Encoding-US&S-506")
 		(at 29.21 194.31 0)
 		(unit 1)
 		(body_style 1)
@@ -6582,7 +8607,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Driver-I2C-MAX7313")
+		(lib_id "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc")
 		(at 149.86 72.39 0)
 		(unit 1)
 		(body_style 1)
@@ -6637,7 +8662,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical IO expander instance bound to a PanelColumn. Value is its address/index (I2C expander index, or C/MRI node UA). Bit assignment per pin mirrors FieldUnit's IOBit device/offset/bitIndex model."
+		(property "Description" "One physical IO expander instance bound to a PanelColumn. Address is 0x10 to 0x4F"
 			(at 163.195 17.78 0)
 			(hide yes)
 			(show_name no)
@@ -6659,19 +8684,195 @@
 				)
 			)
 		)
-		(property "Kind" "I2C-MAX7313"
-			(at 144.145 109.855 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
 		(property "Address" "0x25"
 			(at 151.4281 112.3109 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IC" "MAX7313"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A1" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A2" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A3" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A4" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A5" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A6" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A7" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.A8" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B1" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B2" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B3" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B4" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B5" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B6" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B7" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.B8" "binary"
+			(at 149.86 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6738,7 +8939,7 @@
 		)
 	)
 	(symbol
-		(lib_id "RailroadPanel:Codeline-Encoding-Bits")
+		(lib_id "Railroad-Office:Codeline-Encoding-Bits")
 		(at 29.21 153.67 0)
 		(unit 1)
 		(body_style 1)

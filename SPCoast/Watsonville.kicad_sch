@@ -150,7 +150,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Bumper"
+		(symbol "Railroad-Trackplan:Bumper"
 			(pin_numbers
 				(hide yes)
 			)
@@ -284,7 +284,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ"
+		(symbol "Railroad-Trackplan:IRJ"
 			(pin_numbers
 				(hide yes)
 			)
@@ -436,7 +436,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ-Signal"
+		(symbol "Railroad-Trackplan:IRJ-Signal"
 			(pin_numbers
 				(hide yes)
 			)
@@ -617,7 +617,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:IRJ_Diag"
+		(symbol "Railroad-Trackplan:IRJ_Diag"
 			(pin_numbers
 				(hide yes)
 			)
@@ -769,7 +769,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Interlocking"
+		(symbol "Railroad-Trackplan:Interlocking"
 			(pin_numbers
 				(hide yes)
 			)
@@ -902,7 +902,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:MAIN HOUSE"
+		(symbol "Railroad-Trackplan:MAIN HOUSE"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1096,7 +1096,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Double"
+		(symbol "Railroad-Trackplan:Mast_Double"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1171,7 +1171,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_DOUBLE"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "double"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1264,7 +1275,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Dwarf"
+		(symbol "Railroad-Trackplan:Mast_Dwarf"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1340,7 +1351,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_DWARF"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "dwarf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1403,7 +1425,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Mast_Single"
+		(symbol "Railroad-Trackplan:Mast_Single"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1479,7 +1501,18 @@
 					)
 				)
 			)
-			(property "Kind" "MAST_SINGLE"
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "single"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1554,7 +1587,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Milepost"
+		(symbol "Railroad-Trackplan:Milepost"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1611,7 +1644,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Milepost: a track anchor carrying the milepost of the point it sits on."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1622,7 +1655,18 @@
 					)
 				)
 			)
-			(property "Role" "ANNOTATION"
+			(property "Role" "TRACK"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "MILEPOST"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1672,7 +1716,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:NextCP"
+		(symbol "Railroad-Trackplan:NextCP"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1839,7 +1883,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule251-DoT-Left"
+		(symbol "Railroad-Trackplan:Rule251-DoT-Left"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1990,7 +2034,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule251-DoT-Right"
+		(symbol "Railroad-Trackplan:Rule251-DoT-Right"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2141,7 +2185,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule261-DoT-BiDirectional"
+		(symbol "Railroad-Trackplan:Rule261-DoT-BiDirectional"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2166,12 +2210,12 @@
 				)
 			)
 			(property "Value" "Rule 261"
-				(at 0 2.54 0)
+				(at 0 0.635 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.508 0.508)
 						(color 0 0 0 1)
 					)
 				)
@@ -2300,7 +2344,7 @@
 				(pin passive line
 					(at 0 -2.54 180)
 					(length 0)
-					(name ""
+					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -2318,7 +2362,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Rule93-Yard Limits"
+		(symbol "Railroad-Trackplan:Rule93-Yard Limits"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2479,7 +2523,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Signal Head - CL"
+		(symbol "Railroad-Trackplan:Signal Head - CPL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2531,7 +2575,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2542,7 +2586,7 @@
 					)
 				)
 			)
-			(property "Role" "COMPONENT"
+			(property "Role" "APPLIANCE"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2553,7 +2597,7 @@
 					)
 				)
 			)
-			(property "Kind" "HEAD"
+			(property "Appliance" "head"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2564,7 +2608,18 @@
 					)
 				)
 			)
-			(symbol "Signal Head - CL_1_1"
+			(property "Style" "CPL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Signal Head - CPL_1_1"
 				(circle
 					(center -3.81 2.54)
 					(radius 1.2655)
@@ -2597,7 +2652,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Lock"
+		(symbol "Railroad-Trackplan:Switch_Lock"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2682,7 +2737,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at -6.985 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2692,8 +2747,29 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_LOCK"
-				(at 0 0 0)
+			(property "IndicationCeiling" ""
+				(at 13.335 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Appliance" "switch"
+				(at -6.985 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "lock"
+				(at -6.985 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2905,7 +2981,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Powered_Derail"
+		(symbol "Railroad-Trackplan:Derail"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3000,7 +3076,18 @@
 					)
 				)
 			)
-			(property "Kind" "DERAIL"
+			(property "IndicationCeiling" "STOP/RESTRICTING"
+				(at -1.27 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(property "Appliance" "switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3011,7 +3098,18 @@
 					)
 				)
 			)
-			(symbol "Switch_Powered_Derail_1_1"
+			(property "Style" "derail"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Derail_1_1"
 				(polyline
 					(pts
 						(xy -6.35 0) (xy 6.35 0)
@@ -3083,7 +3181,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Powered_Diag"
+		(symbol "Railroad-Trackplan:Switch_Powered_Diag"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3178,8 +3276,18 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_REMOTE"
-				(at 0.635 6.35 0)
+			(property "IndicationCeiling" ""
+				(at 5.715 1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Appliance" "switch"
+				(at 0 8.255 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3189,13 +3297,14 @@
 					)
 				)
 			)
-			(property "Indications" ""
-				(at 5.715 1.27 0)
+			(property "Style" "powered"
+				(at 0 8.255 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -3355,7 +3464,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Switch_Powered_Small"
+		(symbol "Railroad-Trackplan:Switch_Powered_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3450,7 +3559,18 @@
 					)
 				)
 			)
-			(property "Kind" "SWITCH_REMOTE"
+			(property "IndicationCeiling" ""
+				(at 1.905 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(property "Appliance" "switch"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3461,15 +3581,15 @@
 					)
 				)
 			)
-			(property "Indications" ""
-				(at 1.905 0.635 0)
+			(property "Style" "powered"
+				(at 0 0 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(symbol "Switch_Powered_Small_1_1"
@@ -3614,7 +3734,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Track Circuit_Yellow"
+		(symbol "Railroad-Trackplan:Track Circuit_Yellow"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3699,7 +3819,7 @@
 					)
 				)
 			)
-			(property "Kind" "TRACK_CIRCUIT"
+			(property "Appliance" "track_circuit"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3745,7 +3865,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad:Virtual Indication"
+		(symbol "Railroad-Trackplan:Track Circuit_Virtual"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3798,7 +3918,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Virtual track circuit: an indication (Value, e.g. 0100T) that aggregates the circuits listed in IndicationToken. No hardware; the plant compiler derives it."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3843,17 +3963,6 @@
 					)
 				)
 			)
-			(property "Kind" "VIRTUAL_INDICATION"
-				(at -17.145 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Display" "${Value}: [${IndicationToken}]"
 				(at 2.286 0 0)
 				(show_name no)
@@ -3865,7 +3974,29 @@
 					(justify left)
 				)
 			)
-			(symbol "Virtual Indication_1_1"
+			(property "Appliance" "track_circuit"
+				(at -21.463 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "virtual"
+				(at -21.463 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Track Circuit_Virtual_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -5124,7 +5255,7 @@
 		(uuid "fe1e4e26-b727-4cb4-8b86-8937e230d0bd")
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -5228,7 +5359,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -5332,7 +5463,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule251-DoT-Left")
+		(lib_id "Railroad-Trackplan:Rule251-DoT-Left")
 		(at 46.99 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -5444,7 +5575,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 223.52 93.98 0)
 		(mirror y)
 		(unit 1)
@@ -5541,8 +5672,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 222.885 87.63 0)
+		(property "IndicationCeiling" ""
+			(at 217.805 92.71 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 223.52 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5552,13 +5693,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 217.805 92.71 0)
+		(property "Style" "powered"
+			(at 223.52 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -5581,7 +5723,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Virtual Indication")
+		(lib_id "Railroad-Trackplan:Track Circuit_Virtual")
 		(at 30.48 115.57 0)
 		(unit 1)
 		(body_style 1)
@@ -5635,7 +5777,7 @@
 				)
 			)
 		)
-		(property "Description" "Arrival Ladder"
+		(property "Description" "Virtual track circuit: an indication (Value, e.g. 0100T) that aggregates the circuits listed in IndicationToken. No hardware; the plant compiler derives it."
 			(at 30.48 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5680,17 +5822,6 @@
 				)
 			)
 		)
-		(property "Kind" "VIRTUAL_INDICATION"
-			(at 13.335 113.665 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Display" "${Value}: [${IndicationToken}]"
 			(at 32.766 115.57 0)
 			(show_name no)
@@ -5700,6 +5831,28 @@
 					(size 1.016 1.016)
 				)
 				(justify left)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at 30.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "virtual"
+			(at 30.48 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -5712,7 +5865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 43.18 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -5766,7 +5919,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 43.18 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5788,7 +5941,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 43.18 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 43.18 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5812,7 +5976,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -5899,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -5923,7 +6087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -6010,7 +6174,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6034,7 +6198,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Double")
+		(lib_id "Railroad-Trackplan:Mast_Double")
 		(at 40.64 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -6110,7 +6274,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
+		(property "Appliance" "mast"
+			(at 40.64 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "double"
 			(at 40.64 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6140,7 +6315,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -6227,7 +6402,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6251,7 +6426,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Small")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Small")
 		(at 69.85 73.66 0)
 		(mirror x)
 		(unit 1)
@@ -6348,7 +6523,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
+		(property "IndicationCeiling" ""
+			(at 71.755 74.295 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
 			(at 69.85 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6359,15 +6545,15 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 71.755 74.295 0)
+		(property "Style" "powered"
+			(at 69.85 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(pin "2"
@@ -6389,7 +6575,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -6493,7 +6679,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 40.64 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -6610,7 +6796,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 118.11 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -6727,7 +6913,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 45.72 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -6781,7 +6967,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 45.72 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6803,7 +6989,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 45.72 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 45.72 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -6827,7 +7024,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -6914,7 +7111,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6938,7 +7135,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -7042,7 +7239,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -7146,7 +7343,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 46.99 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -7263,7 +7460,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -7367,7 +7564,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -7471,7 +7668,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 238.76 109.22 0)
 		(mirror y)
 		(unit 1)
@@ -7568,8 +7765,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 238.125 102.87 0)
+		(property "IndicationCeiling" ""
+			(at 233.045 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 238.76 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7579,13 +7786,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 233.045 107.95 0)
+		(property "Style" "powered"
+			(at 238.76 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7608,7 +7816,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -7695,7 +7903,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -7719,7 +7927,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Interlocking")
+		(lib_id "Railroad-Trackplan:Interlocking")
 		(at 45.72 52.07 0)
 		(unit 1)
 		(body_style 1)
@@ -7820,7 +8028,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 82.55 86.36 0)
 		(mirror x)
 		(unit 1)
@@ -7917,8 +8125,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 83.185 92.71 0)
+		(property "IndicationCeiling" ""
+			(at 88.265 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 82.55 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7928,13 +8146,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 88.265 87.63 0)
+		(property "Style" "powered"
+			(at 82.55 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7957,7 +8176,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 53.34 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -8044,7 +8263,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 53.34 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -8068,7 +8287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -8172,7 +8391,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -8259,7 +8478,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8283,7 +8502,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 207.01 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -8370,7 +8589,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 207.01 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -8394,7 +8613,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -8481,7 +8700,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -8505,7 +8724,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -8592,7 +8811,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -8616,7 +8835,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -8703,7 +8922,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -8727,7 +8946,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -8831,7 +9050,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 110.49 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -8948,7 +9167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 113.03 116.84 0)
 		(mirror x)
 		(unit 1)
@@ -9045,8 +9264,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 113.665 123.19 0)
+		(property "IndicationCeiling" ""
+			(at 118.745 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 113.03 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9056,13 +9285,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 118.745 118.11 0)
+		(property "Style" "powered"
+			(at 113.03 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9085,7 +9315,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -9189,7 +9419,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule93-Yard Limits")
+		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
 		(at 59.69 71.12 0)
 		(unit 1)
 		(body_style 1)
@@ -9301,7 +9531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -9405,7 +9635,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 227.33 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -9509,7 +9739,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -9596,7 +9826,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -9620,7 +9850,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 110.49 137.16 0)
 		(unit 1)
 		(body_style 1)
@@ -9724,7 +9954,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -9828,7 +10058,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 102.87 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -9945,7 +10175,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -10032,7 +10262,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -10056,7 +10286,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Virtual Indication")
+		(lib_id "Railroad-Trackplan:Track Circuit_Virtual")
 		(at 30.48 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -10110,7 +10340,7 @@
 				)
 			)
 		)
-		(property "Description" "Departure Ladder"
+		(property "Description" "Virtual track circuit: an indication (Value, e.g. 0100T) that aggregates the circuits listed in IndicationToken. No hardware; the plant compiler derives it."
 			(at 30.48 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -10155,17 +10385,6 @@
 				)
 			)
 		)
-		(property "Kind" "VIRTUAL_INDICATION"
-			(at 13.335 122.555 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Display" "${Value}: [${IndicationToken}]"
 			(at 32.766 124.46 0)
 			(show_name no)
@@ -10175,6 +10394,28 @@
 					(size 1.016 1.016)
 				)
 				(justify left)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "virtual"
+			(at 30.48 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -10187,7 +10428,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 68.58 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -10274,7 +10515,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 68.58 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -10298,7 +10539,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 78.74 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -10402,7 +10643,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 245.11 137.16 180)
 		(unit 1)
 		(body_style 1)
@@ -10519,7 +10760,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 96.52 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -10573,7 +10814,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 96.52 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10595,7 +10836,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 96.52 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 96.52 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -10619,7 +10871,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -10723,7 +10975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -10810,7 +11062,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -10834,7 +11086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 97.79 101.6 0)
 		(mirror x)
 		(unit 1)
@@ -10931,8 +11183,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 98.425 107.95 0)
+		(property "IndicationCeiling" ""
+			(at 103.505 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 97.79 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10942,13 +11204,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 103.505 102.87 0)
+		(property "Style" "powered"
+			(at 97.79 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10971,7 +11234,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Double")
+		(lib_id "Railroad-Trackplan:Mast_Double")
 		(at 46.99 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -11047,7 +11310,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DOUBLE"
+		(property "Appliance" "mast"
+			(at 46.99 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "double"
 			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -11077,7 +11351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -11164,7 +11438,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -11188,7 +11462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 109.22 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -11292,7 +11566,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 36.83 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -11346,7 +11620,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 36.83 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11368,7 +11642,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 36.83 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 36.83 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11392,7 +11677,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 101.6 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -11496,7 +11781,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 243.84 140.97 180)
 		(unit 1)
 		(body_style 1)
@@ -11550,7 +11835,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 243.84 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11572,7 +11857,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 243.84 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 243.84 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -11596,7 +11892,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 199.39 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -11700,7 +11996,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 60.96 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -11804,7 +12100,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -11908,7 +12204,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 242.57 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -12012,7 +12308,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -12099,7 +12395,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -12123,7 +12419,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 231.14 101.6 0)
 		(mirror y)
 		(unit 1)
@@ -12220,8 +12516,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 230.505 95.25 0)
+		(property "IndicationCeiling" ""
+			(at 225.425 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 231.14 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12231,13 +12537,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 225.425 100.33 0)
+		(property "Style" "powered"
+			(at 231.14 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -12260,7 +12567,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -12347,7 +12654,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -12371,7 +12678,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 132.08 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -12448,7 +12755,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 132.08 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 132.08 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -12475,7 +12793,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 85.09 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -12552,7 +12870,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 85.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 85.09 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -12579,7 +12908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 111.76 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -12633,7 +12962,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 111.76 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12655,7 +12984,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 111.76 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 111.76 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -12679,7 +13019,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -12783,7 +13123,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -12887,7 +13227,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 234.95 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -12991,7 +13331,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -13095,7 +13435,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -13182,7 +13522,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -13206,7 +13546,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -13310,7 +13650,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 118.11 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -13387,7 +13727,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 118.11 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 118.11 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13414,7 +13765,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -13501,7 +13852,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -13525,7 +13876,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -13629,7 +13980,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 85.09 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -13746,7 +14097,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -13833,7 +14184,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -13857,7 +14208,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -13944,7 +14295,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -13968,7 +14319,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 95.25 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -14045,7 +14396,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 95.25 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 95.25 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14072,7 +14434,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -14159,7 +14521,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -14183,7 +14545,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -14287,7 +14649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 102.87 90.17 0)
 		(unit 1)
 		(body_style 1)
@@ -14364,7 +14726,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 102.87 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 102.87 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -14391,7 +14764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 86.36 90.17 0)
 		(unit 1)
 		(body_style 1)
@@ -14495,7 +14868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 90.17 93.98 0)
 		(mirror x)
 		(unit 1)
@@ -14592,8 +14965,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 90.805 100.33 0)
+		(property "IndicationCeiling" ""
+			(at 95.885 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 90.17 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14603,13 +14986,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 95.885 95.25 0)
+		(property "Style" "powered"
+			(at 90.17 93.98 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14742,7 +15126,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 137.16 0)
 		(unit 1)
 		(body_style 1)
@@ -14829,7 +15213,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -14853,7 +15237,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 132.08 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -14970,7 +15354,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -15074,7 +15458,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -15161,7 +15545,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -15185,7 +15569,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -15289,7 +15673,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 110.49 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -15366,7 +15750,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 110.49 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 110.49 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -15393,7 +15788,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 254 124.46 0)
 		(mirror y)
 		(unit 1)
@@ -15490,8 +15885,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 253.365 118.11 0)
+		(property "IndicationCeiling" ""
+			(at 248.285 123.19 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 254 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15501,13 +15906,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 248.285 123.19 0)
+		(property "Style" "powered"
+			(at 254 124.46 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15530,7 +15936,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -15634,7 +16040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 86.36 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -15688,7 +16094,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 86.36 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -15710,7 +16116,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 86.36 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 86.36 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -15734,7 +16151,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 119.38 105.41 0)
 		(unit 1)
 		(body_style 1)
@@ -15788,7 +16205,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 119.38 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15810,7 +16227,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 119.38 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 119.38 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -15834,7 +16262,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -15921,7 +16349,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -15945,7 +16373,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 213.36 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -16049,7 +16477,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 93.98 97.79 0)
 		(unit 1)
 		(body_style 1)
@@ -16263,7 +16691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -16350,7 +16778,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -16374,7 +16802,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -16478,7 +16906,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:MAIN HOUSE")
+		(lib_id "Railroad-Trackplan:MAIN HOUSE")
 		(at 45.72 57.15 0)
 		(unit 1)
 		(body_style 1)
@@ -16592,7 +17020,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 163.83 109.22 0)
 		(unit 1)
 		(body_style 1)
@@ -16696,7 +17124,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 95.25 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -16813,7 +17241,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 245.11 140.97 180)
 		(unit 1)
 		(body_style 1)
@@ -16890,7 +17318,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 245.11 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 245.11 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -16917,7 +17356,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 148.59 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -17004,7 +17443,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 148.59 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -17028,7 +17467,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 138.43 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -17115,7 +17554,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 138.43 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -17139,7 +17578,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 127 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -17193,7 +17632,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 127 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -17215,7 +17654,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 127 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 127 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -17239,7 +17689,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 168.91 124.46 0)
 		(unit 1)
 		(body_style 1)
@@ -17326,7 +17776,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 168.91 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -17350,7 +17800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 143.51 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -17454,7 +17904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 246.38 116.84 0)
 		(mirror y)
 		(unit 1)
@@ -17551,8 +18001,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 245.745 110.49 0)
+		(property "IndicationCeiling" ""
+			(at 240.665 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 246.38 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17562,13 +18022,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 240.665 115.57 0)
+		(property "Style" "powered"
+			(at 246.38 116.84 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17591,7 +18052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ_Diag")
+		(lib_id "Railroad-Trackplan:IRJ_Diag")
 		(at 250.19 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -17695,7 +18156,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 173.99 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -17799,7 +18260,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Mast_Dwarf")
+		(lib_id "Railroad-Trackplan:Mast_Dwarf")
 		(at 125.73 113.03 0)
 		(unit 1)
 		(body_style 1)
@@ -17876,7 +18337,18 @@
 				)
 			)
 		)
-		(property "Kind" "MAST_DWARF"
+		(property "Appliance" "mast"
+			(at 125.73 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "dwarf"
 			(at 125.73 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -17903,7 +18375,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 39.37 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -17957,7 +18429,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 39.37 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -17979,7 +18451,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 39.37 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 39.37 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -18003,7 +18486,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule251-DoT-Right")
+		(lib_id "Railroad-Trackplan:Rule251-DoT-Right")
 		(at 105.41 134.62 0)
 		(unit 1)
 		(body_style 1)
@@ -18115,7 +18598,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Small")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Small")
 		(at 29.21 73.66 0)
 		(mirror x)
 		(unit 1)
@@ -18212,7 +18695,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
+		(property "IndicationCeiling" ""
+			(at 31.115 74.295 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
 			(at 29.21 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -18223,15 +18717,15 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 31.115 74.295 0)
+		(property "Style" "powered"
+			(at 29.21 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(pin "2"
@@ -18253,7 +18747,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ-Signal")
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 125.73 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -18370,7 +18864,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Small")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Small")
 		(at 190.5 86.36 0)
 		(mirror y)
 		(unit 1)
@@ -18467,7 +18961,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
+		(property "IndicationCeiling" ""
+			(at 188.595 85.725 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -18478,15 +18983,15 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 188.595 85.725 0)
+		(property "Style" "powered"
+			(at 190.5 86.36 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(pin "2"
@@ -18508,7 +19013,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Switch_Powered_Diag")
+		(lib_id "Railroad-Trackplan:Switch_Powered_Diag")
 		(at 105.41 109.22 0)
 		(mirror x)
 		(unit 1)
@@ -18605,8 +19110,18 @@
 				)
 			)
 		)
-		(property "Kind" "SWITCH_REMOTE"
-			(at 106.045 115.57 0)
+		(property "IndicationCeiling" ""
+			(at 111.125 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 105.41 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18616,13 +19131,14 @@
 				)
 			)
 		)
-		(property "Indications" ""
-			(at 111.125 110.49 0)
+		(property "Style" "powered"
+			(at 105.41 109.22 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -18645,7 +19161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Rule93-Yard Limits")
+		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
 		(at 59.69 92.71 0)
 		(unit 1)
 		(body_style 1)
@@ -18757,7 +19273,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:IRJ")
+		(lib_id "Railroad-Trackplan:IRJ")
 		(at 153.67 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -18861,7 +19377,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 86.36 0)
 		(unit 1)
 		(body_style 1)
@@ -18948,7 +19464,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -18972,7 +19488,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 133.35 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -19026,7 +19542,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -19048,7 +19564,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 133.35 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 133.35 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -19072,7 +19599,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Signal Head - CL")
+		(lib_id "Railroad-Trackplan:Signal Head - CPL")
 		(at 104.14 90.17 0)
 		(unit 1)
 		(body_style 1)
@@ -19126,7 +19653,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
 			(at 104.14 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -19148,7 +19675,18 @@
 				)
 			)
 		)
-		(property "Kind" "HEAD"
+		(property "Appliance" "head"
+			(at 104.14 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
 			(at 104.14 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -19172,7 +19710,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:NextCP")
+		(lib_id "Railroad-Trackplan:NextCP")
 		(at 21.59 73.66 0)
 		(unit 1)
 		(body_style 1)
@@ -19273,7 +19811,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:Track Circuit_Yellow")
+		(lib_id "Railroad-Trackplan:Track Circuit_Yellow")
 		(at 158.75 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -19360,7 +19898,7 @@
 				)
 			)
 		)
-		(property "Kind" "TRACK_CIRCUIT"
+		(property "Appliance" "track_circuit"
 			(at 158.75 93.98 0)
 			(hide yes)
 			(show_name no)
