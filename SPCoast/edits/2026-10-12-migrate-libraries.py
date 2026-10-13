@@ -2,7 +2,9 @@
 """One-off, 2026-10-12: move every SPCoast sheet from the InterlockingPlant libraries to the four
 Railroad libraries (checkpoint step 6, the mechanical half).
 
-    python3 SPCoast/edits/2026-10-12-migrate-libraries.py [--dry-run] [--heads CL|CPL]
+    python3 SPCoast/edits/2026-10-12-migrate-libraries.py [--dry-run] [--heads CL|CPL] [--project DIR] [--libdir DIR]
+
+Re-runnable: an instance already on a Railroad-* library passes through with its fields synced.
 
 Per sheet, by text edits that keep untouched bytes:
 - every instance's lib_id is remapped by MAP (nickname and, where the recipe renamed it, symbol);
@@ -67,6 +69,8 @@ def target(lib_id: str, heads: str) -> str | None | str:
         return OFFICE_EXCEPTIONS.get(name, f"Railroad-Office:{name}")
     if lib == "RailroadField":
         return FIELD.get(name, "?")
+    if lib.startswith("Railroad-"):
+        return lib_id                                   # already on the new libraries: pass through
     return "?"
 
 
@@ -100,12 +104,12 @@ def new_property(name: str, value: str, at: str) -> str:
 
 
 class Migration:
-    def __init__(self, heads: str):
+    def __init__(self, heads: str, libdir: Path = LIBDIR):
         self.heads = heads
         self.lib_blocks: dict[str, str] = {}
         self.lib_syms: dict[str, dict] = {}
         for lib in LIBRARIES:
-            text = (LIBDIR / f"{lib}.kicad_sym").read_text()
+            text = (libdir / f"{lib}.kicad_sym").read_text()
             for name, b in symbol_blocks(text).items():
                 self.lib_blocks[f"{lib}:{name}"] = b
             for name, s in library_symbols(text).items():
@@ -261,15 +265,17 @@ class Migration:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--project", type=Path, default=SPCOAST, help="the SPCoast project directory")
+    ap.add_argument("--libdir", type=Path, default=None, help="the symbols directory (default: <project>/../symbols)")
     ap.add_argument("--heads", default="CPL", choices=("CL", "CPL"), help="Style for every plant head drawn as Signal Head - CL")
     a = ap.parse_args(argv)
-    if any(SPCOAST.glob("~*.lck")) and not a.dry_run:
+    if any(a.project.glob("~*.lck")) and not a.dry_run:
         print("KiCad has the project open (lock files present); close it first", file=sys.stderr)
         return 1
-    m = Migration(a.heads)
+    m = Migration(a.heads, a.libdir or a.project.parent / "symbols")
     for lib_id in list(FIELD.values()) + list(OFFICE_EXCEPTIONS.values()) + [v for v in PLANT_EXCEPTIONS.values() if v]:
         assert lib_id in m.lib_blocks, lib_id
-    for path in sorted(SPCOAST.glob("*.kicad_sch")):
+    for path in sorted(a.project.glob("*.kicad_sch")):
         m.migrate_sheet(path, a.dry_run)
     print("== instances")
     for k, v in sorted(m.counts.items()):

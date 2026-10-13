@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad:AUXILIARY_TRAFFIC"
+		(symbol "Railroad-Trackplan:AUXILIARY"
 			(pin_numbers
 				(hide yes)
 			)
@@ -29,8 +29,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FLK"
-				(at 0 2.54 0)
+			(property "Reference" "AUX"
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -41,7 +41,7 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 -2.54 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -94,7 +94,17 @@
 					)
 				)
 			)
-			(property "Kind" "AUXILIARY_TRAFFIC"
+			(property "CP" ""
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Appliance" "lamp"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,17 +115,18 @@
 					)
 				)
 			)
-			(property "CP" ""
-				(at 0 -3.81 0)
+			(property "Style" "non_vital"
+				(at 0 0 0)
 				(show_name no)
-				(do_not_autoplace yes)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "AUXILIARY_TRAFFIC_1_1"
+			(symbol "AUXILIARY_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -126,7 +137,7 @@
 					)
 					(fill
 						(type color)
-						(color 0 0 255 1)
+						(color 194 0 194 1)
 					)
 				)
 				(pin passive line
@@ -4028,7 +4039,7 @@
 	)
 	(text "TRAFFIC"
 		(exclude_from_sim no)
-		(at 41.148 39.116 0)
+		(at 41.148 37.846 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15016,7 +15027,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:AUXILIARY_TRAFFIC")
+		(lib_id "Railroad-Trackplan:AUXILIARY")
 		(at 38.1 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -15038,14 +15049,13 @@
 			)
 		)
 		(property "Value" "NFLK"
-			(at 36.322 44.45 0)
+			(at 38.1 39.37 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15092,7 +15102,17 @@
 				)
 			)
 		)
-		(property "Kind" "AUXILIARY_TRAFFIC"
+		(property "CP" "Watsonville"
+			(at 38.1 44.45 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
 			(at 38.1 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -15103,13 +15123,14 @@
 				)
 			)
 		)
-		(property "CP" "Watsonville"
-			(at 38.1 45.72 0)
+		(property "Style" "non_vital"
+			(at 38.1 41.91 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16581,7 +16602,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad:AUXILIARY_TRAFFIC")
+		(lib_id "Railroad-Trackplan:AUXILIARY")
 		(at 44.45 41.91 0)
 		(unit 1)
 		(body_style 1)
@@ -16603,14 +16624,13 @@
 			)
 		)
 		(property "Value" "SFLK"
-			(at 42.672 44.45 0)
+			(at 44.45 39.37 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -16657,7 +16677,17 @@
 				)
 			)
 		)
-		(property "Kind" "AUXILIARY_TRAFFIC"
+		(property "CP" "Watsonville"
+			(at 44.45 44.45 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
 			(at 44.45 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -16668,13 +16698,14 @@
 				)
 			)
 		)
-		(property "CP" "Watsonville"
-			(at 44.45 45.72 0)
+		(property "Style" "non_vital"
+			(at 44.45 41.91 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 1.27 1.27)
 				)
 			)
 		)
