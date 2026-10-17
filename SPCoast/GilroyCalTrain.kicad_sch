@@ -842,370 +842,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-CMRI-IB"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CMRI"
-				(at 1.143 2.032 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" "UA${UA}.IN.${ADDRESS}"
-				(at 0.889 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CMRInet digital input. Value = the CMRI Node + bit"
-				(at 11.303 -2.921 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "CMRI"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.493 3.048 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "UA" "30"
-				(at 9.271 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" "1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-IB_0_1"
-				(rectangle
-					(start 21.59 -1.27)
-					(end 2.54 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-IB_1_1"
-				(polyline
-					(pts
-						(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "CMRI ${VALUE}"
-					(at 5.334 0 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(pin input line
-					(at 0 0 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-HardwareIO:Driver-CMRI-OB"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CMRI"
-				(at 1.143 2.032 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" "UA${UA}.OUT.${ADDRESS}"
-				(at 0.889 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CMRInet digital output. Value = the CMRI Node + bit"
-				(at 11.303 -2.921 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "CMRI"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.493 3.048 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "UA" "30"
-				(at 9.271 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" "1"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-OB_0_1"
-				(rectangle
-					(start 21.59 -1.27)
-					(end 2.54 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-OB_1_1"
-				(polyline
-					(pts
-						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "CMRI ${VALUE}"
-					(at 5.207 0 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(pin output line
-					(at 0 0 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Trackplan:Bumper"
 			(pin_numbers
 				(hide yes)
@@ -4742,7 +4378,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Field:Head-CPL"
+		(symbol "Railroad-Field:Cast-Aspect-CPL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -4754,7 +4390,416 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevHead"
+			(property "Reference" "Cast"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CAST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" "CPL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.ASPECT" "aspect"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Cast-Aspect-CPL_1_1"
+				(rectangle
+					(start -17.78 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CPL A"
+					(at -10.16 2.794 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ASPECT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Cast-Aspect-CPL_2_1"
+				(rectangle
+					(start -17.78 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CPL B"
+					(at -10.16 2.794 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ASPECT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Cast-Aspect-CPL_3_1"
+				(rectangle
+					(start -17.78 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CPL C"
+					(at -10.16 2.794 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ASPECT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Cast-Aspect-CPL_4_1"
+				(rectangle
+					(start -17.78 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CPL D"
+					(at -10.16 2.794 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ASPECT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(symbol "Cast-Aspect-CPL_5_1"
+				(rectangle
+					(start -17.78 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "CPL E"
+					(at -10.16 2.794 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ASPECT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Field:Mast"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "DevMast"
 				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4798,7 +4843,7 @@
 					)
 				)
 			)
-			(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
+			(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4820,7 +4865,7 @@
 					)
 				)
 			)
-			(property "Appliance" "head"
+			(property "Appliance" "mast"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4831,7 +4876,7 @@
 					)
 				)
 			)
-			(property "Style" "CPL"
+			(property "Pin.IND" "indication"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4842,18 +4887,7 @@
 					)
 				)
 			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Head-CPL_0_1"
+			(symbol "Mast_0_1"
 				(rectangle
 					(start -21.59 1.27)
 					(end -2.54 -1.27)
@@ -4866,8 +4900,8 @@
 					)
 				)
 			)
-			(symbol "Head-CPL_1_1"
-				(text "HEAD ${VALUE}"
+			(symbol "Mast_1_1"
+				(text "MAST ${VALUE}"
 					(at -20.955 0 0)
 					(effects
 						(font
@@ -4879,7 +4913,393 @@
 				(pin output line
 					(at 0 0 180)
 					(length 2.54)
-					(name "ASPECT"
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Driver-CMRI-IB"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CMRI"
+				(at 1.143 2.032 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" "UA${Address}.IN.${Bit}"
+				(at 0.889 4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
+				(at 11.303 -2.921 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "CMRI"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.D" "binary"
+				(at 7.493 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "UA" "${Address}"
+				(at 9.271 4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Bit" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-CMRI-IB_0_1"
+				(rectangle
+					(start 21.59 -1.27)
+					(end 2.54 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Driver-CMRI-IB_1_1"
+				(polyline
+					(pts
+						(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "CMRI ${VALUE}"
+					(at 5.334 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Driver-CMRI-OB"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CMRI"
+				(at 1.143 2.032 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" "UA${Address}.OUT.${Bit}"
+				(at 0.889 4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
+				(at 11.303 -2.921 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "CMRI"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.D" "binary"
+				(at 7.493 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "UA" "${Address}"
+				(at 9.271 4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Bit" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-CMRI-OB_0_1"
+				(rectangle
+					(start 21.59 -1.27)
+					(end 2.54 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Driver-CMRI-OB_1_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "CMRI ${VALUE}"
+					(at 5.207 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 0 0 0)
+					(length 2.54)
+					(name "D"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -5484,8 +5904,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 168.91 0)
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5494,8 +5914,386 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a414049-d5ea-434e-812c-17878d816b11")
-		(property "Reference" "DevHead10"
+		(uuid "90ab48b9-6d0d-44d9-be08-98f63b15544f")
+		(property "Reference" "Cast16"
+			(at 85.09 143.51 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 153.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93467d09-eed4-4933-8d3b-1610beaf8106")
+		)
+		(pin "2"
+			(uuid "bc5223a4-8bda-4cf5-9f87-be95e2fa95ee")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 152.4 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8d884e7-8e11-49dc-94c6-7997ad5f5332")
+		(property "Reference" "Cast16"
+			(at 85.09 148.59 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 159.004 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 152.4 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "87637693-f12c-4383-9361-25e1788e8bbc")
+		)
+		(pin "4"
+			(uuid "8f20cf99-4043-4a8f-8760-4babc48fd1de")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast16")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 160.02 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62ae7f86-7e1f-410d-a314-507154a677c1")
+		(property "Reference" "Cast16"
+			(at 85.09 156.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 166.624 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 160.02 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "f6aa65cd-7b92-4b61-9ac1-6c55e18a680e")
+		)
+		(pin "6"
+			(uuid "372a83c0-478c-45ed-93d6-e05f4999e001")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast16")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 168.91 0)
+		(unit 4)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b21f3c22-737d-4c74-ac52-deee81c6c0bb")
+		(property "Reference" "Cast16"
 			(at 85.09 165.1 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5506,7 +6304,7 @@
 				)
 			)
 		)
-		(property "Value" "774ND"
+		(property "Value" ""
 			(at 87.63 168.91 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5539,7 +6337,7 @@
 				)
 			)
 		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
 			(at 87.63 175.514 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5550,18 +6348,7 @@
 				)
 			)
 		)
-		(property "Role" "DEVICE"
-			(at 87.63 168.91 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
+		(property "Role" "CAST"
 			(at 87.63 168.91 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5583,6 +6370,17 @@
 				)
 			)
 		)
+		(property "Pin.IND" "indication"
+			(at 87.63 168.91 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(property "Pin.ASPECT" "aspect"
 			(at 87.63 168.91 0)
 			(show_name no)
@@ -5594,13 +6392,756 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "b3223485-59e7-4c74-9ffc-a9c6119419f4")
+		(pin "7"
+			(uuid "26aee7e9-801d-425f-bdcb-15e5ff85166b")
+		)
+		(pin "8"
+			(uuid "e8a4d373-04d1-4902-8a89-f884ae9740b1")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead10")
+					(reference "Cast16")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 177.8 0)
+		(unit 5)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6903f44-a032-48cb-a24f-43b0212d443f")
+		(property "Reference" "Cast16"
+			(at 85.09 173.99 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 184.404 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 177.8 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "5114751f-2e69-43d7-abb0-f3056b2980cf")
+		)
+		(pin "10"
+			(uuid "9f011ec4-f774-4838-a55d-6c043bd34c45")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast16")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 67.31 147.32) (xy 64.77 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4138650c-fd56-468b-a8f2-b74a58088c38")
+	)
+	(wire
+		(pts
+			(xy 67.31 152.4) (xy 64.77 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38508312-47ff-4735-be6d-021e0293547c")
+	)
+	(wire
+		(pts
+			(xy 67.31 160.02) (xy 64.77 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "846d117c-5123-4ae9-acff-88908bdc3471")
+	)
+	(wire
+		(pts
+			(xy 67.31 168.91) (xy 64.77 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "833a34b2-13db-4213-b05b-41067ab5ac94")
+	)
+	(wire
+		(pts
+			(xy 67.31 177.8) (xy 64.77 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee1d70a3-3a04-4cf0-b1d5-60f1a219e9d7")
+	)
+	(wire
+		(pts
+			(xy 64.77 147.32) (xy 64.77 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f1ac1db-70a8-42dd-8cf3-00302a5e1d54")
+	)
+	(wire
+		(pts
+			(xy 64.77 152.4) (xy 64.77 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab7a470a-6464-41d1-9e18-7f8d4e779050")
+	)
+	(wire
+		(pts
+			(xy 64.77 160.02) (xy 64.77 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cb58ab-1caf-472f-ad0d-f2c36cc8a477")
+	)
+	(wire
+		(pts
+			(xy 64.77 168.91) (xy 64.77 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a473f52-44e1-49a8-b7ec-ec3e924de206")
+	)
+	(junction
+		(at 64.77 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "607de6ac-ace4-4f05-b5a2-a91c9c9e8366")
+	)
+	(junction
+		(at 64.77 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5cb2834-e452-4eab-a9bf-54b358d8868c")
+	)
+	(junction
+		(at 64.77 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "51096fee-ff68-4bc9-87b0-102497286fc8")
+	)
+	(symbol
+		(lib_id "Railroad-Field:Mast")
+		(at 64.77 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a73f003-3da6-4a9f-88be-3494b728c2cd")
+		(property "Reference" "DevMast3"
+			(at 62.23 143.51 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "774N"
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
+			(at 64.77 153.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "mast"
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3f54ea9f-7a5a-4479-8da6-c1053907c179")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "DevMast3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "464a83f3-1619-4d7b-9db4-50e3f5298332")
+		(property "Reference" "Cast17"
+			(at 85.09 130.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 141.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bce58ed-556f-4c27-bb9a-5d42ccaf9532")
+		)
+		(pin "2"
+			(uuid "91caaea8-4352-4050-bf83-2878f3d66b1e")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Cast-Aspect-CPL")
+		(at 87.63 139.7 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e81962f4-07fd-4f8c-9fa7-fea1a5847108")
+		(property "Reference" "Cast17"
+			(at 85.09 135.89 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
+			(at 87.63 146.304 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CAST"
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ASPECT" "aspect"
+			(at 87.63 139.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "47c6bca0-6ae4-446d-ac1f-54467e4ca79d")
+		)
+		(pin "4"
+			(uuid "ec4d41f1-c9d2-447b-8878-4f57210e4a55")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "Cast17")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 67.31 134.62) (xy 64.77 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ddf7804-20b1-4ba9-b977-058ce4cca2dc")
+	)
+	(wire
+		(pts
+			(xy 67.31 139.7) (xy 64.77 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b17cbedc-6a2a-4619-a11b-b3b4c7d03d3e")
+	)
+	(wire
+		(pts
+			(xy 64.77 134.62) (xy 64.77 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "831af2c7-52ca-403a-a23b-b5e68366933c")
+	)
+	(symbol
+		(lib_id "Railroad-Field:Mast")
+		(at 64.77 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8128a9c-c8c6-44b6-81f2-a009149068a4")
+		(property "Reference" "DevMast4"
+			(at 62.23 130.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "774S"
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
+			(at 64.77 141.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "mast"
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 64.77 134.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "32a1bc64-7de8-416d-b863-e9565b4ead86")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "DevMast4")
 					(unit 1)
 				)
 			)
@@ -5750,129 +7291,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e0500a6-f1b8-4038-b8af-2754b263e98f")
-		(property "Reference" "DevHead9"
-			(at 85.09 156.21 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774NC"
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 166.624 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 160.02 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "560012d6-065b-4dfd-ab90-6b6017089b17")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Cast-Encoder-CPL")
 		(at 102.87 147.32 0)
 		(unit 1)
@@ -5996,129 +7414,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
 					(reference "Cast8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b42cde3-0ae5-43f3-a33f-3ce2c29ebad4")
-		(property "Reference" "DevHead7"
-			(at 85.09 143.51 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774NA"
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 153.924 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 147.32 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "84abafd4-1c62-4b22-836d-85721aebfc6f")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead7")
 					(unit 1)
 				)
 			)
@@ -6268,129 +7563,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 177.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "240bd039-5f6f-4222-961e-252df295d3e3")
-		(property "Reference" "DevHead11"
-			(at 85.09 173.99 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774NE"
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 184.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 177.8 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c979e81-bcce-49a3-994e-a0fa42bc8400")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Cast-Encoder-CPL")
 		(at 102.87 139.7 0)
 		(unit 1)
@@ -6514,129 +7686,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
 					(reference "Cast10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 139.7 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2771de7c-23d0-4f41-9703-0fa2db2cbdfe")
-		(property "Reference" "DevHead6"
-			(at 85.09 135.89 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774SB"
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 146.304 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 139.7 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6c55065-f5b5-450a-88b0-c77ba2d3c180")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead6")
 					(unit 1)
 				)
 			)
@@ -6772,129 +7821,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 152.4 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "898108c6-3cce-4afa-a4fa-410fe3d81380")
-		(property "Reference" "DevHead8"
-			(at 85.09 148.59 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774NB"
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 159.004 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 152.4 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bc89a194-5819-4192-97f7-973215934c6a")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Cast-Encoder-CPL")
 		(at 102.87 134.62 0)
 		(unit 1)
@@ -7024,129 +7950,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Head-CPL")
-		(at 87.63 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "307f5b73-625f-4c38-b7c5-06cd4783bd6c")
-		(property "Reference" "DevHead5"
-			(at 85.09 130.81 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "774SA"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Colour-position-light head. Value = the head (836NA). ASPECT is this head's aspect by the rulebook's indication table; wire it to a cast."
-			(at 87.63 141.224 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 87.63 134.62 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95b4d233-6f24-4a36-afae-6eb3ef257cf9")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "DevHead5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
 		(at 49.53 154.94 0)
 		(unit 1)
@@ -7169,7 +7972,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 150.114 0)
 			(hide yes)
 			(show_name no)
@@ -7249,7 +8052,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 150.114 0)
 			(hide yes)
 			(show_name no)
@@ -7260,7 +8063,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "9"
 			(at 49.53 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -7306,7 +8120,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 50.419 142.494 0)
 			(hide yes)
 			(show_name no)
@@ -7386,7 +8200,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 142.494 0)
 			(hide yes)
 			(show_name no)
@@ -7397,7 +8211,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "3"
 			(at 49.53 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7443,7 +8268,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 141.224 0)
 			(hide yes)
 			(show_name no)
@@ -7523,7 +8348,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 141.224 0)
 			(hide yes)
 			(show_name no)
@@ -7534,7 +8359,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "8"
 			(at 102.87 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -7728,7 +8564,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 128.524 0)
 			(hide yes)
 			(show_name no)
@@ -7808,7 +8644,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 128.524 0)
 			(hide yes)
 			(show_name no)
@@ -7819,7 +8655,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "4"
 			(at 102.87 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -7865,7 +8712,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 143.764 0)
 			(hide yes)
 			(show_name no)
@@ -7945,7 +8792,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 143.764 0)
 			(hide yes)
 			(show_name no)
@@ -7956,7 +8803,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "9"
 			(at 102.87 148.59 0)
 			(hide yes)
 			(show_name no)
@@ -8002,7 +8860,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 146.304 0)
 			(hide yes)
 			(show_name no)
@@ -8082,7 +8940,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 146.304 0)
 			(hide yes)
 			(show_name no)
@@ -8093,7 +8951,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "10"
 			(at 102.87 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -8318,7 +9187,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -8398,7 +9267,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -8409,7 +9278,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "2"
 			(at 49.53 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -9326,7 +10206,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -9406,7 +10286,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -9417,7 +10297,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "5"
 			(at 102.87 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -9463,7 +10354,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 157.734 0)
 			(hide yes)
 			(show_name no)
@@ -9543,7 +10434,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 157.734 0)
 			(hide yes)
 			(show_name no)
@@ -9554,7 +10445,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "14"
 			(at 102.87 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -9821,7 +10723,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 103.759 114.554 0)
 			(hide yes)
 			(show_name no)
@@ -9901,7 +10803,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 114.554 0)
 			(hide yes)
 			(show_name no)
@@ -9912,7 +10814,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "10"
 			(at 102.87 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -9958,7 +10871,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 172.974 0)
 			(hide yes)
 			(show_name no)
@@ -10038,7 +10951,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 172.974 0)
 			(hide yes)
 			(show_name no)
@@ -10049,7 +10962,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "19"
 			(at 102.87 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -10095,7 +11019,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 50.419 114.554 0)
 			(hide yes)
 			(show_name no)
@@ -10175,7 +11099,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 114.554 0)
 			(hide yes)
 			(show_name no)
@@ -10186,7 +11110,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "1"
 			(at 49.53 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -10333,7 +11268,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 133.604 0)
 			(hide yes)
 			(show_name no)
@@ -10413,7 +11348,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 133.604 0)
 			(hide yes)
 			(show_name no)
@@ -10424,7 +11359,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "6"
 			(at 102.87 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10808,7 +11754,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 133.604 0)
 			(hide yes)
 			(show_name no)
@@ -10888,7 +11834,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 133.604 0)
 			(hide yes)
 			(show_name no)
@@ -10899,7 +11845,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "5"
 			(at 49.53 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -11629,7 +12586,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 170.434 0)
 			(hide yes)
 			(show_name no)
@@ -11709,7 +12666,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 170.434 0)
 			(hide yes)
 			(show_name no)
@@ -11720,7 +12677,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "18"
 			(at 102.87 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -11883,7 +12851,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 117.094 0)
 			(hide yes)
 			(show_name no)
@@ -11963,7 +12931,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 117.094 0)
 			(hide yes)
 			(show_name no)
@@ -11974,7 +12942,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "1"
 			(at 49.53 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -12020,7 +12999,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 166.624 0)
 			(hide yes)
 			(show_name no)
@@ -12100,7 +13079,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 166.624 0)
 			(hide yes)
 			(show_name no)
@@ -12111,7 +13090,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "17"
 			(at 102.87 171.45 0)
 			(hide yes)
 			(show_name no)
@@ -12261,7 +13251,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 103.759 122.174 0)
 			(hide yes)
 			(show_name no)
@@ -12341,7 +13331,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 122.174 0)
 			(hide yes)
 			(show_name no)
@@ -12352,7 +13342,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "13"
 			(at 102.87 127 0)
 			(hide yes)
 			(show_name no)
@@ -12733,7 +13734,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 175.514 0)
 			(hide yes)
 			(show_name no)
@@ -12813,7 +13814,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 175.514 0)
 			(hide yes)
 			(show_name no)
@@ -12824,7 +13825,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "20"
 			(at 102.87 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -12870,7 +13882,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 147.574 0)
 			(hide yes)
 			(show_name no)
@@ -12950,7 +13962,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 147.574 0)
 			(hide yes)
 			(show_name no)
@@ -12961,7 +13973,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "8"
 			(at 49.53 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -13407,7 +14430,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 155.194 0)
 			(hide yes)
 			(show_name no)
@@ -13487,7 +14510,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 155.194 0)
 			(hide yes)
 			(show_name no)
@@ -13498,7 +14521,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "13"
 			(at 102.87 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -13747,7 +14781,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 145.034 0)
 			(hide yes)
 			(show_name no)
@@ -13827,7 +14861,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 145.034 0)
 			(hide yes)
 			(show_name no)
@@ -13838,7 +14872,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "7"
 			(at 49.53 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -14109,7 +15154,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 136.144 0)
 			(hide yes)
 			(show_name no)
@@ -14189,7 +15234,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 136.144 0)
 			(hide yes)
 			(show_name no)
@@ -14200,7 +15245,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "6"
 			(at 49.53 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -14714,7 +15770,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 136.144 0)
 			(hide yes)
 			(show_name no)
@@ -14794,7 +15850,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 136.144 0)
 			(hide yes)
 			(show_name no)
@@ -14805,7 +15861,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "7"
 			(at 102.87 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -14999,7 +16066,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 103.759 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -15079,7 +16146,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -15090,7 +16157,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "12"
 			(at 102.87 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -15483,7 +16561,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 148.844 0)
 			(hide yes)
 			(show_name no)
@@ -15563,7 +16641,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 148.844 0)
 			(hide yes)
 			(show_name no)
@@ -15574,7 +16652,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "11"
 			(at 102.87 153.67 0)
 			(hide yes)
 			(show_name no)
@@ -15620,7 +16709,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 161.544 0)
 			(hide yes)
 			(show_name no)
@@ -15700,7 +16789,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 161.544 0)
 			(hide yes)
 			(show_name no)
@@ -15711,7 +16800,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "15"
 			(at 102.87 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -15757,7 +16857,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 122.174 0)
 			(hide yes)
 			(show_name no)
@@ -15837,7 +16937,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 122.174 0)
 			(hide yes)
 			(show_name no)
@@ -15848,7 +16948,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "3"
 			(at 49.53 127 0)
 			(hide yes)
 			(show_name no)
@@ -16814,7 +17925,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 50.419 128.524 0)
 			(hide yes)
 			(show_name no)
@@ -16894,7 +18005,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 128.524 0)
 			(hide yes)
 			(show_name no)
@@ -16905,7 +18016,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "2"
 			(at 49.53 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -17178,7 +18300,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 103.759 117.094 0)
 			(hide yes)
 			(show_name no)
@@ -17258,7 +18380,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 117.094 0)
 			(hide yes)
 			(show_name no)
@@ -17269,7 +18391,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "11"
 			(at 102.87 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -17315,7 +18448,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 152.654 0)
 			(hide yes)
 			(show_name no)
@@ -17395,7 +18528,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 152.654 0)
 			(hide yes)
 			(show_name no)
@@ -17406,7 +18539,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "12"
 			(at 102.87 157.48 0)
 			(hide yes)
 			(show_name no)
@@ -17856,7 +19000,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 50.419 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -17936,7 +19080,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 58.801 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -17947,7 +19091,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 49.53 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "4"
 			(at 49.53 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -17993,7 +19148,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 103.759 124.714 0)
 			(hide yes)
 			(show_name no)
@@ -18073,7 +19228,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 124.714 0)
 			(hide yes)
 			(show_name no)
@@ -18084,7 +19239,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "14"
 			(at 102.87 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -18130,7 +19296,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 103.759 164.084 0)
 			(hide yes)
 			(show_name no)
@@ -18210,7 +19376,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 112.141 164.084 0)
 			(hide yes)
 			(show_name no)
@@ -18221,7 +19387,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" "30"
+			(at 102.87 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" "16"
 			(at 102.87 168.91 0)
 			(hide yes)
 			(show_name no)

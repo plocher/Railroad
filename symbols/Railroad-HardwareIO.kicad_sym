@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.IN.${ADDRESS}"
+		(property "Value" "UA${Address}.IN.${Bit}"
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58,7 +58,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Value = the CMRI Node + bit"
+		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -105,7 +105,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 9.271 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -116,7 +116,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -207,7 +218,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${UA}.OUT.${ADDRESS}"
+		(property "Value" "UA${Address}.OUT.${Bit}"
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -240,7 +251,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Value = the CMRI Node + bit"
+		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -287,7 +298,7 @@
 				(justify left)
 			)
 		)
-		(property "UA" "30"
+		(property "UA" "${Address}"
 			(at 9.271 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -298,7 +309,18 @@
 				)
 			)
 		)
-		(property "Address" "1"
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Bit" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
