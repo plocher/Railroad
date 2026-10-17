@@ -629,616 +629,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-JMRI-Sensor-Feedback"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JMRI_MQTT"
-				(at 1.27 3.683 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 4.191 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "JMRI MQTT Sensor Control. Value = the Sensor ID."
-				(at 11.049 -5.969 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.6322 3.675 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "MQTT"
-				(at 7.6322 3.675 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.62 4.699 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Topic" "track/sensor"
-				(at 9.398 6.477 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" "${VALUE}"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "States" "INACTIVE/ACTIVE"
-				(at 6.477 -8.255 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Sensor-Feedback_0_1"
-				(rectangle
-					(start 2.54 1.27)
-					(end 21.59 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Sensor-Feedback_1_1"
-				(polyline
-					(pts
-						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "MQTT ${Topic}/${VALUE}"
-					(at 5.08 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin input line
-					(at 0 0 0)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-HardwareIO:Driver-JMRI-Turnout"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JMRI_MQTT"
-				(at 1.143 2.032 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 4.191 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "JMRI MQTT output. Value = the turnout ID.  JMRI uses CLOSED and TRHOWN"
-				(at 11.303 -2.921 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "MQTT"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.493 3.048 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "topic" "track/turnout"
-				(at 9.271 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" "${VALUE}"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "States" "CLOSED/THROWN"
-				(at 6.731 -5.207 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Turnout_0_1"
-				(rectangle
-					(start 21.59 -1.27)
-					(end 2.54 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Turnout_1_1"
-				(polyline
-					(pts
-						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "MQTT ${Topic}/${VALUE}"
-					(at 5.207 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin output line
-					(at 0 0 0)
-					(length 2.54)
-					(name "M"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-HardwareIO:Driver-JMRI-Turnout-Feedback"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JMRI_MQTT"
-				(at 1.27 3.683 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 4.191 6.604 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "JMRI MQTT Turnout Feedback. Value = the turnout ID."
-				(at 11.049 -5.969 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.6322 3.675 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "MQTT"
-				(at 7.6322 3.675 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.62 4.699 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "topic" "track/turnout"
-				(at 9.398 6.477 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" "${VALUE}"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "States" "CLOSED/INCONSISTENT/UNKNOWN/THROWN"
-				(at 6.477 -8.255 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Turnout-Feedback_0_1"
-				(rectangle
-					(start 2.54 2.54)
-					(end 21.59 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Driver-JMRI-Turnout-Feedback_1_1"
-				(polyline
-					(pts
-						(xy 3.429 1.27) (xy 2.794 1.905) (xy 2.794 0.635) (xy 3.429 1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.429 -1.27) (xy 2.794 -0.635) (xy 2.794 -1.905) (xy 3.429 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "MQTT ${Topic}/${VALUE}"
-					(at 5.08 0 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin input line
-					(at 0 1.27 0)
-					(length 2.54)
-					(name "~{N}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -1.27 0)
-					(length 2.54)
-					(name "~{R}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Trackplan:Bumper"
 			(pin_numbers
 				(hide yes)
@@ -4680,7 +4070,563 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+
+		(symbol "Railroad-HardwareIO:Driver-JMRI-Sensor-Feedback"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JMRI_MQTT"
+				(at 1.27 3.683 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 4.191 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+				(at 11.049 -5.969 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "MQTT"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.S" "binary"
+				(at 7.62 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Sensor-Feedback_0_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 21.59 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Sensor-Feedback_1_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "MQTT sensor ${ADDRESS}"
+					(at 5.08 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin input line
+					(at 0 0 0)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Driver-JMRI-Turnout"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JMRI_MQTT"
+				(at 1.143 2.032 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 4.191 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "JMRI MQTT turnout command (CLOSED/THROWN). Address = the JMRI turnout name; empty = the switch this driver serves."
+				(at 11.303 -2.921 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "MQTT"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.M" "binary"
+				(at 7.493 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Turnout_0_1"
+				(rectangle
+					(start 21.59 -1.27)
+					(end 2.54 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Turnout_1_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "MQTT turnout ${ADDRESS}"
+					(at 5.207 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 0 0 0)
+					(length 2.54)
+					(name "M"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Driver-JMRI-Turnout-Feedback"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JMRI_MQTT"
+				(at 1.27 3.683 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 4.191 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "JMRI MQTT turnout feedback (CLOSED/THROWN/INCONSISTENT/UNKNOWN) as N and R. Address as Driver-JMRI-Turnout."
+				(at 11.049 -5.969 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "MQTT"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.N" "binary"
+				(at 7.62 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.R" "binary"
+				(at 7.62 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Turnout-Feedback_0_1"
+				(rectangle
+					(start 2.54 2.54)
+					(end 21.59 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Driver-JMRI-Turnout-Feedback_1_1"
+				(polyline
+					(pts
+						(xy 3.429 1.27) (xy 2.794 1.905) (xy 2.794 0.635) (xy 3.429 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.429 -1.27) (xy 2.794 -0.635) (xy 2.794 -1.905) (xy 3.429 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "MQTT turnout ${ADDRESS}"
+					(at 5.08 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin input line
+					(at 0 1.27 0)
+					(length 2.54)
+					(name "~{N}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -1.27 0)
+					(length 2.54)
+					(name "~{R}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)	)
 	(text "As a modeler simplification, the signals here are tied to their locked switches; there are NO signal levers.\nif the dispatcher unlocks them and they are aligned for transit, \nthe siding's signals change from STOP / RED to RESTRICTING / (RED)\nand the mainline from CLEAR|STOP/GREEN|RED to STOP|RESTRICTING/RED|(RED)"
 		(exclude_from_sim no)
 		(at 123.19 24.13 0)
@@ -5371,30 +5317,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.5 124.841 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "topic" "track/turnout"
-			(at 65.278 123.063 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -5405,8 +5328,19 @@
 				)
 			)
 		)
-		(property "States" "CLOSED/INCONSISTENT/UNKNOWN/THROWN"
-			(at 62.357 137.795 0)
+		(property "Pin.N" "binary"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 55.88 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5522,30 +5456,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.373 122.682 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "topic" "track/turnout"
-			(at 65.151 120.904 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5556,8 +5467,8 @@
 				)
 			)
 		)
-		(property "States" "CLOSED/THROWN"
-			(at 62.611 130.937 0)
+		(property "Pin.M" "binary"
+			(at 55.88 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6257,30 +6168,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.5 112.141 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "topic" "track/turnout"
-			(at 65.278 110.363 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -6291,8 +6179,19 @@
 				)
 			)
 		)
-		(property "States" "CLOSED/INCONSISTENT/UNKNOWN/THROWN"
-			(at 62.357 125.095 0)
+		(property "Pin.N" "binary"
+			(at 55.88 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 55.88 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7275,30 +7174,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.373 109.982 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "topic" "track/turnout"
-			(at 65.151 108.204 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -7309,8 +7185,8 @@
 				)
 			)
 		)
-		(property "States" "CLOSED/THROWN"
-			(at 62.611 118.237 0)
+		(property "Pin.M" "binary"
+			(at 55.88 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7344,7 +7220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "61c05c54-7e6b-4a97-b85d-e28fff5db408")
-		(property "Reference" "JMRI_MQTT"
+		(property "Reference" "JMRI_MQTT5"
 			(at 57.15 116.967 0)
 			(hide yes)
 			(show_name no)
@@ -7423,19 +7299,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.5 115.951 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -7446,19 +7310,8 @@
 				)
 			)
 		)
-		(property "States" "INACTIVE/ACTIVE"
-			(at 62.357 128.905 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Topic" "track/sensor"
-			(at 65.278 114.173 0)
+		(property "Pin.S" "binary"
+			(at 55.88 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7474,7 +7327,7 @@
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
-					(reference "JMRI_MQTT")
+					(reference "JMRI_MQTT5")
 					(unit 1)
 				)
 			)
@@ -9141,19 +8994,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "binary"
-			(at 63.5 128.651 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" "${VALUE}"
+		(property "Address" ""
 			(at 55.88 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -9164,19 +9005,8 @@
 				)
 			)
 		)
-		(property "States" "INACTIVE/ACTIVE"
-			(at 62.357 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Topic" "track/sensor"
-			(at 65.278 126.873 0)
+		(property "Pin.S" "binary"
+			(at 55.88 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
