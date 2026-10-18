@@ -9073,1844 +9073,6 @@
 			(embedded_fonts no)
 		)
 
-		(symbol "Railroad-Field:Cast-Arm"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Aspect to a semaphore arm position; the angles are this cast's settings."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ARM" "position"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "stop_deg" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "approach_deg" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "clear_deg" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Arm_0_1"
-				(rectangle
-					(start -12.7 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Cast-Arm_1_1"
-				(text "arm"
-					(at -7.62 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ARM"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Cast-Encoder-CPL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Aspect to a two-bit select code; the decoder on the head is field hardware."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.S0" "binary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.S1" "binary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Encoder-CPL_0_1"
-				(rectangle
-					(start -12.7 2.54)
-					(end -2.54 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Cast-Encoder-CPL_1_1"
-				(text "CPL\n2-bit"
-					(at -7.62 4.064 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "0 0 Green\n0 1 Yellow\n1 0 Red\n1 1 Dark"
-					(at -7.62 -5.715 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(pin input line
-					(at 0 1.27 180)
-					(length 2.54)
-					(name "S0"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -1.27 180)
-					(length 2.54)
-					(name "S1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Cast-Lamps-RGB"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Aspect to one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three (E71)."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.R" "binary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.G" "binary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.B" "binary"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Lamps-RGB_0_1"
-				(rectangle
-					(start -12.7 3.81)
-					(end -2.54 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Cast-Lamps-RGB_1_1"
-				(text "RGB\nlamps"
-					(at -7.62 5.334 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -2.54 180)
-					(length 2.54)
-					(name "~{R}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 0 180)
-					(length 2.54)
-					(name "~{G}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 2.54 180)
-					(length 2.54)
-					(name "~{B}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Cast-Aspect-CL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mast indication to one colour-light head's aspect by the rulebook's indication table. One unit per head letter."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Style" "CL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.IND" "indication"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CL_1_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CL A"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CL_2_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CL B"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CL_3_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CL C"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CL_4_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CL D"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CL_5_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CL E"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Cast-Aspect-CPL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Style" "CPL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.IND" "indication"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CPL_1_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CPL A"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CPL_2_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CPL B"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CPL_3_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CPL C"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CPL_4_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CPL D"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-CPL_5_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "CPL E"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Cast-Aspect-Semaphore"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mast indication to one semaphore head's aspect (arm and lamp) by the rulebook's indication table, lower or upper quadrant by Style. One unit per head letter."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Style" "LQ, UQ"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.IND" "indication"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.ASPECT" "aspect"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-Semaphore_1_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LQ, UQ A"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-Semaphore_2_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LQ, UQ B"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-Semaphore_3_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LQ, UQ C"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-Semaphore_4_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LQ, UQ D"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Cast-Aspect-Semaphore_5_1"
-				(rectangle
-					(start -17.78 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "LQ, UQ E"
-					(at -10.16 2.794 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "ASPECT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Field:Mast"
 			(pin_numbers
 				(hide yes)
@@ -11038,6 +9200,684 @@
 					(at 0 0 180)
 					(length 2.54)
 					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Field:Cast-Head-CPL-Encoded"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Cast"
+				(at -11.43 3.429 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CAST"
+				(at -11.43 4.191 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" "CPL"
+				(at -11.43 4.953 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Head" ""
+				(at -9.525 -1.27 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at -28.448 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.S0" "binary"
+				(at 5.588 1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.S1" "binary"
+				(at 5.588 -1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Cast-Head-CPL-Encoded_0_1"
+				(rectangle
+					(start -20.32 2.54)
+					(end -2.54 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Cast-Head-CPL-Encoded_1_1"
+				(text "CPL 2-bit"
+					(at -9.525 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "0 0 Green\n0 1 Yellow\n\n1 0 Red\n1 1 Dark"
+					(at -16.51 0 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(pin input line
+					(at -22.86 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 1.27 180)
+					(length 2.54)
+					(name "S0"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -1.27 180)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Field:Cast-Head-RGB"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Cast"
+				(at -11.43 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CAST"
+				(at -11.43 5.461 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" ""
+				(at -11.43 0 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Head" ""
+				(at -11.43 -2.54 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at -28.448 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.R" "binary"
+				(at 5.588 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.G" "binary"
+				(at 5.588 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.B" "binary"
+				(at 5.588 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Cast-Head-RGB_0_1"
+				(rectangle
+					(start -20.32 3.81)
+					(end -2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Cast-Head-RGB_1_1"
+				(text "RGB\nlamps"
+					(at -11.43 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 180)
+					(length 2.54)
+					(name "~{R}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 0 180)
+					(length 2.54)
+					(name "~{G}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 2.54 180)
+					(length 2.54)
+					(name "~{B}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Field:Cast-Head-Semaphore"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Cast"
+				(at -11.43 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mast indication to one semaphore head's arm position; the angles are this cast's settings. Head is the head letter; Style is the quadrant (LQ or UQ)."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CAST"
+				(at -11.43 5.461 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" ""
+				(at -11.43 0 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Head" ""
+				(at -11.43 -2.54 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "stop_deg" ""
+				(at -11.43 -6.35 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "approach_deg" ""
+				(at -11.43 -6.35 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "clear_deg" ""
+				(at -11.43 -6.35 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at -28.448 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.ARM" "position"
+				(at 5.588 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Cast-Head-Semaphore_0_1"
+				(rectangle
+					(start -20.32 3.81)
+					(end -2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Cast-Head-Semaphore_1_1"
+				(text "arm"
+					(at -11.43 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at -22.86 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 0 180)
+					(length 2.54)
+					(name "ARM"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -14128,8 +12968,78 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Railroad-Field:Cast-Lamps-RGB")
+	
+	(wire
+		(pts
+			(xy 124.46 102.87) (xy 137.16 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "671e93ff-fe98-4799-84dc-72caba6b24da")
+	)
+	(wire
+		(pts
+			(xy 124.46 107.95) (xy 137.16 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c270b446-42a7-41b1-a8e6-472ff82242d1")
+	)
+	(wire
+		(pts
+			(xy 124.46 96.52) (xy 137.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050734b6-ec60-4f14-b315-89fb2c7ca68b")
+	)
+	(wire
+		(pts
+			(xy 111.76 119.38) (xy 124.46 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8cc6efd-231b-49e3-9c39-1380ec7182d4")
+	)
+	(label "836S_IND"
+		(at 114.3 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0645967-d0ec-4053-b67f-3f8cd334cb12")
+	)
+	(wire
+		(pts
+			(xy 177.8 93.98) (xy 177.8 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae117513-c3cc-4637-8444-d1d213cf8a7a")
+	)
+	(label "836S_IND"
+		(at 177.8 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8e64e11-c474-4e58-a13d-8a0f334dd267")
+	)(symbol
+		(lib_id "Railroad-Field:Cast-Head-RGB")
 		(at 160.02 96.52 0)
 		(unit 1)
 		(body_style 1)
@@ -14139,7 +13049,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7a063d2a-4d3a-453b-9670-65bcf2988b50")
+		(uuid "5d935b32-ff23-40d4-9495-9dd41de31cce")
 		(property "Reference" "Cast1"
 			(at 157.48 92.71 0)
 			(show_name no)
@@ -14184,7 +13094,7 @@
 				)
 			)
 		)
-		(property "Description" "Aspect to one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three (E71)."
+		(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
 			(at 160.02 103.124 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14206,7 +13116,29 @@
 				)
 			)
 		)
-		(property "Pin.ASPECT" "aspect"
+		(property "Style" "CL"
+			(at 148.59 96.52 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Head" "A"
+			(at 148.59 99.06 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
 			(at 160.02 96.52 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14250,275 +13182,23 @@
 				)
 			)
 		)
+		(pin "4"
+			(uuid "47ea88b4-ee87-40f5-9af8-da7d8d4e2206")
+		)
 		(pin "1"
-			(uuid "7d5d7209-f058-4dce-984c-305fffb609cf")
+			(uuid "4445529a-0959-4b02-bc0b-a831c0a21d56")
 		)
 		(pin "2"
-			(uuid "6c3bdcd2-1429-448d-9891-5713d35805a4")
+			(uuid "582290ea-b48f-4410-a3b5-e190003d6c7a")
 		)
 		(pin "3"
-			(uuid "27ca0471-dca4-48c7-adda-73fce578b25b")
-		)
-		(pin "4"
-			(uuid "cfe61241-6997-4c07-85a0-b78b7004522e")
+			(uuid "d3bd1a3a-67ae-421c-b573-7952e9cde81e")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
 					(reference "Cast1")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Cast-Aspect-CPL")
-		(at 144.78 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca5f8660-77e9-4114-941f-e9024ce95228")
-		(property "Reference" "Cast13"
-			(at 142.24 99.06 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
-			(at 144.78 109.474 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CAST"
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.IND" "indication"
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 144.78 102.87 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "eb70df40-bebb-4c39-898a-5b3830d4d65c")
-		)
-		(pin "2"
-			(uuid "60c313bb-b47c-45ae-97fa-128cd6a04253")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "Cast13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Cast-Aspect-CPL")
-		(at 144.78 107.95 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e52c692b-c727-4096-a3b4-77a2e3e59963")
-		(property "Reference" "Cast13"
-			(at 142.24 104.14 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mast indication to one colour-position-light head's aspect by the rulebook's indication table. One unit per head letter: unit B beside mast 774N is head 774NB."
-			(at 144.78 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CAST"
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CPL"
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.IND" "indication"
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 144.78 107.95 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "b08b15f0-7987-4a50-8eee-f552958c07f9")
-		)
-		(pin "4"
-			(uuid "483d4b8f-8284-418b-9fd6-a2ec570601e6")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "Cast13")
-					(unit 2)
 				)
 			)
 		)
@@ -14661,258 +13341,6 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
 					(reference "DevMast1")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Cast-Aspect-CL")
-		(at 144.78 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be98093c-9cb8-4023-9de1-db56032f58b1")
-		(property "Reference" "Cast14"
-			(at 142.24 92.71 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mast indication to one colour-light head's aspect by the rulebook's indication table. One unit per head letter."
-			(at 144.78 103.124 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CAST"
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CL"
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.IND" "indication"
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 144.78 96.52 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "660a8b74-f4a8-416b-ab62-aff16f4c8d35")
-		)
-		(pin "2"
-			(uuid "a8aea550-434f-4e14-997f-11729663cc9f")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "Cast14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Cast-Aspect-Semaphore")
-		(at 132.08 119.38 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a29d4f4-35b3-4794-bb5e-53c766148ae3")
-		(property "Reference" "Cast15"
-			(at 129.54 115.57 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mast indication to one semaphore head's aspect (arm and lamp) by the rulebook's indication table, lower or upper quadrant by Style. One unit per head letter."
-			(at 132.08 125.984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CAST"
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "LQ, UQ"
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.IND" "indication"
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ASPECT" "aspect"
-			(at 132.08 119.38 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "9e481b0d-e1a8-4c81-80c6-af87054cae6e")
-		)
-		(pin "4"
-			(uuid "33e9f877-225c-40dd-94ae-3327be67b7b3")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "Cast15")
-					(unit 2)
 				)
 			)
 		)
@@ -15060,7 +13488,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Encoder-CPL")
+		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
 		(at 160.02 102.87 0)
 		(unit 1)
 		(body_style 1)
@@ -15070,7 +13498,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6457653a-3924-4099-82ce-e94e0b86972a")
+		(uuid "c01dacc8-d4a6-4988-a2d5-43e14136f529")
 		(property "Reference" "Cast2"
 			(at 157.48 99.06 0)
 			(show_name no)
@@ -15115,7 +13543,7 @@
 				)
 			)
 		)
-		(property "Description" "Aspect to a two-bit select code; the decoder on the head is field hardware."
+		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
 			(at 160.02 109.474 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15137,7 +13565,29 @@
 				)
 			)
 		)
-		(property "Pin.ASPECT" "aspect"
+		(property "Style" "CPL"
+			(at 160.02 102.87 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Head" "A"
+			(at 150.495 104.14 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
 			(at 160.02 102.87 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15170,14 +13620,14 @@
 				)
 			)
 		)
+		(pin "3"
+			(uuid "e2a35df4-3d6a-49bf-9b99-9867ad2c835b")
+		)
 		(pin "1"
-			(uuid "1856eef8-e15f-40c1-8eb8-928b72e89f91")
+			(uuid "5f9adc74-e5ca-47e4-a6c9-a3a62b031fab")
 		)
 		(pin "2"
-			(uuid "9e2e7612-c1a0-4b43-a5e7-c660f8e5143e")
-		)
-		(pin "3"
-			(uuid "85232fc7-2347-494e-bee7-d52a63d70e9d")
+			(uuid "2523d2ff-e56b-4277-97e2-468066f9b5ad")
 		)
 		(instances
 			(project "SPCoast"
@@ -15189,7 +13639,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Encoder-CPL")
+		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
 		(at 160.02 107.95 0)
 		(unit 1)
 		(body_style 1)
@@ -15199,7 +13649,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "13ad7370-1865-40c6-a562-541b1fc766ea")
+		(uuid "4d79bdc1-dd17-4055-ba63-5ff5d4430673")
 		(property "Reference" "Cast3"
 			(at 157.48 104.14 0)
 			(show_name no)
@@ -15244,7 +13694,7 @@
 				)
 			)
 		)
-		(property "Description" "Aspect to a two-bit select code; the decoder on the head is field hardware."
+		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
 			(at 160.02 114.554 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15266,7 +13716,29 @@
 				)
 			)
 		)
-		(property "Pin.ASPECT" "aspect"
+		(property "Style" "CPL"
+			(at 160.02 107.95 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Head" "B"
+			(at 150.495 109.22 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
 			(at 160.02 107.95 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15299,14 +13771,14 @@
 				)
 			)
 		)
+		(pin "3"
+			(uuid "b0fb2d20-d81e-422b-acd1-41248213cb85")
+		)
 		(pin "1"
-			(uuid "c0888433-7122-474e-be22-7854f5a64748")
+			(uuid "98f64cac-4673-4392-a1f6-1cde7f0fd7e2")
 		)
 		(pin "2"
-			(uuid "97eb08fa-f799-4232-a8dc-306b59251e6c")
-		)
-		(pin "3"
-			(uuid "771007f9-6515-47e4-af41-315dd3e51228")
+			(uuid "c662c466-d4cd-4c73-b35e-fa4035310ad1")
 		)
 		(instances
 			(project "SPCoast"
@@ -15318,7 +13790,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Lamps-RGB")
+		(lib_id "Railroad-Field:Cast-Head-RGB")
 		(at 147.32 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -15328,7 +13800,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "24c8c6a5-34e4-4ad7-8ca4-494478cb1fac")
+		(uuid "f3a13d5a-1492-4ccf-a391-9142c7706218")
 		(property "Reference" "Cast4"
 			(at 144.78 115.57 0)
 			(show_name no)
@@ -15373,7 +13845,7 @@
 				)
 			)
 		)
-		(property "Description" "Aspect to one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three (E71)."
+		(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
 			(at 147.32 125.984 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15395,7 +13867,29 @@
 				)
 			)
 		)
-		(property "Pin.ASPECT" "aspect"
+		(property "Style" "LQ, UQ"
+			(at 135.89 119.38 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Head" "B"
+			(at 135.89 121.92 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(hide no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
 			(at 147.32 119.38 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15439,17 +13933,17 @@
 				)
 			)
 		)
+		(pin "4"
+			(uuid "3e76e147-c517-4ed9-95a4-3c1ca9893f08")
+		)
 		(pin "1"
-			(uuid "25473f2f-dca2-49a0-8bb4-29fb568771b3")
+			(uuid "ec11d50c-eb9d-4e37-a314-6dce41d9addd")
 		)
 		(pin "2"
-			(uuid "64cef078-e20f-4713-b4ae-e84d80e25357")
+			(uuid "597fccf7-9857-4990-b39a-3658f2ba498d")
 		)
 		(pin "3"
-			(uuid "f1774669-2bd6-4228-aea1-8e58edf31b53")
-		)
-		(pin "4"
-			(uuid "870f9990-ee3b-4c68-a7a8-547d14363593")
+			(uuid "0e56f660-3a52-4feb-acc5-66e1b58fbd58")
 		)
 		(instances
 			(project "SPCoast"
@@ -15461,7 +13955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Arm")
+		(lib_id "Railroad-Field:Cast-Head-Semaphore")
 		(at 200.66 93.98 0)
 		(unit 1)
 		(body_style 1)
@@ -15471,7 +13965,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e8f96257-09cb-468f-b61a-f15e064a4b42")
+		(uuid "5b900f7a-5a47-44b0-b966-894a97455cdc")
 		(property "Reference" "Cast5"
 			(at 198.12 90.17 0)
 			(show_name no)
@@ -15516,7 +14010,7 @@
 				)
 			)
 		)
-		(property "Description" "Aspect to a semaphore arm position; the angles are this cast's settings."
+		(property "Description" "Mast indication to one semaphore head's arm position; the angles are this cast's settings. Head is the head letter; Style is the quadrant (LQ or UQ)."
 			(at 200.66 100.584 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15538,25 +14032,25 @@
 				)
 			)
 		)
-		(property "Pin.ASPECT" "aspect"
-			(at 200.66 93.98 0)
-			(show_name no)
+		(property "Style" "LQ, UQ"
+			(at 189.23 93.98 0)
+			(show_name yes)
 			(do_not_autoplace yes)
-			(hide yes)
+			(hide no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
-		(property "Pin.ARM" "position"
-			(at 200.66 93.98 0)
-			(show_name no)
+		(property "Head" "B"
+			(at 189.23 96.52 0)
+			(show_name yes)
 			(do_not_autoplace yes)
-			(hide yes)
+			(hide no)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -15593,11 +14087,33 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "afa1d651-a15a-4480-9348-a5e21fc2f762")
+		(property "Pin.IND" "indication"
+			(at 200.66 93.98 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ARM" "position"
+			(at 200.66 93.98 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "a360d1e5-36e4-4505-85ee-40fa9f33c4b1")
+			(uuid "52812fab-fc91-400e-9550-b33644cbb8a5")
+		)
+		(pin "1"
+			(uuid "bcd7353d-bbee-4244-9994-63e2f93bad2f")
 		)
 		(instances
 			(project "SPCoast"
@@ -15637,46 +14153,6 @@
 			(type default)
 		)
 		(uuid "9bdaaac4-89b1-474f-b614-8d6012d05378")
-	)
-	(wire
-		(pts
-			(xy 132.08 119.38) (xy 132.08 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a92b5ce5-f667-4b05-bb2e-3ada9d4846e9")
-	)
-	(label "836SB_ASPECT"
-		(at 132.08 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d5238849-eed1-42bc-8248-d048d702758c")
-	)
-	(wire
-		(pts
-			(xy 185.42 93.98) (xy 185.42 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a13e6345-8b4e-4ef4-a0a5-11f2175716fb")
-	)
-	(label "836SB_ASPECT"
-		(at 185.42 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4673ea03-34e5-4776-ae43-3fbe25040028")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:AUXILIARY")
