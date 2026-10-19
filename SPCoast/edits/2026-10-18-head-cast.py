@@ -52,8 +52,9 @@ SPCOAST, LIBDIR = cc.SPCOAST, cc.LIBDIR
 BASELINE = SPCOAST / "production/pre-head.net"
 ASPECT_CASTS = ("Cast-Aspect-CPL", "Cast-Aspect-CL", "Cast-Aspect-Semaphore")
 LETTERS = "ABCDE"
-IND_DX = 22.86          # the IND pin's connection point sits this far left of the output pins
-BOX_LEFT, BOX_RIGHT = -20.32, -2.54  # one width for every cast: room for the encoder's table beside its label
+IND_DX = 24.13          # the IND pin's connection point sits this far left of the output pins (owner's tidy, 2026-10-18)
+BOX_LEFT, BOX_RIGHT = -21.59, -2.54  # one width for every cast, the Mast's width (owner's tidy)
+ARROW_IN, ARROW_BASE, ARROW_HALF = 0.889, 0.254, 0.635  # direction arrowheads just inside the body edge (owner, 2026-10-18)
 MID = (BOX_LEFT + BOX_RIGHT) / 2
 STUB = 7.62             # a label stub hangs this far below a remote IND pin
 PIN_FIELD_DX = 5.588    # a hidden Pin.* field sits this far beyond its pin's connection point
@@ -82,6 +83,15 @@ PIN_RE = re.compile(r'\(pin (\w+) line\s+\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)\)\s+
 
 
 # ---------------------------------------------------------------- library
+def _arrow(edge: float, y: float, inward: int, depth=3) -> str:
+    """A filled arrowhead at a body edge, apex pointing inward (inward = +1 at the left edge, -1 at the right)."""
+    t = "\t" * depth
+    apex, base = edge + inward * ARROW_IN, edge + inward * ARROW_BASE
+    pts = f"(xy {cc.num(apex)} {cc.num(y)}) (xy {cc.num(base)} {cc.num(y + inward * ARROW_HALF)}) (xy {cc.num(base)} {cc.num(y - inward * ARROW_HALF)}) (xy {cc.num(apex)} {cc.num(y)})"
+    return (f"{t}(polyline\n{t}\t(pts\n{t}\t\t{pts}\n{t}\t)\n{t}\t(stroke\n{t}\t\t(width 0)\n{t}\t\t(type solid)\n{t}\t)\n"
+            f"{t}\t(fill\n{t}\t\t(type color)\n{t}\t\t(color 132 0 0 1)\n{t}\t)\n{t})")
+
+
 def shown(prop: str) -> str:
     return prop.replace("(show_name no)", "(show_name yes)", 1)
 
@@ -125,6 +135,8 @@ def head_cast(field_lib: str, old: str) -> str:
                               f"{cc.num(x + PIN_FIELD_DX)} {cc.num(y)} 0"))
     pin_text = [cc._pin("input", -IND_DX, 0, 0, "IND", ind_num)]
     pin_text += [cc._pin(et, x, y, int(float(r)), n, no) for et, x, y, r, n, no in outs]
+    arrows = [_arrow(BOX_LEFT, 0, +1)] + [_arrow(BOX_RIGHT, y, -1) for _, _, y, *_ in outs]  # the owner's direction marks
+    pin_text += arrows
     unit0 = f'\t\t(symbol "{new}_0_1"\n' + cc._rect(BOX_LEFT, half, BOX_RIGHT, -half) + "\n\t\t)"
     unit1 = f'\t\t(symbol "{new}_1_1"\n' + "\n".join(texts + pin_text) + "\n\t\t)"
     return (f'\t(symbol "{new}"\n\t\t(pin_numbers\n\t\t\t(hide yes)\n\t\t)\n\t\t(pin_names\n\t\t\t(offset 0.889)\n\t\t)\n'
