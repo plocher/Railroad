@@ -13,6 +13,11 @@ numbers on Caltrain (Address -> "1"). The JMRI Value blanks on Gilroy Interchang
 and are not restored. TABLE below is the diff of the two netlists, embedded because production/
 is not under git. Lesson: never tick "reset fields" / "update field values" in Update Symbols;
 the sync script (2026-10-16-sync-library-fields.py) is the safe way to follow the library.
+
+2026-10-18: the reset happened again (same checkbox); this script restored IndicationToken, Interlocking,
+Station and Exp2's address. Its GilroyCalTrain CMRI entries were stale (the bit number has moved from
+Address to Bit since the 17th) and wrote bit numbers into 32 Addresses; they were put back to 30 and the
+entries removed. A restore table is only valid against the damage it was diffed from: dry-run and read it.
 """
 from __future__ import annotations
 
@@ -48,38 +53,6 @@ TABLE = {'Christopher-Panel': {'COL10028': {'Interlocking': 'Christopher'},
                     'LMP12122': {'IndicationToken': 'Watsonville:SFLK'},
                     'LMP12123': {'IndicationToken': 'Watsonville:02T'},
                     'MCK12011': {'IndicationToken': 'MC1K'}},
- 'GilroyCalTrain': {'CMRI10': {'Address': '7'},
-                    'CMRI11': {'Address': '8'},
-                    'CMRI12': {'Address': '9'},
-                    'CMRI13': {'Address': '10'},
-                    'CMRI14': {'Address': '11'},
-                    'CMRI15': {'Address': '12'},
-                    'CMRI16': {'Address': '13'},
-                    'CMRI17': {'Address': '14'},
-                    'CMRI18': {'Address': '4'},
-                    'CMRI19': {'Address': '5'},
-                    'CMRI20': {'Address': '6'},
-                    'CMRI21': {'Address': '7'},
-                    'CMRI22': {'Address': '8'},
-                    'CMRI23': {'Address': '9'},
-                    'CMRI24': {'Address': '10'},
-                    'CMRI25': {'Address': '11'},
-                    'CMRI26': {'Address': '12'},
-                    'CMRI27': {'Address': '13'},
-                    'CMRI28': {'Address': '14'},
-                    'CMRI29': {'Address': '15'},
-                    'CMRI3': {'Address': '2'},
-                    'CMRI30': {'Address': '16'},
-                    'CMRI31': {'Address': '17'},
-                    'CMRI32': {'Address': '18'},
-                    'CMRI33': {'Address': '19'},
-                    'CMRI34': {'Address': '20'},
-                    'CMRI4': {'Address': '3'},
-                    'CMRI5': {'Address': '2'},
-                    'CMRI6': {'Address': '4'},
-                    'CMRI7': {'Address': '5'},
-                    'CMRI8': {'Address': '6'},
-                    'CMRI9': {'Address': '3'}},
  'GilroyCalTrain-Panel': {'COL4021': {'Interlocking': 'Gilroy Caltrain'},
                           'COL4022': {'Interlocking': 'Gilroy Caltrain'},
                           'LMP4011': {'IndicationToken': '773T1,775T1'},
