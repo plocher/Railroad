@@ -10,7 +10,7 @@
 		(rev "0.2")
 		(company "SPCoast Railroad")
 		(comment 1 "JPlocher")
-		(comment 2 "Layout Maintenance Drawing")
+		(comment 2 "CMRI Example")
 		(comment 3 "South cTc")
 		(comment 4 "Southern Pacific Railroad")
 		(comment 5 "Coast Division")
@@ -20,6 +20,299 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "Railroad-Field:Cast-Head-CPL"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Cast"
+				(at -11.43 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter, one the mast's name lists: Head B on mast 774NAB. The aspect is derived, not drawn."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CAST"
+				(at -11.43 5.461 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Style" "CPL"
+				(at -11.43 6.223 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Head" ""
+				(at -16.891 0 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at -28.448 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.G" "binary"
+				(at 5.588 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.Y" "binary"
+				(at 5.588 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.R" "binary"
+				(at 5.588 -2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Cast-Head-CPL_0_1"
+				(rectangle
+					(start -21.59 3.81)
+					(end -2.54 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Cast-Head-CPL_1_1"
+				(polyline
+					(pts
+						(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 2.54) (xy -2.794 1.905) (xy -2.794 3.175) (xy -3.429 2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 -2.54) (xy -2.794 -3.175) (xy -2.794 -1.905) (xy -3.429 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "CPL"
+					(at -19.939 2.921 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(pin input line
+					(at 0 2.54 180)
+					(length 2.54)
+					(name "~{G}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 0 180)
+					(length 2.54)
+					(name "~{Y}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -2.54 180)
+					(length 2.54)
+					(name "~{R}"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -24.13 0 0)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Field:Cast-Head-CPL-Encoded"
 			(pin_numbers
 				(hide yes)
@@ -167,6 +460,45 @@
 				)
 			)
 			(symbol "Cast-Head-CPL-Encoded_1_1"
+				(polyline
+					(pts
+						(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 1.27) (xy -2.794 0.635) (xy -2.794 1.905) (xy -3.429 1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.429 -1.27) (xy -2.794 -1.905) (xy -2.794 -0.635) (xy -3.429 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
 				(text "0 0 Green\n0 1 Yellow\n\n1 0 Red\n1 1 Dark"
 					(at -26.035 0 0)
 					(effects
@@ -1063,6 +1395,163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Field:Mast"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.889)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "DevMast"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "DEVICE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Appliance" "mast"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Pin.IND" "indication"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Mast_0_1"
+				(rectangle
+					(start -21.59 1.27)
+					(end -2.54 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Mast_1_1"
+				(polyline
+					(pts
+						(xy -1.651 0) (xy -2.286 0.635) (xy -2.286 -0.635) (xy -1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "MAST ${VALUE}"
+					(at -20.955 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 0 0 180)
+					(length 2.54)
+					(name "IND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-HardwareIO:Driver-CMRI-IB"
 			(pin_numbers
 				(hide yes)
@@ -1204,11 +1693,12 @@
 					(start 21.59 -1.27)
 					(end 2.54 1.27)
 					(stroke
-						(width 0)
-						(type default)
+						(width 0.3048)
+						(type solid)
+						(color 128 77 0 1)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 			)
@@ -1397,11 +1887,12 @@
 					(start 21.59 -1.27)
 					(end 2.54 1.27)
 					(stroke
-						(width 0)
-						(type default)
+						(width 0.3048)
+						(type solid)
+						(color 128 77 0 1)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 			)
@@ -2109,6 +2600,139 @@
 						(effects
 							(font
 								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Trackplan:Interlocking"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Plant"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -3.048 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -11.303 9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "INTERLOCKING"
+				(at -9.906 8.001 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Interlocking_0_1"
+				(rectangle
+					(start -17.018 4.826)
+					(end 17.018 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Interlocking_1_1"
+				(text "Interlocking:"
+					(at -10.16 3.048 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin free line
+					(at 0 0 90)
+					(length 1.27)
+					(name "Interlocking"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -4434,525 +5058,7 @@
 			)
 			(embedded_fonts no)
 		)
-
-		(symbol "Railroad-Field:Cast-Head-CPL"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Cast"
-				(at -11.43 4.699 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter, one the mast's name lists: Head B on mast 774NAB. The aspect is derived, not drawn."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "CAST"
-				(at -11.43 5.461 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Style" "CPL"
-				(at -11.43 6.223 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Head" ""
-				(at -16.891 0 0)
-				(show_name yes)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.IND" "indication"
-				(at -28.448 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.G" "binary"
-				(at 5.588 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.Y" "binary"
-				(at 5.588 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.R" "binary"
-				(at 5.588 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Cast-Head-CPL_0_1"
-				(rectangle
-					(start -21.59 3.81)
-					(end -2.54 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Cast-Head-CPL_1_1"
-				(text "CPL"
-					(at -19.939 2.921 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin input line
-					(at 0 2.54 180)
-					(length 2.54)
-					(name "~{G}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 0 180)
-					(length 2.54)
-					(name "~{Y}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -2.54 180)
-					(length 2.54)
-					(name "~{R}"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -24.13 0 0)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Field:Mast"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.889)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DevMast"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "DEVICE"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Appliance" "mast"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Pin.IND" "indication"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(symbol "Mast_0_1"
-				(rectangle
-					(start -21.59 1.27)
-					(end -2.54 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Mast_1_1"
-				(text "MAST ${VALUE}"
-					(at -20.955 0 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(pin output line
-					(at 0 0 180)
-					(length 2.54)
-					(name "IND"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Trackplan:Interlocking"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Plant"
-				(at -14.224 5.842 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -3.048 3.048 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "STRUCTURE"
-				(at -11.303 9.652 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "INTERLOCKING"
-				(at -9.906 8.001 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Interlocking_0_1"
-				(rectangle
-					(start -17.018 4.826)
-					(end 17.018 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Interlocking_1_1"
-				(text "Interlocking:"
-					(at -10.16 3.048 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin free line
-					(at 0 0 90)
-					(length 1.27)
-					(name "Interlocking"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)	)
+	)
 	(text "REVIEWER NOTE:\n\nThe actual cTc nachine is missing panel Signal Lever 774 and switch 771\nThis is an artifact that the SPCoast-SanJose ctc panel (not built) had those levers"
 		(exclude_from_sim no)
 		(at 163.83 159.004 0)
@@ -5001,7 +5107,7 @@
 		(uuid "65bc1509-3f15-4841-97da-c7b83f745e70")
 	)
 	(junction
-		(at 43.18 151.13)
+		(at 97.79 147.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7aada823-ced5-4e72-a4db-fade9e7909cf")
@@ -5019,7 +5125,7 @@
 		(uuid "bb6c622a-a04b-4a87-b3b3-f82857c5b4f7")
 	)
 	(junction
-		(at 43.18 163.83)
+		(at 97.79 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c770df3c-08d5-4033-b457-fdb3a7277114")
@@ -5082,7 +5188,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 176.53) (xy 49.53 176.53)
+			(xy 97.79 172.72) (xy 104.14 172.72)
 		)
 		(stroke
 			(width 0)
@@ -5142,7 +5248,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 151.13) (xy 43.18 156.21)
+			(xy 97.79 147.32) (xy 97.79 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5152,7 +5258,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 194.31) (xy 49.53 194.31)
+			(xy 97.79 190.5) (xy 104.14 190.5)
 		)
 		(stroke
 			(width 0)
@@ -5182,7 +5288,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 151.13) (xy 49.53 151.13)
+			(xy 97.79 147.32) (xy 104.14 147.32)
 		)
 		(stroke
 			(width 0)
@@ -5192,7 +5298,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 163.83) (xy 43.18 168.91)
+			(xy 97.79 160.02) (xy 97.79 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5202,7 +5308,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 156.21) (xy 49.53 156.21)
+			(xy 97.79 152.4) (xy 104.14 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5212,7 +5318,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 163.83) (xy 49.53 163.83)
+			(xy 97.79 160.02) (xy 104.14 160.02)
 		)
 		(stroke
 			(width 0)
@@ -5262,7 +5368,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 185.42) (xy 49.53 185.42)
+			(xy 97.79 181.61) (xy 104.14 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5272,7 +5378,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 168.91) (xy 49.53 168.91)
+			(xy 97.79 165.1) (xy 104.14 165.1)
 		)
 		(stroke
 			(width 0)
@@ -5500,7 +5606,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 127 0)
+		(at 45.72 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5511,7 +5617,7 @@
 		(fields_autoplaced yes)
 		(uuid "02f3913d-badc-4397-b5ff-64fce8157812")
 		(property "Reference" "CMRI12"
-			(at 74.803 124.968 0)
+			(at 46.863 179.578 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5522,7 +5628,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 122.174 0)
+			(at 46.609 176.784 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5533,7 +5639,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 127 0)
+			(at 45.72 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5544,7 +5650,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 127 0)
+			(at 45.72 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5555,7 +5661,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 129.921 0)
+			(at 57.023 184.531 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5566,7 +5672,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 124.976 0)
+			(at 53.2252 179.586 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5578,7 +5684,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 124.976 0)
+			(at 53.2252 179.586 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5590,7 +5696,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 123.952 0)
+			(at 53.213 178.562 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5602,7 +5708,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 122.174 0)
+			(at 54.991 176.784 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5613,7 +5719,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 127 0)
+			(at 45.72 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5624,7 +5730,7 @@
 			)
 		)
 		(property "Bit" "9"
-			(at 73.66 127 0)
+			(at 45.72 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5648,7 +5754,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 119.38 0)
+		(at 45.72 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5659,7 +5765,7 @@
 		(fields_autoplaced yes)
 		(uuid "03ee0e6d-c67d-4ced-beb0-0c3ecc8efe0c")
 		(property "Reference" "CMRI9"
-			(at 74.803 117.348 0)
+			(at 46.863 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5670,7 +5776,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 114.554 0)
+			(at 46.609 169.164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5681,7 +5787,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 119.38 0)
+			(at 45.72 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5692,7 +5798,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 119.38 0)
+			(at 45.72 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5703,7 +5809,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 122.301 0)
+			(at 57.023 176.911 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5714,7 +5820,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 117.356 0)
+			(at 53.2252 171.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5726,7 +5832,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 117.356 0)
+			(at 53.2252 171.966 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5738,7 +5844,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 116.332 0)
+			(at 53.213 170.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5750,7 +5856,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 114.554 0)
+			(at 54.991 169.164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5761,7 +5867,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 119.38 0)
+			(at 45.72 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5772,7 +5878,7 @@
 			)
 		)
 		(property "Bit" "3"
-			(at 73.66 119.38 0)
+			(at 45.72 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5796,7 +5902,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 162.56 0)
+		(at 128.27 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5807,7 +5913,7 @@
 		(fields_autoplaced yes)
 		(uuid "051d0590-503f-428c-bc6d-381cc24d98b7")
 		(property "Reference" "CMRI22"
-			(at 74.803 160.528 0)
+			(at 129.413 156.718 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5818,7 +5924,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 157.734 0)
+			(at 129.159 153.924 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5829,7 +5935,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 162.56 0)
+			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5840,7 +5946,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 162.56 0)
+			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5851,7 +5957,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 165.481 0)
+			(at 139.573 161.671 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5862,7 +5968,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 160.536 0)
+			(at 135.7752 156.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5874,7 +5980,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 160.536 0)
+			(at 135.7752 156.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5886,7 +5992,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 159.512 0)
+			(at 135.763 155.702 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5898,7 +6004,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 157.734 0)
+			(at 137.541 153.924 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5909,7 +6015,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 162.56 0)
+			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5920,7 +6026,7 @@
 			)
 		)
 		(property "Bit" "8"
-			(at 73.66 162.56 0)
+			(at 128.27 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6092,7 +6198,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 149.86 0)
+		(at 128.27 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6103,7 +6209,7 @@
 		(fields_autoplaced yes)
 		(uuid "17ceabb2-2307-4ba5-839e-aefcdcfc559c")
 		(property "Reference" "CMRI18"
-			(at 74.803 147.828 0)
+			(at 129.413 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6114,7 +6220,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 145.034 0)
+			(at 129.159 141.224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6125,7 +6231,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 149.86 0)
+			(at 128.27 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6136,7 +6242,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 149.86 0)
+			(at 128.27 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6147,7 +6253,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 152.781 0)
+			(at 139.573 148.971 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6158,7 +6264,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 147.836 0)
+			(at 135.7752 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6170,7 +6276,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 147.836 0)
+			(at 135.7752 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6182,7 +6288,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 146.812 0)
+			(at 135.763 143.002 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6194,7 +6300,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 145.034 0)
+			(at 137.541 141.224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6205,7 +6311,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 149.86 0)
+			(at 128.27 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6216,7 +6322,7 @@
 			)
 		)
 		(property "Bit" "4"
-			(at 73.66 149.86 0)
+			(at 128.27 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6240,7 +6346,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 165.1 0)
+		(at 128.27 161.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6251,7 +6357,7 @@
 		(fields_autoplaced yes)
 		(uuid "182f5bdf-abd8-40f3-b642-ca42e115719e")
 		(property "Reference" "CMRI23"
-			(at 74.803 163.068 0)
+			(at 129.413 159.258 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6262,7 +6368,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 160.274 0)
+			(at 129.159 156.464 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6273,7 +6379,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 165.1 0)
+			(at 128.27 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6284,7 +6390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 165.1 0)
+			(at 128.27 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6295,7 +6401,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 168.021 0)
+			(at 139.573 164.211 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6306,7 +6412,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 163.076 0)
+			(at 135.7752 159.266 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6318,7 +6424,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 163.076 0)
+			(at 135.7752 159.266 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6330,7 +6436,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 162.052 0)
+			(at 135.763 158.242 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6342,7 +6448,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 160.274 0)
+			(at 137.541 156.464 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6353,7 +6459,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 165.1 0)
+			(at 128.27 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6364,7 +6470,7 @@
 			)
 		)
 		(property "Bit" "9"
-			(at 73.66 165.1 0)
+			(at 128.27 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6388,7 +6494,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 167.64 0)
+		(at 128.27 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6399,7 +6505,7 @@
 		(fields_autoplaced yes)
 		(uuid "218d07de-eac0-40e3-9a37-be28c9d8d49a")
 		(property "Reference" "CMRI24"
-			(at 74.803 165.608 0)
+			(at 129.413 161.798 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6410,7 +6516,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 162.814 0)
+			(at 129.159 159.004 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6421,7 +6527,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 167.64 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6432,7 +6538,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 167.64 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6443,7 +6549,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 170.561 0)
+			(at 139.573 166.751 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6454,7 +6560,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 165.616 0)
+			(at 135.7752 161.806 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6466,7 +6572,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 165.616 0)
+			(at 135.7752 161.806 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6478,7 +6584,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 164.592 0)
+			(at 135.763 160.782 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6490,7 +6596,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 162.814 0)
+			(at 137.541 159.004 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6501,7 +6607,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 167.64 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6512,7 +6618,7 @@
 			)
 		)
 		(property "Bit" "10"
-			(at 73.66 167.64 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6536,7 +6642,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 123.19 0)
+		(at 45.72 177.8 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6547,7 +6653,7 @@
 		(fields_autoplaced yes)
 		(uuid "252056b0-e125-41ac-b90a-efabc919a5a8")
 		(property "Reference" "DevSW4"
-			(at 67.7458 117.4088 0)
+			(at 39.8058 172.0188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6558,7 +6664,7 @@
 			)
 		)
 		(property "Value" "775"
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6569,7 +6675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6580,7 +6686,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6591,7 +6697,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 115.57 0)
+			(at 48.26 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6602,7 +6708,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6615,7 +6721,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6628,7 +6734,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6641,7 +6747,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6654,7 +6760,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6667,7 +6773,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6680,7 +6786,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6715,7 +6821,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 96.52 0)
+		(at 45.72 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6726,7 +6832,7 @@
 		(fields_autoplaced yes)
 		(uuid "2aa54ffc-24f2-452d-a631-7542df47bcc1")
 		(property "Reference" "CMRI3"
-			(at 74.803 94.488 0)
+			(at 46.863 149.098 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6737,7 +6843,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 91.694 0)
+			(at 46.609 146.304 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6748,7 +6854,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 96.52 0)
+			(at 45.72 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6759,7 +6865,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 96.52 0)
+			(at 45.72 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6770,7 +6876,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 99.441 0)
+			(at 57.023 154.051 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6781,7 +6887,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 94.496 0)
+			(at 53.2252 149.106 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6793,7 +6899,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 94.496 0)
+			(at 53.2252 149.106 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6805,7 +6911,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 93.472 0)
+			(at 53.213 148.082 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6817,7 +6923,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 91.694 0)
+			(at 54.991 146.304 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6828,7 +6934,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 96.52 0)
+			(at 45.72 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6839,7 +6945,7 @@
 			)
 		)
 		(property "Bit" "2"
-			(at 73.66 96.52 0)
+			(at 45.72 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6981,7 +7087,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 95.25 0)
+		(at 45.72 149.86 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6992,7 +7098,7 @@
 		(fields_autoplaced yes)
 		(uuid "33ca5cc2-8f74-4fe6-b731-f9941c3b4ebe")
 		(property "Reference" "DevSW1"
-			(at 67.7458 89.4688 0)
+			(at 39.8058 144.0788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7003,7 +7109,7 @@
 			)
 		)
 		(property "Value" "771"
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7014,7 +7120,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7025,7 +7131,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7036,7 +7142,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 87.63 0)
+			(at 48.26 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7047,7 +7153,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7060,7 +7166,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7073,7 +7179,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7086,7 +7192,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7099,7 +7205,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7112,7 +7218,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7125,7 +7231,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7395,7 +7501,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL")
-		(at 73.66 194.31 0)
+		(at 128.27 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7406,7 +7512,7 @@
 		(fields_autoplaced yes)
 		(uuid "3aa845d4-5012-413b-8081-970e2be21e02")
 		(property "Reference" "Cast9"
-			(at 71.12 190.5 0)
+			(at 125.73 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7417,7 +7523,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7428,7 +7534,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7439,7 +7545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7450,7 +7556,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter: Head B beside mast 774N is head 774NB. The aspect is derived, not drawn."
-			(at 73.66 199.39 0)
+			(at 128.27 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7461,7 +7567,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 188.849 0)
+			(at 116.84 185.039 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7472,7 +7578,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 188.087 0)
+			(at 116.84 184.277 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7483,7 +7589,7 @@
 			)
 		)
 		(property "Head" "E"
-			(at 56.769 194.31 0)
+			(at 111.379 190.5 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -7494,7 +7600,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 194.31 0)
+			(at 99.822 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7505,7 +7611,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at 79.248 191.77 0)
+			(at 133.858 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7516,7 +7622,7 @@
 			)
 		)
 		(property "Pin.Y" "binary"
-			(at 79.248 194.31 0)
+			(at 133.858 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7527,7 +7633,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 79.248 196.85 0)
+			(at 133.858 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7560,7 +7666,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 43.18 185.42 0)
+		(at 97.79 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7571,7 +7677,7 @@
 		(fields_autoplaced yes)
 		(uuid "3b8deec6-f59e-48ea-9a08-8b35c1028095")
 		(property "Reference" "DevMast6"
-			(at 40.64 181.61 0)
+			(at 95.25 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7582,7 +7688,7 @@
 			)
 		)
 		(property "Value" "774ND"
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7593,7 +7699,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7604,7 +7710,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7615,7 +7721,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 43.18 190.5 0)
+			(at 97.79 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7626,7 +7732,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7637,7 +7743,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7648,7 +7754,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 43.18 185.42 0)
+			(at 97.79 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7884,7 +7990,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL")
-		(at 73.66 185.42 0)
+		(at 128.27 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7895,7 +8001,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d737f84-5af5-4bdc-9f00-65c18b3cac44")
 		(property "Reference" "Cast6"
-			(at 71.12 181.61 0)
+			(at 125.73 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7906,7 +8012,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7917,7 +8023,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7928,7 +8034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7939,7 +8045,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter: Head B beside mast 774N is head 774NB. The aspect is derived, not drawn."
-			(at 73.66 190.5 0)
+			(at 128.27 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7950,7 +8056,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 179.959 0)
+			(at 116.84 176.149 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7961,7 +8067,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 179.197 0)
+			(at 116.84 175.387 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7972,7 +8078,7 @@
 			)
 		)
 		(property "Head" "D"
-			(at 56.769 185.42 0)
+			(at 111.379 181.61 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -7983,7 +8089,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 185.42 0)
+			(at 99.822 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7994,7 +8100,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at 79.248 182.88 0)
+			(at 133.858 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8005,7 +8111,7 @@
 			)
 		)
 		(property "Pin.Y" "binary"
-			(at 79.248 185.42 0)
+			(at 133.858 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8016,7 +8122,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 79.248 187.96 0)
+			(at 133.858 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8049,7 +8155,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 143.51 0)
+		(at 35.56 198.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8060,7 +8166,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e3c8443-edb9-4224-880c-a0760e2fdb3f")
 		(property "Reference" "DevTC4"
-			(at 57.6648 141.5124 0)
+			(at 29.7248 196.1224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8071,7 +8177,7 @@
 			)
 		)
 		(property "Value" "03T"
-			(at 63.5 143.51 0)
+			(at 35.56 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8082,7 +8188,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 143.51 0)
+			(at 35.56 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8093,7 +8199,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 143.51 0)
+			(at 35.56 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8104,7 +8210,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 143.51 0)
+			(at 35.56 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8115,7 +8221,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 141.486 0)
+			(at 32.0162 196.096 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8127,7 +8233,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 141.605 0)
+			(at 25.146 196.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8139,7 +8245,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 141.486 0)
+			(at 32.0162 196.096 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8151,7 +8257,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 141.486 0)
+			(at 32.0162 196.096 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8176,7 +8282,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 152.4 0)
+		(at 128.27 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8187,7 +8293,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e7a0a2c-4623-4d46-968a-84d16ea4cd63")
 		(property "Reference" "CMRI19"
-			(at 74.803 150.368 0)
+			(at 129.413 146.558 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8198,7 +8304,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 147.574 0)
+			(at 129.159 143.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8209,7 +8315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 152.4 0)
+			(at 128.27 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8220,7 +8326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 152.4 0)
+			(at 128.27 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8231,7 +8337,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 155.321 0)
+			(at 139.573 151.511 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8242,7 +8348,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 150.376 0)
+			(at 135.7752 146.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8254,7 +8360,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 150.376 0)
+			(at 135.7752 146.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8266,7 +8372,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 149.352 0)
+			(at 135.763 145.542 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8278,7 +8384,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 147.574 0)
+			(at 137.541 143.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8289,7 +8395,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 152.4 0)
+			(at 128.27 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8300,7 +8406,7 @@
 			)
 		)
 		(property "Bit" "5"
-			(at 73.66 152.4 0)
+			(at 128.27 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8324,7 +8430,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 179.07 0)
+		(at 128.27 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8335,7 +8441,7 @@
 		(fields_autoplaced yes)
 		(uuid "3fd7d2d8-8152-4c34-a436-99c5944b30a2")
 		(property "Reference" "CMRI28"
-			(at 74.803 177.038 0)
+			(at 129.413 173.228 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8346,7 +8452,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 174.244 0)
+			(at 129.159 170.434 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8357,7 +8463,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 179.07 0)
+			(at 128.27 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8368,7 +8474,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 179.07 0)
+			(at 128.27 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8379,7 +8485,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 181.991 0)
+			(at 139.573 178.181 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8390,7 +8496,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 177.046 0)
+			(at 135.7752 173.236 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8402,7 +8508,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 177.046 0)
+			(at 135.7752 173.236 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8414,7 +8520,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 176.022 0)
+			(at 135.763 172.212 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8426,7 +8532,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 174.244 0)
+			(at 137.541 170.434 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8437,7 +8543,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 179.07 0)
+			(at 128.27 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8448,7 +8554,7 @@
 			)
 		)
 		(property "Bit" "14"
-			(at 73.66 179.07 0)
+			(at 128.27 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8693,7 +8799,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 133.35 0)
+		(at 45.72 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8704,7 +8810,7 @@
 		(fields_autoplaced yes)
 		(uuid "45aba540-dcb6-4bda-a547-2576309f3d11")
 		(property "Reference" "CMRI13"
-			(at 74.803 131.318 0)
+			(at 46.863 185.928 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8715,7 +8821,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 128.524 0)
+			(at 46.609 183.134 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8726,7 +8832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 133.35 0)
+			(at 45.72 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8737,7 +8843,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 133.35 0)
+			(at 45.72 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8748,7 +8854,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 136.271 0)
+			(at 57.023 190.881 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8759,7 +8865,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 131.326 0)
+			(at 53.2252 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8771,7 +8877,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 131.326 0)
+			(at 53.2252 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8783,7 +8889,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 130.302 0)
+			(at 53.213 184.912 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8795,7 +8901,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 128.524 0)
+			(at 54.991 183.134 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8806,7 +8912,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 133.35 0)
+			(at 45.72 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8817,7 +8923,7 @@
 			)
 		)
 		(property "Bit" "10"
-			(at 73.66 133.35 0)
+			(at 45.72 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8841,7 +8947,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 194.31 0)
+		(at 128.27 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8852,7 +8958,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a46d619-909a-4611-a397-25c8e438aecc")
 		(property "Reference" "CMRI33"
-			(at 74.803 192.278 0)
+			(at 129.413 188.468 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8863,7 +8969,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 189.484 0)
+			(at 129.159 185.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8874,7 +8980,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8885,7 +8991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8896,7 +9002,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 197.231 0)
+			(at 139.573 193.421 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8907,7 +9013,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 192.286 0)
+			(at 135.7752 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8919,7 +9025,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 192.286 0)
+			(at 135.7752 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8931,7 +9037,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 191.262 0)
+			(at 135.763 187.452 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8943,7 +9049,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 189.484 0)
+			(at 137.541 185.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8954,7 +9060,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8965,7 +9071,7 @@
 			)
 		)
 		(property "Bit" "19"
-			(at 73.66 194.31 0)
+			(at 128.27 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8989,7 +9095,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 91.44 0)
+		(at 45.72 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9000,7 +9106,7 @@
 		(fields_autoplaced yes)
 		(uuid "51d9f871-14d8-4b1d-ad5d-142ebdd6add3")
 		(property "Reference" "CMRI1"
-			(at 74.803 89.408 0)
+			(at 46.863 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9011,7 +9117,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 86.614 0)
+			(at 46.609 141.224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9022,7 +9128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 91.44 0)
+			(at 45.72 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9033,7 +9139,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 91.44 0)
+			(at 45.72 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9044,7 +9150,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 94.361 0)
+			(at 57.023 148.971 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9055,7 +9161,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 89.416 0)
+			(at 53.2252 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9067,7 +9173,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 89.416 0)
+			(at 53.2252 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9079,7 +9185,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 88.392 0)
+			(at 53.213 143.002 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9091,7 +9197,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 86.614 0)
+			(at 54.991 141.224 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9102,7 +9208,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 91.44 0)
+			(at 45.72 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9113,7 +9219,7 @@
 			)
 		)
 		(property "Bit" "1"
-			(at 73.66 91.44 0)
+			(at 45.72 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9238,7 +9344,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 154.94 0)
+		(at 128.27 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9249,7 +9355,7 @@
 		(fields_autoplaced yes)
 		(uuid "560afde8-4b5e-4998-8d70-37bce936e791")
 		(property "Reference" "CMRI20"
-			(at 74.803 152.908 0)
+			(at 129.413 149.098 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9260,7 +9366,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 150.114 0)
+			(at 129.159 146.304 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9271,7 +9377,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 154.94 0)
+			(at 128.27 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9282,7 +9388,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 154.94 0)
+			(at 128.27 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9293,7 +9399,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 157.861 0)
+			(at 139.573 154.051 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9304,7 +9410,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 152.916 0)
+			(at 135.7752 149.106 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9316,7 +9422,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 152.916 0)
+			(at 135.7752 149.106 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9328,7 +9434,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 151.892 0)
+			(at 135.763 148.082 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9340,7 +9446,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 150.114 0)
+			(at 137.541 146.304 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9351,7 +9457,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 154.94 0)
+			(at 128.27 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9362,7 +9468,7 @@
 			)
 		)
 		(property "Bit" "6"
-			(at 73.66 154.94 0)
+			(at 128.27 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9607,7 +9713,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 43.18 163.83 0)
+		(at 97.79 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9618,7 +9724,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a73f003-3da6-4a9f-88be-3494b728c2cd")
 		(property "Reference" "DevMast3"
-			(at 40.64 160.02 0)
+			(at 95.25 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9629,7 +9735,7 @@
 			)
 		)
 		(property "Value" "774NAB"
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9640,7 +9746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9651,7 +9757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9662,7 +9768,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 43.18 168.91 0)
+			(at 97.79 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9673,7 +9779,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9684,7 +9790,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9695,7 +9801,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 43.18 163.83 0)
+			(at 97.79 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9836,7 +9942,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 110.49 0)
+		(at 45.72 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9847,7 +9953,7 @@
 		(fields_autoplaced yes)
 		(uuid "5ddaecec-509f-4c29-8630-574c90d9fb95")
 		(property "Reference" "CMRI7"
-			(at 74.803 108.458 0)
+			(at 46.863 163.068 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9858,7 +9964,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 105.664 0)
+			(at 46.609 160.274 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9869,7 +9975,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 110.49 0)
+			(at 45.72 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9880,7 +9986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 110.49 0)
+			(at 45.72 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9891,7 +9997,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 113.411 0)
+			(at 57.023 168.021 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9902,7 +10008,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 108.466 0)
+			(at 53.2252 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9914,7 +10020,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 108.466 0)
+			(at 53.2252 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9926,7 +10032,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 107.442 0)
+			(at 53.213 162.052 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -9938,7 +10044,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 105.664 0)
+			(at 54.991 160.274 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9949,7 +10055,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 110.49 0)
+			(at 45.72 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9960,7 +10066,7 @@
 			)
 		)
 		(property "Bit" "5"
-			(at 73.66 110.49 0)
+			(at 45.72 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9984,7 +10090,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 43.18 176.53 0)
+		(at 97.79 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9995,7 +10101,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e909fe6-2c0c-44ba-94b9-c50bbb2a9ff3")
 		(property "Reference" "DevMast5"
-			(at 40.64 172.72 0)
+			(at 95.25 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10006,7 +10112,7 @@
 			)
 		)
 		(property "Value" "774NC"
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10017,7 +10123,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10028,7 +10134,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10039,7 +10145,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 43.18 181.61 0)
+			(at 97.79 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10050,7 +10156,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10061,7 +10167,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10072,7 +10178,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 43.18 176.53 0)
+			(at 97.79 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10243,7 +10349,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 123.19 0)
+		(at 45.72 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10254,7 +10360,7 @@
 		(fields_autoplaced yes)
 		(uuid "62beb677-5cf2-4a7a-8fab-18648511ea23")
 		(property "Reference" "DevSW4"
-			(at 67.7458 117.4088 0)
+			(at 39.8058 172.0188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10265,7 +10371,7 @@
 			)
 		)
 		(property "Value" "775"
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10276,7 +10382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10287,7 +10393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10298,7 +10404,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 115.57 0)
+			(at 48.26 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10309,7 +10415,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10322,7 +10428,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10335,7 +10441,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10348,7 +10454,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10361,7 +10467,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10374,7 +10480,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10387,7 +10493,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10422,7 +10528,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 109.22 0)
+		(at 45.72 163.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10433,7 +10539,7 @@
 		(fields_autoplaced yes)
 		(uuid "68e2e42a-26f3-4e03-91cd-dc3c09226aca")
 		(property "Reference" "DevSW3"
-			(at 67.7458 103.4388 0)
+			(at 39.8058 158.0488 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10444,7 +10550,7 @@
 			)
 		)
 		(property "Value" "773"
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10455,7 +10561,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10466,7 +10572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10477,7 +10583,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 101.6 0)
+			(at 48.26 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10488,7 +10594,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10501,7 +10607,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10514,7 +10620,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10527,7 +10633,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10540,7 +10646,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10553,7 +10659,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10566,7 +10672,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10601,7 +10707,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 95.25 0)
+		(at 45.72 149.86 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10612,7 +10718,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cf8fccc-8c48-4840-bbcc-6aa34cbb0624")
 		(property "Reference" "DevSW1"
-			(at 67.7458 89.4688 0)
+			(at 39.8058 144.0788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10623,7 +10729,7 @@
 			)
 		)
 		(property "Value" "771"
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10634,7 +10740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10645,7 +10751,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10656,7 +10762,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 87.63 0)
+			(at 48.26 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10667,7 +10773,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10680,7 +10786,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10693,7 +10799,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10706,7 +10812,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10719,7 +10825,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10732,7 +10838,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10745,7 +10851,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10780,7 +10886,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 73.66 156.21 0)
+		(at 128.27 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10791,7 +10897,7 @@
 		(fields_autoplaced yes)
 		(uuid "6d1f03ab-0459-4707-98d9-69d66997b97c")
 		(property "Reference" "Cast10"
-			(at 71.12 152.4 0)
+			(at 125.73 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10802,7 +10908,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 156.21 0)
+			(at 128.27 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10813,7 +10919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 156.21 0)
+			(at 128.27 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10824,7 +10930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 156.21 0)
+			(at 128.27 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10835,7 +10941,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 73.66 160.02 0)
+			(at 128.27 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10846,7 +10952,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 152.019 0)
+			(at 116.84 148.209 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10857,7 +10963,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 151.257 0)
+			(at 116.84 147.447 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10868,7 +10974,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 57.023 156.21 0)
+			(at 111.633 152.4 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -10879,7 +10985,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 156.21 0)
+			(at 99.822 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10890,7 +10996,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 79.248 154.94 0)
+			(at 133.858 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10901,7 +11007,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 79.248 157.48 0)
+			(at 133.858 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10931,7 +11037,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 191.77 0)
+		(at 128.27 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10942,7 +11048,7 @@
 		(fields_autoplaced yes)
 		(uuid "7063e2f8-9c23-45ce-8161-95535e5299be")
 		(property "Reference" "CMRI32"
-			(at 74.803 189.738 0)
+			(at 129.413 185.928 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10953,7 +11059,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 186.944 0)
+			(at 129.159 183.134 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10964,7 +11070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 191.77 0)
+			(at 128.27 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10975,7 +11081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 191.77 0)
+			(at 128.27 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10986,7 +11092,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 194.691 0)
+			(at 139.573 190.881 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10997,7 +11103,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 189.746 0)
+			(at 135.7752 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11009,7 +11115,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 189.746 0)
+			(at 135.7752 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11021,7 +11127,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 188.722 0)
+			(at 135.763 184.912 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11033,7 +11139,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 186.944 0)
+			(at 137.541 183.134 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11044,7 +11150,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 191.77 0)
+			(at 128.27 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11055,7 +11161,7 @@
 			)
 		)
 		(property "Bit" "18"
-			(at 73.66 191.77 0)
+			(at 128.27 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11196,7 +11302,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 93.98 0)
+		(at 45.72 148.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11207,7 +11313,7 @@
 		(fields_autoplaced yes)
 		(uuid "73ea2710-08cd-42d4-a657-7e4c8ff8860f")
 		(property "Reference" "CMRI2"
-			(at 74.803 91.948 0)
+			(at 46.863 146.558 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11218,7 +11324,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 89.154 0)
+			(at 46.609 143.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11229,7 +11335,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 93.98 0)
+			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11240,7 +11346,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 93.98 0)
+			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11251,7 +11357,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 96.901 0)
+			(at 57.023 151.511 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11262,7 +11368,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 91.956 0)
+			(at 53.2252 146.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11274,7 +11380,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 91.956 0)
+			(at 53.2252 146.566 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11286,7 +11392,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 90.932 0)
+			(at 53.213 145.542 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11298,7 +11404,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 89.154 0)
+			(at 54.991 143.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11309,7 +11415,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 93.98 0)
+			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11320,7 +11426,7 @@
 			)
 		)
 		(property "Bit" "1"
-			(at 73.66 93.98 0)
+			(at 45.72 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11344,7 +11450,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 187.96 0)
+		(at 128.27 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11355,7 +11461,7 @@
 		(fields_autoplaced yes)
 		(uuid "76f721a2-ddef-4320-be7c-a649ceb4d358")
 		(property "Reference" "CMRI31"
-			(at 74.803 185.928 0)
+			(at 129.413 182.118 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11366,7 +11472,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 183.134 0)
+			(at 129.159 179.324 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11377,7 +11483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 187.96 0)
+			(at 128.27 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11388,7 +11494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 187.96 0)
+			(at 128.27 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11399,7 +11505,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 190.881 0)
+			(at 139.573 187.071 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11410,7 +11516,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 185.936 0)
+			(at 135.7752 182.126 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11422,7 +11528,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 185.936 0)
+			(at 135.7752 182.126 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11434,7 +11540,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 184.912 0)
+			(at 135.763 181.102 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11446,7 +11552,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 183.134 0)
+			(at 137.541 179.324 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11457,7 +11563,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 187.96 0)
+			(at 128.27 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11468,7 +11574,7 @@
 			)
 		)
 		(property "Bit" "17"
-			(at 73.66 187.96 0)
+			(at 128.27 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11596,7 +11702,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 140.97 0)
+		(at 45.72 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11607,7 +11713,7 @@
 		(fields_autoplaced yes)
 		(uuid "78d1e78a-53ec-491d-86fc-2ab9164cb178")
 		(property "Reference" "CMRI16"
-			(at 74.803 138.938 0)
+			(at 46.863 193.548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11618,7 +11724,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 136.144 0)
+			(at 46.609 190.754 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11629,7 +11735,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 140.97 0)
+			(at 45.72 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11640,7 +11746,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 140.97 0)
+			(at 45.72 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11651,7 +11757,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 143.891 0)
+			(at 57.023 198.501 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11662,7 +11768,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 138.946 0)
+			(at 53.2252 193.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11674,7 +11780,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 138.946 0)
+			(at 53.2252 193.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11686,7 +11792,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 137.922 0)
+			(at 53.213 192.532 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11698,7 +11804,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 136.144 0)
+			(at 54.991 190.754 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11709,7 +11815,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 140.97 0)
+			(at 45.72 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11720,7 +11826,7 @@
 			)
 		)
 		(property "Bit" "13"
-			(at 73.66 140.97 0)
+			(at 45.72 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11969,7 +12075,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL")
-		(at 73.66 176.53 0)
+		(at 128.27 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11980,7 +12086,7 @@
 		(fields_autoplaced yes)
 		(uuid "7d7b95e8-0f9a-4439-8b25-fe60af2212ca")
 		(property "Reference" "Cast7"
-			(at 71.12 172.72 0)
+			(at 125.73 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11991,7 +12097,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12002,7 +12108,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12013,7 +12119,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12024,7 +12130,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter: Head B beside mast 774N is head 774NB. The aspect is derived, not drawn."
-			(at 73.66 181.61 0)
+			(at 128.27 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12035,7 +12141,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 171.069 0)
+			(at 116.84 167.259 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12046,7 +12152,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 170.307 0)
+			(at 116.84 166.497 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12057,7 +12163,7 @@
 			)
 		)
 		(property "Head" "C"
-			(at 56.769 176.53 0)
+			(at 111.379 172.72 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -12068,7 +12174,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 176.53 0)
+			(at 99.822 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12079,7 +12185,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at 79.248 173.99 0)
+			(at 133.858 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12090,7 +12196,7 @@
 			)
 		)
 		(property "Pin.Y" "binary"
-			(at 79.248 176.53 0)
+			(at 133.858 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12101,7 +12207,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 79.248 179.07 0)
+			(at 133.858 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12244,7 +12350,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 196.85 0)
+		(at 128.27 193.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12255,7 +12361,7 @@
 		(fields_autoplaced yes)
 		(uuid "7f1b3163-8382-4f81-8234-de1430814af9")
 		(property "Reference" "CMRI34"
-			(at 74.803 194.818 0)
+			(at 129.413 191.008 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12266,7 +12372,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 192.024 0)
+			(at 129.159 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12277,7 +12383,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 196.85 0)
+			(at 128.27 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12288,7 +12394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 196.85 0)
+			(at 128.27 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12299,7 +12405,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 199.771 0)
+			(at 139.573 195.961 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12310,7 +12416,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 194.826 0)
+			(at 135.7752 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12322,7 +12428,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 194.826 0)
+			(at 135.7752 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12334,7 +12440,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 193.802 0)
+			(at 135.763 189.992 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12346,7 +12452,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 192.024 0)
+			(at 137.541 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12357,7 +12463,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 196.85 0)
+			(at 128.27 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12368,7 +12474,7 @@
 			)
 		)
 		(property "Bit" "20"
-			(at 73.66 196.85 0)
+			(at 128.27 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12392,7 +12498,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 124.46 0)
+		(at 45.72 179.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12403,7 +12509,7 @@
 		(fields_autoplaced yes)
 		(uuid "819f5a68-402f-426f-97c1-68c4beb44385")
 		(property "Reference" "CMRI11"
-			(at 74.803 122.428 0)
+			(at 46.863 177.038 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12414,7 +12520,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 119.634 0)
+			(at 46.609 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12425,7 +12531,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 124.46 0)
+			(at 45.72 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12436,7 +12542,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 124.46 0)
+			(at 45.72 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12447,7 +12553,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 127.381 0)
+			(at 57.023 181.991 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12458,7 +12564,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 122.436 0)
+			(at 53.2252 177.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12470,7 +12576,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 122.436 0)
+			(at 53.2252 177.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12482,7 +12588,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 121.412 0)
+			(at 53.213 176.022 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12494,7 +12600,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 119.634 0)
+			(at 54.991 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12505,7 +12611,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 124.46 0)
+			(at 45.72 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12516,7 +12622,7 @@
 			)
 		)
 		(property "Bit" "8"
-			(at 73.66 124.46 0)
+			(at 45.72 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12761,7 +12867,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 109.22 0)
+		(at 45.72 163.83 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12772,7 +12878,7 @@
 		(fields_autoplaced yes)
 		(uuid "8af0f15d-3fbe-4026-9e70-e378b9758316")
 		(property "Reference" "DevSW3"
-			(at 67.7458 103.4388 0)
+			(at 39.8058 158.0488 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12783,7 +12889,7 @@
 			)
 		)
 		(property "Value" "773"
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12794,7 +12900,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12805,7 +12911,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12816,7 +12922,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 101.6 0)
+			(at 48.26 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12827,7 +12933,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12840,7 +12946,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12853,7 +12959,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12866,7 +12972,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12879,7 +12985,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12892,7 +12998,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12905,7 +13011,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12940,7 +13046,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 73.66 151.13 0)
+		(at 128.27 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12951,7 +13057,7 @@
 		(fields_autoplaced yes)
 		(uuid "9034dae8-6a3d-473a-8627-9c739237bf01")
 		(property "Reference" "Cast12"
-			(at 71.12 147.32 0)
+			(at 125.73 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12962,7 +13068,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 151.13 0)
+			(at 128.27 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12973,7 +13079,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 151.13 0)
+			(at 128.27 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12984,7 +13090,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 151.13 0)
+			(at 128.27 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12995,7 +13101,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 73.66 154.94 0)
+			(at 128.27 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13006,7 +13112,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 146.939 0)
+			(at 116.84 143.129 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13017,7 +13123,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 146.177 0)
+			(at 116.84 142.367 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13028,7 +13134,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 57.023 151.13 0)
+			(at 111.633 147.32 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -13039,7 +13145,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 151.13 0)
+			(at 99.822 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13050,7 +13156,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 79.248 149.86 0)
+			(at 133.858 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13061,7 +13167,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 79.248 152.4 0)
+			(at 133.858 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13091,7 +13197,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 176.53 0)
+		(at 128.27 172.72 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13102,7 +13208,7 @@
 		(fields_autoplaced yes)
 		(uuid "9280b71c-9e8f-4e10-be5d-daf42348e078")
 		(property "Reference" "CMRI27"
-			(at 74.803 174.498 0)
+			(at 129.413 170.688 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13113,7 +13219,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 171.704 0)
+			(at 129.159 167.894 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13124,7 +13230,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13135,7 +13241,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13146,7 +13252,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 179.451 0)
+			(at 139.573 175.641 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13157,7 +13263,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 174.506 0)
+			(at 135.7752 170.696 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13169,7 +13275,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 174.506 0)
+			(at 135.7752 170.696 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13181,7 +13287,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 173.482 0)
+			(at 135.763 169.672 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13193,7 +13299,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 171.704 0)
+			(at 137.541 167.894 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13204,7 +13310,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13215,7 +13321,7 @@
 			)
 		)
 		(property "Bit" "13"
-			(at 73.66 176.53 0)
+			(at 128.27 172.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13442,7 +13548,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 121.92 0)
+		(at 45.72 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13453,7 +13559,7 @@
 		(fields_autoplaced yes)
 		(uuid "9550993e-0200-4970-9d32-77da230a6000")
 		(property "Reference" "CMRI10"
-			(at 74.803 119.888 0)
+			(at 46.863 174.498 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13464,7 +13570,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 117.094 0)
+			(at 46.609 171.704 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13475,7 +13581,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 121.92 0)
+			(at 45.72 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13486,7 +13592,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 121.92 0)
+			(at 45.72 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13497,7 +13603,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 124.841 0)
+			(at 57.023 179.451 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13508,7 +13614,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 119.896 0)
+			(at 53.2252 174.506 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13520,7 +13626,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 119.896 0)
+			(at 53.2252 174.506 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13532,7 +13638,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 118.872 0)
+			(at 53.213 173.482 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13544,7 +13650,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 117.094 0)
+			(at 54.991 171.704 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13555,7 +13661,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 121.92 0)
+			(at 45.72 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13566,7 +13672,7 @@
 			)
 		)
 		(property "Bit" "7"
-			(at 73.66 121.92 0)
+			(at 45.72 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13815,7 +13921,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 113.03 0)
+		(at 45.72 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13826,7 +13932,7 @@
 		(fields_autoplaced yes)
 		(uuid "9fcf8f9c-b60b-4ce3-a779-93a5964f4439")
 		(property "Reference" "CMRI8"
-			(at 74.803 110.998 0)
+			(at 46.863 165.608 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13837,7 +13943,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 108.204 0)
+			(at 46.609 162.814 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13848,7 +13954,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 113.03 0)
+			(at 45.72 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13859,7 +13965,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 113.03 0)
+			(at 45.72 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13870,7 +13976,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 115.951 0)
+			(at 57.023 170.561 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13881,7 +13987,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 111.006 0)
+			(at 53.2252 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13893,7 +13999,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 111.006 0)
+			(at 53.2252 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13905,7 +14011,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 109.982 0)
+			(at 53.213 164.592 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13917,7 +14023,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 108.204 0)
+			(at 54.991 162.814 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13928,7 +14034,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 113.03 0)
+			(at 45.72 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13939,7 +14045,7 @@
 			)
 		)
 		(property "Bit" "6"
-			(at 73.66 113.03 0)
+			(at 45.72 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13963,7 +14069,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 140.97 0)
+		(at 35.56 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13974,7 +14080,7 @@
 		(fields_autoplaced yes)
 		(uuid "a0ee166c-09a1-463b-9fb1-f09d7782dc85")
 		(property "Reference" "DevTC5"
-			(at 57.6648 138.9724 0)
+			(at 29.7248 193.5824 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13985,7 +14091,7 @@
 			)
 		)
 		(property "Value" "02T"
-			(at 63.5 140.97 0)
+			(at 35.56 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13996,7 +14102,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 140.97 0)
+			(at 35.56 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14007,7 +14113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 140.97 0)
+			(at 35.56 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14018,7 +14124,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 140.97 0)
+			(at 35.56 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14029,7 +14135,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 138.946 0)
+			(at 32.0162 193.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14041,7 +14147,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 139.065 0)
+			(at 25.146 193.675 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14053,7 +14159,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 138.946 0)
+			(at 32.0162 193.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14065,7 +14171,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 138.946 0)
+			(at 32.0162 193.556 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14090,7 +14196,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 133.35 0)
+		(at 35.56 187.96 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14101,7 +14207,7 @@
 		(fields_autoplaced yes)
 		(uuid "a43619ea-95b4-4e1f-b373-e3df99b033c2")
 		(property "Reference" "DevTC8"
-			(at 57.6648 131.3524 0)
+			(at 29.7248 185.9624 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14112,7 +14218,7 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 63.5 133.35 0)
+			(at 35.56 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14123,7 +14229,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 133.35 0)
+			(at 35.56 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14134,7 +14240,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 133.35 0)
+			(at 35.56 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14145,7 +14251,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 133.35 0)
+			(at 35.56 187.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14156,7 +14262,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 131.326 0)
+			(at 32.0162 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14168,7 +14274,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 131.445 0)
+			(at 25.146 186.055 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14180,7 +14286,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 131.326 0)
+			(at 32.0162 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14192,7 +14298,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 131.326 0)
+			(at 32.0162 185.936 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14431,7 +14537,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 157.48 0)
+		(at 128.27 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14442,7 +14548,7 @@
 		(fields_autoplaced yes)
 		(uuid "acad5e3c-af3e-4250-a8ff-2ed8398850d1")
 		(property "Reference" "CMRI21"
-			(at 74.803 155.448 0)
+			(at 129.413 151.638 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14453,7 +14559,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 152.654 0)
+			(at 129.159 148.844 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14464,7 +14570,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 157.48 0)
+			(at 128.27 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14475,7 +14581,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 157.48 0)
+			(at 128.27 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14486,7 +14592,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 160.401 0)
+			(at 139.573 156.591 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14497,7 +14603,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 155.456 0)
+			(at 135.7752 151.646 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14509,7 +14615,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 155.456 0)
+			(at 135.7752 151.646 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14521,7 +14627,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 154.432 0)
+			(at 135.763 150.622 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14533,7 +14639,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 152.654 0)
+			(at 137.541 148.844 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14544,7 +14650,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 157.48 0)
+			(at 128.27 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14555,7 +14661,7 @@
 			)
 		)
 		(property "Bit" "7"
-			(at 73.66 157.48 0)
+			(at 128.27 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14727,7 +14833,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 138.43 0)
+		(at 45.72 193.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14738,7 +14844,7 @@
 		(fields_autoplaced yes)
 		(uuid "b04eb216-becb-46d6-9208-e9d9ddd3816b")
 		(property "Reference" "CMRI15"
-			(at 74.803 136.398 0)
+			(at 46.863 191.008 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14749,7 +14855,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 133.604 0)
+			(at 46.609 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14760,7 +14866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 138.43 0)
+			(at 45.72 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14771,7 +14877,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 138.43 0)
+			(at 45.72 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14782,7 +14888,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 141.351 0)
+			(at 57.023 195.961 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14793,7 +14899,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 136.406 0)
+			(at 53.2252 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14805,7 +14911,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 136.406 0)
+			(at 53.2252 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14817,7 +14923,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 135.382 0)
+			(at 53.213 189.992 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14829,7 +14935,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 133.604 0)
+			(at 54.991 188.214 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14840,7 +14946,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 138.43 0)
+			(at 45.72 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14851,7 +14957,7 @@
 			)
 		)
 		(property "Bit" "12"
-			(at 73.66 138.43 0)
+			(at 45.72 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14875,7 +14981,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 138.43 0)
+		(at 35.56 193.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14886,7 +14992,7 @@
 		(fields_autoplaced yes)
 		(uuid "b3a5d3a5-fe2e-4818-b7d4-f43e3ae6520b")
 		(property "Reference" "DevTC6"
-			(at 57.6648 136.4324 0)
+			(at 29.7248 191.0424 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14897,7 +15003,7 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 63.5 138.43 0)
+			(at 35.56 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14908,7 +15014,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 138.43 0)
+			(at 35.56 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14919,7 +15025,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 138.43 0)
+			(at 35.56 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14930,7 +15036,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 138.43 0)
+			(at 35.56 193.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14941,7 +15047,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 136.406 0)
+			(at 32.0162 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14953,7 +15059,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 136.525 0)
+			(at 25.146 191.135 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14965,7 +15071,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 136.406 0)
+			(at 32.0162 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14977,7 +15083,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 136.406 0)
+			(at 32.0162 191.016 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15222,7 +15328,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 170.18 0)
+		(at 128.27 166.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15233,7 +15339,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9bc6e95-d32e-4573-b93f-a182a03d9672")
 		(property "Reference" "CMRI25"
-			(at 74.803 168.148 0)
+			(at 129.413 164.338 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15244,7 +15350,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 165.354 0)
+			(at 129.159 161.544 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15255,7 +15361,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 170.18 0)
+			(at 128.27 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15266,7 +15372,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 170.18 0)
+			(at 128.27 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15277,7 +15383,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 173.101 0)
+			(at 139.573 169.291 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15288,7 +15394,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 168.156 0)
+			(at 135.7752 164.346 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15300,7 +15406,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 168.156 0)
+			(at 135.7752 164.346 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15312,7 +15418,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 167.132 0)
+			(at 135.763 163.322 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15324,7 +15430,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 165.354 0)
+			(at 137.541 161.544 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15335,7 +15441,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 170.18 0)
+			(at 128.27 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15346,7 +15452,7 @@
 			)
 		)
 		(property "Bit" "11"
-			(at 73.66 170.18 0)
+			(at 128.27 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15370,7 +15476,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 73.66 168.91 0)
+		(at 128.27 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15381,7 +15487,7 @@
 		(fields_autoplaced yes)
 		(uuid "be694ec9-554a-4f64-8a2d-3e417ce3e799")
 		(property "Reference" "Cast11"
-			(at 71.12 165.1 0)
+			(at 125.73 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15392,7 +15498,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 168.91 0)
+			(at 128.27 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15403,7 +15509,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 168.91 0)
+			(at 128.27 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15414,7 +15520,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 168.91 0)
+			(at 128.27 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15425,7 +15531,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 73.66 172.72 0)
+			(at 128.27 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15436,7 +15542,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 164.719 0)
+			(at 116.84 160.909 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15447,7 +15553,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 163.957 0)
+			(at 116.84 160.147 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15458,7 +15564,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 57.023 168.91 0)
+			(at 111.633 165.1 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -15469,7 +15575,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 168.91 0)
+			(at 99.822 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15480,7 +15586,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 79.248 167.64 0)
+			(at 133.858 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15491,7 +15597,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 79.248 170.18 0)
+			(at 133.858 166.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15521,7 +15627,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 182.88 0)
+		(at 128.27 179.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15532,7 +15638,7 @@
 		(fields_autoplaced yes)
 		(uuid "bf58b88d-66ac-49e3-833f-d129f580d067")
 		(property "Reference" "CMRI29"
-			(at 74.803 180.848 0)
+			(at 129.413 177.038 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15543,7 +15649,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 178.054 0)
+			(at 129.159 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15554,7 +15660,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 182.88 0)
+			(at 128.27 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15565,7 +15671,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 182.88 0)
+			(at 128.27 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15576,7 +15682,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 185.801 0)
+			(at 139.573 181.991 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15587,7 +15693,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 180.856 0)
+			(at 135.7752 177.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15599,7 +15705,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 180.856 0)
+			(at 135.7752 177.046 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15611,7 +15717,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 179.832 0)
+			(at 135.763 176.022 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15623,7 +15729,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 178.054 0)
+			(at 137.541 174.244 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15634,7 +15740,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 182.88 0)
+			(at 128.27 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15645,7 +15751,7 @@
 			)
 		)
 		(property "Bit" "15"
-			(at 73.66 182.88 0)
+			(at 128.27 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15669,7 +15775,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 99.06 0)
+		(at 45.72 153.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15680,7 +15786,7 @@
 		(fields_autoplaced yes)
 		(uuid "c1a752a5-d777-4150-9d09-877407057b39")
 		(property "Reference" "CMRI4"
-			(at 74.803 97.028 0)
+			(at 46.863 151.638 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15691,7 +15797,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 94.234 0)
+			(at 46.609 148.844 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15702,7 +15808,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 99.06 0)
+			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15713,7 +15819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 99.06 0)
+			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15724,7 +15830,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 101.981 0)
+			(at 57.023 156.591 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15735,7 +15841,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 97.036 0)
+			(at 53.2252 151.646 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15747,7 +15853,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 97.036 0)
+			(at 53.2252 151.646 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15759,7 +15865,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 96.012 0)
+			(at 53.213 150.622 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15771,7 +15877,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 94.234 0)
+			(at 54.991 148.844 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15782,7 +15888,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 99.06 0)
+			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15793,7 +15899,7 @@
 			)
 		)
 		(property "Bit" "3"
-			(at 73.66 99.06 0)
+			(at 45.72 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15927,7 +16033,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 95.25 0)
+		(at 45.72 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15938,7 +16044,7 @@
 		(fields_autoplaced yes)
 		(uuid "cee9027c-4301-4fc2-b424-06c3c3de88fb")
 		(property "Reference" "DevSW1"
-			(at 67.7458 89.4688 0)
+			(at 39.8058 144.0788 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15949,7 +16055,7 @@
 			)
 		)
 		(property "Value" "771"
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15960,7 +16066,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15971,7 +16077,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 95.25 0)
+			(at 45.72 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15982,7 +16088,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 87.63 0)
+			(at 48.26 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15993,7 +16099,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16006,7 +16112,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16019,7 +16125,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16032,7 +16138,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16045,7 +16151,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16058,7 +16164,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16071,7 +16177,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 89.408 0)
+			(at 43.18 144.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16106,7 +16212,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 109.22 0)
+		(at 45.72 163.83 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16117,7 +16223,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf45a13b-4476-40a3-999c-4229334b3cc5")
 		(property "Reference" "DevSW3"
-			(at 67.7458 103.4388 0)
+			(at 39.8058 158.0488 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16128,7 +16234,7 @@
 			)
 		)
 		(property "Value" "773"
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16139,7 +16245,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16150,7 +16256,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 109.22 0)
+			(at 45.72 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16161,7 +16267,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 101.6 0)
+			(at 48.26 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16172,7 +16278,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16185,7 +16291,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16198,7 +16304,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16211,7 +16317,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16224,7 +16330,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16237,7 +16343,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16250,7 +16356,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 103.378 0)
+			(at 43.18 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16610,7 +16716,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 135.89 0)
+		(at 35.56 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16621,7 +16727,7 @@
 		(fields_autoplaced yes)
 		(uuid "d58aa852-1f26-435c-81b3-73de613ee052")
 		(property "Reference" "DevTC7"
-			(at 57.6648 133.8924 0)
+			(at 29.7248 188.5024 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16632,7 +16738,7 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 63.5 135.89 0)
+			(at 35.56 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16643,7 +16749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 135.89 0)
+			(at 35.56 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16654,7 +16760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 135.89 0)
+			(at 35.56 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16665,7 +16771,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 135.89 0)
+			(at 35.56 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16676,7 +16782,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 133.866 0)
+			(at 32.0162 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16688,7 +16794,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 133.985 0)
+			(at 25.146 188.595 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16700,7 +16806,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 133.866 0)
+			(at 32.0162 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16712,7 +16818,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 133.866 0)
+			(at 32.0162 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16737,7 +16843,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 105.41 0)
+		(at 45.72 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16748,7 +16854,7 @@
 		(fields_autoplaced yes)
 		(uuid "d59f9ac3-2441-4198-99c6-36d52db0f18d")
 		(property "Reference" "CMRI5"
-			(at 74.803 103.378 0)
+			(at 46.863 157.988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16759,7 +16865,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 100.584 0)
+			(at 46.609 155.194 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16770,7 +16876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 105.41 0)
+			(at 45.72 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16781,7 +16887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 105.41 0)
+			(at 45.72 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16792,7 +16898,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 108.331 0)
+			(at 57.023 162.941 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16803,7 +16909,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 103.386 0)
+			(at 53.2252 157.996 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16815,7 +16921,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 103.386 0)
+			(at 53.2252 157.996 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16827,7 +16933,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 102.362 0)
+			(at 53.213 156.972 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16839,7 +16945,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 100.584 0)
+			(at 54.991 155.194 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16850,7 +16956,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 105.41 0)
+			(at 45.72 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16861,7 +16967,7 @@
 			)
 		)
 		(property "Bit" "2"
-			(at 73.66 105.41 0)
+			(at 45.72 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17002,7 +17108,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 43.18 151.13 0)
+		(at 97.79 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17013,7 +17119,7 @@
 		(fields_autoplaced yes)
 		(uuid "d8128a9c-c8c6-44b6-81f2-a009149068a4")
 		(property "Reference" "DevMast4"
-			(at 40.64 147.32 0)
+			(at 95.25 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17024,7 +17130,7 @@
 			)
 		)
 		(property "Value" "774SAB"
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17035,7 +17141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17046,7 +17152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17057,7 +17163,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 43.18 156.21 0)
+			(at 97.79 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17068,7 +17174,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17079,7 +17185,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17090,7 +17196,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 43.18 151.13 0)
+			(at 97.79 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17114,7 +17220,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 43.18 194.31 0)
+		(at 97.79 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17125,7 +17231,7 @@
 		(fields_autoplaced yes)
 		(uuid "db910f56-d4f8-4152-aa71-a525249f7f4e")
 		(property "Reference" "DevMast7"
-			(at 40.64 190.5 0)
+			(at 95.25 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17136,7 +17242,7 @@
 			)
 		)
 		(property "Value" "774NE"
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17147,7 +17253,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17158,7 +17264,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17169,7 +17275,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 43.18 199.39 0)
+			(at 97.79 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17180,7 +17286,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17191,7 +17297,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17202,7 +17308,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 43.18 194.31 0)
+			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17336,7 +17442,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 135.89 0)
+		(at 45.72 190.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17347,7 +17453,7 @@
 		(fields_autoplaced yes)
 		(uuid "e299907e-a914-42ea-b706-3e518ab9e652")
 		(property "Reference" "CMRI14"
-			(at 74.803 133.858 0)
+			(at 46.863 188.468 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17358,7 +17464,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 131.064 0)
+			(at 46.609 185.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17369,7 +17475,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 135.89 0)
+			(at 45.72 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17380,7 +17486,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 135.89 0)
+			(at 45.72 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17391,7 +17497,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 138.811 0)
+			(at 57.023 193.421 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17402,7 +17508,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 133.866 0)
+			(at 53.2252 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17414,7 +17520,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 133.866 0)
+			(at 53.2252 188.476 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17426,7 +17532,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 132.842 0)
+			(at 53.213 187.452 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17438,7 +17544,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 131.064 0)
+			(at 54.991 185.674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17449,7 +17555,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 135.89 0)
+			(at 45.72 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17460,7 +17566,7 @@
 			)
 		)
 		(property "Bit" "11"
-			(at 73.66 135.89 0)
+			(at 45.72 190.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17484,7 +17590,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 173.99 0)
+		(at 128.27 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17495,7 +17601,7 @@
 		(fields_autoplaced yes)
 		(uuid "e38f6a49-55f8-4bf7-95eb-f3ea82f52688")
 		(property "Reference" "CMRI26"
-			(at 74.803 171.958 0)
+			(at 129.413 168.148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17506,7 +17612,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 169.164 0)
+			(at 129.159 165.354 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17517,7 +17623,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 173.99 0)
+			(at 128.27 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17528,7 +17634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 173.99 0)
+			(at 128.27 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17539,7 +17645,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 176.911 0)
+			(at 139.573 173.101 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17550,7 +17656,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 171.966 0)
+			(at 135.7752 168.156 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17562,7 +17668,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 171.966 0)
+			(at 135.7752 168.156 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17574,7 +17680,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 170.942 0)
+			(at 135.763 167.132 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17586,7 +17692,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 169.164 0)
+			(at 137.541 165.354 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17597,7 +17703,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 173.99 0)
+			(at 128.27 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17608,7 +17714,7 @@
 			)
 		)
 		(property "Bit" "12"
-			(at 73.66 173.99 0)
+			(at 128.27 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17857,7 +17963,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 123.19 0)
+		(at 45.72 177.8 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17868,7 +17974,7 @@
 		(fields_autoplaced yes)
 		(uuid "f43182b8-823f-4a36-a3b6-f47eb8081886")
 		(property "Reference" "DevSW4"
-			(at 67.7458 117.4088 0)
+			(at 39.8058 172.0188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17879,7 +17985,7 @@
 			)
 		)
 		(property "Value" "775"
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17890,7 +17996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17901,7 +18007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 123.19 0)
+			(at 45.72 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17912,7 +18018,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 115.57 0)
+			(at 48.26 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17923,7 +18029,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17936,7 +18042,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17949,7 +18055,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17962,7 +18068,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17975,7 +18081,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17988,7 +18094,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18001,7 +18107,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 117.348 0)
+			(at 43.18 171.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18036,7 +18142,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 107.95 0)
+		(at 45.72 162.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18047,7 +18153,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd098fa6-fd7c-430d-9267-d9e308c81f16")
 		(property "Reference" "CMRI6"
-			(at 74.803 105.918 0)
+			(at 46.863 160.528 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18058,7 +18164,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 103.124 0)
+			(at 46.609 157.734 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18069,7 +18175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 107.95 0)
+			(at 45.72 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18080,7 +18186,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 107.95 0)
+			(at 45.72 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18091,7 +18197,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 110.871 0)
+			(at 57.023 165.481 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18102,7 +18208,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 105.926 0)
+			(at 53.2252 160.536 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18114,7 +18220,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 105.926 0)
+			(at 53.2252 160.536 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18126,7 +18232,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 104.902 0)
+			(at 53.213 159.512 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18138,7 +18244,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 103.124 0)
+			(at 54.991 157.734 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18149,7 +18255,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 107.95 0)
+			(at 45.72 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18160,7 +18266,7 @@
 			)
 		)
 		(property "Bit" "4"
-			(at 73.66 107.95 0)
+			(at 45.72 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18184,7 +18290,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 73.66 163.83 0)
+		(at 128.27 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18195,7 +18301,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd59877b-a5be-41d8-ae3f-40654c2ef0e2")
 		(property "Reference" "Cast8"
-			(at 71.12 160.02 0)
+			(at 125.73 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18206,7 +18312,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 73.66 163.83 0)
+			(at 128.27 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18217,7 +18323,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 163.83 0)
+			(at 128.27 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18228,7 +18334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 163.83 0)
+			(at 128.27 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18239,7 +18345,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 73.66 167.64 0)
+			(at 128.27 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18250,7 +18356,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 62.23 159.639 0)
+			(at 116.84 155.829 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18261,7 +18367,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 62.23 158.877 0)
+			(at 116.84 155.067 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18272,7 +18378,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 57.023 163.83 0)
+			(at 111.633 160.02 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -18283,7 +18389,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 45.212 163.83 0)
+			(at 99.822 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18294,7 +18400,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 79.248 162.56 0)
+			(at 133.858 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18305,7 +18411,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 79.248 165.1 0)
+			(at 133.858 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18335,7 +18441,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
-		(at 73.66 143.51 0)
+		(at 45.72 198.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18346,7 +18452,7 @@
 		(fields_autoplaced yes)
 		(uuid "fed6bd3b-6e53-416a-ba99-426b8e23e948")
 		(property "Reference" "CMRI17"
-			(at 74.803 141.478 0)
+			(at 46.863 196.088 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18357,7 +18463,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.IN.${Bit}"
-			(at 74.549 138.684 0)
+			(at 46.609 193.294 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18368,7 +18474,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 143.51 0)
+			(at 45.72 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18379,7 +18485,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 143.51 0)
+			(at 45.72 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18390,7 +18496,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 146.431 0)
+			(at 57.023 201.041 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18401,7 +18507,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 141.486 0)
+			(at 53.2252 196.096 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18413,7 +18519,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 141.486 0)
+			(at 53.2252 196.096 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18425,7 +18531,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 140.462 0)
+			(at 53.213 195.072 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18437,7 +18543,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 138.684 0)
+			(at 54.991 193.294 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18448,7 +18554,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 143.51 0)
+			(at 45.72 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18459,7 +18565,7 @@
 			)
 		)
 		(property "Bit" "14"
-			(at 73.66 143.51 0)
+			(at 45.72 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18483,7 +18589,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
-		(at 73.66 185.42 0)
+		(at 128.27 181.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18494,7 +18600,7 @@
 		(fields_autoplaced yes)
 		(uuid "fef03d13-37c3-432c-b7f2-712694ba7d0b")
 		(property "Reference" "CMRI30"
-			(at 74.803 183.388 0)
+			(at 129.413 179.578 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18505,7 +18611,7 @@
 			)
 		)
 		(property "Value" "UA${Address}.OUT.${Bit}"
-			(at 74.549 180.594 0)
+			(at 129.159 176.784 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18516,7 +18622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18527,7 +18633,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18538,7 +18644,7 @@
 			)
 		)
 		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
-			(at 84.963 188.341 0)
+			(at 139.573 184.531 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18549,7 +18655,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 81.1652 183.396 0)
+			(at 135.7752 179.586 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18561,7 +18667,7 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 81.1652 183.396 0)
+			(at 135.7752 179.586 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18573,7 +18679,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 81.153 182.372 0)
+			(at 135.763 178.562 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18585,7 +18691,7 @@
 			)
 		)
 		(property "UA" "${Address}"
-			(at 82.931 180.594 0)
+			(at 137.541 176.784 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18596,7 +18702,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18607,7 +18713,7 @@
 			)
 		)
 		(property "Bit" "16"
-			(at 73.66 185.42 0)
+			(at 128.27 181.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

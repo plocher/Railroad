@@ -166,7 +166,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "CMRI ${VALUE}"
+			(text "CMRI UA${Address}.IN.${Bit}"
 				(at 5.334 0 0)
 				(effects
 					(font
@@ -360,7 +360,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "CMRI ${VALUE}"
+			(text "CMRI UA${Address}.OUT.${Bit}"
 				(at 5.207 0 0)
 				(effects
 					(font
@@ -410,7 +410,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "${Address}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -443,7 +443,7 @@
 				)
 			)
 		)
-		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Value = the board core's pin name (D4, GPIO5); the C++ build is the check."
+		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Address = the board core's pin name"
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -490,6 +490,17 @@
 				(justify left)
 			)
 		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-GPIO-Digital_0_1"
 			(rectangle
 				(start 21.59 -1.27)
@@ -531,8 +542,8 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "GPIO ${VALUE}"
-				(at 6.477 0 0)
+			(text "GPIO ${Address}"
+				(at 5.461 0 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -581,7 +592,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "${Address}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -614,7 +625,7 @@
 				)
 			)
 		)
-		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Value = the board core's pin name."
+		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Address = the board core's pin name."
 			(at 0.762 -4.064 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -661,6 +672,17 @@
 				(justify left)
 			)
 		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-GPIO-Pixel_0_1"
 			(rectangle
 				(start 21.59 -1.27)
@@ -678,7 +700,7 @@
 		(symbol "Driver-GPIO-Pixel_1_1"
 			(polyline
 				(pts
-					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
 				)
 				(stroke
 					(width 0)
@@ -751,13 +773,13 @@
 					(type none)
 				)
 			)
-			(text "PIXEL ${VALUE}"
-				(at 17.4307 -0.1012 0)
+			(text "PIXEL ${Address}"
+				(at 5.334 0 0)
 				(effects
 					(font
 						(size 1.016 1.016)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(pin output line
@@ -6211,7 +6233,7 @@
 		(symbol "Driver-JMRI-Sensor_1_1"
 			(polyline
 				(pts
-					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
 				)
 				(stroke
 					(width 0)
@@ -6383,7 +6405,7 @@
 		(symbol "Driver-JMRI-Sensor-Feedback_1_1"
 			(polyline
 				(pts
-					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
 				)
 				(stroke
 					(width 0)
@@ -6492,7 +6514,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 0 0 0)
+			(at 8.001 2.921 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -6503,7 +6525,7 @@
 			)
 		)
 		(property "IC" "MQTT"
-			(at 0 0 0)
+			(at 8.001 2.921 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -6525,7 +6547,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 0 0 0)
+			(at 8.001 2.921 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -6546,6 +6568,19 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.556 0) (xy 2.921 0.635) (xy 2.921 -0.635) (xy 3.556 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
 				)
 			)
 		)
