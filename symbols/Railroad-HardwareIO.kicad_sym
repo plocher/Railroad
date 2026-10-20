@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${Address}.IN.${Bit}"
+		(property "Value" "IN.${Bit}"
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -58,7 +58,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
+		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -105,28 +105,6 @@
 				(justify left)
 			)
 		)
-		(property "UA" "${Address}"
-			(at 9.271 4.826 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Bit" ""
 			(at 0 0 0)
 			(show_name no)
@@ -166,7 +144,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "CMRI UA${Address}.IN.${Bit}"
+			(text "CMRI IN.${Bit}"
 				(at 5.334 0 0)
 				(effects
 					(font
@@ -219,7 +197,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${Address}.OUT.${Bit}"
+		(property "Value" "OUT.${Bit}"
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -252,7 +230,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Address = the node (UA), the chip every bit of that node folds into; Bit = this bit. UA echoes Address."
+		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -299,28 +277,6 @@
 				(justify left)
 			)
 		)
-		(property "UA" "${Address}"
-			(at 9.271 4.826 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Bit" ""
 			(at 0 0 0)
 			(show_name no)
@@ -360,7 +316,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "CMRI UA${Address}.OUT.${Bit}"
+			(text "CMRI OUT.${Bit}"
 				(at 5.207 0 0)
 				(effects
 					(font
@@ -6997,6 +6953,163 @@
 							(size 0.381 0.381)
 						)
 					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Processor"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Proc"
+			(at -14.224 5.842 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at -3.048 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at -11.303 9.652 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at -9.906 8.001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Processor_0_1"
+			(rectangle
+				(start -17.018 1.27)
+				(end 36.83 4.826)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Processor_1_1"
+			(text "Processor:"
+				(at -10.16 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "${Board} ${Transport} ${Address}"
+				(at 36.195 3.048 0)
+				(effects
+					(font
+						(size 0.889 0.889)
+					)
+					(justify right)
 				)
 			)
 		)
