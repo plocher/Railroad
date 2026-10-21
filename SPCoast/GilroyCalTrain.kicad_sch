@@ -1921,7 +1921,7 @@
 				)
 			)
 			(property "Value" ""
-				(at -3.048 3.048 0)
+				(at -7.239 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -1954,7 +1954,7 @@
 				)
 			)
 			(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
-				(at 0 0 0)
+				(at 1.27 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2021,8 +2021,8 @@
 			)
 			(symbol "Processor_0_1"
 				(rectangle
-					(start -17.018 1.27)
-					(end 36.83 4.826)
+					(start -17.018 2.54)
+					(end 17.018 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -2034,20 +2034,72 @@
 			)
 			(symbol "Processor_1_1"
 				(text "Processor:"
-					(at -10.16 3.048 0)
+					(at -12.7 1.27 0)
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
 					)
 				)
-				(text "${Board} ${Transport} ${Address}"
-					(at 36.195 3.048 0)
+				(text "I/O"
+					(at -10.16 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "${Board} ${Address}"
+					(at 16.51 1.27 0)
 					(effects
 						(font
 							(size 0.889 0.889)
 						)
 						(justify right)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 90)
+					(length 2.54)
+					(name "Transport"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 90)
+					(length 2.54)
+					(name "IO"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
 					)
 				)
 			)
@@ -2813,7 +2865,7 @@
 			(symbol "Interlocking_0_1"
 				(rectangle
 					(start -17.018 4.826)
-					(end 17.018 1.27)
+					(end 16.51 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -2825,17 +2877,33 @@
 			)
 			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
-					(at -10.16 3.048 0)
+					(at -10.287 3.556 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(text "Codeline"
+					(at 0 1.778 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 15.621 2.921 900)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(pin free line
 					(at 0 0 90)
 					(length 1.27)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2843,6 +2911,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 17.78 2.54 180)
+					(length 1.27)
+					(name "Host"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2992,7 +3078,7 @@
 				)
 			)
 			(symbol "MAIN HOUSE_1_1"
-				(text "Interlocking"
+				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
 						(font
@@ -3029,7 +3115,7 @@
 				(pin passive line
 					(at 0 5.08 0)
 					(length 0)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 0 0)
@@ -5226,6 +5312,12 @@
 		(uuid "7aada823-ced5-4e72-a4db-fade9e7909cf")
 	)
 	(junction
+		(at 69.85 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0a5ff9f-e5c8-4371-bb03-e078cc71ed97")
+	)
+	(junction
 		(at 58.42 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5338,6 +5430,16 @@
 			(type default)
 		)
 		(uuid "3a718e3c-cbd4-4237-98d7-aeb6e41a08a5")
+	)
+	(wire
+		(pts
+			(xy 87.63 21.59) (xy 87.63 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54ee7a66-b345-4865-a47e-d65c71338947")
 	)
 	(wire
 		(pts
@@ -5491,6 +5593,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 29.21) (xy 88.9 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80e3d8a-8b98-4075-9697-7399625a8663")
+	)
+	(wire
+		(pts
 			(xy 97.79 165.1) (xy 104.14 165.1)
 		)
 		(stroke
@@ -5498,6 +5610,17 @@
 			(type default)
 		)
 		(uuid "e9c04a99-153d-4cca-92ad-2edd0d54eac8")
+	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 88.9 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "51df16ff-bed8-458d-a731-c39e72e30ee9")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:Bumper")
@@ -7937,6 +8060,9 @@
 		)
 		(pin "1"
 			(uuid "60cefb70-46c0-4681-8e99-37b2179b1433")
+		)
+		(pin "2"
+			(uuid "c893d969-5651-4f4b-83be-3fc3e96620f7")
 		)
 		(instances
 			(project "SPCoast"
@@ -17394,7 +17520,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Processor")
-		(at 152.4 25.4 0)
+		(at 74.93 16.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17404,7 +17530,7 @@
 		(dnp no)
 		(uuid "f16bbc5f-59a5-4186-bfae-03e269ba2dd4")
 		(property "Reference" "Proc1"
-			(at 138.176 19.558 0)
+			(at 60.706 10.668 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17414,10 +17540,10 @@
 				)
 			)
 		)
-		(property "Value" "Caltrain"
-			(at 149.352 22.352 0)
+		(property "Value" "SPCoastApp"
+			(at 67.691 16.51 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17426,7 +17552,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 25.4 0)
+			(at 74.93 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17437,7 +17563,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 25.4 0)
+			(at 74.93 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17448,7 +17574,7 @@
 			)
 		)
 		(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
-			(at 152.4 25.4 0)
+			(at 76.2 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17459,7 +17585,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 152.4 25.4 0)
+			(at 63.627 6.858 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17470,7 +17596,7 @@
 			)
 		)
 		(property "Kind" "PROCESSOR"
-			(at 152.4 25.4 0)
+			(at 65.024 8.509 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17481,7 +17607,7 @@
 			)
 		)
 		(property "Board" "cpNode"
-			(at 152.4 25.4 0)
+			(at 74.93 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17492,7 +17618,7 @@
 			)
 		)
 		(property "Transport" "CMRInet"
-			(at 152.4 25.4 0)
+			(at 74.93 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17503,7 +17629,7 @@
 			)
 		)
 		(property "Address" "30"
-			(at 152.4 25.4 0)
+			(at 74.93 16.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17512,6 +17638,12 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "1"
+			(uuid "72984056-d4ba-40e4-9cf0-5d086a1ecf39")
+		)
+		(pin "2"
+			(uuid "e991f05d-8d22-4e8d-aa98-a09d99c1c6d4")
 		)
 		(instances
 			(project "SPCoast"

@@ -1007,7 +1007,7 @@
 			(symbol "Interlocking_0_1"
 				(rectangle
 					(start -17.018 4.826)
-					(end 17.018 1.27)
+					(end 16.51 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1019,17 +1019,33 @@
 			)
 			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
-					(at -10.16 3.048 0)
+					(at -10.287 3.556 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(text "Codeline"
+					(at 0 1.778 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 15.621 2.921 900)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(pin free line
 					(at 0 0 90)
 					(length 1.27)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1037,6 +1053,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 17.78 2.54 180)
+					(length 1.27)
+					(name "Host"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1186,7 +1220,7 @@
 				)
 			)
 			(symbol "MAIN HOUSE_1_1"
-				(text "Interlocking"
+				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
 						(font
@@ -1223,7 +1257,7 @@
 				(pin passive line
 					(at 0 5.08 0)
 					(length 0)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 0 0)
@@ -7507,6 +7541,9 @@
 		)
 		(pin "1"
 			(uuid "c326ebf1-07a5-4d79-a442-d8e8600b9da6")
+		)
+		(pin "2"
+			(uuid "beb3a8c8-78f0-46ff-b085-d5738235b80d")
 		)
 		(instances
 			(project "SPCoast"

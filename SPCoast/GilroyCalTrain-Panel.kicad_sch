@@ -953,6 +953,170 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 10.16 -39.37 180)
+					(length 2.54)
+					(name "I2C"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:Codeline-Encoding-AAR"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Encoding"
+				(at 6.985 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AAR Tokens"
+				(at 12.7 -1.905 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Advanced Train Control System protocol AAR Specification 250 Message Formats"
+				(at 13.97 -14.605 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CODELINE_ENCODING"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "AAR"
+				(at 13.97 -12.7 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Station" ""
+				(at 5.715 -4.445 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(symbol "Codeline-Encoding-AAR_0_1"
+				(rectangle
+					(start 1.27 0)
+					(end 35.56 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Codeline-Encoding-AAR_1_1"
+				(text "Station:"
+					(at 5.08 -4.445 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
+					)
+				)
+				(pin free line
+					(at 0 0 0)
+					(length 1.27)
+					(name "Transport"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -4664,6 +4828,119 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Office:Codeline-Encoding-AAR")
+		(at 27.94 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2656d44a-926c-4003-a757-49bb7bb570ea")
+		(property "Reference" "Encoding1"
+			(at 34.925 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AAR Tokens"
+			(at 40.64 182.245 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Advanced Train Control System protocol AAR Specification 250 Message Formats"
+			(at 41.91 194.945 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 27.94 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "AAR"
+			(at 41.91 193.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Station" "Luchessa"
+			(at 33.655 184.785 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "9d887cd5-23a9-4262-89dc-efdbba6373eb")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
+					(reference "Encoding1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:PanelColumn")
 		(at 80.01 97.79 0)
 		(unit 1)
@@ -6032,6 +6309,9 @@
 		(pin "16"
 			(uuid "30869678-d07f-4b30-9726-87c28f7bc110")
 		)
+		(pin "17"
+			(uuid "65fd3c84-48f3-449d-87d0-0123cc992ef7")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e/8ecebbd2-e7a6-5949-8793-5f9acfb44e33"
@@ -6508,6 +6788,9 @@
 		)
 		(pin "16"
 			(uuid "1e05972c-a49e-471a-8252-0e8738e98428")
+		)
+		(pin "17"
+			(uuid "723c09da-425e-474d-b75c-26fd48ba98c3")
 		)
 		(instances
 			(project "SPCoast"

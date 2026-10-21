@@ -20,6 +20,215 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+		(symbol "Railroad-HardwareIO:Processor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Proc"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -7.239 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
+				(at 1.27 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -11.303 9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "PROCESSOR"
+				(at -9.906 8.001 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Board" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Transport" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Processor_0_1"
+				(rectangle
+					(start -17.018 2.54)
+					(end 17.018 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Processor_1_1"
+				(text "Processor:"
+					(at -12.7 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(text "I/O"
+					(at -10.16 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "${Board} ${Address}"
+					(at 16.51 1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify right)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 90)
+					(length 2.54)
+					(name "Transport"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -5.08 90)
+					(length 2.54)
+					(name "IO"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Trackplan:AUXILIARY"
 			(pin_numbers
 				(hide yes)
@@ -1073,7 +1282,7 @@
 			(symbol "Interlocking_0_1"
 				(rectangle
 					(start -17.018 4.826)
-					(end 17.018 1.27)
+					(end 16.51 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -1085,17 +1294,33 @@
 			)
 			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
-					(at -10.16 3.048 0)
+					(at -10.287 3.556 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(text "Codeline"
+					(at 0 1.778 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 15.621 2.921 900)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(pin free line
 					(at 0 0 90)
 					(length 1.27)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1103,6 +1328,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 17.78 2.54 180)
+					(length 1.27)
+					(name "Host"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1252,7 +1495,7 @@
 				)
 			)
 			(symbol "MAIN HOUSE_1_1"
-				(text "Interlocking"
+				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
 						(font
@@ -1289,7 +1532,7 @@
 				(pin passive line
 					(at 0 5.08 0)
 					(length 0)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 0 0)
@@ -4076,7 +4319,7 @@
 	)
 	(text "TRAFFIC"
 		(exclude_from_sim no)
-		(at 39.878 18.796 0)
+		(at 152.908 26.416 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4301,7 +4544,7 @@
 		(uuid "fb2ed84a-9e84-480c-8323-75fea163e637")
 	)
 	(no_connect
-		(at 43.18 22.86)
+		(at 156.21 30.48)
 		(uuid "16697993-4cbc-4596-a86e-25f813051e9c")
 	)
 	(no_connect
@@ -4309,7 +4552,7 @@
 		(uuid "742e9ac1-3462-4332-9b6c-e8e435b72832")
 	)
 	(no_connect
-		(at 36.83 22.86)
+		(at 149.86 30.48)
 		(uuid "bc2c0fcf-1b8b-44e5-a73b-fd9b2fcc9e6a")
 	)
 	(wire
@@ -4844,7 +5087,7 @@
 	)
 	(polyline
 		(pts
-			(xy 30.48 22.86) (xy 31.75 21.59)
+			(xy 143.51 30.48) (xy 144.78 29.21)
 		)
 		(stroke
 			(width 0)
@@ -4854,7 +5097,7 @@
 	)
 	(polyline
 		(pts
-			(xy 30.48 22.86) (xy 31.75 24.13)
+			(xy 143.51 30.48) (xy 144.78 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4884,7 +5127,7 @@
 	)
 	(polyline
 		(pts
-			(xy 30.48 22.86) (xy 49.53 22.86)
+			(xy 143.51 30.48) (xy 162.56 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5014,7 +5257,7 @@
 	)
 	(polyline
 		(pts
-			(xy 48.26 21.59) (xy 49.53 22.86)
+			(xy 161.29 29.21) (xy 162.56 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5254,7 +5497,7 @@
 	)
 	(polyline
 		(pts
-			(xy 48.26 24.13) (xy 49.53 22.86)
+			(xy 161.29 31.75) (xy 162.56 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5301,6 +5544,17 @@
 			(type default)
 		)
 		(uuid "fe1e4e26-b727-4cb4-8b86-8937e230d0bd")
+	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 44.45 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f1c4f47-1403-4089-8598-cf32d8316699")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:IRJ")
@@ -8061,6 +8315,9 @@
 		)
 		(pin "1"
 			(uuid "cdc49c8f-346b-4983-9ed5-a80fcb10ca59")
+		)
+		(pin "2"
+			(uuid "48dc7901-987f-43cb-a033-168dcc9207b7")
 		)
 		(instances
 			(project "SPCoast"
@@ -13051,6 +13308,143 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-HardwareIO:Processor")
+		(at 44.45 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94ccfb85-e54d-4dc4-983d-5f0cafc1ebe1")
+		(property "Reference" "Proc3"
+			(at 30.226 20.828 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPCoastApp"
+			(at 37.211 26.67 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line."
+			(at 45.72 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 33.147 17.018 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 34.544 18.669 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" ""
+			(at 44.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 44.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" "WhatGoesHere"
+			(at 44.45 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd86648e-1547-49f8-97b3-4fe15e5fae03")
+		)
+		(pin "2"
+			(uuid "da1c356a-4c01-4709-97c2-f8be2cdf261d")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
+					(reference "Proc3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Trackplan:IRJ")
 		(at 162.56 54.61 0)
 		(unit 1)
@@ -15044,7 +15438,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:AUXILIARY")
-		(at 36.83 22.86 0)
+		(at 149.86 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15054,7 +15448,7 @@
 		(dnp no)
 		(uuid "b8e77923-06cc-4129-b439-3922f84b991d")
 		(property "Reference" "FLK15003"
-			(at 36.83 25.4 0)
+			(at 149.86 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15065,7 +15459,7 @@
 			)
 		)
 		(property "Value" "NFLK"
-			(at 36.83 20.32 0)
+			(at 149.86 27.94 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -15075,7 +15469,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15086,7 +15480,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15097,7 +15491,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15108,7 +15502,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15119,7 +15513,7 @@
 			)
 		)
 		(property "CP" "Watsonville"
-			(at 36.83 25.4 0)
+			(at 149.86 33.02 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -15129,7 +15523,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15140,7 +15534,7 @@
 			)
 		)
 		(property "Style" "non_vital"
-			(at 36.83 22.86 0)
+			(at 149.86 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16616,7 +17010,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:AUXILIARY")
-		(at 43.18 22.86 0)
+		(at 156.21 30.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16626,7 +17020,7 @@
 		(dnp no)
 		(uuid "cd5a29ef-cd56-459f-9a23-7c890eb3137e")
 		(property "Reference" "FLK15004"
-			(at 43.18 25.4 0)
+			(at 156.21 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16637,7 +17031,7 @@
 			)
 		)
 		(property "Value" "SFLK"
-			(at 43.18 20.32 0)
+			(at 156.21 27.94 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16647,7 +17041,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16658,7 +17052,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16669,7 +17063,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16680,7 +17074,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16691,7 +17085,7 @@
 			)
 		)
 		(property "CP" "Watsonville"
-			(at 43.18 25.4 0)
+			(at 156.21 33.02 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16701,7 +17095,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16712,7 +17106,7 @@
 			)
 		)
 		(property "Style" "non_vital"
-			(at 43.18 22.86 0)
+			(at 156.21 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

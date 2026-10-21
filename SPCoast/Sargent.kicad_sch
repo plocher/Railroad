@@ -4167,6 +4167,16 @@
 					)
 				)
 			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Driver-I2C-MCP23017_0_1"
 				(polyline
 					(pts
@@ -4381,6 +4391,24 @@
 						(effects
 							(font
 								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "I2C"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.381 0.381)
 							)
 						)
 					)
@@ -4932,6 +4960,16 @@
 					)
 				)
 			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Driver-I2C-PCA9685-PWM_0_1"
 				(polyline
 					(pts
@@ -5343,19 +5381,21 @@
 					)
 				)
 				(text "I2C Expander"
-					(at 10.16 -6.35 0)
+					(at 5.207 -5.715 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
+						(justify left)
 					)
 				)
 				(text "12-bit PWM"
-					(at 10.16 -7.62 0)
+					(at 5.207 -6.985 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
+						(justify left)
 					)
 				)
 				(pin output line
@@ -5426,6 +5466,24 @@
 						(effects
 							(font
 								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "I2C"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.381 0.381)
 							)
 						)
 					)
@@ -5988,6 +6046,16 @@
 					)
 				)
 			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Driver-I2C-PCA9685-Servo_0_1"
 				(polyline
 					(pts
@@ -6135,6 +6203,24 @@
 						(type none)
 					)
 				)
+				(text "I2C Expander"
+					(at 5.334 -5.588 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(text "Servo 50Hz"
+					(at 5.334 -6.858 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
 				(text "Type:"
 					(at 7.62 0 0)
 					(effects
@@ -6151,22 +6237,6 @@
 							(size 0.508 0.508)
 						)
 						(justify right)
-					)
-				)
-				(text "I2C Expander"
-					(at 10.16 -6.35 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "Servo 50 Hz"
-					(at 10.16 -7.62 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
 					)
 				)
 			)
@@ -6252,6 +6322,24 @@
 						(effects
 							(font
 								(size 0.762 0.762)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -7.62 180)
+					(length 2.54)
+					(name "I2C"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 0.381 0.381)
 							)
 						)
 					)
@@ -7648,7 +7736,7 @@
 			(symbol "Interlocking_0_1"
 				(rectangle
 					(start -17.018 4.826)
-					(end 17.018 1.27)
+					(end 16.51 1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -7660,17 +7748,33 @@
 			)
 			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
-					(at -10.16 3.048 0)
+					(at -10.287 3.556 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
+				(text "Codeline"
+					(at 0 1.778 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Host"
+					(at 15.621 2.921 900)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(pin free line
 					(at 0 0 90)
 					(length 1.27)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7678,6 +7782,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 17.78 2.54 180)
+					(length 1.27)
+					(name "Host"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7827,7 +7949,7 @@
 				)
 			)
 			(symbol "MAIN HOUSE_1_1"
-				(text "Interlocking"
+				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
 						(font
@@ -7864,7 +7986,7 @@
 				(pin passive line
 					(at 0 5.08 0)
 					(length 0)
-					(name "Interlocking"
+					(name "Codeline"
 						(effects
 							(font
 								(size 0 0)
@@ -12201,6 +12323,9 @@
 		(pin "1"
 			(uuid "90b8ce72-a575-4691-b6d7-b83be1d4c568")
 		)
+		(pin "17"
+			(uuid "e71839e0-28a8-410b-b853-916a74889588")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -12942,6 +13067,9 @@
 		(pin "15"
 			(uuid "a98007b9-fcf7-4bad-8578-b7ee191beef9")
 		)
+		(pin "17"
+			(uuid "4e20712a-0c54-4b2f-8291-4d9b5e75cf8c")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -13283,6 +13411,9 @@
 		)
 		(pin "4"
 			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17c")
+		)
+		(pin "17"
+			(uuid "ffbc50e1-1658-486c-94ab-6ea89465ba87")
 		)
 		(instances
 			(project "SPCoast"
@@ -13748,6 +13879,9 @@
 		)
 		(pin "1"
 			(uuid "90b8ce72-a575-4691-b6d7-b83be1d4c569")
+		)
+		(pin "17"
+			(uuid "be2737ec-00a1-45ff-b007-6e14bd0bfa49")
 		)
 		(instances
 			(project "SPCoast"
@@ -16112,6 +16246,9 @@
 		(pin "15"
 			(uuid "a98007b9-fcf7-4bad-8578-b7ee191beefa")
 		)
+		(pin "17"
+			(uuid "14e8e22a-83d3-47c4-b74c-c4b02ee2b7eb")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -16731,6 +16868,9 @@
 		(pin "15"
 			(uuid "a98007b9-fcf7-4bad-8578-b7ee191beefb")
 		)
+		(pin "17"
+			(uuid "bc7e15b6-c1c5-4403-a1cc-93f13d28fd71")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -17173,6 +17313,9 @@
 		)
 		(pin "15"
 			(uuid "a98007b9-fcf7-4bad-8578-b7ee191beefc")
+		)
+		(pin "17"
+			(uuid "3f531c52-d4fa-4598-9f9d-4a094e5522f0")
 		)
 		(instances
 			(project "SPCoast"
@@ -18443,6 +18586,9 @@
 		(pin "4"
 			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17d")
 		)
+		(pin "17"
+			(uuid "d610cfe4-2349-469d-ac9e-ba377ac902cc")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -18903,6 +19049,9 @@
 		(pin "4"
 			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17e")
 		)
+		(pin "17"
+			(uuid "2379b6f1-61a2-4334-8808-df8f85150e3f")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -19245,6 +19394,9 @@
 		(pin "4"
 			(uuid "fb06e130-fe90-43ae-ab75-ddb6caa9a17f")
 		)
+		(pin "17"
+			(uuid "cd067e0b-f19f-49db-8488-a3a7293e4373")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -19345,6 +19497,9 @@
 		)
 		(pin "1"
 			(uuid "e8634ec4-9fdd-436c-b022-15d75b2e2a4d")
+		)
+		(pin "2"
+			(uuid "0c7f3e3a-d81a-443b-83f4-768a6bf25ffa")
 		)
 		(instances
 			(project "SPCoast"
@@ -20604,6 +20759,9 @@
 		(pin "1"
 			(uuid "90b8ce72-a575-4691-b6d7-b83be1d4c56a")
 		)
+		(pin "17"
+			(uuid "d601e221-f643-4bbe-b1cc-b98ee40a73a7")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -21696,6 +21854,9 @@
 		)
 		(pin "1"
 			(uuid "90b8ce72-a575-4691-b6d7-b83be1d4c56b")
+		)
+		(pin "17"
+			(uuid "2ef6256f-70ce-4a4e-b73d-40ff6b916075")
 		)
 		(instances
 			(project "SPCoast"

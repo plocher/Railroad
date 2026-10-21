@@ -130,7 +130,7 @@
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -362,7 +362,7 @@
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -538,7 +538,7 @@
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -732,7 +732,7 @@
 			(pin free line
 				(at 0 2.54 270)
 				(length 1.27)
-				(name "Codeline"
+				(name "Host"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -922,7 +922,7 @@
 			(pin free line
 				(at 0 0 270)
 				(length 1.27)
-				(name "Codeline"
+				(name "Host"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -983,13 +983,14 @@
 			)
 		)
 		(property "Value" "MQTT"
-			(at -6.985 -2.54 0)
+			(at -8.89 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1155,7 +1156,7 @@
 			(pin free line
 				(at 0 0 270)
 				(length 1.27)
-				(name "Codeline"
+				(name "Host"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1327,7 +1328,7 @@
 			(pin free line
 				(at 0 0 270)
 				(length 1.27)
-				(name "Codeline"
+				(name "Host"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1363,7 +1364,283 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "CtcMachine"
+	(symbol "FieldUnit"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "HOST"
+			(at -15.367 11.811 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at -12.7 6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A Field Processor / host where an interlocking's logic is executed"
+			(at 33.02 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "Host"
+			(at -13.97 10.033 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Type" "PROCESSOR"
+			(at 33.02 1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(symbol "FieldUnit_0_1"
+			(rectangle
+				(start 0 2.54)
+				(end 34.29 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "FieldUnit_1_1"
+			(text "Field Processor"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "Name: ${VALUE}"
+				(at 1.27 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "FieldUnit_Virtual"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "HOST"
+			(at -15.367 11.811 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at -12.7 6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A Field Processor / host where an interlocking's logic is executed"
+			(at 33.02 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "Host"
+			(at -13.97 10.033 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Type" "VIRTUAL"
+			(at 33.02 1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(symbol "FieldUnit_Virtual_0_1"
+			(rectangle
+				(start 0.127 2.54)
+				(end 34.417 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "FieldUnit_Virtual_1_1"
+			(text "Field Processor"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "Name: ${VALUE}"
+				(at 1.27 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(text "Host"
+				(at 30.607 -1.524 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(pin free line
+				(at 30.48 -5.08 90)
+				(length 2.54)
+				(name "Host"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "OfficeUnit"
 		(pin_numbers
 			(hide yes)
 		)
@@ -1388,7 +1665,7 @@
 			)
 		)
 		(property "Value" "SPCoast South cTc"
-			(at -0.127 0.889 0)
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1483,9 +1760,9 @@
 				(justify left)
 			)
 		)
-		(symbol "CtcMachine_1_1"
+		(symbol "OfficeUnit_1_1"
 			(rectangle
-				(start -20.32 6.477)
+				(start -20.32 5.08)
 				(end 20.32 -5.08)
 				(stroke
 					(width 0.3048)
@@ -1493,6 +1770,14 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(text "Host"
+				(at -19.05 0 900)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
 				)
 			)
 			(text "Type"
@@ -1512,7 +1797,7 @@
 				)
 			)
 			(text "Centralized Traffic Control System"
-				(at 0 5.08 0)
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -1536,9 +1821,27 @@
 				)
 			)
 			(pin free line
+				(at -21.59 0 0)
+				(length 1.27)
+				(name "Host"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number ""
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin free line
 				(at 0 -7.62 90)
 				(length 2.54)
-				(name "Transports"
+				(name "Codeline"
 					(effects
 						(font
 							(size 0.762 0.762)
