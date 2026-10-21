@@ -1105,7 +1105,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "${CP Name}"
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1172,6 +1172,17 @@
 			)
 			(property "Kind" "CONTROL_POINT"
 				(at -13.335 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4194,6 +4205,28 @@
 		)
 		(uuid "eca19dd1-25f0-472a-95ff-f9819442a53e")
 	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 99.06 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff7be9e1-4a8f-4d93-a62f-cf66a74398d2")
+	)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 116.84 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a84e483c-013a-48c6-b0a1-68161db50c5d")
+	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
 		(at 63.5 101.6 0)
@@ -6781,7 +6814,7 @@
 				)
 			)
 		)
-		(property "Value" "Corporal"
+		(property "Value" "${CP Name}"
 			(at 99.06 47.625 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6848,6 +6881,17 @@
 		)
 		(property "Kind" "CONTROL_POINT"
 			(at 85.725 41.402 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Corporal"
+			(at 99.06 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -2501,7 +2501,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Processor"
+		(symbol "Railroad-HardwareIO:Remote-IO-JMRI"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2514,7 +2514,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Proc"
+			(property "Reference" "RIO"
 				(at -14.224 5.842 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2558,8 +2558,8 @@
 					)
 				)
 			)
-			(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
-				(at 1.27 -3.81 0)
+			(property "Description" "Remote I/O through JMRI over MQTT: the JMRI objects of this sheet behind the transport's host; its JMRI drivers attach by sheet (ADR 0008)."
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2580,7 +2580,7 @@
 					)
 				)
 			)
-			(property "Kind" "PROCESSOR"
+			(property "Kind" "REMOTE_IO"
 				(at -9.906 8.001 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2591,18 +2591,7 @@
 					)
 				)
 			)
-			(property "Board" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Transport" ""
+			(property "Board" "JMRI"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2624,7 +2613,18 @@
 					)
 				)
 			)
-			(symbol "Processor_0_1"
+			(property "Transport" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Remote-IO-JMRI_0_1"
 				(rectangle
 					(start -17.018 2.54)
 					(end 17.018 -2.54)
@@ -2637,28 +2637,12 @@
 					)
 				)
 			)
-			(symbol "Processor_1_1"
-				(text "Processor:"
+			(symbol "Remote-IO-JMRI_1_1"
+				(text "Remote I/O"
 					(at -12.7 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "I/O"
-					(at -10.16 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(text "Host"
-					(at 12.7 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
 						)
 					)
 				)
@@ -2671,7 +2655,15 @@
 						(justify right)
 					)
 				)
-				(pin input line
+				(text "Transport"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(pin passive line
 					(at 12.7 -5.08 90)
 					(length 2.54)
 					(name "Transport"
@@ -2682,24 +2674,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -5.08 90)
-					(length 2.54)
-					(name "IO"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 0.381 0.381)
@@ -3568,7 +3542,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "${CP Name}"
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3635,6 +3609,17 @@
 			)
 			(property "Kind" "CONTROL_POINT"
 				(at -13.335 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6442,16 +6427,171 @@
 		)
 		(uuid "f804af87-46f7-43aa-9ad8-fb5029ae3aad")
 	)
+	(hierarchical_label "JMRI_MQTT"
+		(shape bidirectional)
+		(at 87.63 21.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0dc6b1be-f74e-425d-8d90-42bdce5f6333")
+	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
-		(at 74.93 25.4 180)
+		(at 74.93 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0d12a518-4d2a-4a6a-9650-afc31a6d6d5f")
+		(uuid "5e9a6908-0bd4-41ae-87d5-35d808480ea6")
+	)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 92.71 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d62ab8c-f1ef-4aa4-a156-67353631456b")
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Remote-IO-JMRI")
+		(at 74.93 16.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3ad5fb4-5ae0-4901-bfc6-55bb5ad84604")
+		(property "Reference" "RIO2"
+			(at 60.706 10.668 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JMRI"
+			(at 67.691 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Remote I/O through JMRI over MQTT: the JMRI objects of this sheet behind the transport's host; its JMRI drivers attach by sheet (ADR 0008)."
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "REMOTE_IO"
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "JMRI"
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 74.93 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fee84e4-dab1-4b22-84e0-e10ca41b5fb5")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
+					(reference "RIO2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:IRJ-Signal")
@@ -10563,143 +10703,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Processor")
-		(at 74.93 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "58f4236f-c93e-4163-a562-00e9f8387ac3")
-		(property "Reference" "Proc2"
-			(at 60.706 23.368 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPCoastApp"
-			(at 67.691 29.21 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line."
-			(at 76.2 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 63.627 19.558 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "PROCESSOR"
-			(at 65.024 21.209 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" ""
-			(at 74.93 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Transport" ""
-			(at 74.93 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "WhatGoesHere"
-			(at 74.93 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f498109-7ceb-450f-b57d-6e1746e43d7b")
-		)
-		(pin "2"
-			(uuid "8fd05dc5-e806-4506-8b54-d25edd74aeb2")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
-					(reference "Proc2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-JMRI-Turnout")
 		(at 55.88 113.03 0)
 		(unit 1)
@@ -11565,7 +11568,7 @@
 				)
 			)
 		)
-		(property "Value" "Gilroy South"
+		(property "Value" "${CP Name}"
 			(at 168.91 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11632,6 +11635,17 @@
 		)
 		(property "Kind" "CONTROL_POINT"
 			(at 155.575 40.132 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Gilroy South"
+			(at 168.91 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14949,7 +14963,7 @@
 				)
 			)
 		)
-		(property "Value" "Gilroy North"
+		(property "Value" "${CP Name}"
 			(at 74.93 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15016,6 +15030,17 @@
 		)
 		(property "Kind" "CONTROL_POINT"
 			(at 61.595 40.132 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Gilroy North"
+			(at 74.93 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

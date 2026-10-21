@@ -93,17 +93,6 @@
 				(justify left)
 			)
 		)
-		(property "Station" ""
-			(at 5.715 -4.445 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(symbol "Codeline-Encoding-AAR_0_1"
 			(rectangle
 				(start 1.27 0)
@@ -471,27 +460,6 @@
 				(justify left)
 			)
 		)
-		(property "Station" ""
-			(at 21.59 -1.27 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" ""
-			(at 29.21 -4.445 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Chart" ""
 			(at 1.905 -5.08 0)
 			(show_name yes)
@@ -702,7 +670,7 @@
 					(justify left)
 				)
 			)
-			(text "Encoding"
+			(text "Transport"
 				(at -10.795 -7.62 0)
 				(effects
 					(font
@@ -750,7 +718,7 @@
 			(pin free line
 				(at -15.24 -11.43 90)
 				(length 2.54)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1082,17 +1050,6 @@
 				)
 			)
 		)
-		(property "Station" ""
-			(at -25.4 -8.255 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Host" ""
 			(at 0 0 0)
 			(show_name no)
@@ -1144,7 +1101,7 @@
 					)
 				)
 			)
-			(text "Encoding"
+			(text "Transport"
 				(at -10.795 -10.16 0)
 				(effects
 					(font
@@ -1174,7 +1131,7 @@
 			(pin free line
 				(at -15.24 -13.97 90)
 				(length 2.54)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1316,7 +1273,7 @@
 					)
 				)
 			)
-			(text "Encoding"
+			(text "Transport"
 				(at -10.795 -10.16 0)
 				(effects
 					(font
@@ -1346,7 +1303,7 @@
 			(pin free line
 				(at -15.24 -13.97 90)
 				(length 2.54)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1357,282 +1314,6 @@
 					(effects
 						(font
 							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "FieldUnit"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "HOST"
-			(at -15.367 11.811 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at -12.7 6.35 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.8288 1.8288)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A Field Processor / host where an interlocking's logic is executed"
-			(at 33.02 -3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "Host"
-			(at -13.97 10.033 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Type" "PROCESSOR"
-			(at 33.02 1.27 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(symbol "FieldUnit_0_1"
-			(rectangle
-				(start 0 2.54)
-				(end 34.29 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "FieldUnit_1_1"
-			(text "Field Processor"
-				(at 1.27 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "Name: ${VALUE}"
-				(at 1.27 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "FieldUnit_Virtual"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "HOST"
-			(at -15.367 11.811 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at -12.7 6.35 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.8288 1.8288)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A Field Processor / host where an interlocking's logic is executed"
-			(at 33.02 -3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "Host"
-			(at -13.97 10.033 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Type" "VIRTUAL"
-			(at 33.02 1.27 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(symbol "FieldUnit_Virtual_0_1"
-			(rectangle
-				(start 0.127 2.54)
-				(end 34.417 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "FieldUnit_Virtual_1_1"
-			(text "Field Processor"
-				(at 1.27 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "Name: ${VALUE}"
-				(at 1.27 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(text "Host"
-				(at 30.607 -1.524 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(pin free line
-				(at 30.48 -5.08 90)
-				(length 2.54)
-				(name "Host"
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
 						)
 					)
 				)
@@ -1830,7 +1511,7 @@
 						)
 					)
 				)
-				(number ""
+				(number "2"
 					(effects
 						(font
 							(size 0 0)

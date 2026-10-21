@@ -878,7 +878,7 @@
 					)
 				)
 			)
-			(property "Value" ""
+			(property "Value" "${CP Name}"
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -945,6 +945,17 @@
 			)
 			(property "Kind" "CONTROL_POINT"
 				(at -13.335 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3557,6 +3568,28 @@
 		)
 		(uuid "edadf5c2-c1e7-4d8d-81d0-18c420f7cdba")
 	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 72.39 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3913eea-cff5-49a4-b8b8-b2095fd14038")
+	)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 90.17 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef98ce94-c605-4a7b-8d8c-a9244086d33a")
+	)
 	(symbol
 		(lib_id "Railroad-Trackplan:Rule251-DoT-Right")
 		(at 41.91 97.79 0)
@@ -3795,7 +3828,7 @@
 				)
 			)
 		)
-		(property "Value" "Christopher South"
+		(property "Value" "${CP Name}"
 			(at 195.58 47.625 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3862,6 +3895,17 @@
 		)
 		(property "Kind" "CONTROL_POINT"
 			(at 182.245 41.402 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Christopher South"
+			(at 195.58 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5311,7 +5355,7 @@
 				)
 			)
 		)
-		(property "Value" "Christopher North"
+		(property "Value" "${CP Name}"
 			(at 72.39 47.625 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5378,6 +5422,17 @@
 		)
 		(property "Kind" "CONTROL_POINT"
 			(at 59.055 41.402 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Christopher North"
+			(at 72.39 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

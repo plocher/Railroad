@@ -20,6 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
+
 		(symbol "Railroad-HardwareIO:Processor"
 			(pin_numbers
 				(hide yes)
@@ -77,7 +78,7 @@
 					)
 				)
 			)
-			(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
+			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
 				(at 1.27 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -121,28 +122,6 @@
 					)
 				)
 			)
-			(property "Transport" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(symbol "Processor_0_1"
 				(rectangle
 					(start -17.018 2.54)
@@ -165,7 +144,7 @@
 						)
 					)
 				)
-				(text "I/O"
+				(text "IO_Bus"
 					(at -10.16 -1.27 0)
 					(effects
 						(font
@@ -181,7 +160,7 @@
 						)
 					)
 				)
-				(text "${Board} ${Address}"
+				(text "${Board}"
 					(at 16.51 1.27 0)
 					(effects
 						(font
@@ -190,10 +169,10 @@
 						(justify right)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at 12.7 -5.08 90)
 					(length 2.54)
-					(name "Transport"
+					(name "Host"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -211,7 +190,7 @@
 				(pin passive line
 					(at -10.16 -5.08 90)
 					(length 2.54)
-					(name "IO"
+					(name "IO_Bus"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -219,6 +198,178 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Processor-Virtual"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Proc"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -7.239 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -11.303 9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "PROCESSOR"
+				(at -9.906 8.001 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Type" "VIRTUAL"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Board" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Processor-Virtual_0_1"
+				(rectangle
+					(start -17.018 2.54)
+					(end 17.018 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Processor-Virtual_1_1"
+				(text "Virtual:"
+					(at -12.7 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(text "${Board}"
+					(at 16.51 1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify right)
+					)
+				)
+				(text "Host"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -5.08 90)
+					(length 2.54)
+					(name "Host"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 0.381 0.381)
@@ -313,17 +464,6 @@
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Station" ""
-				(at 5.715 -4.445 0)
-				(show_name no)
-				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -464,27 +604,6 @@
 						(size 1.27 1.27)
 					)
 					(justify left)
-				)
-			)
-			(property "Station" ""
-				(at 21.59 -1.27 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(property "Address" ""
-				(at 29.21 -4.445 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
 				)
 			)
 			(property "Chart" ""
@@ -697,7 +816,7 @@
 						(justify left)
 					)
 				)
-				(text "Encoding"
+				(text "Transport"
 					(at -10.795 -7.62 0)
 					(effects
 						(font
@@ -745,7 +864,7 @@
 				(pin free line
 					(at -15.24 -11.43 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -887,17 +1006,6 @@
 					)
 				)
 			)
-			(property "Station" ""
-				(at -25.4 -8.255 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Host" ""
 				(at 0 0 0)
 				(show_name no)
@@ -949,7 +1057,7 @@
 						)
 					)
 				)
-				(text "Encoding"
+				(text "Transport"
 					(at -10.795 -10.16 0)
 					(effects
 						(font
@@ -979,7 +1087,7 @@
 				(pin free line
 					(at -15.24 -13.97 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1121,7 +1229,7 @@
 						)
 					)
 				)
-				(text "Encoding"
+				(text "Transport"
 					(at -10.795 -10.16 0)
 					(effects
 						(font
@@ -1151,7 +1259,7 @@
 				(pin free line
 					(at -15.24 -13.97 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1162,157 +1270,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:FieldUnit_Virtual"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "HOST"
-				(at -15.367 11.811 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -12.7 6.35 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.8288 1.8288)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "A Field Processor / host where an interlocking's logic is executed"
-				(at 33.02 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "Host"
-				(at -13.97 10.033 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Type" "VIRTUAL"
-				(at 33.02 1.27 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(symbol "FieldUnit_Virtual_0_1"
-				(rectangle
-					(start 0.127 2.54)
-					(end 34.417 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FieldUnit_Virtual_1_1"
-				(text "Field Processor"
-					(at 1.27 1.27 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "Name: ${VALUE}"
-					(at 1.27 -1.27 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-						(justify left)
-					)
-				)
-				(text "Host"
-					(at 30.607 -1.524 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(pin free line
-					(at 30.48 -5.08 90)
-					(length 2.54)
-					(name "Host"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -1510,7 +1467,7 @@
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -1538,8 +1495,7 @@
 				)
 			)
 			(embedded_fonts no)
-		)
-	)
+		)	)
 	(junction
 		(at 176.53 40.64)
 		(diameter 0)
@@ -1662,6 +1618,106 @@
 		)
 		(uuid "dcb6d4e3-d286-4a69-a816-85a58381bdd1")
 	)
+	(wire
+		(pts
+			(xy 238.76 85.09) (xy 238.76 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9c8a80-4a88-452f-8f40-b3d34e905620")
+	)
+	(wire
+		(pts
+			(xy 186.69 85.09) (xy 186.69 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4292af80-1795-4f75-b7a3-7ebaae7cc322")
+	)
+	(wire
+		(pts
+			(xy 181.61 85.09) (xy 181.61 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2767c244-5de2-47b5-9bff-bd91f614a34b")
+	)
+	(wire
+		(pts
+			(xy 38.1 85.09) (xy 38.1 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d167b27-7bd7-4810-be9d-536fc62564aa")
+	)
+	(wire
+		(pts
+			(xy 43.18 85.09) (xy 43.18 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7199a4-c346-43ac-a315-e72ee68cca6e")
+	)
+	(wire
+		(pts
+			(xy 160.02 85.09) (xy 160.02 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d475b0-6190-46b2-ae85-e4ed154640e0")
+	)
+	(wire
+		(pts
+			(xy 154.94 85.09) (xy 154.94 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14b0c1f-f4bf-46b5-a832-bb31f1e75548")
+	)
+	(wire
+		(pts
+			(xy 66.04 85.09) (xy 66.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9b1610-10bd-4f0e-b916-acf3c158c787")
+	)
+	(wire
+		(pts
+			(xy 71.12 85.09) (xy 71.12 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1530e556-0c3f-4a09-874b-beff6b1ad74a")
+	)
+	(wire
+		(pts
+			(xy 215.9 85.09) (xy 215.9 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a1b33e-5684-4fa8-a44c-56edbb78d728")
+	)
 	(global_label "TIMECODE"
 		(shape input)
 		(at 50.8 54.61 180)
@@ -1782,7 +1838,7 @@
 			)
 		)
 	)
-	(global_label "JMRI_MQTT"
+	(global_label "MQTT"
 		(shape input)
 		(at 76.2 85.09 90)
 		(fields_autoplaced yes)
@@ -1830,7 +1886,7 @@
 			)
 		)
 	)
-	(global_label "CMRInet"
+	(global_label "MQTT"
 		(shape input)
 		(at 48.26 85.09 90)
 		(fields_autoplaced yes)
@@ -1891,6 +1947,270 @@
 		(uuid "ea0e51a3-448a-4340-a952-58a415d3e5bb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 113.03 72.9125 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 176.53 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2501bb0-6427-4343-94ea-9b4379f95ee7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.53 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 238.76 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "669cf441-f27e-4a11-91ee-9a6a7d51dbc1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 238.76 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "MQTT"
+		(shape input)
+		(at 186.69 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e690eb2-58f9-4ba1-b237-1d2cc4d3930c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.69 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 181.61 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db6ee565-caa8-4217-9e12-d9a3f18b93b7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 181.61 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 38.1 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0658c7e1-bdba-43df-b969-cc7eedf610e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.1 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "CMRInet"
+		(shape input)
+		(at 43.18 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6778a020-fb85-4301-9050-7272ac676504")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.18 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "MQTT"
+		(shape input)
+		(at 160.02 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "357ed506-3ea0-4ed4-8726-939a4b4dfe26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 154.94 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf683f80-2697-4abc-9190-04739fb93a57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.94 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SPCoastApp"
+		(shape input)
+		(at 66.04 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2ffb041-6dcc-4284-b4db-4236ab0d711b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "JMRI_MQTT"
+		(shape input)
+		(at 71.12 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d65fcac4-5790-49bb-a2e6-93d1b2815c28")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.12 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "MQTT"
+		(shape input)
+		(at 215.9 85.09 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a12b1c3-71e1-4564-bba9-8cb729ba86eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 215.9 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2026,17 +2346,6 @@
 		)
 		(property "Host" ""
 			(at 110.49 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Station" ""
-			(at 85.09 48.895 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2182,7 +2491,7 @@
 		(pin "1"
 			(uuid "a71a733b-77aa-42f0-847f-afc41d41ef3f")
 		)
-		(pin ""
+		(pin "2"
 			(uuid "0bf954c7-54e7-43db-a744-72685b7d739e")
 		)
 		(instances
@@ -2442,17 +2751,6 @@
 				)
 			)
 		)
-		(property "Station" ""
-			(at 151.13 48.895 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "1d5b3326-b228-478c-9ef2-d6a76caa653a")
 		)
@@ -2557,17 +2855,6 @@
 				(justify left)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at 100.965 61.595 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "1"
 			(uuid "c2b2fe57-3e26-4693-9869-e9d5f1d8e9fb")
 		)
@@ -2581,8 +2868,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:FieldUnit_Virtual")
-		(at 146.05 19.05 0)
+		(lib_id "Railroad-HardwareIO:Processor-Virtual")
+		(at 163.83 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2590,10 +2877,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9ef7a1b-425f-4e95-91a8-e57958af3d61")
-		(property "Reference" "HOST1"
-			(at 130.683 7.239 0)
+		(uuid "3a976bb0-2a48-4d60-899c-7621b9ca4b71")
+		(property "Reference" "Proc7"
+			(at 149.606 13.208 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -2604,18 +2890,18 @@
 			)
 		)
 		(property "Value" "SPCoastApp"
-			(at 133.35 12.7 0)
-			(hide yes)
+			(at 156.591 19.05 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.8288 1.8288)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 19.05 0)
+			(at 163.83 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2626,7 +2912,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 19.05 0)
+			(at 163.83 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2636,8 +2922,8 @@
 				)
 			)
 		)
-		(property "Description" "A Field Processor / host where an interlocking's logic is executed"
-			(at 179.07 22.86 0)
+		(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
+			(at 163.83 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2647,35 +2933,57 @@
 				)
 			)
 		)
-		(property "Role" "Host"
-			(at 132.08 9.017 0)
+		(property "Role" "STRUCTURE"
+			(at 163.83 19.05 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 163.83 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Type" "VIRTUAL"
-			(at 179.07 17.78 0)
+			(at 163.83 19.05 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+			)
+		)
+		(property "Board" "macOS"
+			(at 163.83 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
-			(uuid "2355811c-b5a7-4799-adcf-ee64595b0bea")
+			(uuid "b0243c78-927f-4d23-80a5-5dcdf8e1f301")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
-					(reference "HOST1")
+					(reference "Proc7")
 					(unit 1)
 				)
 			)
@@ -2737,7 +3045,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: declares the I2C bus and GPIO pins of the chips and drivers in its scope; with Transport and Address it is a node on that code line (ADR 0005)."
+		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
 			(at 33.02 22.86 0)
 			(hide yes)
 			(show_name no)
@@ -2771,28 +3079,6 @@
 			)
 		)
 		(property "Board" "cpNode-Xiao"
-			(at 31.75 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Transport" ""
-			(at 31.75 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" ""
 			(at 31.75 19.05 0)
 			(hide yes)
 			(show_name no)
@@ -2906,27 +3192,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Station" ""
-			(at 72.39 55.88 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" ""
-			(at 80.01 59.055 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "Chart" ""
@@ -3135,6 +3400,16 @@
 				(justify right)
 			)
 		)
+		(pin "Host" bidirectional
+			(at 238.76 90.17 90)
+			(uuid "4afbad62-e8dd-426c-9719-0bfe7f33edf3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -3178,6 +3453,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 186.69 90.17 90)
+			(uuid "f8ae71ee-07c5-4450-b5ec-5c21c140d2f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Host" bidirectional
+			(at 181.61 90.17 90)
+			(uuid "27c39e3a-4175-4776-ad41-e88d5b3dc952")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -3235,6 +3530,26 @@
 				(justify right)
 			)
 		)
+		(pin "Host" bidirectional
+			(at 38.1 90.17 90)
+			(uuid "07f4438c-d2e9-42de-b040-a166e6fa8379")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CMRInet" bidirectional
+			(at 43.18 90.17 90)
+			(uuid "b538d732-626a-4298-957e-8ff904e441fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -3278,6 +3593,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 160.02 90.17 90)
+			(uuid "2a194907-d64d-4c9d-b432-060cc437a8fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Host" bidirectional
+			(at 154.94 90.17 90)
+			(uuid "bf75925b-20ab-4779-ae4e-b35d6b3a665c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -3400,6 +3735,26 @@
 				(justify right)
 			)
 		)
+		(pin "Host" bidirectional
+			(at 66.04 90.17 90)
+			(uuid "1690244e-e590-40f2-85a6-e39a77cde3e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "JMRI_MQTT" bidirectional
+			(at 71.12 90.17 90)
+			(uuid "143b23cf-bc69-476f-98c9-3c624f93cc95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -3443,6 +3798,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 215.9 90.17 90)
+			(uuid "6abab8aa-3bc0-48a2-843d-ecde1103fbe9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
