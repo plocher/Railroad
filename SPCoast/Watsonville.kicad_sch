@@ -4746,6 +4746,16 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 20.32) (xy 62.23 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cff42d7-47e0-4bca-ab4c-8f74f9bf6cfb")
+	)
+	(wire
+		(pts
 			(xy 147.32 67.31) (xy 151.13 67.31)
 		)
 		(stroke
@@ -5555,17 +5565,6 @@
 		)
 		(uuid "2f1c4f47-1403-4089-8598-cf32d8316699")
 	)
-	(hierarchical_label "Host"
-		(shape bidirectional)
-		(at 62.23 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e04f47f5-a192-413c-83f8-9816eb47638c")
-	)
 	(hierarchical_label "IOBus"
 		(shape bidirectional)
 		(at 39.37 20.32 180)
@@ -5588,119 +5587,16 @@
 		)
 		(uuid "b9299c47-e913-4777-9b8d-270e9f632e26")
 	)
-	(symbol
-		(lib_id "Railroad-HardwareIO:Processor")
-		(at 49.53 15.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "20f1a67a-73e9-48a7-946b-79a0812623b0")
-		(property "Reference" "Proc8"
-			(at 35.306 9.398 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 62.23 30.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "Watsonville"
-			(at 42.291 15.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "PROCESSOR"
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" "cpNode-Xiao"
-			(at 49.53 15.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0726338b-aef8-4fe4-98c8-77220038ad48")
-		)
-		(pin "2"
-			(uuid "e192c475-b7b1-4803-b938-5d4a1ccff62d")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
-					(reference "Proc8")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "e04f47f5-a192-413c-83f8-9816eb47638c")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:IRJ")
@@ -6756,6 +6652,120 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
 					(reference "S15002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Processor")
+		(at 49.53 15.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20f1a67a-73e9-48a7-946b-79a0812623b0")
+		(property "Reference" "Proc8"
+			(at 35.306 9.398 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Watsonville"
+			(at 42.291 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "cpNode-Xiao"
+			(at 49.53 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0726338b-aef8-4fe4-98c8-77220038ad48")
+		)
+		(pin "2"
+			(uuid "e192c475-b7b1-4803-b938-5d4a1ccff62d")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
+					(reference "Proc8")
 					(unit 1)
 				)
 			)
@@ -20426,15 +20436,5 @@
 				)
 			)
 		)
-	)
-	(wire
-		(pts
-			(xy 62.23 20.32) (xy 62.23 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3cff42d7-47e0-4bca-ab4c-8f74f9bf6cfb")
 	)
 )
