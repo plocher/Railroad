@@ -20,7 +20,6 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-
 		(symbol "Railroad-HardwareIO:Processor"
 			(pin_numbers
 				(hide yes)
@@ -342,6 +341,14 @@
 						)
 					)
 				)
+				(text "Host"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(text "${Board}"
 					(at 16.51 1.27 0)
 					(effects
@@ -349,14 +356,6 @@
 							(size 0.889 0.889)
 						)
 						(justify right)
-					)
-				)
-				(text "Host"
-					(at 12.7 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
 					)
 				)
 				(pin passive line
@@ -1458,24 +1457,6 @@
 					)
 				)
 				(pin free line
-					(at -21.59 0 0)
-					(length 1.27)
-					(name "Host"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin free line
 					(at 0 -7.62 90)
 					(length 2.54)
 					(name "Codeline"
@@ -1493,9 +1474,106 @@
 						)
 					)
 				)
+				(pin free line
+					(at -21.59 0 0)
+					(length 1.27)
+					(name "Host"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
-		)	)
+		)
+	)
+	(rectangle
+		(start 90.17 111.76)
+		(end 100.33 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "47969b3c-4b57-4114-9aa7-17af52d37d65")
+	)
+	(rectangle
+		(start 60.96 111.76)
+		(end 71.12 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "62881aa6-0297-490f-b969-6cf98fba4056")
+	)
+	(rectangle
+		(start 31.75 111.76)
+		(end 41.91 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "83288f82-d564-4c14-adeb-bcc82753798d")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 36.83 124.714 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "add02004-33b1-43a9-b31e-3b8f7f8a2471")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 95.25 124.714 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "cd0c079e-856c-4b7e-8dd7-2d523d533995")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 66.04 124.714 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "d90db50b-a9f0-4d11-aabe-18d28065676f")
+	)
+	(junction
+		(at 156.21 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "157309f4-bbb3-461b-aae0-a7ed0d160336")
+	)
+	(junction
+		(at 95.25 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27e6e4ec-19cf-4434-82d5-a7621f4a9f8b")
+	)
 	(junction
 		(at 176.53 40.64)
 		(diameter 0)
@@ -1503,20 +1581,54 @@
 		(uuid "2d4aee3a-ec23-4f63-9796-65d8ab85aa83")
 	)
 	(junction
+		(at 182.88 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ed49139-2280-407f-9419-ee6c4cd022da")
+	)
+	(junction
+		(at 50.8 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e18dc53-1a77-433a-b4e2-689a7ce83b9a")
+	)
+	(junction
+		(at 63.5 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79e59a2c-fda9-4780-a231-7b85750a21f9")
+	)
+	(junction
+		(at 25.4 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82a28123-0688-48fe-9eaf-1aa726136a6e")
+	)
+	(junction
+		(at 54.61 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0352d63-e91d-48df-a32b-a836c3f0ee01")
+	)
+	(junction
 		(at 66.04 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d8c82943-23eb-4cd7-805c-7a74767366de")
 	)
-	(wire
-		(pts
-			(xy 95.25 54.61) (xy 95.25 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0646d129-56f4-442a-9f50-43530ebb6852")
+	(junction
+		(at 148.59 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbdcb534-a0a0-4180-a006-674a220eb104")
+	)
+	(no_connect
+		(at 95.25 111.76)
+		(uuid "776042e4-be70-42ff-88a0-c9d806cb9c0e")
+	)
+	(no_connect
+		(at 92.71 111.76)
+		(uuid "8a204844-db29-4ac9-b70e-7a4f4332ce3c")
 	)
 	(wire
 		(pts
@@ -1530,6 +1642,26 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 81.28) (xy 63.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07580cb5-946e-40bc-8bcc-4f5c8ccc084c")
+	)
+	(wire
+		(pts
+			(xy 153.67 40.64) (xy 148.59 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "077bdaae-4b45-4671-83b2-0d3c0e97ddcf")
+	)
+	(wire
+		(pts
 			(xy 66.04 40.64) (xy 110.49 40.64)
 		)
 		(stroke
@@ -1540,7 +1672,107 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 85.09) (xy 48.26 90.17)
+			(xy 95.25 60.96) (xy 95.25 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1207f766-4528-466e-92e8-512c93119db3")
+	)
+	(wire
+		(pts
+			(xy 66.04 106.68) (xy 66.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1530e556-0c3f-4a09-874b-beff6b1ad74a")
+	)
+	(wire
+		(pts
+			(xy 25.4 87.63) (xy 25.4 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162441e0-74b8-4b23-bf04-9837fa931e83")
+	)
+	(wire
+		(pts
+			(xy 21.59 83.82) (xy 25.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e438a3-8b18-4c2e-a6af-c04e92c398d4")
+	)
+	(wire
+		(pts
+			(xy 182.88 81.28) (xy 182.88 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2767c244-5de2-47b5-9bff-bd91f614a34b")
+	)
+	(wire
+		(pts
+			(xy 148.59 81.28) (xy 156.21 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b6e2771-722a-44ab-90b5-b6e36ff0485a")
+	)
+	(wire
+		(pts
+			(xy 34.29 81.28) (xy 34.29 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d167b27-7bd7-4810-be9d-536fc62564aa")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 83.82 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "316d42b6-6c12-442a-ab42-7a3e22126d0a")
+	)
+	(wire
+		(pts
+			(xy 63.5 81.28) (xy 63.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9b1610-10bd-4f0e-b916-acf3c158c787")
+	)
+	(wire
+		(pts
+			(xy 240.03 81.28) (xy 240.03 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9c8a80-4a88-452f-8f40-b3d34e905620")
+	)
+	(wire
+		(pts
+			(xy 39.37 106.68) (xy 39.37 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1550,7 +1782,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 85.09) (xy 243.84 90.17)
+			(xy 245.11 106.68) (xy 245.11 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1560,13 +1792,23 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 24.13) (xy 176.53 40.64)
+			(xy 187.96 106.68) (xy 187.96 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "448017c3-b14b-401a-94e2-78e70d0f3b48")
+		(uuid "4292af80-1795-4f75-b7a3-7ebaae7cc322")
+	)
+	(wire
+		(pts
+			(xy 156.21 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b92975a-1737-4886-87b7-7a633eeee79a")
 	)
 	(wire
 		(pts
@@ -1580,7 +1822,17 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 85.09) (xy 106.68 90.17)
+			(xy 182.88 81.28) (xy 240.03 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cea28ba-9771-4eb3-b893-ea336347bf73")
+	)
+	(wire
+		(pts
+			(xy 83.82 87.63) (xy 83.82 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1590,7 +1842,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 85.09) (xy 76.2 90.17)
+			(xy 68.58 106.68) (xy 68.58 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1600,13 +1852,113 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 85.09) (xy 113.03 90.17)
+			(xy 148.59 48.26) (xy 148.59 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ce41bbd-260e-4797-b4ef-fbcd69180a9e")
+	)
+	(wire
+		(pts
+			(xy 217.17 106.68) (xy 217.17 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a1b33e-5684-4fa8-a44c-56edbb78d728")
+	)
+	(wire
+		(pts
+			(xy 25.4 87.63) (xy 54.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9226defa-fb82-4c1a-8ca4-2d5de56c2b09")
+	)
+	(wire
+		(pts
+			(xy 63.5 81.28) (xy 148.59 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95db447f-13c3-4284-b8c8-efaf90d9119f")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 54.61 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "972cbe9f-b3fb-4e8a-8c06-ed631709cb03")
+	)
+	(wire
+		(pts
+			(xy 97.79 106.68) (xy 97.79 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9ccdea36-5a9c-4e47-b3d1-6e82936d2056")
+	)
+	(wire
+		(pts
+			(xy 176.53 38.1) (xy 176.53 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afbf2fe6-f710-4f01-8a4e-83d146463bb9")
+	)
+	(wire
+		(pts
+			(xy 50.8 60.96) (xy 50.8 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5afbffa-e7e1-4b7d-9c62-eca397d40b78")
+	)
+	(wire
+		(pts
+			(xy 21.59 24.13) (xy 21.59 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d17bcbe0-5c08-497e-bdf8-7d3f046f5163")
+	)
+	(wire
+		(pts
+			(xy 161.29 106.68) (xy 161.29 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d475b0-6190-46b2-ae85-e4ed154640e0")
+	)
+	(wire
+		(pts
+			(xy 36.83 106.68) (xy 36.83 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc7199a4-c346-43ac-a315-e72ee68cca6e")
 	)
 	(wire
 		(pts
@@ -1620,67 +1972,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 85.09) (xy 238.76 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c9c8a80-4a88-452f-8f40-b3d34e905620")
-	)
-	(wire
-		(pts
-			(xy 186.69 85.09) (xy 186.69 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4292af80-1795-4f75-b7a3-7ebaae7cc322")
-	)
-	(wire
-		(pts
-			(xy 181.61 85.09) (xy 181.61 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2767c244-5de2-47b5-9bff-bd91f614a34b")
-	)
-	(wire
-		(pts
-			(xy 38.1 85.09) (xy 38.1 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d167b27-7bd7-4810-be9d-536fc62564aa")
-	)
-	(wire
-		(pts
-			(xy 43.18 85.09) (xy 43.18 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc7199a4-c346-43ac-a315-e72ee68cca6e")
-	)
-	(wire
-		(pts
-			(xy 160.02 85.09) (xy 160.02 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7d475b0-6190-46b2-ae85-e4ed154640e0")
-	)
-	(wire
-		(pts
-			(xy 154.94 85.09) (xy 154.94 90.17)
+			(xy 156.21 81.28) (xy 156.21 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1690,37 +1982,17 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 85.09) (xy 66.04 90.17)
+			(xy 153.67 40.64) (xy 176.53 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b9b1610-10bd-4f0e-b916-acf3c158c787")
-	)
-	(wire
-		(pts
-			(xy 71.12 85.09) (xy 71.12 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1530e556-0c3f-4a09-874b-beff6b1ad74a")
-	)
-	(wire
-		(pts
-			(xy 215.9 85.09) (xy 215.9 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88a1b33e-5684-4fa8-a44c-56edbb78d728")
+		(uuid "e9c0059e-7f2c-43bf-8dbc-9863677248d7")
 	)
 	(global_label "TIMECODE"
 		(shape input)
-		(at 50.8 54.61 180)
+		(at 50.8 60.96 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1730,7 +2002,7 @@
 		)
 		(uuid "0b4e3e60-fc25-462f-b98a-35f96fa68ff3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.6225 54.61 0)
+			(at 50.8 73.1375 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1744,17 +2016,17 @@
 	)
 	(global_label "MQTT"
 		(shape input)
-		(at 95.25 54.61 0)
+		(at 95.25 60.96 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "0b6d5131-606d-42b9-b0e7-96e4d3a3831c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.9523 54.61 0)
+			(at 95.25 68.6623 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1762,7 +2034,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -1816,7 +2088,7 @@
 	)
 	(global_label "MQTT"
 		(shape input)
-		(at 243.84 85.09 90)
+		(at 245.11 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1826,7 +2098,7 @@
 		)
 		(uuid "2d2b1f60-b7ba-4895-aa56-f742065f98c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 243.84 77.3877 90)
+			(at 245.11 98.9777 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1840,7 +2112,7 @@
 	)
 	(global_label "MQTT"
 		(shape input)
-		(at 76.2 85.09 90)
+		(at 161.29 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1848,33 +2120,9 @@
 			)
 			(justify left)
 		)
-		(uuid "97a023b0-d7f7-4563-9241-39ab48f1c4ed")
+		(uuid "357ed506-3ea0-4ed4-8726-939a4b4dfe26")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2 72.1263 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "OFFICE_IO"
-		(shape input)
-		(at 21.59 24.13 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a243930a-61cd-4992-bec8-f14b597ad8a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 34.0096 24.13 0)
+			(at 161.29 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1888,127 +2136,7 @@
 	)
 	(global_label "MQTT"
 		(shape input)
-		(at 48.26 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a5602c01-0c68-49a5-8401-5048df13871f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.26 74.5453 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "OFFICE_IO"
-		(shape input)
-		(at 106.68 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c3c9e8d6-3b5c-4c89-87db-853d7191bf2c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 106.68 72.6704 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "TIMECODE"
-		(shape input)
-		(at 113.03 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ea0e51a3-448a-4340-a952-58a415d3e5bb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.03 72.9125 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPCoastApp"
-		(shape input)
-		(at 176.53 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e2501bb0-6427-4343-94ea-9b4379f95ee7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.53 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPCoastApp"
-		(shape input)
-		(at 238.76 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "669cf441-f27e-4a11-91ee-9a6a7d51dbc1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 238.76 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "MQTT"
-		(shape input)
-		(at 186.69 85.09 90)
+		(at 187.96 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2018,7 +2146,7 @@
 		)
 		(uuid "3e690eb2-58f9-4ba1-b237-1d2cc4d3930c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.69 85.09 0)
+			(at 187.96 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2030,9 +2158,9 @@
 			)
 		)
 	)
-	(global_label "SPCoastApp"
+	(global_label "MQTT"
 		(shape input)
-		(at 181.61 85.09 90)
+		(at 217.17 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2040,33 +2168,9 @@
 			)
 			(justify left)
 		)
-		(uuid "db6ee565-caa8-4217-9e12-d9a3f18b93b7")
+		(uuid "5a12b1c3-71e1-4564-bba9-8cb729ba86eb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.61 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPCoastApp"
-		(shape input)
-		(at 38.1 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0658c7e1-bdba-43df-b969-cc7eedf610e0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.1 85.09 0)
+			(at 217.17 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2080,7 +2184,7 @@
 	)
 	(global_label "CMRInet"
 		(shape input)
-		(at 43.18 85.09 90)
+		(at 36.83 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2090,7 +2194,7 @@
 		)
 		(uuid "6778a020-fb85-4301-9050-7272ac676504")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.18 85.09 0)
+			(at 36.83 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2104,7 +2208,7 @@
 	)
 	(global_label "MQTT"
 		(shape input)
-		(at 160.02 85.09 90)
+		(at 68.58 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2112,9 +2216,9 @@
 			)
 			(justify left)
 		)
-		(uuid "357ed506-3ea0-4ed4-8726-939a4b4dfe26")
+		(uuid "97a023b0-d7f7-4563-9241-39ab48f1c4ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.02 85.09 0)
+			(at 68.58 93.7163 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2126,9 +2230,9 @@
 			)
 		)
 	)
-	(global_label "SPCoastApp"
+	(global_label "MQTT"
 		(shape input)
-		(at 154.94 85.09 90)
+		(at 39.37 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2136,33 +2240,9 @@
 			)
 			(justify left)
 		)
-		(uuid "bf683f80-2697-4abc-9190-04739fb93a57")
+		(uuid "a5602c01-0c68-49a5-8401-5048df13871f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 154.94 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SPCoastApp"
-		(shape input)
-		(at 66.04 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c2ffb041-6dcc-4284-b4db-4236ab0d711b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.04 85.09 0)
+			(at 39.37 96.1353 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2176,7 +2256,7 @@
 	)
 	(global_label "JMRI_MQTT"
 		(shape input)
-		(at 71.12 85.09 90)
+		(at 66.04 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2186,7 +2266,7 @@
 		)
 		(uuid "d65fcac4-5790-49bb-a2e6-93d1b2815c28")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.12 85.09 0)
+			(at 66.04 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2198,9 +2278,9 @@
 			)
 		)
 	)
-	(global_label "MQTT"
+	(global_label "TIMECODE"
 		(shape input)
-		(at 215.9 85.09 90)
+		(at 97.79 106.68 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2208,9 +2288,9 @@
 			)
 			(justify left)
 		)
-		(uuid "5a12b1c3-71e1-4564-bba9-8cb729ba86eb")
+		(uuid "ea0e51a3-448a-4340-a952-58a415d3e5bb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9 85.09 0)
+			(at 97.79 94.5025 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2504,6 +2584,128 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-HardwareIO:Processor-Virtual")
+		(at 163.83 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3a976bb0-2a48-4d60-899c-7621b9ca4b71")
+		(property "Reference" "Proc7"
+			(at 149.606 27.178 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPCoastApp"
+			(at 156.591 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Type" "VIRTUAL"
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "macOS"
+			(at 163.83 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b0243c78-927f-4d23-80a5-5dcdf8e1f301")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Proc7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:Codeline-Transport-TimeCode")
 		(at 66.04 40.64 0)
 		(unit 1)
@@ -2768,7 +2970,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Office:Codeline-Encoding-AAR")
-		(at 95.25 57.15 0)
+		(at 95.25 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2778,7 +2980,7 @@
 		(dnp no)
 		(uuid "b1649994-dba8-406f-b604-2be18b87415d")
 		(property "Reference" "Encoding2001"
-			(at 102.235 69.85 0)
+			(at 102.235 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2789,7 +2991,7 @@
 			)
 		)
 		(property "Value" "AAR Tokens"
-			(at 107.95 59.055 0)
+			(at 107.95 56.515 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2800,39 +3002,6 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Advanced Train Control System protocol AAR Specification 250 Message Formats"
-			(at 109.22 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CODELINE_ENCODING"
 			(at 95.25 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -2843,8 +3012,41 @@
 				)
 			)
 		)
+		(property "Datasheet" ""
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Advanced Train Control System protocol AAR Specification 250 Message Formats"
+			(at 109.22 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Kind" "AAR"
-			(at 109.22 69.85 0)
+			(at 109.22 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -2862,128 +3064,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
 					(reference "Encoding2001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-HardwareIO:Processor-Virtual")
-		(at 163.83 19.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a976bb0-2a48-4d60-899c-7621b9ca4b71")
-		(property "Reference" "Proc7"
-			(at 149.606 13.208 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPCoastApp"
-			(at 156.591 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "PROCESSOR"
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "VIRTUAL"
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" "macOS"
-			(at 163.83 19.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b0243c78-927f-4d23-80a5-5dcdf8e1f301")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
-					(reference "Proc7")
 					(unit 1)
 				)
 			)
@@ -3354,7 +3434,7 @@
 		)
 	)
 	(sheet
-		(at 224.79 90.17)
+		(at 226.06 111.76)
 		(size 33.02 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3369,7 +3449,7 @@
 		)
 		(uuid "0ce55e2d-fbe5-47d3-a48a-db8408a15e7e")
 		(property "Sheetname" "Watsonville"
-			(at 235.204 106.426 0)
+			(at 236.474 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3380,7 +3460,7 @@
 			)
 		)
 		(property "Sheetfile" "Watsonville.kicad_sch"
-			(at 224.79 122.5046 0)
+			(at 226.06 144.0946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3391,7 +3471,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 243.84 90.17 90)
+			(at 245.11 111.76 90)
 			(uuid "f8c3794e-0e72-438a-bf0d-0e85fc5825ef")
 			(effects
 				(font
@@ -3401,7 +3481,7 @@
 			)
 		)
 		(pin "Host" bidirectional
-			(at 238.76 90.17 90)
+			(at 240.03 111.76 90)
 			(uuid "4afbad62-e8dd-426c-9719-0bfe7f33edf3")
 			(effects
 				(font
@@ -3419,7 +3499,7 @@
 		)
 	)
 	(sheet
-		(at 168.91 90.17)
+		(at 170.18 111.76)
 		(size 22.86 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3434,7 +3514,7 @@
 		)
 		(uuid "152658f8-a042-4e04-bedb-bf34ee4ce875")
 		(property "Sheetname" "Corporal"
-			(at 177.292 106.68 0)
+			(at 178.562 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3445,7 +3525,7 @@
 			)
 		)
 		(property "Sheetfile" "Corporal.kicad_sch"
-			(at 168.91 122.5046 0)
+			(at 170.18 144.0946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3456,7 +3536,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 186.69 90.17 90)
+			(at 187.96 111.76 90)
 			(uuid "f8ae71ee-07c5-4450-b5ec-5c21c140d2f7")
 			(effects
 				(font
@@ -3466,7 +3546,7 @@
 			)
 		)
 		(pin "Host" bidirectional
-			(at 181.61 90.17 90)
+			(at 182.88 111.76 90)
 			(uuid "27c39e3a-4175-4776-ad41-e88d5b3dc952")
 			(effects
 				(font
@@ -3484,8 +3564,8 @@
 		)
 	)
 	(sheet
-		(at 30.48 90.17)
-		(size 22.86 31.75)
+		(at 20.32 111.76)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3499,7 +3579,7 @@
 		)
 		(uuid "61cd2495-14f3-42a6-a7c2-38f34b91ee1e")
 		(property "Sheetname" "Gilroy Caltrain"
-			(at 32.512 106.68 0)
+			(at 22.352 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3510,7 +3590,7 @@
 			)
 		)
 		(property "Sheetfile" "GilroyCalTrain.kicad_sch"
-			(at 30.48 122.5046 0)
+			(at 21.844 146.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3521,7 +3601,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 48.26 90.17 90)
+			(at 39.37 111.76 90)
 			(uuid "e6d1f584-9937-4072-83c3-c38ac67c89e5")
 			(effects
 				(font
@@ -3531,7 +3611,7 @@
 			)
 		)
 		(pin "Host" bidirectional
-			(at 38.1 90.17 90)
+			(at 34.29 111.76 90)
 			(uuid "07f4438c-d2e9-42de-b040-a166e6fa8379")
 			(effects
 				(font
@@ -3540,9 +3620,19 @@
 				(justify right)
 			)
 		)
-		(pin "CMRInet" bidirectional
-			(at 43.18 90.17 90)
+		(pin "IOBus" bidirectional
+			(at 36.83 111.76 90)
 			(uuid "b538d732-626a-4298-957e-8ff904e441fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OfficeIOBus" bidirectional
+			(at 25.4 111.76 90)
+			(uuid "59dc46af-1ada-4b5b-92bf-5c6f0abbf9bc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,7 +3649,7 @@
 		)
 	)
 	(sheet
-		(at 123.19 90.17)
+		(at 124.46 111.76)
 		(size 41.91 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3574,7 +3664,7 @@
 		)
 		(uuid "a167e02f-2575-49a1-bdf8-73758c645318")
 		(property "Sheetname" "Christopher"
-			(at 133.604 106.426 0)
+			(at 134.874 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3585,7 +3675,7 @@
 			)
 		)
 		(property "Sheetfile" "Christopher.kicad_sch"
-			(at 123.19 122.5046 0)
+			(at 124.46 144.0946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3596,7 +3686,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 160.02 90.17 90)
+			(at 161.29 111.76 90)
 			(uuid "2a194907-d64d-4c9d-b432-060cc437a8fa")
 			(effects
 				(font
@@ -3606,7 +3696,7 @@
 			)
 		)
 		(pin "Host" bidirectional
-			(at 154.94 90.17 90)
+			(at 156.21 111.76 90)
 			(uuid "bf75925b-20ab-4779-ae4e-b35d6b3a665c")
 			(effects
 				(font
@@ -3624,8 +3714,8 @@
 		)
 	)
 	(sheet
-		(at 81.28 90.17)
-		(size 38.1 31.75)
+		(at 77.47 111.76)
+		(size 25.4 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3639,7 +3729,7 @@
 		)
 		(uuid "b4829d91-9b5a-495f-b7c8-ba6a6006660d")
 		(property "Sheetname" "Luchessa"
-			(at 97.536 106.934 0)
+			(at 85.598 128.524 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3650,7 +3740,7 @@
 			)
 		)
 		(property "Sheetfile" "Luchessa.kicad_sch"
-			(at 81.28 122.5046 0)
+			(at 78.994 145.542 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3661,7 +3751,7 @@
 			)
 		)
 		(pin "Codeline" input
-			(at 113.03 90.17 90)
+			(at 97.79 111.76 90)
 			(uuid "54d4d625-c4d3-4cc0-8f2a-f3ddbf067425")
 			(effects
 				(font
@@ -3671,8 +3761,28 @@
 			)
 		)
 		(pin "OfficeBusIO" bidirectional
-			(at 106.68 90.17 90)
+			(at 83.82 111.76 90)
 			(uuid "dfc9a9db-b3a0-41c5-a335-74453cca59e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Host" bidirectional
+			(at 92.71 111.76 90)
+			(uuid "9edb8b49-d249-4028-8e90-adb50814f276")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IOBus" bidirectional
+			(at 95.25 111.76 90)
+			(uuid "7a2bc06f-c1fd-4403-8a3a-6cfd2e88fd19")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3689,8 +3799,8 @@
 		)
 	)
 	(sheet
-		(at 55.88 90.17)
-		(size 22.86 31.75)
+		(at 48.26 111.76)
+		(size 25.4 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3704,7 +3814,7 @@
 		)
 		(uuid "defc570c-1f61-4751-be37-2827b304f837")
 		(property "Sheetname" "Gilroy Interchange"
-			(at 57.912 106.68 0)
+			(at 52.07 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3715,7 +3825,7 @@
 			)
 		)
 		(property "Sheetfile" "GilroyInterchange.kicad_sch"
-			(at 55.88 122.5046 0)
+			(at 49.784 146.304 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3726,7 +3836,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 76.2 90.17 90)
+			(at 68.58 111.76 90)
 			(uuid "0348681c-62a6-4f2a-af35-e4635c3b19af")
 			(effects
 				(font
@@ -3736,7 +3846,7 @@
 			)
 		)
 		(pin "Host" bidirectional
-			(at 66.04 90.17 90)
+			(at 63.5 111.76 90)
 			(uuid "1690244e-e590-40f2-85a6-e39a77cde3e6")
 			(effects
 				(font
@@ -3745,9 +3855,19 @@
 				(justify right)
 			)
 		)
-		(pin "JMRI_MQTT" bidirectional
-			(at 71.12 90.17 90)
+		(pin "IOBus" bidirectional
+			(at 66.04 111.76 90)
 			(uuid "143b23cf-bc69-476f-98c9-3c624f93cc95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OfficeIOBus" bidirectional
+			(at 54.61 111.76 90)
+			(uuid "90bc45b3-4eb7-4455-8327-286f5db9b1a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3764,7 +3884,7 @@
 		)
 	)
 	(sheet
-		(at 195.58 90.17)
+		(at 196.85 111.76)
 		(size 25.4 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3779,7 +3899,7 @@
 		)
 		(uuid "f687a7a3-8fc1-435d-a0f4-b6b97af39a7e")
 		(property "Sheetname" "Sargent"
-			(at 205.994 106.426 0)
+			(at 207.264 128.016 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3790,7 +3910,7 @@
 			)
 		)
 		(property "Sheetfile" "Sargent.kicad_sch"
-			(at 195.58 122.5046 0)
+			(at 196.85 144.0946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3801,7 +3921,7 @@
 			)
 		)
 		(pin "Codeline" bidirectional
-			(at 215.9 90.17 90)
+			(at 217.17 111.76 90)
 			(uuid "6abab8aa-3bc0-48a2-843d-ecde1103fbe9")
 			(effects
 				(font

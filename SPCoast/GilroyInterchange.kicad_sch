@@ -2646,6 +2646,14 @@
 						)
 					)
 				)
+				(text "Transport"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(text "${Board} ${Address}"
 					(at 16.51 1.27 0)
 					(effects
@@ -2653,14 +2661,6 @@
 							(size 0.889 0.889)
 						)
 						(justify right)
-					)
-				)
-				(text "Transport"
-					(at 12.7 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
 					)
 				)
 				(pin passive line
@@ -6224,7 +6224,7 @@
 		(uuid "91fc5c94-f882-4397-acf7-4e3111fe413b")
 	)
 	(junction
-		(at 74.93 35.56)
+		(at 74.93 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "98d31fc0-8cd0-4369-bf79-81d0cfdc4845")
@@ -6260,6 +6260,12 @@
 		(uuid "c0455eac-c52b-4932-99aa-01f9eee0ce49")
 	)
 	(junction
+		(at 109.22 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea568b7f-a94b-4d96-9c4c-42cc6f86df68")
+	)
+	(junction
 		(at 130.81 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6274,6 +6280,16 @@
 			(type default)
 		)
 		(uuid "11591d5e-901e-4ffa-a60a-31dd8f0651fb")
+	)
+	(wire
+		(pts
+			(xy 109.22 36.83) (xy 109.22 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c3986a-9e0b-4f8f-8da3-0e9b4ab4ebfa")
 	)
 	(wire
 		(pts
@@ -6368,6 +6384,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 39.37) (xy 74.93 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bcd3dd9-34b6-4201-962d-5181a4fda5be")
+	)
+	(wire
+		(pts
 			(xy 130.81 123.19) (xy 130.81 133.35)
 		)
 		(stroke
@@ -6388,7 +6414,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 168.91 35.56)
+			(xy 74.93 39.37) (xy 109.22 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6408,6 +6434,26 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 15.24) (xy 109.22 15.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944254b4-8303-4c20-80cd-c7df2997f921")
+	)
+	(wire
+		(pts
+			(xy 109.22 39.37) (xy 168.91 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c120a5f-9e2e-403e-a9bc-ff72db73e7a0")
+	)
+	(wire
+		(pts
 			(xy 130.81 143.51) (xy 130.81 151.13)
 		)
 		(stroke
@@ -6415,6 +6461,26 @@
 			(type default)
 		)
 		(uuid "a3b0f7d1-ce00-46d2-8dc8-bcd9bd9bf8c0")
+	)
+	(wire
+		(pts
+			(xy 109.22 33.02) (xy 92.71 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b773c1ad-a7c3-4453-9a70-9810a69201ef")
+	)
+	(wire
+		(pts
+			(xy 109.22 29.21) (xy 92.71 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dab268ad-b937-43a7-b070-3e4e2008e693")
 	)
 	(wire
 		(pts
@@ -6427,9 +6493,20 @@
 		)
 		(uuid "f804af87-46f7-43aa-9ad8-fb5029ae3aad")
 	)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 109.22 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d62ab8c-f1ef-4aa4-a156-67353631456b")
+	)
 	(hierarchical_label "JMRI_MQTT"
 		(shape bidirectional)
-		(at 87.63 21.59 0)
+		(at 109.22 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6440,158 +6517,25 @@
 	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
-		(at 74.93 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5e9a6908-0bd4-41ae-87d5-35d808480ea6")
-	)
-	(hierarchical_label "Host"
-		(shape bidirectional)
-		(at 92.71 33.02 0)
+		(at 109.22 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "0d62ab8c-f1ef-4aa4-a156-67353631456b")
+		(uuid "5e9a6908-0bd4-41ae-87d5-35d808480ea6")
 	)
-	(symbol
-		(lib_id "Railroad-HardwareIO:Remote-IO-JMRI")
-		(at 74.93 16.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d3ad5fb4-5ae0-4901-bfc6-55bb5ad84604")
-		(property "Reference" "RIO2"
-			(at 60.706 10.668 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+	(hierarchical_label "OfficeIOBus"
+		(shape bidirectional)
+		(at 109.22 15.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Value" "JMRI"
-			(at 67.691 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Remote I/O through JMRI over MQTT: the JMRI objects of this sheet behind the transport's host; its JMRI drivers attach by sheet (ADR 0008)."
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "REMOTE_IO"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" "JMRI"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Transport" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4fee84e4-dab1-4b22-84e0-e10ca41b5fb5")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
-					(reference "RIO2")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "700059a1-7a85-4b16-adb1-42299ddf1b9f")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:IRJ-Signal")
@@ -11548,7 +11492,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MAIN HOUSE")
-		(at 168.91 40.64 0)
+		(at 168.91 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11558,7 +11502,7 @@
 		(dnp no)
 		(uuid "6885b4c0-53f6-420e-9fd0-9abccaab2fe4")
 		(property "Reference" "HOUSE5002"
-			(at 168.91 41.91 0)
+			(at 168.91 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11569,7 +11513,7 @@
 			)
 		)
 		(property "Value" "${CP Name}"
-			(at 168.91 46.355 0)
+			(at 168.91 50.165 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11579,7 +11523,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11590,7 +11534,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11601,7 +11545,7 @@
 			)
 		)
 		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 168.91 46.355 0)
+			(at 168.91 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11612,7 +11556,7 @@
 			)
 		)
 		(property "Milepost" "78.1"
-			(at 168.91 46.355 0)
+			(at 168.91 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11623,7 +11567,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 153.67 38.1 0)
+			(at 153.67 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11634,7 +11578,7 @@
 			)
 		)
 		(property "Kind" "CONTROL_POINT"
-			(at 155.575 40.132 0)
+			(at 155.575 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11645,7 +11589,7 @@
 			)
 		)
 		(property "CP Name" "Gilroy South"
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11672,7 +11616,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MaintainerCall")
-		(at 168.91 40.64 0)
+		(at 168.91 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11682,7 +11626,7 @@
 		(dnp no)
 		(uuid "6de41628-b029-40e6-8032-0878322ca54e")
 		(property "Reference" "MC5002"
-			(at 166.88 42.93 0)
+			(at 166.88 46.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11694,7 +11638,7 @@
 			)
 		)
 		(property "Value" "MC2"
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11704,7 +11648,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11715,7 +11659,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11726,7 +11670,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11737,7 +11681,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11748,7 +11692,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11759,7 +11703,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 168.91 40.64 0)
+			(at 168.91 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14715,6 +14659,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-HardwareIO:Remote-IO-JMRI")
+		(at 80.01 24.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3ad5fb4-5ae0-4901-bfc6-55bb5ad84604")
+		(property "Reference" "RIO2"
+			(at 65.786 18.288 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JMRI"
+			(at 72.771 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Remote I/O through JMRI over MQTT: the JMRI objects of this sheet behind the transport's host; its JMRI drivers attach by sheet (ADR 0008)."
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "REMOTE_IO"
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "JMRI"
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 80.01 24.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4fee84e4-dab1-4b22-84e0-e10ca41b5fb5")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
+					(reference "RIO2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Field:Mast")
 		(at 106.68 143.51 0)
 		(unit 1)
@@ -14943,7 +15020,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MAIN HOUSE")
-		(at 74.93 40.64 0)
+		(at 74.93 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14953,7 +15030,7 @@
 		(dnp no)
 		(uuid "dde30d59-4393-472f-a35d-04e3a81c4e5f")
 		(property "Reference" "HOUSE5001"
-			(at 74.93 41.91 0)
+			(at 74.93 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14964,7 +15041,7 @@
 			)
 		)
 		(property "Value" "${CP Name}"
-			(at 74.93 46.355 0)
+			(at 74.93 50.165 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14974,7 +15051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14985,7 +15062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14996,7 +15073,7 @@
 			)
 		)
 		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 74.93 46.355 0)
+			(at 74.93 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15007,7 +15084,7 @@
 			)
 		)
 		(property "Milepost" "77.7"
-			(at 74.93 46.355 0)
+			(at 74.93 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15018,7 +15095,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 59.69 38.1 0)
+			(at 59.69 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15029,7 +15106,7 @@
 			)
 		)
 		(property "Kind" "CONTROL_POINT"
-			(at 61.595 40.132 0)
+			(at 61.595 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15040,7 +15117,7 @@
 			)
 		)
 		(property "CP Name" "Gilroy North"
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15516,7 +15593,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MaintainerCall")
-		(at 74.93 40.64 0)
+		(at 74.93 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15526,7 +15603,7 @@
 		(dnp no)
 		(uuid "f401a6e5-15f0-4814-9e49-9472b74397be")
 		(property "Reference" "MC5001"
-			(at 72.9 42.93 0)
+			(at 72.9 46.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15538,7 +15615,7 @@
 			)
 		)
 		(property "Value" "MC1"
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15548,7 +15625,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15559,7 +15636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15570,7 +15647,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15581,7 +15658,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15592,7 +15669,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15603,7 +15680,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 74.93 40.64 0)
+			(at 74.93 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15974,8 +16051,8 @@
 		)
 	)
 	(sheet
-		(at 226.06 164.86)
-		(size 40.21 6.59)
+		(at 57.15 13.73)
+		(size 40.64 6.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15989,7 +16066,7 @@
 		)
 		(uuid "90de2d8f-27de-5d73-94ac-16d937159278")
 		(property "Sheetname" "Panel"
-			(at 227.33 167.132 0)
+			(at 58.42 16.002 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16000,7 +16077,7 @@
 			)
 		)
 		(property "Sheetfile" "GilroyInterchange-Panel.kicad_sch"
-			(at 227.584 168.148 0)
+			(at 58.674 17.018 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16008,6 +16085,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C" bidirectional
+			(at 97.79 15.24 0)
+			(uuid "88be624a-e7e9-4ead-a816-afea8e4fb5b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

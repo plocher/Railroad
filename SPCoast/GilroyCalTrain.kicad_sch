@@ -2041,6 +2041,14 @@
 						)
 					)
 				)
+				(text "Transport"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
 				(text "${Board} ${Address}"
 					(at 16.51 1.27 0)
 					(effects
@@ -2048,14 +2056,6 @@
 							(size 0.889 0.889)
 						)
 						(justify right)
-					)
-				)
-				(text "Transport"
-					(at 12.7 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
 					)
 				)
 				(pin passive line
@@ -5297,10 +5297,10 @@
 		(uuid "7aada823-ced5-4e72-a4db-fade9e7909cf")
 	)
 	(junction
-		(at 69.85 29.21)
+		(at 69.85 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b0a5ff9f-e5c8-4371-bb03-e078cc71ed97")
+		(uuid "87f0d337-a771-46d8-9630-e334d117bb83")
 	)
 	(junction
 		(at 58.42 59.69)
@@ -5333,7 +5333,7 @@
 		(uuid "ea9fe9e5-cb67-40cd-b02c-9d439855ddf4")
 	)
 	(no_connect
-		(at 69.85 34.29)
+		(at 69.85 44.45)
 		(uuid "03083aeb-30a1-41da-8772-9748e1aab966")
 	)
 	(wire
@@ -5415,6 +5415,16 @@
 			(type default)
 		)
 		(uuid "3a718e3c-cbd4-4237-98d7-aeb6e41a08a5")
+	)
+	(wire
+		(pts
+			(xy 105.41 35.56) (xy 87.63 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c2cc8f9-e1a5-4f83-8bb2-05937ef1aa7c")
 	)
 	(wire
 		(pts
@@ -5548,6 +5558,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 39.37) (xy 69.85 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1d1a3cb-4368-43d8-991f-e107a59fc49b")
+	)
+	(wire
+		(pts
 			(xy 158.75 107.95) (xy 189.23 107.95)
 		)
 		(stroke
@@ -5555,6 +5575,16 @@
 			(type default)
 		)
 		(uuid "c3356883-a31e-4902-b91d-3683b6154dd1")
+	)
+	(wire
+		(pts
+			(xy 92.71 17.78) (xy 105.41 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6bb5ed-59c9-4579-b709-90dd3723f37c")
 	)
 	(wire
 		(pts
@@ -5568,7 +5598,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 29.21) (xy 88.9 29.21)
+			(xy 69.85 39.37) (xy 105.41 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5586,9 +5616,30 @@
 		)
 		(uuid "e9c04a99-153d-4cca-92ad-2edd0d54eac8")
 	)
+	(wire
+		(pts
+			(xy 105.41 31.75) (xy 87.63 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42ba592-7164-4ca5-9a30-9029f6fac839")
+	)
+	(hierarchical_label "Host"
+		(shape bidirectional)
+		(at 105.41 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4ca55924-8b99-42de-9f24-85b660202c82")
+	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
-		(at 88.9 29.21 0)
+		(at 105.41 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5597,9 +5648,9 @@
 		)
 		(uuid "51df16ff-bed8-458d-a731-c39e72e30ee9")
 	)
-	(hierarchical_label "CMRInet"
+	(hierarchical_label "IOBus"
 		(shape bidirectional)
-		(at 87.63 21.59 0)
+		(at 105.41 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5608,16 +5659,16 @@
 		)
 		(uuid "d658b27f-5ed8-4b70-9740-9940ecb266f4")
 	)
-	(hierarchical_label "Host"
+	(hierarchical_label "OfficeIOBus"
 		(shape bidirectional)
-		(at 87.63 26.67 0)
+		(at 105.41 17.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4ca55924-8b99-42de-9f24-85b660202c82")
+		(uuid "e6fa4077-41d7-43a0-a7ae-e208832442d3")
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:Bumper")
@@ -5715,6 +5766,139 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
 					(reference "B3005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Remote-IO-CMRInet")
+		(at 74.93 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00c6d7ee-63fd-41e0-ad25-b39f2eca7f4a")
+		(property "Reference" "RIO1"
+			(at 60.706 20.828 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Caltrain"
+			(at 67.691 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Remote I/O over CMRInet: one node (Board, Address = UA) behind the transport's host; its CMRI drivers attach by sheet (ADR 0008)."
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "REMOTE_IO"
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "cpNode"
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" "30"
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 74.93 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e750f67a-d682-45c6-805e-05913bc03f42")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
+					(reference "RIO1")
 					(unit 1)
 				)
 			)
@@ -7968,7 +8152,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:Interlocking")
-		(at 69.85 29.21 0)
+		(at 69.85 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7979,7 +8163,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d1bae8b-8805-47cd-8ef4-09f935f3cbff")
 		(property "Reference" "Plant3001"
-			(at 55.626 23.368 0)
+			(at 55.626 32.258 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7990,7 +8174,7 @@
 			)
 		)
 		(property "Value" "${TITLE}"
-			(at 66.802 26.162 0)
+			(at 66.802 35.052 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -8001,7 +8185,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 29.21 0)
+			(at 69.85 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8012,7 +8196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 29.21 0)
+			(at 69.85 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8023,7 +8207,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 69.85 29.21 0)
+			(at 69.85 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8034,7 +8218,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 58.547 19.558 0)
+			(at 58.547 28.448 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8045,7 +8229,7 @@
 			)
 		)
 		(property "Kind" "INTERLOCKING"
-			(at 59.944 21.209 0)
+			(at 59.944 30.099 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14053,7 +14237,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MAIN HOUSE")
-		(at 69.85 34.29 0)
+		(at 69.85 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14063,7 +14247,7 @@
 		(dnp no)
 		(uuid "abb04d80-08bb-4c6a-a843-a8c407d900aa")
 		(property "Reference" "HOUSE3001"
-			(at 69.85 35.56 0)
+			(at 69.85 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14074,7 +14258,7 @@
 			)
 		)
 		(property "Value" "${CP Name}"
-			(at 69.85 40.005 0)
+			(at 69.85 50.165 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14084,7 +14268,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 69.85 34.29 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14095,7 +14279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 69.85 34.29 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14106,7 +14290,7 @@
 			)
 		)
 		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 69.85 40.005 0)
+			(at 69.85 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14117,7 +14301,7 @@
 			)
 		)
 		(property "Milepost" "77.1"
-			(at 69.85 40.005 0)
+			(at 69.85 50.165 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14128,7 +14312,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 54.61 31.75 0)
+			(at 54.61 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14139,7 +14323,7 @@
 			)
 		)
 		(property "Kind" "CONTROL_POINT"
-			(at 56.515 33.782 0)
+			(at 56.515 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14150,7 +14334,7 @@
 			)
 		)
 		(property "CP Name" "Gilroy Caltrain"
-			(at 69.85 34.29 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17527,139 +17711,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Remote-IO-CMRInet")
-		(at 74.93 16.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00c6d7ee-63fd-41e0-ad25-b39f2eca7f4a")
-		(property "Reference" "RIO1"
-			(at 60.706 10.668 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Caltrain"
-			(at 67.691 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Remote I/O over CMRInet: one node (Board, Address = UA) behind the transport's host; its CMRI drivers attach by sheet (ADR 0008)."
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "REMOTE_IO"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" "cpNode"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "30"
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Transport" ""
-			(at 74.93 16.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e750f67a-d682-45c6-805e-05913bc03f42")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "RIO1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
 		(at 45.72 177.8 0)
 		(unit 2)
@@ -18368,8 +18419,8 @@
 		)
 	)
 	(sheet
-		(at 226.06 164.86)
-		(size 40.21 6.59)
+		(at 52.07 16.27)
+		(size 40.64 6.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -18383,7 +18434,7 @@
 		)
 		(uuid "8ecebbd2-e7a6-5949-8793-5f9acfb44e33")
 		(property "Sheetname" "Panel"
-			(at 227.33 167.132 0)
+			(at 53.34 18.542 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18394,7 +18445,7 @@
 			)
 		)
 		(property "Sheetfile" "GilroyCalTrain-Panel.kicad_sch"
-			(at 227.584 168.148 0)
+			(at 53.594 19.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18402,6 +18453,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "I2C" bidirectional
+			(at 92.71 17.78 0)
+			(uuid "2088719e-2295-4326-8d6f-726dc7f17e5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
