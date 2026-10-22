@@ -218,178 +218,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Processor-Virtual"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Proc"
-				(at -14.224 5.842 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -7.239 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "STRUCTURE"
-				(at -11.303 9.652 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "PROCESSOR"
-				(at -9.906 8.001 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Type" "VIRTUAL"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Board" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Processor-Virtual_0_1"
-				(rectangle
-					(start -17.018 2.54)
-					(end 17.018 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Processor-Virtual_1_1"
-				(text "Virtual:"
-					(at -12.7 1.27 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "Host"
-					(at 12.7 -1.27 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(text "${Board}"
-					(at 16.51 1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify right)
-					)
-				)
-				(pin passive line
-					(at 12.7 -5.08 90)
-					(length 2.54)
-					(name "Host"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Office:Codeline-Encoding-AAR"
 			(pin_numbers
 				(hide yes)
@@ -1674,12 +1502,6 @@
 		(uuid "26569d08-8dd8-45d1-b648-be90bb04bc4c")
 	)
 	(junction
-		(at 142.24 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2683c279-bce0-4460-9640-f5fdc82b0858")
-	)
-	(junction
 		(at 215.9 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1702,6 +1524,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e18dc53-1a77-433a-b4e2-689a7ce83b9a")
+	)
+	(junction
+		(at 157.48 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85397f1f-763d-4b3c-a703-f0f9c66deaaf")
 	)
 	(junction
 		(at 83.82 87.63)
@@ -1736,6 +1564,10 @@
 		(uuid "32e67f7c-d58a-4635-b475-61b7485e8380")
 	)
 	(no_connect
+		(at 54.61 31.75)
+		(uuid "5ba0b684-e81b-490f-b8ae-73aa24c4f2dc")
+	)
+	(no_connect
 		(at 95.25 111.76)
 		(uuid "776042e4-be70-42ff-88a0-c9d806cb9c0e")
 	)
@@ -1766,6 +1598,16 @@
 	(no_connect
 		(at 146.05 111.76)
 		(uuid "e9d8c280-f4d3-4d31-b87c-4eadc8bfc52d")
+	)
+	(wire
+		(pts
+			(xy 163.83 34.29) (xy 165.1 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00bbd786-6d1d-42fc-96b8-df6e6ee07237")
 	)
 	(wire
 		(pts
@@ -1816,6 +1658,16 @@
 			(type default)
 		)
 		(uuid "1207f766-4528-466e-92e8-512c93119db3")
+	)
+	(wire
+		(pts
+			(xy 57.15 29.21) (xy 57.15 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14d60a3d-b960-41e5-8d6a-48fd285253d5")
 	)
 	(wire
 		(pts
@@ -1879,6 +1731,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 24.13) (xy 163.83 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ab8d607-2ffd-48c4-84f7-67d45ebea54d")
+	)
+	(wire
+		(pts
 			(xy 63.5 81.28) (xy 63.5 111.76)
 		)
 		(stroke
@@ -1919,6 +1781,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 29.21) (xy 57.15 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45df8131-47f1-4305-9690-3b873ac82008")
+	)
+	(wire
+		(pts
 			(xy 83.82 87.63) (xy 111.76 87.63)
 		)
 		(stroke
@@ -1929,7 +1801,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 87.63) (xy 142.24 87.63)
+			(xy 139.7 87.63) (xy 157.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1976,16 +1848,6 @@
 			(type default)
 		)
 		(uuid "7af5671e-c746-4638-8617-2835625e5965")
-	)
-	(wire
-		(pts
-			(xy 142.24 87.63) (xy 168.91 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "850f33f9-3be4-40a5-8089-a736dde72fef")
 	)
 	(wire
 		(pts
@@ -2049,23 +1911,13 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 26.67) (xy 142.24 87.63)
+			(xy 157.48 24.13) (xy 157.48 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a064d9cc-291b-4894-a334-6f9463602c9f")
-	)
-	(wire
-		(pts
-			(xy 57.15 26.67) (xy 57.15 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afbf2fe6-f710-4f01-8a4e-83d146463bb9")
 	)
 	(wire
 		(pts
@@ -2089,6 +1941,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 87.63) (xy 168.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceffe48c-2597-4a73-b359-a4df06857b61")
+	)
+	(wire
+		(pts
 			(xy 124.46 106.68) (xy 124.46 111.76)
 		)
 		(stroke
@@ -2109,7 +1971,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 26.67) (xy 165.1 34.29)
+			(xy 163.83 26.67) (xy 163.83 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2721,128 +2583,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Processor-Virtual")
-		(at 44.45 21.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a976bb0-2a48-4d60-899c-7621b9ca4b71")
-		(property "Reference" "Proc7"
-			(at 30.226 15.748 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPCoastApp"
-			(at 37.211 21.59 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A virtual processor: an application that hosts units and I/O transports; no hardware bus (ADR 0008 §4.9)."
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "PROCESSOR"
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Type" "VIRTUAL"
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Board" "macOS"
-			(at 44.45 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b0243c78-927f-4d23-80a5-5dcdf8e1f301")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
-					(reference "Proc7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Office:Codeline-Transport-TimeCode")
 		(at 186.69 43.18 0)
 		(unit 1)
@@ -3106,6 +2846,120 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-HardwareIO:Processor")
+		(at 35.56 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a94655ed-cf92-4b4c-ac8d-efe6c59541cc")
+		(property "Reference" "Proc2"
+			(at 21.336 24.638 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPCoastApp"
+			(at 34.798 29.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(at 36.83 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 24.257 20.828 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 25.654 22.479 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "MacOS"
+			(at 35.56 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "36b3762b-a981-4a1f-92a1-8c851d6207c7")
+		)
+		(pin "2"
+			(uuid "4a560298-ebc2-431c-be25-693b9b1f06a0")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Proc2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:Codeline-Encoding-AAR")
 		(at 215.9 57.15 0)
 		(unit 1)
@@ -3208,7 +3062,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Processor")
-		(at 152.4 21.59 0)
+		(at 182.88 25.4 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3216,10 +3070,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c00a18b4-f386-4238-a9b4-38aa294fa08b")
 		(property "Reference" "Proc4"
-			(at 138.176 15.748 0)
+			(at 197.104 31.242 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -3230,7 +3083,7 @@
 			)
 		)
 		(property "Value" "JohnCTC"
-			(at 153.67 20.32 0)
+			(at 181.61 26.67 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3241,7 +3094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 21.59 0)
+			(at 182.88 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3252,7 +3105,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 21.59 0)
+			(at 182.88 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3263,7 +3116,7 @@
 			)
 		)
 		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-			(at 153.67 29.21 0)
+			(at 181.61 17.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3274,7 +3127,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 141.097 11.938 0)
+			(at 194.183 35.052 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3285,7 +3138,7 @@
 			)
 		)
 		(property "Kind" "PROCESSOR"
-			(at 142.494 13.589 0)
+			(at 192.786 33.401 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3296,7 +3149,7 @@
 			)
 		)
 		(property "Board" "cpNode-Xiao"
-			(at 152.4 21.59 0)
+			(at 182.88 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
