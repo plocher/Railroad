@@ -1557,7 +1557,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Plant"
-			(at -14.224 5.842 0)
+			(at -14.224 3.302 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1568,9 +1568,10 @@
 			)
 		)
 		(property "Value" ""
-			(at -3.048 3.048 0)
+			(at -1.27 3.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,10 +1634,21 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at -3.81 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
 		(symbol "Interlocking_0_1"
 			(rectangle
-				(start -17.018 4.826)
-				(end 16.51 1.27)
+				(start -16.51 2.54)
+				(end 16.51 -2.54)
 				(stroke
 					(width 0)
 					(type default)
@@ -1648,31 +1660,34 @@
 		)
 		(symbol "Interlocking_1_1"
 			(text "Interlocking:"
-				(at -10.287 3.556 0)
+				(at -15.24 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-				)
-			)
-			(text "Codeline"
-				(at 0 1.778 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
+					(justify left)
 				)
 			)
 			(text "Host"
-				(at 15.621 2.921 900)
+				(at 11.43 1.27 0)
 				(effects
 					(font
 						(size 0.635 0.635)
 					)
+					(justify left)
+				)
+			)
+			(text "Codeline"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
 				)
 			)
 			(pin free line
-				(at 0 0 90)
+				(at 17.78 -1.27 180)
 				(length 1.27)
 				(name "Codeline"
 					(effects
@@ -1690,7 +1705,7 @@
 				)
 			)
 			(pin free line
-				(at 17.78 2.54 180)
+				(at 17.78 1.27 180)
 				(length 1.27)
 				(name "Host"
 					(effects

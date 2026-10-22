@@ -2299,7 +2299,7 @@
 					)
 				)
 			)
-			(property "Value" "111"
+			(property "Value" ""
 				(at 0.01 1.7733 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3594,8 +3594,8 @@
 			)
 			(symbol "Driver-GPIO-Digital_0_1"
 				(rectangle
-					(start 21.59 -1.27)
-					(end 2.54 1.27)
+					(start 2.54 1.27)
+					(end 20.32 -1.27)
 					(stroke
 						(width 0.3048)
 						(type solid)
@@ -3656,6 +3656,24 @@
 						(effects
 							(font
 								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 21.59 0 180)
+					(length 1.27)
+					(name "IOBus"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
 							)
 						)
 					)
@@ -3776,8 +3794,8 @@
 			)
 			(symbol "Driver-GPIO-Pixel_0_1"
 				(rectangle
-					(start 21.59 -1.27)
-					(end 2.54 1.27)
+					(start 2.54 1.27)
+					(end 20.32 -1.27)
 					(stroke
 						(width 0.3048)
 						(type solid)
@@ -3803,9 +3821,9 @@
 					)
 				)
 				(arc
-					(start 19.558 0)
-					(mid 19.744 0.449)
-					(end 20.193 0.635)
+					(start 14.478 0)
+					(mid 14.664 0.449)
+					(end 15.113 0.635)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3816,9 +3834,9 @@
 					)
 				)
 				(arc
-					(start 20.193 0.635)
-					(mid 20.642 0.449)
-					(end 20.828 0)
+					(start 15.113 0.635)
+					(mid 15.562 0.449)
+					(end 15.748 0)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3829,9 +3847,9 @@
 					)
 				)
 				(arc
-					(start 20.193 -0.635)
-					(mid 19.744 -0.449)
-					(end 19.558 0)
+					(start 15.113 -0.635)
+					(mid 14.664 -0.449)
+					(end 14.478 0)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3842,9 +3860,9 @@
 					)
 				)
 				(arc
-					(start 20.828 0)
-					(mid 20.642 -0.449)
-					(end 20.193 -0.635)
+					(start 15.748 0)
+					(mid 15.562 -0.449)
+					(end 15.113 -0.635)
 					(stroke
 						(width 0)
 						(type default)
@@ -3854,7 +3872,7 @@
 					)
 				)
 				(circle
-					(center 20.193 0)
+					(center 15.113 0)
 					(radius 0.8519)
 					(stroke
 						(width 0.0762)
@@ -3865,10 +3883,10 @@
 					)
 				)
 				(text "PIXEL ${Address}"
-					(at 5.334 0 0)
+					(at 5.461 0 0)
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 0.889 0.889)
 						)
 						(justify left)
 					)
@@ -3891,6 +3909,24 @@
 						)
 					)
 				)
+				(pin free line
+					(at 21.59 0 180)
+					(length 1.27)
+					(name "IOBus"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -3904,9 +3940,10 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Exp"
-				(at 7.747 0.254 0)
+				(at 15.875 0.254 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.889 0.889)
@@ -3918,6 +3955,7 @@
 				(at 9.271 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -3981,12 +4019,12 @@
 				)
 			)
 			(property "IC" "MCP23017"
-				(at 9.398 -1.27 0)
+				(at 7.112 -3.683 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.635 0.635)
+						(size 0.762 0.762)
 					)
 					(justify left)
 				)
@@ -4230,6 +4268,18 @@
 						(color 132 0 0 1)
 					)
 				)
+				(rectangle
+					(start 2.54 1.27)
+					(end 20.32 -8.89)
+					(stroke
+						(width 0.3048)
+						(type solid)
+						(color 128 77 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(polyline
 					(pts
 						(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
@@ -4282,12 +4332,31 @@
 						(color 132 0 0 1)
 					)
 				)
+				(text "Address:"
+					(at 5.461 -4.826 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
 				(text "0/1"
-					(at 6.604 -1.27 0)
+					(at 7.112 -1.651 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
+						(justify left)
+					)
+				)
+				(text "${Address}"
+					(at 7.112 -5.969 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
 					)
 				)
 				(text "Type:"
@@ -4299,30 +4368,18 @@
 						(justify right)
 					)
 				)
-				(text "Address:"
-					(at 8.89 -2.54 0)
+				(text "I/O Expander"
+					(at 8.509 0 0)
 					(effects
 						(font
 							(size 0.508 0.508)
 						)
-						(justify right)
+						(justify left)
 					)
 				)
 			)
 			(symbol "Driver-I2C-MCP23017_1_1"
 				(unit_name "AA")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin bidirectional line
 					(at 0 0 0)
 					(length 2.54)
@@ -4396,19 +4453,19 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 -7.62 180)
+					(at 22.86 -7.62 180)
 					(length 2.54)
-					(name "I2C"
+					(name "IOBus"
 						(effects
 							(font
-								(size 0.762 0.762)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "17"
 						(effects
 							(font
-								(size 0.381 0.381)
+								(size 0 0)
 							)
 						)
 					)
@@ -4416,18 +4473,6 @@
 			)
 			(symbol "Driver-I2C-MCP23017_2_1"
 				(unit_name "AB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin bidirectional line
 					(at 0 0 0)
 					(length 2.54)
@@ -4503,18 +4548,6 @@
 			)
 			(symbol "Driver-I2C-MCP23017_3_1"
 				(unit_name "BA")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin bidirectional line
 					(at 0 0 0)
 					(length 2.54)
@@ -4590,18 +4623,6 @@
 			)
 			(symbol "Driver-I2C-MCP23017_4_1"
 				(unit_name "BB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin bidirectional line
 					(at 0 0 0)
 					(length 2.54)
@@ -4687,9 +4708,10 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Exp"
-				(at 9.398 0.127 0)
+				(at 11.938 4.953 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.889 0.889)
@@ -4764,12 +4786,12 @@
 				)
 			)
 			(property "IC" "PCA9685"
-				(at 11.557 -1.524 0)
+				(at 9.144 -3.556 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.635 0.635)
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -5023,354 +5045,9 @@
 						(color 132 0 0 1)
 					)
 				)
-				(polyline
-					(pts
-						(xy 5.588 -0.762) (xy 5.588 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 -0.762) (xy 5.715 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.715 -0.762) (xy 5.715 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.715 -2.032) (xy 5.842 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 -0.762) (xy 5.842 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 -0.762) (xy 5.969 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.969 -0.762) (xy 5.969 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.969 -2.032) (xy 6.096 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.096 -0.762) (xy 6.096 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.096 -0.762) (xy 6.223 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.223 -0.762) (xy 6.223 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.223 -2.032) (xy 6.477 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.477 -0.762) (xy 6.477 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.477 -0.762) (xy 6.731 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.731 -0.762) (xy 6.731 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.731 -2.032) (xy 6.985 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 -0.762) (xy 6.985 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.985 -0.762) (xy 7.239 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.239 -0.762) (xy 7.239 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.239 -2.032) (xy 7.747 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.747 -0.762) (xy 7.747 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.747 -0.762) (xy 8.255 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 -0.762) (xy 8.255 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.255 -2.032) (xy 8.763 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.763 -0.762) (xy 8.763 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.763 -0.762) (xy 9.271 -0.762)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 9.271 -0.762) (xy 9.271 -2.032)
-					)
-					(stroke
-						(width 0.0254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Type:"
-					(at 7.62 -0.127 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-				(text "Address:"
-					(at 8.89 -2.667 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify right)
-					)
-				)
-			)
-			(symbol "Driver-I2C-PCA9685-PWM_1_1"
-				(unit_name "AA")
 				(rectangle
 					(start 2.54 1.27)
-					(end 15.24 -8.89)
+					(end 20.32 -8.89)
 					(stroke
 						(width 0.3048)
 						(type solid)
@@ -5380,24 +5057,369 @@
 						(type background)
 					)
 				)
-				(text "I2C Expander"
-					(at 5.207 -5.715 0)
+				(polyline
+					(pts
+						(xy 7.112 -0.889) (xy 7.112 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.112 -0.889) (xy 7.239 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.239 -0.889) (xy 7.239 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.239 -2.159) (xy 7.366 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.366 -0.889) (xy 7.366 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.366 -0.889) (xy 7.493 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.493 -0.889) (xy 7.493 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.493 -2.159) (xy 7.62 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -0.889) (xy 7.62 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -0.889) (xy 7.747 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.747 -0.889) (xy 7.747 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.747 -2.159) (xy 8.001 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.001 -0.889) (xy 8.001 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.001 -0.889) (xy 8.255 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.255 -0.889) (xy 8.255 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.255 -2.159) (xy 8.509 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.509 -0.889) (xy 8.509 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.509 -0.889) (xy 8.763 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.763 -0.889) (xy 8.763 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.763 -2.159) (xy 9.271 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 9.271 -0.889) (xy 9.271 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 9.271 -0.889) (xy 9.779 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 9.779 -0.889) (xy 9.779 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 9.779 -2.159) (xy 10.287 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.287 -0.889) (xy 10.287 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.287 -0.889) (xy 10.795 -0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.795 -0.889) (xy 10.795 -2.159)
+					)
+					(stroke
+						(width 0.0254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Address:"
+					(at 5.08 -4.826 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify left)
+					)
+				)
+				(text "${Address}"
+					(at 6.731 -5.969 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
 						(justify left)
+					)
+				)
+				(text "Type:"
+					(at 7.239 0 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+						(justify right)
 					)
 				)
 				(text "12-bit PWM"
-					(at 5.207 -6.985 0)
+					(at 8.128 0 0)
 					(effects
 						(font
-							(size 0.762 0.762)
+							(size 0.508 0.508)
 						)
 						(justify left)
 					)
 				)
+			)
+			(symbol "Driver-I2C-PCA9685-PWM_1_1"
+				(unit_name "AA")
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -5471,19 +5493,19 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 -7.62 180)
+					(at 22.86 -7.62 180)
 					(length 2.54)
-					(name "I2C"
+					(name "IOBus"
 						(effects
 							(font
-								(size 0.762 0.762)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "17"
 						(effects
 							(font
-								(size 0.381 0.381)
+								(size 0 0)
 							)
 						)
 					)
@@ -5491,18 +5513,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-PWM_2_1"
 				(unit_name "AB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -5578,18 +5588,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-PWM_3_1"
 				(unit_name "BA")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -5665,18 +5663,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-PWM_4_1"
 				(unit_name "BB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -5762,9 +5748,10 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Exp"
-				(at 9.398 0.127 0)
+				(at 16.002 0.381 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.889 0.889)
@@ -5839,12 +5826,12 @@
 				)
 			)
 			(property "IC" "PCA9685"
-				(at 11.684 -1.27 0)
+				(at 9.525 -3.429 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 0.635 0.635)
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -6109,33 +6096,21 @@
 						(color 132 0 0 1)
 					)
 				)
-				(arc
-					(start 6.096 -1.27)
-					(mid 6.2448 -0.9108)
-					(end 6.604 -0.762)
+				(rectangle
+					(start 2.54 1.27)
+					(end 20.32 -8.89)
 					(stroke
-						(width 0.0508)
+						(width 0.3048)
 						(type solid)
+						(color 128 77 0 1)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 6.604 -1.778)
-					(mid 6.2448 -1.6292)
-					(end 6.096 -1.27)
-					(stroke
-						(width 0.0508)
-						(type solid)
-					)
-					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(polyline
 					(pts
-						(xy 6.604 -0.762) (xy 7.874 -1.016)
+						(xy 8.636 -1.143) (xy 9.906 -1.397)
 					)
 					(stroke
 						(width 0.0508)
@@ -6146,7 +6121,7 @@
 					)
 				)
 				(circle
-					(center 6.604 -1.27)
+					(center 8.636 -1.651)
 					(radius 0.381)
 					(stroke
 						(width 0.0508)
@@ -6156,9 +6131,33 @@
 						(type none)
 					)
 				)
+				(arc
+					(start 8.128 -1.651)
+					(mid 8.2768 -1.2918)
+					(end 8.636 -1.143)
+					(stroke
+						(width 0.0508)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 8.636 -2.159)
+					(mid 8.2768 -2.0102)
+					(end 8.128 -1.651)
+					(stroke
+						(width 0.0508)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
-						(xy 6.985 -0.762) (xy 6.985 -0.508) (xy 5.588 -0.508) (xy 5.588 -2.032) (xy 6.985 -2.032) (xy 6.985 -1.778)
+						(xy 9.017 -1.143) (xy 9.017 -0.889) (xy 7.62 -0.889) (xy 7.62 -2.413) (xy 9.017 -2.413) (xy 9.017 -2.159)
 					)
 					(stroke
 						(width 0.0508)
@@ -6169,9 +6168,9 @@
 					)
 				)
 				(arc
-					(start 7.874 -1.016)
-					(mid 7.9792 -1.27)
-					(end 7.874 -1.524)
+					(start 9.906 -1.397)
+					(mid 10.0112 -1.651)
+					(end 9.906 -1.905)
 					(stroke
 						(width 0.0508)
 						(type solid)
@@ -6181,7 +6180,7 @@
 					)
 				)
 				(circle
-					(center 7.747 -1.27)
+					(center 9.779 -1.651)
 					(radius 0.127)
 					(stroke
 						(width 0.0508)
@@ -6193,7 +6192,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.874 -1.524) (xy 6.604 -1.778)
+						(xy 9.906 -1.905) (xy 8.636 -2.159)
 					)
 					(stroke
 						(width 0.0508)
@@ -6203,17 +6202,17 @@
 						(type none)
 					)
 				)
-				(text "I2C Expander"
-					(at 5.334 -5.588 0)
+				(text "Address:"
+					(at 5.461 -4.699 0)
 					(effects
 						(font
-							(size 0.762 0.762)
+							(size 0.508 0.508)
 						)
 						(justify left)
 					)
 				)
-				(text "Servo 50Hz"
-					(at 5.334 -6.858 0)
+				(text "${Address}"
+					(at 7.112 -5.842 0)
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -6222,7 +6221,7 @@
 					)
 				)
 				(text "Type:"
-					(at 7.62 0 0)
+					(at 7.62 0.127 0)
 					(effects
 						(font
 							(size 0.508 0.508)
@@ -6230,30 +6229,18 @@
 						(justify right)
 					)
 				)
-				(text "Address:"
-					(at 8.763 -2.54 0)
+				(text "Servo 50Hz"
+					(at 8.509 0.127 0)
 					(effects
 						(font
 							(size 0.508 0.508)
 						)
-						(justify right)
+						(justify left)
 					)
 				)
 			)
 			(symbol "Driver-I2C-PCA9685-Servo_1_1"
 				(unit_name "AA")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -6327,19 +6314,19 @@
 					)
 				)
 				(pin passive line
-					(at 17.78 -7.62 180)
+					(at 22.86 -7.62 180)
 					(length 2.54)
-					(name "I2C"
+					(name "IOBus"
 						(effects
 							(font
-								(size 0.762 0.762)
+								(size 0.635 0.635)
 							)
 						)
 					)
 					(number "17"
 						(effects
 							(font
-								(size 0.381 0.381)
+								(size 0 0)
 							)
 						)
 					)
@@ -6347,18 +6334,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-Servo_2_1"
 				(unit_name "AB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -6434,18 +6409,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-Servo_3_1"
 				(unit_name "BA")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -6521,18 +6484,6 @@
 			)
 			(symbol "Driver-I2C-PCA9685-Servo_4_1"
 				(unit_name "BB")
-				(rectangle
-					(start 2.54 1.27)
-					(end 15.24 -8.89)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
@@ -6632,8 +6583,8 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at -7.239 0 0)
+			(property "Value" "Luchessa"
+				(at 1.27 1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -6666,7 +6617,7 @@
 				)
 			)
 			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-				(at 1.27 -3.81 0)
+				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6711,8 +6662,8 @@
 			)
 			(symbol "Processor_0_1"
 				(rectangle
-					(start -17.018 2.54)
-					(end 17.018 -2.54)
+					(start -16.51 2.54)
+					(end 16.51 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -6723,41 +6674,52 @@
 				)
 			)
 			(symbol "Processor_1_1"
+				(text "${Board}"
+					(at -15.24 -1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify left)
+					)
+				)
 				(text "Processor:"
-					(at -12.7 1.27 0)
+					(at -11.049 1.397 0)
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(text "IO_Bus"
-					(at -10.16 -1.27 0)
+				(text "Local"
+					(at -6.35 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "Host"
+					(at 12.7 1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
+						(justify left)
 					)
 				)
-				(text "Host"
+				(text "IO_Bus"
 					(at 12.7 -1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
-					)
-				)
-				(text "${Board}"
-					(at 16.51 1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify right)
+						(justify left)
 					)
 				)
 				(pin passive line
-					(at 12.7 -5.08 90)
+					(at 19.05 1.27 180)
 					(length 2.54)
 					(name "Host"
 						(effects
@@ -6775,7 +6737,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 -5.08 90)
+					(at 19.05 -1.27 180)
 					(length 2.54)
 					(name "IO_Bus"
 						(effects
@@ -7844,7 +7806,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Plant"
-				(at -14.224 5.842 0)
+				(at -14.224 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7855,9 +7817,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -3.048 3.048 0)
+				(at -1.27 3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7920,10 +7883,21 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
 			(symbol "Interlocking_0_1"
 				(rectangle
-					(start -17.018 4.826)
-					(end 16.51 1.27)
+					(start -16.51 2.54)
+					(end 16.51 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -7935,31 +7909,34 @@
 			)
 			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
-					(at -10.287 3.556 0)
+					(at -15.24 0 0)
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 1.016 1.016)
 						)
-					)
-				)
-				(text "Codeline"
-					(at 0 1.778 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
+						(justify left)
 					)
 				)
 				(text "Host"
-					(at 15.621 2.921 900)
+					(at 11.43 1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
+						(justify left)
+					)
+				)
+				(text "Codeline"
+					(at 11.43 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
 					)
 				)
 				(pin free line
-					(at 0 0 90)
+					(at 17.78 -1.27 180)
 					(length 1.27)
 					(name "Codeline"
 						(effects
@@ -7977,7 +7954,7 @@
 					)
 				)
 				(pin free line
-					(at 17.78 2.54 180)
+					(at 17.78 1.27 180)
 					(length 1.27)
 					(name "Host"
 						(effects
@@ -10996,6 +10973,12 @@
 		(uuid "3424d7e7-4e55-4dc8-8264-896d5bdc17c4")
 	)
 	(junction
+		(at 161.29 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "344ed7e8-6d7b-4eae-b52a-35f14354b4be")
+	)
+	(junction
 		(at 68.58 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11008,7 +10991,7 @@
 		(uuid "8c0cb5ba-aa4b-4aaf-abf1-14e3f3430508")
 	)
 	(junction
-		(at 120.65 118.11)
+		(at 125.73 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "911a6c4d-5f74-4475-982a-15afb56c8482")
@@ -11026,13 +11009,19 @@
 		(uuid "b2c182dd-49bf-4e0d-a6b3-c51a2bba1f45")
 	)
 	(junction
+		(at 160.02 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da91fc21-3419-4785-87c1-bc584f87c47b")
+	)
+	(junction
 		(at 85.09 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "de51cf9b-9122-4b48-8e2c-2f4614c68662")
 	)
 	(junction
-		(at 120.65 139.7)
+		(at 125.73 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9b5373f-e293-43c5-a493-381f28fc84aa")
@@ -11048,19 +11037,19 @@
 		(uuid "03f0d466-db57-4b13-b792-fb5fe131dee1")
 	)
 	(no_connect
-		(at 186.69 151.13)
+		(at 207.01 151.13)
 		(uuid "08597484-60c8-41e9-9c6b-52001cf5f3b6")
 	)
 	(no_connect
-		(at 186.69 140.97)
+		(at 207.01 140.97)
 		(uuid "12c2a6c5-1c54-48c8-b450-148e455972ab")
 	)
 	(no_connect
-		(at 144.78 146.05)
+		(at 149.86 146.05)
 		(uuid "1e92ecb4-135d-4a42-87fa-9b150ee1b1a2")
 	)
 	(no_connect
-		(at 186.69 125.73)
+		(at 207.01 125.73)
 		(uuid "28524917-11cf-42d6-aa62-995b0a14a9e4")
 	)
 	(no_connect
@@ -11068,11 +11057,11 @@
 		(uuid "30414b41-2cc3-4181-8fa1-5c8e5143c75f")
 	)
 	(no_connect
-		(at 186.69 128.27)
+		(at 207.01 128.27)
 		(uuid "35921f2f-fe28-4c52-9f42-fd886ab78512")
 	)
 	(no_connect
-		(at 144.78 156.21)
+		(at 149.86 156.21)
 		(uuid "367848bf-9a4a-4859-9c92-e0ac37061d6d")
 	)
 	(no_connect
@@ -11080,35 +11069,35 @@
 		(uuid "372de54e-6ed1-479b-9c22-4d308b9d1cd0")
 	)
 	(no_connect
-		(at 186.69 153.67)
+		(at 207.01 153.67)
 		(uuid "3baafe42-a3e7-448e-b5fe-c1019eba95ce")
 	)
 	(no_connect
-		(at 186.69 148.59)
+		(at 207.01 148.59)
 		(uuid "3f810e1f-b675-42b3-8437-934ad207fc11")
 	)
 	(no_connect
-		(at 186.69 133.35)
+		(at 207.01 133.35)
 		(uuid "595bfa8e-57c1-4cd6-9417-0983a656393d")
 	)
 	(no_connect
-		(at 144.78 158.75)
+		(at 149.86 158.75)
 		(uuid "5ac030d7-6aa6-4fb7-b8b6-a871d036d30f")
 	)
 	(no_connect
-		(at 144.78 151.13)
+		(at 149.86 151.13)
 		(uuid "62506c6f-8b47-41a6-bf23-b921aeb54a6f")
 	)
 	(no_connect
-		(at 186.69 146.05)
+		(at 207.01 146.05)
 		(uuid "698f223e-8979-4c43-bbea-5863e56297d5")
 	)
 	(no_connect
-		(at 144.78 148.59)
+		(at 149.86 148.59)
 		(uuid "77e530af-7fb0-43e8-8116-8e90bc001293")
 	)
 	(no_connect
-		(at 186.69 135.89)
+		(at 207.01 135.89)
 		(uuid "80126e49-2868-48f2-9d1b-532bbf2eab62")
 	)
 	(no_connect
@@ -11116,27 +11105,27 @@
 		(uuid "abc99ae3-6206-45ea-b9cc-79f6b9ecce15")
 	)
 	(no_connect
-		(at 186.69 158.75)
+		(at 207.01 158.75)
 		(uuid "aed11797-5699-4f24-a9cf-27579976f657")
 	)
 	(no_connect
-		(at 186.69 156.21)
+		(at 207.01 156.21)
 		(uuid "b491c8db-1350-41e8-a9fc-9ce477bb386a")
 	)
 	(no_connect
-		(at 186.69 130.81)
+		(at 207.01 130.81)
 		(uuid "bd2f3c91-11e6-4ef4-8566-e24fa6677781")
 	)
 	(no_connect
-		(at 144.78 153.67)
+		(at 149.86 153.67)
 		(uuid "c84ffef9-f481-4813-9eaa-3f9292a93eb5")
 	)
 	(no_connect
-		(at 186.69 143.51)
+		(at 207.01 143.51)
 		(uuid "db2d7374-dd60-4269-9989-8d0b7ac3a777")
 	)
 	(no_connect
-		(at 186.69 138.43)
+		(at 207.01 138.43)
 		(uuid "e681975e-0659-4f3e-945f-2ce5b4644840")
 	)
 	(wire
@@ -11162,6 +11151,26 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 26.67) (xy 162.56 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab2c35c-b269-4b69-9efc-227c2be524b1")
+	)
+	(wire
+		(pts
+			(xy 167.64 20.32) (xy 158.75 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b75152a-7c21-4df7-a4ec-aadfe5619a8e")
+	)
+	(wire
+		(pts
 			(xy 85.09 73.66) (xy 93.98 73.66)
 		)
 		(stroke
@@ -11182,7 +11191,17 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 118.11) (xy 120.65 123.19)
+			(xy 162.56 26.67) (xy 161.29 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4308d18b-d56a-4e33-ad15-546f586d97f3")
+	)
+	(wire
+		(pts
+			(xy 125.73 118.11) (xy 125.73 123.19)
 		)
 		(stroke
 			(width 0)
@@ -11199,6 +11218,26 @@
 			(type default)
 		)
 		(uuid "4b106c70-6104-4841-96bd-29e1dd8691c3")
+	)
+	(wire
+		(pts
+			(xy 160.02 33.02) (xy 167.64 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b897a52-1880-4ad7-89e5-0d9f19f75cfe")
+	)
+	(wire
+		(pts
+			(xy 161.29 30.48) (xy 162.56 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "654119d7-b8ce-402f-87ad-9987781bf0e4")
 	)
 	(wire
 		(pts
@@ -11243,7 +11282,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 33.02) (xy 177.8 40.64)
+			(xy 161.29 25.4) (xy 167.64 25.4)
 		)
 		(stroke
 			(width 0)
@@ -11273,7 +11312,17 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 137.16) (xy 120.65 139.7)
+			(xy 167.64 27.94) (xy 161.29 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab8259fd-747a-4cb7-86fe-3d050a5592df")
+	)
+	(wire
+		(pts
+			(xy 125.73 137.16) (xy 125.73 139.7)
 		)
 		(stroke
 			(width 0)
@@ -11283,23 +11332,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 139.7) (xy 120.65 142.24)
+			(xy 182.88 118.11) (xy 182.88 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff69711-2aba-4178-86cf-92a26933e851")
+	)
+	(wire
+		(pts
+			(xy 125.73 139.7) (xy 125.73 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "eb384d61-7e44-48ce-b7f0-3fa820af1e97")
-	)
-	(wire
-		(pts
-			(xy 162.56 120.65) (xy 162.56 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef002c43-92d6-4050-950c-2b46ac4e25eb")
 	)
 	(wire
 		(pts
@@ -11313,7 +11362,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 118.11) (xy 162.56 118.11)
+			(xy 125.73 118.11) (xy 182.88 118.11)
 		)
 		(stroke
 			(width 0)
@@ -11321,9 +11370,29 @@
 		)
 		(uuid "f45802f4-cc80-4661-9b82-b41d123ec432")
 	)
+	(wire
+		(pts
+			(xy 160.02 30.48) (xy 161.29 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b96f0a-e7f5-4e74-9bcf-f3134d62693e")
+	)
+	(wire
+		(pts
+			(xy 160.02 33.02) (xy 160.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6dfcc0-4b5a-468e-9ce8-a4c49ec04ba6")
+	)
 	(hierarchical_label "OfficeIOBus"
 		(shape bidirectional)
-		(at 266.27 167.4 0)
+		(at 167.64 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11334,7 +11403,29 @@
 	)
 	(hierarchical_label "IOBus"
 		(shape bidirectional)
-		(at 162.56 128.27 0)
+		(at 171.45 165.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "199220b3-52a8-4466-88a4-4d61ee5642f5")
+	)
+	(hierarchical_label "IOBus"
+		(shape bidirectional)
+		(at 171.45 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "27853bf5-4a22-4611-8796-ce5cc5aaea17")
+	)
+	(hierarchical_label "IOBus"
+		(shape bidirectional)
+		(at 172.72 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11345,18 +11436,18 @@
 	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
-		(at 160.02 43.18 180)
+		(at 167.64 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "7795e8de-ad40-42ed-bed3-cf96f04c0c10")
 	)
 	(hierarchical_label "IOBus"
 		(shape bidirectional)
-		(at 204.47 128.27 0)
+		(at 229.87 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11367,18 +11458,18 @@
 	)
 	(hierarchical_label "IOBus"
 		(shape bidirectional)
-		(at 154.94 33.02 180)
+		(at 167.64 27.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "b9f1b3ea-5108-4c4a-b599-d9321877a5f9")
 	)
 	(hierarchical_label "IOBus"
 		(shape bidirectional)
-		(at 91.44 128.27 0)
+		(at 92.71 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11389,7 +11480,7 @@
 	)
 	(hierarchical_label "Host"
 		(shape bidirectional)
-		(at 177.8 40.64 0)
+		(at 167.64 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11400,7 +11491,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Switch")
-		(at 66.04 133.35 0)
+		(at 62.23 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11410,7 +11501,7 @@
 		(dnp no)
 		(uuid "0089d401-0413-4238-8b00-b98769156175")
 		(property "Reference" "SW2"
-			(at 66.04 140.97 0)
+			(at 62.23 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11421,7 +11512,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 65.9853 131.5634 0)
+			(at 62.1753 131.5634 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -11431,7 +11522,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 133.35 0)
+			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11442,7 +11533,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 133.35 0)
+			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11453,7 +11544,7 @@
 			)
 		)
 		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
-			(at 68.58 142.875 0)
+			(at 64.77 142.875 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11464,7 +11555,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11475,7 +11566,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11486,7 +11577,7 @@
 			)
 		)
 		(property "Style" "switch"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11497,7 +11588,7 @@
 			)
 		)
 		(property "Pin.NWS" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11508,7 +11599,7 @@
 			)
 		)
 		(property "Pin.RWS" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11519,7 +11610,7 @@
 			)
 		)
 		(property "Pin.NWK" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11530,7 +11621,7 @@
 			)
 		)
 		(property "Pin.RWK" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11563,7 +11654,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch")
-		(at 186.69 125.73 0)
+		(at 207.01 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11574,7 +11665,7 @@
 		(fields_autoplaced yes)
 		(uuid "069aa98b-8348-4248-9c9b-3c54891ba60f")
 		(property "Reference" "DevSW8"
-			(at 167.64 120.65 0)
+			(at 187.96 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11585,7 +11676,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 186.69 125.73 0)
+			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11596,7 +11687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 125.73 0)
+			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11607,7 +11698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 125.73 0)
+			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11618,7 +11709,7 @@
 			)
 		)
 		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
-			(at 186.69 129.54 0)
+			(at 207.01 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11630,7 +11721,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 170.18 118.11 0)
+			(at 190.5 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11643,7 +11734,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 170.18 119.38 0)
+			(at 190.5 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11656,7 +11747,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 175.26 119.38 0)
+			(at 195.58 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11669,7 +11760,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 176.53 120.65 0)
+			(at 196.85 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11682,7 +11773,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 172.72 120.65 0)
+			(at 193.04 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11695,7 +11786,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 181.61 120.65 0)
+			(at 201.93 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11727,7 +11818,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 144.78 137.16 0)
+		(at 149.86 137.16 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11738,7 +11829,7 @@
 		(fields_autoplaced yes)
 		(uuid "07280fad-673a-417e-b387-3100b26cfe18")
 		(property "Reference" "Cast2"
-			(at 142.24 133.35 0)
+			(at 138.43 133.731 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11749,7 +11840,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 144.78 137.16 0)
+			(at 149.86 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11760,7 +11851,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 137.16 0)
+			(at 149.86 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11771,7 +11862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 137.16 0)
+			(at 149.86 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11782,7 +11873,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 144.78 140.97 0)
+			(at 149.86 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11793,7 +11884,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 133.35 132.969 0)
+			(at 138.43 132.969 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11804,7 +11895,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 133.35 132.207 0)
+			(at 138.43 132.207 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11815,7 +11906,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 128.143 137.16 0)
+			(at 133.223 137.16 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -11826,7 +11917,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 116.332 137.16 0)
+			(at 121.412 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11837,7 +11928,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 150.368 135.89 0)
+			(at 155.448 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11848,7 +11939,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 150.368 138.43 0)
+			(at 155.448 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11878,7 +11969,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 120.65 118.11 0)
+		(at 125.73 118.11 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11889,7 +11980,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a5a2dc9-1a2a-4de1-bb30-b8d26b2c4321")
 		(property "Reference" "DevMast8"
-			(at 118.11 114.3 0)
+			(at 125.73 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11900,7 +11991,7 @@
 			)
 		)
 		(property "Value" "836SB"
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11911,7 +12002,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11922,7 +12013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11933,7 +12024,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 120.65 123.19 0)
+			(at 125.73 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11944,7 +12035,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11955,7 +12046,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11966,7 +12057,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 120.65 118.11 0)
+			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12001,7 +12092,7 @@
 		(dnp no)
 		(uuid "0c7e121e-f55e-4288-bbb8-eaf89c5139f5")
 		(property "Reference" "SW4"
-			(at 147.32 76.2 0)
+			(at 150.495 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12138,7 +12229,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 128.27 0)
+		(at 59.69 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12149,7 +12240,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f6d0335-f5b6-4ed2-97d2-50472d320751")
 		(property "Reference" "DevTC1"
-			(at 57.6648 126.2724 0)
+			(at 53.8548 126.2724 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12160,7 +12251,7 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 63.5 128.27 0)
+			(at 59.69 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12171,7 +12262,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 128.27 0)
+			(at 59.69 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12182,7 +12273,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 128.27 0)
+			(at 59.69 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12193,7 +12284,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 128.27 0)
+			(at 59.69 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12204,7 +12295,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 126.246 0)
+			(at 56.1462 126.246 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12216,7 +12307,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 126.365 0)
+			(at 49.276 126.365 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12228,7 +12319,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 126.246 0)
+			(at 56.1462 126.246 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12240,7 +12331,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 126.246 0)
+			(at 56.1462 126.246 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12265,7 +12356,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-Servo")
-		(at 186.69 151.13 0)
+		(at 207.01 151.13 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12276,7 +12367,8 @@
 		(fields_autoplaced yes)
 		(uuid "0fed6352-6177-4a6b-9243-a908a85e24b8")
 		(property "Reference" "Exp3"
-			(at 196.088 151.003 0)
+			(at 223.012 150.749 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12287,7 +12379,7 @@
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 196.215 153.67 0)
+			(at 216.535 153.67 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12298,7 +12390,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 151.13 0)
+			(at 207.01 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12309,7 +12401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 151.13 0)
+			(at 207.01 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12320,7 +12412,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a servo driver: sixteen position-out pins at 50 Hz, pulse min_us to max_us. A lamp on it is refused."
-			(at 206.756 146.177 0)
+			(at 227.076 146.177 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12331,7 +12423,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12342,7 +12434,7 @@
 			)
 		)
 		(property "Address" "0x27"
-			(at 198.12 154.94 0)
+			(at 218.44 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12353,17 +12445,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 198.374 152.4 0)
+			(at 216.535 154.559 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "min_us" ""
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12374,7 +12466,7 @@
 			)
 		)
 		(property "max_us" ""
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12385,7 +12477,7 @@
 			)
 		)
 		(property "Pin.A1" "position"
-			(at 181.61 148.082 0)
+			(at 201.93 148.082 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12396,7 +12488,7 @@
 			)
 		)
 		(property "Pin.A2" "position"
-			(at 181.61 148.082 0)
+			(at 201.93 148.082 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12407,7 +12499,7 @@
 			)
 		)
 		(property "Pin.A3" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12418,7 +12510,7 @@
 			)
 		)
 		(property "Pin.A4" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12429,7 +12521,7 @@
 			)
 		)
 		(property "Pin.A5" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12440,7 +12532,7 @@
 			)
 		)
 		(property "Pin.A6" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12451,7 +12543,7 @@
 			)
 		)
 		(property "Pin.A7" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12462,7 +12554,7 @@
 			)
 		)
 		(property "Pin.A8" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12473,7 +12565,7 @@
 			)
 		)
 		(property "Pin.B1" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12484,7 +12576,7 @@
 			)
 		)
 		(property "Pin.B2" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12495,7 +12587,7 @@
 			)
 		)
 		(property "Pin.B3" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12506,7 +12598,7 @@
 			)
 		)
 		(property "Pin.B4" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12517,7 +12609,7 @@
 			)
 		)
 		(property "Pin.B5" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12528,7 +12620,7 @@
 			)
 		)
 		(property "Pin.B6" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12539,7 +12631,7 @@
 			)
 		)
 		(property "Pin.B7" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12550,7 +12642,7 @@
 			)
 		)
 		(property "Pin.B8" "position"
-			(at 181.61 148.59 0)
+			(at 201.93 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12622,7 +12714,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
-		(at 144.78 142.24 0)
+		(at 149.86 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12633,7 +12725,7 @@
 		(fields_autoplaced yes)
 		(uuid "135a5a7c-135e-4680-a56f-5f5cae672bfb")
 		(property "Reference" "Cast3"
-			(at 142.24 138.43 0)
+			(at 138.43 138.811 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12644,7 +12736,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 144.78 142.24 0)
+			(at 149.86 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12655,7 +12747,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 142.24 0)
+			(at 149.86 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12666,7 +12758,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 142.24 0)
+			(at 149.86 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12677,7 +12769,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
-			(at 144.78 146.05 0)
+			(at 149.86 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12688,7 +12780,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 133.35 138.049 0)
+			(at 138.43 138.049 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12699,7 +12791,7 @@
 			)
 		)
 		(property "Style" "CPL"
-			(at 133.35 137.287 0)
+			(at 138.43 137.287 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12710,7 +12802,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 128.143 142.24 0)
+			(at 133.223 142.24 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -12721,7 +12813,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 116.332 142.24 0)
+			(at 121.412 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12732,7 +12824,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at 150.368 140.97 0)
+			(at 155.448 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12743,7 +12835,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at 150.368 143.51 0)
+			(at 155.448 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -12784,7 +12876,7 @@
 		(dnp no)
 		(uuid "1596f944-dcc9-463b-be9c-15c2226a0358")
 		(property "Reference" "SW3"
-			(at 97.79 59.69 0)
+			(at 100.33 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12931,7 +13023,7 @@
 		(dnp no)
 		(uuid "1f225e38-5cdb-4b01-9ab6-8bbb0d92c42a")
 		(property "Reference" "TC1"
-			(at 85.09 69.22 0)
+			(at 85.09 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13031,7 +13123,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
-		(at 73.66 130.81 0)
+		(at 69.85 130.81 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13042,17 +13134,20 @@
 		(fields_autoplaced yes)
 		(uuid "1fe92567-f25f-4cc5-b1e6-0bb05e25cddc")
 		(property "Reference" "Exp1"
-			(at 85.399 130.4187 0)
+			(at 85.725 130.556 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 82.931 133.35 0)
+			(at 79.121 133.35 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13063,7 +13158,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 130.81 0)
+			(at 69.85 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13074,7 +13169,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 130.81 0)
+			(at 69.85 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13085,7 +13180,7 @@
 			)
 		)
 		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
-			(at 93.98 128.27 0)
+			(at 90.17 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13096,7 +13191,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13107,7 +13202,7 @@
 			)
 		)
 		(property "Address" "0x20"
-			(at 85.09 134.62 0)
+			(at 81.28 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13118,18 +13213,18 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 83.058 132.08 0)
+			(at 76.962 134.493 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13140,7 +13235,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13151,7 +13246,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13162,7 +13257,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13173,7 +13268,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13184,7 +13279,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13195,7 +13290,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13206,7 +13301,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13217,7 +13312,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13228,7 +13323,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13239,7 +13334,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13250,7 +13345,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13261,7 +13356,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13272,7 +13367,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13283,7 +13378,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13294,7 +13389,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 68.58 128.27 0)
+			(at 64.77 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13366,7 +13461,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
-		(at 144.78 130.81 0)
+		(at 149.86 130.81 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13377,17 +13472,19 @@
 		(fields_autoplaced yes)
 		(uuid "1ffcacbe-18fe-46ab-bb9e-d1dac0d71201")
 		(property "Reference" "Exp2"
-			(at 156.519 130.4187 0)
+			(at 161.798 125.857 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 154.178 133.477 0)
+			(at 159.258 133.477 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13398,7 +13495,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 130.81 0)
+			(at 149.86 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13409,7 +13506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 130.81 0)
+			(at 149.86 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13420,7 +13517,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
-			(at 165.1 128.27 0)
+			(at 170.18 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13431,7 +13528,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13442,7 +13539,7 @@
 			)
 		)
 		(property "Address" "0x26"
-			(at 161.671 133.477 0)
+			(at 166.751 133.477 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13453,17 +13550,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 156.337 132.334 0)
+			(at 159.004 134.366 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "frequency_hz" ""
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13474,7 +13571,7 @@
 			)
 		)
 		(property "Pin.A1" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13485,7 +13582,7 @@
 			)
 		)
 		(property "Pin.A2" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13496,7 +13593,7 @@
 			)
 		)
 		(property "Pin.A3" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13507,7 +13604,7 @@
 			)
 		)
 		(property "Pin.A4" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13518,7 +13615,7 @@
 			)
 		)
 		(property "Pin.A5" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13529,7 +13626,7 @@
 			)
 		)
 		(property "Pin.A6" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13540,7 +13637,7 @@
 			)
 		)
 		(property "Pin.A7" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13551,7 +13648,7 @@
 			)
 		)
 		(property "Pin.A8" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13562,7 +13659,7 @@
 			)
 		)
 		(property "Pin.B1" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13573,7 +13670,7 @@
 			)
 		)
 		(property "Pin.B2" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13584,7 +13681,7 @@
 			)
 		)
 		(property "Pin.B3" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13595,7 +13692,7 @@
 			)
 		)
 		(property "Pin.B4" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13606,7 +13703,7 @@
 			)
 		)
 		(property "Pin.B5" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13617,7 +13714,7 @@
 			)
 		)
 		(property "Pin.B6" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13628,7 +13725,7 @@
 			)
 		)
 		(property "Pin.B7" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13639,7 +13736,7 @@
 			)
 		)
 		(property "Pin.B8" "level"
-			(at 139.7 128.27 0)
+			(at 144.78 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13822,7 +13919,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-Servo")
-		(at 186.69 120.65 0)
+		(at 207.01 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13833,7 +13930,8 @@
 		(fields_autoplaced yes)
 		(uuid "21ed0129-b831-42c7-a51c-5816eae2a569")
 		(property "Reference" "Exp3"
-			(at 196.088 120.523 0)
+			(at 223.012 120.269 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13844,7 +13942,7 @@
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 196.215 123.19 0)
+			(at 216.535 123.19 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13855,7 +13953,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 120.65 0)
+			(at 207.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13866,7 +13964,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 120.65 0)
+			(at 207.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13877,7 +13975,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a servo driver: sixteen position-out pins at 50 Hz, pulse min_us to max_us. A lamp on it is refused."
-			(at 206.756 115.697 0)
+			(at 227.076 115.697 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13888,7 +13986,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13899,7 +13997,7 @@
 			)
 		)
 		(property "Address" "0x27"
-			(at 198.12 124.46 0)
+			(at 218.44 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13910,17 +14008,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 198.374 121.92 0)
+			(at 216.535 124.079 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "min_us" ""
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13931,7 +14029,7 @@
 			)
 		)
 		(property "max_us" ""
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13942,7 +14040,7 @@
 			)
 		)
 		(property "Pin.A1" "position"
-			(at 181.61 117.602 0)
+			(at 201.93 117.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13953,7 +14051,7 @@
 			)
 		)
 		(property "Pin.A2" "position"
-			(at 181.61 117.602 0)
+			(at 201.93 117.602 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13964,7 +14062,7 @@
 			)
 		)
 		(property "Pin.A3" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13975,7 +14073,7 @@
 			)
 		)
 		(property "Pin.A4" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13986,7 +14084,7 @@
 			)
 		)
 		(property "Pin.A5" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13997,7 +14095,7 @@
 			)
 		)
 		(property "Pin.A6" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14008,7 +14106,7 @@
 			)
 		)
 		(property "Pin.A7" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14019,7 +14117,7 @@
 			)
 		)
 		(property "Pin.A8" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14030,7 +14128,7 @@
 			)
 		)
 		(property "Pin.B1" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14041,7 +14139,7 @@
 			)
 		)
 		(property "Pin.B2" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14052,7 +14150,7 @@
 			)
 		)
 		(property "Pin.B3" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14063,7 +14161,7 @@
 			)
 		)
 		(property "Pin.B4" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14074,7 +14172,7 @@
 			)
 		)
 		(property "Pin.B5" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14085,7 +14183,7 @@
 			)
 		)
 		(property "Pin.B6" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14096,7 +14194,7 @@
 			)
 		)
 		(property "Pin.B7" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14107,7 +14205,7 @@
 			)
 		)
 		(property "Pin.B8" "position"
-			(at 181.61 118.11 0)
+			(at 201.93 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14179,7 +14277,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 144.78 0)
+		(at 69.85 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14190,7 +14288,7 @@
 		(fields_autoplaced yes)
 		(uuid "24e6122a-4fe4-45a6-984f-aa75d708392f")
 		(property "Reference" "DevSW5"
-			(at 67.7458 138.9988 0)
+			(at 63.9358 138.9988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14201,7 +14299,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14212,7 +14310,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14223,7 +14321,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14234,7 +14332,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 137.16 0)
+			(at 72.39 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14245,7 +14343,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14258,7 +14356,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14271,7 +14369,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14284,7 +14382,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14297,7 +14395,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14310,7 +14408,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14323,7 +14421,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14358,7 +14456,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MAIN HOUSE")
-		(at 160.02 48.26 0)
+		(at 160.02 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14368,7 +14466,7 @@
 		(dnp no)
 		(uuid "289ca6cf-49d0-418b-83fa-6692192f9ab8")
 		(property "Reference" "HOUSE1"
-			(at 160.02 49.53 0)
+			(at 159.131 44.958 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14379,7 +14477,7 @@
 			)
 		)
 		(property "Value" "${CP Name}"
-			(at 160.02 53.975 0)
+			(at 160.02 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14389,7 +14487,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14400,7 +14498,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14411,7 +14509,7 @@
 			)
 		)
 		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 160.02 53.975 0)
+			(at 160.02 46.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14422,7 +14520,7 @@
 			)
 		)
 		(property "Milepost" "83.5"
-			(at 160.02 53.975 0)
+			(at 160.02 46.355 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14433,7 +14531,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 144.78 45.72 0)
+			(at 144.78 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14444,7 +14542,7 @@
 			)
 		)
 		(property "Kind" "CONTROL_POINT"
-			(at 146.685 47.752 0)
+			(at 146.685 40.132 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14455,7 +14553,7 @@
 			)
 		)
 		(property "CP Name" "Sargent"
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14822,7 +14920,7 @@
 		(dnp no)
 		(uuid "2e1492cd-0f5b-4707-8bde-15bf6e93b2f8")
 		(property "Reference" "AUX1"
-			(at 109.22 76.2 0)
+			(at 109.22 78.105 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14932,7 +15030,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 144.78 0)
+		(at 69.85 144.78 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14943,7 +15041,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e833dfa-77fd-4912-89fd-5d9c081a2696")
 		(property "Reference" "DevSW5"
-			(at 67.7458 138.9988 0)
+			(at 63.9358 138.9988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14954,7 +15052,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -14965,7 +15063,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14976,7 +15074,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14987,7 +15085,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 137.16 0)
+			(at 72.39 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14998,7 +15096,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15011,7 +15109,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15024,7 +15122,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15037,7 +15135,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15050,7 +15148,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15063,7 +15161,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15076,7 +15174,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15215,7 +15313,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Lock")
-		(at 66.04 123.19 0)
+		(at 62.23 123.19 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15225,7 +15323,7 @@
 		(dnp no)
 		(uuid "304dd8ae-ae92-4807-9ba1-4801d481532b")
 		(property "Reference" "LK2"
-			(at 66.04 127.635 0)
+			(at 62.23 127.635 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15236,7 +15334,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 66.05 121.4167 0)
+			(at 62.24 121.4167 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -15246,7 +15344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 123.19 0)
+			(at 62.23 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15257,7 +15355,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 123.19 0)
+			(at 62.23 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15268,7 +15366,7 @@
 			)
 		)
 		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
-			(at 68.58 132.715 0)
+			(at 64.77 132.715 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15279,7 +15377,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15290,7 +15388,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15301,7 +15399,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15312,7 +15410,7 @@
 			)
 		)
 		(property "Invert" "WLK"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15323,7 +15421,7 @@
 			)
 		)
 		(property "Pin.WLQ" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15334,7 +15432,7 @@
 			)
 		)
 		(property "Pin.WLQK" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15345,7 +15443,7 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15486,7 +15584,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Processor")
-		(at 165.1 27.94 0)
+		(at 142.24 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15496,7 +15594,7 @@
 		(dnp no)
 		(uuid "352ae2d5-3988-4df2-a628-760af624041e")
 		(property "Reference" "Proc6"
-			(at 150.876 22.098 0)
+			(at 128.016 20.828 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15507,9 +15605,9 @@
 			)
 		)
 		(property "Value" "Sargent"
-			(at 157.861 27.94 0)
+			(at 143.51 25.4 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15518,7 +15616,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 27.94 0)
+			(at 142.24 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15529,7 +15627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 27.94 0)
+			(at 142.24 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15540,7 +15638,7 @@
 			)
 		)
 		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-			(at 165.1 27.94 0)
+			(at 143.51 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15551,7 +15649,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 165.1 27.94 0)
+			(at 130.937 17.018 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15562,7 +15660,7 @@
 			)
 		)
 		(property "Kind" "PROCESSOR"
-			(at 165.1 27.94 0)
+			(at 132.334 18.669 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15573,7 +15671,7 @@
 			)
 		)
 		(property "Board" "cpNode-Xiao"
-			(at 165.1 27.94 0)
+			(at 142.24 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15600,7 +15698,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 158.75 0)
+		(at 59.69 158.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15611,7 +15709,7 @@
 		(fields_autoplaced yes)
 		(uuid "39e95ac8-f8b4-4e9a-a7a5-843704e3219f")
 		(property "Reference" "DevTC3"
-			(at 57.6648 156.7524 0)
+			(at 53.8548 156.7524 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15622,7 +15720,7 @@
 			)
 		)
 		(property "Value" "2SAT"
-			(at 63.5 158.75 0)
+			(at 59.69 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15633,7 +15731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 158.75 0)
+			(at 59.69 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15644,7 +15742,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 158.75 0)
+			(at 59.69 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15655,7 +15753,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 158.75 0)
+			(at 59.69 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15666,7 +15764,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 156.726 0)
+			(at 56.1462 156.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15678,7 +15776,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 156.845 0)
+			(at 49.276 156.845 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15690,7 +15788,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 156.726 0)
+			(at 56.1462 156.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15702,7 +15800,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 156.726 0)
+			(at 56.1462 156.726 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -15849,7 +15947,7 @@
 		(fields_autoplaced yes)
 		(uuid "4184bc15-d7fd-4405-8e8d-4b844e7ffc63")
 		(property "Reference" "H3"
-			(at 152.4 67.31 0)
+			(at 150.622 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15949,7 +16047,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:MaintainerCall")
-		(at 160.02 48.26 0)
+		(at 160.02 40.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15959,19 +16057,17 @@
 		(dnp no)
 		(uuid "44fdf0b3-6923-4e56-9ed9-89958b871999")
 		(property "Reference" "MC1"
-			(at 157.99 50.55 0)
-			(hide yes)
+			(at 160.02 43.18 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "MC1"
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15981,7 +16077,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15992,7 +16088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16003,7 +16099,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16014,7 +16110,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16025,7 +16121,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16036,7 +16132,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 160.02 48.26 0)
+			(at 160.02 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16060,7 +16156,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Switch")
-		(at 66.04 133.35 0)
+		(at 62.23 133.35 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16070,7 +16166,7 @@
 		(dnp no)
 		(uuid "4cd37fdb-de35-4e97-84ab-a61da8a4c715")
 		(property "Reference" "SW2"
-			(at 66.04 140.97 0)
+			(at 62.23 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16081,7 +16177,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 65.9853 131.5634 0)
+			(at 62.1753 131.5634 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16091,7 +16187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 133.35 0)
+			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16102,7 +16198,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 133.35 0)
+			(at 62.23 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16113,7 +16209,7 @@
 			)
 		)
 		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
-			(at 68.58 142.875 0)
+			(at 64.77 142.875 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16124,7 +16220,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16135,7 +16231,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16146,7 +16242,7 @@
 			)
 		)
 		(property "Style" "switch"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16157,7 +16253,7 @@
 			)
 		)
 		(property "Pin.NWS" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16168,7 +16264,7 @@
 			)
 		)
 		(property "Pin.RWS" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16179,7 +16275,7 @@
 			)
 		)
 		(property "Pin.NWK" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16190,7 +16286,7 @@
 			)
 		)
 		(property "Pin.RWK" "binary"
-			(at 66.675 146.05 0)
+			(at 62.865 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16223,7 +16319,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 120.65 130.81 0)
+		(at 125.73 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16234,7 +16330,7 @@
 		(fields_autoplaced yes)
 		(uuid "5211a7c7-640a-4d0e-9d1a-96cdb1169d89")
 		(property "Reference" "DevMast2"
-			(at 118.11 127 0)
+			(at 125.73 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16245,7 +16341,7 @@
 			)
 		)
 		(property "Value" "836SA"
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16256,7 +16352,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16267,7 +16363,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16278,7 +16374,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 120.65 135.89 0)
+			(at 125.73 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16289,7 +16385,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16300,7 +16396,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16311,7 +16407,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 120.65 130.81 0)
+			(at 125.73 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16335,7 +16431,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
-		(at 73.66 140.97 0)
+		(at 69.85 140.97 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16346,17 +16442,20 @@
 		(fields_autoplaced yes)
 		(uuid "57deccee-0db9-4bab-a7ae-352b4f7ffbe5")
 		(property "Reference" "Exp1"
-			(at 85.399 140.5787 0)
+			(at 85.725 140.716 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 82.931 143.51 0)
+			(at 79.121 143.51 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16367,7 +16466,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 140.97 0)
+			(at 69.85 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16378,7 +16477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 140.97 0)
+			(at 69.85 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16389,7 +16488,7 @@
 			)
 		)
 		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
-			(at 93.98 138.43 0)
+			(at 90.17 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16400,7 +16499,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16411,7 +16510,7 @@
 			)
 		)
 		(property "Address" "0x20"
-			(at 85.09 144.78 0)
+			(at 81.28 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16422,18 +16521,18 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 83.058 142.24 0)
+			(at 76.962 144.653 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16444,7 +16543,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16455,7 +16554,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16466,7 +16565,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16477,7 +16576,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16488,7 +16587,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16499,7 +16598,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16510,7 +16609,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16521,7 +16620,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16532,7 +16631,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16543,7 +16642,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16554,7 +16653,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16565,7 +16664,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16576,7 +16675,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16587,7 +16686,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16598,7 +16697,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 68.58 138.43 0)
+			(at 64.77 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16787,7 +16886,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-Semaphore")
-		(at 186.69 120.65 0)
+		(at 207.01 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16798,7 +16897,7 @@
 		(fields_autoplaced yes)
 		(uuid "5b900f7a-5a47-44b0-b966-894a97455cdc")
 		(property "Reference" "Cast5"
-			(at 184.15 116.84 0)
+			(at 187.071 118.491 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16809,7 +16908,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 186.69 120.65 0)
+			(at 207.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16820,7 +16919,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 120.65 0)
+			(at 207.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16831,7 +16930,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 120.65 0)
+			(at 207.01 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16842,7 +16941,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one semaphore head's arm position; the angles are this cast's settings. Head is the head letter; Style is the quadrant (LQ or UQ)."
-			(at 186.69 125.73 0)
+			(at 207.01 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16853,7 +16952,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 166.37 122.682 0)
+			(at 186.69 122.682 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16864,7 +16963,7 @@
 			)
 		)
 		(property "Style" "UQ"
-			(at 175.26 120.65 0)
+			(at 195.58 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16875,7 +16974,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 170.307 121.285 0)
+			(at 190.627 121.285 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -16886,7 +16985,7 @@
 			)
 		)
 		(property "stop_deg" ""
-			(at 175.26 127 0)
+			(at 195.58 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16897,7 +16996,7 @@
 			)
 		)
 		(property "approach_deg" ""
-			(at 175.26 127 0)
+			(at 195.58 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16908,7 +17007,7 @@
 			)
 		)
 		(property "clear_deg" ""
-			(at 175.26 127 0)
+			(at 195.58 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16919,7 +17018,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 158.242 120.65 0)
+			(at 178.562 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16930,7 +17029,7 @@
 			)
 		)
 		(property "Pin.ARM" "position"
-			(at 192.278 120.65 0)
+			(at 212.598 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16957,7 +17056,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
-		(at 73.66 120.65 0)
+		(at 69.85 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16968,17 +17067,20 @@
 		(fields_autoplaced yes)
 		(uuid "5d772467-46e8-4096-b35a-a7a983f488b0")
 		(property "Reference" "Exp1"
-			(at 85.399 120.2587 0)
+			(at 85.725 120.396 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 82.931 123.19 0)
+			(at 79.121 123.19 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -16989,7 +17091,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 120.65 0)
+			(at 69.85 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17000,7 +17102,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 120.65 0)
+			(at 69.85 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17011,7 +17113,7 @@
 			)
 		)
 		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
-			(at 93.98 118.11 0)
+			(at 90.17 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17022,7 +17124,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17033,7 +17135,7 @@
 			)
 		)
 		(property "Address" "0x20"
-			(at 85.09 124.46 0)
+			(at 81.28 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17044,18 +17146,18 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 83.058 121.92 0)
+			(at 76.962 124.333 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17066,7 +17168,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17077,7 +17179,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17088,7 +17190,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17099,7 +17201,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17110,7 +17212,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17121,7 +17223,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17132,7 +17234,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17143,7 +17245,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17154,7 +17256,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17165,7 +17267,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17176,7 +17278,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17187,7 +17289,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17198,7 +17300,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17209,7 +17311,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17220,7 +17322,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 68.58 118.11 0)
+			(at 64.77 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17303,7 +17405,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f2b3e0c-c28e-499b-af68-68d3bd96bf4d")
 		(property "Reference" "H4"
-			(at 154.94 67.31 0)
+			(at 153.162 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17403,7 +17505,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
-		(at 73.66 151.13 0)
+		(at 69.85 151.13 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17414,17 +17516,20 @@
 		(fields_autoplaced yes)
 		(uuid "5fc7387d-0438-4286-abb1-7636e54a469c")
 		(property "Reference" "Exp1"
-			(at 85.399 150.7387 0)
+			(at 85.725 150.876 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 82.931 153.67 0)
+			(at 79.121 153.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -17435,7 +17540,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 151.13 0)
+			(at 69.85 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17446,7 +17551,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 151.13 0)
+			(at 69.85 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17457,7 +17562,7 @@
 			)
 		)
 		(property "Description" "16 bit I2C digital IO Expander  Address is 0x20 to 0x27"
-			(at 93.98 148.59 0)
+			(at 90.17 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17468,7 +17573,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17479,7 +17584,7 @@
 			)
 		)
 		(property "Address" "0x20"
-			(at 85.09 154.94 0)
+			(at 81.28 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17490,18 +17595,18 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 83.058 152.4 0)
+			(at 76.962 154.813 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17512,7 +17617,7 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17523,7 +17628,7 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17534,7 +17639,7 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17545,7 +17650,7 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17556,7 +17661,7 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17567,7 +17672,7 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17578,7 +17683,7 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17589,7 +17694,7 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17600,7 +17705,7 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17611,7 +17716,7 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17622,7 +17727,7 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17633,7 +17738,7 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17644,7 +17749,7 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17655,7 +17760,7 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17666,7 +17771,7 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 68.58 148.59 0)
+			(at 64.77 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17863,7 +17968,7 @@
 		(dnp no)
 		(uuid "6bb00657-756e-4098-8533-ea94ff309c96")
 		(property "Reference" "TC4"
-			(at 175.26 69.22 0)
+			(at 175.26 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17963,7 +18068,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-GPIO-Digital")
-		(at 144.78 167.64 0)
+		(at 149.86 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17974,7 +18079,7 @@
 		(fields_autoplaced yes)
 		(uuid "6dd0fba8-69e6-4b31-9e3c-1efac7e3fa13")
 		(property "Reference" "GPIO3"
-			(at 145.923 165.608 0)
+			(at 151.003 165.608 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -17985,7 +18090,7 @@
 			)
 		)
 		(property "Value" "${Address}"
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17996,7 +18101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18007,7 +18112,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18018,7 +18123,7 @@
 			)
 		)
 		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Address = the board core's pin name"
-			(at 156.083 170.561 0)
+			(at 161.163 170.561 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18029,7 +18134,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 152.2852 165.616 0)
+			(at 157.3652 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18041,7 +18146,7 @@
 			)
 		)
 		(property "IC" "GPIO"
-			(at 152.2852 165.616 0)
+			(at 157.3652 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18053,7 +18158,7 @@
 			)
 		)
 		(property "Pin.D" "binary"
-			(at 152.273 164.592 0)
+			(at 157.353 164.592 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18065,7 +18170,7 @@
 			)
 		)
 		(property "Address" "D3"
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18077,6 +18182,9 @@
 		)
 		(pin "1"
 			(uuid "927d4ed1-1e1a-4d9b-81f4-7509fdfed764")
+		)
+		(pin "2"
+			(uuid "cc002ddd-31a2-4f47-912e-a4577f0b3b1f")
 		)
 		(instances
 			(project "SPCoast"
@@ -18204,7 +18312,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
-		(at 73.66 144.78 0)
+		(at 69.85 144.78 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18215,7 +18323,7 @@
 		(fields_autoplaced yes)
 		(uuid "70c3c499-8a81-4d64-bac2-f9a33e1e4140")
 		(property "Reference" "DevSW5"
-			(at 67.7458 138.9988 0)
+			(at 63.9358 138.9988 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18226,7 +18334,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18237,7 +18345,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18248,7 +18356,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 144.78 0)
+			(at 69.85 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18259,7 +18367,7 @@
 			)
 		)
 		(property "Description" "Switch machine with its OS circuit detector packaged on the same unit: Device-Switch plus ~{OCC}."
-			(at 76.2 137.16 0)
+			(at 72.39 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18270,7 +18378,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18283,7 +18391,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18296,7 +18404,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18309,7 +18417,7 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18322,7 +18430,7 @@
 			)
 		)
 		(property "Pin.N" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18335,7 +18443,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18348,7 +18456,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 71.12 138.938 0)
+			(at 67.31 138.938 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18383,7 +18491,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-RGB")
-		(at 144.78 123.19 0)
+		(at 149.86 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18394,7 +18502,7 @@
 		(fields_autoplaced yes)
 		(uuid "77e30c9b-6698-4c6a-b761-84d4be7a6d12")
 		(property "Reference" "Cast4"
-			(at 142.24 119.38 0)
+			(at 138.43 118.491 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18405,7 +18513,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 144.78 123.19 0)
+			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18416,7 +18524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 123.19 0)
+			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18427,7 +18535,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 123.19 0)
+			(at 149.86 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18438,7 +18546,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
-			(at 144.78 128.27 0)
+			(at 149.86 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18449,7 +18557,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 133.35 117.729 0)
+			(at 138.43 117.729 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18460,7 +18568,7 @@
 			)
 		)
 		(property "Style" "UQ"
-			(at 128.397 124.206 0)
+			(at 133.477 124.206 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -18471,7 +18579,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 128.397 122.174 0)
+			(at 133.477 122.174 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -18482,7 +18590,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 116.332 123.19 0)
+			(at 121.412 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18493,7 +18601,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 150.368 125.73 0)
+			(at 155.448 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18504,7 +18612,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at 150.368 123.19 0)
+			(at 155.448 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18515,7 +18623,7 @@
 			)
 		)
 		(property "Pin.B" "binary"
-			(at 150.368 120.65 0)
+			(at 155.448 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -18665,7 +18773,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
-		(at 144.78 120.65 0)
+		(at 149.86 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18676,17 +18784,19 @@
 		(fields_autoplaced yes)
 		(uuid "7a25fd2d-cb02-4af6-beb4-45b17c35a1dd")
 		(property "Reference" "Exp2"
-			(at 156.519 120.2587 0)
+			(at 161.798 115.697 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 154.178 123.317 0)
+			(at 159.258 123.317 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -18697,7 +18807,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 120.65 0)
+			(at 149.86 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18708,7 +18818,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 120.65 0)
+			(at 149.86 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18719,7 +18829,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
-			(at 165.1 118.11 0)
+			(at 170.18 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18730,7 +18840,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18741,7 +18851,7 @@
 			)
 		)
 		(property "Address" "0x26"
-			(at 161.671 123.317 0)
+			(at 166.751 123.317 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18752,17 +18862,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 156.337 122.174 0)
+			(at 159.004 124.206 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "frequency_hz" ""
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18773,7 +18883,7 @@
 			)
 		)
 		(property "Pin.A1" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18784,7 +18894,7 @@
 			)
 		)
 		(property "Pin.A2" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18795,7 +18905,7 @@
 			)
 		)
 		(property "Pin.A3" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18806,7 +18916,7 @@
 			)
 		)
 		(property "Pin.A4" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18817,7 +18927,7 @@
 			)
 		)
 		(property "Pin.A5" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18828,7 +18938,7 @@
 			)
 		)
 		(property "Pin.A6" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18839,7 +18949,7 @@
 			)
 		)
 		(property "Pin.A7" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18850,7 +18960,7 @@
 			)
 		)
 		(property "Pin.A8" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18861,7 +18971,7 @@
 			)
 		)
 		(property "Pin.B1" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18872,7 +18982,7 @@
 			)
 		)
 		(property "Pin.B2" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18883,7 +18993,7 @@
 			)
 		)
 		(property "Pin.B3" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18894,7 +19004,7 @@
 			)
 		)
 		(property "Pin.B4" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18905,7 +19015,7 @@
 			)
 		)
 		(property "Pin.B5" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18916,7 +19026,7 @@
 			)
 		)
 		(property "Pin.B6" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18927,7 +19037,7 @@
 			)
 		)
 		(property "Pin.B7" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18938,7 +19048,7 @@
 			)
 		)
 		(property "Pin.B8" "level"
-			(at 139.7 118.11 0)
+			(at 144.78 118.11 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19128,7 +19238,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
-		(at 144.78 140.97 0)
+		(at 149.86 140.97 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19139,17 +19249,19 @@
 		(fields_autoplaced yes)
 		(uuid "881f2593-84ad-43e9-b411-4868e19356d4")
 		(property "Reference" "Exp2"
-			(at 156.519 140.5787 0)
+			(at 161.798 136.017 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 154.178 143.637 0)
+			(at 159.258 143.637 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -19160,7 +19272,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 140.97 0)
+			(at 149.86 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19171,7 +19283,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 140.97 0)
+			(at 149.86 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19182,7 +19294,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
-			(at 165.1 138.43 0)
+			(at 170.18 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19193,7 +19305,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19204,7 +19316,7 @@
 			)
 		)
 		(property "Address" "0x26"
-			(at 161.671 143.637 0)
+			(at 166.751 143.637 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19215,17 +19327,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 156.337 142.494 0)
+			(at 159.004 144.526 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "frequency_hz" ""
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19236,7 +19348,7 @@
 			)
 		)
 		(property "Pin.A1" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19247,7 +19359,7 @@
 			)
 		)
 		(property "Pin.A2" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19258,7 +19370,7 @@
 			)
 		)
 		(property "Pin.A3" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19269,7 +19381,7 @@
 			)
 		)
 		(property "Pin.A4" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19280,7 +19392,7 @@
 			)
 		)
 		(property "Pin.A5" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19291,7 +19403,7 @@
 			)
 		)
 		(property "Pin.A6" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19302,7 +19414,7 @@
 			)
 		)
 		(property "Pin.A7" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19313,7 +19425,7 @@
 			)
 		)
 		(property "Pin.A8" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19324,7 +19436,7 @@
 			)
 		)
 		(property "Pin.B1" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19335,7 +19447,7 @@
 			)
 		)
 		(property "Pin.B2" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19346,7 +19458,7 @@
 			)
 		)
 		(property "Pin.B3" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19357,7 +19469,7 @@
 			)
 		)
 		(property "Pin.B4" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19368,7 +19480,7 @@
 			)
 		)
 		(property "Pin.B5" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19379,7 +19491,7 @@
 			)
 		)
 		(property "Pin.B6" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19390,7 +19502,7 @@
 			)
 		)
 		(property "Pin.B7" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19401,7 +19513,7 @@
 			)
 		)
 		(property "Pin.B8" "level"
-			(at 139.7 138.43 0)
+			(at 144.78 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19473,7 +19585,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-PWM")
-		(at 144.78 151.13 0)
+		(at 149.86 151.13 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19484,17 +19596,19 @@
 		(fields_autoplaced yes)
 		(uuid "8f3bf4b5-6124-4a1b-8ee1-a6f10315d654")
 		(property "Reference" "Exp2"
-			(at 156.519 150.7387 0)
+			(at 161.798 146.177 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.889 0.889)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 154.178 153.797 0)
+			(at 159.258 153.797 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -19505,7 +19619,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 151.13 0)
+			(at 149.86 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19516,7 +19630,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 151.13 0)
+			(at 149.86 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19527,7 +19641,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a lamp driver: sixteen level-out pins at one frequency_hz. A servo on it is refused."
-			(at 165.1 148.59 0)
+			(at 170.18 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19538,7 +19652,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19549,7 +19663,7 @@
 			)
 		)
 		(property "Address" "0x26"
-			(at 161.671 153.797 0)
+			(at 166.751 153.797 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19560,17 +19674,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 156.337 152.654 0)
+			(at 159.004 154.686 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "frequency_hz" ""
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19581,7 +19695,7 @@
 			)
 		)
 		(property "Pin.A1" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19592,7 +19706,7 @@
 			)
 		)
 		(property "Pin.A2" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19603,7 +19717,7 @@
 			)
 		)
 		(property "Pin.A3" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19614,7 +19728,7 @@
 			)
 		)
 		(property "Pin.A4" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19625,7 +19739,7 @@
 			)
 		)
 		(property "Pin.A5" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19636,7 +19750,7 @@
 			)
 		)
 		(property "Pin.A6" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19647,7 +19761,7 @@
 			)
 		)
 		(property "Pin.A7" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19658,7 +19772,7 @@
 			)
 		)
 		(property "Pin.A8" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19669,7 +19783,7 @@
 			)
 		)
 		(property "Pin.B1" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19680,7 +19794,7 @@
 			)
 		)
 		(property "Pin.B2" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19691,7 +19805,7 @@
 			)
 		)
 		(property "Pin.B3" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19702,7 +19816,7 @@
 			)
 		)
 		(property "Pin.B4" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19713,7 +19827,7 @@
 			)
 		)
 		(property "Pin.B5" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19724,7 +19838,7 @@
 			)
 		)
 		(property "Pin.B6" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19735,7 +19849,7 @@
 			)
 		)
 		(property "Pin.B7" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19746,7 +19860,7 @@
 			)
 		)
 		(property "Pin.B8" "level"
-			(at 139.7 148.59 0)
+			(at 144.78 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19818,7 +19932,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:Interlocking")
-		(at 160.02 43.18 0)
+		(at 142.24 31.75 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19826,10 +19940,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a1c5cf72-cfec-491b-af2a-1f286fbe7f75")
 		(property "Reference" "Plant1"
-			(at 145.796 37.338 0)
+			(at 128.016 28.448 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19840,7 +19953,8 @@
 			)
 		)
 		(property "Value" "${TITLE}"
-			(at 156.972 40.132 0)
+			(at 140.97 27.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -19851,7 +19965,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 43.18 0)
+			(at 142.24 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19862,7 +19976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 43.18 0)
+			(at 142.24 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19873,7 +19987,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 43.18 0)
+			(at 142.24 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19884,7 +19998,7 @@
 			)
 		)
 		(property "Role" "STRUCTURE"
-			(at 148.717 33.528 0)
+			(at 130.937 22.098 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19895,7 +20009,7 @@
 			)
 		)
 		(property "Kind" "INTERLOCKING"
-			(at 150.114 35.179 0)
+			(at 132.334 23.749 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19903,6 +20017,17 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 138.43 31.75 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -19922,7 +20047,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Switch")
-		(at 73.66 151.13 0)
+		(at 69.85 151.13 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19933,7 +20058,7 @@
 		(fields_autoplaced yes)
 		(uuid "a21e3759-6c1b-4c23-ade1-0743ab96d8a4")
 		(property "Reference" "DevSW8"
-			(at 54.61 146.05 0)
+			(at 50.8 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -19944,7 +20069,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 73.66 151.13 0)
+			(at 69.85 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -19955,7 +20080,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 151.13 0)
+			(at 69.85 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19966,7 +20091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 151.13 0)
+			(at 69.85 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19977,7 +20102,7 @@
 			)
 		)
 		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
-			(at 73.66 154.94 0)
+			(at 69.85 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19989,7 +20114,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 57.15 143.51 0)
+			(at 53.34 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20002,7 +20127,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 57.15 144.78 0)
+			(at 53.34 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20015,7 +20140,7 @@
 			)
 		)
 		(property "Style" "powered, lock, dual"
-			(at 62.23 144.78 0)
+			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20028,19 +20153,6 @@
 			)
 		)
 		(property "Pin.M" "binary"
-			(at 63.5 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.N" "binary"
 			(at 59.69 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -20053,8 +20165,21 @@
 				(justify left)
 			)
 		)
+		(property "Pin.N" "binary"
+			(at 55.88 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0635)
+				)
+				(justify left)
+			)
+		)
 		(property "Pin.R" "binary"
-			(at 68.58 146.05 0)
+			(at 64.77 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20086,7 +20211,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Lamp")
-		(at 144.78 167.64 0)
+		(at 149.86 167.64 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20097,7 +20222,7 @@
 		(fields_autoplaced yes)
 		(uuid "a4bc5f03-8cbe-4200-9aa9-205b4e2182df")
 		(property "Reference" "DevLamp2"
-			(at 138.8526 164.4852 0)
+			(at 133.8648 165.6424 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20108,7 +20233,7 @@
 			)
 		)
 		(property "Value" "HBA"
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20119,7 +20244,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20130,7 +20255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 167.64 0)
+			(at 149.86 167.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20141,7 +20266,7 @@
 			)
 		)
 		(property "Description" "Lamp: one binary output, lit or dark. On a level-out pin they gain brightness and fade; on a pixel bus it carries an Address and colour."
-			(at 144.653 170.688 0)
+			(at 149.733 170.688 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20152,7 +20277,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 141.2362 165.616 0)
+			(at 146.3162 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20164,7 +20289,7 @@
 			)
 		)
 		(property "Address" "1"
-			(at 141.2362 165.616 0)
+			(at 146.3162 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20176,7 +20301,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 141.2362 165.616 0)
+			(at 146.3162 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20188,7 +20313,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 141.2362 165.616 0)
+			(at 146.3162 165.616 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20223,7 +20348,7 @@
 		(dnp no)
 		(uuid "a9f1a30d-5f6e-4050-8c07-98d376b4ac41")
 		(property "Reference" "TC3"
-			(at 119.38 69.22 0)
+			(at 119.38 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20333,7 +20458,7 @@
 		(dnp no)
 		(uuid "b6870b4a-04dc-46eb-a9a6-8550d5fa377f")
 		(property "Reference" "TC2"
-			(at 116.84 52.71 0)
+			(at 116.84 52.705 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20433,7 +20558,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 63.5 156.21 0)
+		(at 59.69 156.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20444,7 +20569,7 @@
 		(fields_autoplaced yes)
 		(uuid "bae79020-a1fc-4de7-b95a-50ce27f64e6d")
 		(property "Reference" "DevTC2"
-			(at 57.6648 154.2124 0)
+			(at 53.8548 154.2124 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20455,7 +20580,7 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 63.5 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20466,7 +20591,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20477,7 +20602,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20488,7 +20613,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 156.21 0)
+			(at 59.69 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20499,7 +20624,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 59.9562 154.186 0)
+			(at 56.1462 154.186 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20511,7 +20636,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 53.086 154.305 0)
+			(at 49.276 154.305 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20523,7 +20648,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 59.9562 154.186 0)
+			(at 56.1462 154.186 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20535,7 +20660,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 59.9562 154.186 0)
+			(at 56.1462 154.186 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20661,7 +20786,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Cast-Head-RGB")
-		(at 144.78 130.81 0)
+		(at 149.86 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20672,7 +20797,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd20efd9-3a70-403f-869c-70f9c1091352")
 		(property "Reference" "Cast1"
-			(at 142.24 127 0)
+			(at 138.43 126.111 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20683,7 +20808,7 @@
 			)
 		)
 		(property "Value" ""
-			(at 144.78 130.81 0)
+			(at 149.86 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20694,7 +20819,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 130.81 0)
+			(at 149.86 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20705,7 +20830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 130.81 0)
+			(at 149.86 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20716,7 +20841,7 @@
 			)
 		)
 		(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
-			(at 144.78 135.89 0)
+			(at 149.86 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20727,7 +20852,7 @@
 			)
 		)
 		(property "Role" "CAST"
-			(at 133.35 125.349 0)
+			(at 138.43 125.349 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20738,7 +20863,7 @@
 			)
 		)
 		(property "Style" "CL"
-			(at 128.397 131.826 0)
+			(at 133.477 131.826 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -20749,7 +20874,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 128.397 129.794 0)
+			(at 133.477 129.794 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -20760,7 +20885,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 116.332 130.81 0)
+			(at 121.412 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20771,7 +20896,7 @@
 			)
 		)
 		(property "Pin.R" "binary"
-			(at 150.368 133.35 0)
+			(at 155.448 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20782,7 +20907,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at 150.368 130.81 0)
+			(at 155.448 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20793,7 +20918,7 @@
 			)
 		)
 		(property "Pin.B" "binary"
-			(at 150.368 128.27 0)
+			(at 155.448 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -20826,7 +20951,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-Servo")
-		(at 186.69 140.97 0)
+		(at 207.01 140.97 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20837,7 +20962,8 @@
 		(fields_autoplaced yes)
 		(uuid "d0e5b29e-5bd8-4c20-9772-7479fa675ae9")
 		(property "Reference" "Exp3"
-			(at 196.088 140.843 0)
+			(at 223.012 140.589 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -20848,7 +20974,7 @@
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 196.215 143.51 0)
+			(at 216.535 143.51 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -20859,7 +20985,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 140.97 0)
+			(at 207.01 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20870,7 +20996,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 140.97 0)
+			(at 207.01 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20881,7 +21007,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a servo driver: sixteen position-out pins at 50 Hz, pulse min_us to max_us. A lamp on it is refused."
-			(at 206.756 136.017 0)
+			(at 227.076 136.017 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20892,7 +21018,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20903,7 +21029,7 @@
 			)
 		)
 		(property "Address" "0x27"
-			(at 198.12 144.78 0)
+			(at 218.44 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20914,17 +21040,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 198.374 142.24 0)
+			(at 216.535 144.399 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "min_us" ""
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20935,7 +21061,7 @@
 			)
 		)
 		(property "max_us" ""
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20946,7 +21072,7 @@
 			)
 		)
 		(property "Pin.A1" "position"
-			(at 181.61 137.922 0)
+			(at 201.93 137.922 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20957,7 +21083,7 @@
 			)
 		)
 		(property "Pin.A2" "position"
-			(at 181.61 137.922 0)
+			(at 201.93 137.922 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20968,7 +21094,7 @@
 			)
 		)
 		(property "Pin.A3" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20979,7 +21105,7 @@
 			)
 		)
 		(property "Pin.A4" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20990,7 +21116,7 @@
 			)
 		)
 		(property "Pin.A5" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21001,7 +21127,7 @@
 			)
 		)
 		(property "Pin.A6" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21012,7 +21138,7 @@
 			)
 		)
 		(property "Pin.A7" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21023,7 +21149,7 @@
 			)
 		)
 		(property "Pin.A8" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21034,7 +21160,7 @@
 			)
 		)
 		(property "Pin.B1" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21045,7 +21171,7 @@
 			)
 		)
 		(property "Pin.B2" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21056,7 +21182,7 @@
 			)
 		)
 		(property "Pin.B3" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21067,7 +21193,7 @@
 			)
 		)
 		(property "Pin.B4" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21078,7 +21204,7 @@
 			)
 		)
 		(property "Pin.B5" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21089,7 +21215,7 @@
 			)
 		)
 		(property "Pin.B6" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21100,7 +21226,7 @@
 			)
 		)
 		(property "Pin.B7" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21111,7 +21237,7 @@
 			)
 		)
 		(property "Pin.B8" "position"
-			(at 181.61 138.43 0)
+			(at 201.93 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21183,7 +21309,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Lock")
-		(at 66.04 123.19 0)
+		(at 62.23 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21193,7 +21319,7 @@
 		(dnp no)
 		(uuid "d8bccc0b-87a2-4657-94ef-657ef5092bbb")
 		(property "Reference" "LK2"
-			(at 66.04 127.635 0)
+			(at 62.23 127.635 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21204,7 +21330,7 @@
 			)
 		)
 		(property "Value" "835"
-			(at 66.05 121.4167 0)
+			(at 62.24 121.4167 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -21214,7 +21340,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 123.19 0)
+			(at 62.23 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21225,7 +21351,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 123.19 0)
+			(at 62.23 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21236,7 +21362,7 @@
 			)
 		)
 		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
-			(at 68.58 132.715 0)
+			(at 64.77 132.715 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21247,7 +21373,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21258,7 +21384,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21269,7 +21395,7 @@
 			)
 		)
 		(property "Style" "lock"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21280,7 +21406,7 @@
 			)
 		)
 		(property "Invert" "WLK"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21291,7 +21417,7 @@
 			)
 		)
 		(property "Pin.WLQ" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21302,7 +21428,7 @@
 			)
 		)
 		(property "Pin.WLQK" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21313,7 +21439,7 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
-			(at 65.405 116.84 0)
+			(at 61.595 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21557,7 +21683,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-Lamp")
-		(at 144.78 165.1 0)
+		(at 149.86 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21568,7 +21694,7 @@
 		(fields_autoplaced yes)
 		(uuid "e7118b80-a092-4d7b-bcdf-c952d066b118")
 		(property "Reference" "DevLamp1"
-			(at 138.9448 163.1024 0)
+			(at 133.8648 163.1024 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21579,7 +21705,7 @@
 			)
 		)
 		(property "Value" "MC1"
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21590,7 +21716,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21601,7 +21727,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21612,7 +21738,7 @@
 			)
 		)
 		(property "Description" "Lamp: one binary output, lit or dark. On a level-out pin they gain brightness and fade; on a pixel bus it carries an Address and colour."
-			(at 144.653 168.148 0)
+			(at 149.733 168.148 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21623,7 +21749,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 141.2362 163.076 0)
+			(at 146.3162 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21635,7 +21761,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 141.2362 163.076 0)
+			(at 146.3162 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21647,7 +21773,7 @@
 			)
 		)
 		(property "Address" "1"
-			(at 141.2362 163.076 0)
+			(at 146.3162 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21659,7 +21785,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 141.2362 163.076 0)
+			(at 146.3162 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21684,7 +21810,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Mast")
-		(at 120.65 139.7 0)
+		(at 125.73 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21695,7 +21821,7 @@
 		(fields_autoplaced yes)
 		(uuid "ec02ba44-5c2a-4e65-972e-c2d0414406e0")
 		(property "Reference" "DevMast1"
-			(at 118.11 135.89 0)
+			(at 125.73 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21706,7 +21832,7 @@
 			)
 		)
 		(property "Value" "836NAB"
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21717,7 +21843,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21728,7 +21854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21739,7 +21865,7 @@
 			)
 		)
 		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
-			(at 120.65 144.78 0)
+			(at 125.73 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21750,7 +21876,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21761,7 +21887,7 @@
 			)
 		)
 		(property "Appliance" "mast"
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21772,7 +21898,7 @@
 			)
 		)
 		(property "Pin.IND" "indication"
-			(at 120.65 139.7 0)
+			(at 125.73 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21796,7 +21922,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-GPIO-Pixel")
-		(at 144.78 165.1 0)
+		(at 149.86 165.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21807,7 +21933,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed46dd7c-9bf2-492d-af80-05601feb9771")
 		(property "Reference" "GPIO2"
-			(at 148.8386 162.9674 0)
+			(at 153.9186 162.9674 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21818,7 +21944,7 @@
 			)
 		)
 		(property "Value" "${Address}"
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21829,7 +21955,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21840,7 +21966,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21851,7 +21977,7 @@
 			)
 		)
 		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Address = the board core's pin name."
-			(at 145.542 169.164 0)
+			(at 150.622 169.164 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21862,7 +21988,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 151.13 162.941 0)
+			(at 156.21 162.941 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21874,7 +22000,7 @@
 			)
 		)
 		(property "IC" "GPIO"
-			(at 151.13 162.941 0)
+			(at 156.21 162.941 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21886,7 +22012,7 @@
 			)
 		)
 		(property "Pin.D" "color"
-			(at 151.13 162.941 0)
+			(at 156.21 162.941 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -21898,7 +22024,7 @@
 			)
 		)
 		(property "Address" "D2"
-			(at 144.78 165.1 0)
+			(at 149.86 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21911,6 +22037,9 @@
 		(pin "1"
 			(uuid "bdc34544-39e0-4113-bbb6-6998148421fa")
 		)
+		(pin "2"
+			(uuid "1f9e708b-d4b5-438a-a10d-651497311d35")
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
@@ -21922,7 +22051,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-PCA9685-Servo")
-		(at 186.69 130.81 0)
+		(at 207.01 130.81 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21933,7 +22062,8 @@
 		(fields_autoplaced yes)
 		(uuid "f90d286b-4309-42ca-bfb1-ee7f7f514c5d")
 		(property "Reference" "Exp3"
-			(at 196.088 130.683 0)
+			(at 223.012 130.429 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -21944,7 +22074,7 @@
 			)
 		)
 		(property "Value" "${ADDRESS}"
-			(at 196.215 133.35 0)
+			(at 216.535 133.35 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -21955,7 +22085,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 130.81 0)
+			(at 207.01 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21966,7 +22096,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 130.81 0)
+			(at 207.01 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21977,7 +22107,7 @@
 			)
 		)
 		(property "Description" "PCA9685 as a servo driver: sixteen position-out pins at 50 Hz, pulse min_us to max_us. A lamp on it is refused."
-			(at 206.756 125.857 0)
+			(at 227.076 125.857 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21988,7 +22118,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21999,7 +22129,7 @@
 			)
 		)
 		(property "Address" "0x27"
-			(at 198.12 134.62 0)
+			(at 218.44 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22010,17 +22140,17 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 198.374 132.08 0)
+			(at 216.535 134.239 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "min_us" ""
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22031,7 +22161,7 @@
 			)
 		)
 		(property "max_us" ""
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22042,7 +22172,7 @@
 			)
 		)
 		(property "Pin.A1" "position"
-			(at 181.61 127.762 0)
+			(at 201.93 127.762 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22053,7 +22183,7 @@
 			)
 		)
 		(property "Pin.A2" "position"
-			(at 181.61 127.762 0)
+			(at 201.93 127.762 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22064,7 +22194,7 @@
 			)
 		)
 		(property "Pin.A3" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22075,7 +22205,7 @@
 			)
 		)
 		(property "Pin.A4" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22086,7 +22216,7 @@
 			)
 		)
 		(property "Pin.A5" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22097,7 +22227,7 @@
 			)
 		)
 		(property "Pin.A6" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22108,7 +22238,7 @@
 			)
 		)
 		(property "Pin.A7" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22119,7 +22249,7 @@
 			)
 		)
 		(property "Pin.A8" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22130,7 +22260,7 @@
 			)
 		)
 		(property "Pin.B1" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22141,7 +22271,7 @@
 			)
 		)
 		(property "Pin.B2" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22152,7 +22282,7 @@
 			)
 		)
 		(property "Pin.B3" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22163,7 +22293,7 @@
 			)
 		)
 		(property "Pin.B4" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22174,7 +22304,7 @@
 			)
 		)
 		(property "Pin.B5" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22185,7 +22315,7 @@
 			)
 		)
 		(property "Pin.B6" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22196,7 +22326,7 @@
 			)
 		)
 		(property "Pin.B7" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22207,7 +22337,7 @@
 			)
 		)
 		(property "Pin.B8" "position"
-			(at 181.61 128.27 0)
+			(at 201.93 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22278,8 +22408,8 @@
 		)
 	)
 	(sheet
-		(at 226.06 164.86)
-		(size 40.21 6.59)
+		(at 125.73 17.78)
+		(size 33.02 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22293,7 +22423,7 @@
 		)
 		(uuid "3b382d23-5313-5c7e-a2ee-6b234006a75a")
 		(property "Sheetname" "Panel"
-			(at 227.33 167.132 0)
+			(at 127 20.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22304,18 +22434,18 @@
 			)
 		)
 		(property "Sheetfile" "Sargent-Panel.kicad_sch"
-			(at 227.584 168.148 0)
+			(at 127.254 21.068 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 				(justify left top)
 			)
 		)
-		(pin "I2C" bidirectional
-			(at 266.27 167.4 0)
+		(pin "IOBus" bidirectional
+			(at 158.75 20.32 0)
 			(uuid "bc0d0c30-74d7-431f-8e60-8828b994923b")
 			(effects
 				(font

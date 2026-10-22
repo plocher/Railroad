@@ -44,8 +44,8 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at -7.239 0 0)
+			(property "Value" "Luchessa"
+				(at 1.27 1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -78,7 +78,7 @@
 				)
 			)
 			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-				(at 1.27 -3.81 0)
+				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -123,8 +123,8 @@
 			)
 			(symbol "Processor_0_1"
 				(rectangle
-					(start -17.018 2.54)
-					(end 17.018 -2.54)
+					(start -16.51 2.54)
+					(end 16.51 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -135,41 +135,52 @@
 				)
 			)
 			(symbol "Processor_1_1"
+				(text "${Board}"
+					(at -15.24 -1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify left)
+					)
+				)
 				(text "Processor:"
-					(at -12.7 1.27 0)
+					(at -11.049 1.397 0)
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(text "IO_Bus"
-					(at -10.16 -1.27 0)
+				(text "Local"
+					(at -6.35 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "Host"
+					(at 12.7 1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
+						(justify left)
 					)
 				)
-				(text "Host"
+				(text "IO_Bus"
 					(at 12.7 -1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
 						)
-					)
-				)
-				(text "${Board}"
-					(at 16.51 1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify right)
+						(justify left)
 					)
 				)
 				(pin passive line
-					(at 12.7 -5.08 90)
+					(at 19.05 1.27 180)
 					(length 2.54)
 					(name "Host"
 						(effects
@@ -187,7 +198,7 @@
 					)
 				)
 				(pin passive line
-					(at -10.16 -5.08 90)
+					(at 19.05 -1.27 180)
 					(length 2.54)
 					(name "IO_Bus"
 						(effects
@@ -2843,7 +2854,7 @@
 		(dnp no)
 		(uuid "8ca5286e-c27c-434a-b6c8-5786bb5cb8b1")
 		(property "Reference" "Transport2005"
-			(at 180.975 45.085 0)
+			(at 173.99 45.085 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3219,7 +3230,7 @@
 			)
 		)
 		(property "Value" "JohnCTC"
-			(at 145.161 21.59 0)
+			(at 153.67 20.32 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3252,7 +3263,7 @@
 			)
 		)
 		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
-			(at 153.67 25.4 0)
+			(at 153.67 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3435,7 +3446,7 @@
 		(dnp no)
 		(uuid "eab062f5-dd3b-48d1-acf3-5eaf9096e42b")
 		(property "Reference" "Transport2007"
-			(at 88.9 43.18 0)
+			(at 85.725 41.275 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
