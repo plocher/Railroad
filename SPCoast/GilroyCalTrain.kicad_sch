@@ -2034,7 +2034,7 @@
 					(justify right)
 				)
 			)
-			(property "Board" ""
+			(property "NodeType" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2099,7 +2099,7 @@
 						(justify left)
 					)
 				)
-				(text "${Board} UA:${Address}"
+				(text "${NodeType} UA:${Address}"
 					(at -15.24 -1.27 0)
 					(effects
 						(font
@@ -2499,6 +2499,212 @@
 					(at 6.35 0 180)
 					(length 0)
 					(name "R"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Trackplan:House"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "HOUSE"
+				(at -0.889 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "${CP Name}"
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -15.24 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "CONTROL_POINT"
+				(at -13.335 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "House_0_1"
+				(polyline
+					(pts
+						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy 5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "House_1_1"
+				(text "Codeline"
+					(at 0 4.064 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(text "MCall"
+					(at 0 -0.762 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "MC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 0)
+					(length 0)
+					(name "Codeline"
 						(effects
 							(font
 								(size 0 0)
@@ -3013,7 +3219,7 @@
 				(pin free line
 					(at 17.78 1.27 180)
 					(length 1.27)
-					(name "Host"
+					(name "Processor"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3024,211 +3230,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Trackplan:MAIN HOUSE"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "HOUSE"
-				(at -0.889 -4.318 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "${CP Name}"
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Milepost" ""
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "STRUCTURE"
-				(at -15.24 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "CONTROL_POINT"
-				(at -13.335 0.508 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "CP Name" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MAIN HOUSE_0_1"
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy 5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MAIN HOUSE_1_1"
-				(text "Codeline"
-					(at 0 4.064 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(text "MCall"
-					(at 0 -0.762 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "H"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 0)
-					(length 0)
-					(name "Codeline"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -6255,7 +6256,7 @@
 		)
 		(uuid "02d13ba6-e255-4759-b455-b27fe622d0e9")
 	)
-	(hierarchical_label "Host"
+	(hierarchical_label "Processor"
 		(shape bidirectional)
 		(at 80.01 31.75 0)
 		(effects
@@ -6299,7 +6300,7 @@
 		)
 		(uuid "d658b27f-5ed8-4b70-9740-9940ecb266f4")
 	)
-	(hierarchical_label "OfficeIOBus"
+	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
 		(at 80.01 20.32 0)
 		(effects
@@ -6500,7 +6501,7 @@
 				(justify left)
 			)
 		)
-		(property "Board" "C"
+		(property "NodeType" "C"
 			(at 52.07 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -14977,7 +14978,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:MAIN HOUSE")
+		(lib_id "Railroad-Trackplan:House")
 		(at 69.85 44.45 0)
 		(unit 1)
 		(body_style 1)
@@ -19229,7 +19230,7 @@
 				(justify left top)
 			)
 		)
-		(pin "IOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 68.58 20.32 0)
 			(uuid "2088719e-2295-4326-8d6f-726dc7f17e5e")
 			(effects

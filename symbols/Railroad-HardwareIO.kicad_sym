@@ -6025,7 +6025,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 7.6322 3.675 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6233,7 +6233,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 7.6322 3.675 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6440,7 +6440,7 @@
 				)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 8.001 2.921 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6646,7 +6646,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 7.5052 2.024 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6854,7 +6854,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 7.6322 3.675 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7167,7 +7167,7 @@
 					(justify left)
 				)
 			)
-			(text "Host"
+			(text "Processor"
 				(at 12.7 1.27 0)
 				(effects
 					(font
@@ -7176,7 +7176,7 @@
 					(justify left)
 				)
 			)
-			(text "IO_Bus"
+			(text "IOBus"
 				(at 12.7 -1.27 0)
 				(effects
 					(font
@@ -7188,7 +7188,7 @@
 			(pin passive line
 				(at 19.05 1.27 180)
 				(length 2.54)
-				(name "Host"
+				(name "Processor"
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -7206,7 +7206,7 @@
 			(pin passive line
 				(at 19.05 -1.27 180)
 				(length 2.54)
-				(name "IO_Bus"
+				(name "IOBus"
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -7326,7 +7326,7 @@
 				(justify right)
 			)
 		)
-		(property "Board" ""
+		(property "NodeType" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7391,7 +7391,7 @@
 					(justify left)
 				)
 			)
-			(text "${Board} UA:${Address}"
+			(text "${NodeType} UA:${Address}"
 				(at -15.24 -1.27 0)
 				(effects
 					(font

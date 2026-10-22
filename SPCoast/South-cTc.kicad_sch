@@ -161,7 +161,7 @@
 						(justify left)
 					)
 				)
-				(text "Host"
+				(text "Processor"
 					(at 12.7 1.27 0)
 					(effects
 						(font
@@ -170,7 +170,7 @@
 						(justify left)
 					)
 				)
-				(text "IO_Bus"
+				(text "IOBus"
 					(at 12.7 -1.27 0)
 					(effects
 						(font
@@ -182,7 +182,7 @@
 				(pin passive line
 					(at 19.05 1.27 180)
 					(length 2.54)
-					(name "Host"
+					(name "Processor"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -200,7 +200,7 @@
 				(pin passive line
 					(at 19.05 -1.27 180)
 					(length 2.54)
-					(name "IO_Bus"
+					(name "IOBus"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -943,6 +943,7 @@
 			)
 			(embedded_fonts no)
 		)
+
 		(symbol "Railroad-Office:Codeline-Transport-TimeCode"
 			(pin_numbers
 				(hide yes)
@@ -967,7 +968,7 @@
 					)
 				)
 			)
-			(property "Value" "Time Coded"
+			(property "Value" "TimeCode"
 				(at -8.89 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1182,7 +1183,7 @@
 					)
 				)
 			)
-			(property "Type" "US&S506"
+			(property "Style" "US&S"
 				(at -14.859 -4.064 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1316,7 +1317,7 @@
 				(pin free line
 					(at -21.59 0 0)
 					(length 1.27)
-					(name "Host"
+					(name "Processor"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1333,8 +1334,7 @@
 				)
 			)
 			(embedded_fonts no)
-		)
-	)
+		)	)
 	(rectangle
 		(start 172.72 111.76)
 		(end 182.88 125.73)
@@ -1957,7 +1957,7 @@
 		)
 		(uuid "e9c0059e-7f2c-43bf-8dbc-9863677248d7")
 	)
-	(global_label "TIMECODE"
+	(global_label "TimeCode"
 		(shape input)
 		(at 171.45 63.5 270)
 		(fields_autoplaced yes)
@@ -2245,7 +2245,7 @@
 			)
 		)
 	)
-	(global_label "TIMECODE"
+	(global_label "TimeCode"
 		(shape input)
 		(at 97.79 106.68 90)
 		(fields_autoplaced yes)
@@ -2482,7 +2482,7 @@
 				)
 			)
 		)
-		(property "Type" "US&S506"
+		(property "Style" "US&S"
 			(at 171.831 38.354 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -2572,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Value" "Time Coded"
+		(property "Value" "TimeCode"
 			(at 177.8 45.72 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -3438,7 +3438,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 205.74 111.76 90)
 			(uuid "4afbad62-e8dd-426c-9719-0bfe7f33edf3")
 			(effects
@@ -3458,7 +3458,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 196.85 111.76 90)
 			(uuid "270da263-9be6-4deb-9557-06bd4fd6d78e")
 			(effects
@@ -3523,7 +3523,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 148.59 111.76 90)
 			(uuid "27c39e3a-4175-4776-ad41-e88d5b3dc952")
 			(effects
@@ -3543,7 +3543,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 139.7 111.76 90)
 			(uuid "a2da8ce4-afc4-4b84-ae38-194b7a021923")
 			(effects
@@ -3608,7 +3608,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 34.29 111.76 90)
 			(uuid "07f4438c-d2e9-42de-b040-a166e6fa8379")
 			(effects
@@ -3628,7 +3628,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 25.4 111.76 90)
 			(uuid "59dc46af-1ada-4b5b-92bf-5c6f0abbf9bc")
 			(effects
@@ -3693,7 +3693,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 121.92 111.76 90)
 			(uuid "bf75925b-20ab-4779-ae4e-b35d6b3a665c")
 			(effects
@@ -3713,7 +3713,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 111.76 111.76 90)
 			(uuid "859b9c03-6eb1-49f1-b938-a8f1e469091a")
 			(effects
@@ -3768,7 +3768,7 @@
 				(justify left top)
 			)
 		)
-		(pin "Codeline" input
+		(pin "Codeline" bidirectional
 			(at 97.79 111.76 90)
 			(uuid "54d4d625-c4d3-4cc0-8f2a-f3ddbf067425")
 			(effects
@@ -3778,7 +3778,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 83.82 111.76 90)
 			(uuid "dfc9a9db-b3a0-41c5-a335-74453cca59e8")
 			(effects
@@ -3788,7 +3788,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 92.71 111.76 90)
 			(uuid "9edb8b49-d249-4028-8e90-adb50814f276")
 			(effects
@@ -3863,7 +3863,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 63.5 111.76 90)
 			(uuid "1690244e-e590-40f2-85a6-e39a77cde3e6")
 			(effects
@@ -3883,7 +3883,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 54.61 111.76 90)
 			(uuid "90bc45b3-4eb7-4455-8327-286f5db9b1a9")
 			(effects
@@ -3948,7 +3948,7 @@
 				(justify right)
 			)
 		)
-		(pin "Host" bidirectional
+		(pin "Processor" bidirectional
 			(at 177.8 111.76 90)
 			(uuid "a79f75ba-d407-4100-b21f-a2758fd5aac7")
 			(effects
@@ -3968,7 +3968,7 @@
 				(justify right)
 			)
 		)
-		(pin "OfficeIOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 168.91 111.76 90)
 			(uuid "6acc9486-922e-486a-8982-57984b288f6c")
 			(effects

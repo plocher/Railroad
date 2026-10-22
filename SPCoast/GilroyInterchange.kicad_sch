@@ -1698,7 +1698,7 @@
 					(justify left)
 				)
 			)
-			(property "IC" "MQTT"
+			(property "IC" "MQTT-JMRI"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1906,7 +1906,7 @@
 					(justify left)
 				)
 			)
-			(property "IC" "MQTT"
+			(property "IC" "MQTT-JMRI"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2113,7 +2113,7 @@
 					)
 				)
 			)
-			(property "IC" "MQTT"
+			(property "IC" "MQTT-JMRI"
 				(at 8.001 2.921 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2319,7 +2319,7 @@
 					(justify left)
 				)
 			)
-			(property "IC" "MQTT"
+			(property "IC" "MQTT-JMRI"
 				(at 7.5052 2.024 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2527,7 +2527,7 @@
 					(justify left)
 				)
 			)
-			(property "IC" "MQTT"
+			(property "IC" "MQTT-JMRI"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2840,7 +2840,7 @@
 						(justify left)
 					)
 				)
-				(text "Host"
+				(text "Processor"
 					(at 12.7 1.27 0)
 					(effects
 						(font
@@ -2849,7 +2849,7 @@
 						(justify left)
 					)
 				)
-				(text "IO_Bus"
+				(text "IOBus"
 					(at 12.7 -1.27 0)
 					(effects
 						(font
@@ -2861,7 +2861,7 @@
 				(pin passive line
 					(at 19.05 1.27 180)
 					(length 2.54)
-					(name "Host"
+					(name "Processor"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -2879,7 +2879,7 @@
 				(pin passive line
 					(at 19.05 -1.27 180)
 					(length 2.54)
-					(name "IO_Bus"
+					(name "IOBus"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -3395,6 +3395,212 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Trackplan:House"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "HOUSE"
+				(at -0.889 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "${CP Name}"
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -15.24 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "CONTROL_POINT"
+				(at -13.335 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "CP Name" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "House_0_1"
+				(polyline
+					(pts
+						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy 5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "House_1_1"
+				(text "Codeline"
+					(at 0 4.064 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(text "MCall"
+					(at 0 -0.762 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(hide yes)
+					(name "MC"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 0)
+					(length 0)
+					(name "Codeline"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Trackplan:IRJ"
 			(pin_numbers
 				(hide yes)
@@ -3892,7 +4098,7 @@
 				(pin free line
 					(at 17.78 1.27 180)
 					(length 1.27)
-					(name "Host"
+					(name "Processor"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3903,211 +4109,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Trackplan:MAIN HOUSE"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "HOUSE"
-				(at -0.889 -4.318 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "${CP Name}"
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Milepost" ""
-				(at 0 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "STRUCTURE"
-				(at -15.24 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "CONTROL_POINT"
-				(at -13.335 0.508 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "CP Name" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MAIN HOUSE_0_1"
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy 5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MAIN HOUSE_1_1"
-				(text "Codeline"
-					(at 0 4.064 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(text "MCall"
-					(at 0 -0.762 0)
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "H"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 0)
-					(length 0)
-					(name "Codeline"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
 							)
 						)
 					)
@@ -7151,7 +7152,7 @@
 		)
 		(uuid "f850c419-abec-42a3-8ffa-424ea5f29532")
 	)
-	(hierarchical_label "Host"
+	(hierarchical_label "Processor"
 		(shape bidirectional)
 		(at 109.22 33.02 0)
 		(effects
@@ -7162,7 +7163,7 @@
 		)
 		(uuid "0d62ab8c-f1ef-4aa4-a156-67353631456b")
 	)
-	(hierarchical_label "Host"
+	(hierarchical_label "Processor"
 		(shape bidirectional)
 		(at 152.4 104.14 0)
 		(effects
@@ -7184,7 +7185,7 @@
 		)
 		(uuid "5e9a6908-0bd4-41ae-87d5-35d808480ea6")
 	)
-	(hierarchical_label "OfficeIOBus"
+	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
 		(at 109.22 26.67 0)
 		(effects
@@ -7402,7 +7403,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 171.585 0)
 			(hide yes)
 			(show_name no)
@@ -8388,7 +8389,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 125.865 0)
 			(hide yes)
 			(show_name no)
@@ -8532,7 +8533,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 139.835 0)
 			(hide yes)
 			(show_name no)
@@ -8661,7 +8662,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.3852 123.706 0)
 			(hide yes)
 			(show_name no)
@@ -9748,7 +9749,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 113.165 0)
 			(hide yes)
 			(show_name no)
@@ -10004,7 +10005,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 142.375 0)
 			(hide yes)
 			(show_name no)
@@ -10383,7 +10384,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 134.755 0)
 			(hide yes)
 			(show_name no)
@@ -10985,7 +10986,7 @@
 				)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.881 162.179 0)
 			(hide yes)
 			(show_name no)
@@ -11401,7 +11402,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 167.775 0)
 			(hide yes)
 			(show_name no)
@@ -11530,7 +11531,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.3852 111.006 0)
 			(hide yes)
 			(show_name no)
@@ -11898,7 +11899,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 116.975 0)
 			(hide yes)
 			(show_name no)
@@ -12258,7 +12259,7 @@
 				)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.881 154.559 0)
 			(hide yes)
 			(show_name no)
@@ -12419,7 +12420,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:MAIN HOUSE")
+		(lib_id "Railroad-Trackplan:House")
 		(at 168.91 44.45 0)
 		(unit 1)
 		(body_style 1)
@@ -13107,7 +13108,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 137.295 0)
 			(hide yes)
 			(show_name no)
@@ -14765,7 +14766,7 @@
 				(justify left)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.5122 129.675 0)
 			(hide yes)
 			(show_name no)
@@ -15558,7 +15559,7 @@
 				)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.881 158.369 0)
 			(hide yes)
 			(show_name no)
@@ -15834,7 +15835,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:MAIN HOUSE")
+		(lib_id "Railroad-Trackplan:House")
 		(at 74.93 44.45 0)
 		(unit 1)
 		(body_style 1)
@@ -16819,7 +16820,7 @@
 				)
 			)
 		)
-		(property "IC" "MQTT"
+		(property "IC" "MQTT-JMRI"
 			(at 63.881 150.749 0)
 			(hide yes)
 			(show_name no)
@@ -16904,7 +16905,7 @@
 				(justify left top)
 			)
 		)
-		(pin "IOBus" bidirectional
+		(pin "PanelIOBus" bidirectional
 			(at 91.44 26.67 0)
 			(uuid "88be624a-e7e9-4ead-a816-afea8e4fb5b5")
 			(effects
