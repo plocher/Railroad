@@ -295,7 +295,7 @@
 			)
 		)
 		(property "NodeType" "C"
-			(at -3.81 -1.27 0)
+			(at -6.35 10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -317,7 +317,7 @@
 			)
 		)
 		(property "InputBytes" ""
-			(at 0 -2.54 0)
+			(at 5.08 -1.143 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -327,7 +327,7 @@
 			)
 		)
 		(property "OutputBytes" ""
-			(at 6.35 -2.54 0)
+			(at 11.43 -1.143 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -338,8 +338,8 @@
 		)
 		(symbol "Driver-CMRInet-Node_0_1"
 			(rectangle
-				(start -8.89 3.81)
-				(end 8.89 -3.81)
+				(start -8.89 2.54)
+				(end 15.24 -2.54)
 				(stroke
 					(width 0.3048)
 					(type solid)
@@ -351,8 +351,26 @@
 			)
 		)
 		(symbol "Driver-CMRInet-Node_1_1"
+			(text "IOBus"
+				(at -8.509 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "Transport"
+				(at -8.382 1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
 			(text "Type: ${NodeType}"
-				(at -8.509 -2.54 0)
+				(at -3.429 -1.27 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -361,25 +379,16 @@
 				)
 			)
 			(text "CMRInet Node"
-				(at -8.382 2.54 0)
+				(at -2.54 1.27 0)
 				(effects
 					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(text "UA:${Address}"
-				(at -8.255 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
+						(size 0.889 0.889)
 					)
 					(justify left)
 				)
 			)
 			(text "IB["
-				(at -1.27 -2.54 0)
+				(at 3.81 -1.27 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -388,7 +397,7 @@
 				)
 			)
 			(text "]"
-				(at 1.27 -2.54 0)
+				(at 6.35 -1.27 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -396,8 +405,17 @@
 					(justify left)
 				)
 			)
+			(text "UA:${Address}"
+				(at 7.62 1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
 			(text "OB["
-				(at 5.08 -2.54 0)
+				(at 10.16 -1.27 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -405,24 +423,8 @@
 					(justify right)
 				)
 			)
-			(text "Processor"
-				(at 6.35 1.27 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(text "IOBus"
-				(at 6.35 -1.27 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
 			(text "]"
-				(at 7.62 -2.54 0)
+				(at 12.7 -1.27 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -431,9 +433,9 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 1.27 180)
-				(length 2.54)
-				(name "Processor"
+				(at -10.16 1.27 0)
+				(length 1.27)
+				(name "Transport"
 					(effects
 						(font
 							(size 0.762 0.762)
@@ -449,8 +451,8 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 -1.27 180)
-				(length 2.54)
+				(at -10.16 -1.27 0)
+				(length 1.27)
 				(name "IOBus"
 					(effects
 						(font
@@ -7328,14 +7330,13 @@
 			)
 		)
 		(property "Value" ""
-			(at 1.27 1.27 0)
+			(at 0 -1.016 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7360,7 +7361,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 1.27 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7404,6 +7405,17 @@
 				)
 			)
 		)
+		(property "Address" ""
+			(at 1.27 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Processor_1_1"
 			(rectangle
 				(start -16.51 2.54)
@@ -7416,25 +7428,8 @@
 					(type background)
 				)
 			)
-			(text "${Board}"
-				(at -15.24 -1.27 0)
-				(effects
-					(font
-						(size 0.889 0.889)
-					)
-					(justify left)
-				)
-			)
-			(text "Processor:"
-				(at -11.049 1.397 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(text "Local"
-				(at -6.35 1.27 0)
+			(text "Processor: ${Board} ${Address}"
+				(at -15.748 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)

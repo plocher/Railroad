@@ -3834,14 +3834,13 @@
 				)
 			)
 			(property "Value" ""
-				(at 1.27 1.27 0)
+				(at 0 -1.016 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -3866,7 +3865,7 @@
 					)
 				)
 			)
-			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3910,6 +3909,17 @@
 					)
 				)
 			)
+			(property "Address" ""
+				(at 1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Processor_1_1"
 				(rectangle
 					(start -16.51 2.54)
@@ -3939,7 +3949,7 @@
 						)
 					)
 				)
-				(text "Local"
+				(text "${Address}"
 					(at -6.35 1.27 0)
 					(effects
 						(font
@@ -8421,6 +8431,16 @@
 		)
 		(uuid "f40f9daa-d19a-4ebd-98f2-552027ce87ee")
 	)
+	(label "IOBus"
+		(at 100.33 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc83d35b-216d-4942-a581-c5eda737218d")
+	)
 	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
 		(at 104.14 25.4 0)
@@ -8431,16 +8451,6 @@
 			(justify left)
 		)
 		(uuid "f6dd24dc-dacc-4616-a330-be9e86dd67d9")
-	)
-	(label "IOBus"
-		(at 100.33 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fc83d35b-216d-4942-a581-c5eda737218d")
 	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
@@ -14313,14 +14323,13 @@
 			)
 		)
 		(property "Value" "Corporal"
-			(at 80.01 30.48 0)
+			(at 78.74 32.766 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -14380,6 +14389,17 @@
 		)
 		(property "Board" "cpNode-Xiao"
 			(at 78.74 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 80.01 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

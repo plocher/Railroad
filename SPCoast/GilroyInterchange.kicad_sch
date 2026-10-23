@@ -2802,14 +2802,13 @@
 				)
 			)
 			(property "Value" ""
-				(at 1.27 1.27 0)
+				(at 0 -1.016 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -2834,7 +2833,7 @@
 					)
 				)
 			)
-			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2878,6 +2877,17 @@
 					)
 				)
 			)
+			(property "Address" ""
+				(at 1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Processor_1_1"
 				(rectangle
 					(start -16.51 2.54)
@@ -2907,7 +2917,7 @@
 						)
 					)
 				)
-				(text "Local"
+				(text "${Address}"
 					(at -6.35 1.27 0)
 					(effects
 						(font
@@ -12790,14 +12800,13 @@
 			)
 		)
 		(property "Value" "Gilroy"
-			(at 38.1 30.48 0)
+			(at 36.83 32.766 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -12857,6 +12866,17 @@
 		)
 		(property "Board" "cpNode-Xiao"
 			(at 36.83 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 38.1 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

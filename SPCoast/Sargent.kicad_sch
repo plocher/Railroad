@@ -6842,14 +6842,13 @@
 				)
 			)
 			(property "Value" ""
-				(at 1.27 1.27 0)
+				(at 0 -1.016 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -6874,7 +6873,7 @@
 					)
 				)
 			)
-			(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 				(at 1.27 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6918,6 +6917,17 @@
 					)
 				)
 			)
+			(property "Address" ""
+				(at 1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Processor_1_1"
 				(rectangle
 					(start -16.51 2.54)
@@ -6947,7 +6957,7 @@
 						)
 					)
 				)
-				(text "Local"
+				(text "${Address}"
 					(at -6.35 1.27 0)
 					(effects
 						(font
@@ -11650,17 +11660,6 @@
 		)
 		(uuid "ff6dfcc0-4b5a-468e-9ce8-a4c49ec04ba6")
 	)
-	(hierarchical_label "PanelIOBus"
-		(shape bidirectional)
-		(at 68.58 20.32 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0af3d994-180b-407f-a673-11bb77430093")
-	)
 	(label "IOBus"
 		(at 171.45 165.1 0)
 		(effects
@@ -11691,17 +11690,6 @@
 		)
 		(uuid "5e7ab497-fc6d-426f-b582-885ca2dc8cc8")
 	)
-	(hierarchical_label "Codeline"
-		(shape bidirectional)
-		(at 167.64 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7795e8de-ad40-42ed-bed3-cf96f04c0c10")
-	)
 	(label "IOBus"
 		(at 229.87 128.27 0)
 		(effects
@@ -11731,6 +11719,28 @@
 			(justify left)
 		)
 		(uuid "dba686b8-87e1-43de-8775-77a70caa11cd")
+	)
+	(hierarchical_label "PanelIOBus"
+		(shape bidirectional)
+		(at 68.58 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0af3d994-180b-407f-a673-11bb77430093")
+	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 167.64 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7795e8de-ad40-42ed-bed3-cf96f04c0c10")
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Switch")
@@ -15848,14 +15858,13 @@
 			)
 		)
 		(property "Value" "Sargent"
-			(at 44.45 25.4 0)
+			(at 43.18 27.686 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15915,6 +15924,17 @@
 		)
 		(property "Board" "cpNode-Xiao"
 			(at 43.18 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at 44.45 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
