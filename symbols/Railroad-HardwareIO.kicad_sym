@@ -262,7 +262,7 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at -11.303 9.652 0)
+			(at -11.303 -4.318 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -272,8 +272,8 @@
 				)
 			)
 		)
-		(property "Transport" ""
-			(at 15.24 1.27 0)
+		(property "Transport" "CMRI"
+			(at -0.762 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -283,8 +283,8 @@
 				(justify right)
 			)
 		)
-		(property "NodeType" ""
-			(at 0 0 0)
+		(property "NodeType" "C"
+			(at -3.81 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -295,7 +295,7 @@
 			)
 		)
 		(property "Address" ""
-			(at 0 0 0)
+			(at -3.81 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -306,7 +306,7 @@
 			)
 		)
 		(property "InputBytes" ""
-			(at 3.81 -1.27 0)
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -316,7 +316,7 @@
 			)
 		)
 		(property "OutputBytes" ""
-			(at 10.16 -1.27 0)
+			(at 6.35 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -327,20 +327,30 @@
 		)
 		(symbol "Driver-CMRInet-Node_0_1"
 			(rectangle
-				(start -16.51 2.54)
-				(end 16.51 -2.54)
+				(start -8.89 3.81)
+				(end 8.89 -3.81)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 		)
 		(symbol "Driver-CMRInet-Node_1_1"
+			(text "Type: ${NodeType}"
+				(at -8.509 -2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
 			(text "Node:"
-				(at -15.24 1.27 0)
+				(at -7.62 2.54 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -348,17 +358,16 @@
 					(justify left)
 				)
 			)
-			(text "${NodeType} UA:${Address}"
-				(at -15.24 -1.27 0)
+			(text "Transport"
+				(at -6.35 0 0)
 				(effects
 					(font
-						(size 0.889 0.889)
+						(size 0.635 0.635)
 					)
-					(justify left)
 				)
 			)
-			(text "CMRInet"
-				(at -6.35 1.27 0)
+			(text "${Value}"
+				(at -2.54 2.54 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -367,7 +376,7 @@
 				)
 			)
 			(text "IB["
-				(at 2.54 -1.27 0)
+				(at -1.27 -2.54 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -375,8 +384,17 @@
 					(justify right)
 				)
 			)
+			(text "UA:${Address}"
+				(at -0.127 0 0)
+				(effects
+					(font
+						(size 0.889 0.889)
+					)
+					(justify left)
+				)
+			)
 			(text "]"
-				(at 5.08 -1.27 0)
+				(at 1.27 -2.54 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -385,7 +403,7 @@
 				)
 			)
 			(text "OB["
-				(at 8.89 -1.27 0)
+				(at 5.08 -2.54 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -394,7 +412,7 @@
 				)
 			)
 			(text "]"
-				(at 11.43 -1.27 0)
+				(at 7.62 -2.54 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -402,16 +420,8 @@
 					(justify left)
 				)
 			)
-			(text "Transport"
-				(at 12.7 0 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
 			(pin passive line
-				(at 19.05 0 180)
+				(at -11.43 0 0)
 				(length 2.54)
 				(name "Transport"
 					(effects
