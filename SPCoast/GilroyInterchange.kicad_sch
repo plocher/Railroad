@@ -87,7 +87,7 @@
 					)
 				)
 			)
-			(property "Role" "CAST"
+			(property "Role" "DEVICE"
 				(at -11.43 5.461 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -95,6 +95,17 @@
 				(effects
 					(font
 						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Appliance" "head"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -1753,7 +1764,7 @@
 					)
 				)
 			)
-			(property "Description" "JMRI MQTT sensor published by the unit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+			(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
 				(at 11.049 -5.969 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1961,7 +1972,7 @@
 					)
 				)
 			)
-			(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+			(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 				(at 11.049 -5.969 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2169,7 +2180,7 @@
 					)
 				)
 			)
-			(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the unit. Address = the JMRI mast name; empty = the mast this driver serves."
+			(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2900,25 +2911,8 @@
 						(type background)
 					)
 				)
-				(text "${Board}"
-					(at -15.24 -1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify left)
-					)
-				)
-				(text "Processor:"
-					(at -11.049 1.397 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "${Address}"
-					(at -6.35 1.27 0)
+				(text "Processor: ${Board} ${Address}"
+					(at -15.748 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -4377,6 +4371,7 @@
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7718,7 +7713,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor published by the unit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
 			(at 66.929 181.229 0)
 			(hide yes)
 			(show_name no)
@@ -7857,7 +7852,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 122.809 0)
 			(hide yes)
 			(show_name no)
@@ -7865,6 +7860,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8235,7 +8241,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 112.649 0)
 			(hide yes)
 			(show_name no)
@@ -8243,6 +8249,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8854,7 +8871,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 149.479 0)
 			(hide yes)
 			(show_name no)
@@ -9412,7 +9429,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 117.729 0)
 			(hide yes)
 			(show_name no)
@@ -9420,6 +9437,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10216,7 +10244,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 152.019 0)
 			(hide yes)
 			(show_name no)
@@ -10459,7 +10487,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 125.349 0)
 			(hide yes)
 			(show_name no)
@@ -10467,6 +10495,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -10598,7 +10637,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 144.399 0)
 			(hide yes)
 			(show_name no)
@@ -11312,7 +11351,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the unit. Address = the JMRI mast name; empty = the mast this driver serves."
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
 			(at 55.88 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -11727,7 +11766,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor published by the unit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
 			(at 66.929 177.419 0)
 			(hide yes)
 			(show_name no)
@@ -12224,7 +12263,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 126.619 0)
 			(hide yes)
 			(show_name no)
@@ -12471,7 +12510,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the unit. Address = the JMRI mast name; empty = the mast this driver serves."
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
 			(at 55.88 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -13307,7 +13346,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 110.109 0)
 			(hide yes)
 			(show_name no)
@@ -13315,6 +13354,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13446,7 +13496,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 146.939 0)
 			(hide yes)
 			(show_name no)
@@ -14332,7 +14382,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 119.38 130.429 0)
 			(hide yes)
 			(show_name no)
@@ -14340,6 +14390,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 130.81 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15000,7 +15061,7 @@
 				)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
+		(property "Role" "TRANSPORT"
 			(at 99.06 21.59 0)
 			(hide yes)
 			(show_name no)
@@ -15233,7 +15294,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the unit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
 			(at 66.929 139.319 0)
 			(hide yes)
 			(show_name no)
@@ -16027,7 +16088,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the unit. Address = the JMRI mast name; empty = the mast this driver serves."
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
 			(at 55.88 166.37 0)
 			(hide yes)
 			(show_name no)
@@ -17288,7 +17349,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the unit. Address = the JMRI mast name; empty = the mast this driver serves."
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
 			(at 55.88 158.75 0)
 			(hide yes)
 			(show_name no)

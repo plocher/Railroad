@@ -87,7 +87,7 @@
 					)
 				)
 			)
-			(property "Role" "CAST"
+			(property "Role" "DEVICE"
 				(at -11.43 4.191 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -95,6 +95,17 @@
 				(effects
 					(font
 						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Appliance" "head"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -610,7 +621,7 @@
 					)
 				)
 			)
-			(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+			(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1859,7 +1870,7 @@
 					)
 				)
 			)
-			(property "Value" "111"
+			(property "Value" ""
 				(at 0.01 1.7733 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3932,25 +3943,8 @@
 						(type background)
 					)
 				)
-				(text "${Board}"
-					(at -15.24 -1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify left)
-					)
-				)
-				(text "Processor:"
-					(at -11.049 1.397 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "${Address}"
-					(at -6.35 1.27 0)
+				(text "Processor: ${Board} ${Address}"
+					(at -15.748 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -17401,7 +17395,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 118.999 0)
 			(hide yes)
 			(show_name no)
@@ -17409,6 +17403,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17935,7 +17940,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 134.239 0)
 			(hide yes)
 			(show_name no)
@@ -17943,6 +17948,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -22828,7 +22844,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 108.839 0)
 			(hide yes)
 			(show_name no)
@@ -22836,6 +22852,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -26131,7 +26158,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 146.939 0)
 			(hide yes)
 			(show_name no)
@@ -26139,6 +26166,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -32200,7 +32238,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 113.919 0)
 			(hide yes)
 			(show_name no)
@@ -32208,6 +32246,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -38000,7 +38049,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 129.159 0)
 			(hide yes)
 			(show_name no)
@@ -38008,6 +38057,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -38150,7 +38210,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 139.319 0)
 			(hide yes)
 			(show_name no)
@@ -38158,6 +38218,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -38300,7 +38371,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 152.019 0)
 			(hide yes)
 			(show_name no)
@@ -38308,6 +38379,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -40374,7 +40456,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 124.079 0)
 			(hide yes)
 			(show_name no)
@@ -40382,6 +40464,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -45781,7 +45874,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 46.99 103.759 0)
 			(hide yes)
 			(show_name no)
@@ -45789,6 +45882,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 58.42 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

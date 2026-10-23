@@ -87,7 +87,7 @@
 					)
 				)
 			)
-			(property "Role" "CAST"
+			(property "Role" "DEVICE"
 				(at -11.43 4.191 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -95,6 +95,17 @@
 				(effects
 					(font
 						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Appliance" "head"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -610,7 +621,7 @@
 					)
 				)
 			)
-			(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+			(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3932,25 +3943,8 @@
 						(type background)
 					)
 				)
-				(text "${Board}"
-					(at -15.24 -1.27 0)
-					(effects
-						(font
-							(size 0.889 0.889)
-						)
-						(justify left)
-					)
-				)
-				(text "Processor:"
-					(at -11.049 1.397 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "${Address}"
-					(at -6.35 1.27 0)
+				(text "Processor: ${Board} ${Address}"
+					(at -15.748 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5307,6 +5301,7 @@
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -13785,7 +13780,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 145.669 0)
 			(hide yes)
 			(show_name no)
@@ -13793,6 +13788,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14490,7 +14496,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 150.749 0)
 			(hide yes)
 			(show_name no)
@@ -14498,6 +14504,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15885,7 +15902,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 125.349 0)
 			(hide yes)
 			(show_name no)
@@ -15893,6 +15910,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16482,7 +16510,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 130.429 0)
 			(hide yes)
 			(show_name no)
@@ -16490,6 +16518,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -17638,7 +17677,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 140.589 0)
 			(hide yes)
 			(show_name no)
@@ -17646,6 +17685,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -18382,7 +18432,7 @@
 				)
 			)
 		)
-		(property "Role" "CAST"
+		(property "Role" "DEVICE"
 			(at 66.04 135.509 0)
 			(hide yes)
 			(show_name no)
@@ -18390,6 +18440,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 77.47 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
