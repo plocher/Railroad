@@ -216,7 +216,7 @@
 				)
 			)
 		)
-		(property "Value" "${Transport}/UA${Address}"
+		(property "Value" "UA${Address}"
 			(at -15.24 3.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -369,12 +369,13 @@
 					(justify left)
 				)
 			)
-			(text "IOBus"
-				(at -6.35 0 0)
+			(text "UA:${Address}"
+				(at -8.255 0 0)
 				(effects
 					(font
-						(size 0.635 0.635)
+						(size 1.016 1.016)
 					)
+					(justify left)
 				)
 			)
 			(text "IB["
@@ -395,15 +396,6 @@
 					(justify left)
 				)
 			)
-			(text "UA:${Address}"
-				(at 2.54 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
 			(text "OB["
 				(at 5.08 -2.54 0)
 				(effects
@@ -411,6 +403,22 @@
 						(size 0.762 0.762)
 					)
 					(justify right)
+				)
+			)
+			(text "Processor"
+				(at 6.35 1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "IOBus"
+				(at 6.35 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
 				)
 			)
 			(text "]"
@@ -423,7 +431,25 @@
 				)
 			)
 			(pin passive line
-				(at -11.43 0 0)
+				(at 11.43 1.27 180)
+				(length 2.54)
+				(name "Processor"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 -1.27 180)
 				(length 2.54)
 				(name "IOBus"
 					(effects
@@ -432,7 +458,7 @@
 						)
 					)
 				)
-				(number "1"
+				(number "2"
 					(effects
 						(font
 							(size 0.381 0.381)
@@ -7378,20 +7404,18 @@
 				)
 			)
 		)
-		(symbol "Processor_0_1"
+		(symbol "Processor_1_1"
 			(rectangle
 				(start -16.51 2.54)
 				(end 16.51 -2.54)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "Processor_1_1"
 			(text "${Board}"
 				(at -15.24 -1.27 0)
 				(effects

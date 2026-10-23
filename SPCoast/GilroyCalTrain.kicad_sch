@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad-Field:Cast-Head-CPL"
+		(symbol "Railroad-Field:Device-Head-CPL"
 			(pin_numbers
 				(hide yes)
 			)
@@ -109,8 +109,8 @@
 					)
 				)
 			)
-			(property "Head" ""
-				(at -16.891 0 0)
+			(property "Head" "${Value}"
+				(at -17.78 0 0)
 				(show_name yes)
 				(do_not_autoplace yes)
 				(effects
@@ -164,7 +164,7 @@
 					)
 				)
 			)
-			(symbol "Cast-Head-CPL_0_1"
+			(symbol "Device-Head-CPL_0_1"
 				(rectangle
 					(start -21.59 3.81)
 					(end -2.54 -3.81)
@@ -178,55 +178,7 @@
 				)
 				(polyline
 					(pts
-						(xy -19.685 1.905) (xy -19.685 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -19.685 1.905)
-					(mid -19.05 2.168)
-					(end -18.415 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -18.415 -1.905)
-					(mid -19.05 -2.168)
-					(end -19.685 -1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -19.0493 -2.2214) (xy -19.05 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -18.415 1.905) (xy -18.415 -1.905)
+						(xy -6.985 1.905) (xy -6.985 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -237,7 +189,7 @@
 					)
 				)
 				(circle
-					(center -19.05 1.27)
+					(center -6.35 1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -248,8 +200,20 @@
 						(color 0 255 0 1)
 					)
 				)
+				(arc
+					(start -6.985 1.905)
+					(mid -6.35 2.168)
+					(end -5.715 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 0)
+					(center -6.35 0)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -260,8 +224,20 @@
 						(color 255 255 0 1)
 					)
 				)
+				(arc
+					(start -5.715 -1.905)
+					(mid -6.35 -2.168)
+					(end -6.985 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 -1.27)
+					(center -6.35 -1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -272,8 +248,32 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -6.3493 -2.2214) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 1.905) (xy -5.715 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Cast-Head-CPL_1_1"
+			(symbol "Device-Head-CPL_1_1"
 				(polyline
 					(pts
 						(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
@@ -409,7 +409,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Field:Cast-Head-CPL-Encoded"
+		(symbol "Railroad-Field:Device-Head-CPL-Encoded"
 			(pin_numbers
 				(hide yes)
 			)
@@ -499,7 +499,7 @@
 				)
 			)
 			(property "Head" ""
-				(at -16.637 0 0)
+				(at -17.526 0 0)
 				(show_name yes)
 				(do_not_autoplace yes)
 				(effects
@@ -542,7 +542,7 @@
 					)
 				)
 			)
-			(symbol "Cast-Head-CPL-Encoded_0_1"
+			(symbol "Device-Head-CPL-Encoded_0_1"
 				(rectangle
 					(start -21.59 2.54)
 					(end -2.54 -2.54)
@@ -556,55 +556,7 @@
 				)
 				(polyline
 					(pts
-						(xy -19.685 1.905) (xy -19.685 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -19.685 1.905)
-					(mid -19.05 2.168)
-					(end -18.415 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -18.415 -1.905)
-					(mid -19.05 -2.168)
-					(end -19.685 -1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -19.0493 -2.2214) (xy -19.05 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -18.415 1.905) (xy -18.415 -1.905)
+						(xy -6.985 1.905) (xy -6.985 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -615,7 +567,7 @@
 					)
 				)
 				(circle
-					(center -19.05 1.27)
+					(center -6.35 1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -626,8 +578,20 @@
 						(color 0 255 0 1)
 					)
 				)
+				(arc
+					(start -6.985 1.905)
+					(mid -6.35 2.168)
+					(end -5.715 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 0)
+					(center -6.35 0)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -638,8 +602,20 @@
 						(color 255 255 0 1)
 					)
 				)
+				(arc
+					(start -5.715 -1.905)
+					(mid -6.35 -2.168)
+					(end -6.985 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 -1.27)
+					(center -6.35 -1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -650,8 +626,32 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -6.3493 -2.2214) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 1.905) (xy -5.715 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Cast-Head-CPL-Encoded_1_1"
+			(symbol "Device-Head-CPL-Encoded_1_1"
 				(polyline
 					(pts
 						(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
@@ -1934,257 +1934,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-CMRInet-Node"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RIO"
-				(at -14.224 5.842 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "${Transport}/UA${Address}"
-				(at -15.24 3.81 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "A CMRInet node: a driver on the CMRInet bus, attached by its UA; declares its IB/OB arrays (NodeType, InputBytes, OutputBytes), checked against the bits its drivers use (ADR 0008)."
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at -11.303 -4.318 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "IC" "CMRI"
-				(at -4.445 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Transport" ""
-				(at -3.556 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(property "NodeType" "C"
-				(at -3.81 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Address" ""
-				(at -3.81 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "InputBytes" ""
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "OutputBytes" ""
-				(at 6.35 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(symbol "Driver-CMRInet-Node_0_1"
-				(rectangle
-					(start -8.89 3.81)
-					(end 8.89 -3.81)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Driver-CMRInet-Node_1_1"
-				(text "Type: ${NodeType}"
-					(at -8.509 -2.54 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(text "CMRInet Node"
-					(at -8.382 2.54 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(text "IOBus"
-					(at -6.35 0 0)
-					(effects
-						(font
-							(size 0.635 0.635)
-						)
-					)
-				)
-				(text "IB["
-					(at -1.27 -2.54 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify right)
-					)
-				)
-				(text "]"
-					(at 1.27 -2.54 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(text "UA:${Address}"
-					(at 2.54 0 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(text "OB["
-					(at 5.08 -2.54 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify right)
-					)
-				)
-				(text "]"
-					(at 7.62 -2.54 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin passive line
-					(at -11.43 0 0)
-					(length 2.54)
-					(name "IOBus"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-HardwareIO:Driver-CMRInet-OB"
 			(pin_numbers
 				(hide yes)
@@ -2823,30 +2572,6 @@
 			(symbol "House_0_1"
 				(polyline
 					(pts
-						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 5.715) (xy 5.08 1.905)
 					)
 					(stroke
@@ -2859,6 +2584,30 @@
 				)
 			)
 			(symbol "House_1_1"
+				(polyline
+					(pts
+						(xy -3.81 2.794) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.794)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
@@ -3349,20 +3098,18 @@
 					(justify left)
 				)
 			)
-			(symbol "Interlocking_0_1"
+			(symbol "Interlocking_1_1"
 				(rectangle
 					(start -16.51 2.54)
 					(end 16.51 -2.54)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
 					(at -15.24 0 0)
 					(effects
@@ -5554,6 +5301,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Gilroy Caltrain\nMP 77.1"
+		(exclude_from_sim no)
+		(at 229.108 23.114 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "8e4dcdde-3988-41ca-b1f3-cd315a3cd401")
+	)
 	(text "REVIEWER NOTE:\n\nThe actual cTc nachine is missing panel Signal Lever 774 and switch 771\nThis is an artifact that the SPCoast-SanJose ctc panel (not built) had those levers"
 		(exclude_from_sim no)
 		(at 163.83 159.004 0)
@@ -5602,6 +5361,12 @@
 		(uuid "1dea5960-b1be-457b-9783-9ac5500344f5")
 	)
 	(junction
+		(at 67.31 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23b8ab7e-e160-4e02-bb7c-d4a01436ea74")
+	)
+	(junction
 		(at 149.86 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5630,12 +5395,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3968d389-1687-47aa-8f4c-ef0f444ccf44")
-	)
-	(junction
-		(at 149.86 138.43)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a526c97-19a3-4330-8a28-b8339d5f65d2")
 	)
 	(junction
 		(at 67.31 193.04)
@@ -5997,16 +5756,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 138.43) (xy 153.67 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ce2a007-d62a-44c1-9388-3ed2270cfc2f")
-	)
-	(wire
-		(pts
 			(xy 149.86 172.72) (xy 149.86 175.26)
 		)
 		(stroke
@@ -6187,6 +5936,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 20.32) (xy 80.01 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8addf30a-d9d2-46b2-85ef-db1799418aa7")
+	)
+	(wire
+		(pts
 			(xy 200.66 74.93) (xy 212.09 74.93)
 		)
 		(stroke
@@ -6244,6 +6003,16 @@
 			(type default)
 		)
 		(uuid "9f1ac1db-70a8-42dd-8cf3-00302a5e1d54")
+	)
+	(wire
+		(pts
+			(xy 30.48 138.43) (xy 67.31 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0754914-dc26-495f-a483-937832886219")
 	)
 	(wire
 		(pts
@@ -6377,7 +6146,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 20.32) (xy 80.01 20.32)
+			(xy 68.58 25.4) (xy 80.01 25.4)
 		)
 		(stroke
 			(width 0)
@@ -6467,6 +6236,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 20.32) (xy 30.48 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa566f72-348f-41ad-8e74-2ab9a0f34728")
+	)
+	(wire
+		(pts
 			(xy 67.31 138.43) (xy 149.86 138.43)
 		)
 		(stroke
@@ -6485,6 +6264,17 @@
 		)
 		(uuid "ffe37ea3-cf41-4beb-bbea-489d980b8de5")
 	)
+	(hierarchical_label "IOBus"
+		(shape bidirectional)
+		(at 80.01 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "031d0396-00fb-4753-98c1-05da7b376dd7")
+	)
 	(hierarchical_label "Processor"
 		(shape bidirectional)
 		(at 80.01 31.75 0)
@@ -6495,17 +6285,6 @@
 			(justify left)
 		)
 		(uuid "4ca55924-8b99-42de-9f24-85b660202c82")
-	)
-	(hierarchical_label "IOBus"
-		(shape bidirectional)
-		(at 149.86 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a2d783ec-8ba5-4103-b027-b657f4f2524f")
 	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
@@ -6520,7 +6299,7 @@
 	)
 	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
-		(at 80.01 20.32 0)
+		(at 80.01 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6625,160 +6404,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
 					(reference "B3005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRInet-Node")
-		(at 165.1 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00c6d7ee-63fd-41e0-ad25-b39f2eca7f4a")
-		(property "Reference" "RIO1"
-			(at 150.876 132.588 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "${Transport}/UA${Address}"
-			(at 149.86 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "A CMRInet node: a driver on the CMRInet bus, attached by its UA; declares its IB/OB arrays (NodeType, InputBytes, OutputBytes), checked against the bits its drivers use (ADR 0008)."
-			(at 165.1 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "IODRIVER"
-			(at 153.797 142.748 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "NodeType" "C"
-			(at 161.29 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Address" "30"
-			(at 161.29 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Transport" ""
-			(at 161.544 138.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "InputBytes" "2"
-			(at 165.1 140.97 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "OutputBytes" "3"
-			(at 171.45 140.97 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IC" "CMRInet"
-			(at 160.655 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e750f67a-d682-45c6-805e-05913bc03f42")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/61cd2495-14f3-42a6-a7c2-38f34b91ee1e"
-					(reference "RIO1")
 					(unit 1)
 				)
 			)
@@ -8664,7 +8289,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL")
+		(lib_id "Railroad-Field:Device-Head-CPL")
 		(at 128.27 190.5 0)
 		(unit 1)
 		(body_style 1)
@@ -8753,7 +8378,7 @@
 			)
 		)
 		(property "Head" "E"
-			(at 111.379 190.5 0)
+			(at 110.49 190.5 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -9167,7 +8792,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL")
+		(lib_id "Railroad-Field:Device-Head-CPL")
 		(at 128.27 181.61 0)
 		(unit 1)
 		(body_style 1)
@@ -9256,7 +8881,7 @@
 			)
 		)
 		(property "Head" "D"
-			(at 111.379 181.61 0)
+			(at 110.49 181.61 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -11930,7 +11555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 128.27 152.4 0)
 		(unit 1)
 		(body_style 1)
@@ -12019,7 +11644,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 111.633 152.4 0)
+			(at 110.744 152.4 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -13043,7 +12668,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL")
+		(lib_id "Railroad-Field:Device-Head-CPL")
 		(at 128.27 172.72 0)
 		(unit 1)
 		(body_style 1)
@@ -13132,7 +12757,7 @@
 			)
 		)
 		(property "Head" "C"
-			(at 111.379 172.72 0)
+			(at 110.49 172.72 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -13976,7 +13601,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 128.27 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -14065,7 +13690,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 111.633 147.32 0)
+			(at 110.744 147.32 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -16303,7 +15928,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 128.27 165.1 0)
 		(unit 1)
 		(body_style 1)
@@ -16392,7 +16017,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 111.633 165.1 0)
+			(at 110.744 165.1 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -19003,7 +18628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 128.27 160.02 0)
 		(unit 1)
 		(body_style 1)
@@ -19092,7 +18717,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 111.633 160.02 0)
+			(at 110.744 160.02 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -19412,7 +19037,7 @@
 		)
 	)
 	(sheet
-		(at 35.56 19.05)
+		(at 35.56 24.13)
 		(size 33.02 6.35)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19427,7 +19052,7 @@
 		)
 		(uuid "8ecebbd2-e7a6-5949-8793-5f9acfb44e33")
 		(property "Sheetname" "Panel"
-			(at 36.83 21.322 0)
+			(at 36.83 26.402 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19438,7 +19063,7 @@
 			)
 		)
 		(property "Sheetfile" "GilroyCalTrain-Panel.kicad_sch"
-			(at 37.084 22.338 0)
+			(at 37.084 27.418 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19449,7 +19074,7 @@
 			)
 		)
 		(pin "PanelIOBus" bidirectional
-			(at 68.58 20.32 0)
+			(at 68.58 25.4 0)
 			(uuid "2088719e-2295-4326-8d6f-726dc7f17e5e")
 			(effects
 				(font

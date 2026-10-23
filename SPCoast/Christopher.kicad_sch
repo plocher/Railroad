@@ -20,7 +20,7 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad-Field:Cast-Head-CPL-Encoded"
+		(symbol "Railroad-Field:Device-Head-CPL-Encoded"
 			(pin_numbers
 				(hide yes)
 			)
@@ -110,7 +110,7 @@
 				)
 			)
 			(property "Head" ""
-				(at -16.637 0 0)
+				(at -17.526 0 0)
 				(show_name yes)
 				(do_not_autoplace yes)
 				(effects
@@ -153,7 +153,7 @@
 					)
 				)
 			)
-			(symbol "Cast-Head-CPL-Encoded_0_1"
+			(symbol "Device-Head-CPL-Encoded_0_1"
 				(rectangle
 					(start -21.59 2.54)
 					(end -2.54 -2.54)
@@ -167,55 +167,7 @@
 				)
 				(polyline
 					(pts
-						(xy -19.685 1.905) (xy -19.685 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -19.685 1.905)
-					(mid -19.05 2.168)
-					(end -18.415 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -18.415 -1.905)
-					(mid -19.05 -2.168)
-					(end -19.685 -1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -19.0493 -2.2214) (xy -19.05 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -18.415 1.905) (xy -18.415 -1.905)
+						(xy -6.985 1.905) (xy -6.985 -1.905)
 					)
 					(stroke
 						(width 0)
@@ -226,7 +178,7 @@
 					)
 				)
 				(circle
-					(center -19.05 1.27)
+					(center -6.35 1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -237,8 +189,20 @@
 						(color 0 255 0 1)
 					)
 				)
+				(arc
+					(start -6.985 1.905)
+					(mid -6.35 2.168)
+					(end -5.715 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 0)
+					(center -6.35 0)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -249,8 +213,20 @@
 						(color 255 255 0 1)
 					)
 				)
+				(arc
+					(start -5.715 -1.905)
+					(mid -6.35 -2.168)
+					(end -6.985 -1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center -19.05 -1.27)
+					(center -6.35 -1.27)
 					(radius 0.4033)
 					(stroke
 						(width 0.1016)
@@ -261,8 +237,32 @@
 						(color 255 0 0 1)
 					)
 				)
+				(polyline
+					(pts
+						(xy -6.3493 -2.2214) (xy -6.35 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.715 1.905) (xy -5.715 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Cast-Head-CPL-Encoded_1_1"
+			(symbol "Device-Head-CPL-Encoded_1_1"
 				(polyline
 					(pts
 						(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
@@ -3910,20 +3910,18 @@
 					)
 				)
 			)
-			(symbol "Processor_0_1"
+			(symbol "Processor_1_1"
 				(rectangle
 					(start -16.51 2.54)
 					(end 16.51 -2.54)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Processor_1_1"
 				(text "${Board}"
 					(at -15.24 -1.27 0)
 					(effects
@@ -3951,7 +3949,7 @@
 					)
 				)
 				(text "Processor"
-					(at 12.7 1.27 0)
+					(at 11.43 1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -3960,7 +3958,7 @@
 					)
 				)
 				(text "IOBus"
-					(at 12.7 -1.27 0)
+					(at 11.43 -1.27 0)
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -4455,30 +4453,6 @@
 			(symbol "House_0_1"
 				(polyline
 					(pts
-						(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 5.715) (xy -5.08 1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 5.715) (xy 5.08 1.905)
 					)
 					(stroke
@@ -4491,6 +4465,30 @@
 				)
 			)
 			(symbol "House_1_1"
+				(polyline
+					(pts
+						(xy -3.81 2.794) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.794)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.715) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(text "Codeline"
 					(at 0 4.064 0)
 					(effects
@@ -4981,20 +4979,18 @@
 					(justify left)
 				)
 			)
-			(symbol "Interlocking_0_1"
+			(symbol "Interlocking_1_1"
 				(rectangle
 					(start -16.51 2.54)
 					(end 16.51 -2.54)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Interlocking_1_1"
 				(text "Interlocking:"
 					(at -15.24 0 0)
 					(effects
@@ -7359,9 +7355,21 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "There should be a 2nd signal in this interlocking for the industry track.\nThe as-built cTc machine didn't have this lever, so the siding dwarf signals would need special field logic to be useful."
+	(text "Christopher\nMP 81.6"
 		(exclude_from_sim no)
-		(at 175.26 31.242 0)
+		(at 228.854 22.352 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "0c520d63-17b1-486c-9bda-d39a4be05671")
+	)
+	(text "There should be a 2nd signal in this\ninterlocking for the industry track.\n\nThe as-built cTc machine didn't have this lever, \nso the (missing) siding dwarf signals would need\nspecial field logic to be useful."
+		(exclude_from_sim no)
+		(at 208.788 113.538 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7447,12 +7455,6 @@
 		(color 0 0 0 0)
 		(uuid "fbb70235-f4fc-4975-9f04-ef4b001defc3")
 	)
-	(junction
-		(at 74.93 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd6c7d3b-de4b-49c2-aa47-344921004910")
-	)
 	(no_connect
 		(at 233.68 152.4)
 		(uuid "0f299240-3888-4692-a843-dd533bf9b648")
@@ -7522,16 +7524,6 @@
 			(type default)
 		)
 		(uuid "12625712-0ff7-4851-a6d6-fd3cd8a2ba6e")
-	)
-	(wire
-		(pts
-			(xy 74.93 31.75) (xy 86.36 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1567d62d-8bb3-45b0-8684-ef33e8ad3545")
 	)
 	(wire
 		(pts
@@ -7840,17 +7832,6 @@
 			(justify left)
 		)
 		(uuid "e7b62b60-7989-41ae-b60f-c14a06919288")
-	)
-	(hierarchical_label "Processor"
-		(shape bidirectional)
-		(at 86.36 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ef98ce94-c605-4a7b-8d8c-a9244086d33a")
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-Switch")
@@ -9041,7 +9022,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 156.21 0)
 		(unit 1)
 		(body_style 1)
@@ -9129,7 +9110,7 @@
 			)
 		)
 		(property "Head" "C"
-			(at 48.133 156.21 0)
+			(at 47.244 156.21 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -10378,7 +10359,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -10466,7 +10447,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 48.133 146.05 0)
+			(at 47.244 146.05 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -11113,6 +11094,7 @@
 		(uuid "4201e053-4ae4-4d17-ae02-56809761b8f5")
 		(property "Reference" "MC9001"
 			(at 73.66 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -11165,7 +11147,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 73.66 49.53 0)
+			(at 72.39 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11176,7 +11158,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 73.66 49.53 0)
+			(at 69.85 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11187,7 +11169,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 73.66 49.53 0)
+			(at 74.93 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13719,6 +13701,7 @@
 		(uuid "67d977cc-adb4-44da-9583-bfc78cb5043f")
 		(property "Reference" "MC9002"
 			(at 196.85 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13771,7 +13754,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 196.85 49.53 0)
+			(at 195.58 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13782,7 +13765,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 196.85 49.53 0)
+			(at 193.04 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13793,7 +13776,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 196.85 49.53 0)
+			(at 198.12 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14808,7 +14791,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 140.97 0)
 		(unit 1)
 		(body_style 1)
@@ -14896,7 +14879,7 @@
 			)
 		)
 		(property "Head" "C"
-			(at 48.133 140.97 0)
+			(at 47.244 140.97 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -15375,7 +15358,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -15463,7 +15446,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 48.133 151.13 0)
+			(at 47.244 151.13 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -22174,7 +22157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 135.89 0)
 		(unit 1)
 		(body_style 1)
@@ -22262,7 +22245,7 @@
 			)
 		)
 		(property "Head" "B"
-			(at 48.133 135.89 0)
+			(at 47.244 135.89 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -23675,7 +23658,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Cast-Head-CPL-Encoded")
+		(lib_id "Railroad-Field:Device-Head-CPL-Encoded")
 		(at 64.77 130.81 0)
 		(unit 1)
 		(body_style 1)
@@ -23763,7 +23746,7 @@
 			)
 		)
 		(property "Head" "A"
-			(at 48.133 130.81 0)
+			(at 47.244 130.81 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
