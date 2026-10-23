@@ -1552,7 +1552,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-CMRI-IB"
+		(symbol "Railroad-HardwareIO:Driver-CMRInet-IB"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1608,7 +1608,7 @@
 					)
 				)
 			)
-			(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+			(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 				(at 11.303 -2.921 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1666,7 +1666,7 @@
 					)
 				)
 			)
-			(symbol "Driver-CMRI-IB_0_1"
+			(symbol "Driver-CMRInet-IB_0_1"
 				(rectangle
 					(start 2.54 1.27)
 					(end 20.32 -1.27)
@@ -1680,7 +1680,7 @@
 					)
 				)
 			)
-			(symbol "Driver-CMRI-IB_1_1"
+			(symbol "Driver-CMRInet-IB_1_1"
 				(polyline
 					(pts
 						(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
@@ -1742,197 +1742,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-CMRI-OB"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CMRI"
-				(at 1.143 2.032 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Value" "OUT.${Bit}"
-				(at 0.889 4.826 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
-				(at 11.303 -2.921 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "IODRIVER"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "IC" "CMRI"
-				(at 7.5052 2.024 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Pin.D" "binary"
-				(at 7.493 3.048 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Bit" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-OB_0_1"
-				(rectangle
-					(start 2.54 1.27)
-					(end 20.32 -1.27)
-					(stroke
-						(width 0.3048)
-						(type solid)
-						(color 128 77 0 1)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Driver-CMRI-OB_1_1"
-				(polyline
-					(pts
-						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "CMRI OUT.${Bit}"
-					(at 5.207 0 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-						(justify left)
-					)
-				)
-				(pin output line
-					(at 0 0 0)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0.381 0.381)
-							)
-						)
-					)
-				)
-				(pin free line
-					(at 21.59 0 180)
-					(length 1.27)
-					(name "IOBus"
-						(effects
-							(font
-								(size 0.635 0.635)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-HardwareIO:Remote-IO-CMRInet"
+		(symbol "Railroad-HardwareIO:Driver-CMRInet-Node"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1990,7 +1800,7 @@
 					)
 				)
 			)
-			(property "Description" "Remote I/O over CMRInet: one node (Board type, Address = UA) behind the transport's host"
+			(property "Description" "A CMRInet node: a driver on the CMRInet bus, attached by its UA; declares its IB/OB arrays (NodeType, InputBytes, OutputBytes), checked against the bits its drivers use (ADR 0008)."
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2001,7 +1811,7 @@
 					)
 				)
 			)
-			(property "Role" "REMOTE_IO"
+			(property "Role" "IODRIVER"
 				(at -11.303 9.652 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2010,17 +1820,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "Kind" "CMRI"
-				(at 3.81 1.27 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
 				)
 			)
 			(property "Transport" ""
@@ -2076,7 +1875,7 @@
 					)
 				)
 			)
-			(symbol "Remote-IO-CMRInet_0_1"
+			(symbol "Driver-CMRInet-Node_0_1"
 				(rectangle
 					(start -16.51 2.54)
 					(end 16.51 -2.54)
@@ -2089,8 +1888,8 @@
 					)
 				)
 			)
-			(symbol "Remote-IO-CMRInet_1_1"
-				(text "Processor:"
+			(symbol "Driver-CMRInet-Node_1_1"
+				(text "Node:"
 					(at -15.24 1.27 0)
 					(effects
 						(font
@@ -2108,7 +1907,7 @@
 						(justify left)
 					)
 				)
-				(text "Remote I/O"
+				(text "CMRInet"
 					(at -6.35 1.27 0)
 					(effects
 						(font
@@ -2175,6 +1974,196 @@
 						(effects
 							(font
 								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Driver-CMRInet-OB"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CMRI"
+				(at 1.143 2.032 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Value" "OUT.${Bit}"
+				(at 0.889 4.826 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
+				(at 11.303 -2.921 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "IC" "CMRI"
+				(at 7.5052 2.024 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.D" "binary"
+				(at 7.493 3.048 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Bit" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Driver-CMRInet-OB_0_1"
+				(rectangle
+					(start 2.54 1.27)
+					(end 20.32 -1.27)
+					(stroke
+						(width 0.3048)
+						(type solid)
+						(color 128 77 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Driver-CMRInet-OB_1_1"
+				(polyline
+					(pts
+						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "CMRI OUT.${Bit}"
+					(at 5.207 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 0 0 0)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 21.59 0 180)
+					(length 1.27)
+					(name "IOBus"
+						(effects
+							(font
+								(size 0.635 0.635)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
 							)
 						)
 					)
@@ -6412,7 +6401,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Remote-IO-CMRInet")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-Node")
 		(at 52.07 27.94 0)
 		(unit 1)
 		(body_style 1)
@@ -6467,7 +6456,7 @@
 				)
 			)
 		)
-		(property "Description" "Remote I/O over CMRInet: one node (Board, Address = UA) behind the transport's host; its CMRI drivers attach by sheet (ADR 0008)."
+		(property "Description" "A CMRInet node: a driver on the CMRInet bus, attached by its UA; declares its IB/OB arrays (NodeType, InputBytes, OutputBytes), checked against the bits its drivers use (ADR 0008)."
 			(at 52.07 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -6478,7 +6467,7 @@
 				)
 			)
 		)
-		(property "Role" "REMOTE_IO"
+		(property "Role" "IODRIVER"
 			(at 40.767 18.288 0)
 			(hide yes)
 			(show_name no)
@@ -6487,17 +6476,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Kind" "CMRI"
-			(at 55.88 26.67 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
 			)
 		)
 		(property "NodeType" "C"
@@ -6683,7 +6661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 181.61 0)
 		(unit 1)
 		(body_style 1)
@@ -6738,7 +6716,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 184.531 0)
 			(hide yes)
 			(show_name no)
@@ -6812,7 +6790,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 45.72 173.99 0)
 		(unit 1)
 		(body_style 1)
@@ -6867,7 +6845,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 176.911 0)
 			(hide yes)
 			(show_name no)
@@ -6941,7 +6919,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 158.75 0)
 		(unit 1)
 		(body_style 1)
@@ -6996,7 +6974,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 161.671 0)
 			(hide yes)
 			(show_name no)
@@ -7218,7 +7196,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -7273,7 +7251,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 148.971 0)
 			(hide yes)
 			(show_name no)
@@ -7347,7 +7325,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 161.29 0)
 		(unit 1)
 		(body_style 1)
@@ -7402,7 +7380,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 164.211 0)
 			(hide yes)
 			(show_name no)
@@ -7476,7 +7454,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 163.83 0)
 		(unit 1)
 		(body_style 1)
@@ -7531,7 +7509,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 166.751 0)
 			(hide yes)
 			(show_name no)
@@ -7784,7 +7762,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -7839,7 +7817,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 154.051 0)
 			(hide yes)
 			(show_name no)
@@ -9240,7 +9218,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 148.59 0)
 		(unit 1)
 		(body_style 1)
@@ -9295,7 +9273,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 151.511 0)
 			(hide yes)
 			(show_name no)
@@ -9369,7 +9347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -9424,7 +9402,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 178.181 0)
 			(hide yes)
 			(show_name no)
@@ -9719,7 +9697,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 187.96 0)
 		(unit 1)
 		(body_style 1)
@@ -9774,7 +9752,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 190.881 0)
 			(hide yes)
 			(show_name no)
@@ -9848,7 +9826,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 190.5 0)
 		(unit 1)
 		(body_style 1)
@@ -9903,7 +9881,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 193.421 0)
 			(hide yes)
 			(show_name no)
@@ -9977,7 +9955,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 45.72 146.05 0)
 		(unit 1)
 		(body_style 1)
@@ -10032,7 +10010,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 148.971 0)
 			(hide yes)
 			(show_name no)
@@ -10207,7 +10185,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -10262,7 +10240,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 154.051 0)
 			(hide yes)
 			(show_name no)
@@ -10786,7 +10764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 165.1 0)
 		(unit 1)
 		(body_style 1)
@@ -10841,7 +10819,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 168.021 0)
 			(hide yes)
 			(show_name no)
@@ -11862,7 +11840,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 187.96 0)
 		(unit 1)
 		(body_style 1)
@@ -11917,7 +11895,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 190.881 0)
 			(hide yes)
 			(show_name no)
@@ -12108,7 +12086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 148.59 0)
 		(unit 1)
 		(body_style 1)
@@ -12163,7 +12141,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 151.511 0)
 			(hide yes)
 			(show_name no)
@@ -12237,7 +12215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 184.15 0)
 		(unit 1)
 		(body_style 1)
@@ -12292,7 +12270,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 187.071 0)
 			(hide yes)
 			(show_name no)
@@ -12470,7 +12448,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 195.58 0)
 		(unit 1)
 		(body_style 1)
@@ -12525,7 +12503,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 198.501 0)
 			(hide yes)
 			(show_name no)
@@ -13099,7 +13077,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 193.04 0)
 		(unit 1)
 		(body_style 1)
@@ -13154,7 +13132,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 195.961 0)
 			(hide yes)
 			(show_name no)
@@ -13228,7 +13206,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -13283,7 +13261,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 181.991 0)
 			(hide yes)
 			(show_name no)
@@ -13908,7 +13886,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 172.72 0)
 		(unit 1)
 		(body_style 1)
@@ -13963,7 +13941,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 175.641 0)
 			(hide yes)
 			(show_name no)
@@ -14240,7 +14218,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 176.53 0)
 		(unit 1)
 		(body_style 1)
@@ -14295,7 +14273,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 179.451 0)
 			(hide yes)
 			(show_name no)
@@ -14594,7 +14572,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -14649,7 +14627,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 170.561 0)
 			(hide yes)
 			(show_name no)
@@ -15202,7 +15180,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 153.67 0)
 		(unit 1)
 		(body_style 1)
@@ -15257,7 +15235,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 156.591 0)
 			(hide yes)
 			(show_name no)
@@ -15479,7 +15457,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 193.04 0)
 		(unit 1)
 		(body_style 1)
@@ -15534,7 +15512,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 195.961 0)
 			(hide yes)
 			(show_name no)
@@ -15955,7 +15933,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 166.37 0)
 		(unit 1)
 		(body_style 1)
@@ -16010,7 +15988,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 169.291 0)
 			(hide yes)
 			(show_name no)
@@ -16235,7 +16213,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 179.07 0)
 		(unit 1)
 		(body_style 1)
@@ -16290,7 +16268,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 181.991 0)
 			(hide yes)
 			(show_name no)
@@ -16364,7 +16342,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 153.67 0)
 		(unit 1)
 		(body_style 1)
@@ -16419,7 +16397,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 156.591 0)
 			(hide yes)
 			(show_name no)
@@ -17413,7 +17391,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 45.72 160.02 0)
 		(unit 1)
 		(body_style 1)
@@ -17468,7 +17446,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 162.941 0)
 			(hide yes)
 			(show_name no)
@@ -17993,7 +17971,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 190.5 0)
 		(unit 1)
 		(body_style 1)
@@ -18048,7 +18026,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 193.421 0)
 			(hide yes)
 			(show_name no)
@@ -18122,7 +18100,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 170.18 0)
 		(unit 1)
 		(body_style 1)
@@ -18177,7 +18155,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 173.101 0)
 			(hide yes)
 			(show_name no)
@@ -18655,7 +18633,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 162.56 0)
 		(unit 1)
 		(body_style 1)
@@ -18710,7 +18688,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 165.481 0)
 			(hide yes)
 			(show_name no)
@@ -18935,7 +18913,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-IB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
 		(at 45.72 198.12 0)
 		(unit 1)
 		(body_style 1)
@@ -18990,7 +18968,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 57.023 201.041 0)
 			(hide yes)
 			(show_name no)
@@ -19064,7 +19042,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRI-OB")
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-OB")
 		(at 128.27 181.61 0)
 		(unit 1)
 		(body_style 1)
@@ -19119,7 +19097,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the node the sheet's Processor declares (ADR 0005)."
+		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
 			(at 139.573 184.531 0)
 			(hide yes)
 			(show_name no)
