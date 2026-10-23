@@ -58,7 +58,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital input. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
+		(property "Description" "CMRInet digital input: one bit of the IB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -106,6 +106,17 @@
 			)
 		)
 		(property "Bit" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Node" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -250,7 +261,7 @@
 				)
 			)
 		)
-		(property "Description" "A CMRInet node: a driver on the CMRInet bus, attached by its UA; declares its IB/OB arrays (NodeType, InputBytes, OutputBytes), checked against the bits its drivers use (ADR 0008)."
+		(property "Description" "A CMRInet node: a driver on the CMRInet line, addressed by its UA, providing the IOBus its bits sit on; declares NodeType (C, M, N) and its IB/OB byte arrays, checked against the bits in use (ADR 0009 §3.5)."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -527,7 +538,7 @@
 				)
 			)
 		)
-		(property "Description" "CMRInet digital output. Bit = this bit on the sheet's CMRInet node (Driver-CMRInet-Node)."
+		(property "Description" "CMRInet digital output: one bit of the OB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -575,6 +586,17 @@
 			)
 		)
 		(property "Bit" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Node" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
