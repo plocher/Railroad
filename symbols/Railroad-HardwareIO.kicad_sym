@@ -174,7 +174,7 @@
 			(pin free line
 				(at 21.59 0 180)
 				(length 1.27)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -272,15 +272,26 @@
 				)
 			)
 		)
+		(property "IC" "CMRInet"
+			(at -4.445 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Transport" "CMRI"
-			(at -0.762 0 0)
+			(at -3.556 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 0.762 0.762)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "NodeType" "C"
@@ -349,8 +360,8 @@
 					(justify left)
 				)
 			)
-			(text "Node:"
-				(at -7.62 2.54 0)
+			(text "CMRInet Node"
+				(at -8.382 2.54 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -366,15 +377,6 @@
 					)
 				)
 			)
-			(text "${Value}"
-				(at -2.54 2.54 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
 			(text "IB["
 				(at -1.27 -2.54 0)
 				(effects
@@ -384,20 +386,20 @@
 					(justify right)
 				)
 			)
-			(text "UA:${Address}"
-				(at -0.127 0 0)
-				(effects
-					(font
-						(size 0.889 0.889)
-					)
-					(justify left)
-				)
-			)
 			(text "]"
 				(at 1.27 -2.54 0)
 				(effects
 					(font
 						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "UA:${Address}"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.016 1.016)
 					)
 					(justify left)
 				)
@@ -613,7 +615,7 @@
 			(pin free line
 				(at 21.59 0 180)
 				(length 1.27)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -6385,7 +6387,7 @@
 			(pin passive line
 				(at 22.86 0 180)
 				(length 2.54)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -6593,7 +6595,7 @@
 			(pin passive line
 				(at 22.86 0 180)
 				(length 2.54)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -6798,7 +6800,7 @@
 			(pin passive line
 				(at 22.86 0 180)
 				(length 2.54)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -7006,7 +7008,7 @@
 			(pin passive line
 				(at 22.86 0 180)
 				(length 2.54)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
@@ -7257,7 +7259,7 @@
 			(pin passive line
 				(at 22.86 -1.27 180)
 				(length 2.54)
-				(name "IOBus"
+				(name "Transport"
 					(effects
 						(font
 							(size 0.635 0.635)
