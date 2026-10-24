@@ -98,6 +98,17 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Appliance" "head"
 				(at 0 0 0)
 				(show_name no)
@@ -395,6 +406,17 @@
 					(justify left)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Appliance" "lamp"
 				(at -3.5438 2.024 0)
 				(show_name no)
@@ -575,6 +597,17 @@
 						(thickness 0.0635)
 					)
 					(justify left)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "Appliance" "switch"
@@ -1185,6 +1218,17 @@
 					(justify left)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Appliance" "track_circuit"
 				(at -3.5438 2.024 0)
 				(show_name no)
@@ -1377,6 +1421,17 @@
 				(effects
 					(font
 						(size 0.635 0.635)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -1708,7 +1763,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-HardwareIO:Driver-JMRI-Sensor"
+		(symbol "Railroad-HardwareIO:Driver-JMRI-Light"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1764,7 +1819,7 @@
 					)
 				)
 			)
-			(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+			(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
 				(at 11.049 -5.969 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1799,7 +1854,43 @@
 					(justify left)
 				)
 			)
-			(property "Pin.S" "binary"
+			(property "Kind" "LIGHT"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Kind" "SENSOR"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.ON" "binary"
+				(at 7.62 4.699 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Pin.INTENSITY" "level"
 				(at 7.62 4.699 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1822,10 +1913,10 @@
 					)
 				)
 			)
-			(symbol "Driver-JMRI-Sensor_0_1"
+			(symbol "Driver-JMRI-Light_0_1"
 				(rectangle
 					(start 2.54 1.27)
-					(end 20.32 -1.27)
+					(end 20.32 -3.81)
 					(stroke
 						(width 0.3048)
 						(type solid)
@@ -1836,7 +1927,7 @@
 					)
 				)
 			)
-			(symbol "Driver-JMRI-Sensor_1_1"
+			(symbol "Driver-JMRI-Light_1_1"
 				(polyline
 					(pts
 						(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
@@ -1859,7 +1950,7 @@
 						(justify left)
 					)
 				)
-				(text "sensor"
+				(text "light"
 					(at 4.953 -0.508 0)
 					(effects
 						(font
@@ -1877,10 +1968,50 @@
 						(justify left)
 					)
 				)
+				(polyline
+					(pts
+						(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "intensity"
+					(at 4.953 -2.54 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(pin output line
+					(at 0 -2.54 0)
+					(length 2.54)
+					(name "INTENSITY"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
 				(pin output line
 					(at 0 0 0)
 					(length 2.54)
-					(name "S"
+					(name "ON"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -1996,6 +2127,18 @@
 				)
 			)
 			(property "IC" "MQTT-JMRI"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Kind" "SENSOR"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2213,6 +2356,18 @@
 					)
 				)
 			)
+			(property "Kind" "SIGNALMAST"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
 			(property "Address" ""
 				(at 0 0 0)
 				(show_name no)
@@ -2420,6 +2575,18 @@
 					(justify left)
 				)
 			)
+			(property "Kind" "TURNOUT"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
 			(property "Pin.M" "binary"
 				(at 7.493 3.048 0)
 				(show_name no)
@@ -2617,6 +2784,18 @@
 				)
 			)
 			(property "IC" "MQTT-JMRI"
+				(at 7.6322 3.675 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(property "Kind" "TURNOUT"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3047,6 +3226,17 @@
 			)
 			(property "Role" "IO_ENCODING"
 				(at 2.54 16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7551,6 +7741,14 @@
 		)
 		(uuid "700059a1-7a85-4b16-adb1-42299ddf1b9f")
 	)
+	(no_connect
+		(at 55.88 177.8)
+		(uuid "7472f5c9-7ff2-4377-9c17-6f71ae705962")
+	)
+	(no_connect
+		(at 55.88 173.99)
+		(uuid "7dd08dde-41fa-406a-a05c-5c2bd0f2364b")
+	)
 	(symbol
 		(lib_id "Railroad-Trackplan:IRJ-Signal")
 		(at 74.93 77.47 180)
@@ -7669,7 +7867,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-JMRI-Sensor")
+		(lib_id "Railroad-HardwareIO:Driver-JMRI-Light")
 		(at 55.88 175.26 0)
 		(unit 1)
 		(body_style 1)
@@ -7759,7 +7957,18 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary"
+		(property "Kind" "LIGHT"
+			(at 55.88 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.ON" "binary"
 			(at 63.5 170.561 0)
 			(hide yes)
 			(show_name no)
@@ -7769,6 +7978,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Pin.INTENSITY" "level"
+			(at 55.88 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Address" ""
@@ -7787,6 +8007,9 @@
 		)
 		(pin "2"
 			(uuid "479eee96-0751-4bdc-bd72-ea0b7e55c47d")
+		)
+		(pin "3"
+			(uuid "f717f04f-412e-4679-9ec9-54ab9b899cbd")
 		)
 		(instances
 			(project "SPCoast"
@@ -7871,6 +8094,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 130.81 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8152,6 +8386,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 106.68 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "mast"
 			(at 106.68 135.89 0)
 			(hide yes)
@@ -8260,6 +8505,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 130.81 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -8536,6 +8792,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 45.72 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "track_circuit"
 			(at 42.1762 138.946 0)
 			(hide yes)
@@ -8773,6 +9040,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "TURNOUT"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 129.54 0)
 			(hide yes)
@@ -8917,6 +9195,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "SENSOR"
+			(at 55.88 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pin.S" "binary"
 			(at 63.5 138.811 0)
 			(hide yes)
@@ -9046,6 +9335,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "TURNOUT"
+			(at 55.88 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 125.73 0)
 			(hide yes)
@@ -9162,6 +9462,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -9451,6 +9762,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 130.81 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "head"
 			(at 130.81 123.19 0)
 			(hide yes)
@@ -9609,6 +9931,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -9844,6 +10177,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 55.88 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "switch"
 			(at 53.34 110.998 0)
 			(hide yes)
@@ -10034,6 +10378,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "TURNOUT"
+			(at 55.88 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 116.84 0)
 			(hide yes)
@@ -10165,6 +10520,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 55.88 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "mast"
 			(at 55.88 161.29 0)
 			(hide yes)
@@ -10288,6 +10654,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 55.88 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -10509,6 +10886,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 130.81 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "head"
 			(at 130.81 130.81 0)
 			(hide yes)
@@ -10683,6 +11071,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "SENSOR"
+			(at 55.88 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Pin.S" "binary"
 			(at 63.5 133.731 0)
 			(hide yes)
@@ -10789,6 +11188,17 @@
 		)
 		(property "Role" "IO_ENCODING"
 			(at 99.06 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 96.52 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10910,6 +11320,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -11395,6 +11816,17 @@
 				)
 			)
 		)
+		(property "Kind" "SIGNALMAST"
+			(at 55.88 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 165.1 0)
 			(hide yes)
@@ -11510,6 +11942,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -11722,7 +12165,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-JMRI-Sensor")
+		(lib_id "Railroad-HardwareIO:Driver-JMRI-Light")
 		(at 55.88 171.45 0)
 		(unit 1)
 		(body_style 1)
@@ -11812,7 +12255,18 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary"
+		(property "Kind" "LIGHT"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.ON" "binary"
 			(at 63.5 166.751 0)
 			(hide yes)
 			(show_name no)
@@ -11822,6 +12276,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Pin.INTENSITY" "level"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Address" ""
@@ -11840,6 +12305,9 @@
 		)
 		(pin "2"
 			(uuid "cf9a4d0d-ae43-458e-a9a0-1ac0e24da7c7")
+		)
+		(pin "3"
+			(uuid "1fea81e0-8b69-4872-af8d-5bb6130b878d")
 		)
 		(instances
 			(project "SPCoast"
@@ -11939,6 +12407,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Kind" "TURNOUT"
+			(at 55.88 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Address" ""
@@ -12057,6 +12536,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 55.88 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "mast"
 			(at 55.88 157.48 0)
 			(hide yes)
@@ -12168,6 +12658,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "lamp"
@@ -12307,6 +12808,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 55.88 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Address" ""
@@ -12554,6 +13066,17 @@
 				)
 			)
 		)
+		(property "Kind" "SIGNALMAST"
+			(at 55.88 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 157.48 0)
 			(hide yes)
@@ -12666,6 +13189,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 106.68 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -13368,6 +13902,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 130.81 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "head"
 			(at 130.81 115.57 0)
 			(hide yes)
@@ -13540,6 +14085,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 55.88 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -13768,6 +14324,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 45.72 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "track_circuit"
@@ -14228,6 +14795,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 55.88 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "switch"
 			(at 53.34 123.698 0)
 			(hide yes)
@@ -14401,6 +14979,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 130.81 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -14667,6 +15256,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 55.88 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "lamp"
 			(at 52.3362 169.426 0)
 			(hide yes)
@@ -14905,6 +15505,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -15340,6 +15951,17 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "SENSOR"
+			(at 55.88 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 133.35 0)
 			(hide yes)
@@ -15457,6 +16079,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 45.72 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "track_circuit"
 			(at 42.1762 141.486 0)
 			(hide yes)
@@ -15568,6 +16201,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 55.88 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -15791,6 +16435,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 106.68 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -16132,6 +16787,17 @@
 				)
 			)
 		)
+		(property "Kind" "SIGNALMAST"
+			(at 55.88 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Address" ""
 			(at 55.88 161.29 0)
 			(hide yes)
@@ -16247,6 +16913,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 106.68 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "mast"
 			(at 106.68 128.27 0)
 			(hide yes)
@@ -16358,6 +17035,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 45.72 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "track_circuit"
@@ -17390,6 +18078,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Kind" "SIGNALMAST"
+			(at 55.88 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

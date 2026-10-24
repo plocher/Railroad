@@ -6247,6 +6247,290 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Driver-JMRI-Light"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 3.683 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
+			(at 11.049 -5.969 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "LIGHT"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.ON" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.INTENSITY" "level"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Light_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -3.81)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Light_1_1"
+			(polyline
+				(pts
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 4.953 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "light"
+				(at 4.953 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 8.89 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "intensity"
+				(at 4.953 -2.54 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 -2.54 0)
+				(length 2.54)
+				(name "INTENSITY"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 0 0)
+				(length 2.54)
+				(name "ON"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Driver-JMRI-Sensor"
 		(pin_numbers
 			(hide yes)
@@ -6327,6 +6611,18 @@
 			)
 		)
 		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
 			(at 7.6322 3.675 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6546,6 +6842,18 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "SENSOR"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
 		(property "Pin.S" "binary"
 			(at 7.62 4.699 0)
 			(show_name no)
@@ -6750,6 +7058,18 @@
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "Kind" "SIGNALMAST"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -6959,6 +7279,18 @@
 				(justify left)
 			)
 		)
+		(property "Kind" "TURNOUT"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
 		(property "Pin.M" "binary"
 			(at 7.493 3.048 0)
 			(show_name no)
@@ -7156,6 +7488,18 @@
 			)
 		)
 		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "TURNOUT"
 			(at 7.6322 3.675 0)
 			(show_name no)
 			(do_not_autoplace yes)
