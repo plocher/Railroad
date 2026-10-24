@@ -377,6 +377,17 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Kind" "PROCESSOR"
 				(at -9.906 8.001 0)
 				(show_name no)
@@ -568,7 +579,7 @@
 					(justify left)
 				)
 			)
-			(property "Topic" "ctc/${Railroad}/codeline/"
+			(property "Topic" "ctc/<STRUCTURE:RAILROAD:Name>/codeline/"
 				(at 13.97 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -960,6 +971,7 @@
 			)
 			(embedded_fonts no)
 		)
+
 		(symbol "Railroad-Office:OfficeUnit"
 			(pin_numbers
 				(hide yes)
@@ -974,7 +986,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "MACHINE"
-				(at -15.367 11.811 0)
+				(at -15.24 8.89 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -1037,19 +1049,8 @@
 					)
 				)
 			)
-			(property "Era" ""
-				(at -17.653 8.255 0)
-				(show_name yes)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
 			(property "Role" "OFFICE_UNIT"
-				(at -13.97 10.033 0)
+				(at -13.843 7.112 0)
 				(show_name yes)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -1067,17 +1068,6 @@
 					(font
 						(size 0.762 0.762)
 					)
-				)
-			)
-			(property "Railroad" ""
-				(at 9.652 -4.191 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
 				)
 			)
 			(symbol "OfficeUnit_1_1"
@@ -1121,14 +1111,6 @@
 					(effects
 						(font
 							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "Railroad"
-					(at 6.858 -4.191 0)
-					(effects
-						(font
-							(size 0.508 0.508)
 						)
 					)
 				)
@@ -1231,6 +1213,17 @@
 						(size 1.27 1.27)
 					)
 					(justify left)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(property "Kind" "CMRI"
@@ -1438,6 +1431,17 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Kind" "MQTT"
 				(at 22.225 0 0)
 				(show_name no)
@@ -1624,6 +1628,17 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Kind" "TIMECODE"
 				(at 2.54 -1.905 0)
 				(show_name no)
@@ -1710,8 +1725,7 @@
 				)
 			)
 			(embedded_fonts no)
-		)
-	)
+		)	)
 	(rectangle
 		(start 193.04 116.84)
 		(end 203.2 130.81)
@@ -2699,6 +2713,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 161.29 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Kind" "MQTT"
 			(at 183.515 78.74 0)
 			(hide yes)
@@ -2804,6 +2829,17 @@
 		)
 		(property "Role" "STRUCTURE"
 			(at 190.373 50.292 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 179.07 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2925,17 +2961,6 @@
 				)
 			)
 		)
-		(property "Era" ""
-			(at 165.227 41.275 0)
-			(hide yes)
-			(show_name yes)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
 		(property "Role" "OFFICE_UNIT"
 			(at 168.91 39.497 0)
 			(hide yes)
@@ -2955,17 +2980,6 @@
 				(font
 					(size 0.762 0.762)
 				)
-			)
-		)
-		(property "Railroad" "SPCoast"
-			(at 192.532 53.721 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
 			)
 		)
 		(pin "2"
@@ -3213,6 +3227,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 78.74 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Kind" "PROCESSOR"
 			(at 88.646 46.101 0)
 			(hide yes)
@@ -3433,6 +3458,17 @@
 		)
 		(property "Role" "TRANSPORT"
 			(at 182.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 182.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3669,24 +3705,13 @@
 				(justify left)
 			)
 		)
-		(property "Topic" "ctc/${Railroad}/codeline/"
+		(property "Topic" "ctc/<STRUCTURE:RAILROAD:Name>/codeline/"
 			(at 179.07 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Railroad" "SPCoast"
-			(at 165.1 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
 				)
 			)
 		)
@@ -3781,6 +3806,17 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 60.96 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Baud" "28800"
