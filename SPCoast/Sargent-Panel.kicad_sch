@@ -974,6 +974,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Office:ModelLamp-RED"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LAMP"
+				(at -3.81 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OS"
+				(at 3.429 -0.508 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+				(at -0.635 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Color" "red"
+				(at -0.635 -8.255 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IndicationToken" ""
+				(at -1.905 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Appliance" "lamp"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "board"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.LAMP" "binary"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "ModelLamp-RED_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 194 0 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "${IndicationToken}"
+					(at 1.27 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 6.35)
+					(name "~{LAMP}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Office:PanelCode"
 			(pin_numbers
 				(hide yes)
@@ -1224,16 +1410,6 @@
 					)
 				)
 			)
-			(property "Interlocking" ""
-				(at 0 -31.75 0)
-				(show_name yes)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Role" "COLUMN"
 				(at 0.635 -24.765 0)
 				(show_name no)
@@ -1242,16 +1418,6 @@
 				(effects
 					(font
 						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Machine" "SPCoast South"
-				(at 0.635 -27.94 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.905 1.905)
 					)
 				)
 			)
@@ -1579,618 +1745,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:PanelLamp-BLUE"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LAMP"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Traffic"
-				(at 3.683 -0.508 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-				(at -0.635 -9.525 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Color" "blue"
-				(at -0.635 -8.255 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "IndicationToken" ""
-				(at -1.905 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Role" "PANEL"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Appliance" "lamp"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "indication"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pin.LAMP" "binary"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PanelLamp-BLUE_1_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 0 0 255 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "${IndicationToken}"
-					(at 1.27 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "Column"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 6.35)
-					(name "~{LAMP}"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:PanelLamp-RED"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LAMP"
-				(at -3.81 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "OS"
-				(at 3.429 -0.508 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-				(at -0.635 -9.525 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Color" "red"
-				(at -0.635 -8.255 0)
-				(show_name yes)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "IndicationToken" ""
-				(at -1.905 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Role" "PANEL"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Appliance" "lamp"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "indication"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pin.LAMP" "binary"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PanelLamp-RED_1_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 194 0 0 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "${IndicationToken}"
-					(at 1.27 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "Column"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 6.35)
-					(name "~{LAMP}"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:PanelLamp-YELLOW"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LAMP"
-				(at -4.445 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TRACK"
-				(at 3.937 -0.508 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Color" "yellow"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "IndicationToken" ""
-				(at -1.905 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Role" "PANEL"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Appliance" "lamp"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "indication"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pin.LAMP" "binary"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PanelLamp-YELLOW_1_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 255 0 1)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 132 0 0 1)
-					)
-				)
-				(text "${IndicationToken}"
-					(at 1.27 1.27 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-						(justify left)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "Column"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 0 180)
-					(length 6.35)
-					(name "~{LAMP}"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 0 0)
@@ -3003,6 +2557,210 @@
 					(at 7.62 0 180)
 					(length 5.08)
 					(name "~{S}"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:PanelMCall-Lamp"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "LAMP"
+				(at -4.445 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MCall"
+				(at 3.937 -0.508 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "One physical Maintainer Call lamp.  IndicationToken is a comma-separated list of indication names (tokens such as MC1K)"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Color" "yellow"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "IndicationToken" ""
+				(at -1.905 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Role" "PANEL"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Appliance" "lamp"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "indication"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Pin.LAMP" "binary"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelMCall-Lamp_1_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.2032)
+						(type solid)
+						(color 0 0 0 1)
+					)
+					(fill
+						(type color)
+						(color 255 255 0 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 132 0 0 1)
+					)
+				)
+				(text "${IndicationToken}"
+					(at 1.27 1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "Column"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 7.62 0 180)
+					(length 6.35)
+					(name "~{LAMP}"
 						(effects
 							(font
 								(size 0 0)
@@ -4350,7 +4108,7 @@
 		(uuid "a96c00a9-4bec-4e96-ae22-3ed5416cf3d8")
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelLamp-YELLOW")
+		(lib_id "Railroad-Office:PanelMCall-Lamp")
 		(at 80.01 104.14 0)
 		(unit 1)
 		(body_style 1)
@@ -4403,7 +4161,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical Maintainer Call lamp.  IndicationToken is a comma-separated list of indication names (tokens such as MC1K)"
 			(at 80.01 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4830,7 +4588,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelLamp-RED")
+		(lib_id "Railroad-Office:ModelLamp-RED")
 		(at 80.01 36.83 0)
 		(unit 1)
 		(body_style 1)
@@ -4883,7 +4641,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
 			(at 79.375 46.355 0)
 			(hide yes)
 			(show_name no)
@@ -4938,7 +4696,7 @@
 				)
 			)
 		)
-		(property "Style" "indication"
+		(property "Style" "board"
 			(at 80.01 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4960,9 +4718,6 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "85daf3c8-55c3-449e-854f-ff2eb9954210")
-		)
 		(pin "2"
 			(uuid "41479574-9ac9-4393-a085-0470f7f18163")
 		)
@@ -4976,7 +4731,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelLamp-RED")
+		(lib_id "Railroad-Office:ModelLamp-RED")
 		(at 80.01 31.75 0)
 		(unit 1)
 		(body_style 1)
@@ -5029,7 +4784,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
 			(at 79.375 41.275 0)
 			(hide yes)
 			(show_name no)
@@ -5084,7 +4839,7 @@
 				)
 			)
 		)
-		(property "Style" "indication"
+		(property "Style" "board"
 			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -5105,9 +4860,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "acc3a67e-4213-44b3-b237-daf2448fb4e4")
 		)
 		(pin "2"
 			(uuid "aaee22aa-9f89-419b-ba9f-33aac0965064")
@@ -5551,7 +5303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelLamp-RED")
+		(lib_id "Railroad-Office:ModelLamp-RED")
 		(at 80.01 26.67 0)
 		(unit 1)
 		(body_style 1)
@@ -5604,7 +5356,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
 			(at 79.375 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -5659,7 +5411,7 @@
 				)
 			)
 		)
-		(property "Style" "indication"
+		(property "Style" "board"
 			(at 80.01 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -5680,9 +5432,6 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "7b56fc1c-b418-452c-8bf0-8f66e59c848b")
 		)
 		(pin "2"
 			(uuid "5c76080f-d865-47c6-8609-4ca2ced1c8ff")
@@ -5759,26 +5508,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Interlocking" "Sargent"
-			(at 80.01 129.54 0)
-			(show_name yes)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Machine" "SPCoast South"
-			(at 80.645 125.73 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.905 1.905)
 				)
 			)
 		)
