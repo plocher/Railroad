@@ -1799,7 +1799,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "MACHINE"
-			(at -15.367 11.811 0)
+			(at -15.24 8.89 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1862,19 +1862,8 @@
 				)
 			)
 		)
-		(property "Era" ""
-			(at -17.653 8.255 0)
-			(show_name yes)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
 		(property "Role" "OFFICE_UNIT"
-			(at -13.97 10.033 0)
+			(at -13.843 7.112 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1892,17 +1881,6 @@
 				(font
 					(size 0.762 0.762)
 				)
-			)
-		)
-		(property "Railroad" ""
-			(at 9.652 -4.191 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
 			)
 		)
 		(symbol "OfficeUnit_1_1"
@@ -1946,14 +1924,6 @@
 				(effects
 					(font
 						(size 1.016 1.016)
-					)
-				)
-			)
-			(text "Railroad"
-				(at 6.858 -4.191 0)
-				(effects
-					(font
-						(size 0.508 0.508)
 					)
 				)
 			)
@@ -5097,6 +5067,192 @@
 						(font
 							(size 0 0)
 						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Railroad"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "RAILROAD"
+			(at -15.748 8.636 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 3.048 7.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Attributes for the railroad itself"
+			(at 9.525 -6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at -16.002 7.239 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Kind" "RAILROAD"
+			(at -17.653 6.096 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Era" ""
+			(at -19.05 -2.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Railroad" ""
+			(at 8.128 -9.271 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Region" ""
+			(at 11.176 -10.541 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Rulebook" ""
+			(at -19.05 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 6.35 -1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(symbol "Railroad_1_1"
+			(rectangle
+				(start -20.32 5.08)
+				(end 20.32 -5.08)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Region: ${Region}"
+				(at -19.05 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Railroad: ${Railroad}"
+				(at -19.05 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Railroad Information"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.016 1.016)
 					)
 				)
 			)
