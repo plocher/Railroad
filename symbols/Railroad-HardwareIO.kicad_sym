@@ -6350,18 +6350,6 @@
 				(justify left)
 			)
 		)
-		(property "Kind" "SENSOR"
-			(at 7.6322 3.675 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
 		(property "Pin.ON" "binary"
 			(at 7.62 4.699 0)
 			(show_name no)
@@ -6425,6 +6413,19 @@
 					(color 132 0 0 1)
 				)
 			)
+			(polyline
+				(pts
+					(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
 			(text "MQTT"
 				(at 4.953 0.508 0)
 				(effects
@@ -6443,28 +6444,6 @@
 					(justify left)
 				)
 			)
-			(text "${ADDRESS}"
-				(at 8.89 0 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
 			(text "intensity"
 				(at 4.953 -2.54 0)
 				(effects
@@ -6474,22 +6453,13 @@
 					(justify left)
 				)
 			)
-			(pin output line
-				(at 0 -2.54 0)
-				(length 2.54)
-				(name "INTENSITY"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
+			(text "${ADDRESS}"
+				(at 8.89 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
 					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
+					(justify left)
 				)
 			)
 			(pin output line
@@ -6524,6 +6494,24 @@
 					(effects
 						(font
 							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 -2.54 0)
+				(length 2.54)
+				(name "INTENSITY"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.381 0.381)
 						)
 					)
 				)
