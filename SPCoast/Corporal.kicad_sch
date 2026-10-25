@@ -5207,6 +5207,155 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Trackplan:Industry"
+			(pin_numbers
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "B"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Track exists past this point, but is not drawn"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "TRACK"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "INDUSTRY"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Industry_0_1"
+				(polyline
+					(pts
+						(xy -6.35 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 72 72 72 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Industry_1_1"
+				(pin bidirectional line
+					(at 1.27 0 180)
+					(length 0)
+					(name "EoT"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Trackplan:Interlocking"
 			(pin_numbers
 				(hide yes)
@@ -6985,7 +7134,6 @@
 			)
 			(embedded_fonts no)
 		)
-
 		(symbol "Railroad-Trackplan:Signal Head - CPL"
 			(pin_numbers
 				(hide yes)
@@ -8163,7 +8311,8 @@
 				)
 			)
 			(embedded_fonts no)
-		)	)
+		)
+	)
 	(text "Corporal\nMP 82.9"
 		(exclude_from_sim no)
 		(at 239.522 23.114 0)
@@ -8249,10 +8398,6 @@
 		(uuid "fbb2fa4c-b16b-46c8-80b7-c389e2297124")
 	)
 	(no_connect
-		(at 207.01 68.58)
-		(uuid "1a924240-d250-43a8-aad1-64285afc8d89")
-	)
-	(no_connect
 		(at 209.55 148.59)
 		(uuid "4b27b864-fe7b-4da0-885c-63f23ed31616")
 	)
@@ -8263,10 +8408,6 @@
 	(no_connect
 		(at 209.55 158.75)
 		(uuid "66d9ccb4-7b2a-402d-bfb8-40ca9f63718e")
-	)
-	(no_connect
-		(at 207.01 52.07)
-		(uuid "7e0c1122-32b3-48f7-a978-a7ba19ccf0e7")
 	)
 	(no_connect
 		(at 77.47 166.37)
@@ -8287,14 +8428,6 @@
 	(no_connect
 		(at 209.55 163.83)
 		(uuid "9ed5d009-ea22-4390-8292-12458ccd8f55")
-	)
-	(no_connect
-		(at 187.96 52.07)
-		(uuid "c4c0967d-dc34-474d-b3a3-12643f07bc98")
-	)
-	(no_connect
-		(at 187.96 68.58)
-		(uuid "c7a416bb-80fb-41fa-95bc-246041b278c8")
 	)
 	(no_connect
 		(at 209.55 166.37)
@@ -8361,17 +8494,6 @@
 			(type default)
 		)
 		(uuid "1ec39f91-1f2c-4fc0-be07-a21b4eaad855")
-	)
-	(wire
-		(pts
-			(xy 187.96 68.58) (xy 207.01 68.58)
-		)
-		(stroke
-			(width 0.4064)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(uuid "1f2487bf-8757-4c8e-978c-1f3a861990ed")
 	)
 	(wire
 		(pts
@@ -8542,17 +8664,6 @@
 			(type default)
 		)
 		(uuid "c68f7fa1-ab1e-4654-87ab-3842149a774f")
-	)
-	(wire
-		(pts
-			(xy 187.96 52.07) (xy 207.01 52.07)
-		)
-		(stroke
-			(width 0.4064)
-			(type dash)
-			(color 72 72 72 1)
-		)
-		(uuid "c89c0c1c-07c2-42c3-9883-ca448eda64a3")
 	)
 	(wire
 		(pts
@@ -10155,6 +10266,107 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/152658f8-a042-4e04-bedb-bf34ee4ce875"
 					(reference "Exp11001")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Industry")
+		(at 189.23 52.07 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a3406b8-fce8-4e52-bbfc-a215d90676a8")
+		(property "Reference" "B6"
+			(at 189.23 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 189.23 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Track exists past this point, but is not drawn"
+			(at 189.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 189.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INDUSTRY"
+			(at 189.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "55bc2fec-3f03-4e37-b89c-3815ab19b41d")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/152658f8-a042-4e04-bedb-bf34ee4ce875"
+					(reference "B6")
+					(unit 1)
 				)
 			)
 		)
@@ -14611,6 +14823,107 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/152658f8-a042-4e04-bedb-bf34ee4ce875"
 					(reference "TC11002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Industry")
+		(at 189.23 68.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73f3ec3e-c470-4054-a05c-1fe6fc3d1df5")
+		(property "Reference" "B7"
+			(at 189.23 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 189.23 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Track exists past this point, but is not drawn"
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INDUSTRY"
+			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "489c8671-641e-4825-aadf-fa608db2689e")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/152658f8-a042-4e04-bedb-bf34ee4ce875"
+					(reference "B7")
 					(unit 1)
 				)
 			)
