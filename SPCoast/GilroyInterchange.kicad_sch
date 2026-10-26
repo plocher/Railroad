@@ -5358,7 +5358,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5369,9 +5369,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5414,7 +5415,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5425,7 +5426,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5490,6 +5502,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -14019,9 +14039,10 @@
 			)
 		)
 		(property "Value" "Luchessa"
-			(at 194.945 77.47 0)
+			(at 199.39 86.36 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14076,6 +14097,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 196.85 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 199.39 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15393,9 +15425,10 @@
 			)
 		)
 		(property "Value" "Gilroy Caltrain"
-			(at 51.435 77.47 0)
+			(at 55.88 86.36 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15450,6 +15483,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 53.34 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 55.88 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -3932,7 +3932,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3943,9 +3943,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -3988,7 +3989,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3999,7 +4000,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4064,6 +4076,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -10509,9 +10529,10 @@
 			)
 		)
 		(property "Value" "Lick"
-			(at 46.355 59.69 0)
+			(at 50.8 68.58 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10566,6 +10587,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 48.26 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 50.8 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14817,7 +14849,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 212.09 59.69 180)
+		(at 212.09 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14828,7 +14860,7 @@
 		(fields_autoplaced yes)
 		(uuid "946ad0dc-88dc-44cb-a260-02b893893ce5")
 		(property "Reference" "CP3002"
-			(at 208.915 57.785 0)
+			(at 215.265 61.595 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14839,9 +14871,10 @@
 			)
 		)
 		(property "Value" "Gilroy Interchange"
-			(at 214.63 59.6899 0)
+			(at 214.63 68.58 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14851,7 +14884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 59.69 0)
+			(at 208.28 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14862,7 +14895,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 59.69 0)
+			(at 208.28 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14873,7 +14906,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 215.265 52.705 0)
+			(at 208.915 66.675 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14896,6 +14929,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 212.09 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 214.63 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

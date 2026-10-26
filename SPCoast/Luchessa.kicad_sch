@@ -5549,6 +5549,17 @@
 					)
 				)
 			)
+			(property "Name" "${VALUE}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Industry_0_1"
 				(polyline
 					(pts
@@ -5591,6 +5602,15 @@
 				)
 			)
 			(symbol "Industry_1_1"
+				(text "${Name}"
+					(at -8.89 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify right)
+					)
+				)
 				(pin bidirectional line
 					(at 1.27 0 180)
 					(length 0)
@@ -6613,7 +6633,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6624,9 +6644,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6669,7 +6690,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6680,7 +6701,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6745,6 +6777,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -8339,18 +8379,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "Industry"
-		(exclude_from_sim no)
-		(at 43.942 69.85 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.254)
-				(bold yes)
-			)
-		)
-		(uuid "190af2f5-c1b3-4ead-a625-f2854766ea25")
 	)
 	(text "Rule 261 (Track Signaled in Both Directions): \nGoverns bi-directional signal territory (often controlled by \nCentralized Traffic Control, or CTC).  Under Rule 261, block signal \nindications supersede train superiority for both opposing and\nfollowing movements on the same track, allowing the dispatcher to\ndynamically change the direction of traffic by clearing signals."
 		(exclude_from_sim no)
@@ -14590,7 +14618,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 245.11 102.87 180)
+		(at 245.11 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14600,7 +14628,7 @@
 		(dnp no)
 		(uuid "539168b6-fc96-4232-9d09-b9d628ca8894")
 		(property "Reference" "CP7004"
-			(at 241.935 100.965 0)
+			(at 248.285 104.775 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14611,9 +14639,10 @@
 			)
 		)
 		(property "Value" "Christopher"
-			(at 247.015 102.87 0)
+			(at 247.65 111.76 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14623,7 +14652,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 102.87 0)
+			(at 241.3 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14634,7 +14663,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 102.87 0)
+			(at 241.3 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14645,7 +14674,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 95.885 0)
+			(at 241.935 109.855 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14668,6 +14697,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 245.11 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 247.65 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16644,7 +16684,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8b620dce-b7bd-433b-8c7f-e0c9be14d6d0")
 		(property "Reference" "B7010"
 			(at 58.42 72.39 0)
@@ -16657,7 +16696,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Gilroy Industry"
 			(at 58.42 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -16690,7 +16729,7 @@
 				)
 			)
 		)
-		(property "Description" "Insulated Rail Joint"
+		(property "Description" "Track exists past this point, but is not drawn"
 			(at 58.42 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -16714,6 +16753,17 @@
 		)
 		(property "Kind" "INDUSTRY"
 			(at 58.42 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 58.42 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21912,7 +21962,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 245.11 86.36 180)
+		(at 245.11 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -21922,7 +21972,7 @@
 		(dnp no)
 		(uuid "d634bff1-5c9c-44a1-87ee-d531375d1943")
 		(property "Reference" "CP7003"
-			(at 241.935 84.455 0)
+			(at 248.285 88.265 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21933,9 +21983,10 @@
 			)
 		)
 		(property "Value" "Christopher"
-			(at 247.015 86.36 0)
+			(at 247.65 95.25 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21945,7 +21996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 86.36 0)
+			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21956,7 +22007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 86.36 0)
+			(at 241.3 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21967,7 +22018,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 79.375 0)
+			(at 241.935 93.345 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21990,6 +22041,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 245.11 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 247.65 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22150,7 +22212,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 245.11 69.85 180)
+		(at 245.11 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -22160,7 +22222,7 @@
 		(dnp no)
 		(uuid "e357578d-2a68-400f-a47d-cd3318b74070")
 		(property "Reference" "CP7002"
-			(at 241.935 67.945 0)
+			(at 248.285 71.755 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22171,9 +22233,10 @@
 			)
 		)
 		(property "Value" "Hollister"
-			(at 247.015 69.85 0)
+			(at 247.65 78.74 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22183,7 +22246,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 69.85 0)
+			(at 241.3 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22194,7 +22257,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 69.85 0)
+			(at 241.3 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22205,7 +22268,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 248.285 62.865 0)
+			(at 241.935 76.835 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22228,6 +22291,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 245.11 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 247.65 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22672,9 +22746,10 @@
 			)
 		)
 		(property "Value" "Gilroy Interchange"
-			(at 44.958 89.662 0)
+			(at 30.48 95.25 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22729,6 +22804,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 27.94 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 30.48 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

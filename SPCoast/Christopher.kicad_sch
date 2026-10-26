@@ -5787,7 +5787,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5798,9 +5798,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5843,7 +5844,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5854,7 +5855,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5919,6 +5931,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -11061,7 +11081,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 41.91 100.33 180)
+		(at 41.91 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11071,7 +11091,7 @@
 		(dnp no)
 		(uuid "3a0ea897-79d8-43b6-902d-a12292c46006")
 		(property "Reference" "CP9004"
-			(at 38.735 98.425 0)
+			(at 45.085 102.235 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11082,9 +11102,10 @@
 			)
 		)
 		(property "Value" "Luchessa"
-			(at 43.815 100.33 0)
+			(at 44.45 109.22 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11094,7 +11115,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 100.33 0)
+			(at 38.1 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11105,7 +11126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 100.33 0)
+			(at 38.1 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11116,7 +11137,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 45.085 93.345 0)
+			(at 38.735 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11139,6 +11160,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 41.91 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 44.45 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12863,7 +12895,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 231.14 100.33 180)
+		(at 231.14 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12874,7 +12906,7 @@
 		(fields_autoplaced yes)
 		(uuid "50484897-801f-4038-8eff-f57b4a449b83")
 		(property "Reference" "CP9002"
-			(at 227.965 98.425 0)
+			(at 234.315 102.235 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12884,10 +12916,11 @@
 				)
 			)
 		)
-		(property "Value" "Sargent"
-			(at 233.68 100.3299 0)
+		(property "Value" "Corporal"
+			(at 233.68 109.22 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12897,7 +12930,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 100.33 0)
+			(at 227.33 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12908,7 +12941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 100.33 0)
+			(at 227.33 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12919,7 +12952,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 234.315 93.345 0)
+			(at 227.965 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12942,6 +12975,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 231.14 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 233.68 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24066,7 +24110,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 231.14 67.31 180)
+		(at 231.14 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24077,7 +24121,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb70db2c-9caf-4a09-9169-4188cb5c1c2b")
 		(property "Reference" "CP9001"
-			(at 227.965 65.405 0)
+			(at 234.315 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24087,10 +24131,11 @@
 				)
 			)
 		)
-		(property "Value" "Sargent"
-			(at 233.68 67.3099 0)
+		(property "Value" "Corporal"
+			(at 233.68 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24100,7 +24145,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 67.31 0)
+			(at 227.33 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24111,7 +24156,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 67.31 0)
+			(at 227.33 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24122,7 +24167,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 234.315 60.325 0)
+			(at 227.965 74.295 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24145,6 +24190,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 231.14 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 233.68 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24789,7 +24845,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Trackplan:NextCP")
-		(at 41.91 67.31 180)
+		(at 41.91 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -24799,7 +24855,7 @@
 		(dnp no)
 		(uuid "fffcdaf7-87f9-4635-839d-92d2d1377cc6")
 		(property "Reference" "CP9003"
-			(at 38.735 65.405 0)
+			(at 45.085 69.215 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24810,9 +24866,10 @@
 			)
 		)
 		(property "Value" "Luchessa"
-			(at 43.815 67.31 0)
+			(at 44.45 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24822,7 +24879,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 67.31 0)
+			(at 38.1 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24833,7 +24890,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 67.31 0)
+			(at 38.1 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24844,7 +24901,7 @@
 			)
 		)
 		(property "Description" "Identifies the next control point on this track"
-			(at 45.085 60.325 0)
+			(at 38.735 74.295 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24867,6 +24924,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 41.91 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 44.45 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

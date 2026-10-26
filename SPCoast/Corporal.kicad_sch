@@ -5293,6 +5293,17 @@
 					)
 				)
 			)
+			(property "Name" "${VALUE}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Industry_0_1"
 				(polyline
 					(pts
@@ -5335,6 +5346,15 @@
 				)
 			)
 			(symbol "Industry_1_1"
+				(text "${Name}"
+					(at -8.89 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify right)
+					)
+				)
 				(pin bidirectional line
 					(at 1.27 0 180)
 					(length 0)
@@ -6346,7 +6366,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6357,9 +6377,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6402,7 +6423,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6413,7 +6434,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6478,6 +6510,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -9094,9 +9134,10 @@
 			)
 		)
 		(property "Value" "Christopher"
-			(at 61.595 101.6 0)
+			(at 66.04 110.49 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9151,6 +9192,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 63.5 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 66.04 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9296,6 +9348,7 @@
 	(symbol
 		(lib_id "Railroad-Trackplan:Derail")
 		(at 123.19 68.58 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9305,7 +9358,7 @@
 		(dnp no)
 		(uuid "13f3aa00-ba49-4000-a8b0-1ed5ea91d659")
 		(property "Reference" "SW11900"
-			(at 120.65 71.12 0)
+			(at 125.73 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9370,7 +9423,7 @@
 			)
 		)
 		(property "TC" ""
-			(at 130.81 66.04 0)
+			(at 115.57 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9402,7 +9455,7 @@
 			)
 		)
 		(property "IndicationCeiling" "STOP/RESTRICTING"
-			(at 121.92 67.945 0)
+			(at 124.46 67.945 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -10293,7 +10346,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Beet Loader 1"
 			(at 189.23 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -10350,6 +10403,17 @@
 		)
 		(property "Kind" "INDUSTRY"
 			(at 189.23 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 189.23 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14851,7 +14915,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Beet Loader 2"
 			(at 189.23 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -14908,6 +14972,17 @@
 		)
 		(property "Kind" "INDUSTRY"
 			(at 189.23 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 189.23 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19952,9 +20027,10 @@
 			)
 		)
 		(property "Value" "Sargent"
-			(at 205.105 85.09 0)
+			(at 209.55 93.98 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20009,6 +20085,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 207.01 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 209.55 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21820,9 +21907,10 @@
 			)
 		)
 		(property "Value" "Christopher"
-			(at 61.595 85.09 0)
+			(at 66.04 93.98 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21877,6 +21965,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 63.5 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 66.04 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

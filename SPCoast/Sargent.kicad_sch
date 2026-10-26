@@ -8486,6 +8486,17 @@
 					)
 				)
 			)
+			(property "Name" "${VALUE}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Industry_0_1"
 				(polyline
 					(pts
@@ -8528,6 +8539,15 @@
 				)
 			)
 			(symbol "Industry_1_1"
+				(text "${Name}"
+					(at -8.89 0 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify right)
+					)
+				)
 				(pin bidirectional line
 					(at 1.27 0 180)
 					(length 0)
@@ -9539,7 +9559,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9550,9 +9570,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -9595,7 +9616,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9606,7 +9627,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9671,6 +9703,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -11670,12 +11710,6 @@
 		(uuid "911a6c4d-5f74-4475-982a-15afb56c8482")
 	)
 	(junction
-		(at 109.22 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a41b2f92-0c30-45e3-9b63-e89994758bd6")
-	)
-	(junction
 		(at 189.23 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11831,7 +11865,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 73.66) (xy 109.22 73.66)
+			(xy 96.52 73.66) (xy 119.38 73.66)
 		)
 		(stroke
 			(width 0.4064)
@@ -11908,16 +11942,6 @@
 			(type default)
 		)
 		(uuid "6cbb5126-190a-4ad1-bc5a-328c80c79f01")
-	)
-	(wire
-		(pts
-			(xy 109.22 73.66) (xy 119.38 73.66)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "78756ebe-1fc1-44ac-b4b1-03f12ccfa74f")
 	)
 	(wire
 		(pts
@@ -15345,9 +15369,10 @@
 			)
 		)
 		(property "Value" "Watsonville"
-			(at 187.325 73.66 0)
+			(at 191.77 82.55 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15402,6 +15427,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 189.23 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 191.77 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15653,137 +15689,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:AUXILIARY")
-		(at 109.22 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2e1492cd-0f5b-4707-8bde-15bf6e93b2f8")
-		(property "Reference" "AUX1"
-			(at 109.22 78.105 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "HBA"
-			(at 109.22 71.12 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP" "Sargent"
-			(at 109.22 76.2 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "non_vital"
-			(at 109.22 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "980e2b38-6bb7-4a0f-87be-f0ee64913dd0")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "AUX1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
 		(at 69.85 144.78 0)
 		(unit 3)
@@ -15996,7 +15901,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Beet Loader 2"
 			(at 78.74 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -16053,6 +15958,17 @@
 		)
 		(property "Kind" "INDUSTRY"
 			(at 78.74 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 78.74 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17092,6 +17008,147 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
 					(reference "MC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:AUXILIARY")
+		(at 109.22 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "46d29bda-addd-4511-95fb-217c0cd2f2ec")
+		(property "Reference" "AUX1"
+			(at 109.22 83.185 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HBA"
+			(at 109.22 76.2 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP" "Sargent"
+			(at 109.22 81.28 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "non_vital"
+			(at 109.22 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Milepost" "83.4"
+			(at 109.474 82.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "39dcfe69-f498-4cd9-81b8-129735718b4e")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
+					(reference "AUX1")
 					(unit 1)
 				)
 			)
@@ -21837,9 +21894,10 @@
 			)
 		)
 		(property "Value" "Corporal"
-			(at 66.675 73.66 0)
+			(at 71.12 82.55 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21894,6 +21952,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 68.58 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 71.12 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22869,7 +22938,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "Beet Loader 1"
 			(at 78.74 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -22926,6 +22995,17 @@
 		)
 		(property "Kind" "INDUSTRY"
 			(at 78.74 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 78.74 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

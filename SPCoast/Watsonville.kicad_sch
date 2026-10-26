@@ -6066,7 +6066,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "CP"
-				(at 3.175 -1.905 0)
+				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6077,9 +6077,10 @@
 				)
 			)
 			(property "Value" ""
-				(at -1.905 0 0)
+				(at 2.54 -8.89 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6122,7 +6123,7 @@
 				)
 			)
 			(property "Role" "TRACK"
-				(at 0 0 0)
+				(at 5.08 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6133,7 +6134,18 @@
 				)
 			)
 			(property "Kind" "NEXT_CP"
-				(at 0 0 0)
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "${Value}"
+				(at 2.54 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6198,6 +6210,14 @@
 				)
 			)
 			(symbol "NextCP_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 0 180)
 					(length 0)
@@ -8348,6 +8368,12 @@
 		(uuid "574e04cd-18f3-47cc-8f30-1502cd145bf7")
 	)
 	(junction
+		(at 60.96 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6eb6fe57-06f9-4759-969c-d043f08fb412")
+	)
+	(junction
 		(at 147.32 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8438,12 +8464,6 @@
 		(uuid "b3dbbde0-4eef-49af-96b7-18966020c1e1")
 	)
 	(junction
-		(at 60.96 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1f10da8-3d49-48eb-aed8-3e246a30bd97")
-	)
-	(junction
 		(at 137.16 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8468,12 +8488,6 @@
 		(uuid "d1ba3de5-42cf-49a1-aa33-10fa9addad94")
 	)
 	(junction
-		(at 58.42 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d237dcea-50c5-4228-88aa-1823cbe59170")
-	)
-	(junction
 		(at 34.29 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8490,6 +8504,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7ad9c06-e3b9-4212-a70e-dc39b1fc0e11")
+	)
+	(junction
+		(at 46.99 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb5f6b69-7cb1-457e-94b1-29ae538d0378")
 	)
 	(junction
 		(at 157.48 82.55)
@@ -8933,7 +8953,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 76.2) (xy 69.85 85.09)
+			(xy 52.07 67.31) (xy 69.85 85.09)
 		)
 		(stroke
 			(width 0.4064)
@@ -9620,16 +9640,6 @@
 			(type default)
 		)
 		(uuid "f4f40289-00d0-4f6a-85ff-d58fe9363f08")
-	)
-	(wire
-		(pts
-			(xy 52.07 67.31) (xy 60.96 76.2)
-		)
-		(stroke
-			(width 0.4064)
-			(type default)
-		)
-		(uuid "f6a8ef4a-99d8-4702-810e-1bd82726bafc")
 	)
 	(polyline
 		(pts
@@ -11707,6 +11717,230 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
 					(reference "DevTC15028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
+		(at 46.99 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14dfa959-b581-4e8a-956a-1356ba4cee8d")
+		(property "Reference" "DOT15002"
+			(at 41.275 64.135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "YARD"
+			(at 46.99 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.815 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.815 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Yard Limits: Standard Code Rule 93, GCOR RULE 6.13: a designated section of the main track where trains and engines may operate without protecting against other movements,"
+			(at 43.815 69.215 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_93"
+			(at 46.99 64.135 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 41.275 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 46.99 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "792fdc2c-dd6d-4cb3-9637-cecd0e03e4c3")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
+					(reference "DOT15002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
+		(at 60.96 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1571e3d9-1977-4757-90d3-e601309c2460")
+		(property "Reference" "DOT15001"
+			(at 55.245 51.435 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "YARD"
+			(at 60.96 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.785 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.785 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Yard Limits: Standard Code Rule 93, GCOR RULE 6.13: a designated section of the main track where trains and engines may operate without protecting against other movements,"
+			(at 57.785 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "RULE_93"
+			(at 60.96 51.435 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Direction" "BOTH"
+			(at 55.245 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "POLICY"
+			(at 60.96 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "645fa01f-6e90-4945-8f6b-1cc56040ff7d")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
+					(reference "DOT15001")
 					(unit 1)
 				)
 			)
@@ -22094,118 +22328,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
 					(reference "B15030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
-		(at 58.42 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4c8107f0-435b-48d8-84dd-23d582fee7c1")
-		(property "Reference" "DOT15001"
-			(at 52.705 51.435 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "YARD"
-			(at 58.42 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.245 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.245 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Yard Limits: Standard Code Rule 93, GCOR RULE 6.13: a designated section of the main track where trains and engines may operate without protecting against other movements,"
-			(at 55.245 56.515 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_93"
-			(at 58.42 51.435 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 52.705 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 58.42 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7c58c197-c5ea-4ed7-abd7-35bf559a56ae")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
-					(reference "DOT15001")
 					(unit 1)
 				)
 			)
@@ -47774,118 +47896,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Rule93-Yard Limits")
-		(at 60.96 73.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f7edcd25-6c4c-4d66-b567-095a7875360e")
-		(property "Reference" "DOT15002"
-			(at 55.245 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "YARD"
-			(at 60.96 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.785 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.785 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Yard Limits: Standard Code Rule 93, GCOR RULE 6.13: a designated section of the main track where trains and engines may operate without protecting against other movements,"
-			(at 57.785 78.105 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_93"
-			(at 60.96 73.025 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 55.245 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 60.96 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "ab679f7c-1b50-41a3-9129-46a62c50fc8a")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/0ce55e2d-fbe5-47d3-a48a-db8408a15e7e"
-					(reference "DOT15002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
 		(at 58.42 184.15 0)
 		(unit 3)
@@ -48715,14 +48725,16 @@
 			)
 		)
 		(property "Value" "Sargent"
-			(at 20.32 50.8 0)
+			(at 22.86 63.5 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(color 0 0 0 1)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
@@ -48771,6 +48783,17 @@
 		)
 		(property "Kind" "NEXT_CP"
 			(at 20.32 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 22.86 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
