@@ -1,7 +1,689 @@
 (kicad_symbol_lib
 	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "10.0")	(symbol "Driver-GPIO-Digital"
+	(generator_version "10.0")
+	(symbol "Driver-CMRInet-IB"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "CMRI"
+			(at 1.143 2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "IN.${Bit}"
+			(at 0.889 4.826 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CMRInet digital input: one bit of the IB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
+			(at 11.303 -2.921 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "CMRI"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.D" "binary"
+			(at 7.493 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Bit" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Node" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-IB_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-IB_1_1"
+			(polyline
+				(pts
+					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "CMRI IN.${Bit}"
+				(at 5.334 0 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 0 0)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 21.59 0 180)
+				(length 1.27)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-CMRInet-Node"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "RIO"
+			(at -14.224 5.842 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "UA${Address}"
+			(at -15.24 3.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A CMRInet node: a driver on the CMRInet line, addressed by its UA, providing the IOBus its bits sit on; declares NodeType (C, M, N) and its IB/OB byte arrays, checked against the bits in use (ADR 0009 §3.5)."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at -11.303 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IC" "CMRI"
+			(at -4.445 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at -3.556 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "NodeType" "C"
+			(at -6.35 10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" ""
+			(at -3.81 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "InputBytes" ""
+			(at 5.08 -1.143 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "OutputBytes" ""
+			(at 11.43 -1.143 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-Node_0_1"
+			(rectangle
+				(start -8.89 2.54)
+				(end 15.24 -2.54)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-Node_1_1"
+			(text "IOBus"
+				(at -8.509 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "Transport"
+				(at -8.382 1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "Type: ${NodeType}"
+				(at -3.429 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "CMRInet Node"
+				(at -2.54 1.27 0)
+				(effects
+					(font
+						(size 0.889 0.889)
+					)
+					(justify left)
+				)
+			)
+			(text "IB["
+				(at 3.81 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify right)
+				)
+			)
+			(text "]"
+				(at 6.35 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "UA:${Address}"
+				(at 7.62 1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(text "OB["
+				(at 10.16 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify right)
+				)
+			)
+			(text "]"
+				(at 12.7 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at -10.16 1.27 0)
+				(length 1.27)
+				(name "Transport"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -10.16 -1.27 0)
+				(length 1.27)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-CMRInet-OB"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.27)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "CMRI"
+			(at 1.143 2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "OUT.${Bit}"
+			(at 0.889 4.826 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CMRInet digital output: one bit of the OB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
+			(at 11.303 -2.921 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "CMRI"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.D" "binary"
+			(at 7.493 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Bit" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Node" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-OB_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-CMRInet-OB_1_1"
+			(polyline
+				(pts
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "CMRI OUT.${Bit}"
+				(at 5.207 0 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 0 0)
+				(length 2.54)
+				(name "D"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 21.59 0 180)
+				(length 1.27)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-GPIO-Digital"
 		(pin_names
 			(offset 1.27)
 		)
@@ -21,7 +703,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "${Address}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -54,7 +736,7 @@
 				)
 			)
 		)
-		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Value = the board core's pin name (D4, GPIO5); the C++ build is the check."
+		(property "Description" "Processor pin used as a digital input or output, by what lands on it. Address = the board core's pin name"
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -101,16 +783,28 @@
 				(justify left)
 			)
 		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-GPIO-Digital_0_1"
 			(rectangle
-				(start 21.59 -1.27)
-				(end 2.54 1.27)
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 		)
@@ -141,8 +835,8 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "GPIO ${VALUE}"
-				(at 6.477 0 0)
+			(text "GPIO ${Address}"
+				(at 5.461 0 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -164,6 +858,24 @@
 					(effects
 						(font
 							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 21.59 0 180)
+				(length 1.27)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
 						)
 					)
 				)
@@ -191,7 +903,7 @@
 				)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "${Address}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -224,7 +936,7 @@
 				)
 			)
 		)
-		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Value = the board core's pin name."
+		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Address = the board core's pin name."
 			(at 0.762 -4.064 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -259,7 +971,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.D" "pixel"
+		(property "Pin.D" "color"
 			(at 6.35 2.159 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -271,23 +983,35 @@
 				(justify left)
 			)
 		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-GPIO-Pixel_0_1"
 			(rectangle
-				(start 21.59 -1.27)
-				(end 2.54 1.27)
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 		)
 		(symbol "Driver-GPIO-Pixel_1_1"
 			(polyline
 				(pts
-					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
 				)
 				(stroke
 					(width 0)
@@ -299,9 +1023,9 @@
 				)
 			)
 			(arc
-				(start 19.558 0)
-				(mid 19.744 0.449)
-				(end 20.193 0.635)
+				(start 14.478 0)
+				(mid 14.664 0.449)
+				(end 15.113 0.635)
 				(stroke
 					(width 0)
 					(type solid)
@@ -312,9 +1036,9 @@
 				)
 			)
 			(arc
-				(start 20.193 0.635)
-				(mid 20.642 0.449)
-				(end 20.828 0)
+				(start 15.113 0.635)
+				(mid 15.562 0.449)
+				(end 15.748 0)
 				(stroke
 					(width 0)
 					(type solid)
@@ -325,9 +1049,9 @@
 				)
 			)
 			(arc
-				(start 20.193 -0.635)
-				(mid 19.744 -0.449)
-				(end 19.558 0)
+				(start 15.113 -0.635)
+				(mid 14.664 -0.449)
+				(end 14.478 0)
 				(stroke
 					(width 0)
 					(type solid)
@@ -338,9 +1062,9 @@
 				)
 			)
 			(arc
-				(start 20.828 0)
-				(mid 20.642 -0.449)
-				(end 20.193 -0.635)
+				(start 15.748 0)
+				(mid 15.562 -0.449)
+				(end 15.113 -0.635)
 				(stroke
 					(width 0)
 					(type default)
@@ -350,7 +1074,7 @@
 				)
 			)
 			(circle
-				(center 20.193 0)
+				(center 15.113 0)
 				(radius 0.8519)
 				(stroke
 					(width 0.0762)
@@ -360,13 +1084,13 @@
 					(type none)
 				)
 			)
-			(text "PIXEL ${VALUE}"
-				(at 17.4307 -0.1012 0)
+			(text "PIXEL ${Address}"
+				(at 5.461 0 0)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 0.889 0.889)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(pin output line
@@ -387,6 +1111,24 @@
 					)
 				)
 			)
+			(pin free line
+				(at 21.59 0 180)
+				(length 1.27)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
@@ -400,9 +1142,10 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 11.739 0.3913 0)
+			(at 18.034 0.254 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -476,12 +1219,12 @@
 			)
 		)
 		(property "IC" "MAX7311"
-			(at 8.89 -1.27 0)
+			(at 9.779 -3.429 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -661,6 +1404,16 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-I2C-MAX7311_0_1"
 			(polyline
 				(pts
@@ -712,6 +1465,18 @@
 				(fill
 					(type color)
 					(color 132 0 0 1)
+				)
+			)
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -8.89)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
 				)
 			)
 			(polyline
@@ -766,22 +1531,35 @@
 					(color 132 0 0 1)
 				)
 			)
-		)
-		(symbol "Driver-I2C-MAX7311_1_1"
-			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
+			(text "Address:"
+				(at 5.461 -4.699 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
 				)
-				(fill
-					(type none)
+			)
+			(text "0/1"
+				(at 7.112 -1.524 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${Address}"
+				(at 7.112 -5.842 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
 				)
 			)
 			(text "Type:"
-				(at 7.62 0 0)
+				(at 7.62 0.127 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -789,31 +1567,18 @@
 					(justify right)
 				)
 			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
+			(text "I/O Expander"
+				(at 8.509 0.127 0)
 				(effects
 					(font
 						(size 0.508 0.508)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
+		)
+		(symbol "Driver-I2C-MAX7311_1_1"
+			(unit_name "AA")
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -886,54 +1651,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 22.86 -7.62 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Driver-I2C-MAX7311_2_1"
 			(unit_name "AB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1009,51 +1747,6 @@
 		)
 		(symbol "Driver-I2C-MAX7311_3_1"
 			(unit_name "BA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1129,51 +1822,6 @@
 		)
 		(symbol "Driver-I2C-MAX7311_4_1"
 			(unit_name "BB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1259,9 +1907,10 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 7.874 0.508 0)
+			(at 16.637 0.127 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -1336,12 +1985,12 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 9.271 -1.27 0)
+			(at 7.239 -3.429 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
@@ -1522,6 +2171,16 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-I2C-MAX7313_0_1"
 			(polyline
 				(pts
@@ -1573,6 +2232,18 @@
 				(fill
 					(type color)
 					(color 132 0 0 1)
+				)
+			)
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -8.89)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
 				)
 			)
 			(polyline
@@ -1627,8 +2298,17 @@
 					(color 132 0 0 1)
 				)
 			)
+			(text "Address:"
+				(at 5.461 -4.699 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
 			(text "0/1"
-				(at 5.461 -1.27 0)
+				(at 7.112 -1.524 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -1636,22 +2316,17 @@
 					(justify left)
 				)
 			)
-		)
-		(symbol "Driver-I2C-MAX7313_1_1"
-			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
+			(text "${Address}"
+				(at 7.112 -5.842 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
 				)
 			)
 			(text "Type:"
-				(at 7.62 -0.381 0)
+				(at 7.62 0.127 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -1659,31 +2334,18 @@
 					(justify right)
 				)
 			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
+			(text "I/O Expander"
+				(at 8.509 0.127 0)
 				(effects
 					(font
 						(size 0.508 0.508)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
+		)
+		(symbol "Driver-I2C-MAX7313_1_1"
+			(unit_name "AA")
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1756,54 +2418,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 22.86 -7.62 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Driver-I2C-MAX7313_2_1"
 			(unit_name "AB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1879,51 +2514,6 @@
 		)
 		(symbol "Driver-I2C-MAX7313_3_1"
 			(unit_name "BA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -1999,51 +2589,6 @@
 		)
 		(symbol "Driver-I2C-MAX7313_4_1"
 			(unit_name "BB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Digital I/O"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -2394,7 +2939,7 @@
 		(symbol "Driver-I2C-MAX7313-SPCoastcTc_1_1"
 			(polyline
 				(pts
-					(xy -9.271 45.72) (xy -8.636 45.085) (xy -8.636 46.355) (xy -9.271 45.72)
+					(xy -9.906 45.72) (xy -9.271 45.085) (xy -9.271 46.355) (xy -9.906 45.72)
 				)
 				(stroke
 					(width 0)
@@ -2407,7 +2952,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 40.64) (xy -8.636 40.005) (xy -8.636 41.275) (xy -9.271 40.64)
+					(xy -9.906 40.64) (xy -9.271 40.005) (xy -9.271 41.275) (xy -9.906 40.64)
 				)
 				(stroke
 					(width 0)
@@ -2420,7 +2965,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 35.56) (xy -8.636 34.925) (xy -8.636 36.195) (xy -9.271 35.56)
+					(xy -9.906 35.56) (xy -9.271 34.925) (xy -9.271 36.195) (xy -9.906 35.56)
 				)
 				(stroke
 					(width 0)
@@ -2433,7 +2978,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 13.97) (xy -8.636 13.335) (xy -8.636 14.605) (xy -9.271 13.97)
+					(xy -9.906 13.97) (xy -9.271 13.335) (xy -9.271 14.605) (xy -9.906 13.97)
 				)
 				(stroke
 					(width 0)
@@ -2446,7 +2991,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 11.43) (xy -8.636 10.795) (xy -8.636 12.065) (xy -9.271 11.43)
+					(xy -9.906 11.43) (xy -9.271 10.795) (xy -9.271 12.065) (xy -9.906 11.43)
 				)
 				(stroke
 					(width 0)
@@ -2459,7 +3004,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 -2.54) (xy -8.636 -3.175) (xy -8.636 -1.905) (xy -9.271 -2.54)
+					(xy -9.906 -2.54) (xy -9.271 -3.175) (xy -9.271 -1.905) (xy -9.906 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -2472,7 +3017,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 -5.08) (xy -8.636 -5.715) (xy -8.636 -4.445) (xy -9.271 -5.08)
+					(xy -9.906 -5.08) (xy -9.271 -5.715) (xy -9.271 -4.445) (xy -9.906 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -2485,7 +3030,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 -7.62) (xy -8.636 -8.255) (xy -8.636 -6.985) (xy -9.271 -7.62)
+					(xy -9.906 -7.62) (xy -9.271 -8.255) (xy -9.271 -6.985) (xy -9.906 -7.62)
 				)
 				(stroke
 					(width 0)
@@ -2498,7 +3043,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.271 -31.75) (xy -8.636 -32.385) (xy -8.636 -31.115) (xy -9.271 -31.75)
+					(xy -9.906 -31.75) (xy -9.271 -32.385) (xy -9.271 -31.115) (xy -9.906 -31.75)
 				)
 				(stroke
 					(width 0)
@@ -2510,19 +3055,20 @@
 				)
 			)
 			(rectangle
-				(start -8.255 48.26)
-				(end 8.255 -42.545)
+				(start -8.89 48.26)
+				(end 8.89 -42.545)
 				(stroke
 					(width 0.3048)
-					(type default)
+					(type solid)
+					(color 128 77 0 1)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(polyline
 				(pts
-					(xy -7.239 24.13) (xy -7.874 24.765) (xy -7.874 23.495) (xy -7.239 24.13)
+					(xy -7.874 24.13) (xy -8.509 24.765) (xy -8.509 23.495) (xy -7.874 24.13)
 				)
 				(stroke
 					(width 0)
@@ -2535,7 +3081,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 6.35) (xy -7.874 6.985) (xy -7.874 5.715) (xy -7.239 6.35)
+					(xy -7.874 6.35) (xy -8.509 6.985) (xy -8.509 5.715) (xy -7.874 6.35)
 				)
 				(stroke
 					(width 0)
@@ -2548,7 +3094,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 3.81) (xy -7.874 4.445) (xy -7.874 3.175) (xy -7.239 3.81)
+					(xy -7.874 3.81) (xy -8.509 4.445) (xy -8.509 3.175) (xy -7.874 3.81)
 				)
 				(stroke
 					(width 0)
@@ -2561,7 +3107,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 -10.16) (xy -7.874 -9.525) (xy -7.874 -10.795) (xy -7.239 -10.16)
+					(xy -7.874 -10.16) (xy -8.509 -9.525) (xy -8.509 -10.795) (xy -7.874 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -2574,7 +3120,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 -12.7) (xy -7.874 -12.065) (xy -7.874 -13.335) (xy -7.239 -12.7)
+					(xy -7.874 -12.7) (xy -8.509 -12.065) (xy -8.509 -13.335) (xy -7.874 -12.7)
 				)
 				(stroke
 					(width 0)
@@ -2587,7 +3133,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 -15.24) (xy -7.874 -14.605) (xy -7.874 -15.875) (xy -7.239 -15.24)
+					(xy -7.874 -15.24) (xy -8.509 -14.605) (xy -8.509 -15.875) (xy -7.874 -15.24)
 				)
 				(stroke
 					(width 0)
@@ -2600,7 +3146,7 @@
 			)
 			(polyline
 				(pts
-					(xy -7.239 -25.4) (xy -7.874 -24.765) (xy -7.874 -26.035) (xy -7.239 -25.4)
+					(xy -7.874 -25.4) (xy -8.509 -24.765) (xy -8.509 -26.035) (xy -7.874 -25.4)
 				)
 				(stroke
 					(width 0)
@@ -2764,7 +3310,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 13.97 0)
+				(at -12.7 13.97 0)
 				(length 3.81)
 				(name "A1"
 					(effects
@@ -2782,7 +3328,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 11.43 0)
+				(at -12.7 11.43 0)
 				(length 3.81)
 				(name "A2"
 					(effects
@@ -2800,7 +3346,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 24.13 0)
+				(at -12.7 24.13 0)
 				(length 3.81)
 				(name "A3"
 					(effects
@@ -2818,7 +3364,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 45.72 0)
+				(at -12.7 45.72 0)
 				(length 3.81)
 				(name "A4"
 					(effects
@@ -2836,7 +3382,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 40.64 0)
+				(at -12.7 40.64 0)
 				(length 3.81)
 				(name "A5"
 					(effects
@@ -2854,7 +3400,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 35.56 0)
+				(at -12.7 35.56 0)
 				(length 3.81)
 				(name "A6"
 					(effects
@@ -2872,7 +3418,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 6.35 0)
+				(at -12.7 6.35 0)
 				(length 3.81)
 				(name "A7"
 					(effects
@@ -2890,7 +3436,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 3.81 0)
+				(at -12.7 3.81 0)
 				(length 3.81)
 				(name "A8"
 					(effects
@@ -2908,7 +3454,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 -31.75 0)
+				(at -12.7 -31.75 0)
 				(length 3.81)
 				(name "B1"
 					(effects
@@ -2926,7 +3472,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -15.24 0)
+				(at -12.7 -15.24 0)
 				(length 3.81)
 				(name "B2"
 					(effects
@@ -2944,7 +3490,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -12.7 0)
+				(at -12.7 -12.7 0)
 				(length 3.81)
 				(name "B3"
 					(effects
@@ -2962,7 +3508,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -10.16 0)
+				(at -12.7 -10.16 0)
 				(length 3.81)
 				(name "B4"
 					(effects
@@ -2980,7 +3526,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 -25.4 0)
+				(at -12.7 -25.4 0)
 				(length 3.81)
 				(name "B5"
 					(effects
@@ -2998,7 +3544,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 -5.08 0)
+				(at -12.7 -5.08 0)
 				(length 3.81)
 				(name "B6"
 					(effects
@@ -3016,7 +3562,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 -7.62 0)
+				(at -12.7 -7.62 0)
 				(length 3.81)
 				(name "B7"
 					(effects
@@ -3034,7 +3580,7 @@
 				)
 			)
 			(pin output line
-				(at -11.43 -2.54 0)
+				(at -12.7 -2.54 0)
 				(length 3.81)
 				(name "B8"
 					(effects
@@ -3047,6 +3593,24 @@
 					(effects
 						(font
 							(size 0.635 0.635)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 -39.37 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
 						)
 					)
 				)
@@ -3064,9 +3628,10 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 7.747 0.254 0)
+			(at 15.875 0.254 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -3078,6 +3643,7 @@
 			(at 9.271 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -3129,7 +3695,7 @@
 				)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" ""
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3141,12 +3707,12 @@
 			)
 		)
 		(property "IC" "MCP23017"
-			(at 9.398 -1.27 0)
+			(at 7.112 -3.683 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 				(justify left)
 			)
@@ -3327,6 +3893,16 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-I2C-MCP23017_0_1"
 			(polyline
 				(pts
@@ -3378,6 +3954,18 @@
 				(fill
 					(type color)
 					(color 132 0 0 1)
+				)
+			)
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -8.89)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
 				)
 			)
 			(polyline
@@ -3432,12 +4020,31 @@
 					(color 132 0 0 1)
 				)
 			)
+			(text "Address:"
+				(at 5.461 -4.826 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
 			(text "0/1"
-				(at 6.604 -1.27 0)
+				(at 7.112 -1.651 0)
 				(effects
 					(font
 						(size 0.762 0.762)
 					)
+					(justify left)
+				)
+			)
+			(text "${Address}"
+				(at 7.112 -5.969 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
 				)
 			)
 			(text "Type:"
@@ -3449,29 +4056,18 @@
 					(justify right)
 				)
 			)
-			(text "Address:"
-				(at 8.89 -2.54 0)
+			(text "I/O Expander"
+				(at 8.509 0 0)
 				(effects
 					(font
 						(size 0.508 0.508)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 		)
 		(symbol "Driver-I2C-MCP23017_1_1"
 			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3544,20 +4140,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 22.86 -7.62 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Driver-I2C-MCP23017_2_1"
 			(unit_name "AB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3633,17 +4236,6 @@
 		)
 		(symbol "Driver-I2C-MCP23017_3_1"
 			(unit_name "BA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3719,17 +4311,6 @@
 		)
 		(symbol "Driver-I2C-MCP23017_4_1"
 			(unit_name "BB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin bidirectional line
 				(at 0 0 0)
 				(length 2.54)
@@ -3815,9 +4396,10 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 9.398 0.127 0)
+			(at 11.938 4.953 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -3880,7 +4462,7 @@
 				)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" ""
 			(at 16.891 -2.667 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3892,12 +4474,12 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 11.557 -1.524 0)
+			(at 9.144 -3.556 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -4088,6 +4670,16 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-I2C-PCA9685-PWM_0_1"
 			(polyline
 				(pts
@@ -4141,9 +4733,21 @@
 					(color 132 0 0 1)
 				)
 			)
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -8.89)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
 			(polyline
 				(pts
-					(xy 5.588 -0.762) (xy 5.588 -2.032)
+					(xy 7.112 -0.889) (xy 7.112 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4155,7 +4759,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.588 -0.762) (xy 5.715 -0.762)
+					(xy 7.112 -0.889) (xy 7.239 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4167,7 +4771,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.715 -0.762) (xy 5.715 -2.032)
+					(xy 7.239 -0.889) (xy 7.239 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4179,7 +4783,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.715 -2.032) (xy 5.842 -2.032)
+					(xy 7.239 -2.159) (xy 7.366 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4191,7 +4795,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.842 -0.762) (xy 5.842 -2.032)
+					(xy 7.366 -0.889) (xy 7.366 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4203,7 +4807,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.842 -0.762) (xy 5.969 -0.762)
+					(xy 7.366 -0.889) (xy 7.493 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4215,7 +4819,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.969 -0.762) (xy 5.969 -2.032)
+					(xy 7.493 -0.889) (xy 7.493 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4227,7 +4831,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.969 -2.032) (xy 6.096 -2.032)
+					(xy 7.493 -2.159) (xy 7.62 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4239,7 +4843,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.096 -0.762) (xy 6.096 -2.032)
+					(xy 7.62 -0.889) (xy 7.62 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4251,7 +4855,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.096 -0.762) (xy 6.223 -0.762)
+					(xy 7.62 -0.889) (xy 7.747 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4263,7 +4867,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.223 -0.762) (xy 6.223 -2.032)
+					(xy 7.747 -0.889) (xy 7.747 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4275,7 +4879,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.223 -2.032) (xy 6.477 -2.032)
+					(xy 7.747 -2.159) (xy 8.001 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4287,7 +4891,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.477 -0.762) (xy 6.477 -2.032)
+					(xy 8.001 -0.889) (xy 8.001 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4299,7 +4903,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.477 -0.762) (xy 6.731 -0.762)
+					(xy 8.001 -0.889) (xy 8.255 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4311,7 +4915,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.731 -0.762) (xy 6.731 -2.032)
+					(xy 8.255 -0.889) (xy 8.255 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4323,7 +4927,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.731 -2.032) (xy 6.985 -2.032)
+					(xy 8.255 -2.159) (xy 8.509 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4335,7 +4939,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.985 -0.762) (xy 6.985 -2.032)
+					(xy 8.509 -0.889) (xy 8.509 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4347,7 +4951,7 @@
 			)
 			(polyline
 				(pts
-					(xy 6.985 -0.762) (xy 7.239 -0.762)
+					(xy 8.509 -0.889) (xy 8.763 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4359,7 +4963,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.239 -0.762) (xy 7.239 -2.032)
+					(xy 8.763 -0.889) (xy 8.763 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4371,7 +4975,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.239 -2.032) (xy 7.747 -2.032)
+					(xy 8.763 -2.159) (xy 9.271 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4383,7 +4987,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.747 -0.762) (xy 7.747 -2.032)
+					(xy 9.271 -0.889) (xy 9.271 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4395,7 +4999,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.747 -0.762) (xy 8.255 -0.762)
+					(xy 9.271 -0.889) (xy 9.779 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4407,7 +5011,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.255 -0.762) (xy 8.255 -2.032)
+					(xy 9.779 -0.889) (xy 9.779 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4419,7 +5023,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.255 -2.032) (xy 8.763 -2.032)
+					(xy 9.779 -2.159) (xy 10.287 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4431,7 +5035,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.763 -0.762) (xy 8.763 -2.032)
+					(xy 10.287 -0.889) (xy 10.287 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4443,7 +5047,7 @@
 			)
 			(polyline
 				(pts
-					(xy 8.763 -0.762) (xy 9.271 -0.762)
+					(xy 10.287 -0.889) (xy 10.795 -0.889)
 				)
 				(stroke
 					(width 0.0254)
@@ -4455,7 +5059,7 @@
 			)
 			(polyline
 				(pts
-					(xy 9.271 -0.762) (xy 9.271 -2.032)
+					(xy 10.795 -0.889) (xy 10.795 -2.159)
 				)
 				(stroke
 					(width 0.0254)
@@ -4463,56 +5067,47 @@
 				)
 				(fill
 					(type none)
-				)
-			)
-			(text "Type:"
-				(at 7.62 -0.127 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
 				)
 			)
 			(text "Address:"
-				(at 8.89 -2.667 0)
+				(at 5.08 -4.826 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(text "${Address}"
+				(at 6.731 -5.969 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Type:"
+				(at 7.239 0 0)
 				(effects
 					(font
 						(size 0.508 0.508)
 					)
 					(justify right)
+				)
+			)
+			(text "12-bit PWM"
+				(at 8.128 0 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
 				)
 			)
 		)
 		(symbol "Driver-I2C-PCA9685-PWM_1_1"
 			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "12-bit PWM"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -4585,20 +5180,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 22.86 -7.62 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Driver-I2C-PCA9685-PWM_2_1"
 			(unit_name "AB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -4674,17 +5276,6 @@
 		)
 		(symbol "Driver-I2C-PCA9685-PWM_3_1"
 			(unit_name "BA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -4760,17 +5351,6 @@
 		)
 		(symbol "Driver-I2C-PCA9685-PWM_4_1"
 			(unit_name "BB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -4856,9 +5436,10 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Exp"
-			(at 9.398 0.127 0)
+			(at 16.002 0.381 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.889 0.889)
@@ -4921,7 +5502,7 @@
 				)
 			)
 		)
-		(property "Address" "0x20"
+		(property "Address" ""
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4933,12 +5514,12 @@
 			)
 		)
 		(property "IC" "PCA9685"
-			(at 11.684 -1.27 0)
+			(at 9.525 -3.429 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -5140,6 +5721,16 @@
 				)
 			)
 		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Driver-I2C-PCA9685-Servo_0_1"
 			(polyline
 				(pts
@@ -5193,33 +5784,21 @@
 					(color 132 0 0 1)
 				)
 			)
-			(arc
-				(start 6.096 -1.27)
-				(mid 6.2448 -0.9108)
-				(end 6.604 -0.762)
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -8.89)
 				(stroke
-					(width 0.0508)
+					(width 0.3048)
 					(type solid)
+					(color 128 77 0 1)
 				)
 				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 6.604 -1.778)
-				(mid 6.2448 -1.6292)
-				(end 6.096 -1.27)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(polyline
 				(pts
-					(xy 6.604 -0.762) (xy 7.874 -1.016)
+					(xy 8.636 -1.143) (xy 9.906 -1.397)
 				)
 				(stroke
 					(width 0.0508)
@@ -5230,7 +5809,7 @@
 				)
 			)
 			(circle
-				(center 6.604 -1.27)
+				(center 8.636 -1.651)
 				(radius 0.381)
 				(stroke
 					(width 0.0508)
@@ -5240,9 +5819,33 @@
 					(type none)
 				)
 			)
+			(arc
+				(start 8.128 -1.651)
+				(mid 8.2768 -1.2918)
+				(end 8.636 -1.143)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.636 -2.159)
+				(mid 8.2768 -2.0102)
+				(end 8.128 -1.651)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy 6.985 -0.762) (xy 6.985 -0.508) (xy 5.588 -0.508) (xy 5.588 -2.032) (xy 6.985 -2.032) (xy 6.985 -1.778)
+					(xy 9.017 -1.143) (xy 9.017 -0.889) (xy 7.62 -0.889) (xy 7.62 -2.413) (xy 9.017 -2.413) (xy 9.017 -2.159)
 				)
 				(stroke
 					(width 0.0508)
@@ -5253,9 +5856,9 @@
 				)
 			)
 			(arc
-				(start 7.874 -1.016)
-				(mid 7.9792 -1.27)
-				(end 7.874 -1.524)
+				(start 9.906 -1.397)
+				(mid 10.0112 -1.651)
+				(end 9.906 -1.905)
 				(stroke
 					(width 0.0508)
 					(type solid)
@@ -5265,7 +5868,7 @@
 				)
 			)
 			(circle
-				(center 7.747 -1.27)
+				(center 9.779 -1.651)
 				(radius 0.127)
 				(stroke
 					(width 0.0508)
@@ -5277,7 +5880,7 @@
 			)
 			(polyline
 				(pts
-					(xy 7.874 -1.524) (xy 6.604 -1.778)
+					(xy 9.906 -1.905) (xy 8.636 -2.159)
 				)
 				(stroke
 					(width 0.0508)
@@ -5287,17 +5890,26 @@
 					(type none)
 				)
 			)
-			(text "Type:"
-				(at 7.62 0 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
 			(text "Address:"
-				(at 8.763 -2.54 0)
+				(at 5.461 -4.699 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(text "${Address}"
+				(at 7.112 -5.842 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Type:"
+				(at 7.62 0.127 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -5305,36 +5917,18 @@
 					(justify right)
 				)
 			)
-			(text "I2C Expander"
-				(at 10.16 -6.35 0)
+			(text "Servo 50Hz"
+				(at 8.509 0.127 0)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.508 0.508)
 					)
-				)
-			)
-			(text "Servo 50 Hz"
-				(at 10.16 -7.62 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
+					(justify left)
 				)
 			)
 		)
 		(symbol "Driver-I2C-PCA9685-Servo_1_1"
 			(unit_name "AA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -5407,20 +6001,27 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 22.86 -7.62 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
 		)
 		(symbol "Driver-I2C-PCA9685-Servo_2_1"
 			(unit_name "AB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -5496,17 +6097,6 @@
 		)
 		(symbol "Driver-I2C-PCA9685-Servo_3_1"
 			(unit_name "BA")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -5582,17 +6172,6 @@
 		)
 		(symbol "Driver-I2C-PCA9685-Servo_4_1"
 			(unit_name "BB")
-			(rectangle
-				(start 2.54 1.27)
-				(end 15.24 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(pin output line
 				(at 0 0 0)
 				(length 2.54)
@@ -5661,6 +6240,1607 @@
 					(effects
 						(font
 							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-Light"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 3.683 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
+			(at 11.049 -5.969 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "LIGHT"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.ON" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.INTENSITY" "level"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Light_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -3.81)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Light_1_1"
+			(polyline
+				(pts
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.651 -2.54) (xy 2.286 -3.175) (xy 2.286 -1.905) (xy 1.651 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 4.953 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "light"
+				(at 4.953 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "intensity"
+				(at 4.953 -2.54 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 8.89 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 0 0)
+				(length 2.54)
+				(name "ON"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 -2.54 0)
+				(length 2.54)
+				(name "INTENSITY"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-Sensor"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 3.683 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+			(at 11.049 -5.969 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.S" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Sensor_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Sensor_1_1"
+			(polyline
+				(pts
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 4.953 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "sensor"
+				(at 4.953 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 8.89 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 0 0)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-Sensor-Feedback"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 3.683 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+			(at 11.049 -5.969 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "SENSOR"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.S" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Sensor-Feedback_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Sensor-Feedback_1_1"
+			(polyline
+				(pts
+					(xy 3.429 0) (xy 2.794 0.635) (xy 2.794 -0.635) (xy 3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 4.953 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "sensor"
+				(at 4.953 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 8.89 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 0 0)
+				(length 2.54)
+				(name "S"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-SignalMast"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 8.001 2.921 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 8.001 2.921 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Kind" "SIGNALMAST"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 8.001 2.921 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-SignalMast_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.556 0) (xy 2.921 0.635) (xy 2.921 -0.635) (xy 3.556 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-SignalMast_1_1"
+			(text "MQTT"
+				(at 6.604 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "mast"
+				(at 6.604 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 10.16 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-Turnout"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.143 2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT turnout command (CLOSED/THROWN). Address = the JMRI turnout name; empty = the switch this driver serves."
+			(at 11.303 -2.921 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.5052 2.024 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "TURNOUT"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.M" "binary"
+			(at 7.493 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Turnout_0_1"
+			(rectangle
+				(start 2.54 1.27)
+				(end 20.32 -1.27)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Turnout_1_1"
+			(polyline
+				(pts
+					(xy 1.651 0) (xy 2.286 -0.635) (xy 2.286 0.635) (xy 1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 5.207 0.508 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "turnout"
+				(at 5.207 -0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 9.398 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 0 0)
+				(length 2.54)
+				(name "M"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 0 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Driver-JMRI-Turnout-Feedback"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "JMRI_MQTT"
+			(at 1.27 3.683 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 4.191 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI MQTT turnout feedback (CLOSED/THROWN/INCONSISTENT/UNKNOWN) as N and R. Address as Driver-JMRI-Turnout."
+			(at 11.049 -5.969 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "MQTT-JMRI"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Kind" "TURNOUT"
+			(at 7.6322 3.675 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.N" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 7.62 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Address" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Turnout-Feedback_0_1"
+			(rectangle
+				(start 2.54 2.54)
+				(end 20.32 -2.54)
+				(stroke
+					(width 0.3048)
+					(type solid)
+					(color 128 77 0 1)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Driver-JMRI-Turnout-Feedback_1_1"
+			(polyline
+				(pts
+					(xy 3.429 1.27) (xy 2.794 1.905) (xy 2.794 0.635) (xy 3.429 1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.429 -1.27) (xy 2.794 -0.635) (xy 2.794 -1.905) (xy 3.429 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MQTT"
+				(at 5.207 0.635 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "turnout"
+				(at 5.207 -0.381 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "${ADDRESS}"
+				(at 9.398 0.127 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 1.27 0)
+				(length 2.54)
+				(name "~{N}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 -1.27 0)
+				(length 2.54)
+				(name "~{R}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 22.86 -1.27 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Processor"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Proc"
+			(at -14.224 5.842 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -1.016 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
+			(at 1.27 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at -11.303 9.652 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at -9.906 8.001 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Processor_1_1"
+			(rectangle
+				(start -16.51 2.54)
+				(end 16.51 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Processor: ${Board}"
+				(at -15.748 1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(text "Processor"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "IOBus"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at 19.05 1.27 180)
+				(length 2.54)
+				(name "Processor"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 19.05 -1.27 180)
+				(length 2.54)
+				(name "IOBus"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
 						)
 					)
 				)

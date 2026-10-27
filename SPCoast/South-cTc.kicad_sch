@@ -20,7 +20,475 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "Railroad-Office:Codeline-Encoding-AAR"
+		(symbol "Railroad-HardwareIO:Driver-CMRInet-Node"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RIO"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "UA${Address}"
+				(at -15.24 3.81 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "A CMRInet node: a driver on the CMRInet line, addressed by its UA, providing the IOBus its bits sit on; declares NodeType (C, M, N) and its IB/OB byte arrays, checked against the bits in use (ADR 0009 §3.5)."
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IODRIVER"
+				(at -11.303 -4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "IC" "CMRI"
+				(at -4.445 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Transport" ""
+				(at -3.556 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "NodeType" "C"
+				(at -6.35 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Address" ""
+				(at -3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "InputBytes" ""
+				(at 5.08 -1.143 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "OutputBytes" ""
+				(at 11.43 -1.143 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(symbol "Driver-CMRInet-Node_0_1"
+				(rectangle
+					(start -8.89 2.54)
+					(end 15.24 -2.54)
+					(stroke
+						(width 0.3048)
+						(type solid)
+						(color 128 77 0 1)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "Driver-CMRInet-Node_1_1"
+				(text "IOBus"
+					(at -8.509 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(text "Transport"
+					(at -8.382 1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(text "Type: ${NodeType}"
+					(at -3.429 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(text "CMRInet Node"
+					(at -2.54 1.27 0)
+					(effects
+						(font
+							(size 0.889 0.889)
+						)
+						(justify left)
+					)
+				)
+				(text "IB["
+					(at 3.81 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify right)
+					)
+				)
+				(text "]"
+					(at 6.35 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(text "UA:${Address}"
+					(at 7.62 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "OB["
+					(at 10.16 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify right)
+					)
+				)
+				(text "]"
+					(at 12.7 -1.27 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at -10.16 1.27 0)
+					(length 1.27)
+					(name "Transport"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -10.16 -1.27 0)
+					(length 1.27)
+					(name "IOBus"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-HardwareIO:Processor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Proc"
+				(at -14.224 5.842 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -1.016 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
+				(at 1.27 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "STRUCTURE"
+				(at -11.303 9.652 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "PROCESSOR"
+				(at -9.906 8.001 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Board" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Processor_1_1"
+				(rectangle
+					(start -16.51 2.54)
+					(end 16.51 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Processor: ${Board}"
+					(at -15.748 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "Processor"
+					(at 11.43 1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(text "IOBus"
+					(at 11.43 -1.27 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(pin passive line
+					(at 19.05 1.27 180)
+					(length 2.54)
+					(name "Processor"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 19.05 -1.27 180)
+					(length 2.54)
+					(name "IOBus"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:Encoding-AAR"
 			(pin_numbers
 				(hide yes)
 			)
@@ -45,7 +513,7 @@
 				)
 			)
 			(property "Value" "AAR Tokens"
-				(at 12.7 -1.905 0)
+				(at 19.05 1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -89,7 +557,18 @@
 				)
 			)
 			(property "Role" "CODELINE_ENCODING"
-				(at 0 2.54 0)
+				(at 10.16 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -111,10 +590,180 @@
 					(justify left)
 				)
 			)
-			(property "Station" "${SHEETNAME}"
-				(at 5.715 -4.445 0)
+			(property "Topic" "ctc/<STRUCTURE:RAILROAD:Name>/codeline/"
+				(at 13.97 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(symbol "Encoding-AAR_1_1"
+				(rectangle
+					(start 1.27 2.54)
+					(end 25.4 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Transport"
+					(at 2.54 0 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(text "Codeline"
+					(at 20.32 0 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(pin free line
+					(at 0 0 0)
+					(length 1.27)
+					(name "Transport"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 26.67 0 180)
+					(length 1.27)
+					(name "Codeline"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:Encoding-CMRInet"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Encoding"
+				(at 8.89 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CMRInet"
+				(at 16.51 1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "CMRInet polling: an I/O encoding on a CMRInet transport. It provides no net; the CMRInet nodes on the line provide the buses their bits sit on (ADR 0009 §3.5)."
+				(at 15.875 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "IO_ENCODING"
+				(at 7.62 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "CMRI"
+				(at 15.875 -3.81 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -122,33 +771,41 @@
 					(justify left)
 				)
 			)
-			(symbol "Codeline-Encoding-AAR_0_1"
-				(rectangle
-					(start 1.27 0)
-					(end 35.56 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+			(property "Version" "v1.1"
+				(at 12.7 -1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.016 1.016)
 					)
 				)
 			)
-			(symbol "Codeline-Encoding-AAR_1_1"
-				(text "Station:"
-					(at 5.08 -4.445 0)
+			(symbol "Encoding-CMRInet_1_1"
+				(rectangle
+					(start 1.27 2.54)
+					(end 25.4 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Transport"
+					(at 2.54 0 0)
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.635 0.635)
 						)
-						(justify right)
+						(justify left)
 					)
 				)
 				(pin free line
 					(at 0 0 0)
 					(length 1.27)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -166,7 +823,352 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Office:Codeline-Transport-CMRInet"
+		(symbol "Railroad-Office:Encoding-US&S-506"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Encoding"
+				(at 5.08 -9.525 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "US&S 506"
+				(at 8.89 1.27 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "US&S 506 time-coded pulses"
+				(at 15.24 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "CODELINE_ENCODING"
+				(at 10.16 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "USS506"
+				(at 10.795 -9.525 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Chart" ""
+				(at 13.97 -1.27 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(symbol "Encoding-US&S-506_1_1"
+				(rectangle
+					(start 1.27 2.54)
+					(end 25.4 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Transport"
+					(at 2.54 0 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(text "Codeline"
+					(at 20.32 0 0)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+						(justify left)
+					)
+				)
+				(pin free line
+					(at 0 0 0)
+					(length 1.27)
+					(name "Transport"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 26.67 0 180)
+					(length 1.27)
+					(name "Codeline"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0.381 0.381)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:OfficeUnit"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "MACHINE"
+				(at -15.24 8.89 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 1.8288 1.8288)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "The OfficeUnit: the dispatcher's office logic and its desk; one per CTC machine. Its columns are its interlockings (ADR 0009)."
+				(at 9.525 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "US&S"
+				(at -14.859 -4.064 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Role" "OFFICE_UNIT"
+				(at -13.843 7.112 0)
+				(show_name yes)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "OfficeUnit_1_1"
+				(rectangle
+					(start -20.32 5.08)
+					(end 20.32 -5.08)
+					(stroke
+						(width 0.3048)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "Processor"
+					(at -19.05 0 900)
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(text "Type"
+					(at -18.923 -4.191 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "Columns"
+					(at -8.89 -4.191 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(text "Centralized Traffic Control System"
+					(at 0 3.81 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin free line
+					(at -21.59 0 0)
+					(length 1.27)
+					(name "Processor"
+						(effects
+							(font
+								(size 0.762 0.762)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Railroad-Office:Transport-CMRInet"
 			(pin_numbers
 				(hide yes)
 			)
@@ -180,7 +1182,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Transport"
-				(at -15.875 4.445 0)
+				(at 5.715 4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -191,7 +1193,7 @@
 				)
 			)
 			(property "Value" "CMRInet"
-				(at -8.89 0 0)
+				(at 21.59 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -234,8 +1236,8 @@
 					)
 				)
 			)
-			(property "Role" "CODELINE_TRANSPORT"
-				(at -20.32 2.54 0)
+			(property "Role" "TRANSPORT"
+				(at 1.27 2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -246,8 +1248,19 @@
 					(justify left)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Kind" "CMRI"
-				(at -5.08 0 0)
+				(at 34.29 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -258,7 +1271,7 @@
 				)
 			)
 			(property "Baud" ""
-				(at 11.43 -3.81 0)
+				(at 33.02 -3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -268,7 +1281,7 @@
 				)
 			)
 			(property "Port" ""
-				(at -16.51 -3.81 0)
+				(at 2.54 -3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -278,22 +1291,20 @@
 					(justify left)
 				)
 			)
-			(symbol "Codeline-Transport-CMRInet_0_1"
+			(symbol "Transport-CMRInet_1_1"
 				(rectangle
-					(start -20.32 1.27)
-					(end 20.32 -8.89)
+					(start 1.27 1.27)
+					(end 41.91 -8.89)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Codeline-Transport-CMRInet_1_1"
 				(text "Port"
-					(at -19.05 -1.905 0)
+					(at 2.54 -5.588 0)
 					(effects
 						(font
 							(size 0.508 0.508)
@@ -301,17 +1312,24 @@
 						(justify left)
 					)
 				)
-				(text "Encoding"
-					(at -10.795 -7.62 0)
+				(text "Processor"
+					(at 5.08 0 0)
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
-						(justify right)
 					)
 				)
 				(text "Transport"
-					(at -10.16 0 0)
+					(at 5.08 -7.62 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(text "Transport"
+					(at 19.05 0 0)
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -320,7 +1338,7 @@
 					)
 				)
 				(text "Baudrate"
-					(at 8.89 -1.905 0)
+					(at 30.48 -5.588 0)
 					(effects
 						(font
 							(size 0.508 0.508)
@@ -329,9 +1347,9 @@
 					)
 				)
 				(pin free line
-					(at 0 2.54 270)
+					(at 0 0 0)
 					(length 1.27)
-					(name "Codeline"
+					(name "Processor"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -347,9 +1365,9 @@
 					)
 				)
 				(pin free line
-					(at -15.24 -11.43 90)
+					(at 3.81 -11.43 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -367,7 +1385,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Office:Codeline-Transport-Loconet"
+		(symbol "Railroad-Office:Transport-MQTT"
 			(pin_numbers
 				(hide yes)
 			)
@@ -381,186 +1399,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Transport"
-				(at -13.335 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Loconet"
-				(at -8.255 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Using OPC_PEER 8-byte payload"
-				(at 11.43 -10.16 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(property "Role" "CODELINE_TRANSPORT"
-				(at -7.62 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "LOCONET"
-				(at -7.62 1.905 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Port" ""
-				(at -16.51 -6.35 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(symbol "Codeline-Transport-Loconet_0_1"
-				(rectangle
-					(start -20.32 -1.27)
-					(end 20.32 -11.43)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Codeline-Transport-Loconet_1_1"
-				(text "Port"
-					(at -19.05 -4.445 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-						(justify left)
-					)
-				)
-				(text "Encoding"
-					(at -15.24 -10.16 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "Transport"
-					(at -14.605 -2.54 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin free line
-					(at 0 0 270)
-					(length 1.27)
-					(name "Codeline"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin free line
-					(at -15.24 -13.97 90)
-					(length 2.54)
-					(name "Encoding"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:Codeline-Transport-MQTT"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Transport"
-				(at -27.305 -3.81 0)
+				(at 5.08 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -571,13 +1410,14 @@
 				)
 			)
 			(property "Value" "MQTT"
-				(at -6.985 -2.54 0)
+				(at 22.86 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -613,8 +1453,19 @@
 					)
 				)
 			)
-			(property "Role" "CODELINE_TRANSPORT"
-				(at -21.59 0 0)
+			(property "Role" "TRANSPORT"
+				(at 6.35 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -625,7 +1476,7 @@
 				)
 			)
 			(property "Kind" "MQTT"
-				(at -9.525 -2.54 0)
+				(at 22.225 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -636,8 +1487,8 @@
 					(justify left)
 				)
 			)
-			(property "Broker" "192.168.1.21:1883"
-				(at -16.51 -5.08 0)
+			(property "Broker" ""
+				(at 3.81 -3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -647,55 +1498,20 @@
 					(justify left)
 				)
 			)
-			(property "Topic" "ctc/${Railroad}/codeline/"
-				(at -16.51 -7.62 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Railroad" "SPCoast"
-				(at -27.94 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Station" "${SHEETNAME}"
-				(at -25.4 -8.255 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Codeline-Transport-MQTT_0_1"
+			(symbol "Transport-MQTT_1_1"
 				(rectangle
-					(start -20.32 -1.27)
-					(end 20.32 -11.43)
+					(start 1.27 1.27)
+					(end 41.91 -8.89)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Codeline-Transport-MQTT_1_1"
 				(text "Broker"
-					(at -19.685 -5.08 0)
+					(at 4.318 -5.334 0)
 					(effects
 						(font
 							(size 0.508 0.508)
@@ -703,36 +1519,34 @@
 						(justify left)
 					)
 				)
-				(text "Topic"
-					(at -19.685 -7.62 0)
+				(text "Processor"
+					(at 5.08 0 0)
 					(effects
 						(font
-							(size 0.508 0.508)
+							(size 0.762 0.762)
 						)
-						(justify left)
 					)
 				)
 				(text "Transport"
-					(at -15.24 -2.54 0)
+					(at 5.08 -7.62 0)
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(text "Encoding"
-					(at -10.795 -10.16 0)
+				(text "Transport"
+					(at 15.24 0 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
-						(justify right)
 					)
 				)
 				(pin free line
-					(at 0 0 270)
+					(at 0 0 0)
 					(length 1.27)
-					(name "Codeline"
+					(name "Processor"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -748,9 +1562,9 @@
 					)
 				)
 				(pin free line
-					(at -15.24 -13.97 90)
+					(at 3.81 -11.43 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -768,7 +1582,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Office:Codeline-Transport-TimeCode"
+		(symbol "Railroad-Office:Transport-TimeCode"
 			(pin_numbers
 				(hide yes)
 			)
@@ -782,7 +1596,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Transport"
-				(at -12.7 -1.905 0)
+				(at -3.81 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -792,8 +1606,8 @@
 					)
 				)
 			)
-			(property "Value" "Time Coded"
-				(at -8.89 -2.54 0)
+			(property "Value" "TimeCode"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -826,17 +1640,17 @@
 				)
 			)
 			(property "Description" "US&S DC Long/Short Pulses"
-				(at -19.685 -5.715 0)
+				(at -17.78 -7.62 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
 			)
-			(property "Role" "CODELINE_TRANSPORT"
+			(property "Role" "TRANSPORT"
 				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -847,8 +1661,19 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Kind" "TIMECODE"
-				(at -6.35 -1.905 0)
+				(at 2.54 -1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -859,41 +1684,46 @@
 					(justify left)
 				)
 			)
-			(symbol "Codeline-Transport-TimeCode_0_1"
+			(symbol "Transport-TimeCode_1_1"
 				(rectangle
 					(start -20.32 -1.27)
 					(end 20.32 -11.43)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-			)
-			(symbol "Codeline-Transport-TimeCode_1_1"
+				(text "Processor"
+					(at -16.51 -2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
 				(text "Transport"
-					(at -15.24 -2.54 0)
+					(at -16.51 -10.16 0)
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
-				(text "Encoding"
-					(at -10.795 -10.16 0)
+				(text "Transport"
+					(at -6.35 -2.54 0)
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
-						(justify right)
 					)
 				)
 				(pin free line
-					(at 0 0 270)
+					(at -21.59 -2.54 0)
 					(length 1.27)
-					(name "Codeline"
+					(name "Processor"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -909,9 +1739,9 @@
 					)
 				)
 				(pin free line
-					(at -15.24 -13.97 90)
+					(at -17.78 -13.97 90)
 					(length 2.54)
-					(name "Encoding"
+					(name "Transport"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -929,261 +1759,512 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Office:CtcMachine"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "MACHINE"
-				(at -15.367 11.811 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SPCoast South cTc"
-				(at -0.127 0.889 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.8288 1.8288)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical dispatcher cTc machine (protocol/vocabulary)."
-				(at 9.525 -6.985 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Type" "US&S506"
-				(at -14.859 -4.064 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Era" ""
-				(at -17.653 8.255 0)
-				(show_name yes)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Role" "MACHINE"
-				(at -13.97 10.033 0)
-				(show_name yes)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Columns" ""
-				(at -5.969 -4.064 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Railroad" "SPCoast"
-				(at 9.652 -4.191 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-					(justify left)
-				)
-			)
-			(symbol "CtcMachine_1_1"
-				(rectangle
-					(start -20.32 6.477)
-					(end 20.32 -5.08)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "Type"
-					(at -18.923 -4.191 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "Columns"
-					(at -8.89 -4.191 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(text "Centralized Traffic Control System"
-					(at 0 5.08 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(text "Codeline"
-					(at 0.127 -4.064 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-				(text "Railroad"
-					(at 6.858 -4.191 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(pin free line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "Transports"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
+	)
+	(rectangle
+		(start 193.04 116.84)
+		(end 203.2 130.81)
+		(stroke
+			(width 0)
+			(type default)
 		)
+		(fill
+			(type none)
+		)
+		(uuid "1828a6d4-1e8d-44b3-8a03-ae6e0131d207")
+	)
+	(rectangle
+		(start 137.16 116.84)
+		(end 147.32 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "40583dd7-be48-42fd-91a4-559c9508efff")
+	)
+	(rectangle
+		(start 109.22 116.84)
+		(end 119.38 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "47969b3c-4b57-4114-9aa7-17af52d37d65")
+	)
+	(rectangle
+		(start 81.28 116.84)
+		(end 91.44 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "62881aa6-0297-490f-b969-6cf98fba4056")
+	)
+	(rectangle
+		(start 52.07 116.84)
+		(end 62.23 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "83288f82-d564-4c14-adeb-bcc82753798d")
+	)
+	(rectangle
+		(start 220.98 116.84)
+		(end 231.14 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "df6b20b8-6969-4067-9b56-96e5910d9111")
+	)
+	(rectangle
+		(start 163.83 116.84)
+		(end 173.99 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e38e2b5a-c939-46bc-a1e4-ada703126ede")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 168.91 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "0b58a7f9-66e7-4aaa-b29d-61ad31d08a4d")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 226.06 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "19b6f2fb-4b78-4a28-9094-0caac5f15159")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 198.12 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "873937fa-9db3-4d47-83a7-19977a1ef812")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 57.15 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "add02004-33b1-43a9-b31e-3b8f7f8a2471")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 114.3 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "cd0c079e-856c-4b7e-8dd7-2d523d533995")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 142.24 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "cd571a40-d045-4d82-94c6-3be8ab14ae7a")
+	)
+	(text "FieldUnit"
+		(exclude_from_sim no)
+		(at 86.36 129.794 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "d90db50b-a9f0-4d11-aabe-18d28065676f")
 	)
 	(junction
-		(at 39.37 148.59)
+		(at 57.15 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25b4cdf8-eacb-44ce-ab11-88992f9648f5")
+		(uuid "0706a889-260a-4012-847d-21e2fd721e00")
 	)
 	(junction
-		(at 83.82 148.59)
+		(at 64.77 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "71e16f41-25de-46fc-a80b-54fdd6aba8bd")
+		(uuid "b4687fac-a640-434d-8540-4f82e4e5fc3e")
 	)
 	(junction
-		(at 128.27 148.59)
+		(at 157.48 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ba5a1235-1655-4dc5-8236-081626576dd2")
+		(uuid "bda3c70b-1c73-4ccf-8d27-4d1a002fff6d")
+	)
+	(junction
+		(at 157.48 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb93314a-0f9b-4ee0-8067-98b0a4aa9c41")
+	)
+	(no_connect
+		(at 59.69 36.83)
+		(uuid "09333442-f2e8-4fcd-95b4-a92f44441cd2")
 	)
 	(wire
 		(pts
-			(xy 68.58 162.56) (xy 68.58 165.1)
+			(xy 59.69 111.76) (xy 59.69 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0646d129-56f4-442a-9f50-43530ebb6852")
+		(uuid "0230877d-bf04-4db0-ae08-abd71a38d983")
 	)
 	(wire
 		(pts
-			(xy 39.37 148.59) (xy 83.82 148.59)
+			(xy 64.77 58.42) (xy 64.77 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0876ee94-67eb-4829-a079-313b067a8620")
+		(uuid "0e927e16-6ee7-4cfb-9e2f-5fcf61e866d3")
 	)
 	(wire
 		(pts
-			(xy 128.27 148.59) (xy 171.45 148.59)
+			(xy 165.1 92.71) (xy 165.1 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "812ab82a-b126-4e90-b59d-bd9f258260da")
+		(uuid "1d814f11-1e83-46f2-8d5d-2e6f098a412f")
 	)
 	(wire
 		(pts
-			(xy 83.82 148.59) (xy 128.27 148.59)
+			(xy 160.02 115.57) (xy 160.02 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ff85048-ce85-4276-b863-d5854a6159a3")
+		(uuid "364647a6-a85c-4ed4-bede-2918a7eebe4b")
 	)
-	(global_label "TIMECODE"
+	(wire
+		(pts
+			(xy 146.05 39.37) (xy 160.02 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd55552-1a9c-4dee-971a-e5f61c5678c3")
+	)
+	(wire
+		(pts
+			(xy 228.6 111.76) (xy 228.6 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4016a55f-17bc-4845-b166-8692b8f752ee")
+	)
+	(wire
+		(pts
+			(xy 157.48 41.91) (xy 160.02 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a91bf3-6ba6-4f63-a198-c9d9709c0172")
+	)
+	(wire
+		(pts
+			(xy 157.48 49.53) (xy 157.48 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e0cf61-5d3e-49fe-8e27-ea81188b8d6f")
+	)
+	(wire
+		(pts
+			(xy 57.15 44.45) (xy 57.15 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42197b29-6fc6-4bc9-bf09-57e451b2c23f")
+	)
+	(wire
+		(pts
+			(xy 171.45 111.76) (xy 171.45 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4292af80-1795-4f75-b7a3-7ebaae7cc322")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 64.77 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ff874cb-1d5f-4dfc-b49b-c49557f50eb2")
+	)
+	(wire
+		(pts
+			(xy 88.9 111.76) (xy 88.9 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7af5671e-c746-4638-8617-2835625e5965")
+	)
+	(wire
+		(pts
+			(xy 57.15 39.37) (xy 59.69 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87e45e37-ec52-4d30-9eb0-8bb6af1a7b3e")
+	)
+	(wire
+		(pts
+			(xy 157.48 78.74) (xy 161.29 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8820e8fd-5191-474b-903d-2ca2b7632ed3")
+	)
+	(wire
+		(pts
+			(xy 200.66 111.76) (xy 200.66 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a1b33e-5684-4fa8-a44c-56edbb78d728")
+	)
+	(wire
+		(pts
+			(xy 57.15 39.37) (xy 57.15 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ea7070e-2dc9-44fd-8ff0-813bad4d45c1")
+	)
+	(wire
+		(pts
+			(xy 116.84 115.57) (xy 116.84 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ccdea36-5a9c-4e47-b3d1-6e82936d2056")
+	)
+	(wire
+		(pts
+			(xy 102.87 115.57) (xy 102.87 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e47bfc8-34d3-4e4a-b46c-1bc9dbcbdfaa")
+	)
+	(wire
+		(pts
+			(xy 132.08 115.57) (xy 132.08 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac2da94b-8ae3-44ec-981a-735c39ca47cc")
+	)
+	(wire
+		(pts
+			(xy 157.48 41.91) (xy 157.48 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b18636fe-fbae-49b1-b0ac-cad142476c7c")
+	)
+	(wire
+		(pts
+			(xy 57.15 44.45) (xy 60.96 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b70fbbe2-4178-41d7-a532-cf582a3596ea")
+	)
+	(wire
+		(pts
+			(xy 161.29 58.42) (xy 157.48 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd290afc-df63-4ef9-8b04-d5c2345f5b37")
+	)
+	(wire
+		(pts
+			(xy 64.77 58.42) (xy 64.77 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd7e05c6-e4c3-48f3-a718-dab56b04d943")
+	)
+	(wire
+		(pts
+			(xy 54.61 67.31) (xy 54.61 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02e86f1-058c-4f2c-b73d-400a65dfad0e")
+	)
+	(wire
+		(pts
+			(xy 144.78 111.76) (xy 144.78 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d475b0-6190-46b2-ae85-e4ed154640e0")
+	)
+	(wire
+		(pts
+			(xy 217.17 115.57) (xy 217.17 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfdcf6a9-051f-42a7-b571-dd77a8e938a0")
+	)
+	(wire
+		(pts
+			(xy 161.29 49.53) (xy 157.48 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e124b744-6018-4acd-a339-7847b9b6c9cf")
+	)
+	(wire
+		(pts
+			(xy 74.93 115.57) (xy 74.93 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e352509b-0603-4817-93e9-7dc9f0dcdd7d")
+	)
+	(wire
+		(pts
+			(xy 45.72 115.57) (xy 45.72 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a648d4-e0d7-4a19-bf97-59c85e71b540")
+	)
+	(wire
+		(pts
+			(xy 157.48 58.42) (xy 157.48 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb8be1e8-8db8-4d1a-abc8-b26f2fbc56e7")
+	)
+	(wire
+		(pts
+			(xy 189.23 115.57) (xy 189.23 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47d5867-be7f-4ef2-8ce0-70b7e8b951f6")
+	)
+	(wire
+		(pts
+			(xy 165.1 72.39) (xy 165.1 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9fcf3e5-6e11-4f08-8701-e3472d385e43")
+	)
+	(global_label "PanelIO"
 		(shape input)
-		(at 24.13 162.56 0)
+		(at 160.02 115.57 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1191,9 +2272,9 @@
 			)
 			(justify left)
 		)
-		(uuid "0b4e3e60-fc25-462f-b98a-35f96fa68ff3")
+		(uuid "06765394-b746-48d8-a8c8-23918f78ae08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 36.3075 162.56 0)
+			(at 160.02 105.3277 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1205,9 +2286,33 @@
 			)
 		)
 	)
-	(global_label "MQTT"
+	(global_label "PanelIO"
 		(shape input)
-		(at 68.58 162.56 0)
+		(at 146.05 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "09c65d51-b2d6-42b2-8025-388e0be2d8ec")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.8077 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 228.6 111.76 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1215,9 +2320,9 @@
 			)
 			(justify left)
 		)
-		(uuid "0b6d5131-606d-42b9-b0e7-96e4d3a3831c")
+		(uuid "2d2b1f60-b7ba-4895-aa56-f742065f98c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 76.2823 162.56 0)
+			(at 228.6 104.0577 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1229,9 +2334,9 @@
 			)
 		)
 	)
-	(global_label "CMRInet"
+	(global_label "AAR"
 		(shape input)
-		(at 113.03 162.56 0)
+		(at 144.78 111.76 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1239,9 +2344,9 @@
 			)
 			(justify left)
 		)
-		(uuid "0fbe5741-1ff7-4cf5-a2a4-2ba5ee3f1ec8")
+		(uuid "357ed506-3ea0-4ed4-8726-939a4b4dfe26")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.5747 162.56 0)
+			(at 144.78 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1253,9 +2358,9 @@
 			)
 		)
 	)
-	(global_label "Loconet"
+	(global_label "PanelIO"
 		(shape input)
-		(at 156.21 162.56 0)
+		(at 102.87 115.57 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1263,9 +2368,297 @@
 			)
 			(justify left)
 		)
-		(uuid "1462946c-9d00-449c-93ea-19ba19db929f")
+		(uuid "39093a1d-9761-42e5-861a-5d5a756f6b36")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.5732 162.56 0)
+			(at 102.87 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USS506"
+		(shape input)
+		(at 191.77 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "39d1e61f-262d-4695-aa35-7c7d06fbcc6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 171.45 111.76 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3e690eb2-58f9-4ba1-b237-1d2cc4d3930c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 171.45 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 200.66 111.76 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a12b1c3-71e1-4564-bba9-8cb729ba86eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 200.66 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PanelIO"
+		(shape input)
+		(at 217.17 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "782b2df2-1595-46b2-b05d-c7fb9c9e2ea7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PanelIO"
+		(shape input)
+		(at 189.23 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8270c4e9-eda4-4c3e-8792-7ed8bbbe3c57")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 88.9 111.76 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "97a023b0-d7f7-4563-9241-39ab48f1c4ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 88.9 98.7963 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PanelIO"
+		(shape input)
+		(at 74.93 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a07dabec-82f6-4e3c-aea9-97806d85d688")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 74.93 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PanelIO"
+		(shape input)
+		(at 132.08 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0db8001-0107-40f7-9fa9-a52083a306ed")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 132.08 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 59.69 111.76 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5602c01-0c68-49a5-8401-5048df13871f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 59.69 101.2153 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "AAR"
+		(shape input)
+		(at 191.77 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1e7d9d7-5b37-4428-a2fe-852c6865a1a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "PanelIO"
+		(shape input)
+		(at 45.72 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e32187f6-1b58-4bfa-8894-ecd21e8532d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 45.72 105.3277 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "USS506"
+		(shape input)
+		(at 116.84 115.57 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea0e51a3-448a-4340-a952-58a415d3e5bb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.84 103.3925 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1278,8 +2671,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:Codeline-Transport-MQTT")
-		(at 83.82 148.59 0)
+		(lib_id "Railroad-Office:Transport-MQTT")
+		(at 161.29 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1289,7 +2682,7 @@
 		(dnp no)
 		(uuid "1943eb2a-9ece-46dc-aed7-5872cf006a05")
 		(property "Reference" "Transport2006"
-			(at 76.835 149.86 0)
+			(at 166.37 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1300,17 +2693,18 @@
 			)
 		)
 		(property "Value" "MQTT"
-			(at 76.835 151.13 0)
+			(at 184.15 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 148.59 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1321,7 +2715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 148.59 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1332,7 +2726,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 83.82 148.59 0)
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1342,8 +2736,19 @@
 				)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at 62.23 148.59 0)
+		(property "Role" "TRANSPORT"
+			(at 167.64 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 161.29 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1354,7 +2759,7 @@
 			)
 		)
 		(property "Kind" "MQTT"
-			(at 74.295 151.13 0)
+			(at 183.515 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1366,7 +2771,7 @@
 			)
 		)
 		(property "Broker" "192.168.1.21:1883"
-			(at 67.31 153.67 0)
+			(at 165.1 82.55 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1374,39 +2779,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Topic" "ctc/${Railroad}/codeline/"
-			(at 67.31 156.21 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Railroad" "SPCoast"
-			(at 55.88 154.305 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Station" "${SHEETNAME}"
-			(at 58.42 156.845 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -1425,8 +2797,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:CtcMachine")
-		(at 39.37 140.97 0)
+		(lib_id "Railroad-HardwareIO:Processor")
+		(at 179.07 40.64 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1434,9 +2806,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "29322fa4-653d-445a-98d9-85900b829c72")
-		(property "Reference" "MACHINE2002"
-			(at 29.21 134.62 0)
+		(uuid "1ca0757a-9061-4b42-920e-20d49fb5bf8e")
+		(property "Reference" "Proc4"
+			(at 193.294 46.482 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1446,18 +2818,18 @@
 				)
 			)
 		)
-		(property "Value" "SPCoast South"
-			(at 39.243 140.081 0)
+		(property "Value" "JohnCTC"
+			(at 179.07 39.624 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.8288 1.8288)
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 140.97 0)
+			(at 179.07 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1468,7 +2840,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 140.97 0)
+			(at 179.07 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1478,8 +2850,8 @@
 				)
 			)
 		)
-		(property "Description" "One physical dispatcher cTc machine (protocol/vocabulary)."
-			(at 48.895 147.955 0)
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(at 177.8 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1489,61 +2861,164 @@
 				)
 			)
 		)
-		(property "Type" "US&S506"
-			(at 24.511 145.034 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Era" ""
-			(at 21.717 132.715 0)
+		(property "Role" "STRUCTURE"
+			(at 190.373 50.292 0)
 			(hide yes)
-			(show_name yes)
-			(do_not_autoplace yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Role" "MACHINE"
-			(at 25.4 130.937 0)
+		(property "Name" "${Value}"
+			(at 179.07 40.64 0)
 			(hide yes)
-			(show_name yes)
-			(do_not_autoplace yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Columns" "14"
-			(at 33.401 145.034 0)
+		(property "Kind" "PROCESSOR"
+			(at 188.976 48.641 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Railroad" "SPCoast"
-			(at 49.022 145.161 0)
+		(property "Board" "cpNode-Xiao"
+			(at 179.07 40.64 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(effects
 				(font
-					(size 0.762 0.762)
+					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(pin "1"
-			(uuid "a71a733b-77aa-42f0-847f-afc41d41ef3f")
+			(uuid "2dd31bac-43a0-480d-8ca2-a9bb84a0a5fd")
+		)
+		(pin "2"
+			(uuid "fe9b7bcb-5a8e-4e57-9b85-1e0d9a441030")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Proc4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:OfficeUnit")
+		(at 182.88 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29322fa4-653d-445a-98d9-85900b829c72")
+		(property "Reference" "MACHINE2002"
+			(at 167.513 37.719 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPCoast South"
+			(at 182.88 49.53 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "The OfficeUnit: the dispatcher's office logic and its desk; one per CTC machine. Its columns are its interlockings (ADR 0009)."
+			(at 192.405 56.515 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "US&S"
+			(at 168.021 53.594 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Role" "OFFICE_UNIT"
+			(at 168.91 39.497 0)
+			(hide yes)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 182.88 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0bf954c7-54e7-43db-a744-72685b7d739e")
 		)
 		(instances
 			(project "SPCoast"
@@ -1555,8 +3030,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:Codeline-Transport-TimeCode")
-		(at 39.37 148.59 0)
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-Node")
+		(at 74.93 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1564,20 +3039,21 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8ca5286e-c27c-434a-b6c8-5786bb5cb8b1")
-		(property "Reference" "Transport2005"
-			(at 33.655 150.495 0)
+		(uuid "29a5fd90-1447-413e-877f-91b7be0232c3")
+		(property "Reference" "RIO1"
+			(at 60.706 60.198 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Time Coded"
-			(at 30.48 151.13 0)
+		(property "Value" "UA${Address}"
+			(at 59.69 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1588,7 +3064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 148.59 0)
+			(at 74.93 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1599,7 +3075,413 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 148.59 0)
+			(at 74.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A CMRInet node: a driver on the CMRInet line, addressed by its UA, providing the IOBus its bits sit on; declares NodeType (C, M, N) and its IB/OB byte arrays, checked against the bits in use (ADR 0009 §3.5)."
+			(at 74.93 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 63.627 70.358 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "NodeType" "C"
+			(at 68.58 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Address" "30"
+			(at 71.12 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Transport" ""
+			(at 71.374 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "InputBytes" "2"
+			(at 80.01 67.183 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "OutputBytes" "3"
+			(at 86.36 67.183 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IC" "CMRI"
+			(at 70.485 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "772bcda3-b3cb-4d42-9524-58faf9f66156")
+		)
+		(pin "2"
+			(uuid "f6fd8839-3b86-4b07-9650-ec8b23bea787")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "RIO1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-HardwareIO:Processor")
+		(at 78.74 38.1 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41b8cad7-f161-47ae-bb3a-06b9ea184c35")
+		(property "Reference" "Proc2"
+			(at 92.964 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPCoastApp"
+			(at 78.74 37.084 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+			(at 77.47 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 90.043 47.752 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 78.74 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "PROCESSOR"
+			(at 88.646 46.101 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Board" "MacOS"
+			(at 78.74 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e3789c1-818e-4816-9c55-cdb4ee4493c9")
+		)
+		(pin "2"
+			(uuid "a72dd1b9-3319-4609-b9e0-5f5ab1351161")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Proc2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:Encoding-US&S-506")
+		(at 165.1 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e2cf0a0-0d55-49c1-91d5-2d1642fa2a99")
+		(property "Reference" "Encoding2"
+			(at 170.18 81.915 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "US&S 506"
+			(at 173.99 71.12 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "US&S 506 time-coded pulses"
+			(at 180.34 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "CODELINE_ENCODING"
+			(at 175.26 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 165.1 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "USS506"
+			(at 175.895 81.915 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Chart" ""
+			(at 179.07 73.66 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e24b4b0e-0b05-4f37-842b-3167d6e8a04b")
+		)
+		(pin "2"
+			(uuid "72bd22d8-00a6-48d9-94e9-cbc9cf5042fb")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Encoding2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:Transport-TimeCode")
+		(at 182.88 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ca5286e-c27c-434a-b6c8-5786bb5cb8b1")
+		(property "Reference" "Transport2005"
+			(at 179.07 57.785 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TimeCode"
+			(at 182.88 58.42 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1610,18 +3492,29 @@
 			)
 		)
 		(property "Description" "US&S DC Long/Short Pulses"
-			(at 19.685 154.305 0)
+			(at 165.1 63.5 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
 				(justify left)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at 39.37 146.05 0)
+		(property "Role" "TRANSPORT"
+			(at 182.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 182.88 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1632,7 +3525,7 @@
 			)
 		)
 		(property "Kind" "TIMECODE"
-			(at 33.02 150.495 0)
+			(at 185.42 57.785 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1659,8 +3552,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:Codeline-Encoding-AAR")
-		(at 68.58 165.1 0)
+		(lib_id "Railroad-Office:Encoding-CMRInet")
+		(at 64.77 58.42 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1668,9 +3561,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b1649994-dba8-406f-b604-2be18b87415d")
-		(property "Reference" "Encoding2001"
-			(at 75.565 177.8 0)
+		(uuid "c2193a18-2319-4f8e-b8c3-24293f4b07a8")
+		(property "Reference" "Encoding4"
+			(at 73.66 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1680,8 +3573,8 @@
 				)
 			)
 		)
-		(property "Value" "AAR Tokens"
-			(at 81.28 167.005 0)
+		(property "Value" "CMRInet"
+			(at 81.28 57.15 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1692,7 +3585,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 165.1 0)
+			(at 64.77 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1703,7 +3596,129 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 165.1 0)
+			(at 64.77 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CMRInet polling: an I/O encoding on a CMRInet transport. It provides no net; the CMRInet nodes on the line provide the buses their bits sit on (ADR 0009 §3.5)."
+			(at 80.645 64.135 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IO_ENCODING"
+			(at 72.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 64.77 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CMRI"
+			(at 80.645 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Version" "v1.1"
+			(at 77.47 59.69 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00445d71-e9f3-4789-80d7-259efd9b5f7d")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "Encoding4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:Encoding-AAR")
+		(at 165.1 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d594f0e7-3058-462b-9cc5-9437265bcac9")
+		(property "Reference" "Encoding2001"
+			(at 172.085 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AAR Tokens"
+			(at 184.15 91.44 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1714,7 +3729,7 @@
 			)
 		)
 		(property "Description" "Advanced Train Control System protocol AAR Specification 250 Message Formats"
-			(at 82.55 179.705 0)
+			(at 179.07 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1725,7 +3740,18 @@
 			)
 		)
 		(property "Role" "CODELINE_ENCODING"
-			(at 68.58 162.56 0)
+			(at 175.26 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 165.1 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1736,7 +3762,7 @@
 			)
 		)
 		(property "Kind" "AAR"
-			(at 82.55 177.8 0)
+			(at 179.07 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1747,19 +3773,21 @@
 				(justify left)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at 74.295 169.545 0)
+		(property "Topic" "ctc/<STRUCTURE:RAILROAD:Name>/codeline/"
+			(at 179.07 93.98 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
-				(justify left)
 			)
 		)
 		(pin "1"
-			(uuid "c2b2fe57-3e26-4693-9869-e9d5f1d8e9fb")
+			(uuid "d1fcdf7d-c556-4d9e-b48b-e548b390514e")
+		)
+		(pin "2"
+			(uuid "dac57e34-3abb-45a6-936d-b4ef07ae9e81")
 		)
 		(instances
 			(project "SPCoast"
@@ -1771,8 +3799,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:Codeline-Transport-CMRInet")
-		(at 128.27 151.13 0)
+		(lib_id "Railroad-Office:Transport-CMRInet")
+		(at 60.96 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1782,7 +3810,7 @@
 		(dnp no)
 		(uuid "eab062f5-dd3b-48d1-acf3-5eaf9096e42b")
 		(property "Reference" "Transport2007"
-			(at 115.57 148.59 0)
+			(at 66.675 40.005 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1793,7 +3821,7 @@
 			)
 		)
 		(property "Value" "CMRInet"
-			(at 119.38 151.13 0)
+			(at 82.55 44.45 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1804,7 +3832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 151.13 0)
+			(at 60.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1815,7 +3843,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 151.13 0)
+			(at 60.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1826,7 +3854,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 151.13 0)
+			(at 60.96 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1836,8 +3864,8 @@
 				)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at 107.95 148.59 0)
+		(property "Role" "TRANSPORT"
+			(at 62.23 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1848,8 +3876,19 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 60.96 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Baud" "28800"
-			(at 139.7 154.94 0)
+			(at 93.98 48.26 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1859,7 +3898,7 @@
 			)
 		)
 		(property "Port" "/dev/cu.modemXXXX"
-			(at 111.76 154.94 0)
+			(at 63.5 48.26 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1870,7 +3909,7 @@
 			)
 		)
 		(property "Kind" "CMRI"
-			(at 123.19 151.13 0)
+			(at 95.25 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1895,128 +3934,13 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Railroad-Office:Codeline-Transport-Loconet")
-		(at 171.45 148.59 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ee69bd7d-357a-409f-9fd1-71b8ab9100a8")
-		(property "Reference" "Transport2008"
-			(at 158.115 146.685 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Loconet"
-			(at 163.195 151.13 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Using OPC_PEER 8-byte payload"
-			(at 182.88 158.75 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at 163.83 148.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "LOCONET"
-			(at 163.83 146.685 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Port" "/dev/cumodemXXXX"
-			(at 154.94 154.94 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "b1923d94-9211-46c2-899c-cdb61325d16a")
-		)
-		(pin "2"
-			(uuid "f67aaa46-e689-40ef-acd8-642158e30702")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
-					(reference "Transport2008")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
-		(at 224.79 29.21)
-		(size 33.02 92.71)
+		(at 210.82 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2026,18 +3950,21 @@
 		)
 		(uuid "0ce55e2d-fbe5-47d3-a48a-db8408a15e7e")
 		(property "Sheetname" "Watsonville"
-			(at 224.79 28.4984 0)
+			(at 216.662 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "Watsonville.kicad_sch"
-			(at 224.79 122.5046 0)
+			(at 212.09 150.368 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2045,6 +3972,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 228.6 116.84 90)
+			(uuid "f8c3794e-0e72-438a-bf0d-0e85fc5825ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 217.17 116.84 90)
+			(uuid "270da263-9be6-4deb-9557-06bd4fd6d78e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2056,13 +4003,12 @@
 		)
 	)
 	(sheet
-		(at 168.91 29.21)
-		(size 22.86 92.71)
+		(at 153.67 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2072,18 +4018,21 @@
 		)
 		(uuid "152658f8-a042-4e04-bedb-bf34ee4ce875")
 		(property "Sheetname" "Corporal"
-			(at 168.91 28.4984 0)
+			(at 160.528 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "Corporal.kicad_sch"
-			(at 168.91 122.5046 0)
+			(at 155.448 150.368 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2091,6 +4040,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 171.45 116.84 90)
+			(uuid "f8ae71ee-07c5-4450-b5ec-5c21c140d2f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 160.02 116.84 90)
+			(uuid "a2da8ce4-afc4-4b84-ae38-194b7a021923")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2102,13 +4071,12 @@
 		)
 	)
 	(sheet
-		(at 30.48 29.21)
-		(size 22.86 92.71)
+		(at 40.64 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2118,18 +4086,21 @@
 		)
 		(uuid "61cd2495-14f3-42a6-a7c2-38f34b91ee1e")
 		(property "Sheetname" "Gilroy Caltrain"
-			(at 30.48 28.4984 0)
+			(at 43.18 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "GilroyCalTrain.kicad_sch"
-			(at 30.48 122.5046 0)
+			(at 42.164 151.13 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2137,6 +4108,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 59.69 116.84 90)
+			(uuid "e6d1f584-9937-4072-83c3-c38ac67c89e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Processor" bidirectional
+			(at 57.15 116.84 90)
+			(uuid "07f4438c-d2e9-42de-b040-a166e6fa8379")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "IOBus" bidirectional
+			(at 54.61 116.84 90)
+			(uuid "b538d732-626a-4298-957e-8ff904e441fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 45.72 116.84 90)
+			(uuid "59dc46af-1ada-4b5b-92bf-5c6f0abbf9bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2148,13 +4159,12 @@
 		)
 	)
 	(sheet
-		(at 123.19 29.21)
-		(size 41.91 92.71)
+		(at 125.73 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2164,18 +4174,21 @@
 		)
 		(uuid "a167e02f-2575-49a1-bdf8-73758c645318")
 		(property "Sheetname" "Christopher"
-			(at 123.19 28.4984 0)
+			(at 131.064 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "Christopher.kicad_sch"
-			(at 123.19 122.5046 0)
+			(at 127.508 150.368 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2183,6 +4196,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 144.78 116.84 90)
+			(uuid "2a194907-d64d-4c9d-b432-060cc437a8fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 132.08 116.84 90)
+			(uuid "859b9c03-6eb1-49f1-b938-a8f1e469091a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2194,13 +4227,12 @@
 		)
 	)
 	(sheet
-		(at 81.28 29.21)
-		(size 38.1 92.71)
+		(at 97.79 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2210,18 +4242,21 @@
 		)
 		(uuid "b4829d91-9b5a-495f-b7c8-ba6a6006660d")
 		(property "Sheetname" "Luchessa"
-			(at 81.28 28.4984 0)
+			(at 104.394 138.938 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "Luchessa.kicad_sch"
-			(at 81.28 122.5046 0)
+			(at 99.314 150.622 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2229,6 +4264,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 116.84 116.84 90)
+			(uuid "54d4d625-c4d3-4cc0-8f2a-f3ddbf067425")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 102.87 116.84 90)
+			(uuid "dfc9a9db-b3a0-41c5-a335-74453cca59e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2240,13 +4295,12 @@
 		)
 	)
 	(sheet
-		(at 55.88 29.21)
-		(size 22.86 92.71)
+		(at 68.58 116.84)
+		(size 25.4 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2256,18 +4310,21 @@
 		)
 		(uuid "defc570c-1f61-4751-be37-2827b304f837")
 		(property "Sheetname" "Gilroy Interchange"
-			(at 55.88 28.4984 0)
+			(at 69.85 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "GilroyInterchange.kicad_sch"
-			(at 55.88 122.5046 0)
+			(at 70.104 151.384 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2275,6 +4332,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 88.9 116.84 90)
+			(uuid "0348681c-62a6-4f2a-af35-e4635c3b19af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 74.93 116.84 90)
+			(uuid "90bc45b3-4eb7-4455-8327-286f5db9b1a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -2286,13 +4363,12 @@
 		)
 	)
 	(sheet
-		(at 195.58 29.21)
-		(size 25.4 92.71)
+		(at 182.88 116.84)
+		(size 24.13 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -2302,18 +4378,21 @@
 		)
 		(uuid "f687a7a3-8fc1-435d-a0f4-b6b97af39a7e")
 		(property "Sheetname" "Sargent"
-			(at 195.58 28.4984 0)
+			(at 190.246 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.651 1.651)
+					(thickness 0.3556)
+					(bold yes)
 				)
 				(justify left bottom)
 			)
 		)
 		(property "Sheetfile" "Sargent.kicad_sch"
-			(at 195.58 122.5046 0)
+			(at 184.404 150.368 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2321,6 +4400,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Codeline" bidirectional
+			(at 200.66 116.84 90)
+			(uuid "6abab8aa-3bc0-48a2-843d-ecde1103fbe9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PanelIOBus" bidirectional
+			(at 189.23 116.84 90)
+			(uuid "6acc9486-922e-486a-8982-57984b288f6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

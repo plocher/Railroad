@@ -76,6 +76,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "CP" ""
 			(at 0 -2.54 0)
 			(show_name no)
@@ -351,6 +362,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "CP" ""
 			(at 0 -2.54 0)
 			(show_name no)
@@ -492,6 +514,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -702,6 +735,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "IndicationCeiling" "STOP/RESTRICTING"
 			(at 1.905 0.635 0)
 			(show_name no)
@@ -814,6 +858,211 @@
 				(at 6.35 0 180)
 				(length 0)
 				(name "R"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "House"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "HOUSE"
+			(at -0.889 -4.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${CP Name}"
+			(at 0 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 0 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Milepost" ""
+			(at 0 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at -15.24 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CONTROL_POINT"
+			(at -13.335 0.508 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "House_0_1"
+			(polyline
+				(pts
+					(xy 0 5.715) (xy 5.08 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "House_1_1"
+			(polyline
+				(pts
+					(xy -3.81 2.794) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.794)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 5.715) (xy -5.08 1.905)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "Codeline"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 0.381 0.381)
+					)
+				)
+			)
+			(text "MCall"
+				(at 0 -0.762 0)
+				(effects
+					(font
+						(size 0.381 0.381)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 0)
+				(name "MC"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 5.08 0)
+				(length 0)
+				(name "Codeline"
 					(effects
 						(font
 							(size 0 0)
@@ -1543,6 +1792,175 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Industry"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "B"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Track exists past this point, but is not drawn"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INDUSTRY"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${VALUE}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Industry_0_1"
+			(polyline
+				(pts
+					(xy -6.35 0) (xy -5.08 0)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+					(color 72 72 72 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 0) (xy -2.54 0)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+					(color 72 72 72 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 0 0)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+					(color 72 72 72 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Industry_1_1"
+			(text "${Name}"
+				(at -8.89 0 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify right)
+				)
+			)
+			(pin bidirectional line
+				(at 1.27 0 180)
+				(length 0)
+				(name "EoT"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Interlocking"
 		(pin_numbers
 			(hide yes)
@@ -1557,7 +1975,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Plant"
-			(at -14.224 5.842 0)
+			(at -14.224 3.302 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1567,10 +1985,11 @@
 				)
 			)
 		)
-		(property "Value" "${TITLE}"
-			(at -3.048 3.048 0)
+		(property "Value" ""
+			(at -1.27 3.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,236 +2052,88 @@
 				)
 			)
 		)
-		(symbol "Interlocking_0_1"
-			(rectangle
-				(start -17.018 4.826)
-				(end 17.018 1.27)
-				(stroke
-					(width 0)
-					(type default)
+		(property "Name" "${Value}"
+			(at -3.81 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
 				)
-				(fill
-					(type none)
-				)
+				(justify left)
 			)
 		)
 		(symbol "Interlocking_1_1"
+			(rectangle
+				(start -16.51 2.54)
+				(end 16.51 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
 			(text "Interlocking:"
-				(at -10.16 3.048 0)
+				(at -15.24 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(text "Processor"
+				(at 11.43 1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "Codeline"
+				(at 11.43 -1.27 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(pin free line
+				(at 17.78 -1.27 180)
+				(length 1.27)
+				(name "Codeline"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
 					)
 				)
 			)
 			(pin free line
-				(at 0 0 90)
+				(at 17.78 1.27 180)
 				(length 1.27)
-				(name "Interlocking"
+				(name "Processor"
 					(effects
 						(font
 							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "MAIN HOUSE"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "HOUSE"
-			(at -0.889 -4.318 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 -5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 0 -5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" ""
-			(at 0 -5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at -15.24 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "CONTROL_POINT"
-			(at -13.335 0.508 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "MAIN HOUSE_0_1"
-			(polyline
-				(pts
-					(xy -3.81 2.54) (xy -3.81 -3.175) (xy 3.81 -3.175) (xy 3.81 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 5.715) (xy -5.08 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 5.715) (xy 5.08 1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "MAIN HOUSE_1_1"
-			(text "Interlocking"
-				(at 0 4.064 0)
-				(effects
-					(font
-						(size 0.381 0.381)
-					)
-				)
-			)
-			(text "MCall"
-				(at 0 -0.762 0)
-				(effects
-					(font
-						(size 0.381 0.381)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 0 0)
-				(length 0)
-				(name "H"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 5.08 0)
-				(length 0)
-				(name "Interlocking"
-					(effects
-						(font
-							(size 0 0)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -1883,6 +2154,7 @@
 			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,6 +2205,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at -1.27 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1944,7 +2227,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 0 0 0)
+			(at -3.81 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1955,7 +2238,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 0 0 0)
+			(at 1.27 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2066,6 +2349,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2256,6 +2550,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "mast"
 			(at 0 0 0)
 			(show_name no)
@@ -2396,6 +2701,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2582,6 +2898,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Milepost_0_1"
 			(rectangle
 				(start -3.81 8.89)
@@ -2635,7 +2962,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "CP"
-			(at 3.175 -1.905 0)
+			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2646,9 +2973,10 @@
 			)
 		)
 		(property "Value" ""
-			(at -1.905 0 0)
+			(at 2.54 -8.89 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2691,7 +3019,7 @@
 			)
 		)
 		(property "Role" "TRACK"
-			(at 0 0 0)
+			(at 5.08 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2702,7 +3030,18 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 0 0 0)
+			(at 1.27 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 2.54 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2767,6 +3106,14 @@
 			)
 		)
 		(symbol "NextCP_1_1"
+			(text "${Interlocking}"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
 			(pin passive line
 				(at 0 0 180)
 				(length 0)
@@ -3658,6 +4005,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "head"
 			(at 0 0 0)
 			(show_name no)
@@ -3838,6 +4196,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "head"
 			(at 0 0 0)
 			(show_name no)
@@ -3993,6 +4362,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4174,6 +4554,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4389,6 +4780,17 @@
 		)
 		(property "Role" "APPLIANCE"
 			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4658,6 +5060,17 @@
 		)
 		(property "Role" "APPLIANCE"
 			(at -6.985 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4996,6 +5409,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "IndicationCeiling" "RESTRICTING/RESTRICTING"
 			(at 11.43 0.635 0)
 			(show_name no)
@@ -5237,6 +5661,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "IndicationCeiling" "RESTRICTING/RESTRICTING"
 			(at 11.43 0.635 0)
 			(show_name no)
@@ -5457,6 +5892,17 @@
 		)
 		(property "Role" "APPLIANCE"
 			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -5726,6 +6172,17 @@
 		)
 		(property "Role" "APPLIANCE"
 			(at 0 8.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6018,6 +6475,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "IndicationCeiling" ""
 			(at 13.335 0.635 0)
 			(show_name no)
@@ -6265,6 +6733,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6535,6 +7014,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "track_circuit"
 			(at 0 0 0)
 			(show_name no)
@@ -6656,6 +7146,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6810,6 +7311,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Display" "${Value}: [${IndicationToken}]"
 			(at 2.286 0 0)
 			(show_name no)
@@ -6935,6 +7447,17 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

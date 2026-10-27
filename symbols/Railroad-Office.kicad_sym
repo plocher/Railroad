@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "Codeline-Encoding-AAR"
+	(symbol "Encoding-AAR"
 		(pin_numbers
 			(hide yes)
 		)
@@ -27,7 +27,7 @@
 			)
 		)
 		(property "Value" "AAR Tokens"
-			(at 12.7 -1.905 0)
+			(at 19.05 1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -71,7 +71,18 @@
 			)
 		)
 		(property "Role" "CODELINE_ENCODING"
-			(at 0 2.54 0)
+			(at 10.16 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -93,44 +104,50 @@
 				(justify left)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at 5.715 -4.445 0)
+		(property "Topic" "ctc/<STRUCTURE:RAILROAD:Name>/codeline/"
+			(at 13.97 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
-				(justify left)
 			)
 		)
-		(symbol "Codeline-Encoding-AAR_0_1"
+		(symbol "Encoding-AAR_1_1"
 			(rectangle
-				(start 1.27 0)
-				(end 35.56 -6.35)
+				(start 1.27 2.54)
+				(end 25.4 -2.54)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "Codeline-Encoding-AAR_1_1"
-			(text "Station:"
-				(at 5.08 -4.445 0)
+			(text "Transport"
+				(at 2.54 0 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.635 0.635)
 					)
-					(justify right)
+					(justify left)
+				)
+			)
+			(text "Codeline"
+				(at 20.32 0 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
 				)
 			)
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -145,10 +162,28 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 26.67 0 180)
+				(length 1.27)
+				(name "Codeline"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Codeline-Encoding-Bits"
+	(symbol "Encoding-Bits"
 		(pin_numbers
 			(hide yes)
 		)
@@ -173,7 +208,7 @@
 			)
 		)
 		(property "Value" "Bit Packing"
-			(at 1.905 -1.905 0)
+			(at 7.62 1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -217,7 +252,18 @@
 			)
 		)
 		(property "Role" "CODELINE_ENCODING"
-			(at 10.795 1.27 0)
+			(at 10.16 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -240,39 +286,18 @@
 			)
 		)
 		(property "Chart" ""
-			(at 3.81 -5.08 0)
+			(at 2.54 -1.27 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
-			)
-		)
-		(property "Station" "${SHEETNAME}"
-			(at 17.78 -2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" ""
-			(at 19.05 -5.08 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(justify left)
 			)
 		)
 		(property "ControlBytes" "8"
-			(at 33.02 -4.445 0)
+			(at 22.86 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -282,7 +307,7 @@
 			)
 		)
 		(property "IndicationBytes" "8"
-			(at 33.02 -2.54 0)
+			(at 17.78 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -291,49 +316,29 @@
 				)
 			)
 		)
-		(symbol "Codeline-Encoding-Bits_0_1"
+		(symbol "Encoding-Bits_1_1"
 			(rectangle
-				(start 1.27 0)
-				(end 35.56 -6.35)
+				(start 1.27 2.54)
+				(end 25.4 -2.54)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "Codeline-Encoding-Bits_1_1"
-			(text "Station:"
-				(at 17.145 -2.54 0)
+			(text "Transport"
+				(at 2.54 0 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.635 0.635)
 					)
-					(justify right)
-				)
-			)
-			(text "Address:"
-				(at 17.145 -4.445 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(text "IB["
-				(at 31.75 -2.54 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify right)
-				)
-			)
-			(text "OB["
-				(at 31.75 -4.445 0)
+				(at 16.51 -1.27 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -342,7 +347,7 @@
 				)
 			)
 			(text "]"
-				(at 34.29 -2.54 0)
+				(at 19.05 -1.27 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -350,8 +355,26 @@
 					(justify left)
 				)
 			)
+			(text "Codeline"
+				(at 20.32 0 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(text "OB["
+				(at 21.59 -1.27 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify right)
+				)
+			)
 			(text "]"
-				(at 34.29 -4.445 0)
+				(at 24.13 -1.27 0)
 				(effects
 					(font
 						(size 0.508 0.508)
@@ -362,7 +385,179 @@
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 26.67 0 180)
+				(length 1.27)
+				(name "Codeline"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Encoding-CMRInet"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Encoding"
+			(at 8.89 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CMRInet"
+			(at 16.51 1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CMRInet polling: an I/O encoding on a CMRInet transport. It provides no net; the CMRInet nodes on the line provide the buses their bits sit on (ADR 0009 §3.5)."
+			(at 15.875 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IO_ENCODING"
+			(at 7.62 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CMRI"
+			(at 15.875 -3.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Version" "v1.1"
+			(at 12.7 -1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(symbol "Encoding-CMRInet_1_1"
+			(rectangle
+				(start 1.27 2.54)
+				(end 25.4 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Transport"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 1.27)
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -380,7 +575,161 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Codeline-Encoding-US&S-506"
+	(symbol "Encoding-JMRI"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Encoding"
+			(at 6.985 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JMRI"
+			(at 15.24 1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI drivers (ADR 0008)."
+			(at 13.97 -14.605 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IO_ENCODING"
+			(at 2.54 16.51 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "JMRI"
+			(at 13.97 -12.7 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Topic" "jmri_channel/"
+			(at 13.97 -1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(symbol "Encoding-JMRI_1_1"
+			(rectangle
+				(start 1.27 2.54)
+				(end 25.4 -2.54)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Transport"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+					(justify left)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 1.27)
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Encoding-US&S-506"
 		(pin_numbers
 			(hide yes)
 		)
@@ -405,7 +754,7 @@
 			)
 		)
 		(property "Value" "US&S 506"
-			(at 1.905 -1.905 0)
+			(at 8.89 1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -449,7 +798,18 @@
 			)
 		)
 		(property "Role" "CODELINE_ENCODING"
-			(at 10.795 1.27 0)
+			(at 10.16 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -471,66 +831,42 @@
 				(justify left)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at 21.59 -1.27 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" ""
-			(at 29.21 -4.445 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Chart" ""
-			(at 1.905 -5.08 0)
+			(at 13.97 -1.27 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
-				(justify left)
 			)
 		)
-		(symbol "Codeline-Encoding-US&S-506_0_1"
+		(symbol "Encoding-US&S-506_1_1"
 			(rectangle
-				(start 1.27 0)
-				(end 35.56 -6.35)
+				(start 1.27 2.54)
+				(end 25.4 -2.54)
 				(stroke
 					(width 0)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
 				)
 			)
-		)
-		(symbol "Codeline-Encoding-US&S-506_1_1"
-			(text "Station:"
-				(at 17.145 -1.27 0)
+			(text "Transport"
+				(at 2.54 0 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
 			)
-			(text "Address:"
-				(at 17.145 -3.81 0)
+			(text "Codeline"
+				(at 20.32 0 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.635 0.635)
 					)
 					(justify left)
 				)
@@ -538,7 +874,7 @@
 			(pin free line
 				(at 0 0 0)
 				(length 1.27)
-				(name "Encoding"
+				(name "Transport"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -553,203 +889,20 @@
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Codeline-Transport-CMRInet"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Transport"
-			(at -15.875 4.445 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CMRInet"
-			(at -8.89 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at -20.32 2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Kind" "CMRI"
-			(at -5.08 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Baud" ""
-			(at 11.43 -3.81 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Port" ""
-			(at -16.51 -3.81 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(symbol "Codeline-Transport-CMRInet_0_1"
-			(rectangle
-				(start -20.32 1.27)
-				(end 20.32 -8.89)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Codeline-Transport-CMRInet_1_1"
-			(text "Port"
-				(at -19.05 -1.905 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify left)
-				)
-			)
-			(text "Encoding"
-				(at -10.795 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(text "Transport"
-				(at -10.16 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(text "Baudrate"
-				(at 8.89 -1.905 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify left)
-				)
-			)
-			(pin free line
-				(at 0 2.54 270)
+			(pin passive line
+				(at 26.67 0 180)
 				(length 1.27)
 				(name "Codeline"
 					(effects
 						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin free line
-				(at -15.24 -11.43 90)
-				(length 2.54)
-				(name "Encoding"
-					(effects
-						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.381 0.381)
 						)
 					)
 				)
@@ -757,12 +910,8 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Codeline-Transport-Loconet"
+	(symbol "ModelLamp-AMBER"
 		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
 			(hide yes)
 		)
 		(exclude_from_sim no)
@@ -770,8 +919,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Transport"
-			(at -13.335 1.905 0)
+		(property "Reference" "LAMP"
+			(at -3.81 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -781,15 +930,14 @@
 				)
 			)
 		)
-		(property "Value" "Loconet"
-			(at -8.255 -2.54 0)
+		(property "Value" "Alert"
+			(at 3.429 -0.508 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.508 0.508)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -814,18 +962,8 @@
 				)
 			)
 		)
-		(property "Description" "Using OPC_PEER 8-byte payload"
-			(at 11.43 -10.16 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at -7.62 0 0)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
+			(at -0.635 -9.525 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -835,100 +973,133 @@
 				)
 			)
 		)
-		(property "Kind" "LOCONET"
-			(at -7.62 1.905 0)
+		(property "Color" "amber"
+			(at -0.635 -8.255 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 1.143 4.699 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Port" ""
-			(at -16.51 -6.35 0)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(symbol "Codeline-Transport-Loconet_0_1"
-			(rectangle
-				(start -20.32 -1.27)
-				(end 20.32 -11.43)
+		(property "Appliance" "lamp"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "board"
+			(at 0 -4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ModelLamp-AMBER_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 153 0 1)
 				)
 			)
-		)
-		(symbol "Codeline-Transport-Loconet_1_1"
-			(text "Port"
-				(at -19.05 -4.445 0)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.762 0.762)
 					)
 					(justify left)
 				)
 			)
-			(text "Encoding"
-				(at -15.24 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "Transport"
-				(at -14.605 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(pin free line
-				(at 0 0 270)
-				(length 1.27)
-				(name "Codeline"
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
 					(effects
 						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin free line
-				(at -15.24 -13.97 90)
-				(length 2.54)
-				(name "Encoding"
-					(effects
-						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
@@ -936,12 +1107,8 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Codeline-Transport-MQTT"
+	(symbol "ModelLamp-BLUE"
 		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
 			(hide yes)
 		)
 		(exclude_from_sim no)
@@ -949,8 +1116,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Transport"
-			(at -27.305 -3.81 0)
+		(property "Reference" "LAMP"
+			(at -3.81 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -960,13 +1127,13 @@
 				)
 			)
 		)
-		(property "Value" "MQTT"
-			(at -6.985 -2.54 0)
+		(property "Value" "Traffic"
+			(at 3.683 -0.508 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.508 0.508)
 				)
 			)
 		)
@@ -992,7 +1159,51 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(at -0.635 -9.525 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "blue"
+			(at -0.635 -8.255 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1003,8 +1214,8 @@
 				)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
-			(at -21.59 0 0)
+		(property "Appliance" "lamp"
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1014,42 +1225,8 @@
 				)
 			)
 		)
-		(property "Kind" "MQTT"
-			(at -9.525 -2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Broker" "192.168.1.21:1883"
-			(at -16.51 -5.08 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Topic" "ctc/${Railroad}/codeline/"
-			(at -16.51 -7.62 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Railroad" "SPCoast"
-			(at -27.94 -5.715 0)
+		(property "Style" "board"
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1059,10 +1236,10 @@
 				)
 			)
 		)
-		(property "Station" "${SHEETNAME}"
-			(at -25.4 -8.255 0)
+		(property "Pin.LAMP" "binary"
+			(at 0 -2.54 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
@@ -1070,87 +1247,56 @@
 				)
 			)
 		)
-		(symbol "Codeline-Transport-MQTT_0_1"
-			(rectangle
-				(start -20.32 -1.27)
-				(end 20.32 -11.43)
+		(symbol "ModelLamp-BLUE_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 0 0 255 1)
 				)
 			)
-		)
-		(symbol "Codeline-Transport-MQTT_1_1"
-			(text "Broker"
-				(at -19.685 -5.08 0)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
 				(effects
 					(font
-						(size 0.508 0.508)
+						(size 0.762 0.762)
 					)
 					(justify left)
 				)
 			)
-			(text "Topic"
-				(at -19.685 -7.62 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-					(justify left)
-				)
-			)
-			(text "Transport"
-				(at -15.24 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(text "Encoding"
-				(at -10.795 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(pin free line
-				(at 0 0 270)
-				(length 1.27)
-				(name "Codeline"
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
 					(effects
 						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin free line
-				(at -15.24 -13.97 90)
-				(length 2.54)
-				(name "Encoding"
-					(effects
-						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
@@ -1158,12 +1304,8 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Codeline-Transport-TimeCode"
+	(symbol "ModelLamp-GREEN"
 		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
 			(hide yes)
 		)
 		(exclude_from_sim no)
@@ -1171,8 +1313,8 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Transport"
-			(at -12.7 -1.905 0)
+		(property "Reference" "LAMP"
+			(at -3.81 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1182,15 +1324,14 @@
 				)
 			)
 		)
-		(property "Value" "Time Coded"
-			(at -8.89 -2.54 0)
+		(property "Value" "ON"
+			(at 3.556 -0.508 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.508 0.508)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -1215,18 +1356,434 @@
 				)
 			)
 		)
-		(property "Description" "US&S DC Long/Short Pulses"
-			(at -19.685 -5.715 0)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(at -0.635 -9.525 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "green"
+			(at -0.635 -8.255 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Role" "CODELINE_TRANSPORT"
+		(property "Role" "PANEL"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "board"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ModelLamp-GREEN_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "ModelLamp-RED"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "LAMP"
+			(at -3.81 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OS"
+			(at 3.429 -0.508 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(at -0.635 -9.525 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "red"
+			(at -0.635 -8.255 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "board"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ModelLamp-RED_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 194 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "ModelLamp-YELLOW"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "LAMP"
+			(at -4.445 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TRACK"
+			(at 3.937 -0.508 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
 			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1237,81 +1794,100 @@
 				)
 			)
 		)
-		(property "Kind" "TIMECODE"
-			(at -6.35 -1.905 0)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(symbol "Codeline-Transport-TimeCode_0_1"
-			(rectangle
-				(start -20.32 -1.27)
-				(end 20.32 -11.43)
+		(property "Appliance" "lamp"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "board"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "ModelLamp-YELLOW_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
 				(stroke
-					(width 0)
-					(type default)
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
 				)
 				(fill
-					(type none)
+					(type color)
+					(color 255 255 0 1)
 				)
 			)
-		)
-		(symbol "Codeline-Transport-TimeCode_1_1"
-			(text "Transport"
-				(at -15.24 -2.54 0)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
+					(justify left)
 				)
 			)
-			(text "Encoding"
-				(at -10.795 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(pin free line
-				(at 0 0 270)
-				(length 1.27)
-				(name "Codeline"
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
 					(effects
 						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin free line
-				(at -15.24 -13.97 90)
-				(length 2.54)
-				(name "Encoding"
-					(effects
-						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
@@ -1319,7 +1895,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "CtcMachine"
+	(symbol "OfficeUnit"
 		(pin_numbers
 			(hide yes)
 		)
@@ -1333,7 +1909,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "MACHINE"
-			(at -15.367 11.811 0)
+			(at -15.24 8.89 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1343,8 +1919,8 @@
 				)
 			)
 		)
-		(property "Value" "SPCoast South cTc"
-			(at -0.127 0.889 0)
+		(property "Value" ""
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -1375,7 +1951,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical dispatcher cTc machine (protocol/vocabulary)."
+		(property "Description" "The OfficeUnit: the dispatcher's office logic and its desk; one per CTC machine. Its columns are its interlockings (ADR 0009)."
 			(at 9.525 -6.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1386,7 +1962,7 @@
 				)
 			)
 		)
-		(property "Type" "US&S506"
+		(property "Style" "US&S"
 			(at -14.859 -4.064 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1396,8 +1972,8 @@
 				)
 			)
 		)
-		(property "Era" ""
-			(at -17.653 8.255 0)
+		(property "Role" "OFFICE_UNIT"
+			(at -13.843 7.112 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1407,48 +1983,35 @@
 				)
 			)
 		)
-		(property "Role" "MACHINE"
-			(at -13.97 10.033 0)
-			(show_name yes)
-			(do_not_autoplace yes)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Columns" ""
-			(at -5.969 -4.064 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Railroad" "SPCoast"
-			(at 9.652 -4.191 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(symbol "CtcMachine_1_1"
+		(symbol "OfficeUnit_1_1"
 			(rectangle
-				(start -20.32 6.477)
+				(start -20.32 5.08)
 				(end 20.32 -5.08)
 				(stroke
 					(width 0.3048)
-					(type default)
+					(type solid)
 				)
 				(fill
-					(type none)
+					(type background)
+				)
+			)
+			(text "Processor"
+				(at -19.05 0 900)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
 				)
 			)
 			(text "Type"
@@ -1468,40 +2031,24 @@
 				)
 			)
 			(text "Centralized Traffic Control System"
-				(at 0 5.08 0)
+				(at 0 3.81 0)
 				(effects
 					(font
 						(size 1.016 1.016)
 					)
 				)
 			)
-			(text "Codeline"
-				(at 0.127 -4.064 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "Railroad"
-				(at 6.858 -4.191 0)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
 			(pin free line
-				(at 0 -7.62 90)
-				(length 2.54)
-				(name "Transports"
+				(at -21.59 0 0)
+				(length 1.27)
+				(name "Processor"
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
 					)
 				)
-				(number "1"
+				(number "2"
 					(effects
 						(font
 							(size 0 0)
@@ -1585,6 +2132,17 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "lever"
@@ -1800,6 +2358,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "lever"
 			(at 0 7.62 0)
 			(show_name no)
@@ -1976,16 +2545,6 @@
 				)
 			)
 		)
-		(property "Interlocking" "Luchessa"
-			(at 0 -31.75 0)
-			(show_name yes)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "COLUMN"
 			(at 0.635 -24.765 0)
 			(show_name no)
@@ -1994,16 +2553,6 @@
 			(effects
 				(font
 					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Machine" "SPCoast South"
-			(at 0.635 -27.94 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.905 1.905)
 				)
 			)
 		)
@@ -2341,981 +2890,6 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "PanelLamp-AMBER"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -3.81 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Alert"
-			(at 3.429 -0.508 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at -0.635 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "amber"
-			(at -0.635 -8.255 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" "S"
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PanelLamp-AMBER_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 255 153 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(pin passive line
-				(at 0 0 180)
-				(length 0)
-				(name "Column"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "PanelLamp-BLUE"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -3.81 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Traffic"
-			(at 3.683 -0.508 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at -0.635 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "blue"
-			(at -0.635 -8.255 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" "S"
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PanelLamp-BLUE_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 0 0 255 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(pin passive line
-				(at 0 0 180)
-				(length 0)
-				(name "Column"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "PanelLamp-GREEN"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -3.81 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OS"
-			(at 3.556 -0.508 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at -0.635 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "green"
-			(at -0.635 -8.255 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" "S"
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PanelLamp-GREEN_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(pin passive line
-				(at 0 0 180)
-				(length 0)
-				(name "Column"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "PanelLamp-RED"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -3.81 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OS"
-			(at 3.429 -0.508 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at -0.635 -9.525 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "red"
-			(at -0.635 -8.255 0)
-			(show_name yes)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" "S"
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PanelLamp-RED_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 194 0 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(pin passive line
-				(at 0 0 180)
-				(length 0)
-				(name "Column"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "PanelLamp-YELLOW"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "LAMP"
-			(at -4.445 -5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TRACK"
-			(at 3.937 -0.508 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK, MC) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (track circuits such as 795T1,2NAA,799T1, or tokens such as MC1K) OR'd to drive this one lamp. All listed indications are still individually on the CodeLine wire"
-			(at 0 -7.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Color" "yellow"
-			(at 0 -6.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "IndicationToken" "S"
-			(at -1.905 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 0 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lamp"
-			(at 0 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "indication"
-			(at 0 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 0 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "PanelLamp-YELLOW_1_1"
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.2032)
-					(type solid)
-					(color 0 0 0 1)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(pin passive line
-				(at 0 0 180)
-				(length 0)
-				(name "Column"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 7.62 0 180)
-				(length 6.35)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
 	(symbol "PanelLock"
 		(pin_numbers
 			(hide yes)
@@ -3381,6 +2955,17 @@
 		)
 		(property "Role" "PANEL"
 			(at 0.635 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3983,6 +3568,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "lever"
 			(at 6.35 3.81 0)
 			(show_name no)
@@ -4135,6 +3731,221 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "PanelMCall-Lamp"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "LAMP"
+			(at -4.445 -5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCall"
+			(at 3.937 -0.508 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "One physical Maintainer Call lamp.  IndicationToken is a comma-separated list of indication names (tokens such as MC1K)"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Color" "yellow"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "IndicationToken" ""
+			(at -1.905 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "indication"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.LAMP" "binary"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PanelMCall-Lamp_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${IndicationToken}"
+				(at 1.27 1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin passive line
+				(at 0 0 180)
+				(length 0)
+				(name "Column"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{LAMP}"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "PanelSignal"
 		(pin_numbers
 			(hide yes)
@@ -4200,6 +4011,17 @@
 		)
 		(property "Role" "PANEL"
 			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -4921,6 +4743,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "lever"
 			(at 0.635 -12.7 0)
 			(show_name no)
@@ -5421,6 +5254,979 @@
 					(effects
 						(font
 							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Railroad"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "RAILROAD"
+			(at -15.748 8.636 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 3.048 7.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Attributes for the railroad itself"
+			(at 9.525 -6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at -16.002 7.239 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Kind" "RAILROAD"
+			(at -17.653 6.096 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Era" ""
+			(at -19.05 -2.54 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Railroad" ""
+			(at 8.128 -9.271 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Region" ""
+			(at 11.176 -10.541 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Rulebook" ""
+			(at -19.05 -3.81 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 6.35 -1.27 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.8288 1.8288)
+				)
+			)
+		)
+		(symbol "Railroad_1_1"
+			(rectangle
+				(start -20.32 5.08)
+				(end 20.32 -5.08)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Region: ${Region}"
+				(at -19.05 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Railroad: ${Railroad}"
+				(at -19.05 -1.27 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(text "Railroad Information"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transport-CMRInet"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Transport"
+			(at 5.715 4.445 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CMRInet"
+			(at 21.59 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRANSPORT"
+			(at 1.27 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CMRI"
+			(at 34.29 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Baud" ""
+			(at 33.02 -3.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Port" ""
+			(at 2.54 -3.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Transport-CMRInet_1_1"
+			(rectangle
+				(start 1.27 1.27)
+				(end 41.91 -8.89)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Port"
+				(at 2.54 -5.588 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(text "Processor"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 19.05 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(text "Baudrate"
+				(at 30.48 -5.588 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 1.27)
+				(name "Processor"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 3.81 -11.43 90)
+				(length 2.54)
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transport-LocoNet"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Transport"
+			(at 17.145 4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LocoNet"
+			(at 22.225 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Using OPC_PEER 8-byte payload"
+			(at 11.43 -5.08 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Role" "TRANSPORT"
+			(at 22.86 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "LOCONET"
+			(at 22.86 4.445 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Port" ""
+			(at 7.62 -2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Transport-LocoNet_1_1"
+			(rectangle
+				(start 1.27 1.27)
+				(end 41.91 -8.89)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Port"
+				(at 3.81 -2.54 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(text "Processor"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 15.875 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 1.27)
+				(name "Processor"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 3.81 -11.43 90)
+				(length 2.54)
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transport-MQTT"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Transport"
+			(at 5.08 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MQTT"
+			(at 22.86 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRANSPORT"
+			(at 6.35 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "MQTT"
+			(at 22.225 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Broker" ""
+			(at 3.81 -3.81 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Transport-MQTT_1_1"
+			(rectangle
+				(start 1.27 1.27)
+				(end 41.91 -8.89)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Broker"
+				(at 4.318 -5.334 0)
+				(effects
+					(font
+						(size 0.508 0.508)
+					)
+					(justify left)
+				)
+			)
+			(text "Processor"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at 15.24 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 1.27)
+				(name "Processor"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 3.81 -11.43 90)
+				(length 2.54)
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Transport-TimeCode"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Transport"
+			(at -3.81 -1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TimeCode"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "US&S DC Long/Short Pulses"
+			(at -17.78 -7.62 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Role" "TRANSPORT"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "TIMECODE"
+			(at 2.54 -1.905 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "Transport-TimeCode_1_1"
+			(rectangle
+				(start -20.32 -1.27)
+				(end 20.32 -11.43)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "Processor"
+				(at -16.51 -2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at -16.51 -10.16 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Transport"
+				(at -6.35 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin free line
+				(at -21.59 -2.54 0)
+				(length 1.27)
+				(name "Processor"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at -17.78 -13.97 90)
+				(length 2.54)
+				(name "Transport"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
 						)
 					)
 				)

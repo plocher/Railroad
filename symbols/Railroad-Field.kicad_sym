@@ -77,6 +77,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "contact"
 			(at -3.4236 3.5824 0)
 			(show_name no)
@@ -216,17 +227,20 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Head-CL"
+	(symbol "Device-Head-CL-Pixel"
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 1.27)
+			(offset 0.889)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -16.0874 4.4248 0)
+		(property "Reference" "Cast"
+			(at -11.43 4.699 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -269,8 +283,8 @@
 				)
 			)
 		)
-		(property "Description" "Color light head as one RGB LED, three legs: red is R, yellow is R plus G, green is G, lunar is all three. On an expander or, with brightness per leg, on PWM (E71)."
-			(at 0 -6.604 0)
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
+			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -281,18 +295,63 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at -5.334 3.81 0)
+			(at -11.43 5.461 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Appliance" "head"
-			(at -4.064 4.826 0)
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CL"
+			(at -18.288 5.334 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Head" "${Value}"
+			(at -17.526 0.127 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -302,19 +361,318 @@
 				)
 			)
 		)
-		(property "Style" "CL"
-			(at -18.796 0 0)
+		(property "Pin.RGB" "color"
+			(at 5.588 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
 				)
+			)
+		)
+		(property "Address" ""
+			(at -2.413 1.016 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.016 1.016)
+					(thickness 0.0953)
+				)
 				(justify left)
 			)
 		)
+		(symbol "Device-Head-CL-Pixel_0_1"
+			(rectangle
+				(start -21.59 1.27)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.874 -0.889) (xy -7.8733 -1.2076)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -7.8733 0.0624)
+				(radius 0.898)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -8.5053 0.0624)
+				(mid -8.3193 0.5114)
+				(end -7.8703 0.6974)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -7.8703 0.6974)
+				(mid -7.4213 0.5114)
+				(end -7.2353 0.0624)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -7.8703 -0.5726)
+				(mid -8.3193 -0.3866)
+				(end -8.5053 0.0624)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -7.2353 0.0624)
+				(mid -7.4213 -0.3866)
+				(end -7.8703 -0.5726)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-CL-Pixel_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(pin input line
+				(at 0 0 180)
+				(length 2.54)
+				(name "RGB"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Head-CL-RGB"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Head"
+			(at -11.43 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one head's aspect on one RGB LED, three legs. Head is the head letter; Style names the head style the rulebook's table is read for (CL, CPL, LQ, UQ)."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -11.43 5.461 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CL"
+			(at -18.161 5.334 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Head" "${Value}"
+			(at -17.399 0.127 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
 		(property "Pin.R" "binary"
-			(at -4.064 4.826 0)
+			(at 5.588 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -325,7 +683,7 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at -4.064 4.826 0)
+			(at 5.588 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -336,7 +694,7 @@
 			)
 		)
 		(property "Pin.B" "binary"
-			(at -4.064 4.826 0)
+			(at 5.588 2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -346,7 +704,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-CL_0_1"
+		(symbol "Device-Head-CL-RGB_0_1"
 			(rectangle
 				(start -21.59 3.81)
 				(end -2.54 -3.81)
@@ -360,7 +718,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.193 -0.635) (xy -20.1923 -0.9536)
+					(xy -6.223 -0.635) (xy -6.2223 -0.9536)
 				)
 				(stroke
 					(width 0)
@@ -371,7 +729,7 @@
 				)
 			)
 			(circle
-				(center -20.1923 0.3164)
+				(center -6.2223 0.3164)
 				(radius 0.898)
 				(stroke
 					(width 0)
@@ -381,12 +739,10 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "Device-Head-CL_1_1"
 			(arc
-				(start -20.8243 0.3164)
-				(mid -20.6383 0.7654)
-				(end -20.1893 0.9514)
+				(start -6.8543 0.3164)
+				(mid -6.6683 0.7654)
+				(end -6.2193 0.9514)
 				(stroke
 					(width 0)
 					(type solid)
@@ -397,9 +753,9 @@
 				)
 			)
 			(arc
-				(start -20.1893 0.9514)
-				(mid -19.7403 0.7654)
-				(end -19.5543 0.3164)
+				(start -6.2193 0.9514)
+				(mid -5.7703 0.7654)
+				(end -5.5843 0.3164)
 				(stroke
 					(width 0)
 					(type solid)
@@ -410,9 +766,9 @@
 				)
 			)
 			(arc
-				(start -20.1893 -0.3186)
-				(mid -20.6383 -0.1326)
-				(end -20.8243 0.3164)
+				(start -6.2193 -0.3186)
+				(mid -6.6683 -0.1326)
+				(end -6.8543 0.3164)
 				(stroke
 					(width 0)
 					(type solid)
@@ -423,9 +779,9 @@
 				)
 			)
 			(arc
-				(start -19.5543 0.3164)
-				(mid -19.7403 -0.1326)
-				(end -20.1893 -0.3186)
+				(start -5.5843 0.3164)
+				(mid -5.7703 -0.1326)
+				(end -6.2193 -0.3186)
 				(stroke
 					(width 0)
 					(type default)
@@ -434,9 +790,11 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "Device-Head-CL-RGB_1_1"
 			(polyline
 				(pts
-					(xy -3.429 2.54) (xy -2.794 3.175) (xy -2.794 1.905) (xy -3.429 2.54)
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
 				)
 				(stroke
 					(width 0)
@@ -449,7 +807,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 0) (xy -2.794 0.635) (xy -2.794 -0.635) (xy -3.429 0)
+					(xy -3.429 2.54) (xy -2.794 1.905) (xy -2.794 3.175) (xy -3.429 2.54)
 				)
 				(stroke
 					(width 0)
@@ -462,7 +820,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 -2.54) (xy -2.794 -1.905) (xy -2.794 -3.175) (xy -3.429 -2.54)
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
 				)
 				(stroke
 					(width 0)
@@ -473,13 +831,25 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "HEAD ${VALUE}"
-				(at -18.923 1.27 0)
+			(polyline
+				(pts
+					(xy -3.429 -2.54) (xy -2.794 -3.175) (xy -2.794 -1.905) (xy -3.429 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "RGB"
+				(at -19.939 3.048 0)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 0.762 0.762)
 					)
-					(justify left)
 				)
 			)
 			(pin input line
@@ -536,253 +906,20 @@
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Device-Head-CL-Pixel"
-		(pin_names
-			(offset 0.762)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -5.9274 3.1548 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Color light head on a pixel chain: one RGB point, one color at a time; Address is its slot (E71)."
-			(at 0 -3.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -5.08 -2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at -5.08 -2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "CL"
-			(at -19.431 -0.762 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Address" ""
-			(at -5.08 -2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.RGB" "color"
-			(at -5.715 2.032 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(symbol "Device-Head-CL-Pixel_0_1"
-			(rectangle
-				(start -21.59 1.143)
-				(end -2.54 -1.27)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.3207 -0.8244) (xy -20.32 -1.143)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center -20.32 0.127)
-				(radius 0.898)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-Head-CL-Pixel_1_1"
-			(arc
-				(start -20.952 0.127)
-				(mid -20.766 0.576)
-				(end -20.317 0.762)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.317 0.762)
-				(mid -19.868 0.576)
-				(end -19.682 0.127)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.317 -0.508)
-				(mid -20.766 -0.322)
-				(end -20.952 0.127)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -19.682 0.127)
-				(mid -19.868 -0.322)
-				(end -20.317 -0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "Head ${VALUE}"
-				(at -18.796 0 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
 			(pin input line
-				(at 0 0 180)
+				(at -24.13 0 0)
 				(length 2.54)
-				(name "RGB"
+				(name "IND"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "1"
+				(number "4"
 					(effects
 						(font
-							(size 0.635 0.635)
+							(size 0.381 0.381)
 						)
 					)
 				)
@@ -791,16 +928,19 @@
 		(embedded_fonts no)
 	)
 	(symbol "Device-Head-CPL"
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 1.27)
+			(offset 0.889)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -16.0874 4.4248 0)
+		(property "Reference" "Cast"
+			(at -11.43 4.699 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -843,8 +983,8 @@
 				)
 			)
 		)
-		(property "Description" "Colour-light head realised as three lamps, one wire each. Brightness and fade are the two-point cast's settings when a lamp lands on a level-out pin."
-			(at 0 -6.604 0)
+		(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter, one the mast's name lists: Head B on mast 774NAB. The aspect is derived, not drawn."
+			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -855,40 +995,40 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at -5.334 3.81 0)
+			(at -11.43 5.461 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Appliance" "head"
-			(at -4.064 4.826 0)
+			(at 0 0 0)
 			(show_name no)
-			(do_not_autoplace yes)
+			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
-					(size 0.635 0.635)
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Style" "CPL"
-			(at -18.796 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.R" "binary"
-			(at -4.064 4.826 0)
+			(at -11.43 6.223 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -898,8 +1038,19 @@
 				)
 			)
 		)
-		(property "Pin.Y" "binary"
-			(at -4.064 4.826 0)
+		(property "Head" "${Value}"
+			(at -17.78 0 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -910,7 +1061,29 @@
 			)
 		)
 		(property "Pin.G" "binary"
-			(at -4.064 4.826 0)
+			(at 5.588 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.Y" "binary"
+			(at 5.588 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.R" "binary"
+			(at 5.588 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -934,7 +1107,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.955 1.905) (xy -20.955 -1.905)
+					(xy -6.985 1.905) (xy -6.985 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -944,58 +1117,8 @@
 					(type none)
 				)
 			)
-			(arc
-				(start -20.955 1.905)
-				(mid -20.32 2.168)
-				(end -19.685 1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -19.685 -1.905)
-				(mid -20.32 -2.168)
-				(end -20.955 -1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.3193 -2.2214) (xy -20.32 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -19.685 1.905) (xy -19.685 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-Head-CPL_1_1"
 			(circle
-				(center -20.32 1.27)
+				(center -6.35 1.27)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1006,8 +1129,20 @@
 					(color 0 255 0 1)
 				)
 			)
+			(arc
+				(start -6.985 1.905)
+				(mid -6.35 2.168)
+				(end -5.715 1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(circle
-				(center -20.32 0)
+				(center -6.35 0)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1018,8 +1153,20 @@
 					(color 255 255 0 1)
 				)
 			)
+			(arc
+				(start -5.715 -1.905)
+				(mid -6.35 -2.168)
+				(end -6.985 -1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(circle
-				(center -20.32 -1.27)
+				(center -6.35 -1.27)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1032,7 +1179,33 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 2.54) (xy -2.794 3.175) (xy -2.794 1.905) (xy -3.429 2.54)
+					(xy -6.3493 -2.2214) (xy -6.35 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.715 1.905) (xy -5.715 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-CPL_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
 				)
 				(stroke
 					(width 0)
@@ -1045,7 +1218,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 0) (xy -2.794 0.635) (xy -2.794 -0.635) (xy -3.429 0)
+					(xy -3.429 2.54) (xy -2.794 1.905) (xy -2.794 3.175) (xy -3.429 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1058,7 +1231,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 -2.54) (xy -2.794 -1.905) (xy -2.794 -3.175) (xy -3.429 -2.54)
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
 				)
 				(stroke
 					(width 0)
@@ -1069,19 +1242,31 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "HEAD ${VALUE}"
-				(at -18.923 1.27 0)
+			(polyline
+				(pts
+					(xy -3.429 -2.54) (xy -2.794 -3.175) (xy -2.794 -1.905) (xy -3.429 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "CPL"
+				(at -19.939 2.921 0)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 0.762 0.762)
 					)
-					(justify left)
 				)
 			)
 			(pin input line
-				(at 0 -2.54 180)
+				(at 0 2.54 180)
 				(length 2.54)
-				(name "~{R}"
+				(name "~{G}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1115,9 +1300,9 @@
 				)
 			)
 			(pin input line
-				(at 0 2.54 180)
+				(at 0 -2.54 180)
 				(length 2.54)
-				(name "~{G}"
+				(name "~{R}"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1132,20 +1317,41 @@
 					)
 				)
 			)
+			(pin input line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Head-CPL-Encoder"
+	(symbol "Device-Head-CPL-Encoded"
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 1.27)
+			(offset 0.889)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -5.1216 3.1548 0)
+		(property "Reference" "Cast"
+			(at -11.43 3.429 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1188,8 +1394,8 @@
 				)
 			)
 		)
-		(property "Description" "Colour-light head driven by a two-bit select code; the decoder on the head is field hardware."
-			(at -0.127 -4.445 0)
+		(property "Description" "Mast indication to one CPL head's two-bit select code; the decoder on the head is field hardware. Head is the head letter."
+			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -1200,18 +1406,40 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 9.525 4.064 0)
+			(at -11.43 4.191 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Appliance" "head"
-			(at -0.762 3.175 0)
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at -11.43 4.953 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1221,10 +1449,22 @@
 				)
 			)
 		)
-		(property "Style" "CPL"
-			(at -18.288 -0.127 0)
+		(property "Head" ""
+			(at -17.526 0 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -1232,7 +1472,7 @@
 			)
 		)
 		(property "Pin.S0" "binary"
-			(at -16.256 -3.175 0)
+			(at 5.588 1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1243,7 +1483,7 @@
 			)
 		)
 		(property "Pin.S1" "binary"
-			(at -16.256 -3.175 0)
+			(at 5.588 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -1253,7 +1493,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-CPL-Encoder_0_1"
+		(symbol "Device-Head-CPL-Encoded_0_1"
 			(rectangle
 				(start -21.59 2.54)
 				(end -2.54 -2.54)
@@ -1267,7 +1507,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.955 1.905) (xy -20.955 -1.905)
+					(xy -6.985 1.905) (xy -6.985 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -1277,58 +1517,8 @@
 					(type none)
 				)
 			)
-			(arc
-				(start -20.955 1.905)
-				(mid -20.32 2.168)
-				(end -19.685 1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -19.685 -1.905)
-				(mid -20.32 -2.168)
-				(end -20.955 -1.905)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.3193 -2.2214) (xy -20.32 -2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -19.685 1.905) (xy -19.685 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Device-Head-CPL-Encoder_1_1"
 			(circle
-				(center -20.32 1.27)
+				(center -6.35 1.27)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1339,8 +1529,20 @@
 					(color 0 255 0 1)
 				)
 			)
+			(arc
+				(start -6.985 1.905)
+				(mid -6.35 2.168)
+				(end -5.715 1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(circle
-				(center -20.32 0)
+				(center -6.35 0)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1351,8 +1553,20 @@
 					(color 255 255 0 1)
 				)
 			)
+			(arc
+				(start -5.715 -1.905)
+				(mid -6.35 -2.168)
+				(end -6.985 -1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(circle
-				(center -20.32 -1.27)
+				(center -6.35 -1.27)
 				(radius 0.4033)
 				(stroke
 					(width 0.1016)
@@ -1365,7 +1579,33 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 1.27) (xy -2.794 1.905) (xy -2.794 0.635) (xy -3.429 1.27)
+					(xy -6.3493 -2.2214) (xy -6.35 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -5.715 1.905) (xy -5.715 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-CPL-Encoded_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
 				)
 				(stroke
 					(width 0)
@@ -1378,7 +1618,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 -1.27) (xy -2.794 -0.635) (xy -2.794 -1.905) (xy -3.429 -1.27)
+					(xy -3.429 1.27) (xy -2.794 0.635) (xy -2.794 1.905) (xy -3.429 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1389,22 +1629,34 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "0 0 Green\n0 1 Yellow\n1 0 Red\n1 1 Dark"
-				(at -28.321 0 0)
+			(polyline
+				(pts
+					(xy -3.429 -1.27) (xy -2.794 -1.905) (xy -2.794 -0.635) (xy -3.429 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "0 0 Green\n0 1 Yellow\n\n1 0 Red\n1 1 Dark"
+				(at -26.035 0 0)
 				(effects
 					(font
-						(size 0.762 0.762)
+						(size 0.508 0.508)
 					)
 					(justify left)
 				)
 			)
-			(text "HEAD ${VALUE}"
-				(at -19.431 1.397 0)
+			(text "CPL 2-bit"
+				(at -18.161 1.651 0)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 0.762 0.762)
 					)
-					(justify left)
 				)
 			)
 			(pin input line
@@ -1443,1042 +1695,10 @@
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Device-Head-Semaphore"
-		(pin_names
-			(offset 1.016)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -6.3084 3.1548 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Semaphore head, lower or upper quadrant by the plant head's Style; arm angles are settings. LAMP is a color point: a pixel directly; a white lamp behind the roundel on an expander or PWM pin by the color-to-binary or color-to-level cast (E71)."
-			(at 0.889 -4.445 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -9.779 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "stop_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "approach_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "clear_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at -10.16 3.175 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "LQ, UQ"
-			(at -7.112 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ARM" "position"
-			(at 4.826 3.937 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.LAMP" "color"
-			(at 4.445 4.953 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Device-Head-Semaphore_1_1"
-			(rectangle
-				(start -21.59 2.54)
-				(end -2.54 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 2.286) (xy -20.955 0.254)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 1.27) (xy -19.685 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -20.828 0.762)
-				(mid -20.7164 1.0314)
-				(end -20.447 1.143)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.447 1.143)
-				(mid -20.1776 1.0314)
-				(end -20.066 0.762)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.447 0.381)
-				(mid -20.7164 0.4926)
-				(end -20.828 0.762)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -20.066 0.762)
-				(mid -20.1776 0.4926)
-				(end -20.447 0.381)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.066 2.032) (xy -20.955 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 1.27) (xy -2.794 1.905) (xy -2.794 0.635) (xy -3.429 1.27)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "HEAD ${VALUE}"
-				(at -19.177 1.27 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
 			(pin input line
-				(at 0 1.27 180)
+				(at -24.13 0 0)
 				(length 2.54)
-				(name "ARM"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device-Head-Semaphore_2_1"
-			(rectangle
-				(start -21.59 -2.54)
-				(end -2.54 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -0.254) (xy -20.955 -2.286)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -1.27) (xy -19.685 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -20.701 -1.905)
-				(mid -20.5894 -1.6356)
-				(end -20.32 -1.524)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -1.524)
-				(mid -20.0506 -1.6356)
-				(end -19.939 -1.905)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -2.286)
-				(mid -20.5894 -2.1744)
-				(end -20.701 -1.905)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -19.939 -1.905)
-				(mid -20.0506 -2.1744)
-				(end -20.32 -2.286)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.066 -0.508) (xy -20.955 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 -1.27) (xy -2.794 -1.905) (xy -2.794 -0.635) (xy -3.429 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "HEAD ${VALUE}"
-				(at -19.05 -1.27 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin input line
-				(at 0 -1.27 180)
-				(length 2.54)
-				(name "~{LAMP}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Device-Head-Semaphore-RGB"
-		(pin_names
-			(offset 1.016)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "DevHead"
-			(at -6.3084 3.1548 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Semaphore head with an RGB LED behind the roundel-less lens: ARM position; legs R, G, B as the color light head (E71)."
-			(at 1.143 -20.828 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at -9.779 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.B" "binary"
-			(at -9.779 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.G" "binary"
-			(at -9.779 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.R" "binary"
-			(at -9.779 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "stop_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "approach_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "clear_deg" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at -10.16 3.175 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "LQ, UQ"
-			(at -7.112 4.318 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.ARM" "position"
-			(at 4.826 3.937 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "ki_locked" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Device-Head-Semaphore-RGB_1_1"
-			(rectangle
-				(start -21.59 2.54)
-				(end -2.54 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 2.286) (xy -20.955 0.254)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 1.27) (xy -19.685 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -20.828 0.762)
-				(mid -20.7164 1.0314)
-				(end -20.447 1.143)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.447 1.143)
-				(mid -20.1776 1.0314)
-				(end -20.066 0.762)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.447 0.381)
-				(mid -20.7164 0.4926)
-				(end -20.828 0.762)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -20.066 0.762)
-				(mid -20.1776 0.4926)
-				(end -20.447 0.381)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.066 2.032) (xy -20.955 1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 1.27) (xy -2.794 1.905) (xy -2.794 0.635) (xy -3.429 1.27)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "HEAD ${VALUE}"
-				(at -19.177 1.27 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin input line
-				(at 0 1.27 180)
-				(length 2.54)
-				(name "ARM"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device-Head-Semaphore-RGB_2_1"
-			(rectangle
-				(start -21.59 -2.54)
-				(end -2.54 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -0.254) (xy -20.955 -2.286)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -1.27) (xy -19.685 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -20.701 -1.905)
-				(mid -20.5894 -1.6356)
-				(end -20.32 -1.524)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -1.524)
-				(mid -20.0506 -1.6356)
-				(end -19.939 -1.905)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -2.286)
-				(mid -20.5894 -2.1744)
-				(end -20.701 -1.905)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -19.939 -1.905)
-				(mid -20.0506 -2.1744)
-				(end -20.32 -2.286)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.066 -0.508) (xy -20.955 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 -1.27) (xy -2.794 -1.905) (xy -2.794 -0.635) (xy -3.429 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "HEAD ${VALUE}"
-				(at -19.05 -1.27 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin input line
-				(at 0 -1.27 180)
-				(length 2.54)
-				(name "~{G}"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 0.381 0.381)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Device-Head-Semaphore-RGB_3_1"
-			(rectangle
-				(start -21.59 -5.08)
-				(end -2.54 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -2.794) (xy -20.955 -4.826)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -3.81) (xy -19.685 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start -20.701 -4.445)
-				(mid -20.5894 -4.1756)
-				(end -20.32 -4.064)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -4.064)
-				(mid -20.0506 -4.1756)
-				(end -19.939 -4.445)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -4.826)
-				(mid -20.5894 -4.7144)
-				(end -20.701 -4.445)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -19.939 -4.445)
-				(mid -20.0506 -4.7144)
-				(end -20.32 -4.826)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.066 -3.048) (xy -20.955 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.429 -3.81) (xy -2.794 -4.445) (xy -2.794 -3.175) (xy -3.429 -3.81)
-				)
-				(stroke
-					(width 0)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 132 0 0 1)
-				)
-			)
-			(text "HEAD ${VALUE}"
-				(at -19.05 -3.81 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-					(justify left)
-				)
-			)
-			(pin input line
-				(at 0 -3.81 180)
-				(length 2.54)
-				(name "~{B}"
+				(name "IND"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2494,10 +1714,178 @@
 				)
 			)
 		)
-		(symbol "Device-Head-Semaphore-RGB_4_1"
+		(embedded_fonts no)
+	)
+	(symbol "Device-Head-CPL-Pixel"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Cast"
+			(at -11.43 4.699 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one CPL head's lamps, one wire each: R, Y, G. Head is the head letter, one the mast's name lists: Head B on mast 774NAB. The aspect is derived, not drawn."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -11.43 5.461 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "CPL"
+			(at -11.43 6.223 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Head" "${Value}"
+			(at -17.78 0 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.G" "color"
+			(at 5.588 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.Y" "color"
+			(at 5.588 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.R" "color"
+			(at 5.588 -2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Device-Head-CPL-Pixel_0_1"
 			(rectangle
-				(start -21.59 -7.62)
-				(end -2.54 -5.08)
+				(start -21.59 3.81)
+				(end -2.54 -3.81)
 				(stroke
 					(width 0)
 					(type default)
@@ -2508,19 +1896,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.955 -5.334) (xy -20.955 -7.366)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -20.955 -6.35) (xy -19.685 -6.35)
+					(xy -6.985 1.905) (xy -6.985 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -2531,51 +1907,24 @@
 				)
 			)
 			(arc
-				(start -20.701 -6.985)
-				(mid -20.5894 -6.7156)
-				(end -20.32 -6.604)
+				(start -6.985 1.905)
+				(mid -6.35 2.168)
+				(end -5.715 1.905)
 				(stroke
-					(width 0.0508)
-					(type solid)
+					(width 0)
+					(type default)
 				)
 				(fill
-					(type color)
-					(color 255 255 0 1)
+					(type none)
 				)
 			)
 			(arc
-				(start -20.32 -6.604)
-				(mid -20.0506 -6.7156)
-				(end -19.939 -6.985)
+				(start -5.715 -1.905)
+				(mid -6.35 -2.168)
+				(end -6.985 -1.905)
 				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -20.32 -7.366)
-				(mid -20.5894 -7.2544)
-				(end -20.701 -6.985)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -19.939 -6.985)
-				(mid -20.0506 -7.2544)
-				(end -20.32 -7.366)
-				(stroke
-					(width 0.0508)
-					(type solid)
+					(width 0)
+					(type default)
 				)
 				(fill
 					(type none)
@@ -2583,7 +1932,7 @@
 			)
 			(polyline
 				(pts
-					(xy -20.066 -5.588) (xy -20.955 -6.35)
+					(xy -6.3493 -2.2214) (xy -6.35 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -2595,7 +1944,21 @@
 			)
 			(polyline
 				(pts
-					(xy -3.429 -6.35) (xy -2.794 -6.985) (xy -2.794 -5.715) (xy -3.429 -6.35)
+					(xy -5.715 1.905) (xy -5.715 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-CPL-Pixel_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
 				)
 				(stroke
 					(width 0)
@@ -2606,17 +1969,248 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "HEAD ${VALUE}"
-				(at -19.05 -6.35 0)
+			(arc
+				(start -6.731 1.27)
+				(mid -6.6194 1.5394)
+				(end -6.35 1.651)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 194 0 1)
+				)
+			)
+			(arc
+				(start -6.35 1.651)
+				(mid -6.0806 1.5394)
+				(end -5.969 1.27)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -6.35 0.889)
+				(mid -6.6194 1.0006)
+				(end -6.731 1.27)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 132 0 1)
+				)
+			)
+			(arc
+				(start -5.969 1.27)
+				(mid -6.0806 1.0006)
+				(end -6.35 0.889)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 72 0 1)
+				)
+			)
+			(arc
+				(start -6.731 0)
+				(mid -6.6194 0.2694)
+				(end -6.35 0.381)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 194 194 0 1)
+				)
+			)
+			(arc
+				(start -6.35 0.381)
+				(mid -6.0806 0.2694)
+				(end -5.969 0)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -6.35 -0.381)
+				(mid -6.6194 -0.2694)
+				(end -6.731 0)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 132 0 1)
+				)
+			)
+			(arc
+				(start -5.969 0)
+				(mid -6.0806 -0.2694)
+				(end -6.35 -0.381)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 72 72 0 1)
+				)
+			)
+			(arc
+				(start -6.731 -1.27)
+				(mid -6.6194 -1.0006)
+				(end -6.35 -0.889)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 194 0 0 1)
+				)
+			)
+			(arc
+				(start -6.35 -0.889)
+				(mid -6.0806 -1.0006)
+				(end -5.969 -1.27)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -6.35 -1.651)
+				(mid -6.6194 -1.5394)
+				(end -6.731 -1.27)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(arc
+				(start -5.969 -1.27)
+				(mid -6.0806 -1.5394)
+				(end -6.35 -1.651)
+				(stroke
+					(width 0.1016)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 72 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 2.54) (xy -2.794 1.905) (xy -2.794 3.175) (xy -3.429 2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 -2.54) (xy -2.794 -3.175) (xy -2.794 -1.905) (xy -3.429 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "CPL-pixel"
+				(at -21.082 2.794 0)
 				(effects
 					(font
-						(size 1.016 1.016)
+						(size 0.762 0.762)
 					)
 					(justify left)
 				)
 			)
 			(pin input line
-				(at 0 -6.35 180)
+				(at 0 2.54 180)
+				(length 2.54)
+				(name "~{G}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 0 180)
+				(length 2.54)
+				(name "~{Y}"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 0 -2.54 180)
 				(length 2.54)
 				(name "~{R}"
 					(effects
@@ -2625,7 +2219,729 @@
 						)
 					)
 				)
+				(number "3"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
 				(number "4"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Head-Semaphore-LQ"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Cast"
+			(at -19.939 2.159 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one lower-quadrant semaphore head's arm position; the angles are this device's settings. Head is the head letter; Style is fixed: LQ."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -20.32 -2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "LQ"
+			(at -14.859 2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Head" ""
+			(at -17.78 -0.635 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "stop_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "approach_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "clear_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ARM" "position"
+			(at 5.588 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-LQ_0_1"
+			(rectangle
+				(start -21.59 1.27)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -8.89 0)
+				(mid -8.7784 0.2694)
+				(end -8.509 0.381)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -8.509 0.381)
+				(mid -8.2396 0.2694)
+				(end -8.128 0)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -8.509 -0.381)
+				(mid -8.7784 -0.2694)
+				(end -8.89 0)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -8.128 0)
+				(mid -8.2396 -0.2694)
+				(end -8.509 -0.381)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.128 1.016) (xy -8.128 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.128 0) (xy -6.858 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.001 -0.127) (xy -7.239 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-LQ_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${STYLE} arm"
+				(at -17.653 0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 0 180)
+				(length 2.54)
+				(name "ARM"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Head-Semaphore-UQ"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Cast"
+			(at -19.939 2.159 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mast indication to one upper-quadrant semaphore head's arm position; the angles are this device's settings. Head is the head letter; Style is fixed: UQ."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -20.32 -2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "UQ"
+			(at -14.859 2.032 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Head" ""
+			(at -17.78 -0.635 0)
+			(show_name yes)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "stop_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "approach_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "clear_deg" ""
+			(at -11.43 -6.35 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -28.448 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.ARM" "position"
+			(at 5.588 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-UQ_0_1"
+			(rectangle
+				(start -21.59 1.27)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.128 1.016) (xy -8.128 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.128 0) (xy -6.858 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -8.001 -0.508)
+				(mid -7.8894 -0.2386)
+				(end -7.62 -0.127)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -7.62 -0.127)
+				(mid -7.3506 -0.2386)
+				(end -7.239 -0.508)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -7.62 -0.889)
+				(mid -7.8894 -0.7774)
+				(end -8.001 -0.508)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -7.239 -0.508)
+				(mid -7.3506 -0.7774)
+				(end -7.62 -0.889)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.239 0.762) (xy -8.128 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-UQ_1_1"
+			(polyline
+				(pts
+					(xy -20.701 0) (xy -21.336 0.635) (xy -21.336 -0.635) (xy -20.701 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.429 0) (xy -2.794 -0.635) (xy -2.794 0.635) (xy -3.429 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${STYLE} arm"
+				(at -17.653 0.508 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(pin input line
+				(at 0 0 180)
+				(length 2.54)
+				(name "ARM"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 0.381 0.381)
@@ -2710,6 +3026,17 @@
 					(size 0.635 0.635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "lamp"
@@ -2891,6 +3218,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -3193,7 +3531,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3216,6 +3554,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -3676,6 +4025,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "switch"
 			(at -7.874 4.445 0)
 			(show_name no)
@@ -3923,6 +4283,17 @@
 					(thickness 0.0635)
 				)
 				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Appliance" "switch"
@@ -4533,6 +4904,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "track_circuit"
 			(at -3.5438 2.024 0)
 			(show_name no)
@@ -4726,6 +5108,17 @@
 				(justify left)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "hold_ms" "1500"
 			(at -10.414 1.905 0)
 			(show_name no)
@@ -4883,7 +5276,7 @@
 				)
 			)
 		)
-		(property "Value" "111"
+		(property "Value" ""
 			(at 0.01 1.7733 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -4928,6 +5321,17 @@
 		)
 		(property "Role" "DEVICE"
 			(at -0.635 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -5442,6 +5846,17 @@
 				)
 			)
 		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Appliance" "lever"
 			(at 0.635 -12.7 0)
 			(show_name no)
@@ -5901,6 +6316,174 @@
 					(effects
 						(font
 							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Mast"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DevMast"
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "mast"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Mast_0_1"
+			(rectangle
+				(start -21.59 1.27)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Mast_1_1"
+			(polyline
+				(pts
+					(xy -1.651 0) (xy -2.286 0.635) (xy -2.286 -0.635) (xy -1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "MAST ${VALUE}"
+				(at -20.955 0 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(pin output line
+				(at 0 0 180)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0.381 0.381)
 						)
 					)
 				)
