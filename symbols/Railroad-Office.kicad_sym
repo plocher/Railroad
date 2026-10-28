@@ -984,7 +984,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Indication" ""
 			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1077,7 +1077,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "${IndicationToken}"
+			(text "${Indication}"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -1181,7 +1181,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Indication" ""
 			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1274,7 +1274,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "${IndicationToken}"
+			(text "${Indication}"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -1378,7 +1378,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Indication" ""
 			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1471,7 +1471,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "${IndicationToken}"
+			(text "${Indication}"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -1575,7 +1575,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Indication" ""
 			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1668,7 +1668,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "${IndicationToken}"
+			(text "${Indication}"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -1772,7 +1772,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Indication" ""
 			(at -1.905 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1865,7 +1865,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "${IndicationToken}"
+			(text "${Indication}"
 				(at 1.27 1.27 0)
 				(effects
 					(font
@@ -2181,6 +2181,18 @@
 				(justify left)
 			)
 		)
+		(property "Control.S" "${Value}S"
+			(at 6.35 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
 		(symbol "PanelAuxiliary_0_1"
 			(circle
 				(center 0 0)
@@ -2392,6 +2404,17 @@
 			)
 		)
 		(property "Pin.CODE" "binary"
+			(at 0 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.CODE" ""
 			(at 0 7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2997,17 +3020,6 @@
 				)
 			)
 		)
-		(property "Invert" "WLK"
-			(at 0.635 -11.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Pin.WLS" "binary"
 			(at 0.635 -11.43 0)
 			(show_name no)
@@ -3042,6 +3054,50 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
+			(at 0.635 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.WLS" "${Value}WLS"
+			(at 0.635 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.UNUSED" ""
+			(at 0.635 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLQK" "${Value}WLQK"
+			(at 0.635 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLK" "!${Value}WLK"
 			(at 0.635 -11.43 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3619,7 +3675,7 @@
 				(justify left)
 			)
 		)
-		(property "Pin.MCK" "level"
+		(property "Pin.MCK" "binary"
 			(at 7.62 2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -3630,25 +3686,25 @@
 				)
 			)
 		)
-		(property "Control" "${Name}S"
-			(at 3.81 5.08 0)
+		(property "Control.MCS" "${Value}MCS"
+			(at 7.62 2.54 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
-		(property "Indication" "${Name}K"
-			(at 2.54 5.08 0)
+		(property "Indication.MCK" "${Value}MCK"
+			(at 7.62 2.54 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -4243,6 +4299,72 @@
 			)
 		)
 		(property "Pin.TEK" "binary"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NGS" "${Value}NGS"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.HS" "${Value}HS"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.SGS" "${Value}SGS"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NGK" "${Value}NGK"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.SGK" "${Value}SGK"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.TEK" "${Value}TEK"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4944,6 +5066,50 @@
 			)
 		)
 		(property "Pin.RWK" "binary"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NWS" "${Value}NWS"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.RWS" "${Value}RWS"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NWK" "${Value}NWK"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.RWK" "${Value}RWK"
 			(at 0.635 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
