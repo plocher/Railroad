@@ -3497,13 +3497,16 @@
 		(pin_numbers
 			(hide yes)
 		)
+		(pin_names
+			(offset 0)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "MC"
-			(at -6.35 3.81 0)
+			(at -2.54 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3513,10 +3516,11 @@
 				)
 			)
 		)
-		(property "Value" "MC1"
-			(at 4.318 -0.635 0)
+		(property "Value" ""
+			(at -5.08 5.08 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -3545,7 +3549,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Call Lever"
+		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
 			(at 0 -6.985 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3557,7 +3561,7 @@
 			)
 		)
 		(property "Role" "PANEL"
-			(at 6.35 3.81 0)
+			(at -3.81 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3568,8 +3572,8 @@
 				(justify left)
 			)
 		)
-		(property "Name" "${Value}"
-			(at 0 0 0)
+		(property "Name" "${Value}MC"
+			(at -5.08 1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3580,7 +3584,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 6.35 3.81 0)
+			(at 1.27 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3592,7 +3596,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 6.35 3.81 0)
+			(at -3.81 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3603,10 +3607,10 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary"
-			(at 6.35 3.81 0)
+		(property "Pin.MCS" "binary"
+			(at 6.35 2.54 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(hide yes)
 			(effects
 				(font
@@ -3615,7 +3619,50 @@
 				(justify left)
 			)
 		)
-		(symbol "PanelMCall_0_1"
+		(property "Pin.MCK" "level"
+			(at 7.62 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Control" "${Name}S"
+			(at 3.81 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 2.54 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PanelMCall_1_1"
 			(circle
 				(center 0 0)
 				(radius 1.4199)
@@ -3636,6 +3683,32 @@
 				)
 				(fill
 					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+				)
+				(stroke
+					(width 0.0762)
+					(type default)
+				)
+				(fill
+					(type color)
+					(color 0 0 0 0)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+				)
+				(stroke
+					(width 0.0762)
+					(type default)
+				)
+				(fill
+					(type color)
+					(color 0 0 0 0)
 				)
 			)
 			(arc
@@ -3664,19 +3737,17 @@
 					(color 0 0 0 0)
 				)
 			)
-		)
-		(symbol "PanelMCall_1_1"
 			(polyline
 				(pts
-					(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+					(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
 				)
 				(stroke
-					(width 0.0762)
-					(type default)
+					(width 0)
+					(type solid)
 				)
 				(fill
 					(type color)
-					(color 0 0 0 0)
+					(color 132 0 0 1)
 				)
 			)
 			(polyline
@@ -3692,8 +3763,16 @@
 					(color 132 0 0 1)
 				)
 			)
+			(text "${Name}"
+				(at -5.08 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
 			(pin passive line
-				(at 0 0 180)
+				(at 0 0 90)
 				(length 0)
 				(name "Column"
 					(effects
@@ -3713,14 +3792,69 @@
 			(pin output line
 				(at 7.62 0 180)
 				(length 5.08)
-				(name "~{S}"
+				(name "~{MCS}"
+					(effects
+						(font
+							(size 0.635 0.635)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 0 0)
 						)
 					)
 				)
-				(number "2"
+			)
+		)
+		(symbol "PanelMCall_2_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.588 0) (xy 6.223 -0.635) (xy 6.223 0.635) (xy 5.588 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(text "${Name}"
+				(at -2.54 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify right)
+				)
+			)
+			(pin input line
+				(at 7.62 0 180)
+				(length 6.35)
+				(name "~{MCK}"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "3"
 					(effects
 						(font
 							(size 0 0)
@@ -3817,7 +3951,7 @@
 			)
 		)
 		(property "Role" "PANEL"
-			(at 0 2.54 0)
+			(at -1.27 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3828,7 +3962,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 0 0 0)
+			(at -1.27 3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3839,7 +3973,7 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 0 2.54 0)
+			(at -1.27 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3850,7 +3984,7 @@
 			)
 		)
 		(property "Style" "indication"
-			(at 0 2.54 0)
+			(at -1.27 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3861,7 +3995,7 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 0 2.54 0)
+			(at -1.27 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
