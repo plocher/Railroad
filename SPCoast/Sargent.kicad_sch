@@ -8759,7 +8759,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "MC"
-				(at 0 -2.54 0)
+				(at 3.81 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -8773,6 +8773,7 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8823,14 +8824,13 @@
 					)
 				)
 			)
-			(property "Name" "${Value}"
-				(at 0 0 0)
+			(property "Name" "${Value}MC"
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
+				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -16914,8 +16914,9 @@
 				)
 			)
 		)
-		(property "Value" "MC1"
+		(property "Value" "1"
 			(at 160.02 40.64 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16968,9 +16969,8 @@
 				)
 			)
 		)
-		(property "Name" "${Value}"
+		(property "Name" "${Value}MC"
 			(at 160.02 40.64 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
