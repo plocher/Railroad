@@ -4294,7 +4294,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5089,7 +5089,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at -1.905 1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5566,7 +5566,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "MC"
-				(at 0 -2.54 0)
+				(at 3.81 -2.54 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -5580,6 +5580,7 @@
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5630,14 +5631,13 @@
 					)
 				)
 			)
-			(property "Name" "${Value}"
-				(at 0 0 0)
+			(property "Name" "${Value}MC"
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
+				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
 				)
 			)
@@ -7413,7 +7413,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7753,7 +7753,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7993,7 +7993,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8273,7 +8273,7 @@
 					)
 				)
 			)
-			(property "CP" ""
+			(property "CP Name" ""
 				(at 0 -1.905 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9411,7 +9411,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 123.19 73.025 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10942,7 +10942,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 138.43 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12014,7 +12014,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 99.06 89.535 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12821,7 +12821,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 81.28 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14678,7 +14678,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 170.18 73.025 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14836,7 +14836,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 194.31 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16225,7 +16225,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 156.21 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16679,7 +16679,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 81.28 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16967,7 +16967,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 147.32 70.485 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18393,7 +18393,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 73.66 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19607,7 +19607,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 137.16 80.645 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20558,8 +20558,9 @@
 				)
 			)
 		)
-		(property "Value" "MC1"
+		(property "Value" "1"
 			(at 99.06 49.53 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20612,9 +20613,8 @@
 				)
 			)
 		)
-		(property "Name" "${Value}"
+		(property "Name" "${Value}MC"
 			(at 99.06 49.53 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21370,7 +21370,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 170.18 86.995 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21491,7 +21491,7 @@
 				)
 			)
 		)
-		(property "CP" "Corporal"
+		(property "CP Name" "Corporal"
 			(at 73.66 103.505 0)
 			(show_name no)
 			(do_not_autoplace no)

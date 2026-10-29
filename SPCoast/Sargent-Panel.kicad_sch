@@ -1048,7 +1048,7 @@
 					)
 				)
 			)
-			(property "IndicationToken" ""
+			(property "Indication" ""
 				(at -1.905 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -1141,7 +1141,7 @@
 						(color 132 0 0 1)
 					)
 				)
-				(text "${IndicationToken}"
+				(text "${Indication}"
 					(at 1.27 1.27 0)
 					(effects
 						(font
@@ -1279,6 +1279,17 @@
 				)
 			)
 			(property "Pin.CODE" "binary"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.CODE" ""
 				(at 0 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1884,17 +1895,6 @@
 					)
 				)
 			)
-			(property "Invert" "WLK"
-				(at 0.635 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
 			(property "Pin.WLS" "binary"
 				(at 0.635 -11.43 0)
 				(show_name no)
@@ -1929,6 +1929,50 @@
 				)
 			)
 			(property "Pin.WLK" "binary"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.WLS" "${Value}WLS"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.UNUSED" ""
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.WLQK" "${Value}WLQK"
+				(at 0.635 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.WLK" "!${Value}WLK"
 				(at 0.635 -11.43 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2384,13 +2428,16 @@
 			(pin_numbers
 				(hide yes)
 			)
+			(pin_names
+				(offset 0)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "MC"
-				(at -6.35 3.81 0)
+				(at -2.54 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2400,10 +2447,11 @@
 					)
 				)
 			)
-			(property "Value" "MC1"
-				(at 4.318 -0.635 0)
+			(property "Value" ""
+				(at -5.08 5.08 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.635 0.635)
@@ -2432,7 +2480,7 @@
 					)
 				)
 			)
-			(property "Description" "Maintainer Call Lever"
+			(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
 				(at 0 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2444,7 +2492,7 @@
 				)
 			)
 			(property "Role" "PANEL"
-				(at 6.35 3.81 0)
+				(at -3.81 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2455,8 +2503,8 @@
 					(justify left)
 				)
 			)
-			(property "Name" "${Value}"
-				(at 0 0 0)
+			(property "Name" "${Value}MC"
+				(at -5.08 1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2467,7 +2515,7 @@
 				)
 			)
 			(property "Appliance" "lever"
-				(at 6.35 3.81 0)
+				(at 1.27 3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2479,7 +2527,7 @@
 				)
 			)
 			(property "Style" "maintainer_call"
-				(at 6.35 3.81 0)
+				(at -3.81 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2490,10 +2538,10 @@
 					(justify left)
 				)
 			)
-			(property "Pin.S" "binary"
-				(at 6.35 3.81 0)
+			(property "Pin.MCS" "binary"
+				(at 6.35 2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
@@ -2502,7 +2550,50 @@
 					(justify left)
 				)
 			)
-			(symbol "PanelMCall_0_1"
+			(property "Pin.MCK" "binary"
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Control.MCS" "${Value}MCS"
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Indication.MCK" "${Value}MCK"
+				(at 7.62 2.54 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PanelMCall_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.4199)
@@ -2523,6 +2614,32 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+					)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+					)
+					(stroke
+						(width 0.0762)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 0 0 0 0)
 					)
 				)
 				(arc
@@ -2551,19 +2668,17 @@
 						(color 0 0 0 0)
 					)
 				)
-			)
-			(symbol "PanelMCall_1_1"
 				(polyline
 					(pts
-						(xy 0 -0.635) (xy 2.54 -0.635) (xy 2.54 0.635) (xy 0 0.635)
+						(xy 6.858 0) (xy 6.223 0.635) (xy 6.223 -0.635) (xy 6.858 0)
 					)
 					(stroke
-						(width 0.0762)
-						(type default)
+						(width 0)
+						(type solid)
 					)
 					(fill
 						(type color)
-						(color 0 0 0 0)
+						(color 132 0 0 1)
 					)
 				)
 				(polyline
@@ -2579,8 +2694,16 @@
 						(color 132 0 0 1)
 					)
 				)
+				(text "${Name}"
+					(at -5.08 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
 				(pin passive line
-					(at 0 0 180)
+					(at 0 0 90)
 					(length 0)
 					(name "Column"
 						(effects
@@ -2600,10 +2723,10 @@
 				(pin output line
 					(at 7.62 0 180)
 					(length 5.08)
-					(name "~{S}"
+					(name "~{MCS}"
 						(effects
 							(font
-								(size 0 0)
+								(size 0.635 0.635)
 							)
 						)
 					)
@@ -2616,149 +2739,7 @@
 					)
 				)
 			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Office:PanelMCall-Lamp"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "LAMP"
-				(at -4.445 -5.715 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MCall"
-				(at 3.937 -0.508 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "One physical Maintainer Call lamp.  IndicationToken is a comma-separated list of indication names (tokens such as MC1K)"
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Color" "yellow"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "IndicationToken" ""
-				(at -1.905 0 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Role" "PANEL"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "${Value}"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Appliance" "lamp"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "indication"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Pin.LAMP" "binary"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PanelMCall-Lamp_1_1"
+			(symbol "PanelMCall_2_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -2785,44 +2766,26 @@
 						(color 132 0 0 1)
 					)
 				)
-				(text "${IndicationToken}"
-					(at 1.27 1.27 0)
+				(text "${Name}"
+					(at -2.54 0 0)
 					(effects
 						(font
 							(size 0.762 0.762)
 						)
-						(justify left)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "Column"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
+						(justify right)
 					)
 				)
 				(pin input line
 					(at 7.62 0 180)
 					(length 6.35)
-					(name "~{LAMP}"
+					(name "~{MCK}"
 						(effects
 							(font
-								(size 0 0)
+								(size 0.508 0.508)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 0 0)
@@ -2898,6 +2861,17 @@
 			)
 			(property "Role" "PANEL"
 				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -2985,6 +2959,72 @@
 				)
 			)
 			(property "Pin.TEK" "binary"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.NGS" "${Value}NGS"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.HS" "${Value}HS"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.SGS" "${Value}SGS"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.NGK" "${Value}NGK"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.SGK" "${Value}SGK"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.TEK" "${Value}TEK"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3619,6 +3659,17 @@
 					)
 				)
 			)
+			(property "Name" "${Value}"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "Appliance" "lever"
 				(at 0.635 -12.7 0)
 				(show_name no)
@@ -3675,6 +3726,50 @@
 				)
 			)
 			(property "Pin.RWK" "binary"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.NWS" "${Value}NWS"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Control.RWS" "${Value}RWS"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.NWK" "${Value}NWK"
+				(at 0.635 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication.RWK" "${Value}RWK"
 				(at 0.635 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4163,18 +4258,18 @@
 		(uuid "a96c00a9-4bec-4e96-ae22-3ed5416cf3d8")
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelMCall-Lamp")
+		(lib_id "Railroad-Office:PanelMCall")
 		(at 80.01 104.14 0)
-		(unit 1)
+		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "00d56fd7-7aa1-4cec-b98e-78b907dc1752")
-		(property "Reference" "MCK1"
-			(at 75.565 109.855 0)
+		(uuid "c4c63964-e77a-4591-bd51-640318685421")
+		(property "Reference" "MCL1"
+			(at 73.66 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4184,13 +4279,14 @@
 				)
 			)
 		)
-		(property "Value" "MC"
-			(at 83.947 104.648 0)
+		(property "Value" "1"
+			(at 84.328 104.775 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 0.508 0.508)
+					(size 0.635 0.635)
 				)
 			)
 		)
@@ -4216,8 +4312,8 @@
 				)
 			)
 		)
-		(property "Description" "One physical Maintainer Call lamp.  IndicationToken is a comma-separated list of indication names (tokens such as MC1K)"
-			(at 80.01 111.76 0)
+		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
+			(at 80.01 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4227,8 +4323,8 @@
 				)
 			)
 		)
-		(property "Color" "yellow"
-			(at 80.01 110.49 0)
+		(property "Role" "PANEL"
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4236,31 +4332,10 @@
 				(font
 					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
-		(property "IndicationToken" "MC1K"
-			(at 78.105 104.14 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 80.01 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
+		(property "Name" "${Value}MC"
 			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -4271,50 +4346,92 @@
 				)
 			)
 		)
-		(property "Appliance" "lamp"
-			(at 80.01 101.6 0)
+		(property "Appliance" "lever"
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
-		(property "Style" "indication"
-			(at 80.01 101.6 0)
+		(property "Style" "maintainer_call"
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
 			)
 		)
-		(property "Pin.LAMP" "binary"
-			(at 80.01 101.6 0)
+		(property "Pin.MCS" "binary"
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
+				(justify left)
+			)
+		)
+		(property "Pin.MCK" "binary"
+			(at 86.36 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Control.MCS" "${Value}MCS"
+			(at 86.36 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Indication.MCK" "${Value}MCK"
+			(at 86.36 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
 			)
 		)
 		(pin "1"
-			(uuid "34f7ca61-727b-42ff-bca4-8e6b78ea7f01")
+			(uuid "d4d128f8-a3ba-41c5-9121-9c244b61a566")
 		)
 		(pin "2"
-			(uuid "52b2b50f-7f44-480d-9656-17c66b1792fa")
+			(uuid "8c6db79d-83e9-435c-bb34-ca406b497e7e")
+		)
+		(pin "3"
+			(uuid "2a7375c2-32e8-4846-930e-ac1352c0dd48")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e/3b382d23-5313-5c7e-a2ee-6b234006a75a"
-					(reference "MCK1")
-					(unit 1)
+					(reference "MCL1")
+					(unit 2)
 				)
 			)
 		)
@@ -4729,7 +4846,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "Watsonville:837T1"
+		(property "Indication" "Watsonville:837T1K"
 			(at 78.105 36.83 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -4883,7 +5000,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "835T1"
+		(property "Indication" "835T1K"
 			(at 78.105 31.75 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5070,17 +5187,6 @@
 				)
 			)
 		)
-		(property "Invert" "WLK"
-			(at 80.645 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Pin.WLS" "binary"
 			(at 80.645 74.93 0)
 			(hide yes)
@@ -5115,6 +5221,50 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.WLS" "${Value}WLS"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.UNUSED" ""
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLQK" "${Value}WLQK"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLK" "!${Value}WLK"
 			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -5269,6 +5419,17 @@
 				)
 			)
 		)
+		(property "Control.CODE" ""
+			(at 80.01 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3326543b-3834-41b5-9615-b3be5b0d073f")
 		)
@@ -5306,8 +5467,9 @@
 				)
 			)
 		)
-		(property "Value" "MC1"
+		(property "Value" "1"
 			(at 84.328 48.895 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5338,7 +5500,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Call Lever"
+		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
 			(at 80.01 55.245 0)
 			(hide yes)
 			(show_name no)
@@ -5361,7 +5523,7 @@
 				(justify left)
 			)
 		)
-		(property "Name" "${Value}"
+		(property "Name" "${Value}MC"
 			(at 80.01 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5396,7 +5558,43 @@
 				(justify left)
 			)
 		)
-		(property "Pin.S" "binary"
+		(property "Pin.MCS" "binary"
+			(at 86.36 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.MCK" "binary"
+			(at 86.36 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Control.MCS" "${Value}MCS"
+			(at 86.36 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Indication.MCK" "${Value}MCK"
 			(at 86.36 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -5413,6 +5611,9 @@
 		)
 		(pin "2"
 			(uuid "f262e0c4-398d-43f5-b61f-8f87f9032232")
+		)
+		(pin "3"
+			(uuid "16f5ec65-4f23-4482-8da1-74b186a61c17")
 		)
 		(instances
 			(project "SPCoast"
@@ -5499,7 +5700,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "HBAK"
+		(property "Indication" "HBAK"
 			(at 78.105 26.67 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5665,7 +5866,7 @@
 				)
 			)
 		)
-		(property "CP Name" ""
+		(property "CP Name" "Sargent"
 			(at 80.645 132.08 0)
 			(show_name yes)
 			(do_not_autoplace yes)
@@ -5817,17 +6018,6 @@
 				)
 			)
 		)
-		(property "Invert" "WLK"
-			(at 80.645 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Pin.WLS" "binary"
 			(at 80.645 74.93 0)
 			(hide yes)
@@ -5862,6 +6052,50 @@
 			)
 		)
 		(property "Pin.WLK" "binary"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.WLS" "${Value}WLS"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.UNUSED" ""
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLQK" "${Value}WLQK"
+			(at 80.645 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.WLK" "!${Value}WLK"
 			(at 80.645 74.93 0)
 			(hide yes)
 			(show_name no)
