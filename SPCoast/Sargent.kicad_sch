@@ -11539,9 +11539,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -11593,7 +11594,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11604,7 +11605,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11615,7 +11616,18 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
-				(at 0 0 0)
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11637,6 +11649,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -11784,6 +11804,10 @@
 	(no_connect
 		(at 149.86 148.59)
 		(uuid "77e530af-7fb0-43e8-8116-8e90bc001293")
+	)
+	(no_connect
+		(at 109.22 78.74)
+		(uuid "7a6c241f-8ba7-4f4b-bd9e-e2df6a701ee0")
 	)
 	(no_connect
 		(at 207.01 135.89)
@@ -13780,9 +13804,10 @@
 			)
 		)
 		(property "Value" "Corporal:2NAT"
-			(at 85.09 71.12 0)
+			(at 85.09 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13857,6 +13882,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 85.09 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 86.36 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19045,9 +19081,10 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 175.26 71.12 0)
+			(at 175.26 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19122,6 +19159,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 175.26 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 176.53 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21326,9 +21374,10 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 119.38 71.12 0)
+			(at 119.38 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21412,6 +21461,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 120.65 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e7cddd25-4bda-4147-9e00-a6694098a26a")
 		)
@@ -21447,9 +21507,10 @@
 			)
 		)
 		(property "Value" "2SAT"
-			(at 116.84 54.61 0)
+			(at 116.84 59.69 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21524,6 +21585,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 116.84 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 118.11 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

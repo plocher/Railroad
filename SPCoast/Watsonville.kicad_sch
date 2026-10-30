@@ -8013,7 +8013,7 @@
 				)
 			)
 			(property "Description" "Virtual track circuit: an indication (Value, e.g. 0100T) that aggregates the circuits listed in IndicationToken. No hardware; the plant compiler derives it."
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8023,7 +8023,7 @@
 					)
 				)
 			)
-			(property "IndicationToken" ""
+			(property "Members" ""
 				(at -5.842 -4.064 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -8068,7 +8068,7 @@
 					)
 				)
 			)
-			(property "Display" "${Value}: [${IndicationToken}]"
+			(property "Display" "${Value}: [${Members}]"
 				(at 2.286 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -8092,6 +8092,17 @@
 			)
 			(property "Style" "virtual"
 				(at -21.463 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8142,6 +8153,7 @@
 				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8193,7 +8205,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8215,6 +8227,17 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8237,6 +8260,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -10875,7 +10906,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "15T1,17T1,19T1,21T1,23T1,25T1"
+		(property "Members" "15T1,17T1,19T1,21T1,23T1,25T1"
 			(at 75.438 39.624 0)
 			(hide yes)
 			(show_name no)
@@ -10920,7 +10951,7 @@
 				)
 			)
 		)
-		(property "Display" "${Value}: [${IndicationToken}]"
+		(property "Display" "${Value}: [${Members}]"
 			(at 83.566 35.56 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -10944,6 +10975,17 @@
 		)
 		(property "Style" "virtual"
 			(at 59.817 31.496 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 81.28 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11108,6 +11150,7 @@
 		)
 		(property "Value" "3BT"
 			(at 167.64 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11183,6 +11226,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -11990,6 +12044,7 @@
 		)
 		(property "Value" "7ET"
 			(at 137.16 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12065,6 +12120,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -13438,6 +13504,7 @@
 		)
 		(property "Value" "1BT"
 			(at 167.64 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13513,6 +13580,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -16512,6 +16590,7 @@
 		)
 		(property "Value" "1DT"
 			(at 147.32 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16587,6 +16666,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -18504,6 +18594,7 @@
 		)
 		(property "Value" "1ET"
 			(at 137.16 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18579,6 +18670,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20204,6 +20306,7 @@
 		)
 		(property "Value" "03T"
 			(at 52.07 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20279,6 +20382,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 52.07 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 52.07 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -20429,6 +20543,7 @@
 		)
 		(property "Value" "5DT"
 			(at 147.32 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20504,6 +20619,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -20750,6 +20876,7 @@
 		)
 		(property "Value" "2AT"
 			(at 205.74 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20835,6 +20962,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 205.74 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8d46b441-2a94-4b9f-b022-283f373b186d")
 		)
@@ -20871,6 +21009,7 @@
 		)
 		(property "Value" "3ET"
 			(at 137.16 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20956,6 +21095,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 137.16 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8176617d-8b08-499e-aa0f-2998fa9c5bff")
 		)
@@ -20992,6 +21142,7 @@
 		)
 		(property "Value" "7CT"
 			(at 157.48 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21067,6 +21218,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -21372,6 +21534,7 @@
 		)
 		(property "Value" "5CT"
 			(at 157.48 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21447,6 +21610,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -22585,6 +22759,7 @@
 		)
 		(property "Value" "1CT"
 			(at 157.48 52.07 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -22660,6 +22835,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -23275,6 +23461,7 @@
 		)
 		(property "Value" "7DT"
 			(at 147.32 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23350,6 +23537,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -23438,7 +23636,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" "03T,3T1,5T1,7T1,9T1,11T1,13T1"
+		(property "Members" "03T,3T1,5T1,7T1,9T1,11T1,13T1"
 			(at 75.438 44.704 0)
 			(hide yes)
 			(show_name no)
@@ -23483,7 +23681,7 @@
 				)
 			)
 		)
-		(property "Display" "${Value}: [${IndicationToken}]"
+		(property "Display" "${Value}: [${Members}]"
 			(at 83.566 40.64 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23507,6 +23705,17 @@
 		)
 		(property "Style" "virtual"
 			(at 59.817 36.576 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 81.28 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23549,6 +23758,7 @@
 		)
 		(property "Value" "02T"
 			(at 69.85 82.55 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -23624,6 +23834,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 69.85 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 69.85 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -25877,6 +26098,7 @@
 		)
 		(property "Value" "4CT"
 			(at 157.48 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -25952,6 +26174,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -26486,6 +26719,7 @@
 		)
 		(property "Value" "5BT"
 			(at 167.64 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26561,6 +26795,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -28843,6 +29088,7 @@
 		)
 		(property "Value" "2DT"
 			(at 147.32 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28918,6 +29164,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -29260,6 +29517,7 @@
 		)
 		(property "Value" "4BT"
 			(at 167.64 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29335,6 +29593,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -32730,6 +32999,7 @@
 		)
 		(property "Value" "2ET"
 			(at 137.16 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -32805,6 +33075,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -34386,6 +34667,7 @@
 		)
 		(property "Value" "4DT"
 			(at 147.32 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34461,6 +34743,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -36413,6 +36706,7 @@
 		)
 		(property "Value" "6CT"
 			(at 157.48 95.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36488,6 +36782,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -36945,6 +37250,7 @@
 		)
 		(property "Value" "3DT"
 			(at 147.32 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37020,6 +37326,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -37314,6 +37631,7 @@
 		)
 		(property "Value" "2BT"
 			(at 167.64 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -37389,6 +37707,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -38733,6 +39062,7 @@
 		)
 		(property "Value" "01T"
 			(at 167.64 115.57 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -38808,6 +39138,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -39075,6 +39416,7 @@
 		)
 		(property "Value" "6ET"
 			(at 137.16 95.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -39150,6 +39492,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -40586,6 +40939,7 @@
 		)
 		(property "Value" "6BT"
 			(at 167.64 95.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40661,6 +41015,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -41046,6 +41411,7 @@
 		)
 		(property "Value" "5ET"
 			(at 137.16 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41121,6 +41487,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -43184,6 +43561,7 @@
 		)
 		(property "Value" "6DT"
 			(at 147.32 95.25 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43259,6 +43637,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 147.32 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 147.32 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -43779,6 +44168,7 @@
 		)
 		(property "Value" "4ET"
 			(at 137.16 80.01 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -43854,6 +44244,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 137.16 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 137.16 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -44896,6 +45297,7 @@
 		)
 		(property "Value" "7BT"
 			(at 167.64 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44971,6 +45373,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 167.64 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 167.64 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -48855,6 +49268,7 @@
 		)
 		(property "Value" "2CT"
 			(at 157.48 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -48930,6 +49344,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -49894,6 +50319,7 @@
 		)
 		(property "Value" "3CT"
 			(at 157.48 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -49969,6 +50395,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 157.48 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 157.48 74.93 0)
 			(hide yes)
 			(show_name no)
