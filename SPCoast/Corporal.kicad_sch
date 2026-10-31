@@ -4370,6 +4370,17 @@
 					)
 				)
 			)
+			(property "Indication" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Derail_1_1"
 				(polyline
 					(pts
@@ -7488,6 +7499,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -7828,6 +7850,17 @@
 					)
 				)
 			)
+			(property "Indication" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Manual_Sensed_1_1"
 				(polyline
 					(pts
@@ -8068,6 +8101,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Powered_1_1"
 				(polyline
 					(pts
@@ -8231,9 +8275,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8285,7 +8330,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8296,7 +8341,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8307,7 +8352,18 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
-				(at 0 0 0)
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8329,6 +8385,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -9191,7 +9255,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 63.5 101.6 0)
+			(at 64.77 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9477,6 +9541,17 @@
 			)
 		)
 		(property "Style" "derail"
+			(at 123.19 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" ""
 			(at 123.19 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -11619,7 +11694,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 			(at 139.7 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -12080,6 +12155,17 @@
 		)
 		(property "Style" "lock"
 			(at 92.075 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 99.06 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14753,6 +14839,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 170.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4f8ca4a9-5bca-4e2f-9e44-d5aa7c31457d")
 		)
@@ -14794,9 +14891,10 @@
 			)
 		)
 		(property "Value" "2NAT"
-			(at 194.31 82.55 0)
+			(at 194.31 87.63 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14871,6 +14969,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 194.31 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15243,7 +15352,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 80.01 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -16925,9 +17034,10 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 147.32 66.04 0)
+			(at 147.32 71.12 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17002,6 +17112,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 147.32 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 148.59 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18351,9 +18472,10 @@
 			)
 		)
 		(property "Value" "2SAT"
-			(at 73.66 82.55 0)
+			(at 73.66 87.63 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18428,6 +18550,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 73.66 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 74.93 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19682,6 +19815,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 137.16 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8d4126d-88fc-4414-88ce-5e3394197024")
 		)
@@ -20084,7 +20228,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 207.01 85.09 0)
+			(at 208.28 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20712,7 +20856,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 			(at 139.7 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -21328,9 +21472,10 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 170.18 82.55 0)
+			(at 170.18 87.63 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21414,6 +21559,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 171.45 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a8756b9-1dd5-4eec-97eb-9a90ac6beefa")
 		)
@@ -21449,9 +21605,10 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 73.66 99.06 0)
+			(at 73.66 104.14 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21526,6 +21683,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 73.66 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 74.93 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21964,7 +22132,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 63.5 85.09 0)
+			(at 64.77 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

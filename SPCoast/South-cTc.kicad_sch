@@ -164,6 +164,17 @@
 					)
 				)
 			)
+			(property "Kind" "NODE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Driver-CMRInet-Node_0_1"
 				(rectangle
 					(start -8.89 2.54)
@@ -2850,7 +2861,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 177.8 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -3171,6 +3182,17 @@
 				)
 			)
 		)
+		(property "Kind" "NODE"
+			(at 74.93 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "772bcda3-b3cb-4d42-9524-58faf9f66156")
 		)
@@ -3240,7 +3262,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 77.47 30.48 0)
 			(hide yes)
 			(show_name no)

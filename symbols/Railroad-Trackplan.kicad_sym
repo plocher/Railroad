@@ -108,7 +108,7 @@
 				)
 			)
 		)
-		(property "Style" "non_vital"
+		(property "Indication" "${Name}K"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -568,6 +568,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Derail_1_1"
 			(polyline
 				(pts
@@ -769,6 +780,17 @@
 			)
 		)
 		(property "Style" "derail"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4832,6 +4854,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Switch_Dual_1_1"
 			(polyline
 				(pts
@@ -5103,6 +5136,17 @@
 		)
 		(property "Style" "lock"
 			(at -6.985 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -5452,6 +5496,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Switch_Manual_1_1"
 			(polyline
 				(pts
@@ -5704,6 +5759,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Switch_Manual_Sensed_1_1"
 			(polyline
 				(pts
@@ -5935,6 +6001,17 @@
 		)
 		(property "Style" "powered"
 			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6215,6 +6292,17 @@
 		)
 		(property "Style" "powered"
 			(at 0 8.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -6518,6 +6606,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Switch_Powered_NO_TC_1_1"
 			(polyline
 				(pts
@@ -6787,6 +6886,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(symbol "Switch_Powered_Small_1_1"
 			(polyline
 				(pts
@@ -6950,9 +7060,10 @@
 			)
 		)
 		(property "Value" ""
-			(at 0 2.54 0)
+			(at 0 -2.54 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7004,7 +7115,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7015,7 +7126,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 0 0 0)
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7026,7 +7137,18 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 1.27 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7048,6 +7170,14 @@
 				(fill
 					(type color)
 					(color 255 255 0 1)
+				)
+			)
+			(text "${Name}"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
 				)
 			)
 			(pin passive line
@@ -7095,6 +7225,7 @@
 			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7146,7 +7277,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7168,7 +7299,18 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 0 0 0)
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7190,6 +7332,14 @@
 				(fill
 					(type color)
 					(color 132 0 0 1)
+				)
+			)
+			(text "${Name}"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
 				)
 			)
 			(pin passive line
@@ -7266,8 +7416,8 @@
 				)
 			)
 		)
-		(property "Description" "Virtual track circuit: an indication (Value, e.g. 0100T) that aggregates the circuits listed in IndicationToken. No hardware; the plant compiler derives it."
-			(at 0 0 0)
+		(property "Description" "Virtual track circuit: an indication that aggregates the circuits listed in Members."
+			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7277,7 +7427,7 @@
 				)
 			)
 		)
-		(property "IndicationToken" ""
+		(property "Members" ""
 			(at -5.842 -4.064 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7322,7 +7472,7 @@
 				)
 			)
 		)
-		(property "Display" "${Value}: [${IndicationToken}]"
+		(property "Display" "${Value}: [${Members}]"
 			(at 2.286 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7346,6 +7496,17 @@
 		)
 		(property "Style" "virtual"
 			(at -21.463 4.064 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 0 -2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7396,6 +7557,7 @@
 			(at 0 2.54 0)
 			(show_name no)
 			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7447,7 +7609,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at 0 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7469,6 +7631,17 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7491,6 +7664,14 @@
 				(fill
 					(type color)
 					(color 255 255 0 1)
+				)
+			)
+			(text "${Name}"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
 				)
 			)
 			(pin passive line

@@ -4441,7 +4441,7 @@
 					)
 				)
 			)
-			(property "Style" "non_vital"
+			(property "Indication" "${Name}K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4616,6 +4616,17 @@
 				)
 			)
 			(property "Style" "derail"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7755,6 +7766,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -8095,6 +8117,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Powered_1_1"
 				(polyline
 					(pts
@@ -8258,9 +8291,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -8312,7 +8346,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8323,7 +8357,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8334,7 +8368,18 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
-				(at 0 0 0)
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8356,6 +8401,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -10571,9 +10624,10 @@
 			)
 		)
 		(property "Value" "2NAT"
-			(at 214.63 83.82 0)
+			(at 214.63 88.9 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10648,6 +10702,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 214.63 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 215.9 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11629,7 +11694,7 @@
 				)
 			)
 		)
-		(property "Value" "SFLK"
+		(property "Value" "SFL"
 			(at 220.98 40.64 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -11715,7 +11780,7 @@
 				)
 			)
 		)
-		(property "Style" "non_vital"
+		(property "Indication" "${Name}K"
 			(at 220.98 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -11898,9 +11963,10 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 214.63 100.33 0)
+			(at 214.63 105.41 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11975,6 +12041,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 214.63 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 215.9 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12158,7 +12235,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 77.47 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -13908,9 +13985,10 @@
 			)
 		)
 		(property "Value" "02T"
-			(at 66.04 67.31 0)
+			(at 66.04 72.39 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13985,6 +14063,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 66.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 67.31 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14137,6 +14226,17 @@
 		)
 		(property "Style" "powered"
 			(at 164.465 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 172.72 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14696,7 +14796,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 245.11 102.87 0)
+			(at 246.38 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15369,9 +15469,10 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 137.16 83.82 0)
+			(at 137.16 88.9 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15446,6 +15547,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 137.16 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 138.43 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16525,6 +16637,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 109.22 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "9699cae6-eaca-4377-bb60-c63155eb75ac")
 		)
@@ -16565,7 +16688,7 @@
 				)
 			)
 		)
-		(property "Value" "NFLK"
+		(property "Value" "NFL"
 			(at 214.63 40.64 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -16651,7 +16774,7 @@
 				)
 			)
 		)
-		(property "Style" "non_vital"
+		(property "Indication" "${Name}K"
 			(at 214.63 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -16917,6 +17040,17 @@
 		)
 		(property "Style" "powered"
 			(at 62.865 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 71.12 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17233,9 +17367,10 @@
 			)
 		)
 		(property "Value" "3NAT"
-			(at 214.63 67.31 0)
+			(at 214.63 72.39 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17310,6 +17445,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 214.63 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 215.9 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19426,9 +19572,10 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 50.8 83.82 0)
+			(at 50.8 88.9 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19503,6 +19650,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 50.8 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 52.07 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22040,7 +22198,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 245.11 86.36 0)
+			(at 246.38 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22290,7 +22448,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 245.11 69.85 0)
+			(at 246.38 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22803,7 +22961,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 27.94 86.36 0)
+			(at 29.21 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -24552,6 +24710,17 @@
 			)
 		)
 		(property "Style" "derail"
+			(at 85.09 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" ""
 			(at 85.09 69.85 0)
 			(hide yes)
 			(show_name no)

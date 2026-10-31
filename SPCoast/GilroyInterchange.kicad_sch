@@ -20,148 +20,6 @@
 		(comment 9 "active")
 	)
 	(lib_symbols
-		(symbol "MaintainerCall_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "MC"
-				(at 3.81 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "APPLIANCE"
-				(at -1.27 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Name" "${Value}MC"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Appliance" "lamp"
-				(at -3.81 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Style" "maintainer_call"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MaintainerCall_1_1_1"
-				(circle
-					(center 0 0)
-					(radius 1.27)
-					(stroke
-						(width 0.2032)
-						(type solid)
-						(color 0 0 0 1)
-					)
-					(fill
-						(type color)
-						(color 255 153 0 1)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 0)
-					(name "MC"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Field:Device-Head-CL-Pixel"
 			(pin_numbers
 				(hide yes)
@@ -1997,18 +1855,6 @@
 				)
 			)
 			(property "Kind" "LIGHT"
-				(at 7.6322 3.675 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-					(justify left)
-				)
-			)
-			(property "Kind_1" "SENSOR"
 				(at 7.6322 3.675 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -6648,6 +6494,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -7140,9 +6997,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7194,7 +7052,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7205,7 +7063,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7216,7 +7074,18 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
-				(at 0 0 0)
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7238,6 +7107,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -8171,7 +8048,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
 			(at 66.929 181.229 0)
 			(hide yes)
 			(show_name no)
@@ -8207,14 +8084,15 @@
 			)
 		)
 		(property "Kind" "LIGHT"
-			(at 55.88 175.26 0)
+			(at 63.5122 171.585 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.ON" "binary"
@@ -8324,7 +8202,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8735,7 +8613,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -8906,7 +8784,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 76.2 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -9122,9 +9000,10 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 63.5 74.93 0)
+			(at 63.5 80.01 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9199,6 +9078,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 63.5 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 64.77 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9312,14 +9202,15 @@
 			)
 		)
 		(property "Kind" "TURNOUT"
-			(at 55.88 129.54 0)
+			(at 63.5122 125.865 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -9467,14 +9358,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 143.51 0)
+			(at 63.5122 139.835 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -9715,14 +9607,15 @@
 			)
 		)
 		(property "Kind" "TURNOUT"
-			(at 55.88 125.73 0)
+			(at 63.5122 122.055 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -10119,7 +10012,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 128.27 0)
 			(hide yes)
 			(show_name no)
@@ -10769,14 +10662,15 @@
 			)
 		)
 		(property "Kind" "TURNOUT"
-			(at 55.88 116.84 0)
+			(at 63.5122 113.165 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -11047,14 +10941,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 146.05 0)
+			(at 63.5122 142.375 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -11254,7 +11149,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -11462,14 +11357,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 138.43 0)
+			(at 63.5122 134.755 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -11963,6 +11859,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 156.21 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "9423d505-0374-4c53-a0d3-53b49997ce7d")
 		)
@@ -12121,6 +12028,17 @@
 				)
 			)
 		)
+		(property "Indication" "${TC}K"
+			(at 87.63 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c4680405-30f0-4efe-9bfe-9c1dbb8fc700")
 		)
@@ -12229,14 +12147,15 @@
 			)
 		)
 		(property "Kind" "SIGNALMAST"
-			(at 55.88 165.1 0)
+			(at 63.5122 161.425 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -12489,9 +12408,10 @@
 			)
 		)
 		(property "Value" "01T"
-			(at 120.65 58.42 0)
+			(at 120.65 63.5 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12575,6 +12495,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "908e146a-cd96-4c7f-b6dd-6e84e8f0d20f")
 		)
@@ -12643,7 +12574,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
 			(at 66.929 177.419 0)
 			(hide yes)
 			(show_name no)
@@ -12679,14 +12610,15 @@
 			)
 		)
 		(property "Kind" "LIGHT"
-			(at 55.88 171.45 0)
+			(at 63.5122 167.775 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.ON" "binary"
@@ -12833,14 +12765,15 @@
 			)
 		)
 		(property "Kind" "TURNOUT"
-			(at 55.88 113.03 0)
+			(at 63.5122 109.355 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -13234,14 +13167,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 120.65 0)
+			(at 63.5122 116.975 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -13501,14 +13435,15 @@
 			)
 		)
 		(property "Kind" "SIGNALMAST"
-			(at 55.88 157.48 0)
+			(at 63.5122 153.805 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -13849,7 +13784,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 38.1 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -14096,7 +14031,7 @@
 				)
 			)
 		)
-		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Value = the board core's pin name."
+		(property "Description" "Processor pin driving a pixel chain: a bus, one colour-out slot per Address. Address = the board core's pin name."
 			(at 131.572 119.634 0)
 			(hide yes)
 			(show_name no)
@@ -14249,7 +14184,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 196.85 77.47 0)
+			(at 198.12 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14337,7 +14272,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -14545,14 +14480,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 140.97 0)
+			(at 63.5122 137.295 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Pin.S" "binary"
@@ -14648,7 +14584,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 167.64 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -15096,9 +15032,10 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 182.88 74.93 0)
+			(at 182.88 80.01 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15173,6 +15110,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 182.88 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 184.15 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15439,7 +15387,7 @@
 				)
 			)
 		)
-		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style as for Cast-Head-RGB."
+		(property "Description" "Mast indication to one head's aspect as one color point, for a pixel or a lamp behind a roundel (E71). Head is the head letter; Style is fixed: CL."
 			(at 130.81 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -15635,7 +15583,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 53.34 77.47 0)
+			(at 54.61 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16443,14 +16391,15 @@
 			)
 		)
 		(property "Kind" "SENSOR"
-			(at 55.88 133.35 0)
+			(at 63.5122 129.675 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -16795,7 +16744,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 135.89 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -17144,7 +17093,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 107.95 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -17301,14 +17250,15 @@
 			)
 		)
 		(property "Kind" "SIGNALMAST"
-			(at 55.88 161.29 0)
+			(at 63.5122 157.615 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""
@@ -17776,7 +17726,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -18024,7 +17974,7 @@
 				)
 			)
 		)
-		(property "Description" "Color-position light head: colored lamps in fixed positions, one lit at a time (three-lamp or multiplexed). Style CPL (E65)."
+		(property "Description" "Color light head: one light source showing one color at a time (searchlight roundel, or one RGB point in the model). Style CL (E65)."
 			(at 165.1 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -18204,7 +18154,6 @@
 		)
 	)
 	(symbol
-		(lib_name "MaintainerCall_1")
 		(lib_id "Railroad-Trackplan:MaintainerCall")
 		(at 74.93 53.34 0)
 		(unit 1)
@@ -18474,9 +18423,10 @@
 			)
 		)
 		(property "Value" "02T"
-			(at 120.65 74.93 0)
+			(at 120.65 80.01 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18551,6 +18501,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 120.65 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 121.92 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18662,14 +18623,15 @@
 			)
 		)
 		(property "Kind" "SIGNALMAST"
-			(at 55.88 153.67 0)
+			(at 63.5122 149.995 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.635 0.635)
 				)
+				(justify left)
 			)
 		)
 		(property "Address" ""

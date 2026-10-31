@@ -1026,7 +1026,7 @@
 					)
 				)
 			)
-			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(property "Description" "One physical model board lamp."
 				(at -0.635 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1223,7 +1223,7 @@
 					)
 				)
 			)
-			(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+			(property "Description" "One physical model board lamp."
 				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2677,7 +2677,7 @@
 					)
 				)
 			)
-			(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
+			(property "Description" "Maintainer Call Lever and Lamp."
 				(at 0 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5127,7 +5127,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Office:PanelMCall")
-		(at 181.61 104.14 0)
+		(at 80.01 104.14 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5135,9 +5135,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "471ef33b-fbe9-4327-9c0c-6a5cb14a939b")
-		(property "Reference" "MCL10010"
-			(at 175.26 100.33 0)
+		(uuid "2e487b08-6f74-45a9-8d52-96af18a1d8cb")
+		(property "Reference" "MCL10008"
+			(at 73.66 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5147,8 +5147,8 @@
 				)
 			)
 		)
-		(property "Value" "2"
-			(at 185.928 104.775 0)
+		(property "Value" "1"
+			(at 84.328 104.775 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5159,7 +5159,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 104.14 0)
+			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5170,7 +5170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 104.14 0)
+			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5180,8 +5180,8 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
-			(at 181.61 111.125 0)
+		(property "Description" "Maintainer Call Lever and Lamp."
+			(at 80.01 111.125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5192,7 +5192,7 @@
 			)
 		)
 		(property "Role" "PANEL"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5204,7 +5204,7 @@
 			)
 		)
 		(property "Name" "${Value}MC"
-			(at 181.61 104.14 0)
+			(at 80.01 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5215,7 +5215,7 @@
 			)
 		)
 		(property "Appliance" "lever"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5227,7 +5227,7 @@
 			)
 		)
 		(property "Style" "maintainer_call"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5239,7 +5239,7 @@
 			)
 		)
 		(property "Pin.MCS" "binary"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5251,7 +5251,7 @@
 			)
 		)
 		(property "Pin.MCK" "binary"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5263,7 +5263,7 @@
 			)
 		)
 		(property "Control.MCS" "${Value}MCS"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5275,7 +5275,7 @@
 			)
 		)
 		(property "Indication.MCK" "${Value}MCK"
-			(at 187.96 100.33 0)
+			(at 86.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5287,18 +5287,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "6634bad7-0b09-45e8-b5d6-1fbe1fcb0040")
+			(uuid "9757d546-5222-4901-81b0-6b4c53192551")
 		)
 		(pin "2"
-			(uuid "1f4c24af-71a5-49cc-b363-18643c654b5a")
+			(uuid "be660248-8045-49e7-af25-259ff620d74e")
 		)
 		(pin "3"
-			(uuid "ba9a12dd-d59f-4efa-85b1-5d1a322c4ec9")
+			(uuid "92a9236b-ba70-4801-9476-60601eb7ee1c")
 		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "MCL10010")
+					(reference "MCL10008")
 					(unit 2)
 				)
 			)
@@ -5358,7 +5358,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 130.175 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -5512,7 +5512,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 181.61 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -5666,7 +5666,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 80.01 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -6593,6 +6593,185 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Office:PanelMCall")
+		(at 181.61 104.14 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "471ef33b-fbe9-4327-9c0c-6a5cb14a939b")
+		(property "Reference" "MCL10010"
+			(at 175.26 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2"
+			(at 185.928 104.775 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Maintainer Call Lever and Lamp."
+			(at 181.61 111.125 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}MC"
+			(at 181.61 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Style" "maintainer_call"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.MCS" "binary"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.MCK" "binary"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Control.MCS" "${Value}MCS"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Indication.MCK" "${Value}MCK"
+			(at 187.96 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6634bad7-0b09-45e8-b5d6-1fbe1fcb0040")
+		)
+		(pin "2"
+			(uuid "1f4c24af-71a5-49cc-b363-18643c654b5a")
+		)
+		(pin "3"
+			(uuid "ba9a12dd-d59f-4efa-85b1-5d1a322c4ec9")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "MCL10010")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:ModelLamp-RED")
 		(at 181.61 36.83 0)
 		(unit 1)
@@ -6646,7 +6825,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 180.975 46.355 0)
 			(hide yes)
 			(show_name no)
@@ -6800,7 +6979,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 79.375 41.275 0)
 			(hide yes)
 			(show_name no)
@@ -7085,7 +7264,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 80.01 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -8239,185 +8418,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Office:PanelMCall")
-		(at 80.01 104.14 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2e487b08-6f74-45a9-8d52-96af18a1d8cb")
-		(property "Reference" "MCL10008"
-			(at 73.66 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1"
-			(at 84.328 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 80.01 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 80.01 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
-			(at 80.01 111.125 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "PANEL"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Name" "${Value}MC"
-			(at 80.01 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "lever"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Style" "maintainer_call"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.MCS" "binary"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.MCK" "binary"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Control.MCS" "${Value}MCS"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(property "Indication.MCK" "${Value}MCK"
-			(at 86.36 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "9757d546-5222-4901-81b0-6b4c53192551")
-		)
-		(pin "2"
-			(uuid "be660248-8045-49e7-af25-259ff620d74e")
-		)
-		(pin "3"
-			(uuid "92a9236b-ba70-4801-9476-60601eb7ee1c")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
-					(reference "MCL10008")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Office:PanelSwitch")
 		(at 130.81 63.5 0)
 		(unit 1)
@@ -8692,7 +8692,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 130.175 41.275 0)
 			(hide yes)
 			(show_name no)
@@ -8847,7 +8847,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
+		(property "Description" "Maintainer Call Lever and Lamp."
 			(at 181.61 55.245 0)
 			(hide yes)
 			(show_name no)
@@ -9157,7 +9157,7 @@
 				)
 			)
 		)
-		(property "Description" "Maintainer Call Lever and Lamp.  IndicationToken is a comma-separated list of indication tokens (e.g, MC1K)"
+		(property "Description" "Maintainer Call Lever and Lamp."
 			(at 80.01 55.245 0)
 			(hide yes)
 			(show_name no)
@@ -9556,7 +9556,7 @@
 				)
 			)
 		)
-		(property "Description" "One physical model board lamp. Value is a free descriptive label (e.g. OS, TRACK ...) and is not used elsewhere. IndicationToken is a comma-separated list of indication names (tokens from the CodeLine) OR'd to drive this one lamp."
+		(property "Description" "One physical model board lamp."
 			(at 181.61 34.29 0)
 			(hide yes)
 			(show_name no)

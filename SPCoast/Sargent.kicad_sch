@@ -7255,7 +7255,7 @@
 					)
 				)
 			)
-			(property "Style" "non_vital"
+			(property "Indication" "${Name}K"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11076,6 +11076,17 @@
 					)
 				)
 			)
+			(property "Indication" "${TC}K"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -11416,6 +11427,17 @@
 					)
 				)
 			)
+			(property "Indication" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Manual_Sensed_1_1"
 				(polyline
 					(pts
@@ -11539,9 +11561,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0 -2.54 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -11593,7 +11616,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11604,7 +11627,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11615,7 +11638,18 @@
 				)
 			)
 			(property "Appliance" "track_circuit"
-				(at 0 0 0)
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Name}K"
+				(at 1.27 -6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11637,6 +11671,14 @@
 					(fill
 						(type color)
 						(color 255 255 0 1)
+					)
+				)
+				(text "${Name}"
+					(at 0 2.54 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
 					)
 				)
 				(pin passive line
@@ -11784,6 +11826,10 @@
 	(no_connect
 		(at 149.86 148.59)
 		(uuid "77e530af-7fb0-43e8-8116-8e90bc001293")
+	)
+	(no_connect
+		(at 109.22 78.74)
+		(uuid "7a6c241f-8ba7-4f4b-bd9e-e2df6a701ee0")
 	)
 	(no_connect
 		(at 207.01 135.89)
@@ -12355,7 +12401,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 			(at 207.01 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -12703,7 +12749,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
 			(at 125.73 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -12902,6 +12948,17 @@
 		)
 		(property "Style" "lock"
 			(at 154.305 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 147.32 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13739,6 +13796,17 @@
 				)
 			)
 		)
+		(property "Indication" ""
+			(at 97.79 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "dd2f2fe9-bf81-4689-9da7-7d8b200144e5")
 		)
@@ -13780,9 +13848,10 @@
 			)
 		)
 		(property "Value" "Corporal:2NAT"
-			(at 85.09 71.12 0)
+			(at 85.09 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13857,6 +13926,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 85.09 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 86.36 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15426,7 +15506,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 189.23 73.66 0)
+			(at 190.5 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16441,7 +16521,7 @@
 				)
 			)
 		)
-		(property "Description" "A processor: runs the logic of the units wired to its Host pin and owns the chips on its IO_Bus (ADR 0005, 0008)."
+		(property "Description" "A processor: runs the logic of the units wired to its Processor pin and owns the Drivers on its IO_Bus"
 			(at 44.45 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -17121,9 +17201,8 @@
 				)
 			)
 		)
-		(property "Style" "non_vital"
-			(at 109.22 78.74 0)
-			(hide yes)
+		(property "Milepost" "83.4"
+			(at 109.474 82.804 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17132,8 +17211,9 @@
 				)
 			)
 		)
-		(property "Milepost" "83.4"
-			(at 109.474 82.804 0)
+		(property "Indication" "${Name}K"
+			(at 109.22 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17384,7 +17464,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
 			(at 125.73 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -19045,9 +19125,10 @@
 			)
 		)
 		(property "Value" "1NAT"
-			(at 175.26 71.12 0)
+			(at 175.26 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19122,6 +19203,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 175.26 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 176.53 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21046,7 +21138,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the cast on M's wire decides."
+		(property "Description" "Switch machine: M is a binary demand (asserted = REVERSE), ~{N} and ~{R} the point contacts. One device for a stall motor, a PWM motor and a servo: the driver on M's wire decides."
 			(at 69.85 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -21326,9 +21418,10 @@
 			)
 		)
 		(property "Value" "1SAT"
-			(at 119.38 71.12 0)
+			(at 119.38 76.2 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21412,6 +21505,17 @@
 				)
 			)
 		)
+		(property "Indication" "${Name}K"
+			(at 120.65 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e7cddd25-4bda-4147-9e00-a6694098a26a")
 		)
@@ -21447,9 +21551,10 @@
 			)
 		)
 		(property "Value" "2SAT"
-			(at 116.84 54.61 0)
+			(at 116.84 59.69 0)
+			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21524,6 +21629,17 @@
 		)
 		(property "Appliance" "track_circuit"
 			(at 116.84 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 118.11 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21951,7 +22067,7 @@
 			)
 		)
 		(property "Kind" "NEXT_CP"
-			(at 68.58 73.66 0)
+			(at 69.85 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23221,7 +23337,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the mast (788)."
+		(property "Description" "A mast as one device: IND is the mast's indication (the rule name), for drivers that take a whole mast, e.g. Driver-JMRI-SignalMast. Value = the trackplan mast's Value (836NAB, 774SAB): one Mast per trackplan mast, each protecting its own route; the head casts hang on IND."
 			(at 125.73 144.78 0)
 			(hide yes)
 			(show_name no)
