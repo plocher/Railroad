@@ -1,23 +1,26 @@
-"""Generate the signal symbol libraries under the supply/demand shape (worklist of 2026-11-03).
+"""Generate `symbols/Railroad-Field-Signals.kicad_sym`: head devices and encoders (worklist of 2026-11-04).
 
-Reads `symbols/Railroad-Trackplan.kicad_sym` and `symbols/Railroad-Field.kicad_sym` and writes
-`symbols/Railroad-Trackplan-Signals.kicad_sym` (the masts: demand, `Indications`) and
-`symbols/Railroad-Field-Signals.kicad_sym` (the head devices: supply, Style = model, pins = wiring).
-Every target symbol is a clone of a named source symbol's whole block, renamed with its unit
-sub-symbols, its properties rewritten to exactly the worklist's set, its pins rewritten to exactly
-the worklist's set with the source's electrical types and overbar names, and one `Pin.<name>`
-property per function pin. Hidden properties keep the shape KiCad writes, copied from a hidden
-property of the same symbol. The existing libraries are never written.
+The chain is  Mast --indication--> Head --head word--> Encoder --pins / pixels--> Driver.  A head device
+states only which model it is (Style); it takes an indication on `IND` and presents a head word on
+`APP`, both of pin kind indication. An encoder states only its hardware side: one `APP` input and the
+output pins or pixel addresses a driver consumes; the mapping head word -> output is the served head's
+model table, reference data read through the wire.
 
-Trackplan masts lose their head pins (H, H1, H2). The line each pin drew becomes a polyline, so the
-picture is unchanged, and one head glyph (a circle) per head is added beyond the crossbar: one for
-single and dwarf, two for double, three for triple; the Stop Sign's one glyph is filled red.
+`symbols/Railroad-Trackplan-Signals.kicad_sym` is the owner's, maintained by hand in KiCad; this script
+no longer touches it, nor the older libraries it reads graphics from (`Railroad-Field.kicad_sym`).
+
+Every symbol is composed from text templates in the shape KiCad 10 writes: the library header is the
+source's; the box, the arrows and the glyphs are the source symbols' own graphic nodes copied verbatim
+(Device-Head-CPL's box and lamp glyph, Device-Head-CL-RGB's searchlight, Device-Head-CL-Pixel's pixel,
+Device-Head-Semaphore-UQ's arm); the properties are exactly the worklist's set, hidden ones in KiCad's
+hidden-property shape. Overbar names (`~{R}`) mark asserted-low binary outputs, as the old symbols'
+inputs had.
 
 Run from the Railroad repo with the Subdivision venv:
 
     uv run --project ~/Dropbox/workspace/FieldUnit-Subdivision python edits/make_signal_libraries.py
 
-Deterministic: a second run writes identical files. The worklist is
+Deterministic: a second run writes an identical file. The worklist is
 FieldUnit-Subdivision/docs/review/signal-symbols-worklist.md.
 """
 from __future__ import annotations
@@ -30,144 +33,61 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 SUBDIVISION = Path(os.environ.get("FIELDUNIT_SUBDIVISION", Path.home() / "Dropbox/workspace/FieldUnit-Subdivision"))
 sys.path.insert(0, str(SUBDIVISION / "tools"))
-from kicad_services.sch_text import blocks, replace_spans  # noqa: E402
+from kicad_services.sch_text import blocks  # noqa: E402
 
 SYMBOLS = ROOT / "symbols"
+SOURCE = SYMBOLS / "Railroad-Field.kicad_sym"
+TARGET = SYMBOLS / "Railroad-Field-Signals.kicad_sym"
 
 # ---------------------------------------------------------------------------------------------
-# The worklist. Properties are in the order KiCad writes them after the five standard ones.
-# pins: [(name as drawn, Pin.<base> vocabulary word)]; a mast's SIGNAL pin is passive and carries no Pin.*.
+# The worklist.
 
-TRACKPLAN = [
-    # (target, source, style, kind, indications, description, heads)
-    ("Signal Mast Single CONTROLLED", "Signal Mast Single CONTROLLED", "single", "CONTROLLED", "",
-     "Interlocking signal, one head drawn. Indications: the rulebook names this mast must show, comma-separated.", 1),
-    ("Signal Mast Single ABSOLUTE", "Signal Mast Single ABSOLUTE", "single", "ABSOLUTE", "",
-     "Block signal, Stop and Hold, one head drawn.", 1),
-    ("Signal Mast Single PERMISSIVE", "Signal Mast Single PERMISSIVE", "single", "PERMISSIVE", "",
-     "Block signal with number plate, one head drawn.", 1),
-    ("Signal Mast Double CONTROLLED", "Signal Mast Double CONTROLLED", "double", "CONTROLLED", "",
-     "Two heads drawn; the head count is picture, the devices decide.", 2),
-    ("Signal Mast Triple CONTROLLED", "Signal Mast Double CONTROLLED", "triple", "CONTROLLED", "",
-     "Three heads drawn.", 3),
-    ("Signal Mast Dwarf CONTROLLED", "Signal Mast Dwarf CONTROLLED", "dwarf", "CONTROLLED", "",
-     "Dwarf; Style dwarf is a model fact.", 1),
-    ("Stop Sign", "Signal Mast Single ABSOLUTE", "stop_sign", "ABSOLUTE", "Stop",
-     "A fixed Stop: painted post or one red lamp. The only form with a fixed demand.", 1),
+HEADS = [
+    # (symbol, Style, Description)
+    ("Device-Head-TypeD", "TypeD",
+     "GRS Type D colour-light head. Presents what its model table lists; the encoder it is wired to makes the lamps."),
+    ("Device-Head-SA", "SA", "GRS SA searchlight head."),
+    ("Device-Head-H2", "H2", "US&S H-2 searchlight head."),
+    ("Device-Head-Semaphore-UQ", "UQ", "Upper-quadrant semaphore head, three positions."),
+    ("Device-Head-Semaphore-LQ", "LQ", "Lower-quadrant semaphore head, two positions."),
 ]
 
-FIELD = [
-    # (target, source, style, settings [(field, value)], pins [(name, word)], description, text relabels)
-    ("Device-Head-TypeD", "Device-Head-CPL", "TypeD", [],
-     [("IND", "indication"), ("~{R}", "binary"), ("~{Y}", "binary"), ("~{G}", "binary")],
-     "GRS Type D, three lamps, one wire each. Name = mast + head letter (784A). Was Device-Head-CPL.",
-     {"CPL": "TypeD"}),
-    ("Device-Head-TypeD-Encoded", "Device-Head-CPL-Encoded", "TypeD", [],
-     [("IND", "indication"), ("S0", "binary"), ("S1", "binary")],
-     "Type D behind a two-bit decoder on the head. Was -CPL-Encoded.",
-     {"CPL 2-bit": "TypeD 2-bit"}),
-    ("Device-Head-TypeD-Pixel", "Device-Head-CPL-Pixel", "TypeD", [("Address", "")],
-     [("IND", "indication"), ("RGB", "color")],
-     "Type D as three points on a pixel bus. Was -CPL-Pixel.",
-     {"CPL-pixel": "TypeD-pixel"}),
-    ("Device-Head-SA-RGB", "Device-Head-CL-RGB", "SA", [],
-     [("IND", "indication"), ("~{R}", "binary"), ("~{G}", "binary"), ("~{B}", "binary")],
-     "GRS SA searchlight as one RGB LED, three legs. Was -CL-RGB.", {}),
-    ("Device-Head-SA-Pixel", "Device-Head-CL-Pixel", "SA", [("Address", "")],
-     [("IND", "indication"), ("RGB", "color")],
-     "SA searchlight as one pixel. Was -CL-Pixel.", {}),
-    ("Device-Head-H2-RGB", "Device-Head-CL-RGB", "H2", [],
-     [("IND", "indication"), ("~{R}", "binary"), ("~{G}", "binary"), ("~{B}", "binary")],
-     "US&S H-2 searchlight as one RGB LED, three legs; same reference row as SA today.", {}),
-    ("Device-Head-H2-Pixel", "Device-Head-CL-Pixel", "H2", [("Address", "")],
-     [("IND", "indication"), ("RGB", "color")],
-     "US&S H-2 searchlight as one pixel; same reference row as SA today.", {}),
-    ("Device-Head-Semaphore-UQ", "Device-Head-Semaphore-UQ", "UQ",
-     [("stop_deg", ""), ("approach_deg", ""), ("clear_deg", "")],
-     [("IND", "indication"), ("ARM", "position")],
-     "Mast indication to one upper-quadrant semaphore head's arm position; the angles are this device's settings. Style is fixed: UQ. Three positions, no flash.", {}),
-    ("Device-Head-Semaphore-LQ", "Device-Head-Semaphore-LQ", "LQ",
-     [("stop_deg", ""), ("approach_deg", ""), ("clear_deg", "")],
-     [("IND", "indication"), ("ARM", "position")],
-     "Mast indication to one lower-quadrant semaphore head's arm position; the angles are this device's settings. Style is fixed: LQ. Two positions, no flash.", {}),
+# Output pins: (name as drawn, electrical type, Pin.<base> word or None for a bus attachment).
+BINARY = "binary"
+ENCODERS = [
+    # (symbol, Kind, outputs, settings [(field, placement)], glyph source symbol, Description)
+    ("Encoder-RYG", "RYG", [("~{R}", "output", BINARY), ("~{Y}", "output", BINARY), ("~{G}", "output", BINARY)], [],
+     "Device-Head-CPL", "Three lamp lines for a three-lamp head, to any driver's pins."),
+    ("Encoder-RGB", "RGB", [("~{R}", "output", BINARY), ("~{G}", "output", BINARY), ("~{B}", "output", BINARY)], [],
+     "Device-Head-CL-RGB", "Three legs of one tricolour LED (a searchlight); the palette mixes yellow."),
+    ("Encoder-2bit", "TWO_BIT", [("S0", "output", BINARY), ("S1", "output", BINARY)], [("Code", "below0")],
+     "Device-Head-CPL", "Two-bit select for the decoder on the mast; Code names the table. 35 placements on SPCoast today."),
+    ("Encoder-Pixel", "PIXEL", [("CHAIN", "passive", None)],
+     [("Address.R", "below0"), ("Address.Y", "below1"), ("Address.G", "below2")],
+     "Device-Head-CL-Pixel", "Three pixels on a chain, one per lamp colour; no span, nothing positional."),
+    ("Encoder-Pixel-RGB", "PIXEL_RGB", [("CHAIN", "passive", None)], [("Address", "below0")],
+     "Device-Head-CL-Pixel", "One pixel showing the head's colour."),
+    ("Encoder-Servo", "SERVO", [("ARM", "output", "position")],
+     [("stop_deg", "hidden"), ("approach_deg", "hidden"), ("clear_deg", "hidden")],
+     "Device-Head-Semaphore-UQ", "A blade's angles, moved here from the semaphore head devices."),
 ]
 
-# A pin block that no source target has in the right place: the one-wire RGB pin, taken from this symbol.
-RGB_PIN_SOURCE = ("Railroad-Field", "Device-Head-CL-Pixel", "RGB")
+BOX_SOURCE = "Device-Head-CPL"          # the box every symbol here draws, and the input and output arrows
+GLYPH_X = -12.065                       # the box's middle: a glyph sits between the APP name and the output names
+COORD = re.compile(r"\((xy|center|start|mid|end|at) ([-\d.]+) ([-\d.]+)")
+PIN_LENGTH = 2.54
+INPUT_AT = (-24.13, 0.0)                # the input pin, pointing right, as the old head devices
+OUTPUT_X = 0.0                          # output pins point left from the box's right edge
+OUTPUT_ROWS = {1: [0.0], 2: [1.27, -1.27], 3: [2.54, 0.0, -2.54]}
 
+# Where a setting shows: stacked below the box with its name (an address is filled in per instance and should
+# be read on the sheet), or hidden as the old semaphore devices' angles.
+PLACEMENTS = {
+    "hidden": "\t\t\t(at -11.43 -6.35 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace yes)\n\t\t\t(hide yes)\n"
+              "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.635 0.635)\n\t\t\t\t)\n\t\t\t)\n",
+}
 # ---------------------------------------------------------------------------------------------
-
-PROPERTY = re.compile(r'^\t\t\(property "([^"]+)" "((?:[^"\\]|\\.)*)"\n(?:\t\t\t[^\n]*\n)*?\t\t\)\n', re.M)
-PIN_HEAD = re.compile(r'\(pin (\w+) (\w+)\n\t\t\t\t\(at ([-\d.]+) ([-\d.]+) ([-\d.]+)\)\n\t\t\t\t\(length ([-\d.]+)\)\n\t\t\t\t\(name "((?:[^"\\]|\\.)*)"')
-PIN_NUMBER = re.compile(r'\(number "[^"]*"')
-
-
-def base(pin: str) -> str:
-    m = re.match(r"^~\{(.+)\}$", pin)
-    return m.group(1) if m else pin
-
-
-def quote(s: str) -> str:
-    return s.replace("\\", "\\\\").replace('"', '\\"')
-
-
-class Library:
-    def __init__(self, path: Path):
-        self.text = path.read_text()
-        self.header = self.text[: self.text.index('\n\t(symbol "') + 1]
-        self.symbols = {}
-        for s, e in blocks(self.text, "symbol", 1):
-            b = self.text[s:e]
-            self.symbols[re.match(r'\(symbol "([^"]+)"', b).group(1)] = "\t" + b + "\n"
-
-
-def properties(block: str) -> list[re.Match]:
-    return list(PROPERTY.finditer(block))
-
-
-def with_value(prop_block: str, value: str) -> str:
-    return re.sub(r'^(\t\t\(property "[^"]+" )"(?:[^"\\]|\\.)*"', lambda m: m.group(1) + '"' + quote(value) + '"',
-                  prop_block, count=1, flags=re.M)
-
-
-def renamed(prop_block: str, name: str) -> str:
-    return re.sub(r'^\t\t\(property "[^"]+"', '\t\t(property "' + quote(name) + '"', prop_block, count=1, flags=re.M)
-
-
-def rewrite_properties(block: str, wanted: list[tuple[str, str]]) -> str:
-    """Replace the symbol's property list by `wanted` (name, value), in that order, copying each block's
-    shape from the source where it has the field, else from a hidden template of the same symbol."""
-    props = properties(block)
-    have = {p.group(1): p.group(0) for p in props}
-    pin_template = next((v for k, v in reversed(have.items()) if k.startswith("Pin.")), None)
-    hidden_template = have.get("Name") or have["Footprint"]
-    out = []
-    for name, value in wanted:
-        if name in have:
-            out.append(with_value(have[name], value))
-        elif name.startswith("Pin.") and pin_template:
-            out.append(with_value(renamed(pin_template, name), value))
-        else:
-            out.append(with_value(renamed(hidden_template, name), value))
-    for name, text in have.items():                              # KiCad's own hidden fields stay
-        if name.startswith("ki_") and name not in dict(wanted):
-            out.append(text)
-    return block[: props[0].start()] + "".join(out) + block[props[-1].end():]
-
-
-def pins(block: str) -> list[tuple[int, int, re.Match]]:
-    return [(s, e, PIN_HEAD.match(block, s)) for s, e in blocks(block, "pin", 3)]
-
-
-def polyline(x1: float, y1: float, x2: float, y2: float) -> str:
-    return ("\t\t\t(polyline\n\t\t\t\t(pts\n\t\t\t\t\t(xy %s %s) (xy %s %s)\n\t\t\t\t)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.254)\n"
-            "\t\t\t\t\t(type solid)\n\t\t\t\t)\n\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n\t\t\t)" % (fmt(x1), fmt(y1), fmt(x2), fmt(y2)))
-
-
-def circle(cx: float, cy: float, red: bool) -> str:
-    fill = "\t\t\t\t(fill\n\t\t\t\t\t(type color)\n\t\t\t\t\t(color 255 0 0 1)\n\t\t\t\t)\n" if red else "\t\t\t\t(fill\n\t\t\t\t\t(type none)\n\t\t\t\t)\n"
-    return ("\t\t\t(circle\n\t\t\t\t(center %s %s)\n\t\t\t\t(radius 0.508)\n\t\t\t\t(stroke\n\t\t\t\t\t(width 0.254)\n"
-            "\t\t\t\t\t(type solid)\n\t\t\t\t)\n%s\t\t\t)" % (fmt(cx), fmt(cy), fill))
+# Text shapes (KiCad 10, tab-indented one node per line).
 
 
 def fmt(v: float) -> str:
@@ -175,101 +95,154 @@ def fmt(v: float) -> str:
     return "0" if s in ("-0", "") else s
 
 
-def pin_end(m: re.Match) -> tuple[float, float, float, float]:
-    x, y, rot, length = float(m.group(3)), float(m.group(4)), float(m.group(5)), float(m.group(6))
-    dx, dy = {0: (1, 0), 90: (0, 1), 180: (-1, 0), 270: (0, -1)}[int(rot)]
-    return x, y, x + dx * length, y + dy * length
+for _i in range(3):
+    PLACEMENTS[f"below{_i}"] = ("\t\t\t(at -21.59 %s 0)\n\t\t\t(show_name yes)\n\t\t\t(do_not_autoplace yes)\n"
+                                "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.016 1.016)\n\t\t\t\t)\n"
+                                "\t\t\t\t(justify left)\n\t\t\t)\n") % fmt(-4.826 - 1.27 * _i)
 
 
-def renumber(block: str) -> str:
-    n = 0
-    out, pos = [], 0
-    for s, e in blocks(block, "pin", 3):
-        n += 1
-        out.append(block[pos:s] + PIN_NUMBER.sub('(number "%d"' % n, block[s:e], count=1))
-        pos = e
-    return "".join(out) + block[pos:]
+def quote(s: str) -> str:
+    return s.replace("\\", "\\\\").replace('"', '\\"')
 
 
-def rename(block: str, src: str, dst: str) -> str:
-    return block.replace('(symbol "%s"' % quote(src), '(symbol "%s"' % quote(dst)).replace(
-        '(symbol "%s_' % quote(src), '(symbol "%s_' % quote(dst))
+def base(pin: str) -> str:
+    m = re.match(r"^~\{(.+)\}$", pin)
+    return m.group(1) if m else pin
 
 
-def line_span(block: str, s: int, e: int) -> tuple[int, int]:
-    """The whole lines of a depth-3 node found by blocks(): from its leading tabs through its newline."""
-    s0 = block.rindex("\n", 0, s) + 1
-    return s0, (e + 1 if block[e] == "\n" else e)
+def prop(name: str, value: str, body: str) -> str:
+    return '\t\t(property "%s" "%s"\n%s\t\t)\n' % (quote(name), quote(value), body)
 
 
-def insert_graphics(block: str, text: str) -> str:
-    """Insert `text` (depth-3 graphic lines, no trailing newline) before the last unit's first pin: KiCad writes a
-    unit's graphics before its pins."""
-    us, ue = list(blocks(block, "symbol", 2))[-1]                 # the drawing unit, "<name>_1_1", is last
-    first_pin = next((s for s, _ in blocks(block, "pin", 3) if us < s < ue), None)
-    at = block.rindex("\n", 0, first_pin) if first_pin else ue - 4
-    assert first_pin or block[ue - 4:ue] == "\n\t\t)", block[ue - 20:ue]
-    return block[:at] + "\n" + text + block[at:]
+HIDDEN = ("\t\t\t(at 0 0 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n"
+          "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n")
+CONTRACT = ("\t\t\t(at -11.43 5.461 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace yes)\n\t\t\t(hide yes)\n"
+            "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.635 0.635)\n\t\t\t\t)\n\t\t\t)\n")
+REFERENCE = ("\t\t\t(at -11.43 4.699 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace yes)\n\t\t\t(hide yes)\n"
+             "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.762 0.762)\n\t\t\t\t)\n\t\t\t)\n")
+DESCRIPTION = ("\t\t\t(at 0 -5.08 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace no)\n\t\t\t(hide yes)\n"
+               "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 1.27 1.27)\n\t\t\t\t)\n\t\t\t)\n")
 
 
-def insert_at_unit_end(block: str, text: str) -> str:
-    """Append `text` (depth-3 lines, no trailing newline) to the last unit's body, after its pins."""
-    us, ue = list(blocks(block, "symbol", 2))[-1]
-    assert block[ue - 4:ue] == "\n\t\t)", block[ue - 20:ue]
-    return block[:ue - 4] + "\n" + text + block[ue - 4:]
+def pin_cap(x: float, y: float) -> str:
+    """A Pin.* property, placed at its pin's end as the old symbols did."""
+    return ("\t\t\t(at %s %s 0)\n\t\t\t(show_name no)\n\t\t\t(do_not_autoplace yes)\n\t\t\t(hide yes)\n"
+            "\t\t\t(effects\n\t\t\t\t(font\n\t\t\t\t\t(size 0.635 0.635)\n\t\t\t\t)\n\t\t\t)\n") % (fmt(x), fmt(y))
 
 
-def make_mast(lib: Library, target, src, style, kind, indications, description, heads) -> str:
-    block = rename(lib.symbols[src], src, target)
-    edits, lines, glyph_x, glyph_y = [], [], None, None
-    for s, e, m in pins(block):
-        if m.group(7) == "SIGNAL":
-            continue
-        x1, y1, x2, y2 = pin_end(m)
-        edits.append(line_span(block, s, e) + ("",))
-        if float(m.group(6)):
-            lines.append(polyline(x1, y1, x2, y2))             # the line the pin drew, so the picture is unchanged
-            glyph_x = min(x1, x2) if glyph_x is None else min(glyph_x, x1, x2)   # the glyphs abut the drawn line
-            glyph_y = y1
-    assert glyph_x is not None, target
-    block = replace_spans(block, edits)
-    lines += [circle(glyph_x - 0.635 - 1.27 * i, glyph_y, red=(style == "stop_sign")) for i in range(heads)]
-    block = renumber(insert_graphics(block, "\n".join(lines)))
-    wanted = [("Reference", properties(block)[0].group(2)), ("Value", ""), ("Footprint", ""), ("Datasheet", ""),
-              ("Description", description), ("Role", "APPLIANCE"), ("Name", "${Value}"), ("Appliance", "mast"),
-              ("Style", style), ("Kind", kind), ("Indications", indications)]
-    return rewrite_properties(block, wanted)
+def pin(etype: str, x: float, y: float, rot: int, name: str, number: int) -> str:
+    return ("\t\t\t(pin %s line\n\t\t\t\t(at %s %s %d)\n\t\t\t\t(length %s)\n"
+            "\t\t\t\t(name \"%s\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 1.016 1.016)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n"
+            "\t\t\t\t(number \"%d\"\n\t\t\t\t\t(effects\n\t\t\t\t\t\t(font\n\t\t\t\t\t\t\t(size 0.381 0.381)\n\t\t\t\t\t\t)\n\t\t\t\t\t)\n\t\t\t\t)\n"
+            "\t\t\t)\n") % (etype, fmt(x), fmt(y), rot, fmt(PIN_LENGTH), quote(name), number)
 
 
-def make_device(lib: Library, rgb_pin: str, target, src, style, settings, pin_list, description, relabels) -> str:
-    block = rename(lib.symbols[src], src, target)
-    wanted_names = [n for n, _ in pin_list]
-    have = {m.group(7): (s, e) for s, e, m in pins(block)}
-    block = replace_spans(block, [line_span(block, s, e) + ("",) for name, (s, e) in have.items() if name not in wanted_names])
-    for name in wanted_names:
-        if name not in have:
-            assert name == "RGB", (target, name)
-            block = insert_at_unit_end(block, rgb_pin)
-    block = renumber(block)
-    for old, new in relabels.items():
-        block = block.replace('(text "%s"' % old, '(text "%s"' % new)
-    wanted = [("Reference", properties(block)[0].group(2)), ("Value", ""), ("Footprint", ""), ("Datasheet", ""),
-              ("Description", description), ("Role", "DEVICE"), ("Name", "${Value}"), ("Appliance", "head"),
-              ("Style", style)] + settings + [("Pin." + base(n), w) for n, w in pin_list]
-    return rewrite_properties(block, wanted)
+def arrow(x: float, y: float) -> str:
+    """The maroon direction triangle the old head devices drew at a pin's root, pointing right."""
+    return ("\t\t\t(polyline\n\t\t\t\t(pts\n\t\t\t\t\t(xy %s %s) (xy %s %s) (xy %s %s) (xy %s %s)\n\t\t\t\t)\n"
+            "\t\t\t\t(stroke\n\t\t\t\t\t(width 0)\n\t\t\t\t\t(type solid)\n\t\t\t\t)\n"
+            "\t\t\t\t(fill\n\t\t\t\t\t(type color)\n\t\t\t\t\t(color 132 0 0 1)\n\t\t\t\t)\n\t\t\t)\n"
+            ) % (fmt(x), fmt(y), fmt(x - 0.635), fmt(y - 0.635), fmt(x - 0.635), fmt(y + 0.635), fmt(x), fmt(y))
+
+
+def label(text: str) -> str:
+    """The box's label, in the Field library's shape: KIND ${VALUE} top left inside the box."""
+    return ("\t\t\t(text \"%s\"\n\t\t\t\t(at -20.955 2.667 0)\n\t\t\t\t(effects\n\t\t\t\t\t(font\n\t\t\t\t\t\t(size 1.016 1.016)\n"
+            "\t\t\t\t\t)\n\t\t\t\t\t(justify left)\n\t\t\t\t)\n\t\t\t)\n") % quote(text)
+
+
+# ---------------------------------------------------------------------------------------------
+# Reading the source library: its header and each symbol's graphic nodes.
+
+
+class Library:
+    def __init__(self, path: Path):
+        self.text = path.read_text()
+        self.header = self.text[: self.text.index('\n\t(symbol "') + 1]
+        self.symbols: dict[str, str] = {}
+        for s, e in blocks(self.text, "symbol", 1):
+            b = self.text[s:e]
+            self.symbols[re.match(r'\(symbol "([^"]+)"', b).group(1)] = b
+
+    def graphics(self, symbol: str, unit: str) -> list[tuple[str, str]]:
+        """[(node head, node text with its line's tabs and newline)] of a unit's non-pin nodes."""
+        b = self.symbols[symbol]
+        out = []
+        for us, ue in blocks(b, "symbol", 2):
+            u = b[us:ue]
+            if not re.match(r'\(symbol "%s_%s"' % (re.escape(symbol), unit), u):
+                continue
+            for head in ("rectangle", "polyline", "circle", "arc", "text"):
+                for s, e in blocks(u, head, 3):
+                    s0 = u.rindex("\n", 0, s) + 1
+                    out.append((head, u[s0:e] + "\n", s0))
+        return [(h, t) for h, t, _ in sorted(out, key=lambda x: x[2])]
+
+
+def box(lib: Library) -> str:
+    rects = [t for h, t in lib.graphics(BOX_SOURCE, "0_1") if h == "rectangle"]
+    assert len(rects) == 1
+    return rects[0]
+
+
+def glyph(lib: Library, symbol: str) -> str:
+    """Everything the source draws in its picture unit except the box, moved so its centre is at GLYPH_X."""
+    text = "".join(t for h, t in lib.graphics(symbol, "0_1") if h != "rectangle")
+    xs = [float(m.group(2)) for m in COORD.finditer(text)]
+    dx = GLYPH_X - (min(xs) + max(xs)) / 2
+    return COORD.sub(lambda m: "(%s %s %s" % (m.group(1), fmt(float(m.group(2)) + dx), m.group(3)), text)
+
+
+# ---------------------------------------------------------------------------------------------
+
+
+def symbol(name: str, reference: str, contract: list[tuple[str, str]], settings: list[tuple[str, str]],
+           pin_caps: list[tuple[str, str, float, float]], description: str, picture: str, body: str) -> str:
+    """One top-level symbol: KiCad's flags, the properties in its order, the picture unit, the pin unit."""
+    props = [prop("Reference", reference, REFERENCE), prop("Value", "", HIDDEN), prop("Footprint", "", HIDDEN),
+             prop("Datasheet", "", HIDDEN), prop("Description", description, DESCRIPTION)]
+    props += [prop(k, v, HIDDEN if k == "Name" else CONTRACT) for k, v in contract]
+    props += [prop(k, "", PLACEMENTS[place]) for k, place in settings]
+    props += [prop("Pin." + k, v, pin_cap(x, y)) for k, v, x, y in pin_caps]
+    return ('\t(symbol "%s"\n\t\t(pin_numbers\n\t\t\t(hide yes)\n\t\t)\n\t\t(pin_names\n\t\t\t(offset 0.889)\n\t\t)\n'
+            "\t\t(exclude_from_sim no)\n\t\t(in_bom yes)\n\t\t(on_board yes)\n\t\t(in_pos_files yes)\n"
+            "\t\t(duplicate_pin_numbers_are_jumpers no)\n" % quote(name)
+            + "".join(props)
+            + '\t\t(symbol "%s_0_1"\n%s\t\t)\n' % (quote(name), picture)
+            + '\t\t(symbol "%s_1_1"\n%s\t\t)\n' % (quote(name), body)
+            + "\t\t(embedded_fonts no)\n\t)\n")
+
+
+def make_head(lib: Library, name: str, style: str, description: str) -> str:
+    ix, iy = INPUT_AT
+    ox, oy = OUTPUT_X, OUTPUT_ROWS[1][0]
+    body = arrow(ix + PIN_LENGTH + 0.889, iy) + arrow(ox - PIN_LENGTH - 0.254, oy) + label(f"{style} ${{VALUE}}")
+    body += pin("input", ix, iy, 0, "IND", 1) + pin("output", ox, oy, 180, "APP", 2)
+    contract = [("Role", "DEVICE"), ("Name", "${Value}"), ("Appliance", "head"), ("Style", style)]
+    caps = [("IND", "indication", ix - 4.318, iy), ("APP", "indication", ox + 5.588, oy)]
+    return symbol(name, "Cast", contract, [], caps, description, box(lib), body)
+
+
+def make_encoder(lib: Library, name: str, kind: str, outputs, settings, glyph_source: str, description: str) -> str:
+    ix, iy = INPUT_AT
+    rows = OUTPUT_ROWS[len(outputs)]
+    body = arrow(ix + PIN_LENGTH + 0.889, iy)
+    body += "".join(arrow(OUTPUT_X - PIN_LENGTH - 0.254, y) for (_, etype, _), y in zip(outputs, rows) if etype == "output")
+    body += label(f"{kind} ${{VALUE}}")
+    body += pin("input", ix, iy, 0, "APP", 1)
+    body += "".join(pin(etype, OUTPUT_X, y, 180, pname, i + 2) for i, ((pname, etype, _), y) in enumerate(zip(outputs, rows)))
+    contract = [("Role", "ENCODER"), ("Name", "${Value}"), ("Kind", kind)]
+    caps = [("APP", "indication", ix - 4.318, iy)]
+    caps += [(base(pname), word, OUTPUT_X + 5.588, y) for (pname, _, word), y in zip(outputs, rows) if word]
+    return symbol(name, "ENC", contract, settings, caps, description, box(lib) + glyph(lib, glyph_source), body)
 
 
 def main() -> int:
-    trackplan = Library(SYMBOLS / "Railroad-Trackplan.kicad_sym")
-    field = Library(SYMBOLS / "Railroad-Field.kicad_sym")
-    rgb_block = field.symbols[RGB_PIN_SOURCE[1]]
-    rgb_pin = next("\t\t\t" + rgb_block[s:e] for s, e, m in pins(rgb_block) if m.group(7) == RGB_PIN_SOURCE[2])
-
-    masts = [make_mast(trackplan, *row) for row in TRACKPLAN]
-    (SYMBOLS / "Railroad-Trackplan-Signals.kicad_sym").write_text(trackplan.header + "".join(masts) + ")\n")
-    devices = [make_device(field, rgb_pin, *row) for row in FIELD]
-    (SYMBOLS / "Railroad-Field-Signals.kicad_sym").write_text(field.header + "".join(devices) + ")\n")
-    print(f"wrote Railroad-Trackplan-Signals ({len(masts)} symbols) and Railroad-Field-Signals ({len(devices)} symbols)")
+    lib = Library(SOURCE)
+    out = [make_head(lib, *row) for row in HEADS] + [make_encoder(lib, *row) for row in ENCODERS]
+    out.sort(key=lambda s: re.match(r'\t\(symbol "([^"]+)"', s).group(1))    # KiCad writes symbols by name
+    TARGET.write_text(lib.header + "".join(out) + ")\n")
+    print(f"wrote {TARGET.name} ({len(HEADS)} head devices, {len(ENCODERS)} encoders)")
     return 0
 
 
