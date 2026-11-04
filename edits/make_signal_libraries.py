@@ -1,10 +1,14 @@
-"""Generate `symbols/Railroad-Field-Signals.kicad_sym`: head devices and encoders (worklist of 2026-11-04).
+"""Generate `symbols/Railroad-Field-Signals.kicad_sym`: field masts, head devices and encoders (take 3, 2026-11-04).
 
-The chain is  Mast --indication--> Head --head word--> Encoder --pins / pixels--> Driver.  A head device
-states only which model it is (Style); it takes an indication on `IND` and presents a head word on
-`APP`, both of pin kind indication. An encoder states only its hardware side: one `APP` input and the
-output pins or pixel addresses a driver consumes; the mapping head word -> output is the served head's
-model table, reference data read through the wire.
+The chain is  trackplan Mast --indication--> field Mast device --pin A/B/C--> anonymous Head --head word-->
+Encoder --pins / pixels--> Driver.  The field mast device is the binding: Value = the trackplan mast's Name
+(246AB), one output per head position, A at the top; the pin set is the head count (Single, Double,
+Triple), so it carries no Style, Kind or Indications. A head device has no name of its own: it is a
+position on a mast, keyed by the mast pin it is wired to, so it carries no `Name` property. It states
+only which model it is (Style); it takes an indication on `IND` and presents a head word on `APP`, both
+of pin kind indication. An encoder states only its hardware side: one `APP` input and the output pins or
+pixel addresses a driver consumes; the mapping head word -> output is the served head's model table,
+reference data read through the wire.
 
 `symbols/Railroad-Trackplan-Signals.kicad_sym` is the owner's, maintained by hand in KiCad; this script
 no longer touches it, nor the older libraries it reads graphics from (`Railroad-Field.kicad_sym`).
@@ -42,15 +46,26 @@ TARGET = SYMBOLS / "Railroad-Field-Signals.kicad_sym"
 # ---------------------------------------------------------------------------------------------
 # The worklist.
 
+ANONYMOUS = " Anonymous: a head is a position on its mast, keyed by the mast pin (A, B, C) it is wired to."
 HEADS = [
     # (symbol, Style, Description)
     ("Device-Head-TypeD", "TypeD",
-     "GRS Type D colour-light head. Presents what its model table lists; the encoder it is wired to makes the lamps."),
-    ("Device-Head-SA", "SA", "GRS SA searchlight head."),
-    ("Device-Head-H2", "H2", "US&S H-2 searchlight head."),
-    ("Device-Head-Semaphore-UQ", "UQ", "Upper-quadrant semaphore head, three positions."),
-    ("Device-Head-Semaphore-LQ", "LQ", "Lower-quadrant semaphore head, two positions."),
+     "GRS Type D colour-light head. Presents what its model table lists; the encoder it is wired to makes the lamps." + ANONYMOUS),
+    ("Device-Head-SA", "SA", "GRS SA searchlight head." + ANONYMOUS),
+    ("Device-Head-H2", "H2", "US&S H-2 searchlight head." + ANONYMOUS),
+    ("Device-Head-Semaphore-UQ", "UQ", "Upper-quadrant semaphore head, three positions." + ANONYMOUS),
+    ("Device-Head-Semaphore-LQ", "LQ", "Lower-quadrant semaphore head, two positions." + ANONYMOUS),
 ]
+
+MASTS = [
+    # (symbol, head positions)
+    ("Device-Mast-Single", 1),
+    ("Device-Mast-Double", 2),
+    ("Device-Mast-Triple", 3),
+]
+MAST_DESCRIPTION = ("A mast as one field device, Value = the trackplan mast's Name (246AB). One output per head position, "
+                    "A at the top; each hands that head its indication word. Head devices hang on these pins; a head has "
+                    "no name of its own.")
 
 # Output pins: (name as drawn, electrical type, Pin.<base> word or None for a bus attachment).
 BINARY = "binary"
@@ -216,11 +231,22 @@ def symbol(name: str, reference: str, contract: list[tuple[str, str]], settings:
 def make_head(lib: Library, name: str, style: str, description: str) -> str:
     ix, iy = INPUT_AT
     ox, oy = OUTPUT_X, OUTPUT_ROWS[1][0]
-    body = arrow(ix + PIN_LENGTH + 0.889, iy) + arrow(ox - PIN_LENGTH - 0.254, oy) + label(f"{style} ${{VALUE}}")
+    body = arrow(ix + PIN_LENGTH + 0.889, iy) + arrow(ox - PIN_LENGTH - 0.254, oy) + label(style)   # no name: anonymous
     body += pin("input", ix, iy, 0, "IND", 1) + pin("output", ox, oy, 180, "APP", 2)
-    contract = [("Role", "DEVICE"), ("Name", "${Value}"), ("Appliance", "head"), ("Style", style)]
+    contract = [("Role", "DEVICE"), ("Appliance", "head"), ("Style", style)]                        # no Name property
     caps = [("IND", "indication", ix - 4.318, iy), ("APP", "indication", ox + 5.588, oy)]
     return symbol(name, "Cast", contract, [], caps, description, box(lib), body)
+
+
+def make_mast(lib: Library, name: str, heads: int) -> str:
+    """A field mast device: one indication output per head position, A at the top, in the Railroad-Field:Mast look."""
+    rows = OUTPUT_ROWS[heads]
+    letters = "ABC"[:heads]
+    body = "".join(arrow(OUTPUT_X - PIN_LENGTH - 0.254, y) for y in rows) + label("MAST ${VALUE}")
+    body += "".join(pin("output", OUTPUT_X, y, 180, letter, i + 1) for i, (letter, y) in enumerate(zip(letters, rows)))
+    contract = [("Role", "DEVICE"), ("Name", "${Value}"), ("Appliance", "mast")]
+    caps = [(letter, "indication", OUTPUT_X + 5.588, y) for letter, y in zip(letters, rows)]
+    return symbol(name, "DevMast", contract, [], caps, MAST_DESCRIPTION, box(lib), body)
 
 
 def make_encoder(lib: Library, name: str, kind: str, outputs, settings, glyph_source: str, description: str) -> str:
@@ -239,10 +265,14 @@ def make_encoder(lib: Library, name: str, kind: str, outputs, settings, glyph_so
 
 def main() -> int:
     lib = Library(SOURCE)
-    out = [make_head(lib, *row) for row in HEADS] + [make_encoder(lib, *row) for row in ENCODERS]
+    if list(SYMBOLS.glob("~*.lck")):
+        print("a symbol library is open in KiCad (~*.lck present); close it first", file=sys.stderr)
+        return 1
+    out = ([make_mast(lib, *row) for row in MASTS] + [make_head(lib, *row) for row in HEADS]
+           + [make_encoder(lib, *row) for row in ENCODERS])
     out.sort(key=lambda s: re.match(r'\t\(symbol "([^"]+)"', s).group(1))    # KiCad writes symbols by name
     TARGET.write_text(lib.header + "".join(out) + ")\n")
-    print(f"wrote {TARGET.name} ({len(HEADS)} head devices, {len(ENCODERS)} encoders)")
+    print(f"wrote {TARGET.name} ({len(MASTS)} field masts, {len(HEADS)} head devices, {len(ENCODERS)} encoders)")
     return 0
 
 
