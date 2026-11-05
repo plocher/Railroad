@@ -164,7 +164,7 @@ Leave Indications empty: the indications the mast must show are derived. Fill it
 | `Railroad-Trackplan-Signals:Signal Mast Dwarf-Double` | Dwarf signal with two heads. |
 | `Railroad-Trackplan-Signals:Stop` | Fixed stop signal. |
 
-- Style is single, double, triple, dwarf, dwarf_double or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.
+- Style is single, double, triple, dwarf, dwarf2 or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.
 - `Stop` is ABSOLUTE with Indications fixed to `Stop`.
 
 ### Train order signal (Role APPLIANCE, Appliance train_order)
