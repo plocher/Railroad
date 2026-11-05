@@ -97,7 +97,7 @@ Style says what it is: powered, manual, manual_sensed, lock, dual, derail.
 - Set Value to the switch name (783). A lock shares its name with its switch. A dependent derail is named `<switch>D` (795D).
 - Pins C, N, R are track: C the point end, N the normal leg, R the reverse leg. A derail has C and R only; R is the through pin.
 - TC names the switch's OS track circuit; its default is `<Value>T1`. Set it when the circuit has another name. Indication is `<TC>K`, fixed.
-- IndicationCeiling is the most favourable indication a route over the switch permits, one value per position (order to be confirmed). Fixed.
+- IndicationCeiling is empty by default: the route derivation sets each route's ceiling from its context. Filled, it overrides that with two indication words, NORMAL/REVERSE: a route through this switch in that position never shows better than the word.
 
 | Symbol | Description |
 | --- | --- |
@@ -113,7 +113,7 @@ Style says what it is: powered, manual, manual_sensed, lock, dual, derail.
 | `Railroad-Trackplan:Derail_TC` | Protective DERAIL for sidings WITH an associated Track Circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a "D" suffix |
 
 - `Switch_Powered`, `_Diag` and `_Small` have the same fields; the glyphs differ. `_NO_TC`, `Switch_Manual`, `Switch_Manual_Sensed` and `Derail` have no OS circuit: TC and Indication are empty.
-- A manual switch has IndicationCeiling RESTRICTING/RESTRICTING; a derail STOP/RESTRICTING.
+- A derail has IndicationCeiling STOP/RESTRICTING: NORMAL is derailing. A manual switch has no library value; the route derivation's rule for hand-operated switches applies.
 
 ### Track circuits (Role APPLIANCE, Appliance track_circuit)
 A track circuit marker names the circuit of the track net it sits on. Place one per circuit.
@@ -172,7 +172,7 @@ Leave Indications empty: the indications the mast must show are derived. Fill it
 | --- | --- |
 | `Railroad-Trackplan:Train Order Mast` | A Train Order signal or Order Board signals to the Engineer that new orders were available at the station |
 
-- Set Value to the signal name and Station to a station in the same interlocking: an operating requirement associates train orders with that station. The mast has two possible heads, N/W and S/E, matching the direction of traffic. Pin H (usage to be confirmed).
+- Set Value to the signal name and Station to a station in the same interlocking: an operating requirement associates train orders with that station. The board has one or two faces, N/W and S/E, by direction of traffic. The faces, their heads and the fascia controls are field devices (`Device-TrainOrder`, one unit per face, pins STOP, SLOW, CALLON in and IND out; nothing asserted shows CLEAR, the most restrictive asserted input wins). Pin H is retired with the trackplan heads.
 
 ### Non-vital lamps and contacts (Role APPLIANCE, pin MC)
 These appliances have one pin, MC. They are the office's view of a non-vital input or output at a control point.
@@ -183,8 +183,8 @@ These appliances have one pin, MC. They are the office's view of a non-vital inp
 | `Railroad-Trackplan:Contact` | Contact: the generic non-vital input the office may see as <Value>K. Style says who consumes it (lock_request, button, door, ...). Complement of AUXILIARY. |
 | `Railroad-Trackplan:MaintainerCall` | |
 
-- `AUXILIARY` (Appliance lamp): a generic lamp for an appliance. Some, like a switch heater, attach to track; others, like a hotbox alarm, do not and carry a milepost. Set Value to its name. Indication is `<Name>K`, fixed. Wiring of MC (usage to be confirmed).
-- `Contact` (Appliance contact): the lever counterpart of AUXILIARY, a generic input or sensor. Set Value to its name and Style to its consumer. Wiring of MC (usage to be confirmed).
+- `AUXILIARY` (Appliance lamp): a generic lamp for an appliance. Some, like a switch heater, attach to track; others, like a hotbox alarm, do not and carry a milepost. Set Value to its name. Indication is `<Name>K`, fixed. Its one pin (to be renamed TRACK; it is MC today by copy) is optional: wired to a track net, the appliance belongs to that circuit; wired to anything else is an import error; unwired, Milepost and CP Name place it.
+- `Contact` (Appliance contact): the lever counterpart of AUXILIARY, a generic input or sensor. Set Value to its name and Style to its consumer. Its one pin follows the AUXILIARY rule above.
 - `MaintainerCall` (Appliance lamp, Style maintainer_call): set Value to the control point's name; Name is `<Value>MC`. Wire MC to the House's MC pin.
 
 ## Office symbols
@@ -439,7 +439,7 @@ Place one node per CMRInet node and one bit symbol per bit in use.
 | `Railroad-HardwareIO:Driver-CMRInet-IB` | CMRInet digital input: one bit of the IB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009). |
 | `Railroad-HardwareIO:Driver-CMRInet-OB` | CMRInet digital output: one bit of the OB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009). |
 
-- `Node` (Kind NODE): set Address to the UA, NodeType to C, M or N, InputBytes and OutputBytes. Wire Transport to the CMRInet transport. Pin IOBus is the bus for its bits. The Transport field (usage to be confirmed).
+- `Node` (Kind NODE): set Address to the UA, NodeType to C, M or N, InputBytes and OutputBytes. Wire pin Transport to the CMRInet transport; the importer reads that wire. Pin IOBus is the bus for its bits.
 - `IB` (Kind IB): D is a binary input to the node; wire a device output to it. `OB` (Kind OB): D is a binary output; wire a device input to it. Set Bit; set Node only when the sheet holds two nodes.
 
 ### JMRI objects over MQTT (Role IODRIVER, IC MQTT-JMRI)
