@@ -53,7 +53,7 @@ Pins A and B are the two sides of a joint; wire track to each. EoT is the one tr
 
 - `IRJ` and `IRJ_Diag` (Kind IRJ) differ in glyph only; `IRJ_Diag` is drawn on a diagonal.
 - `IRJ-Signal` has pin SIGNAL; `IRJ-Signals` has SIGNAL_A and SIGNAL_B. Wire a mast's SIGNAL pin to one. Set CP Name to the mast's control point.
-- `IRJ-END_CTC` has pins CTC and DARK: the controlled side and the side beyond (usage to be confirmed).
+- `IRJ-END_CTC` has pins CTC (1) and DARK (2). CTC faces the controlled trackage, DARK the track beyond. The glyph draws a three-sided box around the end of the controlled track.
 - `Bumper` (Kind BUMPER) has no setting. `Industry` (Kind INDUSTRY): set Value to its name.
 - `Milepost` has no pin. Set Value to the milepost.
 - `NextCP` (Kind NEXT_CP): wire To to the track that leaves the interlocking. Set Value to the next interlocking's name; the Interlocking field follows. `Not Modeled` (Style off_layout) says the next interlocking is not drawn anywhere.
@@ -72,7 +72,7 @@ Place one per governed track. Wire pin To (Rule 261: Track) to the governed trac
 | `Railroad-Trackplan:Signal Mast Plate-G` | Rule 290 Grade - added to a NUMBER plate.  Allows heavy freight trains to bypass the physical stop required by Rule 291 and pass the red signal moving continuously at restricted speed (to avoid getting stuck on the grade). |
 | `Railroad-Trackplan:Signal Mast Plate-R` | Rule 290 Restricting - added to a NUMBER plate.  Explicitly converts a standard automatic block signal's red aspect directly into a Restricting indication |
 
-- The two plates (Kind RULE_290_G, RULE_290_R) have no Direction. Their pin To is wired to the mast they modify (usage to be confirmed).
+- The two plates (Kind RULE_290_G, RULE_290_R) have no Direction. Their pin To is wired to the same `IRJ-Signal` pin as the mast they modify.
 
 ### Structures (Role STRUCTURE)
 A structure declares a named thing that owns or contains others. Kind says which. Set Value to its name.
@@ -128,7 +128,7 @@ Set Value to the circuit name (1NA). Indication is `<Name>K`, fixed.
 | `Railroad-Trackplan:Track Circuit_Virtual` | Virtual track circuit: an indication that aggregates the circuits listed in Members. |
 
 - `Track Circuit`, `_RED` and `_Yellow` have pin TC; wire it to the track net. They differ in drawn colour only.
-- `IR Boundary` (Style boundary) has pins A and B, one per side of the boundary (usage to be confirmed).
+- `IR Boundary` (Style boundary) has pins A and B, one per side of the boundary. The pins imply no direction.
 - `_Virtual` (Style virtual) has no pin. Set Members to a comma-separated list of circuit names. Display shows them.
 
 ### Masts drawn with trackplan heads (Role APPLIANCE, Appliance mast and head)
@@ -164,7 +164,7 @@ Leave Indications empty: the indications the mast must show are derived. Fill it
 | `Railroad-Trackplan-Signals:Signal Mast Dwarf-Double` | Dwarf signal with two heads. |
 | `Railroad-Trackplan-Signals:Stop` | Fixed stop signal. |
 
-- Style is single, double, triple, dwarf, dwarf2 or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.
+- Style is single, double, triple, dwarf, dwarf_double or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.
 - `Stop` is ABSOLUTE with Indications fixed to `Stop`.
 
 ### Train order signal (Role APPLIANCE, Appliance train_order)
@@ -172,7 +172,7 @@ Leave Indications empty: the indications the mast must show are derived. Fill it
 | --- | --- |
 | `Railroad-Trackplan:Train Order Mast` | A Train Order signal or Order Board signals to the Engineer that new orders were available at the station |
 
-- Set Value to the signal name and Station to the station it serves. Pin H is its head (usage to be confirmed).
+- Set Value to the signal name and Station to a station in the same interlocking: an operating requirement associates train orders with that station. The mast has two possible heads, N/W and S/E, matching the direction of traffic. Pin H (usage to be confirmed).
 
 ### Non-vital lamps and contacts (Role APPLIANCE, pin MC)
 These appliances have one pin, MC. They are the office's view of a non-vital input or output at a control point.
@@ -183,8 +183,8 @@ These appliances have one pin, MC. They are the office's view of a non-vital inp
 | `Railroad-Trackplan:Contact` | Contact: the generic non-vital input the office may see as <Value>K. Style says who consumes it (lock_request, button, door, ...). Complement of AUXILIARY. |
 | `Railroad-Trackplan:MaintainerCall` | |
 
-- `AUXILIARY` (Appliance lamp): set Value to its name. Indication is `<Name>K`, fixed. Wiring of MC (usage to be confirmed).
-- `Contact` (Appliance contact): set Value to its name and Style to its consumer. Wiring of MC (usage to be confirmed).
+- `AUXILIARY` (Appliance lamp): a generic lamp for an appliance. Some, like a switch heater, attach to track; others, like a hotbox alarm, do not and carry a milepost. Set Value to its name. Indication is `<Name>K`, fixed. Wiring of MC (usage to be confirmed).
+- `Contact` (Appliance contact): the lever counterpart of AUXILIARY, a generic input or sensor. Set Value to its name and Style to its consumer. Wiring of MC (usage to be confirmed).
 - `MaintainerCall` (Appliance lamp, Style maintainer_call): set Value to the control point's name; Name is `<Value>MC`. Wire MC to the House's MC pin.
 
 ## Office symbols
@@ -258,7 +258,7 @@ Wire Transport to the transport. Pin Codeline is the code line: wire every Inter
 | `Railroad-Office:Encoding-Bits` | Bit (array of bytes) encoding |
 
 - `AAR` (Kind AAR): Topic is the MQTT topic root; `<STRUCTURE:RAILROAD:Name>` in it takes the Railroad symbol's Name.
-- `US&S-506` (Kind USS506): Chart (usage to be confirmed). `Bits` (Kind BITS): set ControlBytes and IndicationBytes; Chart (usage to be confirmed).
+- Chart names the encoding chart for the item: its encoding map and serializer rules. `US&S-506` (Kind USS506) and `Bits` (Kind BITS) both carry it; `Bits` also takes ControlBytes and IndicationBytes.
 
 ### I/O encodings (Role IO_ENCODING)
 An I/O encoding states what rides a transport. It provides no net. Place one per transport that carries remote I/O. Set Value to its name. Wire Transport to the transport.
