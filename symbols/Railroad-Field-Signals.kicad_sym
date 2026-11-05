@@ -57,7 +57,7 @@
 				)
 			)
 		)
-		(property "Description" "US&S H-2 searchlight head. Takes an indication on IND and presents a head word on APP. Anonymous: keyed by the mast pin (A, B, C) it is wired to."
+		(property "Description" "US&S H-2 searchlight signal head. Pin IND receives the indication from the mast pin. Pin APP supplies the head word to the encoder. The head has no name. The mast pin identifies the head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -331,7 +331,7 @@
 				)
 			)
 		)
-		(property "Description" "GRS SA searchlight head. Takes an indication on IND and presents a head word on APP. Anonymous: keyed by the mast pin (A, B, C) it is wired to."
+		(property "Description" "GRS SA searchlight signal head. Pin IND receives the indication from the mast pin. Pin APP supplies the head word to the encoder. The head has no name. The mast pin identifies the head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -605,7 +605,7 @@
 				)
 			)
 		)
-		(property "Description" "Lower-quadrant semaphore head, two positions. Takes an indication on IND and presents a head word on APP. Anonymous: keyed by the mast pin (A, B, C) it is wired to."
+		(property "Description" "Lower-quadrant semaphore signal head with two positions. Pin IND receives the indication from the mast pin. Pin APP supplies the head word to the encoder. The head has no name. The mast pin identifies the head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -892,7 +892,7 @@
 				)
 			)
 		)
-		(property "Description" "Upper-quadrant semaphore head, three positions. Takes an indication on IND and presents a head word on APP. Anonymous: keyed by the mast pin (A, B, C) it is wired to."
+		(property "Description" "Upper-quadrant semaphore signal head with three positions. Pin IND receives the indication from the mast pin. Pin APP supplies the head word to the encoder. The head has no name. The mast pin identifies the head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1179,7 +1179,7 @@
 				)
 			)
 		)
-		(property "Description" "GRS Type D colour-light head. Takes an indication on IND and presents a head word on APP. Anonymous: keyed by the mast pin (A, B, C) it is wired to."
+		(property "Description" "GRS Type D colour-light signal head. Pin IND receives the indication from the mast pin. Pin APP supplies the head word to the encoder. The head has no name. The mast pin identifies the head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1464,7 +1464,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one field device, Value = the trackplan mast's Name (246AB). One output per head position, A at the top; each hands that head its indication word. Head devices hang on these pins; a head has no name of its own."
+		(property "Description" "Field mast with two head positions. Value is the name of the trackplan mast. Pins A and B supply the indications for heads A and B. Head A is the top head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1720,7 +1720,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one field device, Value = Mast name with Head Letters"
+		(property "Description" "Field dwarf mast with one head position. Value is the name of the trackplan mast. Pin A supplies the indication for head A."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1931,7 +1931,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one field device, Value = Mast name with Head Letters"
+		(property "Description" "Field dwarf mast with two head positions. Value is the name of the trackplan mast. Pins A and B supply the indications for heads A and B. Head A is the top head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2195,7 +2195,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one field device, Value = the trackplan mast's Name (246AB). One output per head position, A at the top; each hands that head its indication word. Head devices hang on these pins; a head has no name of its own."
+		(property "Description" "Field mast with one head position. Value is the name of the trackplan mast. Pin A supplies the indication for head A."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2398,7 +2398,7 @@
 				)
 			)
 		)
-		(property "Description" "A mast as one field device, Value = the trackplan mast's Name (246AB). One output per head position, A at the top; each hands that head its indication word. Head devices hang on these pins; a head has no name of its own."
+		(property "Description" "Field mast with three head positions. Value is the name of the trackplan mast. Pins A, B and C supply the indications for heads A, B and C. Head A is the top head."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2707,7 +2707,7 @@
 				)
 			)
 		)
-		(property "Description" "Two-bit select (S0, S1) for the 3MUX2A decoder on the mast; the truth table is reference data keyed by Kind."
+		(property "Description" "Encoder for a 3MUX2A decoder. Pin APP receives the head word. Pins S0 and S1 connect to two driver outputs. The decoder selects the lamp from the two-bit code."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3042,7 +3042,7 @@
 				)
 			)
 		)
-		(property "Description" "One lamp behind a roundel, lit for every head word except DARK."
+		(property "Description" "Encoder for one lamp. Pin APP receives the head word. Pin LAMP connects to one driver output. The lamp is on for all head words except DARK."
 			(at -22.733 -6.604 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3256,7 +3256,7 @@
 				)
 			)
 		)
-		(property "Description" "One pixel showing the head's colour; Address is its index on the chain."
+		(property "Description" "Encoder for one pixel on a chain. Pin APP receives the head word. Pin CHAIN connects to the pixel chain. Address is the pixel address."
 			(at -22.733 -6.604 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3520,7 +3520,7 @@
 				)
 			)
 		)
-		(property "Description" "Three pixels on a chain, one per lamp colour, each at its own Address."
+		(property "Description" "Encoder for three pixels on one chain, one pixel for each lamp colour. Pin APP receives the head word. Pin CHAIN connects to the pixel chain. Address.R, Address.Y and Address.G are the pixel addresses."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3978,7 +3978,7 @@
 				)
 			)
 		)
-		(property "Description" "Three legs of one tricolour LED (a searchlight); the palette is reference data keyed by Kind."
+		(property "Description" "Encoder for a signal head with one tricolour LED. Pin APP receives the head word. Pins R, G and B connect to three driver outputs, one for each LED element."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4325,7 +4325,7 @@
 				)
 			)
 		)
-		(property "Description" "Three lamp lines for a three-lamp head."
+		(property "Description" "Encoder for a signal head with red, yellow and green lamps. Pin APP receives the head word. Pins R, Y and G connect to three driver outputs, one for each lamp."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4695,7 +4695,7 @@
 				)
 			)
 		)
-		(property "Description" "A semaphore blade on a servo; stop_deg, approach_deg and clear_deg are its angles."
+		(property "Description" "Encoder for a semaphore blade on a servo. Pin APP receives the head word. Pin ARM connects to one servo driver output. stop_deg, approach_deg and clear_deg are the blade angles."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
