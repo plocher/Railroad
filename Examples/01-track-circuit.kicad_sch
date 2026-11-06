@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "54189ddd-ad48-5aca-96ad-389ec17f9dd5")
-	(paper "A3")
+	(paper "USLetter")
 	(title_block
 		(title "Track Circuit")
 		(date "2026.11")
@@ -3034,99 +3034,221 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "TODO: Milepost 0.0 on the House is a placeholder; no Milepost, NextCP or direction-of-traffic policy is drawn."
+		(exclude_from_sim no)
+		(at 16.51 62.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35dc5b98-de23-55c0-9e84-5732b2c42021")
+	)
+	(text "Device and driver meet by coincident pins (Gilroy Caltrain pattern): ~{OCC} on IN.1."
+		(exclude_from_sim no)
+		(at 13.97 188.722 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f0d2db4-ed33-50c4-b6d0-abefa9dea92f")
+	)
+	(text "OFFICE"
+		(exclude_from_sim no)
+		(at 220.98 34.036 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "5c03204e-e66b-535b-88bd-53254c7e247c")
+	)
+	(text "TODO: node UA1 (NodeType C, 1 input and 0 output bytes) is a guess; the pages share the root sheet's one CMRInet line, so each takes its own UA."
+		(exclude_from_sim no)
+		(at 13.97 193.802 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6116f279-2923-5569-84cc-800c981f7384")
+	)
+	(text "TODO: lamp row 1 (OS, red) and row 3 are empty on purpose; the switch and signal lever rows are empty."
+		(exclude_from_sim no)
+		(at 272.288 103.886 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68c0463c-f1e1-58e4-aa84-298d66ab2801")
+	)
+	(text "TRACKPLAN"
+		(exclude_from_sim no)
+		(at 13.97 17.78 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6b621d41-53c7-5539-a000-b1bbec9b6d47")
+	)
+	(text "Global labels FieldProcessor, AAR, CMRInet and PanelIO reach the root sheet's processors, code line encoding, CMRInet transport and desk processor (SPCoast keeps these on South-cTc)."
+		(exclude_from_sim no)
+		(at 16.51 60.198 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77964f53-7c6f-5f14-9934-f4fd200b5eea")
+	)
+	(text "TODO: column 1 and I2C address 0x20 are placeholders: the pages share the root sheet's one desk, so each takes its own column and expander."
+		(exclude_from_sim no)
+		(at 272.288 101.346 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99d58b38-294d-5f4d-a9b6-15069a73238d")
+	)
+	(text "FIELD"
+		(exclude_from_sim no)
+		(at 15.494 80.772 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "b901e4b6-4ac1-5417-a311-880bbc384341")
+	)
+	(text "TODO: no track is drawn beyond either IRJ (their outer pins are open), and both IRJ-Signal SIGNAL pins are open (no masts on this page)."
+		(exclude_from_sim no)
+		(at 16.51 65.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fd47b7a8-91ae-5d78-a7d1-c7602ec071ca")
+	)
 	(junction
-		(at 139.7 45.72)
+		(at 72.39 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "337ba41b-f926-5d70-b5d5-abc7377a6417")
+		(uuid "93846943-d8a7-4bc1-94bf-a7ec8534f9e2")
+	)
+	(junction
+		(at 72.39 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcff8856-3608-4a5f-959a-855eb1a78668")
 	)
 	(no_connect
-		(at 139.7 30.48)
-		(uuid "4a7a7deb-fcda-5bd2-8e7d-31fc987647c8")
-	)
-	(no_connect
-		(at 71.12 214.63)
-		(uuid "7fb7b16c-6863-5dde-9a72-b04ff57e1839")
-	)
-	(no_connect
-		(at 71.12 217.17)
+		(at 222.25 93.98)
 		(uuid "024a8a4a-07e2-5706-899c-ce48c42395f3")
 	)
 	(no_connect
-		(at 71.12 204.47)
-		(uuid "b48de082-82c3-5a36-afe3-4a05f9ad844a")
-	)
-	(no_connect
-		(at 71.12 182.88)
+		(at 222.25 59.69)
 		(uuid "075bc0f3-c323-5c11-a102-bbaae9f9c550")
 	)
 	(no_connect
-		(at 71.12 193.04)
-		(uuid "b3bd7f65-8d96-544f-ae81-a491a137562e")
-	)
-	(no_connect
-		(at 71.12 222.25)
-		(uuid "e75bf362-62ac-57dc-acda-d90f18e00a38")
-	)
-	(no_connect
-		(at 71.12 224.79)
-		(uuid "d867eeb7-8b9a-5213-b035-21f69efd3666")
-	)
-	(no_connect
-		(at 71.12 260.35)
-		(uuid "da14e485-87e6-5f66-9b5f-88401ed579a4")
-	)
-	(no_connect
-		(at 71.12 243.84)
+		(at 222.25 120.65)
 		(uuid "337c4d27-0523-5f34-9892-bae741f5a582")
 	)
 	(no_connect
-		(at 71.12 241.3)
-		(uuid "d9ef2025-c72d-55c5-92a1-7e5272dbca56")
+		(at 72.39 38.1)
+		(uuid "4a7a7deb-fcda-5bd2-8e7d-31fc987647c8")
 	)
 	(no_connect
-		(at 71.12 238.76)
-		(uuid "b75a7190-8057-5ad0-b2ef-57b0e1d5bf58")
-	)
-	(no_connect
-		(at 71.12 254)
+		(at 222.25 130.81)
 		(uuid "7d8d2239-bd4a-5568-bc11-28e14ab49360")
 	)
 	(no_connect
-		(at 71.12 233.68)
-		(uuid "e931af31-bcb7-5056-a951-b161e9db69dd")
+		(at 222.25 91.44)
+		(uuid "7fb7b16c-6863-5dde-9a72-b04ff57e1839")
 	)
 	(no_connect
-		(at 71.12 236.22)
+		(at 222.25 113.03)
 		(uuid "a921991e-60d6-527b-abe2-e3f2c65e7f8b")
 	)
 	(no_connect
-		(at 71.12 231.14)
+		(at 222.25 107.95)
 		(uuid "ad79a392-69fe-5dde-9ba7-c2b9807ac8d8")
 	)
+	(no_connect
+		(at 222.25 69.85)
+		(uuid "b3bd7f65-8d96-544f-ae81-a491a137562e")
+	)
+	(no_connect
+		(at 222.25 81.28)
+		(uuid "b48de082-82c3-5a36-afe3-4a05f9ad844a")
+	)
+	(no_connect
+		(at 222.25 115.57)
+		(uuid "b75a7190-8057-5ad0-b2ef-57b0e1d5bf58")
+	)
+	(no_connect
+		(at 222.25 101.6)
+		(uuid "d867eeb7-8b9a-5213-b035-21f69efd3666")
+	)
+	(no_connect
+		(at 222.25 118.11)
+		(uuid "d9ef2025-c72d-55c5-92a1-7e5272dbca56")
+	)
+	(no_connect
+		(at 222.25 137.16)
+		(uuid "da14e485-87e6-5f66-9b5f-88401ed579a4")
+	)
+	(no_connect
+		(at 222.25 99.06)
+		(uuid "e75bf362-62ac-57dc-acda-d90f18e00a38")
+	)
+	(no_connect
+		(at 222.25 110.49)
+		(uuid "e931af31-bcb7-5056-a951-b161e9db69dd")
+	)
 	(wire
 		(pts
-			(xy 55.88 25.4) (xy 88.9 25.4)
+			(xy 72.39 33.02) (xy 72.39 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7b55b43-2eed-5dd1-bd99-3c0b40d61f58")
+		(uuid "12eadf69-5fe0-4041-8c1b-7869f57f2651")
 	)
 	(wire
 		(pts
-			(xy 88.9 25.4) (xy 139.7 25.4)
+			(xy 87.63 99.06) (xy 87.63 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8254621f-6d3b-500b-9772-b87beaf8a5f6")
+		(uuid "34e7830b-79aa-4a26-b331-7f8c56972d23")
 	)
 	(wire
 		(pts
-			(xy 55.88 22.86) (xy 63.5 22.86)
+			(xy 57.15 27.94) (xy 81.28 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3136,17 +3258,17 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 45.72) (xy 139.7 45.72)
+			(xy 246.38 144.78) (xy 254 144.78)
 		)
 		(stroke
-			(width 0.4064)
+			(width 0)
 			(type default)
 		)
-		(uuid "a4582d2b-c44b-553e-9966-943c90d9a447")
+		(uuid "604ed4bf-af44-576c-9819-4420cd665568")
 	)
 	(wire
 		(pts
-			(xy 139.7 45.72) (xy 189.23 45.72)
+			(xy 72.39 53.34) (xy 90.17 53.34)
 		)
 		(stroke
 			(width 0.4064)
@@ -3156,27 +3278,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 93.98) (xy 107.95 90.17)
+			(xy 57.15 53.34) (xy 72.39 53.34)
 		)
 		(stroke
-			(width 0)
+			(width 0.4064)
 			(type default)
 		)
-		(uuid "5ee81ad2-777b-516a-91cd-d93c1e14e6e3")
+		(uuid "a4582d2b-c44b-553e-9966-943c90d9a447")
 	)
 	(wire
 		(pts
-			(xy 107.95 90.17) (xy 129.54 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d49bfcff-2304-5fbe-9327-f3b5fda47098")
-	)
-	(wire
-		(pts
-			(xy 129.54 87.63) (xy 114.3 87.63)
+			(xy 87.63 99.06) (xy 77.47 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3186,17 +3298,37 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 267.97) (xy 102.87 267.97)
+			(xy 66.04 107.95) (xy 87.63 107.95)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "604ed4bf-af44-576c-9819-4420cd665568")
+		(uuid "d49bfcff-2304-5fbe-9327-f3b5fda47098")
+	)
+	(wire
+		(pts
+			(xy 72.39 30.48) (xy 81.28 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5090b4-d8c6-4ebb-867b-b92ba3f048d5")
+	)
+	(wire
+		(pts
+			(xy 57.15 30.48) (xy 72.39 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b55b43-2eed-5dd1-bd99-3c0b40d61f58")
 	)
 	(global_label "AAR"
 		(shape bidirectional)
-		(at 88.9 25.4 0)
+		(at 81.28 30.48 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3206,31 +3338,7 @@
 		)
 		(uuid "3a272fc7-c4d3-5861-8861-9b6ab2e8281b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.9 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "FieldProcessor"
-		(shape bidirectional)
-		(at 63.5 22.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d1895312-1f29-5e0e-8a02-3c3fb9937fef")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 63.5 22.86 0)
+			(at 81.28 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3244,17 +3352,17 @@
 	)
 	(global_label "CMRInet"
 		(shape bidirectional)
-		(at 114.3 87.63 0)
+		(at 77.47 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "78bb8ff1-0975-5893-9e60-6f836de0ffed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3 87.63 0)
+			(at 65.814 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3262,13 +3370,13 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
 	(global_label "PanelIO"
 		(shape bidirectional)
-		(at 102.87 267.97 0)
+		(at 254 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3278,7 +3386,7 @@
 		)
 		(uuid "83718163-af1d-56bd-bae7-3e651aff948b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.87 267.97 0)
+			(at 254 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3290,1018 +3398,33 @@
 			)
 		)
 	)
-	(text "TRACKPLAN"
-		(exclude_from_sim no)
-		(at 12.7 12.7 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6b621d41-53c7-5539-a000-b1bbec9b6d47")
-	)
-	(text "FIELD"
-		(exclude_from_sim no)
-		(at 12.7 73.66 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "b901e4b6-4ac1-5417-a311-880bbc384341")
-	)
-	(text "OFFICE"
-		(exclude_from_sim no)
-		(at 12.7 172.72 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-				(thickness 1.016)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "5c03204e-e66b-535b-88bd-53254c7e247c")
-	)
-	(text "Global labels FieldProcessor, AAR, CMRInet and PanelIO reach the root sheet's processors, code line encoding, CMRInet transport and desk processor (SPCoast keeps these on South-cTc)."
-		(exclude_from_sim no)
-		(at 12.7 60.96 0)
+	(global_label "FieldProcessor"
+		(shape bidirectional)
+		(at 81.28 27.94 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "77964f53-7c6f-5f14-9934-f4fd200b5eea")
-	)
-	(text "TODO: Milepost 0.0 on the House is a placeholder; no Milepost, NextCP or direction-of-traffic policy is drawn."
-		(exclude_from_sim no)
-		(at 12.7 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "35dc5b98-de23-55c0-9e84-5732b2c42021")
-	)
-	(text "TODO: no track is drawn beyond either IRJ (their outer pins are open), and both IRJ-Signal SIGNAL pins are open (no masts on this page)."
-		(exclude_from_sim no)
-		(at 12.7 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fd47b7a8-91ae-5d78-a7d1-c7602ec071ca")
-	)
-	(text "TODO: node UA1 (NodeType C, 1 input and 0 output bytes) is a guess; the pages share the root sheet's one CMRInet line, so each takes its own UA."
-		(exclude_from_sim no)
-		(at 12.7 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6116f279-2923-5569-84cc-800c981f7384")
-	)
-	(text "Device and driver meet by coincident pins (Gilroy Caltrain pattern): ~{OCC} on IN.1."
-		(exclude_from_sim no)
-		(at 12.7 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4f0d2db4-ed33-50c4-b6d0-abefa9dea92f")
-	)
-	(text "TODO: column 1 and I2C address 0x20 are placeholders: the pages share the root sheet's one desk, so each takes its own column and expander."
-		(exclude_from_sim no)
-		(at 114.3 185.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "99d58b38-294d-5f4d-a9b6-15069a73238d")
-	)
-	(text "TODO: lamp row 1 (OS, red) and row 3 are empty on purpose; the switch and signal lever rows are empty."
-		(exclude_from_sim no)
-		(at 114.3 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "68c0463c-f1e1-58e4-aa84-298d66ab2801")
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:Interlocking")
-		(at 38.1 24.13 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ab4cacbf-62d7-5ccf-a27e-98f11afc8e31")
-		(property "Reference" "Plant201"
-			(at 23.876 20.828 0)
+		(uuid "d1895312-1f29-5e0e-8a02-3c3fb9937fef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 81.28 27.94 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "${TITLE}"
-			(at 36.83 20.32 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 38.1 24.13 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 26.797 14.478 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "INTERLOCKING"
-			(at 28.194 16.129 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 34.29 24.13 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "411ead39-4124-59d1-8b76-113020bbed70")
-		)
-		(pin "2"
-			(uuid "10335a60-dc77-5e60-b139-d76fde05c0e3")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "Plant201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:House")
-		(at 139.7 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "77363a3a-b5ba-55c6-a556-4d074ab8b608")
-		(property "Reference" "HOUSE201"
-			(at 138.811 34.798 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "${CP Name}"
-			(at 139.7 36.195 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
-			(at 139.7 36.195 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Milepost" "0.0"
-			(at 139.7 36.195 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "STRUCTURE"
-			(at 124.46 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "CONTROL_POINT"
-			(at 126.365 29.972 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Track Circuit"
-			(at 139.7 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1deb0829-3f66-58d1-b4b3-ef2e829e2cde")
-		)
-		(pin "2"
-			(uuid "14f0ecc2-7e9b-5d47-a858-1ef0b07a8341")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "HOUSE201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:IRJ-Signal")
-		(at 88.9 45.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6d940884-d8f0-58c3-a85a-1f009b109b4c")
-		(property "Reference" "B201"
-			(at 88.9 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Track Circuit"
-			(at 86.995 43.815 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 88.9 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f32712e1-9bb3-5bbf-9c5c-33c5e58db41e")
-		)
-		(pin "2"
-			(uuid "4d96bbaa-cc16-542b-82f7-c508961894e7")
-		)
-		(pin "3"
-			(uuid "c0390a2c-82c7-58c2-beaa-f3be60d1cb35")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "B201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:IRJ-Signal")
-		(at 190.5 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f54d5db7-f238-5713-9b8c-c9e00d59fc1a")
-		(property "Reference" "B202"
-			(at 190.5 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Insulated Rail Joint with Signal"
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Track Circuit"
-			(at 188.595 43.815 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IRJ_SIGNAL"
-			(at 190.5 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "281cfd3a-7e7d-572e-95fc-a3ad7e9a4deb")
-		)
-		(pin "2"
-			(uuid "ad93db66-c1a0-5656-80f0-ada2d22b127d")
-		)
-		(pin "3"
-			(uuid "77feb76d-ebc2-5f9e-9f74-fb7c76ece566")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "B202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:Track Circuit")
-		(at 139.7 45.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cfaab378-7b82-508f-9b30-3fb03f364913")
-		(property "Reference" "TC201"
-			(at 139.7 41.275 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1T"
-			(at 139.7 48.26 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 139.7 45.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Track Circuit"
-			(at 139.7 47.625 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 139.7 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 139.7 48.26 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at 139.7 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Indication" "${Name}K"
-			(at 140.97 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4de63814-7b59-519b-a25a-1a8e1c847bb3")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "TC201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 76.2 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6b0af67d-a9bd-575f-bbfb-7642b4dfb4ea")
-		(property "Reference" "DevTC201"
-			(at 70.3648 91.9824 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "1T"
-			(at 76.2 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 72.6562 91.956 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 76.2 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hold_ms" "1500"
-			(at 65.786 92.075 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0794)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at 72.6562 91.956 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.OCC" "binary"
-			(at 72.6562 91.956 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "423ae104-377a-53e5-8fdf-9b1765db19e3")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "DevTC201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
-		(at 86.36 93.98 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4b719168-27e4-544b-84b0-c0597d3a02b1")
-		(property "Reference" "CMRI201"
-			(at 87.503 91.948 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "IN.${Bit}"
-			(at 87.249 89.154 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CMRInet digital input: one bit of the IB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
-			(at 97.663 96.901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "IODRIVER"
-			(at 93.8652 91.956 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "IC" "CMRI"
-			(at 93.8652 91.956 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.D" "binary"
-			(at 93.853 90.932 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(hide yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Bit" "1"
-			(at 86.36 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Node" ""
-			(at 86.36 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "IB"
-			(at 86.36 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88b75706-ff7f-5571-9bf0-ad3722fd5a47")
-		)
-		(pin "2"
-			(uuid "be777ff8-7568-5521-9615-c798adc4fa9d")
-		)
-		(instances
-			(project "Examples"
-				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
-					(reference "CMRI201")
-					(unit 1)
-				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-CMRInet-Node")
-		(at 139.7 88.9 0)
+		(at 97.79 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4311,10 +3434,10 @@
 		(dnp no)
 		(uuid "3a461165-5fda-5e08-ab5b-c83df98fdae4")
 		(property "Reference" "RIO201"
-			(at 125.476 83.058 0)
+			(at 83.566 100.838 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,10 +3445,10 @@
 			)
 		)
 		(property "Value" "UA${Address}"
-			(at 124.46 85.09 0)
+			(at 82.55 102.87 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,10 +3457,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 88.9 0)
+			(at 97.79 106.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4345,10 +3468,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 88.9 0)
+			(at 97.79 106.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4356,10 +3479,10 @@
 			)
 		)
 		(property "Description" "A CMRInet node: a driver on the CMRInet line, addressed by its UA, providing the IOBus its bits sit on; declares NodeType (C, M, N) and its IB/OB byte arrays, checked against the bits in use (ADR 0009 §3.5)."
-			(at 139.7 93.98 0)
+			(at 97.79 111.76 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,10 +3490,10 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 128.397 93.218 0)
+			(at 86.487 110.998 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4378,10 +3501,10 @@
 			)
 		)
 		(property "IC" "CMRI"
-			(at 135.255 83.82 0)
+			(at 93.345 101.6 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4389,7 +3512,7 @@
 			)
 		)
 		(property "Transport" ""
-			(at 136.144 88.9 0)
+			(at 94.234 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4400,10 +3523,10 @@
 			)
 		)
 		(property "NodeType" "C"
-			(at 133.35 78.74 0)
+			(at 91.44 96.52 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4411,10 +3534,10 @@
 			)
 		)
 		(property "Address" "1"
-			(at 135.89 90.17 0)
+			(at 93.98 107.95 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +3545,7 @@
 			)
 		)
 		(property "InputBytes" "1"
-			(at 144.78 90.043 0)
+			(at 102.87 107.823 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4432,7 +3555,7 @@
 			)
 		)
 		(property "OutputBytes" "0"
-			(at 151.13 90.043 0)
+			(at 109.22 107.823 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4442,10 +3565,10 @@
 			)
 		)
 		(property "Kind" "NODE"
-			(at 139.7 88.9 0)
+			(at 97.79 106.68 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4469,7 +3592,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Office:PanelColumn")
-		(at 63.5 254 0)
+		(at 214.63 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4479,10 +3602,10 @@
 		(dnp no)
 		(uuid "49c67b9f-dd35-5f95-bbca-d2fe37d9c58d")
 		(property "Reference" "COL201"
-			(at 58.42 276.86 0)
+			(at 209.55 153.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4490,7 +3613,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 64.77 290.83 0)
+			(at 215.9 167.64 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4501,10 +3624,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 254 0)
+			(at 214.63 130.81 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4512,10 +3635,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 254 0)
+			(at 214.63 130.81 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,10 +3646,10 @@
 			)
 		)
 		(property "Description" ""
-			(at 63.5 254 0)
+			(at 214.63 130.81 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4534,10 +3657,10 @@
 			)
 		)
 		(property "Role" "COLUMN"
-			(at 64.135 278.765 0)
+			(at 215.265 155.575 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4545,10 +3668,10 @@
 			)
 		)
 		(property "Column" "${VALUE}"
-			(at 66.04 276.86 0)
+			(at 217.17 153.67 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4556,7 +3679,7 @@
 			)
 		)
 		(property "CP Name" "Track Circuit"
-			(at 64.135 288.29 0)
+			(at 215.265 165.1 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -4599,8 +3722,412 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-HardwareIO:Driver-CMRInet-IB")
+		(at 44.45 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4b719168-27e4-544b-84b0-c0597d3a02b1")
+		(property "Reference" "CMRI201"
+			(at 45.593 105.918 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "IN.${Bit}"
+			(at 45.339 103.124 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CMRInet digital input: one bit of the IB array of the CMRInet node whose IOBus it sits on. Bit = the bit number; Node = the node's UA, only when a sheet holds two nodes (ADR 0009)."
+			(at 55.753 110.871 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "IODRIVER"
+			(at 51.9552 105.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "IC" "CMRI"
+			(at 51.9552 105.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.D" "binary"
+			(at 51.943 104.902 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Bit" "1"
+			(at 44.45 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Node" ""
+			(at 44.45 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IB"
+			(at 44.45 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88b75706-ff7f-5571-9bf0-ad3722fd5a47")
+		)
+		(pin "2"
+			(uuid "be777ff8-7568-5521-9615-c798adc4fa9d")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "CMRI201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
+		(at 34.29 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6b0af67d-a9bd-575f-bbfb-7642b4dfb4ea")
+		(property "Reference" "DevTC201"
+			(at 28.4548 105.9524 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "1T"
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 30.7462 105.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 34.29 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "hold_ms" "1500"
+			(at 23.876 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0794)
+				)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at 30.7462 105.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.OCC" "binary"
+			(at 30.7462 105.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "423ae104-377a-53e5-8fdf-9b1765db19e3")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "DevTC201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
+		(at 55.88 53.34 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d940884-d8f0-58c3-a85a-1f009b109b4c")
+		(property "Reference" "B201"
+			(at 55.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 55.88 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Track Circuit"
+			(at 53.975 51.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f32712e1-9bb3-5bbf-9c5c-33c5e58db41e")
+		)
+		(pin "2"
+			(uuid "4d96bbaa-cc16-542b-82f7-c508961894e7")
+		)
+		(pin "3"
+			(uuid "c0390a2c-82c7-58c2-beaa-f3be60d1cb35")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "B201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MAX7313-SPCoastcTc")
-		(at 83.82 228.6 0)
+		(at 234.95 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4610,10 +4137,10 @@
 		(dnp no)
 		(uuid "725ba436-3c7d-5790-8f2b-91d37266c1a6")
 		(property "Reference" "I2C201"
-			(at 76.2 179.07 0)
+			(at 227.33 55.88 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +4148,7 @@
 			)
 		)
 		(property "Value" "${Address}"
-			(at 88.265 179.07 0)
+			(at 239.395 55.88 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4632,10 +4159,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.82 228.6 0)
+			(at 234.95 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4643,10 +4170,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 228.6 0)
+			(at 234.95 105.41 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4654,10 +4181,10 @@
 			)
 		)
 		(property "Description" "One physical IO expander instance bound to a PanelColumn. Address is 0x10 to 0x4F"
-			(at 97.155 173.99 0)
+			(at 248.285 50.8 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,10 +4192,10 @@
 			)
 		)
 		(property "Role" "IODRIVER"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4203,7 @@
 			)
 		)
 		(property "Address" "0x20"
-			(at 85.3881 268.5209 0)
+			(at 236.5181 145.3309 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4686,10 +4213,10 @@
 			)
 		)
 		(property "IC" "MAX7313"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,10 +4224,10 @@
 			)
 		)
 		(property "Pin.A1" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4708,10 +4235,10 @@
 			)
 		)
 		(property "Pin.A2" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,10 +4246,10 @@
 			)
 		)
 		(property "Pin.A3" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4730,10 +4257,10 @@
 			)
 		)
 		(property "Pin.A4" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4741,10 +4268,10 @@
 			)
 		)
 		(property "Pin.A5" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4752,10 +4279,10 @@
 			)
 		)
 		(property "Pin.A6" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4763,10 +4290,10 @@
 			)
 		)
 		(property "Pin.A7" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4774,10 +4301,10 @@
 			)
 		)
 		(property "Pin.A8" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4785,10 +4312,10 @@
 			)
 		)
 		(property "Pin.B1" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,10 +4323,10 @@
 			)
 		)
 		(property "Pin.B2" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4807,10 +4334,10 @@
 			)
 		)
 		(property "Pin.B3" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4818,10 +4345,10 @@
 			)
 		)
 		(property "Pin.B4" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4829,10 +4356,10 @@
 			)
 		)
 		(property "Pin.B5" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4840,10 +4367,10 @@
 			)
 		)
 		(property "Pin.B6" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4851,10 +4378,10 @@
 			)
 		)
 		(property "Pin.B7" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4862,10 +4389,10 @@
 			)
 		)
 		(property "Pin.B8" "binary"
-			(at 82.55 263.525 0)
+			(at 233.68 140.335 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4933,8 +4460,247 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Trackplan:House")
+		(at 72.39 38.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "77363a3a-b5ba-55c6-a556-4d074ab8b608")
+		(property "Reference" "HOUSE201"
+			(at 71.501 42.418 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${CP Name}"
+			(at 72.39 43.815 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "The Control Point Maintainer Bungalow (plus optional Maintainer Call)"
+			(at 72.39 43.815 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Milepost" "0.0"
+			(at 72.39 43.815 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 57.15 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "CONTROL_POINT"
+			(at 59.055 37.592 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Track Circuit"
+			(at 72.39 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1deb0829-3f66-58d1-b4b3-ef2e829e2cde")
+		)
+		(pin "2"
+			(uuid "14f0ecc2-7e9b-5d47-a858-1ef0b07a8341")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "HOUSE201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:Interlocking")
+		(at 39.37 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ab4cacbf-62d7-5ccf-a27e-98f11afc8e31")
+		(property "Reference" "Plant201"
+			(at 25.146 25.908 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "${TITLE}"
+			(at 38.1 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 39.37 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "STRUCTURE"
+			(at 28.067 19.558 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "INTERLOCKING"
+			(at 29.464 21.209 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 35.56 29.21 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "411ead39-4124-59d1-8b76-113020bbed70")
+		)
+		(pin "2"
+			(uuid "10335a60-dc77-5e60-b139-d76fde05c0e3")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "Plant201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:ModelLamp-YELLOW")
-		(at 63.5 187.96 0)
+		(at 214.63 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4944,10 +4710,10 @@
 		(dnp no)
 		(uuid "b638cea4-ac59-5682-a688-edb5e7c7aab2")
 		(property "Reference" "LAMP201"
-			(at 59.055 193.675 0)
+			(at 210.185 70.485 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4955,7 +4721,7 @@
 			)
 		)
 		(property "Value" "TRACK"
-			(at 67.437 188.468 0)
+			(at 218.567 65.278 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -4965,10 +4731,10 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 187.96 0)
+			(at 214.63 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4976,10 +4742,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 187.96 0)
+			(at 214.63 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4987,10 +4753,10 @@
 			)
 		)
 		(property "Description" "One physical model board lamp."
-			(at 63.5 195.58 0)
+			(at 214.63 72.39 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4998,10 +4764,10 @@
 			)
 		)
 		(property "Color" "yellow"
-			(at 63.5 194.31 0)
+			(at 214.63 71.12 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -5009,7 +4775,7 @@
 			)
 		)
 		(property "Indication" "1TK"
-			(at 61.595 187.96 0)
+			(at 212.725 64.77 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5020,10 +4786,10 @@
 			)
 		)
 		(property "Role" "PANEL"
-			(at 63.5 185.42 0)
+			(at 214.63 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5031,10 +4797,10 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 63.5 187.96 0)
+			(at 214.63 64.77 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5042,10 +4808,10 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 63.5 185.42 0)
+			(at 214.63 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5053,10 +4819,10 @@
 			)
 		)
 		(property "Style" "board"
-			(at 63.5 185.42 0)
+			(at 214.63 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5064,10 +4830,10 @@
 			)
 		)
 		(property "Pin.LAMP" "binary"
-			(at 63.5 185.42 0)
+			(at 214.63 62.23 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
-			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5086,5 +4852,254 @@
 			)
 		)
 	)
-	(embedded_fonts no)
+	(symbol
+		(lib_id "Railroad-Trackplan:Track Circuit")
+		(at 72.39 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfaab378-7b82-508f-9b30-3fb03f364913")
+		(property "Reference" "TC201"
+			(at 72.39 48.895 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1T"
+			(at 72.39 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 72.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 72.39 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Track Circuit"
+			(at 72.39 55.245 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 72.39 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 72.39 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at 72.39 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Name}K"
+			(at 73.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4de63814-7b59-519b-a25a-1a8e1c847bb3")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "TC201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:IRJ-Signal")
+		(at 91.44 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f54d5db7-f238-5713-9b8c-c9e00d59fc1a")
+		(property "Reference" "B202"
+			(at 91.44 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 91.44 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Insulated Rail Joint with Signal"
+			(at 91.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" "Track Circuit"
+			(at 89.535 51.435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 91.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "IRJ_SIGNAL"
+			(at 91.44 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "281cfd3a-7e7d-572e-95fc-a3ad7e9a4deb")
+		)
+		(pin "2"
+			(uuid "ad93db66-c1a0-5656-80f0-ada2d22b127d")
+		)
+		(pin "3"
+			(uuid "77feb76d-ebc2-5f9e-9f74-fb7c76ece566")
+		)
+		(instances
+			(project "Examples"
+				(path "/765945ae-dc90-54b0-818a-a284b85464fc/c113498e-260b-54f4-b797-65ca0b232926"
+					(reference "B202")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
