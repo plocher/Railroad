@@ -1,0 +1,308 @@
+<!-- The hand-written text of the Railroad symbols manual.
+
+Each fragment is HTML between an opening marker and its END marker. A GROUP marker holds the group's
+title and the selector that says which symbols belong to it; `a or b` is either value. The page order is
+the order of this file. Text outside the markers is not read.
+
+Generate the page (FieldUnit-Subdivision):  uv run python tools/contract/symbol_manual.py
+The page is symbols/production/manual/index.html. To keep prose edited in the page:
+                                            uv run python tools/contract/symbol_manual.py --harvest
+-->
+
+<!-- ABOUT -->
+<p>This manual says how to place the symbols of the six hand-maintained libraries in this folder.
+A symbol's Description says what the symbol is. This manual says how to use it.
+Symbols are grouped by pattern: Role, then Appliance or Kind, then the pin set.
+Every symbol appears once, as <code>Library:Symbol</code> with its Description as it stands in the file.</p>
+<h2>Terms</h2>
+<ul>
+<li><strong>Signal indication.</strong> The meaning of an aspect, as the rulebook states it. Examples: Stop, Restricting, Clear. This manual says "indication".</li>
+<li><strong>Aspect.</strong> The appearance of a signal: the colours, positions and flashing of all its heads together. A head alone does not show an aspect.</li>
+<li><strong>Head.</strong> One unit of lamps on a mast. It shows one part of an aspect. <strong>Mast.</strong> The structure that carries one or more heads.</li>
+<li><strong>Control point.</strong> A named place where a dispatcher or operator controls train movements by controlled absolute signals.</li>
+<li><strong>Track circuit.</strong> The section of track that one track relay detects, between insulated joints.</li>
+<li><strong>Code line.</strong> The communication path between the CTC machine and the field units. It carries controls to the field and office indications to the office.</li>
+<li><strong>Control.</strong> A function sent from the office to the field (<code>783NWS</code>). <strong>Office indication.</strong> A function sent from the field to the office (<code>783NWK</code>).</li>
+</ul>
+<h2>Fields and pins common to every symbol</h2>
+<ul>
+<li><strong>Role.</strong> The class of the symbol. The tools read Role, never the symbol name. A symbol with no Role is a drawing only.</li>
+<li><strong>Name.</strong> The identity of a named symbol. Its default is <code>${Value}</code>. Set Value; Name follows. Value itself is never read.</li>
+<li><strong>Kind.</strong> The sub-class, where Role alone does not say what the symbol is. Fixed by the symbol, except on a mast.</li>
+<li><strong>Appliance.</strong> What an APPLIANCE, DEVICE or PANEL symbol is: switch, track_circuit, mast, head, lamp, contact, lever, train_order. Fixed.</li>
+<li><strong>Style.</strong> The variant inside an Appliance. Fixed by the symbol.</li>
+<li><strong>CP Name.</strong> The control point the symbol belongs to. Empty means the sheet's interlocking.</li>
+<li><strong>Pin.&lt;pin&gt;.</strong> The kind of value a function pin carries: binary, level, position, color, indication, message. Fixed.</li>
+<li><strong>Settings.</strong> Every other field in lower_snake_case, for example <code>settle_ms</code>. Set them per placement; empty means the default.</li>
+<li><strong>Invert.</strong> Names this symbol's pins whose sense is inverted. Fixed.</li>
+<li>A pin named <code>~{X}</code> is asserted low. A pin's electrical type is its direction: input, output or bidirectional.</li>
+<li>Membership pins join a net and carry no value: <code>Column</code>, <code>IOBus</code>, <code>Processor</code>, <code>Transport</code>, <code>Codeline</code>, <code>MC</code>, <code>CHAIN</code>.</li>
+<li>A device pin that meets a driver pin is an input of the device. Connections are read from the netlist, never from coordinates.</li>
+</ul>
+<h2>Trackplan symbols</h2>
+<p>One interlocking's trackplan is one sheet. Role decides what is on it: TRACK, POLICY, APPLIANCE and the House.</p>
+<h2>Office symbols</h2>
+<p>The office sheet holds the CTC machine, its columns and plates, the transports and the encodings that ride them.</p>
+<h2>Field symbols</h2>
+<p>A field sheet holds the devices of one interlocking: the hardware that acts on and senses its appliances, and the drivers that own the pins.
+A device is matched to its trackplan appliance by Name. Set Value to the appliance's name.
+Each unit of a device has one capability: one pin kind and one direction. Units are not interchangeable.</p>
+<h2>Hardware I/O symbols</h2>
+<p>A driver owns pins. It sits on an IOBus and hands its pins to devices, encoders and plates. IC names the chip or the encoding. <code>Pin.&lt;pin&gt;</code> states each pin's kind.
+Wire IOBus to the Processor's IOBus, or to a CMRInet node's IOBus. The devices on a driver's pins run on that processor.</p>
+<!-- END ABOUT -->
+
+<!-- GROUP: Track joints, ends and anchors | library=Railroad-Trackplan, Role=TRACK -->
+<p>A joint bounds a track circuit; an end closes the drawn track; an anchor states a fact about the point it sits on.
+Pins A and B are the two sides of a joint; wire track to each. EoT is the one track pin of an end. To is the track pin of an anchor.</p>
+<ul>
+<li><code>IRJ</code> and <code>IRJ_Diag</code> (Kind IRJ) differ in glyph only; <code>IRJ_Diag</code> is drawn on a diagonal.</li>
+<li><code>IRJ-Signal</code> has pin SIGNAL; <code>IRJ-Signals</code> has SIGNAL_A and SIGNAL_B. Wire a mast's SIGNAL pin to one. Set CP Name to the mast's control point.</li>
+<li><code>IRJ-END_CTC</code> has pins CTC (1) and DARK (2). CTC faces the controlled trackage, DARK the track beyond. The glyph draws a three-sided box around the end of the controlled track.</li>
+<li><code>Bumper</code> (Kind BUMPER) has no setting. <code>Industry</code> (Kind INDUSTRY): set Value to its name.</li>
+<li><code>Milepost</code> has no pin. Set Value to the milepost.</li>
+<li><code>NextCP</code> (Kind NEXT_CP): wire To to the track that leaves the interlocking. Set Value to the next interlocking's name; the Interlocking field follows. <code>Not Modeled</code> (Style off_layout) says the next interlocking is not drawn anywhere.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Operating rules | library=Railroad-Trackplan, Role=POLICY -->
+<p>A policy symbol states the rule that governs a track. Kind is the rule number. Direction is fixed: LEFT, RIGHT or BOTH.
+Place one per governed track. Wire pin To (Rule 261: Track) to the governed track net.</p>
+<ul>
+<li>The two plates (Kind RULE_290_G, RULE_290_R) have no Direction. Their pin To is wired to the same <code>IRJ-Signal</code> pin as the mast they modify.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Structures | tab=Railroad-Trackplan, Role=STRUCTURE -->
+<p>A structure declares a named thing that owns or contains others. Kind says which. Set Value to its name.</p>
+<ul>
+<li><code>Interlocking</code> (Kind INTERLOCKING): one per trackplan sheet (Luchessa). Wire Codeline to the code line and Processor to the processor that runs the logic.</li>
+<li><code>House</code> (Kind CONTROL_POINT): one per control point. Set CP Name (CP Luchessa) and Milepost. Wire Codeline to the code line and MC to the MaintainerCall.</li>
+<li><code>Station</code> (Kind STATION): set Milepost. No pin. <code>Railroad</code> (Kind RAILROAD): one per project; set Era, Railroad, Region, Rulebook. No pin.</li>
+<li><code>Processor</code> (Kind PROCESSOR): one per processor; set Board. Pin Processor is the net its units attach to; pin IOBus is the bus its drivers sit on.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Switches and derails | library=Railroad-Trackplan, Appliance=switch -->
+<p>A switch appliance is a point in the track, named for the dispatcher. Place one per switch or derail.
+Style says what it is: powered, manual, manual_sensed, lock, dual, derail.</p>
+<ul>
+<li>Set Value to the switch name (783). A lock shares its name with its switch. A dependent derail is named <code>&lt;switch&gt;D</code> (795D).</li>
+<li>Pins C, N, R are track: C the point end, N the normal leg, R the reverse leg. A derail has C and R only; R is the through pin.</li>
+<li>TC names the switch's OS track circuit; its default is <code>&lt;Value&gt;T1</code>. Set it when the circuit has another name. Indication is <code>&lt;TC&gt;K</code>, fixed.</li>
+<li>IndicationCeiling is empty by default: the route derivation sets each route's ceiling from its context. Filled, it overrides that with two indication words, NORMAL/REVERSE: a route through this switch in that position never shows better than the word.</li>
+</ul>
+<ul>
+<li><code>Switch_Powered</code>, <code>_Diag</code> and <code>_Small</code> have the same fields; the glyphs differ. <code>_NO_TC</code>, <code>Switch_Manual</code>, <code>Switch_Manual_Sensed</code> and <code>Derail</code> have no OS circuit: TC and Indication are empty.</li>
+<li>A derail has IndicationCeiling STOP/RESTRICTING: NORMAL is derailing. A manual switch has no library value; the route derivation's rule for hand-operated switches applies.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Track circuits | library=Railroad-Trackplan, Appliance=track_circuit -->
+<p>A track circuit marker names the circuit of the track net it sits on. Place one per circuit.
+Set Value to the circuit name (1NA). Indication is <code>&lt;Name&gt;K</code>, fixed.</p>
+<ul>
+<li><code>Track Circuit</code>, <code>_RED</code> and <code>_Yellow</code> have pin TC; wire it to the track net. They differ in drawn colour only.</li>
+<li><code>IR Boundary</code> (Style boundary) has pins A and B, one per side of the boundary. The pins imply no direction.</li>
+<li><code>_Virtual</code> (Style virtual) has no pin. Set Members to a comma-separated list of circuit names. Display shows them.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Masts drawn with trackplan heads | library=Railroad-Trackplan, Appliance=mast or head -->
+<p>These masts carry their heads as trackplan symbols. Place one mast and one Signal Head per head pin.
+Mast: set Value to the mast name (784EAB). Kind is fixed per symbol: CONTROLLED, ABSOLUTE or PERMISSIVE. Wire SIGNAL to an IRJ-Signal or IRJ-Signals SIGNAL pin. Wire each head pin (H, H1, H2) to a Signal Head's pin M.
+Head: set Value to the head letter (A). Style is fixed: CL, CPL, LQ, UQ. The head device on the field sheet must have the same Style.</p>
+<!-- END GROUP -->
+
+<!-- GROUP: Masts with derived indications | library=Railroad-Trackplan-Signals, Appliance=mast -->
+<p>These masts carry no head symbols; the head glyphs are picture. The heads are field devices on a field mast device of the same Name.
+Place one per signal. Set Value to the mast name. Kind is fixed per symbol. Wire SIGNAL to an IRJ-Signal or IRJ-Signals.
+Leave Indications empty: the indications the mast must show are derived. Fill it only with an explicit comma-separated list of indication names; the list replaces the derived set.</p>
+<ul>
+<li>Style is single, double, triple, dwarf, dwarf_double or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.</li>
+<li><code>Stop</code> is ABSOLUTE with Indications fixed to <code>Stop</code>.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Train order signal | library=Railroad-Trackplan, Appliance=train_order -->
+<ul>
+<li>Set Value to the signal name and Station to a station in the same interlocking: an operating requirement associates train orders with that station. The board has one or two faces, N/W and S/E, by direction of traffic. The faces, their heads and the fascia controls are field devices (<code>Device-TrainOrder</code>, one unit per face, pins STOP, SLOW, CALLON in and IND out; nothing asserted shows CLEAR, the most restrictive asserted input wins). Pin H is retired with the trackplan heads.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Non-vital lamps and contacts | library=Railroad-Trackplan, Appliance=lamp or contact -->
+<p>These appliances have one pin, MC. They are the office's view of a non-vital input or output at a control point.</p>
+<ul>
+<li><code>AUXILIARY</code> (Appliance lamp): a generic lamp for an appliance. Some, like a switch heater, attach to track; others, like a hotbox alarm, do not and carry a milepost. Set Value to its name. Indication is <code>&lt;Name&gt;K</code>, fixed. Its one pin (to be renamed TRACK; it is MC today by copy) is optional: wired to a track net, the appliance belongs to that circuit; wired to anything else is an import error; unwired, Milepost and CP Name place it.</li>
+<li><code>Contact</code> (Appliance contact): the lever counterpart of AUXILIARY, a generic input or sensor. Set Value to its name and Style to its consumer. Its one pin follows the AUXILIARY rule above.</li>
+<li><code>MaintainerCall</code> (Appliance lamp, Style maintainer_call): set Value to the control point's name; Name is <code>&lt;Value&gt;MC</code>. Wire MC to the House's MC pin.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: The machine and its columns | library=Railroad-Office, Role=OFFICE_UNIT or COLUMN -->
+<ul>
+<li><code>OfficeUnit</code>: place one. Set Value to the machine's name. Style is US&amp;S. Wire Processor to the processor that runs the office logic.</li>
+<li><code>PanelColumn</code>: one per desk column. Set Value to the column number; the Column field follows. Set CP Name to the control point the column serves. Wire each plate of the column to one of its eight Column pins.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Lever plates | library=Railroad-Office, Role=PANEL, Appliance=lever -->
+<p>A plate is a device of the CTC machine in one column. Place one per lever or button on the desk.
+Set Value to the name of the field appliance it serves (783). Wire Column to the PanelColumn.
+Function pins are binary. An output pin is a lever contact; wire it to a driver input. An input pin is a lamp; wire it to a driver output.
+<code>Control.&lt;pin&gt;</code> names the control a contact sends; <code>Indication.&lt;pin&gt;</code> names the office indication a lamp shows. Both are fixed; an empty one is a deliberate none.
+A plate with lamps and contacts has two units: unit 1 contacts, unit 2 lamps. The units are not interchangeable.</p>
+<ul>
+<li><code>PanelSwitch</code> (Style switch): contacts NWS, RWS; lamps NWK, RWK. <code>PanelSignal</code> (Style signal): contacts NGS, HS, SGS; lamps NGK, SGK, TEK.</li>
+<li><code>PanelLock</code> (Style lock): contacts WLS, UNUSED; lamps WLQK, WLK. Indication.WLK is <code>!&lt;Value&gt;WLK</code>.</li>
+<li><code>PanelMCall</code> (Style maintainer_call): contact MCS; lamp MCK. Set Value to the control point's name; Name is <code>&lt;Value&gt;MC</code>.</li>
+<li><code>PanelCode</code> (Style code): contact CODE; Control.CODE is empty. <code>PanelAuxiliary</code> (Style non_vital): contact S; Control.S is <code>&lt;Value&gt;S</code>.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Model board lamps | library=Railroad-Office, Role=PANEL, Appliance=lamp -->
+<p>A model board lamp sits on the board, in no column, so it has no Column pin. Place one per lamp.
+Set Value to the lamp's name. Set Indication to the boolean expression of office indications that lights it. Color is fixed.
+Pin ~{LAMP} is a binary input; wire it to a driver output.</p>
+<!-- END GROUP -->
+
+<!-- GROUP: Transports | library=Railroad-Office, Role=TRANSPORT -->
+<p>A transport is a mechanism: a broker, a serial port, a pulse line. Place one per line. Set Value to its name. Kind is fixed.
+Wire Processor to the processor that drives the line. Pin Transport is the net the encodings and nodes on this line attach to.</p>
+<ul>
+<li><code>MQTT</code> (Kind MQTT): set Broker. <code>CMRInet</code> (Kind CMRI): set Port and Baud. <code>LocoNet</code> (Kind LOCONET): set Port. <code>TimeCode</code> (Kind TIMECODE): no setting.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Code line encodings | library=Railroad-Office, Role=CODELINE_ENCODING -->
+<p>A code line encoding rides a transport and provides a code line. Place one per code line. Set Value to the code line's name.
+Wire Transport to the transport. Pin Codeline is the code line: wire every Interlocking and House on it to it.</p>
+<ul>
+<li><code>AAR</code> (Kind AAR): Topic is the MQTT topic root; <code>&lt;STRUCTURE:RAILROAD:Name&gt;</code> in it takes the Railroad symbol's Name.</li>
+<li>Chart names the encoding chart for the item: its encoding map and serializer rules. <code>US&amp;S-506</code> (Kind USS506) and <code>Bits</code> (Kind BITS) both carry it; <code>Bits</code> also takes ControlBytes and IndicationBytes.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: I/O encodings | library=Railroad-Office, Role=IO_ENCODING -->
+<p>An I/O encoding states what rides a transport. It provides no net. Place one per transport that carries remote I/O. Set Value to its name. Wire Transport to the transport.</p>
+<ul>
+<li><code>JMRI</code> (Kind JMRI): Topic is the JMRI channel root. <code>CMRInet</code> (Kind CMRI): Version is the protocol version.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Switch machines and locks | library=Railroad-Field, Role=DEVICE, Appliance=switch -->
+<p>Place one per powered or sensed switch. Style lists the trackplan switch styles the device serves.
+Pin M is the binary demand: asserted means REVERSE; wire it to a driver output. ~{N} and ~{R} are the point contacts; wire them to driver inputs.</p>
+<ul>
+<li><code>Device-Switch-OS</code> adds unit 3, ~{OCC}: the OS circuit's occupancy; wire it to a driver input.</li>
+<li><code>Device-Switch-ManualSensed</code> (Style manual_sensed) has contacts only: ~{N}, ~{R}.</li>
+<li><code>Device-Lock</code> (Style lock, dual): UNLOCK is the demand; ~{LOCKED} the sense. Set settle_ms when the sense is not wired.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Track circuit detectors | library=Railroad-Field, Role=DEVICE, Appliance=track_circuit -->
+<p>Place one per detected track circuit. Set Value to the circuit name. Pin ~{OCC} is the binary occupancy; wire it to a driver input.</p>
+<ul>
+<li><code>Optical</code> has hold_ms (default 1500): how long occupancy holds after the sensor clears.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Lamps and contacts | library=Railroad-Field, Role=DEVICE, Appliance=lamp or contact -->
+<ul>
+<li><code>Device-Lamp</code>: set Value to the lamp's name. Pin ~{LAMP} is a binary input; wire it to a driver output. Set Address only on a pixel bus.</li>
+<li><code>Device-Contact</code>: set Value to the Contact appliance's name. Pin ~{IN} is a binary output; wire it to a driver input.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Local plates | library=Railroad-Field, Role=DEVICE, Appliance=lever -->
+<p>A local plate is a lever or key at the location, not in the CTC machine, so it has no Column pin.
+Set Value to the switch's name. Output pins are contacts; wire them to driver inputs. Input pins are lamps; wire them to driver outputs.</p>
+<ul>
+<li><code>Local-Switch</code> (Style switch): contacts NWS, RWS; lamps NWK, RWK. <code>Local-Lock</code> (Style lock): contact WLQ; lamps WLQK, WLK; Invert is WLK.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Whole-mast device | library=Railroad-Field, Role=DEVICE, Appliance=mast -->
+<p>A whole-mast device hands the mast's indication to a driver that takes a whole mast, or to head devices of the older shape.
+Place one per mast of the trackplan-heads group. Set Value to the mast's name (836NAB).
+Pin IND is an indication output. Wire it to a Driver-JMRI-SignalMast IND, or to the IND of each head device of the older shape.</p>
+<!-- END GROUP -->
+
+<!-- GROUP: Head devices of the older shape | library=Railroad-Field, Role=DEVICE, Appliance=head -->
+<p>A head device of this shape makes its own lamps or arm. Place one per head of a mast of the trackplan-heads group.
+Set Value to the mast name plus the head letter (784A). The last letter of Name is the head letter. Style is fixed and must match the trackplan head's Style.
+Pin IND is the indication input; wire it to the whole-mast device's IND. Every other pin is a hardware input of one kind; wire each to a driver output.</p>
+<ul>
+<li><code>CPL</code>: binary ~{R}, ~{Y}, ~{G}. <code>CPL-Encoded</code>: binary S0, S1, the select code. <code>CPL-Pixel</code>: color ~{R}, ~{Y}, ~{G}, one pixel each.</li>
+<li><code>CL-RGB</code>: binary ~{R}, ~{G}, ~{B}. <code>CL-Pixel</code>: color RGB, one pixel; set Address to its index on the chain.</li>
+<li><code>Semaphore-UQ</code>, <code>-LQ</code>: position ARM; set stop_deg, approach_deg, clear_deg.</li>
+<li>The Head field is tolerated, not required. The head letter is read from Name.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Field mast devices | library=Railroad-Field-Signals, Role=DEVICE, Appliance=mast -->
+<p>A field mast device binds a mast of the derived-indications group to its heads. Place one per such mast.
+Set Value to the trackplan mast's name (246AB). It has no Style, Kind or Indications: the pin set states the head count.
+Pins A, B, C are indication outputs, one per head position, top down. Wire each to one anonymous head's IND.</p>
+<!-- END GROUP -->
+
+<!-- GROUP: Anonymous heads | library=Railroad-Field-Signals, Role=DEVICE, Appliance=head -->
+<p>An anonymous head is one head of a given model at one position on a field mast. Place one per head position.
+It has no Name. The mast pin its IND is wired to identifies it: the mast's Name plus the letter A, B or C. Value shows Style and is never read.
+Style is the manufacturer model, fixed by the symbol. The symbol has no setting.
+Pin IND is the indication input; wire it to one pin of the field mast device. Pin APP is the indication output, the head word; wire it to the APP of one or more encoders.</p>
+<!-- END GROUP -->
+
+<!-- GROUP: Encoders | library=Railroad-Field-Signals, Role=ENCODER -->
+<p>An encoder turns a head word into hardware: lamps, a select code, pixels or a servo arm. Place one per head, or two when a semaphore has a lamp behind its blade.
+It has no Name and no Appliance. The head it serves identifies it. Value shows Kind and is never read. Kind is fixed and names the hardware.
+Pin APP is the one indication input; wire it to the head's APP. Every hardware-side pin is an input of kind binary or position; wire each to a driver output.
+CHAIN is an attachment to a pixel chain; wire it to a Driver-GPIO-Pixel D.</p>
+<ul>
+<li><code>RYG</code> (Kind RYG): binary ~{R}, ~{Y}, ~{G}. <code>RGB</code> (Kind RGB): binary ~{R}, ~{G}, ~{B}. <code>3MUX2A</code> (Kind 3MUX2A): binary S0, S1, the select code.</li>
+<li><code>Lamp</code> (Kind LAMP): binary ~{LAMP}, lit for every head word except DARK.</li>
+<li><code>Pixel-RYG</code> (Kind PIXEL_RYG): CHAIN; set Address.R, Address.Y, Address.G to each lamp's pixel index. <code>Pixel-RGB</code> (Kind PIXEL_RGB): CHAIN; set Address to the pixel index.</li>
+<li><code>Servo</code> (Kind SERVO): position ARM; set stop_deg, approach_deg, clear_deg.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: I2C chips | library=Railroad-HardwareIO, Role=IODRIVER, pin=A1 -->
+<p>Place one per chip. Set Address to the chip's I2C address. The sixteen pins are in four units of four; the symbol fixes their kind.</p>
+<ul>
+<li><code>MAX7311</code>, <code>MAX7313</code>, <code>MCP23017</code>: binary, bidirectional pins; the device that lands on a pin sets its direction.</li>
+<li><code>MAX7313-SPCoastcTc</code>: one unit with each pin's direction fixed to the desk column's wiring. Wire the column's plates to it.</li>
+<li><code>PCA9685-PWM</code> (IC PCA9685): level outputs; set frequency_hz; wire lamps to it. <code>PCA9685-Servo</code>: position outputs; set min_us and max_us; wire ARM pins to it.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Processor pins | library=Railroad-HardwareIO, Role=IODRIVER, IC=GPIO -->
+<p>Place one per processor pin in use. Set Address to the board core's pin name. Pin D is the one function pin.</p>
+<ul>
+<li><code>Digital</code>: D is binary, bidirectional. <code>Pixel</code>: D is color, the chain; wire pixel encoders' CHAIN pins and older heads' pixel pins to it.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: CMRInet node and bits | library=Railroad-HardwareIO, Role=IODRIVER, IC=CMRI -->
+<p>A node is a driver on a CMRInet line that provides the IOBus its bits sit on. A bit is one input or output of that node.
+Place one node per CMRInet node and one bit symbol per bit in use.</p>
+<ul>
+<li><code>Node</code> (Kind NODE): set Address to the UA, NodeType to C, M or N, InputBytes and OutputBytes. Wire pin Transport to the CMRInet transport; the importer reads that wire. Pin IOBus is the bus for its bits.</li>
+<li><code>IB</code> (Kind IB): D is a binary input to the node; wire a device output to it. <code>OB</code> (Kind OB): D is a binary output; wire a device input to it. Set Bit; set Node only when the sheet holds two nodes.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: JMRI objects over MQTT | library=Railroad-HardwareIO, Role=IODRIVER, IC=MQTT-JMRI -->
+<p>A JMRI driver is one JMRI object on an MQTT transport. Kind is the object class. Place one per object.
+Address is the JMRI object name. Leave it empty to name the object after the device the driver serves.</p>
+<ul>
+<li><code>Turnout</code> (Kind TURNOUT): M, binary output; wire a Device-Switch M to it. <code>Turnout-Feedback</code>: ~{N}, ~{R}, binary inputs; wire the switch's contacts to them.</li>
+<li><code>Sensor</code> (Kind SENSOR): S, binary output, the FieldUnit publishes; wire a detector's ~{OCC} to it. <code>Sensor-Feedback</code>: S, binary input, the FieldUnit reads.</li>
+<li><code>Light</code> (Kind LIGHT): ON, binary; INTENSITY, level. <code>SignalMast</code> (Kind SIGNALMAST): IND, indication input; wire a whole-mast device's IND to it.</li>
+</ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Settings on a net | library=Railroad-HardwareIO, Role=SETTING -->
+<ul>
+<li>Place one on a net to give every symbol on the net the same settings. Set Value to a short name. Add one field per setting, in lower_snake_case. Wire its one pin, net, to the net.</li>
+</ul>
+<!-- END GROUP -->
