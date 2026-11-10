@@ -5,7 +5,7 @@
 	(uuid "172d18a3-2622-5294-ac02-e72f3d29a9ae")
 	(paper "USLetter")
 	(title_block
-		(title "Gilroy Interchange")
+		(title "Gilroy")
 		(date "2026.10")
 		(rev "0.2")
 		(company "SPCoast Railroad")
@@ -5184,6 +5184,154 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Trackplan:GCOR Rule 6.28 RestrictedSpeed"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Rule"
+				(at -1.27 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Restricted"
+				(at 0.635 0.635 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 0 0 0 1)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -3.175 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at -3.175 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Movement on Other than Main Track"
+				(at -3.175 -4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "GCOR_RULE_6_28"
+				(at 12.7 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "POLICY"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "GCOR Rule 6.28 RestrictedSpeed_0_1"
+				(rectangle
+					(start -0.635 0)
+					(end 0.635 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+						(color 0 0 255 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GCOR Rule 6.28 RestrictedSpeed_1_1"
+				(text "R"
+					(at 0 -0.635 0)
+					(effects
+						(font
+							(size 0.508 0.508)
+							(color 0 0 255 1)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 180)
+					(length 0)
+					(name "To"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Railroad-Trackplan:House"
 			(pin_numbers
 				(hide yes)
@@ -6371,162 +6519,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Trackplan:Rule105-RestrictedSpeed"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DOT"
-				(at -5.715 0.635 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0.635 0.635 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 0 0 0 1)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -3.175 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
-				(at -3.175 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "RULE_105"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Direction" "BOTH"
-				(at -5.715 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "POLICY"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Rule105-RestrictedSpeed_0_1"
-				(rectangle
-					(start -0.635 0)
-					(end 0.635 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Rule105-RestrictedSpeed_1_1"
-				(text "R"
-					(at 0 -0.635 0)
-					(effects
-						(font
-							(size 0.508 0.508)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 180)
-					(length 0)
-					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Trackplan:Rule251-DoT-Left"
 			(pin_numbers
 				(hide yes)
@@ -6812,183 +6804,6 @@
 					(at 0 -2.54 180)
 					(length 0)
 					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Railroad-Trackplan:Rule261-DoT-BiDirectional"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "DOT"
-				(at -9.525 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Rule 261"
-				(at 0 0.635 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(effects
-					(font
-						(size 0.508 0.508)
-						(color 0 0 0 1)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
-				(at 0 -4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "RULE_261"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Direction" "BOTH"
-				(at -9.525 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "POLICY"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Rule261-DoT-BiDirectional_0_1"
-				(polyline
-					(pts
-						(xy -3.175 -1.27) (xy -3.175 1.27) (xy -6.35 0) (xy -3.175 -1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy -3.175 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 3.175 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 1.27) (xy 3.175 -1.27) (xy 6.35 0) (xy 3.175 1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 0 0 255 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Rule261-DoT-BiDirectional_1_1"
-				(pin passive line
-					(at 0 -2.54 180)
-					(length 0)
-					(name "Track"
 						(effects
 							(font
 								(size 0 0)
@@ -8796,18 +8611,6 @@
 		(uuid "099c6a8d-002f-417b-9476-0b0cf46c70bb")
 	)
 	(junction
-		(at 196.85 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "127426f7-4a2b-436d-9384-848b60b3c7c5")
-	)
-	(junction
-		(at 53.34 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "143ba005-0312-4b57-b475-ecd2b17b2d6f")
-	)
-	(junction
 		(at 78.74 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8872,12 +8675,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7192ea60-f69e-4e88-a0a6-61abf322206c")
-	)
-	(junction
-		(at 149.86 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71fdb2c0-1554-4620-adcb-f97d0acdcd74")
 	)
 	(junction
 		(at 151.13 120.65)
@@ -9266,7 +9063,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 20.32) (xy 59.69 27.94)
+			(xy 59.69 20.32) (xy 59.69 25.4)
 		)
 		(stroke
 			(width 0)
@@ -9286,13 +9083,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 140.97) (xy 149.86 143.51)
+			(xy 46.99 25.4) (xy 59.69 25.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9dbde103-86ed-4a6f-9016-6bcd0f5d1420")
+		(uuid "91b3ca2b-3dc0-4a7a-a9ea-15bf8fb3d394")
 	)
 	(wire
 		(pts
@@ -9406,16 +9203,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 27.94) (xy 59.69 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4f1fb41-b460-4cf9-9b7d-f69bd18554be")
-	)
-	(wire
-		(pts
 			(xy 78.74 120.65) (xy 78.74 125.73)
 		)
 		(stroke
@@ -9526,12 +9313,12 @@
 		(uuid "7f682c51-d6f2-41fc-bbdb-05a772bc11c1")
 	)
 	(label "IOBus"
-		(at 149.86 142.24 180)
+		(at 149.86 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "e91e8af3-36b6-4308-a3e9-c1268f8540bb")
 	)
@@ -9544,6 +9331,17 @@
 			(justify right bottom)
 		)
 		(uuid "f4c70ad9-2777-4bb3-b652-b22057e84eeb")
+	)
+	(hierarchical_label "Codeline"
+		(shape bidirectional)
+		(at 46.99 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bdeeae7-37ea-4d4f-8367-1339f3aff582")
 	)
 	(hierarchical_label "Codeline"
 		(shape bidirectional)
@@ -9577,17 +9375,6 @@
 			(justify left)
 		)
 		(uuid "8688d19a-e183-4e19-bcfa-046f18c76b19")
-	)
-	(hierarchical_label "Codeline"
-		(shape bidirectional)
-		(at 46.99 25.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c88ccf42-c309-43d3-b282-850d56dfce71")
 	)
 	(symbol
 		(lib_id "Railroad-Field:Local-TrainOrder")
@@ -12374,7 +12161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Rule105-RestrictedSpeed")
+		(lib_id "Railroad-Trackplan:GCOR Rule 6.28 RestrictedSpeed")
 		(at 120.65 63.5 180)
 		(unit 1)
 		(body_style 1)
@@ -12395,8 +12182,9 @@
 				)
 			)
 		)
-		(property "Value" "Restricted Speed"
+		(property "Value" "Restricted"
 			(at 120.015 64.135 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -12428,7 +12216,7 @@
 				)
 			)
 		)
-		(property "Description" "Restricted speed: Standard Code Rule 105, GCOR 6.28: Movement on Other Than Main Track. This is the foundational rule governing most industrial tracks. It mandates that trains or engines must move at a speed that allows them to stop within half the range of vision short of a train, engine, car, stop signal, derail, or switch improperly lined. It also requires crew members to look out for track obstructions"
+		(property "Description" "Movement on Other than Main Track"
 			(at 123.825 59.055 0)
 			(hide yes)
 			(show_name no)
@@ -12439,8 +12227,8 @@
 				)
 			)
 		)
-		(property "Kind" "RULE_105"
-			(at 120.65 60.96 0)
+		(property "Kind" "GCOR_RULE_6_28"
+			(at 107.95 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12462,7 +12250,7 @@
 			)
 		)
 		(property "Role" "POLICY"
-			(at 120.65 63.5 0)
+			(at 120.65 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18476,118 +18264,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Rule261-DoT-BiDirectional")
-		(at 53.34 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cdbf8a5-965f-4bb0-80ac-128c2624047f")
-		(property "Reference" "DOT5002"
-			(at 43.815 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Rule 261"
-			(at 53.34 74.295 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
-			(at 53.34 79.375 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_261"
-			(at 53.34 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 43.815 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 53.34 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "474ee03f-f744-4569-a93f-206ae72d3001")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
-					(reference "DOT5002")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Encoder-Pixel-RGB")
 		(at 151.13 120.65 0)
 		(unit 1)
@@ -21362,118 +21038,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
 					(reference "ENC5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:Rule261-DoT-BiDirectional")
-		(at 196.85 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f3925ced-b75d-49d3-a0df-6e939bf00ded")
-		(property "Reference" "DOT5001"
-			(at 187.325 73.025 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Rule 261"
-			(at 196.85 74.295 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 0 0 0 1)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 196.85 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 196.85 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Track Signaled in Both Directions:  Governs bi-directional signal territory (often controlled by  Centralized Traffic Control, or CTC).  Under Rule 261, block signal  indications supersede train superiority for both opposing and following movements on the same track, allowing the dispatcher to dynamically change the direction of traffic by clearing signals."
-			(at 196.85 79.375 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "RULE_261"
-			(at 196.85 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Direction" "BOTH"
-			(at 187.325 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "POLICY"
-			(at 196.85 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f15c4744-a46a-4b81-8049-b95caa318f32")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/defc570c-1f61-4751-be37-2827b304f837"
-					(reference "DOT5001")
 					(unit 1)
 				)
 			)
