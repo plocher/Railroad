@@ -2,7 +2,7 @@
 	(version 20251024)
 	(generator "kicad_symbol_editor")
 	(generator_version "10.0")
-	(symbol "Actuator"
+	(symbol "Actuator Controlled"
 		(pin_numbers
 			(hide yes)
 		)
@@ -12,7 +12,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Actuator"
-			(at 0 -4.445 0)
+			(at -1.651 2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -54,8 +54,8 @@
 				)
 			)
 		)
-		(property "Description" "A generic output device that can be on or off"
-			(at 0 0 0)
+		(property "Description" "A generic output device controled by dispatcher demand that can be on or off"
+			(at -0.381 -6.477 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -66,7 +66,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at -0.127 6.604 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -98,6 +98,17 @@
 			)
 		)
 		(property "Appliance" "actuator"
+			(at -1.905 4.699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control" "${Value}S"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -108,7 +119,181 @@
 				)
 			)
 		)
-		(symbol "Actuator_1_1"
+		(property "Style" "controlled"
+			(at 7.874 4.699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Actuator Controlled_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 194 0 194 1)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 0)
+				(name "ACTUATOR"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Actuator Repeater"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Actuator"
+			(at -1.651 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "A generic output device driven by field conditions that can be on or off"
+			(at -0.381 -6.477 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at -0.127 6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "actuator"
+			(at -1.905 4.699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "repeater"
+			(at 7.874 4.699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Actuator Repeater_1_1"
 			(circle
 				(center 0 0)
 				(radius 1.27)
@@ -287,7 +472,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "DERAIL"
-			(at -2.54 -2.54 0)
+			(at -3.556 4.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -329,7 +514,7 @@
 				)
 			)
 		)
-		(property "Description" "Protective DERAIL for sidings. Does not imply an additional track circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+		(property "Description" "Protective derail with a machine. Name: the switch's name plus D when that switch controls it, otherwise its own."
 			(at 0 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -351,18 +536,8 @@
 				)
 			)
 		)
-		(property "TC" ""
-			(at 7.62 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at -1.524 8.763 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -383,8 +558,8 @@
 				)
 			)
 		)
-		(property "IndicationCeiling" "STOP/RESTRICTING"
-			(at -1.27 0.635 0)
+		(property "IndicationCeiling" ""
+			(at -3.556 0.635 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -395,7 +570,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 0 0 0)
+			(at 2.54 6.985 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -405,19 +580,8 @@
 				)
 			)
 		)
-		(property "Style" "derail"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Indication" ""
-			(at 0 0 0)
+		(property "Style" "derail,powered"
+			(at -4.191 6.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -499,7 +663,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Derail_TC"
+	(symbol "Derail Dual"
 		(pin_numbers
 			(hide yes)
 		)
@@ -509,7 +673,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "DERAIL"
-			(at -2.54 -2.54 0)
+			(at -3.556 4.572 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -551,7 +715,7 @@
 				)
 			)
 		)
-		(property "Description" "Protective DERAIL for sidings WITH an associated Track Circuit. Give it a unique Value for dispatcher control, or use associated mainline switch with a \"D\" suffix"
+		(property "Description" "Protective derail with a machine under dispatcher control; the crew may release and throw it with Local-Lock and Local-Switch."
 			(at 0 -6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -573,18 +737,8 @@
 				)
 			)
 		)
-		(property "TC" "${VALUE}T1"
-			(at 7.62 2.54 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at -1.524 8.763 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -605,8 +759,8 @@
 				)
 			)
 		)
-		(property "IndicationCeiling" "STOP/RESTRICTING"
-			(at 1.905 0.635 0)
+		(property "IndicationCeiling" ""
+			(at -3.556 0.635 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -617,7 +771,7 @@
 			)
 		)
 		(property "Appliance" "switch"
-			(at 0 0 0)
+			(at 6.096 6.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -627,8 +781,8 @@
 				)
 			)
 		)
-		(property "Style" "derail"
-			(at 0 0 0)
+		(property "Style" "derail,dual"
+			(at -4.191 6.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -638,45 +792,10 @@
 				)
 			)
 		)
-		(property "Indication" "${TC}K"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Derail_TC_1_1"
+		(symbol "Derail Dual_1_1"
 			(polyline
 				(pts
-					(xy -6.35 0) (xy -1.27 0)
-				)
-				(stroke
-					(width 0.4064)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 0 0)
-				(radius 1.27)
-				(stroke
-					(width 0.4064)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 0) (xy 6.35 0)
+					(xy -6.35 0) (xy 6.35 0)
 				)
 				(stroke
 					(width 0.4064)
@@ -699,6 +818,633 @@
 				)
 			)
 			(text "D"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 0)
+				(name "C"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 0)
+				(name "R"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Derail Local"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DERAIL"
+			(at -3.556 4.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Protective derail with a machine worked only from a Local-Switch at the location"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at -1.524 8.763 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationCeiling" ""
+			(at -3.556 0.635 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 2.54 6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "derail,local"
+			(at -4.191 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Derail Local_1_1"
+			(polyline
+				(pts
+					(xy -6.35 0) (xy 6.35 0)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 2.413) (xy 0 4.064) (xy 0.635 2.413) (xy -0.635 2.413)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.445 5.08) (xy 1.27 1.905) (xy -0.635 1.905)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "D"
+				(at 0 5.207 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 0)
+				(name "C"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 0)
+				(name "R"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Derail Manual"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DERAIL"
+			(at -3.556 4.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Protective derail thrown by hand, no feedback."
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at -1.524 8.763 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationCeiling" ""
+			(at -4.953 0.762 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 2.54 6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "derail,manual"
+			(at -4.191 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Derail Manual_1_1"
+			(polyline
+				(pts
+					(xy -6.35 0) (xy 6.35 0)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 2.413) (xy 0 4.064) (xy 0.635 2.413) (xy -0.635 2.413)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.445 5.08) (xy 1.27 1.905) (xy -0.635 1.905)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "HD"
+				(at 0 4.953 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at -6.35 0 0)
+				(length 0)
+				(name "C"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 6.35 0 180)
+				(length 0)
+				(name "R"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Derail Manual Sensed"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "DERAIL"
+			(at -3.556 4.572 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Protective derail thrown by hand, with a contact that reports its position."
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at -1.524 8.763 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationCeiling" ""
+			(at -4.953 0.762 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+				(justify left)
+			)
+		)
+		(property "Appliance" "switch"
+			(at 2.54 6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "derail,manual_sensed"
+			(at -4.191 6.858 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Derail Manual Sensed_1_1"
+			(polyline
+				(pts
+					(xy -6.35 0) (xy 6.35 0)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.445 5.08) (xy 1.27 1.905) (xy -0.635 1.905)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "HD"
 				(at 0 3.175 0)
 				(effects
 					(font
@@ -1311,7 +2057,7 @@
 			(pin bidirectional line
 				(at -1.27 0 0)
 				(length 0)
-				(name "DARK"
+				(name "BEYOND"
 					(effects
 						(font
 							(size 0.508 0.508)
@@ -2053,7 +2799,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "Plant"
+		(property "Reference" "Interlocking"
 			(at -14.224 3.302 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2132,7 +2878,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at -3.81 0 0)
+			(at -15.24 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -2155,7 +2901,7 @@
 				)
 			)
 			(text "Interlocking:"
-				(at -15.24 0 0)
+				(at -15.24 1.143 0)
 				(effects
 					(font
 						(size 1.016 1.016)
@@ -2220,7 +2966,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Lamp"
+	(symbol "Lamp Controlled"
 		(pin_numbers
 			(hide yes)
 		)
@@ -2230,7 +2976,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Lamp"
-			(at 0 -4.445 0)
+			(at -2.794 4.699 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -2261,8 +3007,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "A generic output device that can be on or off, with lamp/lighting implications"
-			(at 0 0 0)
+		(property "Datasheet" "A generic output device showing the dispatcher’s demand that can be on or off, with lamp implications"
+			(at -0.889 -7.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2284,7 +3030,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 0 0 0)
+			(at 0 9.271 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -2316,6 +3062,104 @@
 			)
 		)
 		(property "Appliance" "lamp"
+			(at -2.794 7.366 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control" "${Value}S"
+			(at 0 -2.413 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Style" "controlled"
+			(at 5.461 7.366 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Lamp Controlled_1_1"
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 194 0 194 1)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 0)
+				(name "LAMP"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Lamp Repeater"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Lamp"
+			(at -2.54 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 3.175 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2326,7 +3170,93 @@
 				)
 			)
 		)
-		(symbol "Lamp_1_1"
+		(property "Datasheet" "A generic output device showing a field condition that can be on or off, with lamp/lighting implications"
+			(at 1.143 -6.985 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at 0.254 7.366 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 3.302 1.524 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -3.302 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "lamp"
+			(at -2.54 5.588 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 0 -2.159 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Style" "repeater"
+			(at 5.08 5.588 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Lamp Repeater_1_1"
 			(circle
 				(center 0 0)
 				(radius 1.27)
@@ -3860,7 +4790,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Sensor"
-			(at 0 -4.445 0)
+			(at -1.905 2.794 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(hide yes)
@@ -3871,12 +4801,13 @@
 			)
 		)
 		(property "Value" ""
-			(at 0 2.54 0)
+			(at 0.127 -3.048 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -3902,8 +4833,8 @@
 				)
 			)
 		)
-		(property "Description" "a generic non-vital input"
-			(at -0.381 -6.731 0)
+		(property "Description" "a generic non-vital field input"
+			(at -0.508 -8.763 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3914,7 +4845,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at -0.381 -6.731 0)
+			(at -0.127 7.239 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -3925,18 +4856,17 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 0 0 0)
+			(at 0 -2.921 0)
 			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
 		(property "CP Name" ""
-			(at 0 -2.54 0)
+			(at 0 -4.445 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -3946,13 +4876,24 @@
 			)
 		)
 		(property "Appliance" "contact"
-			(at -0.381 -6.731 0)
+			(at -1.778 5.207 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 0.508 -4.953 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -4035,198 +4976,6 @@
 				(at 0 0 0)
 				(length 0)
 				(name "SENSOR"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "Signal Head - Semaphore-LQ"
-		(pin_numbers
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "H"
-			(at -5.715 1.778 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" ""
-			(at -3.81 0 90)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Lower-quadrant semaphore head, two positions: STOP (horizontal) and CLEAR (arm dropped). The aspect set is an era fact; see FieldUnit's primer section 17."
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Style" "LQ"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Signal Head - Semaphore-LQ_0_1"
-			(polyline
-				(pts
-					(xy -2.54 2.54) (xy -5.715 2.54)
-				)
-				(stroke
-					(width 0.1016)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Signal Head - Semaphore-LQ_1_1"
-			(arc
-				(start -2.54 3.81)
-				(mid -2.091 3.624)
-				(end -1.905 3.175)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type color)
-					(color 0 0 0 0)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 3.175) (xy -2.54 5.715)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 3.175) (xy -0.381 4.699)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -2.54 2.54) (xy -2.54 3.175)
-				)
-				(stroke
-					(width 0.1016)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -2.54 2.54 180)
-				(length 0)
-				(name "M"
 					(effects
 						(font
 							(size 0 0)
@@ -6411,6 +7160,273 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Switch_Local"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at -2.54 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Powered switch worked only from a Local-Switch at the location; no dispatcher control."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "CP Name" ""
+			(at 0 -4.445 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(color 72 72 72 1)
+				)
+			)
+		)
+		(property "TC" "${VALUE}T1"
+			(at 7.62 2.54 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "APPLIANCE"
+			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IndicationCeiling" ""
+			(at 13.335 0.635 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+				)
+			)
+		)
+		(property "Appliance" "switch"
+			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "local"
+			(at -8.255 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${TC}K"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Switch_Local_1_1"
+			(polyline
+				(pts
+					(xy -11.43 0) (xy -1.27 0)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 2.413) (xy 0 4.064) (xy 0.635 2.413) (xy -0.635 2.413)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 1.27)
+				(stroke
+					(width 0.4064)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 0) (xy 17.78 0)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 17.78 16.51) (xy 15.24 16.51) (xy 1.27 1.905) (xy -0.635 1.905)
+				)
+				(stroke
+					(width 0.4064)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -11.43 0 0)
+				(length 0)
+				(name "C"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 0 180)
+				(length 0)
+				(name "N"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 16.51 180)
+				(length 0)
+				(name "R"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Switch_Lock"
 		(pin_numbers
 			(hide yes)
@@ -6463,7 +7479,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Hand-thrown switch with an electric lock; the crew requests release with Local-Lock."
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,7 +7942,7 @@
 			)
 			(polyline
 				(pts
-					(xy -0.635 1.905) (xy 0 2.54) (xy 0.635 1.905) (xy -0.635 1.905)
+					(xy -0.635 2.286) (xy 0 3.937) (xy 0.635 2.286) (xy -0.635 2.286)
 				)
 				(stroke
 					(width 0)
@@ -6961,7 +7977,7 @@
 				)
 			)
 			(text "H"
-				(at 0 3.175 0)
+				(at 0 4.953 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7077,7 +8093,7 @@
 				)
 			)
 		)
-		(property "Description" "Manual switch, no motor but with N/R feedback"
+		(property "Description" "Hand-thrown switch, no machine, with a contact that reports its position."
 			(at 1.27 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7328,7 +8344,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7619,7 +8635,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7924,7 +8940,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Powered switch under dispatcher control with no OS circuit of its own"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8203,7 +9219,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9375,7 +10391,7 @@
 				)
 			)
 		)
-		(property "Station" ""
+		(property "Station" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

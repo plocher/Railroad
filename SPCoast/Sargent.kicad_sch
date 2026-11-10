@@ -215,7 +215,7 @@
 						(color 132 0 0 1)
 					)
 				)
-				(text "CONTACT ${VALUE}"
+				(text "CONTACT ${Name}"
 					(at -19.939 0 0)
 					(effects
 						(font
@@ -269,7 +269,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "${Style}"
+			(property "Value" "H2"
 				(at -13.589 2.032 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -520,7 +520,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Field:Device-Head-Semaphore-UQ"
+		(symbol "Railroad-Field:Device-Head-Semaphore-UQ3"
 			(pin_numbers
 				(hide yes)
 			)
@@ -543,7 +543,7 @@
 					)
 				)
 			)
-			(property "Value" "${Style}"
+			(property "Value" "UQ3"
 				(at -13.335 1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -609,7 +609,7 @@
 					)
 				)
 			)
-			(property "Style" "UQ"
+			(property "Style" "UQ3"
 				(at -10.033 -0.127 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -641,7 +641,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ_0_1"
+			(symbol "Device-Head-Semaphore-UQ3_0_1"
 				(rectangle
 					(start -17.78 1.27)
 					(end -2.54 -1.27)
@@ -741,7 +741,7 @@
 					)
 				)
 			)
-			(symbol "Device-Head-Semaphore-UQ_1_1"
+			(symbol "Device-Head-Semaphore-UQ3_1_1"
 				(polyline
 					(pts
 						(xy -16.891 0) (xy -17.526 -0.635) (xy -17.526 0.635) (xy -16.891 0)
@@ -830,7 +830,7 @@
 					)
 				)
 			)
-			(property "Value" "${Style}"
+			(property "Value" "TypeD"
 				(at -11.811 2.032 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -3178,6 +3178,78 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -10.541 -0.762) (xy -10.414 -0.508) (xy -10.287 -0.635) (xy -10.16 -0.381)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.287 -0.889) (xy -10.16 -0.635) (xy -10.033 -0.762) (xy -9.906 -0.508)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 0.508) (xy -10.414 0.635) (xy -10.287 0.762) (xy -10.541 0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.906 0.635) (xy -10.16 0.762) (xy -10.033 0.889) (xy -10.287 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.017 0.635) (xy -8.89 0.889) (xy -8.763 0.762) (xy -8.636 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 0.381) (xy -8.763 0.635) (xy -8.636 0.508) (xy -8.509 0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "Device-TrackCircuit-Optical_1_1"
 				(polyline
@@ -3290,7 +3362,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -4.445 4.826 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3625,10 +3697,11 @@
 					)
 				)
 			)
-			(property "Value" "PIXEL"
-				(at -16.383 0.508 0)
+			(property "Value" ""
+				(at -16.383 1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -3692,7 +3765,7 @@
 				)
 			)
 			(property "Address" ""
-				(at -16.383 -0.508 0)
+				(at -12.827 0 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -3713,17 +3786,6 @@
 					)
 				)
 			)
-			(property "Pin.CHAIN" "indication"
-				(at 2.286 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(symbol "Encoder-Pixel-RGB_0_1"
 				(rectangle
 					(start -21.59 1.27)
@@ -3738,7 +3800,7 @@
 				)
 				(polyline
 					(pts
-						(xy -9.2747 -0.889) (xy -9.274 -1.2076)
+						(xy -8.1317 -0.762) (xy -8.131 -1.0806)
 					)
 					(stroke
 						(width 0)
@@ -3749,7 +3811,7 @@
 					)
 				)
 				(circle
-					(center -9.274 0.0624)
+					(center -8.131 0.1894)
 					(radius 0.898)
 					(stroke
 						(width 0)
@@ -3760,9 +3822,9 @@
 					)
 				)
 				(arc
-					(start -9.906 0.0624)
-					(mid -9.72 0.5114)
-					(end -9.271 0.6974)
+					(start -8.763 0.1894)
+					(mid -8.577 0.6384)
+					(end -8.128 0.8244)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3773,9 +3835,9 @@
 					)
 				)
 				(arc
-					(start -9.271 0.6974)
-					(mid -8.822 0.5114)
-					(end -8.636 0.0624)
+					(start -8.128 0.8244)
+					(mid -7.679 0.6384)
+					(end -7.493 0.1894)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3786,9 +3848,9 @@
 					)
 				)
 				(arc
-					(start -9.271 -0.5726)
-					(mid -9.72 -0.3866)
-					(end -9.906 0.0624)
+					(start -8.128 -0.4456)
+					(mid -8.577 -0.2596)
+					(end -8.763 0.1894)
 					(stroke
 						(width 0)
 						(type solid)
@@ -3799,9 +3861,9 @@
 					)
 				)
 				(arc
-					(start -8.636 0.0624)
-					(mid -8.822 -0.3866)
-					(end -9.271 -0.5726)
+					(start -7.493 0.1894)
+					(mid -7.679 -0.2596)
+					(end -8.128 -0.4456)
 					(stroke
 						(width 0)
 						(type default)
@@ -3838,6 +3900,15 @@
 						(color 132 0 0 1)
 					)
 				)
+				(text "PIXEL #"
+					(at -18.161 0 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+						(justify left)
+					)
+				)
 				(pin input line
 					(at -24.13 0 0)
 					(length 2.54)
@@ -3862,7 +3933,7 @@
 					(name "CHAIN"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 0.762 0.762)
 							)
 						)
 					)
@@ -3900,7 +3971,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -1.27 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4247,7 +4318,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -12.192 4.572 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4616,7 +4687,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -14.224 1.905 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -4768,57 +4839,6 @@
 					(stroke
 						(width 0)
 						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -8.255 -0.381)
-					(mid -8.1434 -0.1116)
-					(end -7.874 0)
-					(stroke
-						(width 0.0508)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 255 0 1)
-					)
-				)
-				(arc
-					(start -7.874 0)
-					(mid -7.6046 -0.1116)
-					(end -7.493 -0.381)
-					(stroke
-						(width 0.0508)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 0 255 0 1)
-					)
-				)
-				(arc
-					(start -7.874 -0.762)
-					(mid -8.1434 -0.6504)
-					(end -8.255 -0.381)
-					(stroke
-						(width 0.0508)
-						(type solid)
-					)
-					(fill
-						(type color)
-						(color 255 0 0 1)
-					)
-				)
-				(arc
-					(start -7.493 -0.381)
-					(mid -7.6046 -0.6504)
-					(end -7.874 -0.762)
-					(stroke
-						(width 0.0508)
-						(type solid)
 					)
 					(fill
 						(type none)
@@ -5471,7 +5491,7 @@
 					)
 				)
 			)
-			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(property "Description" "Lever plate for the crew at the location. Value cross-references the Switch (or Lock) appliance by name"
 				(at 2.54 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5990,7 +6010,7 @@
 					)
 				)
 			)
-			(property "Value" "${Address}"
+			(property "Value" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6070,7 +6090,7 @@
 					(justify left)
 				)
 			)
-			(property "Address" ""
+			(property "Address" "${Value}"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6190,7 +6210,7 @@
 					)
 				)
 			)
-			(property "Value" "${Address}"
+			(property "Value" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6270,7 +6290,7 @@
 					(justify left)
 				)
 			)
-			(property "Address" ""
+			(property "Address" "${Value}"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9073,13 +9093,14 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 -1.016 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -9127,7 +9148,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -9171,8 +9192,17 @@
 						(type background)
 					)
 				)
-				(text "Processor: ${Board}"
-					(at -15.748 1.27 0)
+				(text "Processor:"
+					(at -15.24 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "${Board}"
+					(at -6.35 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -9985,7 +10015,7 @@
 				(pin bidirectional line
 					(at -1.27 0 0)
 					(length 0)
-					(name "DARK"
+					(name "BEYOND"
 						(effects
 							(font
 								(size 0.508 0.508)
@@ -10575,7 +10605,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Plant"
+			(property "Reference" "Interlocking"
 				(at -14.224 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -10654,7 +10684,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at -3.81 0 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -10677,7 +10707,7 @@
 					)
 				)
 				(text "Interlocking:"
-					(at -15.24 0 0)
+					(at -15.24 1.143 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -11845,7 +11875,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Sensor"
-				(at 0 -4.445 0)
+				(at -1.905 2.794 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -11856,12 +11886,13 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 0.127 -3.048 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -11887,8 +11918,8 @@
 					)
 				)
 			)
-			(property "Description" "a generic non-vital input"
-				(at -0.381 -6.731 0)
+			(property "Description" "a generic non-vital field input"
+				(at -0.508 -8.763 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11899,7 +11930,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at -0.381 -6.731 0)
+				(at -0.127 7.239 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11910,18 +11941,17 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 0 -2.921 0)
 				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
+				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.762 0.762)
 					)
 				)
 			)
 			(property "CP Name" ""
-				(at 0 -2.54 0)
+				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -11931,13 +11961,24 @@
 				)
 			)
 			(property "Appliance" "contact"
-				(at -0.381 -6.731 0)
+				(at -1.778 5.207 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Indication" "${Value}K"
+				(at 0.508 -4.953 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 0.762 0.762)
 					)
 				)
 			)
@@ -13031,7 +13072,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Hand-thrown switch with an electric lock; the crew requests release with Local-Lock."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -13382,7 +13423,7 @@
 					)
 				)
 			)
-			(property "Description" "Manual switch, no motor but with N/R feedback"
+			(property "Description" "Hand-thrown switch, no machine, with a contact that reports its position."
 				(at 1.27 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -13799,10 +13840,10 @@
 		(uuid "68d32eb0-d9e9-47a6-aecf-2fc47544511c")
 	)
 	(junction
-		(at 143.51 116.84)
+		(at 163.83 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "ab0b100b-1b6a-4204-a230-8d21167a6743")
+		(uuid "ae78b251-228d-4ae0-9207-cfc2b812c31d")
 	)
 	(junction
 		(at 116.84 73.66)
@@ -13888,16 +13929,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 116.84) (xy 143.51 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "004589b9-f539-444c-b7cf-31dcdaf5882b")
-	)
-	(wire
-		(pts
 			(xy 111.76 57.15) (xy 116.84 57.15)
 		)
 		(stroke
@@ -13928,6 +13959,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 116.84) (xy 163.83 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e43fe58-f19d-44bd-ba89-31725b112d72")
+	)
+	(wire
+		(pts
 			(xy 60.96 33.02) (xy 160.02 33.02)
 		)
 		(stroke
@@ -13935,6 +13976,16 @@
 			(type default)
 		)
 		(uuid "29ef1218-0c26-457f-883c-0bd2c310c46b")
+	)
+	(wire
+		(pts
+			(xy 184.15 116.84) (xy 233.68 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42791a86-0c35-4942-915a-71733aa3b8cf")
 	)
 	(wire
 		(pts
@@ -14088,13 +14139,13 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 116.84) (xy 213.36 120.65)
+			(xy 233.68 116.84) (xy 233.68 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dff69711-2aba-4178-86cf-92a26933e851")
+		(uuid "eba6f20c-6589-4ce2-9b4c-4317a2eab408")
 	)
 	(wire
 		(pts
@@ -14105,16 +14156,6 @@
 			(type default)
 		)
 		(uuid "f43afbff-d3eb-4747-9a6f-141419d566d0")
-	)
-	(wire
-		(pts
-			(xy 163.83 116.84) (xy 213.36 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f64626f7-77cd-4113-b4d5-09b569a74e6f")
 	)
 	(wire
 		(pts
@@ -14421,7 +14462,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at 171.958 141.478 0)
 			(hide yes)
 			(show_name no)
@@ -16747,7 +16788,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at 182.88 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -17603,7 +17644,6 @@
 		)
 		(property "Value" ""
 			(at 95.25 73.66 0)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17723,7 +17763,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at 171.958 133.858 0)
 			(hide yes)
 			(show_name no)
@@ -18179,14 +18219,15 @@
 				)
 			)
 		)
-		(property "Value" "Sargent"
-			(at 43.18 27.686 0)
+		(property "Value" "${TITLE}"
+			(at 27.94 27.94 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -18234,7 +18275,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 43.18 26.67 0)
+			(at 40.64 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18304,7 +18345,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 150.114 0)
 			(hide yes)
 			(show_name no)
@@ -18737,12 +18778,13 @@
 			)
 		)
 		(property "Value" "HBA"
-			(at 116.84 82.55 0)
+			(at 116.967 88.138 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -18768,8 +18810,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 116.459 91.821 0)
+		(property "Description" "a generic non-vital field input"
+			(at 116.332 93.853 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18780,7 +18822,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 116.459 91.821 0)
+			(at 116.713 77.851 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18791,18 +18833,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 116.84 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Sargent"
-			(at 116.84 87.63 0)
+			(at 116.84 88.011 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -18811,14 +18842,35 @@
 				)
 			)
 		)
-		(property "Appliance" "lamp"
-			(at 116.459 91.821 0)
+		(property "CP Name" "Sargent"
+			(at 116.84 89.535 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Appliance" "contact"
+			(at 115.062 79.883 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 117.348 90.043 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
 				)
 			)
 		)
@@ -19450,8 +19502,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 154.94 0)
+		(property "Value" "TypeD"
+			(at 51.689 152.908 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -20632,7 +20685,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at 182.88 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -20918,7 +20971,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" "D3"
 			(at 87.63 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -20998,7 +21051,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "D3"
+		(property "Address" "${Value}"
 			(at 87.63 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -21048,7 +21101,7 @@
 			)
 		)
 		(property "Value" "834SA"
-			(at 93.218 80.01 0)
+			(at 94.615 80.264 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -21192,8 +21245,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 152.146 130.81 0)
+		(property "Value" "H2"
+			(at 150.241 128.778 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -22973,7 +23027,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "H2"
 			(at 49.911 155.448 0)
 			(hide yes)
 			(show_name no)
@@ -23299,7 +23353,7 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "TypeD"
 			(at 152.019 136.398 0)
 			(hide yes)
 			(show_name no)
@@ -23502,7 +23556,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 39.37 31.75 0)
+			(at 27.94 33.02 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -23551,7 +23605,7 @@
 			)
 		)
 		(property "Value" "HBA"
-			(at 87.63 165.1 0)
+			(at 76.0095 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23617,32 +23671,8 @@
 				)
 			)
 		)
-		(property "Address" "1"
-			(at 84.0862 163.076 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
 		(property "Appliance" "lamp"
 			(at 84.2064 161.5176 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.LAMP" "binary"
-			(at 84.0862 163.076 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23657,7 +23687,7 @@
 			(at 83.947 162.306 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 0.635 0.635)
@@ -23679,7 +23709,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Encoder-Servo")
-		(at 233.68 120.65 0)
+		(at 184.15 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23690,7 +23720,7 @@
 		(fields_autoplaced yes)
 		(uuid "ab024109-9bff-4320-929d-83a27581b472")
 		(property "Reference" "ENC35"
-			(at 222.25 115.951 0)
+			(at 172.72 112.141 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23700,8 +23730,9 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
-			(at 220.98 120.65 0)
+		(property "Value" ""
+			(at 169.926 114.935 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -23712,7 +23743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.68 120.65 0)
+			(at 184.15 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23723,7 +23754,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 120.65 0)
+			(at 184.15 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23734,7 +23765,7 @@
 			)
 		)
 		(property "Description" "Encoder for a semaphore blade on a servo."
-			(at 233.68 125.73 0)
+			(at 184.15 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23745,7 +23776,7 @@
 			)
 		)
 		(property "Role" "ENCODER"
-			(at 218.059 116.84 0)
+			(at 168.529 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23756,7 +23787,7 @@
 			)
 		)
 		(property "Kind" "SERVO"
-			(at 222.885 120.65 0)
+			(at 173.355 116.84 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -23766,7 +23797,7 @@
 			)
 		)
 		(property "stop_deg" ""
-			(at 222.25 127 0)
+			(at 172.72 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23777,7 +23808,7 @@
 			)
 		)
 		(property "approach_deg" ""
-			(at 222.25 127 0)
+			(at 172.72 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23788,7 +23819,7 @@
 			)
 		)
 		(property "clear_deg" ""
-			(at 222.25 127 0)
+			(at 172.72 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23799,7 +23830,7 @@
 			)
 		)
 		(property "Pin.APP" "indication"
-			(at 205.232 120.65 0)
+			(at 155.702 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -23810,7 +23841,7 @@
 			)
 		)
 		(property "Pin.ARM" "position"
-			(at 239.268 120.65 0)
+			(at 189.738 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -24421,7 +24452,8 @@
 			)
 		)
 		(property "Value" "PIXEL"
-			(at 71.247 158.242 0)
+			(at 71.247 156.845 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -24487,7 +24519,7 @@
 			)
 		)
 		(property "Address" "2"
-			(at 68.326 159.512 0)
+			(at 74.803 158.75 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -24505,17 +24537,6 @@
 			(effects
 				(font
 					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.CHAIN" "indication"
-			(at 89.916 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.762 0.762)
 				)
 			)
 		)
@@ -24557,7 +24578,7 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "TypeD"
 			(at 152.019 144.018 0)
 			(hide yes)
 			(show_name no)
@@ -24788,141 +24809,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
 					(reference "DevMast30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Device-Head-H2")
-		(at 163.83 123.19 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cfa43c53-851f-49eb-bc03-6ff0ee7ab05d")
-		(property "Reference" "Head30"
-			(at 152.4 118.491 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "${Style}"
-			(at 152.146 123.19 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "US&S H-2 searchlight signal head."
-			(at 155.194 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 147.828 118.618 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Appliance" "head"
-			(at 147.32 119.888 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Style" "H2"
-			(at 153.67 123.19 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.IND" "indication"
-			(at 142.367 124.333 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(property "Pin.APP" "indication"
-			(at 165.862 124.587 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "04569691-7cac-4c7b-8bb0-425e216c8f43")
-		)
-		(pin "1"
-			(uuid "90a5cde3-92d4-47c8-bb4b-ca7428337a08")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "Head30")
 					(unit 1)
 				)
 			)
@@ -26213,7 +26099,7 @@
 			)
 		)
 		(property "Address" "1"
-			(at 68.072 163.322 0)
+			(at 67.945 163.322 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -26444,7 +26330,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" "D2"
 			(at 87.63 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -26524,7 +26410,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" "D2"
+		(property "Address" "${Value}"
 			(at 87.63 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -26909,7 +26795,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ")
+		(lib_id "Railroad-Field:Device-Head-Semaphore-UQ3")
 		(at 163.83 116.84 0)
 		(unit 1)
 		(body_style 1)
@@ -26931,8 +26817,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 151.765 116.84 0)
+		(property "Value" "UQ3"
+			(at 150.495 114.935 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -26963,7 +26850,7 @@
 				)
 			)
 		)
-		(property "Description" "Upper-quadrant semaphore signal head with three positions."
+		(property "Description" "3-position Upper-quadrant semaphore signal head."
 			(at 163.83 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -26996,7 +26883,7 @@
 				)
 			)
 		)
-		(property "Style" "UQ"
+		(property "Style" "${Value}"
 			(at 153.797 116.967 0)
 			(show_name no)
 			(do_not_autoplace yes)

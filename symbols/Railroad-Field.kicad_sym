@@ -197,7 +197,7 @@
 					(color 132 0 0 1)
 				)
 			)
-			(text "CONTACT ${VALUE}"
+			(text "CONTACT ${Name}"
 				(at -19.939 0 0)
 				(effects
 					(font
@@ -251,7 +251,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "H2"
 			(at -13.589 2.032 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -525,7 +525,7 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "SA"
 			(at -12.7 2.032 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -776,7 +776,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Head-Semaphore-LQ"
+	(symbol "Device-Head-Semaphore-LQ2"
 		(pin_numbers
 			(hide yes)
 		)
@@ -799,7 +799,7 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "LQ2"
 			(at -12.954 1.905 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -865,7 +865,7 @@
 				)
 			)
 		)
-		(property "Style" "LQ"
+		(property "Style" "LQ2"
 			(at -10.414 -0.127 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -897,7 +897,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-Semaphore-LQ_0_1"
+		(symbol "Device-Head-Semaphore-LQ2_0_1"
 			(rectangle
 				(start -17.78 1.27)
 				(end -2.54 -1.27)
@@ -997,7 +997,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-Semaphore-LQ_1_1"
+		(symbol "Device-Head-Semaphore-LQ2_1_1"
 			(polyline
 				(pts
 					(xy -16.891 0) (xy -17.526 -0.635) (xy -17.526 0.635) (xy -16.891 0)
@@ -1063,7 +1063,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "Device-Head-Semaphore-UQ"
+	(symbol "Device-Head-Semaphore-LQ3"
 		(pin_numbers
 			(hide yes)
 		)
@@ -1086,7 +1086,306 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "LQ3"
+			(at -12.954 1.905 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3-position Lower-quadrant semaphore signal head."
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at -16.129 4.064 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Appliance" "head"
+			(at -16.637 3.048 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Style" "LQ3"
+			(at -10.414 -0.127 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.IND" "indication"
+			(at -21.463 -1.143 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "Pin.APP" "indication"
+			(at 2.286 -1.143 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-LQ3_0_1"
+			(rectangle
+				(start -17.78 1.27)
+				(end -2.54 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -9.271 0)
+				(mid -9.1594 0.2694)
+				(end -8.89 0.381)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 0 1)
+				)
+			)
+			(arc
+				(start -8.89 0.381)
+				(mid -8.6206 0.2694)
+				(end -8.509 0)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(arc
+				(start -8.89 -0.381)
+				(mid -9.1594 -0.2694)
+				(end -9.271 0)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 0 0 1)
+				)
+			)
+			(arc
+				(start -8.509 0)
+				(mid -8.6206 -0.2694)
+				(end -8.89 -0.381)
+				(stroke
+					(width 0.0508)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.509 1.016) (xy -8.509 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.509 0) (xy -7.239 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.255 -0.127) (xy -8.255 -1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.128 -0.127) (xy -7.493 -0.889)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Device-Head-Semaphore-LQ3_1_1"
+			(polyline
+				(pts
+					(xy -16.891 0) (xy -17.526 -0.635) (xy -17.526 0.635) (xy -16.891 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0) (xy -2.286 -0.635) (xy -2.286 0.635) (xy -1.651 0)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(pin input line
+				(at -20.32 0 0)
+				(length 2.54)
+				(name "IND"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 0 0 180)
+				(length 2.54)
+				(name "APP"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Device-Head-Semaphore-UQ3"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.889)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Head"
+			(at -16.383 1.905 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(hide yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "UQ3"
 			(at -13.335 1.905 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1152,7 +1451,7 @@
 				)
 			)
 		)
-		(property "Style" "UQ"
+		(property "Style" "UQ3"
 			(at -10.033 -0.127 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1184,7 +1483,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-Semaphore-UQ_0_1"
+		(symbol "Device-Head-Semaphore-UQ3_0_1"
 			(rectangle
 				(start -17.78 1.27)
 				(end -2.54 -1.27)
@@ -1284,7 +1583,7 @@
 				)
 			)
 		)
-		(symbol "Device-Head-Semaphore-UQ_1_1"
+		(symbol "Device-Head-Semaphore-UQ3_1_1"
 			(polyline
 				(pts
 					(xy -16.891 0) (xy -17.526 -0.635) (xy -17.526 0.635) (xy -16.891 0)
@@ -1373,7 +1672,7 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
+		(property "Value" "TypeD"
 			(at -11.811 2.032 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5091,6 +5390,78 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy -10.541 -0.762) (xy -10.414 -0.508) (xy -10.287 -0.635) (xy -10.16 -0.381)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.287 -0.889) (xy -10.16 -0.635) (xy -10.033 -0.762) (xy -9.906 -0.508)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -10.16 0.508) (xy -10.414 0.635) (xy -10.287 0.762) (xy -10.541 0.889)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.906 0.635) (xy -10.16 0.762) (xy -10.033 0.889) (xy -10.287 1.016)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -9.017 0.635) (xy -8.89 0.889) (xy -8.763 0.762) (xy -8.636 1.016)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -8.89 0.381) (xy -8.763 0.635) (xy -8.636 0.508) (xy -8.509 0.762)
+				)
+				(stroke
+					(width 0.0254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Device-TrackCircuit-Optical_1_1"
 			(polyline
@@ -5501,7 +5872,7 @@
 				)
 			)
 		)
-		(property "Description" "Field mast with two head positions."
+		(property "Description" "Field mast with one head position."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5680,7 +6051,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at -4.445 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6015,7 +6386,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at -16.383 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -6229,10 +6600,11 @@
 				)
 			)
 		)
-		(property "Value" "PIXEL"
-			(at -16.383 0.508 0)
+		(property "Value" ""
+			(at -16.383 1.905 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -6296,7 +6668,7 @@
 			)
 		)
 		(property "Address" ""
-			(at -16.383 -0.508 0)
+			(at -12.827 0 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -6331,7 +6703,7 @@
 			)
 			(polyline
 				(pts
-					(xy -9.2747 -0.889) (xy -9.274 -1.2076)
+					(xy -8.1317 -0.762) (xy -8.131 -1.0806)
 				)
 				(stroke
 					(width 0)
@@ -6342,7 +6714,7 @@
 				)
 			)
 			(circle
-				(center -9.274 0.0624)
+				(center -8.131 0.1894)
 				(radius 0.898)
 				(stroke
 					(width 0)
@@ -6353,9 +6725,9 @@
 				)
 			)
 			(arc
-				(start -9.906 0.0624)
-				(mid -9.72 0.5114)
-				(end -9.271 0.6974)
+				(start -8.763 0.1894)
+				(mid -8.577 0.6384)
+				(end -8.128 0.8244)
 				(stroke
 					(width 0)
 					(type solid)
@@ -6366,9 +6738,9 @@
 				)
 			)
 			(arc
-				(start -9.271 0.6974)
-				(mid -8.822 0.5114)
-				(end -8.636 0.0624)
+				(start -8.128 0.8244)
+				(mid -7.679 0.6384)
+				(end -7.493 0.1894)
 				(stroke
 					(width 0)
 					(type solid)
@@ -6379,9 +6751,9 @@
 				)
 			)
 			(arc
-				(start -9.271 -0.5726)
-				(mid -9.72 -0.3866)
-				(end -9.906 0.0624)
+				(start -8.128 -0.4456)
+				(mid -8.577 -0.2596)
+				(end -8.763 0.1894)
 				(stroke
 					(width 0)
 					(type solid)
@@ -6392,9 +6764,9 @@
 				)
 			)
 			(arc
-				(start -8.636 0.0624)
-				(mid -8.822 -0.3866)
-				(end -9.271 -0.5726)
+				(start -7.493 0.1894)
+				(mid -7.679 -0.2596)
+				(end -8.128 -0.4456)
 				(stroke
 					(width 0)
 					(type default)
@@ -6431,6 +6803,15 @@
 					(color 132 0 0 1)
 				)
 			)
+			(text "PIXEL #"
+				(at -18.161 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
 			(pin input line
 				(at -24.13 0 0)
 				(length 2.54)
@@ -6455,7 +6836,7 @@
 				(name "CHAIN"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -6493,10 +6874,11 @@
 				)
 			)
 		)
-		(property "Value" "PIXELS"
-			(at -17.018 1.651 0)
+		(property "Value" ""
+			(at -12.065 3.429 0)
 			(show_name no)
 			(do_not_autoplace yes)
+			(hide yes)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -6862,8 +7244,17 @@
 					(color 72 0 0 1)
 				)
 			)
+			(text "PIXELS"
+				(at -17.272 1.397 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
 			(text "G: ${Address.G}"
-				(at -12.7 1.27 0)
+				(at -11.811 1.397 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -6872,7 +7263,7 @@
 				)
 			)
 			(text "Y: ${Address.Y}"
-				(at -12.7 0 0)
+				(at -11.811 0.127 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -6881,7 +7272,7 @@
 				)
 			)
 			(text "R: ${Address.R}"
-				(at -12.7 -1.27 0)
+				(at -11.811 -1.143 0)
 				(effects
 					(font
 						(size 0.762 0.762)
@@ -6951,7 +7342,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at -1.27 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7298,7 +7689,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at -12.192 4.572 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7667,7 +8058,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" ""
 			(at -14.224 1.905 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7824,57 +8215,6 @@
 					(type none)
 				)
 			)
-			(arc
-				(start -8.255 -0.381)
-				(mid -8.1434 -0.1116)
-				(end -7.874 0)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 255 0 1)
-				)
-			)
-			(arc
-				(start -7.874 0)
-				(mid -7.6046 -0.1116)
-				(end -7.493 -0.381)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 0 255 0 1)
-				)
-			)
-			(arc
-				(start -7.874 -0.762)
-				(mid -8.1434 -0.6504)
-				(end -8.255 -0.381)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type color)
-					(color 255 0 0 1)
-				)
-			)
-			(arc
-				(start -7.493 -0.381)
-				(mid -7.6046 -0.6504)
-				(end -7.874 -0.762)
-				(stroke
-					(width 0.0508)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -7.493 0.889) (xy -8.382 0.127)
@@ -7947,6 +8287,557 @@
 					(effects
 						(font
 							(size 0.381 0.381)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "Local-Derail"
+		(pin_numbers
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "SW"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at -0.0547 1.7866 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a local-controlled derail. Value cross-references the Derail appliance by name"
+			(at 2.54 -9.525 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "switch"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWS" "binary"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWS" "binary"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NWK" "binary"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.RWK" "binary"
+			(at 0.635 -12.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_locked" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Local-Derail_0_1"
+			(polyline
+				(pts
+					(xy -1.905 1.27) (xy -3.175 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 1.27) (xy -1.905 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 2.54) (xy 1.27 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.905 1.905)
+				(mid -1.719 2.354)
+				(end -1.27 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.27 2.54)
+				(mid 1.719 2.354)
+				(end 1.905 1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 1.27) (xy 1.905 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 1.27) (xy 3.175 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "N"
+				(at -2.54 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "DERAIL"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "R"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+		)
+		(symbol "Local-Derail_1_1"
+			(arc
+				(start -3.175 -0.635)
+				(mid -3.438 0)
+				(end -3.175 0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.2503 -4.1034) (xy -3.175 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0.01 -3.076)
+				(radius 0.898)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.2897 -4.1034)
+				(mid 0.0197 -4.6295)
+				(end -1.2503 -4.1034)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.2897 -4.1034) (xy 3.175 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 3.175 0.635)
+				(mid 3.438 0)
+				(end 3.175 -0.635)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -1.27) (xy 3.175 -0.635) (xy 3.175 -1.905) (xy 3.81 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -5.08) (xy 3.175 -4.445) (xy 3.175 -5.715) (xy 3.81 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -2.54) (xy 6.35 -1.27) (xy 2.921 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+					(color 72 72 0 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -5.08) (xy 6.35 -3.81) (xy 5.08 -3.81) (xy 3.81 -5.08) (xy -3.175 -5.08) (xy -3.81 -4.445)
+					(xy -3.81 -1.905) (xy -3.175 -1.27) (xy -2.921 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+					(color 72 72 0 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin output line
+				(at 7.62 -5.08 180)
+				(length 0)
+				(name "~{NWS}"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 -2.54 180)
+				(length 0)
+				(name "~{RWS}"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Local-Derail_2_1"
+			(circle
+				(center -3.175 1.905)
+				(radius 0.635)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 0 255 0 1)
+				)
+			)
+			(circle
+				(center 3.175 1.905)
+				(radius 0.635)
+				(stroke
+					(width 0.2032)
+					(type solid)
+					(color 0 0 0 1)
+				)
+				(fill
+					(type color)
+					(color 255 153 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.191 3.175) (xy 4.826 2.54) (xy 4.826 3.81) (xy 4.191 3.175)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.318 0.889) (xy 4.953 0.254) (xy 4.953 1.524) (xy 4.318 0.889)
+				)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 132 0 0 1)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 2.54) (xy 6.985 3.175) (xy 2.54 3.175) (xy -1.905 3.175) (xy -2.7115 2.3841)
+				)
+				(stroke
+					(width 0)
+					(type default)
+					(color 72 72 0 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 6.6832 0.9439) (xy 4.1462 0.9439) (xy 3.5913 1.4592)
+				)
+				(stroke
+					(width 0)
+					(type default)
+					(color 72 72 0 1)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin input line
+				(at 7.62 0 180)
+				(length 0)
+				(name "~{RWK}"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 7.62 2.54 180)
+				(length 0)
+				(name "~{NWK}"
+					(effects
+						(font
+							(size 0.508 0.508)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0 0)
 						)
 					)
 				)
@@ -8522,7 +9413,7 @@
 				)
 			)
 		)
-		(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+		(property "Description" "Lever plate for the crew at the location. Value cross-references the Switch (or Lock) appliance by name"
 			(at 2.54 -9.525 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9074,7 +9965,7 @@
 				)
 			)
 		)
-		(property "Description" "TO Control: M is an indication, STOP, SLOW, CALLON are from a fascial lever"
+		(property "Description" "TO Control: IND is an indication, STOP, SLOW are from a fascial lever,  If neither is asserted, TO is CLEAR"
 			(at -6.985 9.525 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -736,7 +736,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -816,7 +816,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -936,7 +936,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1016,7 +1016,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,13 +7708,14 @@
 			)
 		)
 		(property "Value" ""
-			(at 0 -1.016 0)
+			(at -15.24 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7762,7 +7763,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 0 0 0)
+			(at -2.54 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7806,8 +7807,17 @@
 					(type background)
 				)
 			)
-			(text "Processor: ${Board}"
-				(at -15.748 1.27 0)
+			(text "Processor:"
+				(at -15.24 1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(text "${Board}"
+				(at -6.35 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)

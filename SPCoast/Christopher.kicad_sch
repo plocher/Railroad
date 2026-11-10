@@ -43,7 +43,7 @@
 					)
 				)
 			)
-			(property "Value" "${Style}"
+			(property "Value" "TypeD"
 				(at -11.811 2.032 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -404,10 +404,9 @@
 				)
 			)
 			(property "Address" ""
-				(at -3.5438 2.024 0)
+				(at -19.685 -0.762 0)
 				(show_name no)
 				(do_not_autoplace yes)
-				(hide yes)
 				(effects
 					(font
 						(size 0.635 0.635)
@@ -467,10 +466,10 @@
 					)
 				)
 				(text "LAMP ${VALUE}"
-					(at -19.685 0 0)
+					(at -19.685 0.254 0)
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 0.889 0.889)
 						)
 						(justify left)
 					)
@@ -488,7 +487,7 @@
 					(number "1"
 						(effects
 							(font
-								(size 0.381 0.381)
+								(size 0 0)
 							)
 						)
 					)
@@ -2170,6 +2169,78 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -10.541 -0.762) (xy -10.414 -0.508) (xy -10.287 -0.635) (xy -10.16 -0.381)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.287 -0.889) (xy -10.16 -0.635) (xy -10.033 -0.762) (xy -9.906 -0.508)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 0.508) (xy -10.414 0.635) (xy -10.287 0.762) (xy -10.541 0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.906 0.635) (xy -10.16 0.762) (xy -10.033 0.889) (xy -10.287 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.017 0.635) (xy -8.89 0.889) (xy -8.763 0.762) (xy -8.636 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 0.381) (xy -8.763 0.635) (xy -8.636 0.508) (xy -8.509 0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "Device-TrackCircuit-Optical_1_1"
 				(polyline
@@ -2282,7 +2353,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -4.445 4.826 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3162,7 +3233,7 @@
 					)
 				)
 			)
-			(property "Description" "Lever plate for a dispatcher-controlled Switch (or Lock). Value cross-references the plant sheet's Switch appliance by name. NW/RW control+indication vocabulary is mandatory and type-fixed; this symbol declares only the physical realization."
+			(property "Description" "Lever plate for the crew at the location. Value cross-references the Switch (or Lock) appliance by name"
 				(at 2.54 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4454,13 +4525,14 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 -1.016 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -4508,7 +4580,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4552,8 +4624,17 @@
 						(type background)
 					)
 				)
-				(text "Processor: ${Board}"
-					(at -15.748 1.27 0)
+				(text "Processor:"
+					(at -15.24 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "${Board}"
+					(at -6.35 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5503,7 +5584,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Plant"
+			(property "Reference" "Interlocking"
 				(at -14.224 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5582,7 +5663,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at -3.81 0 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -5605,7 +5686,7 @@
 					)
 				)
 				(text "Interlocking:"
-					(at -15.24 0 0)
+					(at -15.24 1.143 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -7214,7 +7295,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Hand-thrown switch with an electric lock; the crew requests release with Local-Lock."
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -7565,7 +7646,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -9849,7 +9930,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 52.07 38.1 0)
+			(at 40.64 39.37 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -10496,7 +10577,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 141.224 0)
 			(hide yes)
 			(show_name no)
@@ -10902,8 +10983,7 @@
 			)
 		)
 		(property "Address" ""
-			(at 230.1362 130.056 0)
-			(hide yes)
+			(at 213.995 132.842 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -11450,7 +11530,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 125.984 0)
 			(hide yes)
 			(show_name no)
@@ -12551,8 +12631,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 156.21 0)
+		(property "Value" "TypeD"
+			(at 50.419 154.178 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -13467,14 +13548,15 @@
 				)
 			)
 		)
-		(property "Value" "Christopher"
-			(at 55.88 34.036 0)
+		(property "Value" "${TITLE}"
+			(at 40.64 34.29 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -13522,7 +13604,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 55.88 33.02 0)
+			(at 53.34 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13706,8 +13788,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 146.05 0)
+		(property "Value" "TypeD"
+			(at 50.419 144.018 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -14559,7 +14642,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 146.304 0)
 			(hide yes)
 			(show_name no)
@@ -14697,7 +14780,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 131.064 0)
 			(hide yes)
 			(show_name no)
@@ -16751,8 +16834,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 151.13 0)
+		(property "Value" "TypeD"
+			(at 50.419 149.098 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -17435,8 +17519,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 135.89 0)
+		(property "Value" "TypeD"
+			(at 50.419 133.858 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -18427,8 +18512,7 @@
 			)
 		)
 		(property "Address" ""
-			(at 230.1362 132.596 0)
-			(hide yes)
+			(at 213.995 135.382 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -20992,7 +21076,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 151.384 0)
 			(hide yes)
 			(show_name no)
@@ -21130,8 +21214,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 130.81 0)
+		(property "Value" "TypeD"
+			(at 50.419 128.778 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -23776,7 +23861,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 78.105 136.144 0)
 			(hide yes)
 			(show_name no)
@@ -24914,8 +24999,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 50.8 140.97 0)
+		(property "Value" "TypeD"
+			(at 50.419 138.938 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects

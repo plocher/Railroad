@@ -43,7 +43,7 @@
 					)
 				)
 			)
-			(property "Value" "${Style}"
+			(property "Value" "TypeD"
 				(at -11.811 2.032 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -2167,6 +2167,78 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy -10.541 -0.762) (xy -10.414 -0.508) (xy -10.287 -0.635) (xy -10.16 -0.381)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.287 -0.889) (xy -10.16 -0.635) (xy -10.033 -0.762) (xy -9.906 -0.508)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 0.508) (xy -10.414 0.635) (xy -10.287 0.762) (xy -10.541 0.889)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.906 0.635) (xy -10.16 0.762) (xy -10.033 0.889) (xy -10.287 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -9.017 0.635) (xy -8.89 0.889) (xy -8.763 0.762) (xy -8.636 1.016)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -8.89 0.381) (xy -8.763 0.635) (xy -8.636 0.508) (xy -8.509 0.762)
+					)
+					(stroke
+						(width 0.0254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "Device-TrackCircuit-Optical_1_1"
 				(polyline
@@ -2279,7 +2351,7 @@
 					)
 				)
 			)
-			(property "Value" "${Kind}"
+			(property "Value" ""
 				(at -4.445 4.826 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4429,13 +4501,14 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 -1.016 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -4483,7 +4556,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -4527,8 +4600,17 @@
 						(type background)
 					)
 				)
-				(text "Processor: ${Board}"
-					(at -15.748 1.27 0)
+				(text "Processor:"
+					(at -15.24 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "${Board}"
+					(at -6.35 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5630,7 +5712,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Plant"
+			(property "Reference" "Interlocking"
 				(at -14.224 3.302 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5709,7 +5791,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at -3.81 0 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -5732,7 +5814,7 @@
 					)
 				)
 				(text "Interlocking:"
-					(at -15.24 0 0)
+					(at -15.24 1.143 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -5797,7 +5879,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Trackplan:Lamp"
+		(symbol "Railroad-Trackplan:Lamp Repeater"
 			(pin_numbers
 				(hide yes)
 			)
@@ -5807,7 +5889,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Lamp"
-				(at 0 -4.445 0)
+				(at -2.54 3.048 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(hide yes)
@@ -5818,9 +5900,10 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 2.54 0)
+				(at 3.175 3.048 0)
 				(show_name no)
 				(do_not_autoplace yes)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -5838,8 +5921,8 @@
 					)
 				)
 			)
-			(property "Datasheet" "A generic output device that can be on or off, with lamp/lighting implications"
-				(at 0 0 0)
+			(property "Datasheet" "A generic output device showing a field condition that can be on or off, with lamp/lighting implications"
+				(at 1.143 -6.985 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5861,7 +5944,7 @@
 				)
 			)
 			(property "Role" "APPLIANCE"
-				(at 0 0 0)
+				(at 0.254 7.366 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5872,9 +5955,9 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at 3.302 1.524 0)
 				(show_name no)
-				(do_not_autoplace no)
+				(do_not_autoplace yes)
 				(hide yes)
 				(effects
 					(font
@@ -5883,7 +5966,7 @@
 				)
 			)
 			(property "CP Name" ""
-				(at 0 -2.54 0)
+				(at 0 -3.302 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
@@ -5893,7 +5976,7 @@
 				)
 			)
 			(property "Appliance" "lamp"
-				(at 0 0 0)
+				(at -2.54 5.588 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -5903,7 +5986,28 @@
 					)
 				)
 			)
-			(symbol "Lamp_1_1"
+			(property "Indication" "${Value}K"
+				(at 0 -2.159 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Style" "repeater"
+				(at 5.08 5.588 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Lamp Repeater_1_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -7836,7 +7940,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -8141,7 +8245,7 @@
 					)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Powered switch under dispatcher control. TC names its OS circuit"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -11522,8 +11626,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 173.99 0)
+		(property "Value" "TypeD"
+			(at 51.689 171.958 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -14256,8 +14361,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 167.64 0)
+		(property "Value" "TypeD"
+			(at 51.689 165.608 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -14391,7 +14497,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 157.734 0)
 			(hide yes)
 			(show_name no)
@@ -14866,7 +14972,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 189.484 0)
 			(hide yes)
 			(show_name no)
@@ -15477,14 +15583,15 @@
 				)
 			)
 		)
-		(property "Value" "Watsonville"
-			(at 39.37 114.046 0)
+		(property "Value" "${TITLE}"
+			(at 24.13 114.3 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -15532,7 +15639,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 39.37 113.03 0)
+			(at 36.83 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16578,8 +16685,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 132.08 0)
+		(property "Value" "TypeD"
+			(at 51.689 130.048 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -17714,8 +17822,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 179.07 0)
+		(property "Value" "TypeD"
+			(at 51.689 177.038 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -18038,7 +18147,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 179.324 0)
 			(hide yes)
 			(show_name no)
@@ -19916,8 +20025,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 189.23 0)
+		(property "Value" "TypeD"
+			(at 51.689 187.198 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -20777,7 +20887,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 35.56 118.11 0)
+			(at 24.13 119.38 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -22633,7 +22743,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 174.244 0)
 			(hide yes)
 			(show_name no)
@@ -26052,8 +26162,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 162.56 0)
+		(property "Value" "TypeD"
+			(at 51.689 160.528 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -26538,8 +26649,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 157.48 0)
+		(property "Value" "TypeD"
+			(at 51.689 155.448 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -26966,7 +27078,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 162.814 0)
 			(hide yes)
 			(show_name no)
@@ -27771,7 +27883,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 132.334 0)
 			(hide yes)
 			(show_name no)
@@ -28263,7 +28375,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 194.564 0)
 			(hide yes)
 			(show_name no)
@@ -28401,7 +28513,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 142.494 0)
 			(hide yes)
 			(show_name no)
@@ -29333,8 +29445,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 199.39 0)
+		(property "Value" "TypeD"
+			(at 51.689 197.358 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -29657,7 +29770,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 147.574 0)
 			(hide yes)
 			(show_name no)
@@ -31243,7 +31356,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 127.254 0)
 			(hide yes)
 			(show_name no)
@@ -31518,8 +31631,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 152.4 0)
+		(property "Value" "TypeD"
+			(at 51.689 150.368 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -34436,7 +34550,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 137.414 0)
 			(hide yes)
 			(show_name no)
@@ -37232,7 +37346,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 152.654 0)
 			(hide yes)
 			(show_name no)
@@ -38483,7 +38597,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Lamp")
+		(lib_id "Railroad-Trackplan:Lamp Repeater")
 		(at 149.86 20.32 0)
 		(unit 1)
 		(body_style 1)
@@ -38505,7 +38619,8 @@
 			)
 		)
 		(property "Value" "NFL"
-			(at 149.86 17.78 0)
+			(at 153.035 17.272 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -38525,8 +38640,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 149.86 20.32 0)
+		(property "Datasheet" "A generic output device showing a field condition that can be on or off, with lamp/lighting implications"
+			(at 151.003 27.305 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38548,7 +38663,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 149.86 20.32 0)
+			(at 150.114 12.954 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38559,10 +38674,10 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 149.86 20.32 0)
+			(at 153.162 18.796 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38570,7 +38685,7 @@
 			)
 		)
 		(property "CP Name" "Watsonville"
-			(at 149.86 22.86 0)
+			(at 149.86 23.622 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -38580,7 +38695,28 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 149.86 20.32 0)
+			(at 147.32 14.732 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 149.86 22.479 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Style" "repeater"
+			(at 154.94 14.732 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -38758,8 +38894,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 184.15 0)
+		(property "Value" "TypeD"
+			(at 51.689 182.118 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -39082,8 +39219,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 147.32 0)
+		(property "Value" "TypeD"
+			(at 51.689 145.288 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -39543,8 +39681,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 194.31 0)
+		(property "Value" "TypeD"
+			(at 51.689 192.278 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -41445,7 +41584,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 169.164 0)
 			(hide yes)
 			(show_name no)
@@ -42426,7 +42565,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Lamp")
+		(lib_id "Railroad-Trackplan:Lamp Repeater")
 		(at 156.21 20.32 0)
 		(unit 1)
 		(body_style 1)
@@ -42448,7 +42587,8 @@
 			)
 		)
 		(property "Value" "SFL"
-			(at 156.21 17.78 0)
+			(at 159.385 17.272 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -42468,8 +42608,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 156.21 20.32 0)
+		(property "Datasheet" "A generic output device showing a field condition that can be on or off, with lamp/lighting implications"
+			(at 157.353 27.305 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42491,7 +42631,7 @@
 			)
 		)
 		(property "Role" "APPLIANCE"
-			(at 156.21 20.32 0)
+			(at 156.464 12.954 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42502,10 +42642,10 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 156.21 20.32 0)
+			(at 159.512 18.796 0)
 			(hide yes)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42513,7 +42653,7 @@
 			)
 		)
 		(property "CP Name" "Watsonville"
-			(at 156.21 22.86 0)
+			(at 156.21 23.622 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -42523,7 +42663,28 @@
 			)
 		)
 		(property "Appliance" "lamp"
-			(at 156.21 20.32 0)
+			(at 153.67 14.732 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication" "${Value}K"
+			(at 156.21 22.479 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Style" "repeater"
+			(at 161.29 14.732 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -47460,8 +47621,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 142.24 0)
+		(property "Value" "TypeD"
+			(at 51.689 140.208 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -50728,8 +50890,9 @@
 				)
 			)
 		)
-		(property "Value" "${Style}"
-			(at 52.07 137.16 0)
+		(property "Value" "TypeD"
+			(at 51.689 135.128 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -51472,7 +51635,7 @@
 				)
 			)
 		)
-		(property "Value" "${Kind}"
+		(property "Value" "3MUX2A"
 			(at 79.375 184.404 0)
 			(hide yes)
 			(show_name no)
