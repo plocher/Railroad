@@ -44,7 +44,7 @@
 					)
 				)
 			)
-			(property "Value" "UA${Address}"
+			(property "Value" ""
 				(at -15.24 3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -133,7 +133,7 @@
 					)
 				)
 			)
-			(property "Address" ""
+			(property "Address" "${Value}"
 				(at -3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1895,6 +1895,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "NextCP Not Modeled_0_1"
 				(polyline
 					(pts
@@ -3191,7 +3202,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${Address}"
+		(property "Value" "30"
 			(at 59.69 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3258,7 +3269,7 @@
 				)
 			)
 		)
-		(property "Address" "30"
+		(property "Address" "${Value}"
 			(at 71.12 67.31 0)
 			(hide yes)
 			(show_name no)

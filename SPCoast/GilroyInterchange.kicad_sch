@@ -2655,7 +2655,7 @@
 					)
 				)
 			)
-			(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+			(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the request lamp; ~{WLK} the locked lamp, lit while WLK is deasserted (Invert=WLK)."
 				(at 2.54 -9.525 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4790,6 +4790,17 @@
 					)
 				)
 			)
+			(property "JMRI.SignalSystem" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Driver-JMRI-SignalMast_0_1"
 				(rectangle
 					(start 2.54 1.27)
@@ -5623,7 +5634,7 @@
 					)
 				)
 			)
-			(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI drivers (ADR 0008)."
+			(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI MQTT appliances"
 				(at 13.97 -14.605 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5675,6 +5686,17 @@
 				(effects
 					(font
 						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "JMRI.SignalSystem" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
@@ -6003,6 +6025,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Bumper_0_1"
 				(polyline
 					(pts
@@ -6179,6 +6212,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Derail_1_1"
 				(polyline
 					(pts
@@ -6275,7 +6319,7 @@
 					)
 				)
 			)
-			(property "Value" "${CP Name}"
+			(property "Value" ""
 				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6351,7 +6395,7 @@
 					)
 				)
 			)
-			(property "CP Name" ""
+			(property "CP Name" "${Value}"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6542,6 +6586,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "IRJ_0_1"
 				(polyline
 					(pts
@@ -6696,6 +6751,17 @@
 			)
 			(property "Kind" "IRJ_SIGNAL"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -6891,6 +6957,17 @@
 					(justify left)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Interlocking_1_1"
 				(rectangle
 					(start -16.51 2.54)
@@ -7076,6 +7153,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "MaintainerCall_1_1"
 				(circle
 					(center 0 0)
@@ -7203,6 +7291,17 @@
 			)
 			(property "Name" "${Value}"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -7684,6 +7783,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Signal Mast Double_1_1"
 				(circle
 					(center -7.62 2.54)
@@ -7886,6 +7996,17 @@
 			)
 			(property "Indications" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -8411,6 +8532,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Lock_1_1"
 				(polyline
 					(pts
@@ -8740,6 +8872,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Switch_Powered_1_1"
 				(polyline
 					(pts
@@ -9001,6 +9144,17 @@
 					)
 				)
 			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(symbol "Track Circuit_1_1"
 				(circle
 					(center 0 0)
@@ -9154,6 +9308,17 @@
 			)
 			(property "Style" "double"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -11419,6 +11584,17 @@
 				)
 			)
 		)
+		(property "JMRI.SignalSystem" ""
+			(at 55.88 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d411c342-84a8-4176-b667-5878f3122a72")
 		)
@@ -13237,6 +13413,17 @@
 				)
 			)
 		)
+		(property "JMRI.SignalSystem" ""
+			(at 226.06 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7cc96e18-4d4b-4111-9ccf-0087dbd7858e")
 		)
@@ -14174,7 +14361,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI drivers (ADR 0008)."
+		(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI MQTT appliances"
 			(at 82.55 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -16399,7 +16586,7 @@
 				)
 			)
 		)
-		(property "Value" "${CP Name}"
+		(property "Value" "Gilroy South"
 			(at 168.91 59.055 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16475,7 +16662,7 @@
 				)
 			)
 		)
-		(property "CP Name" "Gilroy South"
+		(property "CP Name" "${Value}"
 			(at 168.91 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -16556,7 +16743,7 @@
 				)
 			)
 		)
-		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the request lamp; ~{WLK} the locked lamp, lit while WLK is deasserted (Invert=WLK)."
 			(at 220.98 161.925 0)
 			(hide yes)
 			(show_name no)
@@ -16888,7 +17075,7 @@
 				)
 			)
 		)
-		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the request lamp; ~{WLK} the locked lamp, lit while WLK is deasserted (Invert=WLK)."
 			(at 220.98 139.065 0)
 			(hide yes)
 			(show_name no)
@@ -18703,6 +18890,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "JMRI.SignalSystem" ""
+			(at 55.88 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -20568,7 +20766,7 @@
 				)
 			)
 		)
-		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the request lamp; ~{WLK} the locked lamp, lit while WLK is deasserted (Invert=WLK)."
 			(at 220.98 139.065 0)
 			(hide yes)
 			(show_name no)
@@ -20867,7 +21065,7 @@
 				)
 			)
 		)
-		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the red request lamp; ~{WLK} the green locked lamp, lit while WLK is deasserted (Invert=WLK)."
+		(property "Description" "Fascia lock plate. ~{WLQ} is the crew's key (request); ~{WLQK} the request lamp; ~{WLK} the locked lamp, lit while WLK is deasserted (Invert=WLK)."
 			(at 220.98 161.925 0)
 			(hide yes)
 			(show_name no)
@@ -23053,6 +23251,17 @@
 				)
 			)
 		)
+		(property "JMRI.SignalSystem" ""
+			(at 55.88 185.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d29f4807-dad8-4205-8ed7-0051326e8124")
 		)
@@ -23737,7 +23946,7 @@
 				)
 			)
 		)
-		(property "Value" "${CP Name}"
+		(property "Value" "Gilroy North"
 			(at 74.93 59.055 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23813,7 +24022,7 @@
 				)
 			)
 		)
-		(property "CP Name" "Gilroy North"
+		(property "CP Name" "${Value}"
 			(at 74.93 53.34 0)
 			(hide yes)
 			(show_name no)
@@ -24338,6 +24547,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "JMRI.SignalSystem" ""
+			(at 55.88 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -25275,6 +25495,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "JMRI.SignalSystem" ""
+			(at 226.06 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
