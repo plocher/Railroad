@@ -11364,193 +11364,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Trackplan:NextCP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CP"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 2.54 -8.89 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(color 0 0 0 1)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Identifies the next control point on this track"
-				(at -3.175 -6.985 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "TRACK"
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "NEXT_CP"
-				(at 1.27 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Interlocking" "${Value}"
-				(at 2.54 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "NextCP_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NextCP_1_1"
-				(text "${Interlocking}"
-					(at 0 -2.54 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Trackplan:Rule251-DoT-Left"
 			(pin_numbers
 				(hide yes)
@@ -13838,6 +13651,12 @@
 		(uuid "b0ca7192-80e2-42b8-a968-07798e37917e")
 	)
 	(junction
+		(at 175.26 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b812fd61-42a5-42b5-842c-f683b249772d")
+	)
+	(junction
 		(at 119.38 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13860,12 +13679,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e935104b-014b-4a7b-8964-099d8a40a08a")
-	)
-	(junction
-		(at 175.26 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea311669-4144-491e-9b10-46c2c206d406")
 	)
 	(no_connect
 		(at 142.24 140.97)
@@ -14300,7 +14113,7 @@
 		)
 		(uuid "0af3d994-180b-407f-a673-11bb77430093")
 	)
-	(hierarchical_label "ToCorporalMT"
+	(hierarchical_label "NMT"
 		(shape bidirectional)
 		(at 80.01 73.66 180)
 		(effects
@@ -14310,6 +14123,17 @@
 			(justify right)
 		)
 		(uuid "1e348ad3-449a-45bc-80e3-e6629ab2f7a5")
+	)
+	(hierarchical_label "SMT"
+		(shape bidirectional)
+		(at 189.23 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5074dfd0-2b73-4b2f-9a40-489b67742a33")
 	)
 	(hierarchical_label "Beet Loader 1"
 		(shape bidirectional)
@@ -15732,6 +15556,7 @@
 		)
 		(property "IndicationCeiling" "RESTRICTING/RESTRICTING"
 			(at 84.455 56.515 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -17742,119 +17567,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
 					(reference "DevMast32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:NextCP")
-		(at 189.23 73.66 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "290c1958-fb66-4f1a-90eb-13e1a5cce1e5")
-		(property "Reference" "CP2"
-			(at 186.055 71.755 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Watsonville"
-			(at 186.69 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 193.04 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 192.405 66.675 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 184.15 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 187.96 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Interlocking" "${Value}"
-			(at 186.69 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "97235799-5d44-4178-bd9c-4f47c3890c22")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/f687a7a3-8fc1-435d-a0f4-b6b97af39a7e"
-					(reference "CP2")
 					(unit 1)
 				)
 			)

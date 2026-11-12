@@ -7340,193 +7340,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Railroad-Trackplan:NextCP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "CP"
-				(at 0 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 2.54 -8.89 0)
-				(show_name no)
-				(do_not_autoplace yes)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(color 0 0 0 1)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at -3.81 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Identifies the next control point on this track"
-				(at -3.175 -6.985 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Role" "TRACK"
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Kind" "NEXT_CP"
-				(at 1.27 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Interlocking" "${Value}"
-				(at 2.54 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "NextCP_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy -1.27 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-						(color 204 102 0 1)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NextCP_1_1"
-				(text "${Interlocking}"
-					(at 0 -2.54 0)
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 180)
-					(length 0)
-					(name "To"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Railroad-Trackplan:NextCP Not Modeled"
 			(pin_numbers
 				(hide yes)
@@ -9239,12 +9052,6 @@
 		(uuid "58c25a4f-273e-4c06-8794-651c341bfe7d")
 	)
 	(junction
-		(at 50.8 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5c81eb41-133b-4039-ba3d-29d759b34129")
-	)
-	(junction
 		(at 203.2 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9327,6 +9134,10 @@
 	(no_connect
 		(at 214.63 43.18)
 		(uuid "4d0e93cb-c6b3-496f-bec9-4a75b12dfd2c")
+	)
+	(no_connect
+		(at 234.95 148.59)
+		(uuid "4ef41e47-851d-412b-9da4-2d84f74b3ae1")
 	)
 	(no_connect
 		(at 220.98 43.18)
@@ -9660,17 +9471,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 86.36) (xy 50.8 86.36)
-		)
-		(stroke
-			(width 0.8128)
-			(type default)
-		)
-		(uuid "abd3d86c-e763-4f43-be94-18c541d8e327")
-	)
-	(wire
-		(pts
-			(xy 50.8 86.36) (xy 57.15 86.36)
+			(xy 40.64 86.36) (xy 57.15 86.36)
 		)
 		(stroke
 			(width 0.8128)
@@ -9848,6 +9649,17 @@
 		)
 		(uuid "fdc3ffe2-640c-4608-ae81-c1f4c3ae4b62")
 	)
+	(hierarchical_label "SMT1"
+		(shape bidirectional)
+		(at 245.11 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0541f5e0-48d9-4da6-a895-80863e3afd39")
+	)
 	(hierarchical_label "Codeline"
 		(shape input)
 		(at 102.87 36.83 0)
@@ -9858,6 +9670,28 @@
 			(justify left)
 		)
 		(uuid "422a68a8-13fa-403f-b8d8-8edc7736a560")
+	)
+	(hierarchical_label "NMT"
+		(shape bidirectional)
+		(at 40.64 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc9b01d8-b2e1-409e-b2f6-98ba232401db")
+	)
+	(hierarchical_label "SMT2"
+		(shape bidirectional)
+		(at 245.11 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e782b98a-ee00-4e9b-b45c-417b7d078504")
 	)
 	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
@@ -10448,143 +10282,6 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
 					(reference "DevSW7002")
 					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 224.79 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "11eb5add-5e2f-49d3-ad4e-9cbcff1caa08")
-		(property "Reference" "DevTC7004"
-			(at 218.9548 141.5124 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "1SAT"
-			(at 224.79 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 221.2462 141.486 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 224.79 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hold_ms" "1500"
-			(at 214.376 141.605 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0794)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at 221.2462 141.486 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.OCC" "binary"
-			(at 221.2462 141.486 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "b4aea523-3806-4c81-91d8-73ed7477d7a1")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "DevTC7004")
-					(unit 1)
 				)
 			)
 		)
@@ -12656,143 +12353,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 224.79 146.05 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2c359cb4-c877-4c28-bbe9-6c629bc06252")
-		(property "Reference" "DevTC7005"
-			(at 218.9548 144.0524 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.762 0.762)
-				)
-			)
-		)
-		(property "Value" "2NAT"
-			(at 224.79 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 224.79 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 224.79 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 224.79 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "DEVICE"
-			(at 221.2462 144.026 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 224.79 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hold_ms" "1500"
-			(at 214.376 144.145 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(thickness 0.0794)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at 221.2462 144.026 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(property "Pin.OCC" "binary"
-			(at 221.2462 144.026 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.635 0.635)
-				)
-				(justify left)
-			)
-		)
-		(pin "1"
-			(uuid "cba3eb70-33c1-44bb-8528-9160b05bb3b0")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "DevTC7005")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Trackplan:Track Circuit")
 		(at 214.63 102.87 0)
 		(unit 1)
@@ -13497,7 +13057,7 @@
 	)
 	(symbol
 		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
-		(at 224.79 148.59 0)
+		(at 224.79 146.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13505,9 +13065,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "3c39c779-2c4b-4170-8fb0-e9f23c57031d")
+		(uuid "3d3e07bc-85ae-40d6-a314-d24b906122a1")
 		(property "Reference" "DevTC7006"
-			(at 218.9548 146.5924 0)
+			(at 218.9548 144.0524 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13518,7 +13078,7 @@
 			)
 		)
 		(property "Value" "3NAT"
-			(at 224.79 148.59 0)
+			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13529,7 +13089,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 148.59 0)
+			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13540,7 +13100,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 224.79 148.59 0)
+			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13551,7 +13111,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 224.79 148.59 0)
+			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13562,7 +13122,7 @@
 			)
 		)
 		(property "Role" "DEVICE"
-			(at 221.2462 146.566 0)
+			(at 221.2462 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13574,7 +13134,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 224.79 148.59 0)
+			(at 224.79 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13585,7 +13145,7 @@
 			)
 		)
 		(property "hold_ms" "1500"
-			(at 214.376 146.685 0)
+			(at 214.376 144.145 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13597,7 +13157,7 @@
 			)
 		)
 		(property "Appliance" "track_circuit"
-			(at 221.2462 146.566 0)
+			(at 221.2462 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13609,7 +13169,7 @@
 			)
 		)
 		(property "Pin.OCC" "binary"
-			(at 221.2462 146.566 0)
+			(at 221.2462 144.026 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -13621,7 +13181,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "40206465-595b-4d95-9c6a-ea255b5ef6d3")
+			(uuid "349cfd75-40ff-41ca-9ac0-57f2867a5b6f")
 		)
 		(instances
 			(project "SPCoast"
@@ -15006,119 +14566,6 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
 					(reference "Plant7001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Railroad-Trackplan:NextCP")
-		(at 245.11 102.87 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "539168b6-fc96-4232-9d09-b9d628ca8894")
-		(property "Reference" "CP7004"
-			(at 248.285 104.775 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Christopher"
-			(at 247.65 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 241.935 109.855 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 250.19 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 246.38 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Interlocking" "${Value}"
-			(at 247.65 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c71bae7-2a10-42dd-82c0-20e2ade9f668")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "CP7004")
 					(unit 1)
 				)
 			)
@@ -20158,139 +19605,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:Track Circuit")
-		(at 50.8 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b5303d44-d787-41e7-8115-b98d6dcbf8e9")
-		(property "Reference" "TC7006"
-			(at 50.8 81.915 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1SAT"
-			(at 50.8 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "CP Name" "Luchessa"
-			(at 50.8 88.265 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 0.508 0.508)
-					(color 72 72 72 1)
-				)
-			)
-		)
-		(property "Role" "APPLIANCE"
-			(at 50.8 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Name" "${Value}"
-			(at 50.8 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Appliance" "track_circuit"
-			(at 50.8 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Indication" "${Name}K"
-			(at 52.07 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a300ce6c-c96a-40c6-87ff-b8ec8d62241b")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "TC7006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Field:Device-Switch-OS")
 		(at 234.95 129.54 0)
 		(unit 1)
@@ -22371,119 +21685,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:NextCP")
-		(at 245.11 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d634bff1-5c9c-44a1-87ee-d531375d1943")
-		(property "Reference" "CP7003"
-			(at 248.285 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Christopher"
-			(at 247.65 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 241.935 93.345 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 250.19 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 246.38 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Interlocking" "${Value}"
-			(at 247.65 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f61a7e0e-40fe-433f-9de5-43bc89531599")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "CP7003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-Trackplan:GCOR Rule 10 END_CTC")
 		(at 60.96 69.85 0)
 		(unit 1)
@@ -23223,119 +22424,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Railroad-Trackplan:NextCP")
-		(at 27.94 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e6b22427-20b5-467d-9a20-baee55bc577d")
-		(property "Reference" "CP7001"
-			(at 31.115 88.265 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Gilroy"
-			(at 30.48 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Identifies the next control point on this track"
-			(at 24.765 93.345 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Role" "TRACK"
-			(at 33.02 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Kind" "NEXT_CP"
-			(at 29.21 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Interlocking" "${Value}"
-			(at 30.48 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7e2d161d-2b93-4e61-ab8c-8dd30a269649")
-		)
-		(instances
-			(project "SPCoast"
-				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
-					(reference "CP7001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Railroad-HardwareIO:Driver-I2C-MCP23017")
 		(at 180.34 156.21 0)
 		(unit 4)
@@ -23668,6 +22756,143 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
 					(reference "Exp7002")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Field:Device-TrackCircuit-Optical")
+		(at 224.79 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ee10acda-5a36-4d04-932d-8e65a456bd6b")
+		(property "Reference" "DevTC7005"
+			(at 218.9548 141.5124 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Value" "2NAT"
+			(at 224.79 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 224.79 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 224.79 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 224.79 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "DEVICE"
+			(at 221.2462 141.486 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 224.79 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "hold_ms" "1500"
+			(at 214.376 141.605 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.508 0.508)
+					(thickness 0.0794)
+				)
+			)
+		)
+		(property "Appliance" "track_circuit"
+			(at 221.2462 141.486 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(property "Pin.OCC" "binary"
+			(at 221.2462 141.486 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.635 0.635)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "3426c911-02a7-41e2-8a76-ee2ebb8ae52e")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/b4829d91-9b5a-495f-b7c8-ba6a6006660d"
+					(reference "DevTC7005")
+					(unit 1)
 				)
 			)
 		)
