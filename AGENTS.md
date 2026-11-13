@@ -90,3 +90,17 @@ Existing code sometimes takes shortcuts, e.g. `spcoast_ctc` addresses expanders 
 - Extend from Luchessa (columns 5–7) to all 14 columns and 7 stations.
 - Make the column ↔ expander binding explicit.
 - Add the Subdivision tool (and `KIND := desk` rules in `kicad.mk`) that turns the desk (and plant) schematics into a generated, compiled and uploaded desk sketch.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues for `plocher/Railroad`, via the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context: `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
