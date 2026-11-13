@@ -10,7 +10,7 @@ The page is symbols/production/manual/index.html. To keep prose edited in the pa
 -->
 
 <!-- ABOUT -->
-<p>This manual says how to place the symbols of the six hand-maintained libraries in this folder.
+<p>This manual says how to place the symbols of the four hand-maintained libraries in this folder.
 A symbol's Description says what the symbol is. This manual says how to use it.
 Symbols are grouped by pattern: Role, then Appliance or Kind, then the pin set.
 Every symbol appears once, as <code>Library:Symbol</code> with its Description as it stands in the file.</p>
@@ -108,13 +108,7 @@ Set Value to the circuit name (1NA). Indication is <code>&lt;Name&gt;K</code>, f
 </ul>
 <!-- END GROUP -->
 
-<!-- GROUP: Masts drawn with trackplan heads | library=Railroad-Trackplan, Appliance=mast or head -->
-<p>These masts carry their heads as trackplan symbols. Place one mast and one Signal Head per head pin.
-Mast: set Value to the mast name (784EAB). Kind is fixed per symbol: CONTROLLED, ABSOLUTE or PERMISSIVE. Wire SIGNAL to an IRJ-Signal or IRJ-Signals SIGNAL pin. Wire each head pin (H, H1, H2) to a Signal Head's pin M.
-Head: set Value to the head letter (A). Style is fixed: CL, CPL, LQ, UQ. The head device on the field sheet must have the same Style.</p>
-<!-- END GROUP -->
-
-<!-- GROUP: Masts with derived indications | library=Railroad-Trackplan-Signals, Appliance=mast -->
+<!-- GROUP: Masts with derived indications | library=Railroad-Trackplan, Appliance=mast -->
 <p>These masts carry no head symbols; the head glyphs are picture. The heads are field devices on a field mast device of the same Name.
 Place one per signal. Set Value to the mast name. Kind is fixed per symbol. Wire SIGNAL to an IRJ-Signal or IRJ-Signals.
 Leave Indications empty: the indications the mast must show are derived. Fill it only with an explicit comma-separated list of indication names; the list replaces the derived set.</p>
@@ -122,6 +116,11 @@ Leave Indications empty: the indications the mast must show are derived. Fill it
 <li>Style is single, double, triple, dwarf, dwarf_double or stop_sign. Kind is CONTROLLED unless the name says ABSOLUTE or PERMISSIVE.</li>
 <li><code>Stop</code> is ABSOLUTE with Indications fixed to <code>Stop</code>.</li>
 </ul>
+<!-- END GROUP -->
+
+<!-- GROUP: Trackplan head | library=Railroad-Trackplan, Appliance=head -->
+<p>A trackplan head is one head drawn as its own symbol. Set Value to the head letter (A). Style is fixed. Pin M is its one pin.
+No mast in this library has a head pin to wire it to: a mast's heads are field devices on its field mast device.</p>
 <!-- END GROUP -->
 
 <!-- GROUP: Train order signal | library=Railroad-Trackplan, Appliance=train_order -->
@@ -187,6 +186,8 @@ Wire Transport to the transport. Pin Codeline is the code line: wire every Inter
 <p>An I/O encoding states what rides a transport. It provides no net. Place one per transport that carries remote I/O. Set Value to its name. Wire Transport to the transport.</p>
 <ul>
 <li><code>JMRI</code> (Kind JMRI): Topic is the JMRI channel root. <code>CMRInet</code> (Kind CMRI): Version is the protocol version.</li>
+<li><code>JMRI</code> also states <code>JMRI.SignalSystem</code>: the JMRI signal system whose aspect names every Driver-JMRI-SignalMast on this encoding publishes. Its value is the name of a signal system folder under JMRI's <code>xml/signals</code>, for example <code>SPTCO-1969</code> or <code>basic</code>. A Driver-JMRI-SignalMast that states its own <code>JMRI.SignalSystem</code> overrides it. Without either, the mast driver's aspect names are not stated.
+The library symbol does not yet declare the field, so it is not in the table below: add it to the placed symbol as a field named exactly <code>JMRI.SignalSystem</code>.</li>
 </ul>
 <!-- END GROUP -->
 
@@ -194,7 +195,8 @@ Wire Transport to the transport. Pin Codeline is the code line: wire every Inter
 <p>Place one per powered or sensed switch. Style lists the trackplan switch styles the device serves.
 Pin M is the binary demand: asserted means REVERSE; wire it to a driver output. ~{N} and ~{R} are the point contacts; wire them to driver inputs.</p>
 <ul>
-<li><code>Device-Switch-OS</code> adds unit 3, ~{OCC}: the OS circuit's occupancy; wire it to a driver input.</li>
+<li><code>Device-Switch-OS</code> is one device for the switch machine and its OS circuit detector, packaged on one unit. Set Value to the switch's name; the device serves the switch motor, the points and the OS track circuit under that one Name.
+Pin M is the motor's binary demand; wire it to a driver output (a Driver-JMRI-Turnout M). ~{N} and ~{R} are the point contacts; wire them to driver inputs (a Driver-JMRI-Turnout-Feedback ~{N}, ~{R}). ~{OCC} is the OS circuit's occupancy; wire it to a driver input (a Driver-JMRI-Sensor-Feedback S, keyed <code>SENSOR.&lt;switch&gt;.OCC</code>).</li>
 <li><code>Device-Switch-ManualSensed</code> (Style manual_sensed) has contacts only: ~{N}, ~{R}.</li>
 <li><code>Device-Lock</code> (Style lock, dual): UNLOCK is the demand; ~{LOCKED} the sense. Set settle_ms when the sense is not wired.</li>
 </ul>
@@ -218,42 +220,30 @@ Pin M is the binary demand: asserted means REVERSE; wire it to a driver output. 
 <p>A local plate is a lever or key at the location, not in the CTC machine, so it has no Column pin.
 Set Value to the switch's name. Output pins are contacts; wire them to driver inputs. Input pins are lamps; wire them to driver outputs.</p>
 <ul>
-<li><code>Local-Switch</code> (Style switch): contacts NWS, RWS; lamps NWK, RWK. <code>Local-Lock</code> (Style lock): contact WLQ; lamps WLQK, WLK; Invert is WLK.</li>
+<li><code>Local-Switch</code> (Style switch): contacts NWS, RWS; lamps NWK, RWK.</li>
+<li><code>Local-Lock</code> (Style lock) is the fascia lock plate of an electrically locked switch: the crew's key or lever and its two lamps. Set Value to the switch's name. Its lamps are two facts, not complements.
+~{WLQ} is the contact: the crew's request to unlock; wire it to a driver input. ~{WLQK} is the amber UNLOCK lamp: off at rest, blinking while the request waits, steady once the field unit has unlocked; wire it to a driver output. ~{WLK} is the green LOCK lamp, lit while the switch is locked; wire it to a driver output. Invert is WLK: the lamp is lit while the WLK wire is deasserted.
+Each pin on a JMRI sensor is its own object, keyed by the pin's name: <code>SENSOR.&lt;switch&gt;.WLQ</code>, <code>.WLQK</code>, <code>.WLK</code>.</li>
 </ul>
 <!-- END GROUP -->
 
-<!-- GROUP: Whole-mast device | library=Railroad-Field, Role=DEVICE, Appliance=mast -->
-<p>A whole-mast device hands the mast's indication to a driver that takes a whole mast, or to head devices of the older shape.
-Place one per mast of the trackplan-heads group. Set Value to the mast's name (836NAB).
-Pin IND is an indication output. Wire it to a Driver-JMRI-SignalMast IND, or to the IND of each head device of the older shape.</p>
-<!-- END GROUP -->
-
-<!-- GROUP: Head devices of the older shape | library=Railroad-Field, Role=DEVICE, Appliance=head -->
-<p>A head device of this shape makes its own lamps or arm. Place one per head of a mast of the trackplan-heads group.
-Set Value to the mast name plus the head letter (784A). The last letter of Name is the head letter. Style is fixed and must match the trackplan head's Style.
-Pin IND is the indication input; wire it to the whole-mast device's IND. Every other pin is a hardware input of one kind; wire each to a driver output.</p>
-<ul>
-<li><code>CPL</code>: binary ~{R}, ~{Y}, ~{G}. <code>CPL-Encoded</code>: binary S0, S1, the select code. <code>CPL-Pixel</code>: color ~{R}, ~{Y}, ~{G}, one pixel each.</li>
-<li><code>CL-RGB</code>: binary ~{R}, ~{G}, ~{B}. <code>CL-Pixel</code>: color RGB, one pixel; set Address to its index on the chain.</li>
-<li><code>Semaphore-UQ</code>, <code>-LQ</code>: position ARM; set stop_deg, approach_deg, clear_deg.</li>
-<li>The Head field is tolerated, not required. The head letter is read from Name.</li>
-</ul>
-<!-- END GROUP -->
-
-<!-- GROUP: Field mast devices | library=Railroad-Field-Signals, Role=DEVICE, Appliance=mast -->
-<p>A field mast device binds a mast of the derived-indications group to its heads. Place one per such mast.
+<!-- GROUP: Field mast devices | library=Railroad-Field, Role=DEVICE, Appliance=mast -->
+<p>A field mast device binds a trackplan mast to its heads. Place one per mast.
 Set Value to the trackplan mast's name (246AB). It has no Style, Kind or Indications: the pin set states the head count.
-Pins A, B, C are indication outputs, one per head position, top down. Wire each to one anonymous head's IND.</p>
+Pins A, B, C are the head positions, top down. They are passive: what is wired to a position says what it takes.
+Wire a position to one anonymous head's IND, and the head shows that position's head word.
+Wire a position to a Driver-JMRI-SignalMast IND instead, and that driver publishes the mast's indication for that position; one driver may take every position on one net.
+A position may be wired one way and the others the other way.</p>
 <!-- END GROUP -->
 
-<!-- GROUP: Anonymous heads | library=Railroad-Field-Signals, Role=DEVICE, Appliance=head -->
+<!-- GROUP: Anonymous heads | library=Railroad-Field, Role=DEVICE, Appliance=head -->
 <p>An anonymous head is one head of a given model at one position on a field mast. Place one per head position.
 It has no Name. The mast pin its IND is wired to identifies it: the mast's Name plus the letter A, B or C. Value shows Style and is never read.
 Style is the manufacturer model, fixed by the symbol. The symbol has no setting.
-Pin IND is the indication input; wire it to one pin of the field mast device. Pin APP is the indication output, the head word; wire it to the APP of one or more encoders.</p>
+Pin IND is the indication input; wire it to one pin of the field mast device. Pin APP is the indication output, the head word; wire it to the APP of one or more encoders, or to a Driver-JMRI-SignalMast IND, which then publishes for that position and is keyed by it (<code>SIGNALMAST.&lt;mast&gt;.&lt;position&gt;</code>).</p>
 <!-- END GROUP -->
 
-<!-- GROUP: Encoders | library=Railroad-Field-Signals, Role=ENCODER -->
+<!-- GROUP: Encoders | library=Railroad-Field, Role=ENCODER -->
 <p>An encoder turns a head word into hardware: lamps, a select code, pixels or a servo arm. Place one per head, or two when a semaphore has a lamp behind its blade.
 It has no Name and no Appliance. The head it serves identifies it. Value shows Kind and is never read. Kind is fixed and names the hardware.
 Pin APP is the one indication input; wire it to the head's APP. Every hardware-side pin is an input of kind binary or position; wire each to a driver output.
@@ -292,12 +282,17 @@ Place one node per CMRInet node and one bit symbol per bit in use.</p>
 <!-- END GROUP -->
 
 <!-- GROUP: JMRI objects over MQTT | library=Railroad-HardwareIO, Role=IODRIVER, IC=MQTT-JMRI -->
-<p>A JMRI driver is one JMRI object on an MQTT transport. Kind is the object class. Place one per object.
-Address is the JMRI object name. Leave it empty to name the object after the device the driver serves.</p>
+<p>A JMRI driver is one JMRI object on an MQTT transport. Kind is the object class. Place one per object, wire IOBus to the processor's IOBus, and wire its pins to the device it serves.
+The driver has no address of its own. Its identity is its Kind, the Name of the device it serves and, when a pin needs one, the function it serves: <code>TURNOUT.777</code>, <code>SENSOR.777.OCC</code>, <code>SENSOR.01T.OCC</code>, <code>LIGHT.MC1.LAMP</code>.
+The rule is the pin names. A driver pin named like the device pin it is wired to serves that function and adds nothing to the identity: a Turnout's M, ~{N} and ~{R} on a switch's M, ~{N} and ~{R} give <code>TURNOUT.777</code>. A driver pin named otherwise reads the function of the device pin it is wired to, and that pin's name is the suffix: a Sensor's S on a detector's ~{OCC} gives <code>SENSOR.01T.OCC</code>. One driver serves one device.
+A head or a train order lever has no Name; a driver on one of its pins is identified by the mast pin the head's or lever's IND is wired to: <code>SENSOR.Gilroy.E.STOP</code>, <code>SIGNALMAST.Gilroy.E</code>.
+Address never sets the identity. Leave it empty. When it is set, it is kept as a stated field and reported at info; a SignalMast uses it as the tail of its topic.</p>
 <ul>
-<li><code>Turnout</code> (Kind TURNOUT): M, binary output; wire a Device-Switch M to it. <code>Turnout-Feedback</code>: ~{N}, ~{R}, binary inputs; wire the switch's contacts to them.</li>
-<li><code>Sensor</code> (Kind SENSOR): S, binary output, the FieldUnit publishes; wire a detector's ~{OCC} to it. <code>Sensor-Feedback</code>: S, binary input, the FieldUnit reads.</li>
-<li><code>Light</code> (Kind LIGHT): ON, binary; INTENSITY, level. <code>SignalMast</code> (Kind SIGNALMAST): IND, indication input; wire a whole-mast device's IND to it.</li>
+<li><code>Turnout</code> (Kind TURNOUT): M, binary output; wire a Device-Switch or Device-Switch-OS M to it. <code>Turnout-Feedback</code> (Kind TURNOUT): ~{N}, ~{R}, binary inputs; wire the switch's contacts to them. The two symbols on one switch are one JMRI Turnout: the command and the feedback of one object, keyed <code>TURNOUT.&lt;switch&gt;</code>. Set the same fields on both. Two symbols at one identity are one object only in this pair; any other pair at one identity is an error.</li>
+<li><code>Sensor</code> (Kind SENSOR): S, binary output, the FieldUnit publishes; wire a detector's ~{OCC} to it. <code>Sensor-Feedback</code> (Kind SENSOR): S, binary input, the FieldUnit reads; wire a contact of a local plate to it (~{WLQ}, ~{NWS}) or the ~{OCC} of a Device-Switch-OS. Each pin it reads is its own object, named by that pin: <code>SENSOR.777.WLQ</code>, <code>SENSOR.777.OCC</code>.</li>
+<li><code>Light</code> (Kind LIGHT): ON, binary; INTENSITY, level; wire a Device-Lamp ~{LAMP} to ON: <code>LIGHT.MC1.LAMP</code>.</li>
+<li><code>SignalMast</code> (Kind SIGNALMAST): IND, indication input. Wire it to a position pin of a field mast device, or to the APP of one anonymous head. It publishes the mast's indication for the positions on its net as a JMRI aspect name: on every position of the mast it is <code>SIGNALMAST.&lt;mast&gt;</code>, on some of them <code>SIGNALMAST.&lt;mast&gt;.&lt;position&gt;</code>, on a train order face <code>SIGNALMAST.&lt;board&gt;.&lt;face&gt;</code>.
+The aspect names come from the JMRI signal system of the Encoding-JMRI it rides (<code>JMRI.SignalSystem</code>). To publish another system's names, add a field named exactly <code>JMRI.SignalSystem</code> to the placed driver with the signal system folder name (<code>SPTCO-1969</code>); it overrides the encoding's. The library symbol does not yet declare the field, so it is not in the table below.</li>
 </ul>
 <!-- END GROUP -->
 
