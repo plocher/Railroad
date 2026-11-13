@@ -44,7 +44,7 @@
 					)
 				)
 			)
-			(property "Value" "UA${Address}"
+			(property "Value" ""
 				(at -15.24 3.81 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -133,7 +133,7 @@
 					)
 				)
 			)
-			(property "Address" ""
+			(property "Address" "${Value}"
 				(at -3.81 -1.27 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -335,13 +335,14 @@
 				)
 			)
 			(property "Value" ""
-				(at 0 -1.016 0)
+				(at -15.24 -1.27 0)
 				(show_name no)
 				(do_not_autoplace yes)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -389,7 +390,7 @@
 				)
 			)
 			(property "Name" "${Value}"
-				(at 0 0 0)
+				(at -2.54 6.35 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -433,8 +434,17 @@
 						(type background)
 					)
 				)
-				(text "Processor: ${Board}"
-					(at -15.748 1.27 0)
+				(text "Processor:"
+					(at -15.24 1.27 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+						(justify left)
+					)
+				)
+				(text "${Board}"
+					(at -6.35 1.27 0)
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -1771,6 +1781,241 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Railroad-Trackplan:NextCP Not Modeled"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "CP"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 2.54 -8.89 0)
+				(show_name no)
+				(do_not_autoplace yes)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at -3.81 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Documents the logical connection of this track that isn't actually modeled"
+				(at -3.175 -6.985 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Role" "TRACK"
+				(at 0 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Kind" "NEXT_CP"
+				(at 1.27 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Interlocking" "NONE"
+				(at 2.54 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Style" "off_layout"
+				(at 11.43 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Milepost" ""
+				(at 0 -5.715 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "NextCP Not Modeled_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 1.27) (xy 1.778 -1.27)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+						(color 204 102 0 1)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "NextCP Not Modeled_1_1"
+				(text "${Interlocking}"
+					(at 0 -2.54 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "To"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 0 0)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 193.04 116.84)
@@ -1986,6 +2231,26 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 149.86) (xy 68.58 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16fd804c-6e57-4938-bdd5-0a3eee55e61d")
+	)
+	(wire
+		(pts
+			(xy 207.01 149.86) (xy 210.82 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d21959a-a601-4ad7-9af6-cf76f0711851")
+	)
+	(wire
+		(pts
 			(xy 166.37 91.44) (xy 166.37 90.17)
 		)
 		(stroke
@@ -2033,6 +2298,16 @@
 			(type default)
 		)
 		(uuid "404cd3d0-d746-448c-91c1-cac17cd7fdcf")
+	)
+	(wire
+		(pts
+			(xy 121.92 149.86) (xy 125.73 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "409b2398-4609-452b-833f-64f922dff296")
 	)
 	(wire
 		(pts
@@ -2086,7 +2361,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 147.32) (xy 182.88 147.32)
+			(xy 177.8 149.86) (xy 182.88 149.86)
 		)
 		(stroke
 			(width 0)
@@ -2146,6 +2421,36 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 149.86) (xy 97.79 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2a7dac-412e-403c-b49e-7224e0285aca")
+	)
+	(wire
+		(pts
+			(xy 38.1 149.86) (xy 40.64 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e996b3b-78b8-4a4e-b332-6fd70a235a5b")
+	)
+	(wire
+		(pts
+			(xy 149.86 149.86) (xy 153.67 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eb9a033-1a46-42ca-ab50-303e4c3d61c3")
+	)
+	(wire
+		(pts
 			(xy 116.84 115.57) (xy 116.84 116.84)
 		)
 		(stroke
@@ -2186,6 +2491,16 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 147.32) (xy 153.67 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adbc4df5-74f8-4b87-bf37-1a304630bca0")
+	)
+	(wire
+		(pts
 			(xy 157.48 41.91) (xy 157.48 49.53)
 		)
 		(stroke
@@ -2203,6 +2518,16 @@
 			(type default)
 		)
 		(uuid "b281f6ef-5807-4e59-8fcf-afca6031ae88")
+	)
+	(wire
+		(pts
+			(xy 121.92 147.32) (xy 125.73 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6fcb107-9245-4808-adf6-e916b4aaed48")
 	)
 	(wire
 		(pts
@@ -2519,7 +2844,7 @@
 		(property "Value" "MQTT"
 			(at 185.42 78.74 0)
 			(show_name no)
-			(do_not_autoplace no)
+			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,14 +2967,15 @@
 				)
 			)
 		)
-		(property "Value" "JohnCTC"
-			(at 179.07 39.624 0)
+		(property "Value" "SouthCTC"
+			(at 194.31 39.37 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2697,7 +3023,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 179.07 40.64 0)
+			(at 181.61 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2767,13 +3093,14 @@
 			)
 		)
 		(property "Value" "SouthCTC"
-			(at 187.96 49.53 0)
+			(at 179.07 49.53 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
 					(size 1.8288 1.8288)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2875,7 +3202,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${Address}"
+		(property "Value" "30"
 			(at 59.69 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -2942,7 +3269,7 @@
 				)
 			)
 		)
-		(property "Address" "30"
+		(property "Address" "${Value}"
 			(at 71.12 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -3044,13 +3371,14 @@
 			)
 		)
 		(property "Value" "SPCoastApp"
-			(at 78.74 37.084 0)
+			(at 93.98 36.83 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3098,7 +3426,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 78.74 38.1 0)
+			(at 81.28 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3381,6 +3709,130 @@
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
 					(reference "Transport2005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Trackplan:NextCP Not Modeled")
+		(at 38.1 149.86 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9836b400-3283-4b07-9b9d-8e7b28824040")
+		(property "Reference" "CP3001"
+			(at 34.925 147.955 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Lick"
+			(at 35.56 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.91 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 149.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Identifies the next control point on this track"
+			(at 41.275 142.875 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "TRACK"
+			(at 38.1 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Kind" "NEXT_CP"
+			(at 36.83 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Interlocking" "${Value}"
+			(at 35.56 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "off_layout"
+			(at 26.67 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00012b83-1f4c-4cd3-b72b-ae4ca5088050")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
+					(reference "CP3001")
 					(unit 1)
 				)
 			)
@@ -3829,6 +4281,16 @@
 				(justify right)
 			)
 		)
+		(pin "NMT" bidirectional
+			(at 210.82 149.86 180)
+			(uuid "e48eb060-13eb-4516-84bf-5c6b58d69df7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -3917,9 +4379,29 @@
 				(justify right)
 			)
 		)
-		(pin "ToSargentMT" bidirectional
-			(at 177.8 147.32 0)
-			(uuid "d5b39fa5-6e57-43a2-813d-f2d9da7cd6a1")
+		(pin "NMT1" bidirectional
+			(at 153.67 147.32 180)
+			(uuid "22d3c9fe-82ae-481c-8490-1fc9c1740194")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NMT2" bidirectional
+			(at 153.67 149.86 180)
+			(uuid "c698aab3-16e8-4c45-9144-4745ac7b406c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SMT" bidirectional
+			(at 177.8 149.86 0)
+			(uuid "50b9236e-f544-470c-b216-63e7f8b79751")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3950,7 +4432,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "61cd2495-14f3-42a6-a7c2-38f34b91ee1e")
-		(property "Sheetname" "Gilroy Caltrain"
+		(property "Sheetname" "GCaltrain"
 			(at 43.18 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4015,6 +4497,26 @@
 				(justify right)
 			)
 		)
+		(pin "SMT" bidirectional
+			(at 64.77 149.86 0)
+			(uuid "81bf2348-fb79-48fd-8bd1-75d99dad2619")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NMT" bidirectional
+			(at 40.64 149.86 180)
+			(uuid "38ae3106-671d-4b7d-960e-68866e9c1014")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -4076,6 +4578,46 @@
 		(pin "PanelIOBus" bidirectional
 			(at 132.08 116.84 90)
 			(uuid "859b9c03-6eb1-49f1-b938-a8f1e469091a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NMT1" bidirectional
+			(at 125.73 147.32 180)
+			(uuid "829ab936-ea1c-46e9-8953-72c1f9938ac1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "NMT2" bidirectional
+			(at 125.73 149.86 180)
+			(uuid "d818fa14-1729-48d6-ab41-fe899842f4eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SMT1" bidirectional
+			(at 149.86 147.32 0)
+			(uuid "d7136c15-086c-498e-a912-a75364f10d43")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SMT2" bidirectional
+			(at 149.86 149.86 0)
+			(uuid "5de531eb-8415-4d3b-9209-3a217298a134")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4151,6 +4693,36 @@
 				(justify right)
 			)
 		)
+		(pin "NMT" bidirectional
+			(at 97.79 149.86 180)
+			(uuid "2b18f49d-b8bd-4741-a139-915f785bf950")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SMT1" bidirectional
+			(at 121.92 147.32 0)
+			(uuid "39cfef79-6a82-4db2-a8e5-2a31c6d715c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SMT2" bidirectional
+			(at 121.92 149.86 0)
+			(uuid "291c6ebe-2746-4e61-94ce-9762ea064480")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "SPCoast"
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4"
@@ -4174,7 +4746,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "defc570c-1f61-4751-be37-2827b304f837")
-		(property "Sheetname" "Gilroy Interchange"
+		(property "Sheetname" "Gilroy"
 			(at 69.85 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4212,6 +4784,26 @@
 		(pin "PanelIOBus" bidirectional
 			(at 74.93 116.84 90)
 			(uuid "90bc45b3-4eb7-4455-8327-286f5db9b1a9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NMT" bidirectional
+			(at 68.58 149.86 180)
+			(uuid "d1a3df98-7d72-41cc-aca0-678e0c3e9e80")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SMT" bidirectional
+			(at 93.98 149.86 0)
+			(uuid "3907325c-cce6-4775-ab3f-812b02bf4885")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4307,14 +4899,24 @@
 				(justify left)
 			)
 		)
-		(pin "ToCorporalMT" bidirectional
-			(at 182.88 147.32 180)
-			(uuid "04fb84c4-90c8-4d92-8486-b81dbab8701d")
+		(pin "NMT" bidirectional
+			(at 182.88 149.86 180)
+			(uuid "be02cac1-4aee-44d8-9b27-c113e2f07a92")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "SMT" bidirectional
+			(at 207.01 149.86 0)
+			(uuid "a864da5e-84ce-475b-98c6-a0cf0eee3eb5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

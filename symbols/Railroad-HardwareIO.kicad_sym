@@ -25,7 +25,7 @@
 				)
 			)
 		)
-		(property "Value" "IN.${Bit}"
+		(property "Value" ""
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -105,7 +105,7 @@
 				(justify left)
 			)
 		)
-		(property "Bit" ""
+		(property "Bit" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -238,7 +238,7 @@
 				)
 			)
 		)
-		(property "Value" "UA${Address}"
+		(property "Value" ""
 			(at -15.24 3.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -327,7 +327,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at -3.81 -1.27 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -527,7 +527,7 @@
 				)
 			)
 		)
-		(property "Value" "OUT.${Bit}"
+		(property "Value" ""
 			(at 0.889 4.826 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -607,7 +607,7 @@
 				(justify left)
 			)
 		)
-		(property "Bit" ""
+		(property "Bit" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -736,7 +736,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -816,7 +816,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -936,7 +936,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1016,7 +1016,7 @@
 				(justify left)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1185,7 +1185,7 @@
 				)
 			)
 		)
-		(property "Value" "${ADDRESS}"
+		(property "Value" ""
 			(at 6.35 -3.81 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -1240,7 +1240,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1951,7 +1951,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${ADDRESS}"
+		(property "Value" ""
 			(at 9.271 -2.413 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -2006,7 +2006,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2717,7 +2717,7 @@
 				)
 			)
 		)
-		(property "Value" "${Address}"
+		(property "Value" ""
 			(at 4.445 49.53 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -2772,7 +2772,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 1.5681 -39.9209 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3672,7 +3672,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${ADDRESS}"
+		(property "Value" ""
 			(at 9.271 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -3728,7 +3728,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4440,7 +4440,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${ADDRESS}"
+		(property "Value" ""
 			(at 9.398 -2.667 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -4495,7 +4495,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 16.891 -2.667 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5480,7 +5480,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "${ADDRESS}"
+		(property "Value" ""
 			(at 9.525 -2.54 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5535,7 +5535,7 @@
 				)
 			)
 		)
-		(property "Address" ""
+		(property "Address" "${Value}"
 			(at 11.43 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6336,7 +6336,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). No Address: the JMRI object is named by the lamp this driver serves (ADR 0005 R11); Address overrides it."
+		(property "Description" "JMRI MQTT light driven by the FieldUnit: ON (OFF/ON) and INTENSITY (a level, for a variable light). Keyed by its wires, LIGHT.<lamp>; Address is not the key."
 			(at 11.049 -5.969 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6599,7 +6599,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Address = the JMRI sensor name; empty = the circuit this driver serves."
+		(property "Description" "JMRI MQTT sensor published by the FieldUnit (ACTIVE/INACTIVE). Keyed by its wires, SENSOR.<device>[.<pin>]; Address is not the key."
 			(at 11.049 -5.969 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6819,7 +6819,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Address as Driver-JMRI-Sensor."
+		(property "Description" "JMRI MQTT sensor read by the FieldUnit (ACTIVE/INACTIVE). Keyed as Driver-JMRI-Sensor."
 			(at 11.049 -5.969 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7039,7 +7039,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Address = the JMRI mast name; empty = the mast this driver serves."
+		(property "Description" "JMRI MQTT signal mast: sends the mast's indication as JMRI's aspect name, with Lit and Held from the FieldUnit. Keyed by the mast it serves, SIGNALMAST.<mast>[.<position>]; Address is not the key. JMRI.SignalSystem overrides the encoding's signal system."
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7103,6 +7103,17 @@
 			(effects
 				(font
 					(size 0.635 0.635)
+				)
+			)
+		)
+		(property "JMRI.SignalSystem" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)
@@ -7256,7 +7267,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT turnout command (CLOSED/THROWN). Address = the JMRI turnout name; empty = the switch this driver serves."
+		(property "Description" "JMRI MQTT turnout command (CLOSED/THROWN). Keyed by the switch it serves, TURNOUT.<switch>; Address is not the key."
 			(at 11.303 -2.921 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7476,7 +7487,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI MQTT turnout feedback (CLOSED/THROWN/INCONSISTENT/UNKNOWN) as N and R. Address as Driver-JMRI-Turnout."
+		(property "Description" "JMRI MQTT turnout feedback (CLOSED/THROWN/INCONSISTENT/UNKNOWN) as N and R; one object with the Driver-JMRI-Turnout on the same switch."
 			(at 11.049 -5.969 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7708,13 +7719,14 @@
 			)
 		)
 		(property "Value" ""
-			(at 0 -1.016 0)
+			(at -15.24 -1.27 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7762,7 +7774,7 @@
 			)
 		)
 		(property "Name" "${Value}"
-			(at 0 0 0)
+			(at -2.54 6.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -7806,8 +7818,17 @@
 					(type background)
 				)
 			)
-			(text "Processor: ${Board}"
-				(at -15.748 1.27 0)
+			(text "Processor:"
+				(at -15.24 1.27 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+					(justify left)
+				)
+			)
+			(text "${Board}"
+				(at -6.35 1.27 0)
 				(effects
 					(font
 						(size 1.016 1.016)

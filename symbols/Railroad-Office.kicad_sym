@@ -632,7 +632,7 @@
 				)
 			)
 		)
-		(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; provides an IOBus for JMRI drivers (ADR 0008)."
+		(property "Description" "JMRI's MQTT objects: an I/O encoding on an MQTT transport; the JMRI drivers ride their processor's IOBus. JMRI.SignalSystem names the signal system its masts use."
 			(at 13.97 -14.605 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -684,6 +684,17 @@
 			(effects
 				(font
 					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "JMRI.SignalSystem" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
 			)
 		)

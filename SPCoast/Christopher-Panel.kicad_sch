@@ -40,7 +40,7 @@
 					)
 				)
 			)
-			(property "Value" "${Address}"
+			(property "Value" ""
 				(at 4.445 49.53 0)
 				(show_name no)
 				(do_not_autoplace yes)
@@ -95,7 +95,7 @@
 					)
 				)
 			)
-			(property "Address" ""
+			(property "Address" "${Value}"
 				(at 1.5681 -39.9209 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4420,10 +4420,6 @@
 		)
 	)
 	(no_connect
-		(at 87.63 74.93)
-		(uuid "07db8afa-be5f-4f77-9aef-9af8cf8d717d")
-	)
-	(no_connect
 		(at 87.63 97.79)
 		(uuid "0df81ce8-3313-444b-bb75-1756781ed23e")
 	)
@@ -4432,60 +4428,16 @@
 		(uuid "12e1d575-1ad7-485a-9acb-893f40cc9290")
 	)
 	(no_connect
-		(at 87.63 87.63)
-		(uuid "1ec87765-7876-4fb1-8dbb-ae2af17c3b1c")
-	)
-	(no_connect
-		(at 87.63 77.47)
-		(uuid "263a4d4f-b855-4755-aefa-fe15c2660383")
-	)
-	(no_connect
 		(at 138.43 36.83)
 		(uuid "40a74453-1227-4b04-82a3-e16e52b1be6d")
-	)
-	(no_connect
-		(at 189.23 87.63)
-		(uuid "614cf59d-7f6a-42a9-9c9a-785528cff317")
-	)
-	(no_connect
-		(at 189.23 85.09)
-		(uuid "627f6880-7b1b-4230-a9f9-b03e7b3dfb7e")
-	)
-	(no_connect
-		(at 87.63 85.09)
-		(uuid "6ee1e160-8608-4b29-9975-1ea29101ddee")
-	)
-	(no_connect
-		(at 189.23 80.01)
-		(uuid "7f7089bc-2b5c-47d1-b895-4fee20558e40")
 	)
 	(no_connect
 		(at 138.43 104.14)
 		(uuid "8ab7e7eb-a0d3-4086-9188-2c5c4379f3e6")
 	)
 	(no_connect
-		(at 189.23 82.55)
-		(uuid "939136e4-f0dd-46e1-93f9-6f5f0247756c")
-	)
-	(no_connect
-		(at 189.23 74.93)
-		(uuid "b295973f-a861-4019-9827-d05135ca0ff1")
-	)
-	(no_connect
-		(at 189.23 77.47)
-		(uuid "b3fe28ac-7557-426a-9100-f4674c593b25")
-	)
-	(no_connect
-		(at 87.63 82.55)
-		(uuid "bfa140d8-495c-432b-b56c-4af52c5e15ec")
-	)
-	(no_connect
 		(at 138.43 97.79)
 		(uuid "e6d0c07a-c54d-4b05-920f-91f300da212a")
-	)
-	(no_connect
-		(at 87.63 80.01)
-		(uuid "fde71b6d-bc95-4608-b30a-8be15221342d")
 	)
 	(hierarchical_label "PanelIOBus"
 		(shape bidirectional)
@@ -4868,7 +4820,7 @@
 				)
 			)
 		)
-		(property "Address" "0x28"
+		(property "Address" "${Value}"
 			(at 152.6981 112.3109 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5126,6 +5078,277 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 181.61 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "251f4204-fbe3-42c4-8409-4955414515b0")
+		(property "Reference" "SGL10011"
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "818"
+			(at 181.61 80.899 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 179.705 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "signal"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.HS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NGS" "${Value}NGS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.HS" "${Value}HS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.SGS" "${Value}SGS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NGK" "${Value}NGK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.SGK" "${Value}SGK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.TEK" "${Value}TEK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23a24c2e-72e2-4cad-96f9-52a91e8be392")
+		)
+		(pin "2"
+			(uuid "1492bd5e-9230-4e4d-9df5-d94eebddeb2b")
+		)
+		(pin "3"
+			(uuid "9b2a3c06-ebbd-4861-a24e-ec1831c4564d")
+		)
+		(pin "4"
+			(uuid "926c2240-e714-4102-a3ab-e8cd86fc55cd")
+		)
+		(pin "5"
+			(uuid "bfb1cedf-41df-4405-a55a-12ec786cfcfa")
+		)
+		(pin "6"
+			(uuid "a8e1ab19-aa4d-43f8-aca9-5419a8b4989a")
+		)
+		(pin "7"
+			(uuid "f1059167-0507-4ff5-b965-493c8a0215d1")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "SGL10011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:PanelMCall")
 		(at 80.01 104.14 0)
 		(unit 2)
@@ -5148,7 +5371,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 84.328 104.775 0)
+			(at 74.93 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5685,7 +5908,7 @@
 				)
 			)
 		)
-		(property "Indication" "2SATK"
+		(property "Indication" "Luchessa:2NATK"
 			(at 78.105 36.83 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -5840,7 +6063,7 @@
 				)
 			)
 		)
-		(property "Address" "0x29"
+		(property "Address" "${Value}"
 			(at 203.4981 112.3109 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6612,7 +6835,7 @@
 			)
 		)
 		(property "Value" "2"
-			(at 185.928 104.775 0)
+			(at 176.53 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7096,7 +7319,7 @@
 			)
 		)
 		(property "Value" "10"
-			(at 182.88 134.62 0)
+			(at 183.515 111.76 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7162,7 +7385,7 @@
 			)
 		)
 		(property "CP Name" "Christopher South"
-			(at 182.245 132.08 0)
+			(at 182.88 109.22 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -7280,7 +7503,7 @@
 				)
 			)
 		)
-		(property "Indication" "1SATK"
+		(property "Indication" "Luchessa:1NATK"
 			(at 78.105 26.67 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -7748,7 +7971,7 @@
 			)
 		)
 		(property "Value" "9"
-			(at 132.08 134.62 0)
+			(at 132.715 111.76 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -7814,7 +8037,7 @@
 			)
 		)
 		(property "CP Name" "Christopher"
-			(at 131.445 132.08 0)
+			(at 132.08 109.22 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -7852,6 +8075,548 @@
 				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
 					(reference "COL10029")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 80.01 83.82 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "842994b7-723d-44ec-ab93-79eb7e58f9ca")
+		(property "Reference" "SGL10010"
+			(at 80.01 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "814"
+			(at 80.01 80.899 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 78.105 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "signal"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.HS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NGS" "${Value}NGS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.HS" "${Value}HS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.SGS" "${Value}SGS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NGK" "${Value}NGK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.SGK" "${Value}SGK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.TEK" "${Value}TEK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "c1c56f97-addd-4b5f-b696-5b89da914647")
+		)
+		(pin "6"
+			(uuid "0baacfed-d9f6-4edc-bfde-21e93d4a4a47")
+		)
+		(pin "7"
+			(uuid "26df92f0-0eaf-4f43-a47f-28f93277a6c8")
+		)
+		(pin "1"
+			(uuid "d8a08e00-0efa-4c23-a401-42353b0af88e")
+		)
+		(pin "2"
+			(uuid "7f69c98f-325f-4483-8f5a-92216a003d3b")
+		)
+		(pin "3"
+			(uuid "a6e760b0-2abd-49e4-9b1e-32d81f44bf93")
+		)
+		(pin "4"
+			(uuid "a88223b5-72c1-458c-be1b-a3c684269711")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "SGL10010")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 181.61 83.82 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90f9933a-e7bf-4ab6-9d41-e39364736c91")
+		(property "Reference" "SGL10011"
+			(at 181.61 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "818"
+			(at 181.61 80.899 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 179.705 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 181.61 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "signal"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.HS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGS" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NGS" "${Value}NGS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.HS" "${Value}HS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.SGS" "${Value}SGS"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NGK" "${Value}NGK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.SGK" "${Value}SGK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.TEK" "${Value}TEK"
+			(at 181.61 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "1780860f-3703-4ccf-bf1e-76c53057d729")
+		)
+		(pin "6"
+			(uuid "0125b44e-23b7-4dba-9a6a-960476359c2c")
+		)
+		(pin "7"
+			(uuid "6efc22c1-e556-447a-9550-ebee584463a9")
+		)
+		(pin "1"
+			(uuid "d8a08e00-0efa-4c23-a401-42353b0af88f")
+		)
+		(pin "2"
+			(uuid "7f69c98f-325f-4483-8f5a-92216a003d3c")
+		)
+		(pin "3"
+			(uuid "a6e760b0-2abd-49e4-9b1e-32d81f44bf94")
+		)
+		(pin "4"
+			(uuid "a88223b5-72c1-458c-be1b-a3c684269712")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "SGL10011")
+					(unit 2)
 				)
 			)
 		)
@@ -7933,7 +8698,7 @@
 				)
 			)
 		)
-		(property "Address" "0x27"
+		(property "Address" "${Value}"
 			(at 101.8981 112.3109 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8412,6 +9177,277 @@
 		)
 	)
 	(symbol
+		(lib_id "Railroad-Office:PanelSignal")
+		(at 80.01 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a415315c-b347-458e-95d7-8b56bb651522")
+		(property "Reference" "SGL10010"
+			(at 80.01 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "814"
+			(at 80.01 80.899 0)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Lever plate for a dispatcher-controlled Signal. Value cross-references the plant sheet's SignalControl by name."
+			(at 78.105 70.485 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Role" "PANEL"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Name" "${Value}"
+			(at 80.01 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Appliance" "lever"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Style" "signal"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.HS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGS" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.NGK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.SGK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Pin.TEK" "binary"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.NGS" "${Value}NGS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.HS" "${Value}HS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Control.SGS" "${Value}SGS"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.NGK" "${Value}NGK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.SGK" "${Value}SGK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Indication.TEK" "${Value}TEK"
+			(at 80.01 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f3dc880-bf4a-4bc0-b255-0f362f6d6fdd")
+		)
+		(pin "2"
+			(uuid "9740a5b4-3c21-49e3-9fa1-59b26e81c5e5")
+		)
+		(pin "3"
+			(uuid "4613e6c9-79a6-4fbe-8a4f-af9d6f9810e2")
+		)
+		(pin "4"
+			(uuid "593fe942-c388-43ef-87fb-10e2519f8d72")
+		)
+		(pin "5"
+			(uuid "bfb1cedf-41df-4405-a55a-12ec786cfcfb")
+		)
+		(pin "6"
+			(uuid "a8e1ab19-aa4d-43f8-aca9-5419a8b4989b")
+		)
+		(pin "7"
+			(uuid "f1059167-0507-4ff5-b965-493c8a0215d2")
+		)
+		(instances
+			(project "SPCoast"
+				(path "/528348b2-add8-5367-a5f7-439c76f0ca33/2ed995e3-3819-55cd-b8d9-5c2af048ccb4/a167e02f-2575-49a1-bdf8-73758c645318/f5acff20-f0c7-5bc8-b736-12c4fc3de1a5"
+					(reference "SGL10010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Railroad-Office:PanelSwitch")
 		(at 130.81 63.5 0)
 		(unit 1)
@@ -8809,7 +9845,7 @@
 			)
 		)
 		(property "Value" "2"
-			(at 185.928 48.895 0)
+			(at 176.53 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -8985,7 +10021,7 @@
 			)
 		)
 		(property "Value" "8"
-			(at 81.28 134.62 0)
+			(at 81.915 111.76 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -9051,7 +10087,7 @@
 			)
 		)
 		(property "CP Name" "Christopher North"
-			(at 80.645 132.08 0)
+			(at 81.28 109.22 0)
 			(show_name yes)
 			(do_not_autoplace yes)
 			(effects
@@ -9116,7 +10152,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 84.328 48.895 0)
+			(at 74.93 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace yes)
